@@ -1,0 +1,41 @@
+- class_name: 友情链接
+  class_desc: 昔日里那些人，那些事
+  link_list:
+    - name: 陈鑫磊'Blog
+      link: https://www.cxl2020mc.top
+      avatar: https://www.cxl2020mc.top/img/avatar.png
+      descr: 这个人太懒了啥也没写......
+    - name: 陈若  
+      link: https://chen-ruo.top
+      avatar: https://npm.elemecdn.com/chen-ruo-boke/%E8%83%8C%E6%99%AF/%E5%A4%B4%E5%83%8F.webp
+      descr: 经济以人为本，学习以勤为立
+    - name: 轻笑Chuckle
+      link: https://www.chuckle.top
+      avatar: https://www.chuckle.top/img/head.webp
+      descr: 宁静致远,倾尘轻笑
+    - name: ZkeqのCoding日志
+      link: https://icodeq.com/
+      avatar: https://img.onmicrosoft.cn/Avatar.jpg
+      descr: 大佬的博客站
+    - name: Akilar
+      link: https://akilar.top
+      avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+      descr: 欢迎光临糖果屋
+    - name: wzx
+      link: https://wzx.is-a.dev/
+      avatar: https://wzx.is-a.dev/images/avatar.png
+      descr: wzx个人主页网站
+    - name: 南星の博客
+      link: https://nanxing.ltd
+      avatar: https://nanxing.ltd/a_static/others/avatar.png
+      descr: 欢迎光临南星の博客
+
+- class_name: Wed
+  class_desc: 一些有用的网站
+  link_list:
+    - name: Solitude'Pan
+      link: https://solitude.eu.org/
+      avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
+      descr: 分享各类软件，影视资源...
+          
+ 
