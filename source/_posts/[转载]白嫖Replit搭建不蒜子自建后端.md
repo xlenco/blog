@@ -1,12 +1,13 @@
 ---
 categories:
-- Python
-cover: https://nsso.eu.org/img/885f6d28-7fd8-45a0-9613-b924443d3211.jpeg
+  - Python
+cover: 'https://nsso.eu.org/img/885f6d28-7fd8-45a0-9613-b924443d3211.jpeg'
 date: '2022-08-06 22:50:52'
 tags:
-- 教程
+  - 教程
 title: '[转载]白嫖Replit搭建不蒜子自建后端'
 updated: '2022-08-07 07:36:51'
+abbrlink: 55307
 ---
 ### 不蒜子自建后端 API 🗺️
 

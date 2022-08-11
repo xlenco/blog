@@ -1,12 +1,13 @@
 ---
 categories:
-- Github
-cover: https://nsso.eu.org/Wallpaper/8f223fdf-5867-4581-b50a-4e5a5c794a97.jpeg
+  - Github
+cover: 'https://nsso.eu.org/Wallpaper/8f223fdf-5867-4581-b50a-4e5a5c794a97.jpeg'
 date: '2022-07-28 12:07:51'
 tags:
-- 教程
+  - 教程
 title: 在GitHub个人页添加一个有趣的贪吃蛇动画
 updated: '2022-07-29 14:59:10'
+abbrlink: 52885
 ---
 这是我之前在逛 GitHub 发现的有意思的东西，给自己的个人 GitHub 主页添加一个贪吃蛇动画，效果如下：
 ![](https://nsso.eu.org/img/a1ebe329-c070-4ba4-a43a-ffb0ebf92d39.gif)

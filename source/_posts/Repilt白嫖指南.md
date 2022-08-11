@@ -1,9 +1,11 @@
 ---
 title: Repilt | 白嫖指南
-date: 2022-07-11 17:28:30
 tags: 笔记
 categories: 杂项
-cover: https://cn.bing.com/th?id=OHR.BarcelonaPop_ZH-CN3687855585_1920x1080.jpg&rf=LaDigue_1920x1080.jpg
+cover: >-
+  https://cn.bing.com/th?id=OHR.BarcelonaPop_ZH-CN3687855585_1920x1080.jpg&rf=LaDigue_1920x1080.jpg
+abbrlink: 35622
+date: 2022-07-11 17:28:30
 ---
 
 前一阵子捣鼓了 [Replit](https://replit.com/)
