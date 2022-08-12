@@ -629,7 +629,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [social, license, sitebase, info, copyright, badge]
+  layout: [aplayer, social, license, analytics, info, copyright]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -642,9 +642,8 @@ site_footer:
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using leancloud
-  #analytics: >
-    #<span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    #<span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
+  analytics: >
+    <span id="lc-uv">访客数为 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: '[Copyright © since 2021-2022](/)'
   badge: <a href="https://hexo.io"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo"/><a href="https://volantis.js.org"><img src="https://img.shields.io/badge/theme-volantis-brightgreen"/><a href="https://vercel.com"><img src="https://img.shields.io/badge/Vercel-black?style=flat&logo=Vercel&logoColor=white"/>

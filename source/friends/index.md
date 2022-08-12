@@ -7,9 +7,7 @@ author: Xlenco
 ---
 
 
-{% tabs 友链须知 %}
 
-<!-- tab 我的信息 -->
 
 ```yaml
 名称: Xlenco
