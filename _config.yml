@@ -11,6 +11,9 @@ author: Xlenco
 language: zh-CN
 timezone: Asia/Shanghai
 
+# 网站图标，更多尺寸等图标请使用import方式批量导入
+favicon: /img/favicon.png
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
@@ -40,7 +43,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
