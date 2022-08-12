@@ -646,7 +646,7 @@ site_footer:
     <span id="lc-uv">访客数为 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: '[Copyright © since 2021-2022](/)'
-  badge: <a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://volantis.js.org/"><img src="https://img.shields.io/badge/theme-volantis-brightgreen" title="主题采用 volantis" alt="volantis"></a><a style="margin-inline:5px"target="_blank" href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-black?style=flat&logo=Vercel&logoColor=white" title="部署于Vercel" alt="VERCEL"></a>
+  badge: <a href="https://hexo.io"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo"/><a href="https://volantis.js.org"><img src="https://img.shields.io/badge/theme-volantis-brightgreen"/><a href="https://vercel.com"><img src="https://img.shields.io/badge/Vercel-black?style=flat&logo=Vercel&logoColor=white"/>
   # You can add your own property here. (Support markdown, for example: br: '<br>')
  # br: '<br>'
 ############################### Site Footer ############################### > end
@@ -1220,7 +1220,7 @@ custom_css:
     width: auto # auto, max
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   sidebar:
-    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    effect: [shadow, floatable, blur, webinfo] # [shadow, floatable, blur]
   body:
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
     highlight:
