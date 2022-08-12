@@ -175,7 +175,7 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    top_meta: [author, category, date, walinecount] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -565,7 +565,7 @@ sidebar:
     # webinfo widget
     webinfo:
       class: webinfo
-      display: [desktop]
+      display: [desktop, mobile]
       header:
         icon: fa-solid fa-award
         title: 站点信息
@@ -646,8 +646,9 @@ site_footer:
     <span id="lc-uv">访客数为 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: '[Copyright © since 2021-2022](/)'
+  badge: <a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://volantis.js.org/"><img src="https://img.shields.io/badge/theme-volantis-brightgreen" title="主题采用 volantis" alt="volantis"></a><a style="margin-inline:5px"target="_blank" href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-black?style=flat&logo=Vercel&logoColor=white" title="部署于Vercel" alt="VERCEL"></a>
   # You can add your own property here. (Support markdown, for example: br: '<br>')
-  br: '<br>'
+ # br: '<br>'
 ############################### Site Footer ############################### > end
 
 ############################### Plugins ############################### > start
