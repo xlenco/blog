@@ -15,13 +15,15 @@ timezone: Asia/Shanghai
 favicon: /img/favicon.png
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://xlenco.eu.org
+root: /
+# permalink: :year/:month/:day/:title/
+# permalink_defaults:
+permalink: posts/:abbrlink/
+abbrlink:
+  alg: crc16 #support crc16(default) and crc32
+  rep: hex   #support dec(default) and hex
 
 # Directory
 source_dir: source
