@@ -4,7 +4,7 @@ date: 2022-7-14 14:02:35
 top_img: https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/-41de0709c4485d18.jpg
 ---
 
-{% gallery stretch::6::two %}
+{% gallery stretch::3::two %}
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/06AE80F507D5C4268F4D113E3CA422C21652066663331.jpeg)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/0df0b396d776fb023b0a5c063a6c9a1e.webp)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/12f6cf557d0cf330.jpg)
@@ -14,7 +14,6 @@ top_img: https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/277B2AB416E248F9C1B2758B7AD531D01652066650125.jpeg)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/2615753fcff6ef1d92c123ca624e6cda.webp)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/318701B0E32CCCD4BE18149118A2DF361652066700137.jpeg)
-![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/3d4de4ca660748b2bdae28a7483f24ea.webp)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/3F5C3463C57B995DECBCE2B54BF567FD1652066668325.jpeg)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/-41de0709c4485d18.jpg)
 ![](https://panta.eu.org/onedrive/%F0%9F%96%BC%EF%B8%8F%E5%9B%BE%E7%89%87/%E7%8C%AB%E7%BE%BD%E9%9B%AB/4C02CA9DE97FBF502384B8D7681AE1491652066634962.jpeg)
