@@ -7,7 +7,7 @@ comments: false
 ---
 
 
-{% folding sites only:bing %} {% Wallpaper %} {% endfolding %}
+{% folding sites only:bing %} 
 
-{% folding sites only:nya %} {% Wallpaper %} {% endfolding %}
+{% folding sites only:nya %} 
 

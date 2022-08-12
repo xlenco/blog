@@ -1,13 +1,14 @@
 ---
 categories:
-- Butterfly
-- ''
-cover: https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg
+  - Butterfly
+  - ''
+cover: 'https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg'
 date: '2022-07-28 11:51:20'
 tags:
-- 教程
+  - 教程
 title: butterfly版权块美化教程
 updated: '2022-07-29 11:05:14'
+abbrlink: d7af
 ---
 ### 教程
 
