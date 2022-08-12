@@ -257,7 +257,7 @@ article:
       # https://volantis.js.org/advanced-settings/#多人协同
       author:
         avatar: https://ik.imagekit.io/nicexl/head.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
-        name: 请设置文章作者
+        name: Xlenco
         url: /
       # 文章创建日期
       date:
@@ -310,7 +310,7 @@ article:
 comments:
   title: <i class='fa-solid fa-comments'></i> 评论
   subtitle:
-  service: Waline
+  service: waline
   # 可选评论系统 #
 
   # artalk
@@ -643,10 +643,10 @@ site_footer:
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using leancloud
   analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
+    <span id="lc-sv">本站总访问量为 <span id="busuanzi_value_site_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+    <span id="lc-uv">访客数为 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2021 XXX](/)'
+  copyright: '[Copyright © since 2021-2022](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
