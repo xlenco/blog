@@ -6,7 +6,7 @@ layout: friends
 author: Xlenco
 ---
 
- {% note warning::申请友联前请先添加本站链接 %}
+{% note warning::申请友联前请先添加本站链接 %}
 
 <!-- tab 我的信息 -->
 
@@ -22,7 +22,7 @@ author: Xlenco
 
 <!-- tab butterfly&&MengD主题 
 
-```
+```yaml
 - name: Xlencoの小窝
   link: https://xlenco.eu.org
   avatar: https://ik.imagekit.io/nicexl/head.jpg
