@@ -4,7 +4,7 @@ date: 2022-7-11
 ---
 
 
-{% folding sites only:bing %} 
+{%  sites only:bing %} 
 
-{% folding sites only:nya %} 
+{%  sites only:nya %} 
 
