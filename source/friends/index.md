@@ -8,6 +8,8 @@ author: Xlenco
 
 {% note warning::申请友联前请先添加本站链接 %}
 
+{% tabs message %}
+
 <!-- tab 我的信息 -->
 
 ```yaml
