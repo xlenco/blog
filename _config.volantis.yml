@@ -182,7 +182,7 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter, wordcount, walinecount,] #启用评论数量需在此添加
+    top_meta: [author, category, date, wordcount, walinecount,] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -511,7 +511,7 @@ sidebar:
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-rss
-          url: /atom.xml
+          url: /sitemap.xml
         - icon: fa-solid fa-envelope
           url: mailto:xlenco@hotmail.com
         - icon: fab fa-github
@@ -1100,7 +1100,7 @@ rightmenu:
 search:
   enable: true
   service: hexo  # hexo
-  js:
+  js: https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/js/search/hexo.js
 ############################### Search ############################### > end
 
 ############################### Color Scheme ############################### > start
@@ -1289,8 +1289,8 @@ custom_css:
 analytics:
   busuanzi: https://busuanzi.icodeq.com/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: Yha0NC1kL6G9EC6aSKFc7Ih2-MdYXbMMI
-    app_key: ubYqINQ77vpwVz0Xsl5FASB2
+    app_id: #
+    app_key: #
     custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 
