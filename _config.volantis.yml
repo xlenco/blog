@@ -83,21 +83,27 @@ navbar:
     icon:
     title:
   menu:
-    - name: 博客
-      icon: fa-solid fa-rss
-      url: /
-    - name: 分类
-      icon: fa-solid fa-folder-open
-      url: categories/
-    - name: 标签
-      icon: fa-solid fa-tags
-      url: tags/
-    - name: 归档
-      icon: fa-solid fa-archive
-      url: archives/
-    - name: 友链
-      icon: fa-solid fa-link
-      url: friends/
+    - name: 文章
+      icon: fa-solid fas fa-book
+      rows:
+        - name: 分类
+          url: categories/
+        - name: 标签
+          url: tags/
+        - name: 归档
+          url: archives/
+    - name: 社交
+      icon: fa-solid fas fa-bars
+      rows:
+        - name: 友人帐
+          url: friends/
+        - name: 开往
+          url: https://travellings.link/
+    - name: Tool
+      icon: fas fa-screwdriver-wrench
+      rows:
+        - name: 监控云台
+          url: https://uptime.xilej.repl.co/
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
@@ -120,30 +126,22 @@ cover:
   subtitle: '最好的地方，是没去过的地方。'
   search: A Wonderful Theme for Hexo # search bar placeholder
   features:
-    - name: 文档
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
-    - name: 帮助
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: faqs/
-    - name: 示例
+    - name: 主页
       icon: #
       img: volantis-static/media/twemoji/assets/svg/1f396.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
-      url: /examples/
-    - name: 社区
+      url: /
+    - name: 归档
       icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f389.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg
-      url: /contributors/
-    - name: 博客
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
       url: /archives/
-    - name: 源码
+    - name: 友人账
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      url: /friends/
+    - name: 关于窝
       icon: #
       img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/volantis-x/hexo-theme-volantis/
+      url: /about/
 ############################### Cover ############################### > end
 
 pages:
@@ -589,7 +587,7 @@ sidebar:
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            enable: true
+            enable: false
             text: '本站总访问量：'
             unit: '次'
         lastupd:
