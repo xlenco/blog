@@ -1,10 +1,11 @@
 ---
 title: 图库
 date: 2022-7-11
+layout: page
 ---
 
 
-{%  sites only:bing %} 
+{%  sites only:wallpaper %} 
 
-{%  sites only:nya %} 
+
 

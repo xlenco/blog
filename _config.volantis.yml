@@ -99,6 +99,15 @@ navbar:
           url: friends/
         - name: 开往
           url: https://travellings.link/
+    - name: 娱乐
+      icon: fas fa-cookie-bite
+      rows:
+        - name: YesPlayMusic
+          url: https://musicial.vercel.app/
+        - name: Mikutap
+          url: https://mikutapmusic.vercel.app/
+        - name: 壁纸
+          url: /Gallery/
     - name: Tool
       icon: fas fa-screwdriver-wrench
       rows:
