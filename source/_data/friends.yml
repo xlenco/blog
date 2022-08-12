@@ -1,0 +1,57 @@
+- group: 友情链接
+  description:  昔日里那些人，那些事
+  items:
+    - title: 陈鑫磊'Blog
+      avatar: https://www.cxl2020mc.top/img/avatar.png
+      url: https://www.cxl2020mc.top
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 这个人太懒了啥也没写......
+    - title: 陈若
+      avatar: https://npm.elemecdn.com/chen-ruo-boke/%E8%83%8C%E6%99%AF/%E5%A4%B4%E5%83%8F.webp
+      url: https://chen-ruo.top
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 经济以人为本，学习以勤为立
+    - title: 轻笑Chuckle
+      avatar: https://www.chuckle.top/img/head.webp
+      url: https://www.chuckle.top
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 宁静致远,倾尘轻笑
+    - title: ZkeqのCoding日志
+      avatar: https://img.onmicrosoft.cn/Avatar.jpg
+      url: https://icodeq.com/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 大佬的博客站
+    - title: Akilar
+      avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+      url: https://akilar.top
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 欢迎光临糖果屋
+    - title: wzx
+      avatar: https://wzx.is-a.dev/images/avatar.png
+      url: https://wzx.is-a.dev/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: wzx个人主页网站
+    - title: 南星の博客
+      avatar: https://nanxing.ltd/a_static/others/avatar.png
+      url: https://nanxing.ltd
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 欢迎光临南星の博客
+
+- group: Wed
+  description:  一些有用的网站
+  items:
+    - title: Solitude'Pan
+      avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
+      url: https://solitude.eu.org/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: 分享各类软件，影视资源...
+
+ 

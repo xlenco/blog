@@ -7,7 +7,7 @@ info:
 debug: false
 ############################### 默认占位图 ###############################
 default:
-  avatar: https://ik.imagekit.io/nicexl/head.jpg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
+  avatar: volantis-static/media/placeholder/avatar/round/3442075.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
   link: volantis-static/media/placeholder/link/8f277b4ee0ecd.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
   cover: volantis-static/media/placeholder/cover/76b86c0226ffd.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
   image: volantis-static/media/placeholder/image/2659360.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
@@ -457,7 +457,7 @@ comments:
     css: https://unpkg.com/@waline/client@v2/dist/waline.css
     path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
     placeholder: # 评论占位提示
-    serverURL: # Waline 的服务端地址（必填） 测试用地址: https://waline.vercel.app
+    serverURL: https://waline-test-onece.vercel.app/
     imageUploader:
       # 以兰空图床为例，下列填写内容为：
       # url: https://xxxxxx/api/v1/upload
@@ -496,19 +496,19 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: https://ik.imagekit.io/nicexl/head.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       shape: rectangle # circle, rectangle
       url: /about/
-      title:
-      subtitle:
+      title: Xlencoの小窝
+      subtitle: Xlenco
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-rss
           url: /atom.xml
         - icon: fa-solid fa-envelope
-          url: mailto:me@xxx.com
+          url: mailto:xlenco@hotmail.com
         - icon: fab fa-github
-          url: https://github.com/volantis-x/
+          url: https://github.com/xlenco/
         - icon: fa-solid fa-headphones-alt
           url: /
     # ---------------------------------------
@@ -646,7 +646,7 @@ site_footer:
     <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2017 XXX](/)'
+  copyright: '[Copyright © since 2021 XXX](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -743,7 +743,7 @@ plugins:
   ######## Plugins for SEO:
   # npm i hexo-wordcount
   wordcount:
-    enable: #true
+    enable: true
 
   ######## Plugins for ...
   # Button Ripple Effect
@@ -887,10 +887,10 @@ plugins:
   fcircle:
     # Set `plugins: ["fcircle"]` to enable in front-matter
     # 支持 Pjax
-    api: https://fcircle-api.example.com/ # api 地址
+    api: https://hexo-circle-of-friends-d.vercel.app/ # api 地址
     message: 与主机通讯中……  # 占位文字
-    css: volantis-static/libs/fcircle/fcircle.css
-    js: volantis-static/libs/fcircle/fcircle.js
+    css: https://cdn.jsdelivr.net/gh/lmm214/immmmm/themes/hello-friend/static/fcircle-beta.css
+    js: https://cdn.jsdelivr.net/gh/lmm214/immmmm/themes/hello-friend/static/fcircle-beta.js
 
   # 消息提示 
   # izitoast@1.4.0
@@ -950,7 +950,7 @@ plugins:
 
 ### 自定义右键 新
 rightmenus:
-  enable: false
+  enable: true
   # 右键菜单项及加载顺序
   # 内容示例：plugins.[组名], menus.[组名], hr(分割线，推荐去线留白), music(音乐控制器)
   order:
@@ -1279,10 +1279,10 @@ custom_css:
 
 ############################### Analytics ############################### > start
 analytics:
-  busuanzi: #volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  busuanzi: https://busuanzi.icodeq.com/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: # u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
-    app_key: # jfHtEKVE24j0IVCGHbvuFClp
+    app_id: Yha0NC1kL6G9EC6aSKFc7Ih2-MdYXbMMI
+    app_key: ubYqINQ77vpwVz0Xsl5FASB2
     custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 
