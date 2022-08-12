@@ -10,7 +10,7 @@ time = zh_time["LastUpdate"]
 print(time)
 
 # 打开 source/bing/index.md
-f = open(os.path.join("source", "Gallery", "Bing", "index.md"), "w")
+f = open(os.path.join("source", "gallery", "Bing", "index.md"), "w")
 f.write("""---
 title: Bing 壁纸 每日更新
 top_img: https://bing.icodeq.com
