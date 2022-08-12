@@ -6,8 +6,6 @@ layout: friends
 author: Xlenco
 ---
 
-{% note warning::申请友联前请先添加本站链接 %}
-
 {% tabs 友链须知 %}
 
 <!-- tab 我的信息 -->
