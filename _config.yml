@@ -108,8 +108,7 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
+  
+# Dofollow
 nofollow:
 	enable: true
-	exclude:
-    - vercel.app
