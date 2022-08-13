@@ -520,8 +520,7 @@ sidebar:
           url: mailto:xlenco@hotmail.com
         - icon: fab fa-github
           url: https://github.com/xlenco/
-        - icon: fa-solid fa-headphones-alt
-          url: /
+        
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -847,7 +846,7 @@ plugins:
   #   icon: fa-solid fa-moon # 可自定义
   #   toggle: darkmode
   darkmode:
-    enable: #true
+    enable: true
 
   # 旧版 Internet Explorer 淘汰行动
   # https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support
