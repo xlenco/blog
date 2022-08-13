@@ -116,7 +116,6 @@ nofollow:
 #! Import sys
 import:
   head_begin:
-    - <script src="/js/ClientWorker.js"></script>
   head_end:
   body_begin:
   body_end:
