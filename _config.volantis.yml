@@ -97,6 +97,10 @@ navbar:
       rows:
         - name: 友人帐
           url: friends/
+        - name: 哔哔
+          url: bb/
+        - name: 朋友圈
+          url: fcircle/
         - name: 开往
           url: https://travellings.link/
     - name: 娱乐
