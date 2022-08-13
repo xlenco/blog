@@ -26,6 +26,7 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.1.0",
+    "hexo-seo-autopush": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-volantis": "^5.7.1",
