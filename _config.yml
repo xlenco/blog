@@ -109,7 +109,6 @@ theme: volantis
 deploy:
   type: ''
 
-
 # hexo-autonofollow
 nofollow:
 	enable: true
