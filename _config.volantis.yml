@@ -516,7 +516,7 @@ sidebar:
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-rss
-          url: /sitemap.xml
+          url: /rss.xml
         - icon: fa-solid fa-envelope
           url: mailto:xlenco@hotmail.com
         - icon: fab fa-github
