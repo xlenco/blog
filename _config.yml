@@ -112,3 +112,14 @@ deploy:
 # hexo-autonofollow
 nofollow:
 	enable: true
+	
+	
+#! Import sys
+import:
+  head_begin:
+    - <script src="/js/ClientWorker.js"></script>
+    - <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "af5185b0eacb4c0a9008164846b8e2fa"}'></script>
+  head_end:
+  body_begin:
+  body_end:
+
