@@ -108,7 +108,7 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-  
-# Dofollow
+
+# hexo-autonofollow
 nofollow:
 	enable: true
