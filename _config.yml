@@ -120,7 +120,6 @@ import:
 # hexo-autonofollow
 nofollow:
 	enable: true
-	
->>>>>>> 27d6b933a8690112e1bbb3a7d31962986fb09933
+
 	
 
