@@ -600,7 +600,7 @@ sidebar:
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            enable: true
+            enable: false
             text: '本站总访问量：'
             unit: '次'
         lastupd:
