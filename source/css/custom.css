@@ -1,4 +1,4 @@
-@font-face{
+#@font-face{
   font-family:'hk4e' ;  /* 字体名自定义即可 */
   src:url('/fontsdest/hk4e.ttf'); /* 字体文件路径 */
   font-display : swap;
