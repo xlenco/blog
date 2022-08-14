@@ -116,6 +116,7 @@ nofollow:
 #! Import sys
 import:
   head_begin:
+    - <link rel="stylesheet" href="/css/custom.css">
   head_end:
   body_begin:
   body_end:
