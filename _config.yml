@@ -119,6 +119,7 @@ import:
     - <link rel="stylesheet" href="/css/custom.css">
   head_end:
   body_begin:
+    - <script defer src="/js/custom.js"></script>
   body_end:
 	
 # hexo-generator-feed
