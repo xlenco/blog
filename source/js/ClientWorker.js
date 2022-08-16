@@ -1,20 +1,38 @@
 if (!!navigator.serviceWorker) {
-    if (localStorage.getItem('cw_installed') !== 'true') {window.stop();}
     navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
         if (localStorage.getItem('cw_installed') !== 'true') {
-                setInterval(() => {
-                    fetch('/cw-cgi/api?type=config').then(res => res.text()).then(res => {
-                        if(res === 'ok') {
+            const conf = () => {
+                console.log('[CW] Installing Success,Configuring...');
+                fetch('/cw-cgi/api?type=config')
+                    .then(res => res.text())
+                    .then(text => {
+                        if (text === 'ok') {
+                            console.log('[CW] Installing Success,Configuring Success,Starting...');
                             localStorage.setItem('cw_installed', 'true');
-                            console.log('[CW] 安装完成...');
-                            location.reload()
+                            //如果你不希望重载页面，请移除下面七行
+                            //重载标识 - 开始
+                            fetch(window.location.href).then(res => res.text()).then(text => {
+                                document.open()
+                                document.write(text);
+                                document.close();
+                            });
+                            //重载标识 - 结束
+                        } else {
+                            console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                            setTimeout(() => {
+                                conf()
+                            }, 200);
                         }
                     }).catch(err => {
-                        console.warn('[CW] 安装可能尚未完成，请稍后再试。')
-                    })
-                }, 200);
+                        console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                    });
+            }
+            setTimeout(() => {
+                conf()
+            }, 50);
         }
     }).catch(err => {
-        console.error('[CW] 安装失败,错误信息: ' + err.message);
-    })
-} else { console.error('[CW] 安装失败,错误信息: 浏览器不支持 service worker'); }
+        console.error('[CW] Installing Failed,Error: ' + err.message);
+    });
+} else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+
