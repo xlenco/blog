@@ -106,7 +106,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: 
+	      github: git@github.com:xlenco/xlenco.github.io.git
+  branch: master
 
 # hexo-autonofollow
 nofollow:
