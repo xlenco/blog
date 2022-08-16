@@ -4,12 +4,11 @@ cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
   - https://fastly.jsdelivr.net/npm/clientworker
-  - https://raw.githubusercontent.com/ChenYFan/ClientWorker/gh-pages/cw.js
   - https://npm.onmicrosoft.cn/clientworker
 # Config热更新
 hotconfig:
-  - https://raw.githubusercontent.com/xlenco/Blog/main/source/config.yaml
-  - https://fastly.jsdelivr.net/gh/xlenco/Blog@main/source/config.yaml
+  - https://xlenco.eu.org/config.yaml
+  - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
 # 站点多线路选择
   - rule: _
@@ -37,7 +36,7 @@ catch_rules:
           - https://npm.elemecdn.com 
           - https://npm.sourcegcdn.com 
           - https://cdn.bilicdn.tk/npm 
-          - https://cdn.staticfile.org/
+          - https://cdn.staticfile.org
           - _
         action: fetch
         fetch:
@@ -86,11 +85,7 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 200
-  # 跳过一些规则,避免BUG
-  - rule: .*
-    transform_rules:
-      - search: _
-        action: skip
+
      
         
       
