@@ -11,8 +11,7 @@ author: Xlenco
 language: zh-CN
 timezone: Asia/Shanghai
 
-# 网站图标，更多尺寸等图标请使用import方式批量导入
-favicon: /img/favicon.png
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -102,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: volantis
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -113,14 +112,21 @@ deploy:
 nofollow:
 	enable: true
 
-#! Import sys
-import:
-  head_begin:
-    - <link rel="stylesheet" href="/css/custom.css">
-  head_end:
-  body_begin:
-    - <script defer src="/js/custom.js"></script>
-  body_end:
+algolia:
+  appId: "CE9M4IN0HW"
+  apiKey: "1752a7306752d7764efbad19f907367b"
+  adminApiKey: "837e620106579ed41c094194f2dc9d06"
+  chunkSize: 5000
+  indexName: "my-hexo-blog"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - Gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
 	
 # hexo-generator-feed
 feed:
