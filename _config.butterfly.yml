@@ -602,7 +602,7 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family:
+  font-family: "HarmonyOS"
   code-font-family:
 
 # Font settings for the site title and site subtitle
@@ -859,6 +859,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+     - <canvas id="universe"></canvas> 
+     - <script defer src="/js/universe.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
