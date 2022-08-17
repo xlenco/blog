@@ -3,7 +3,7 @@ var gulp = require('gulp');
 // 压缩js
 var terser = require('gulp-terser');
 gulp.task('compress', () =>
-  gulp.src(['./public/*.js', './public/**/*.js', './public/**/*.*.js'])
+  gulp.src(['./public/*.js', '!./public/**/*.js', './public/**/*.*.js'])
     .pipe(terser())
     .pipe(gulp.dest('./public'))
 )
