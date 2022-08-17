@@ -68,3 +68,7 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 200
+  - rule: .*
+    transform_rules:
+      - search: _
+        action: skip #? 2.8.1新增，跳过cw规则
