@@ -46,22 +46,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
-# Github CDN选择
-  - rule: ^https\:\/\/(cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
-    transform_rules:
-      - search: _
-        replace:
-          - https://fastly.jsdelivr.net/gh
-          - https://gcore.jsdelivr.net/gh
-          - https://cdn.bilicdn.tk/gh
-          - https://jsd.onmicrosoft.cn/gh
-          - _
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
