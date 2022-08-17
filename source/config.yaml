@@ -65,4 +65,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
-
