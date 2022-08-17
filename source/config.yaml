@@ -10,6 +10,15 @@ hotconfig:
   - https://xlenco.eu.org/config.yaml
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
+  - rule: _
+    transform_rules:
+      - search: _
+        action: fetch
+        fetch:
+          engine: fetch 
+          preflight: false
+          timeout: 5000
+          expire: 1000*60*60*8
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com
     transform_rules:
