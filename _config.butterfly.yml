@@ -857,6 +857,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+     - <script src="/js/ClientWorker.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
      - <canvas id="universe"></canvas> 
