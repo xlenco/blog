@@ -1,8 +1,7 @@
 ---
 categories:
   - JavaScript
-cover: >-
-  https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097
+cover: https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097
 date: '2022-07-28 14:33:58'
 tags:
   - 笔记
