@@ -10,23 +10,6 @@ hotconfig:
   - https://xlenco.eu.org/config.yaml
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-# 站点多线路选择
-  - rule: _
-    transform_rules:
-      - search: _ 
-        replace: 
-          - xlenco.github.io #GithubPage托管
-          - xlenco.pages.dev #Cloudflare托管
-          - _
-        action: fetch
-        fetch:
-          status: .*
-          engine: parallel
-          preflight: false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*2 # 缓存8小时
-            delay: 200
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com
     transform_rules:
@@ -85,10 +68,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 200
-  - rule: .*
-    transform_rules:
-      - search: _
-        action: skip #? 2.8.1新增，跳过cw规则
-     
-        
-      
