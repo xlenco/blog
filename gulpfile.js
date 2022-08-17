@@ -1,9 +1,9 @@
-// gulp-tester
+\// gulp-tester
 var gulp = require('gulp');
 // 压缩js
 var terser = require('gulp-terser');
 gulp.task('compress', () =>
-  gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
+  gulp.src(['./public/*.js', './public/**/*.js', './public/**/*.*.js'])
     .pipe(terser())
     .pipe(gulp.dest('./public'))
 )
