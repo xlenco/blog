@@ -46,27 +46,6 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
- # ajax CDN选择
-  - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs)
-    transform_rules:
-      - search: _
-        replace:
-          - https://cdn.bootcdn.net/ajax/libs
-          - https://lib.baomitu.com
-          - https://mirrors.cqupt.edu.cn/cdnjs/ajax/libs # 重庆邮电
-          - https://cdn.staticfile.org
-          - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs # 南大
-          - https://cdnjs.sourcegcdn.com/ajax/libs # 全同步 https://cdnjs.cloudflare.com
-          - _
-        action: fetch
-        fetch: 
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
 # Github CDN选择
   - rule: ^https\:\/\/(cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
     transform_rules:
