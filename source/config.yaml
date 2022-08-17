@@ -9,25 +9,22 @@ hotpatch:
 hotconfig:
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-# 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com
+# 站点多线路选择
+  - rule: _
     transform_rules:
-      - search: _
-        replace:
-          - https://unpkg.com
-          - https://npm.elemecdn.com 
-          - https://npm.sourcegcdn.com 
-          - https://cdn.bilicdn.tk/npm 
-          - https://cdn.staticfile.org
+      - search: _ 
+        replace: 
+          - xlenco.github.io #GithubPage托管
+          - xlenco.pages.dev #Cloudflare托管
           - _
         action: fetch
         fetch:
-          status: 200
+          status: .*
           engine: parallel
-          preflight: false # false
+          preflight: false
           timeout: 3000
           cache:
-            expire: 1000*60*60*8 # 缓存8小时
+            expire: 1000*60*60*2 # 缓存8小时
             delay: 200
   - rule: _
     transform_rules:
