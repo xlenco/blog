@@ -2,7 +2,7 @@
 abbrlink: 221d
 categories:
 - Hexo
-cover: https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true
+cover: https://ik.imagekit.io/nicexl/img/0654bf8dd8c2cbe22cca366d19b532ec_2RwJcmaTh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660817097788
 date: '2022-06-30 07:15:39'
 tags:
 - 教程
