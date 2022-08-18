@@ -864,6 +864,7 @@ inject:
   bottom:
      - <script defer src="/js/rightmenu.js"></script>
      - <canvas id="universe"></canvas> 
+     - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
     # - <script src="xxxx"></script>
 
