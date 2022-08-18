@@ -38,7 +38,7 @@ $ git config [--global] user.email "[email address]"
 
 ## 增加/删除文件
 
-```Git
+```
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
 
@@ -294,7 +294,7 @@ $ git stash pop
 
 ## Hexo
 
-```Git
+```
 # 清除缓存
 $ hexo clean
 # 生成静态文件
