@@ -1,5 +1,4 @@
 ---
-abbrlink: ''
 categories:
 - Git
 cover: https://ik.imagekit.io/nicexl/img/R-C.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1660812018706
@@ -8,7 +7,8 @@ tags:
 - 笔记
 title: Git常用命令
 updated: '2022-08-18 17:59:58'
----## 仓库
+---
+## 仓库
 
 ```Git
 # 在当前目录新建一个Git代码库
@@ -38,7 +38,7 @@ $ git config [--global] user.email "[email address]"
 
 ## 增加/删除文件
 
-```
+```Git
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
 
@@ -64,7 +64,7 @@ $ git mv [file-original] [file-renamed]
 
 ## 代码提交
 
-```
+```Git
 # 提交暂存区到仓库区
 $ git commit -m [message]
 
@@ -87,7 +87,7 @@ $ git commit --amend [file1] [file2] ...
 
 ## 分支
 
-```
+```Git
 # 列出所有本地分支
 $ git branch
 
@@ -134,7 +134,7 @@ $ git branch -dr [remote/branch]
 
 ## 标签
 
-```
+```Git
 # 列出所有tag
 $ git tag
 
@@ -165,7 +165,7 @@ $ git checkout -b [branch] [tag]
 
 ## 查看信息
 
-```
+```Git
 # 显示有变更的文件
 $ git status
 
@@ -227,12 +227,11 @@ $ git show [commit]:[filename]
 # 显示当前分支的最近几次提交
 $ git reflog
 
-
 ```
 
 ## 远程同步
 
-```
+```Git
 # 下载远程仓库的所有变动
 $ git fetch [remote]
 
@@ -260,7 +259,7 @@ $ git push [remote] --all
 
 ## 撤销
 
-```
+```Git
 # 恢复暂存区的指定文件到工作区
 $ git checkout [file]
 
@@ -296,7 +295,7 @@ $ git stash pop
 
 ## Hexo
 
-```
+```Git
 # 清除缓存
 $ hexo clean
 # 生成静态文件
