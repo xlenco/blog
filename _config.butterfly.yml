@@ -857,11 +857,9 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <script src="/js/ClientWorker.js"></script>
+    # - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="45638703FCDBAEC549D1FA7EBFAB12BC" />
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-     - <script async src="https://fastly.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.min.js"></script>
-     
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
      - <script defer src="/js/rightmenu.js"></script>

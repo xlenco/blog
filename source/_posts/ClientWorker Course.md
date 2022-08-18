@@ -1,19 +1,19 @@
 ---
-abbrlink: 933a
 categories:
-- JavaScript
+  - JavaScript
 cover: https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097
 date: '2022-07-28 14:33:58'
 tags:
-- 笔记
+  - 笔记
 title: ClientWorker Course
-updated: '2022-08-18 15:22:57'
+updated: '2022-07-29 11:08:49'
+abbrlink: 933a
 ---
 ### ClientWorker
 
 ### 地址
 
-[ClientWorker](https://clientworker.js.org)
+{% link ClientWorker, https://clientworker.js.org, https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
 
 ## 快速上手
 

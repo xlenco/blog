@@ -1,14 +1,14 @@
 ---
-abbrlink: 221d
-categories:
-- Hexo
-cover: https://ik.imagekit.io/nicexl/img/0654bf8dd8c2cbe22cca366d19b532ec_2RwJcmaTh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660817097788
-date: '2022-06-30 07:15:39'
-tags:
-- 教程
 title: 教程：hexo-githubcalendar 插件 1.0-为你的hexo添加首页github贡献图
-updated: '2022-08-18 18:02:31'
----![1](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160)
+tags: 教程
+categories: npm
+cover: >-
+  https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true
+abbrlink: 221d
+date: 2022-06-30 07:15:39
+---
+
+![1](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160)
 
 ### NPM 插件安装的部署方法：
 
@@ -190,3 +190,4 @@ hexo clean && hexo g && hexo s
 ```
 
 即发现部署完成了
+
