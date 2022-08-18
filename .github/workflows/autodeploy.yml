@@ -43,7 +43,7 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         npm install --save
-        npm install hexo-algoliasearch --save
+
         
         
 
