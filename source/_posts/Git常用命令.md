@@ -7,7 +7,7 @@ date: '2022-08-18 16:12:26'
 tags:
 - 笔记
 title: Git常用命令
-updated: '2022-08-18 16:30:28'
+updated: '2022-08-18 17:59:58'
 ---## 仓库
 
 ```Git
@@ -230,7 +230,6 @@ $ git reflog
 
 ```
 
-
 ## 远程同步
 
 ```
@@ -259,9 +258,7 @@ $ git push [remote] --force
 $ git push [remote] --all
 ```
 
-
 ## 撤销
-
 
 ```
 # 恢复暂存区的指定文件到工作区
@@ -296,7 +293,6 @@ $ git revert [commit]
 $ git stash
 $ git stash pop
 ```
-
 
 ## Hexo
 
