@@ -1,5 +1,4 @@
 ---
-abbrlink: ''
 categories:
 - Git
 cover: https://ik.imagekit.io/nicexl/Wallpaper/wallhaven-9mjoy1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660831603687
@@ -8,7 +7,9 @@ tags:
 - 笔记
 title: Git常用命令
 updated: '2022-08-18 22:07:42'
----## 仓库
+---
+
+## 仓库
 
 ```
 # 在当前目录新建一个Git代码库
