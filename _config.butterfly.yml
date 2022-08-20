@@ -95,7 +95,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://ik.imagekit.io/nicexl/head.jpg
+  img: https://ik.imagekit.io/nicexl/img/head.webp
   effect: false
 
 # Disable all banner image
@@ -108,11 +108,11 @@ index_img: /img/Ycgj8Wymp.webp
 default_top_img:
 
 # The banner image of archive page
-archive_img: https://ik.imagekit.io/nicexl/Wallpaper/book.jpg
+archive_img: https://ik.imagekit.io/nicexl/img/book.webp
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://ik.imagekit.io/nicexl/Wallpaper/0e6ebd91ee468bce3f13144e10a85f64_POGF3L8jPa.jpeg
+tag_img: https://ik.imagekit.io/nicexl/img/yfvt7.webp
 
 # The banner image of tag page
 # format:
@@ -121,7 +121,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://ik.imagekit.io/nicexl/Wallpaper/3845963ba_tr6GQHL3d.jpg
+category_img: https://ik.imagekit.io/nicexl/img/hggv.webp
 
 # The banner image of category page
 # format:
