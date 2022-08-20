@@ -1,12 +1,14 @@
 ---
 categories:
-- Git
-cover: https://ik.imagekit.io/nicexl/Wallpaper/wallhaven-9mjoy1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660831603687
+  - Git
+cover: >-
+  https://ik.imagekit.io/nicexl/Wallpaper/wallhaven-9mjoy1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660831603687
 date: '2022-08-18 16:12:26'
 tags:
-- 笔记
+  - 笔记
 title: Git常用命令
 updated: '2022-08-18 22:07:42'
+abbrlink: 1b99
 ---
 
 ## 仓库
