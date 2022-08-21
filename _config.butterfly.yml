@@ -147,7 +147,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: true
+  enable: false
   subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
@@ -869,7 +869,6 @@ inject:
      - <canvas id="universe"></canvas> 
      - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
-     - <script async src="/js/mirror.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
