@@ -95,7 +95,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://ik.imagekit.io/nicexl/img/head.webp
+  img: /img/head.webp
   effect: false
 
 # Disable all banner image
