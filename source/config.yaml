@@ -16,6 +16,7 @@ catch_rules:
         replace: 
           - xlenco.github.io #GithubPage托管
           - xlenco.pages.dev #Cloudflare托管
+          - xlenco.netlify.app #Netlify托管
           - _
         action: fetch
         fetch:
