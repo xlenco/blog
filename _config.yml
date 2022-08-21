@@ -183,5 +183,5 @@ githubcalendar:
   color: "['#ebedf0', '#a2f7af', '#6ce480', '#54ad63', '#469252', '#31753c', '#1f5f2a', '#13531f', '#084111', '#032b09', '#000000']"
   api: https://calendar-api-mu.vercel.app/api
   # api: https://python-gitee-calendar-api.vercel.app/api
-#  calendar_js: https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js
+  calendar_js: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/hexo_githubcalendar.js
   plus_style: ""
