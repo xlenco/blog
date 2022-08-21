@@ -1,8 +1,7 @@
 ---
 categories:
   - Git
-cover: >-
-  https://ik.imagekit.io/nicexl/Wallpaper/wallhaven-9mjoy1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660831603687
+cover: https://ik.imagekit.io/nicexl/img/wallhaven-9mjoy1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661081652687
 date: '2022-08-18 16:12:26'
 tags:
   - 笔记

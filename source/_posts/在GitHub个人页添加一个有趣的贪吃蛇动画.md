@@ -1,7 +1,7 @@
 ---
 categories:
   - Github
-cover: 'https://nsso.eu.org/Wallpaper/8f223fdf-5867-4581-b50a-4e5a5c794a97.jpeg'
+cover: 'https://ik.imagekit.io/nicexl/Wallpaper/8f223fdf-5867-4581-b50a-4e5a5c794a97_HljNmaNGR.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661082624230'
 date: '2022-07-28 12:07:51'
 tags:
   - 教程

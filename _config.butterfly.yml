@@ -10,7 +10,7 @@ menu:
      随便逛逛: /random/ || fas fa-shoe-prints
    社交 || fas fa-bars ||hide:
      友链: /link/ || fas fa-link
-     开往 : https://travellings.link/ || fas fa-train-subway
+     开往 : https://travellings.cn/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
      哔哔:  /bb/  || fas fa-comment-dots
    娱乐 || fas fa-cookie-bite ||hide:
@@ -95,7 +95,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://ik.imagekit.io/nicexl/img/head.webp
+  img: /img/head.webp
   effect: false
 
 # Disable all banner image
@@ -105,7 +105,7 @@ disable_top_img: false
 index_img: /img/Ycgj8Wymp.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: 
 
 # The banner image of archive page
 archive_img: /img/book.webp
@@ -147,7 +147,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: true
+  enable: false
   subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
@@ -861,7 +861,7 @@ inject:
      - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="45638703FCDBAEC549D1FA7EBFAB12BC" />
      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
-    # - <script async src="/js/v6.51.la.min.js"></script>
+     - <script async src="https://fastly.jsdelivr.net/npm/clientworker/dist/autoupdate.min.js"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
