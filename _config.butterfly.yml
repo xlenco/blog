@@ -869,6 +869,7 @@ inject:
      - <canvas id="universe"></canvas> 
      - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
+     - <script async src="/js/mirror.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
