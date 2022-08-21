@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>幽灵404页面</title>
 
-<script type="text/javascript" src="https://a-oss.zmki.cn/2020/20200101-cc0f0c1509531.js"></script>
+
 
 <style>
 html, body {
