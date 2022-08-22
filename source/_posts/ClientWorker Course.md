@@ -8,11 +8,12 @@ tags:
 - 笔记
 title: ClientWorker Course
 updated: 2022-08-19 18:23:10
----### ClientWorker
+---
+### ClientWorker
 
 ### 地址
 
-[ClientWorker](https://clientworker.js.org)
+{% link ClientWorker, https://clientworker.js.org, https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
 
 ## 快速上手
 
