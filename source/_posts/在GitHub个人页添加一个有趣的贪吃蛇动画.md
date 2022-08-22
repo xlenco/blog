@@ -1,10 +1,10 @@
 ---
 categories:
-  - Github
+  - 教程
 cover: 'https://ik.imagekit.io/nicexl/Wallpaper/8f223fdf-5867-4581-b50a-4e5a5c794a97_HljNmaNGR.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661082624230'
 date: '2022-07-28 12:07:51'
 tags:
-  - 教程
+  - Github
 title: 在GitHub个人页添加一个有趣的贪吃蛇动画
 updated: '2022-07-29 14:59:10'
 abbrlink: ce95
