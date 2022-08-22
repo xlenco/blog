@@ -1,10 +1,10 @@
 ---
 categories:
-  - Git
+  - 笔记
 cover: https://ik.imagekit.io/nicexl/img/wallhaven-9mjoy1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661081652687
 date: '2022-08-18 16:12:26'
 tags:
-  - 笔记
+  - Git
 title: Git常用命令
 updated: '2022-08-18 22:07:42'
 abbrlink: 1b99
