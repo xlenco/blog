@@ -14,7 +14,7 @@ menu:
      朋友圈: /fcircle/ || fas fa-user-group
      哔哔:  /bb/  || fas fa-comment-dots
    娱乐 || fas fa-cookie-bite ||hide:
-  #   音乐: /music/  ||  fas fa-music
+#     音乐: /music/  ||  fas fa-music
      壁纸: /Gallery/  || fas fa-images
      YesPlayMusic : https://musicial.vercel.app/ || fas fa-music
      Mikutap : https://mikutapmusic.vercel.app/ || fas fa-gamepad
@@ -863,10 +863,10 @@ inject:
      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
      - <script async src="https://fastly.jsdelivr.net/npm/clientworker/dist/autoupdate.min.js"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-     - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main//mainColor/heoMainColor.css">
+     - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-     - <script async data-pjax src="/js/rightmenu.js"></script>
+     - <script defer src="/js/rightmenu.js"></script>
      - <canvas id="universe"></canvas> 
      - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
