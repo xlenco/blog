@@ -1,7 +1,7 @@
 ---
 title: Butterfly美化魔改：自定义右键菜单
-tags: 教程
-categories: Butterfly
+tags: Butterfly
+categories: 教程
 cover: 'https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg'
 swiper_index: 2
 abbrlink: 8d1e
