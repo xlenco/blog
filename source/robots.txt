@@ -6,7 +6,7 @@ Allow: /archives/
 
 Disallow: /js/
 Disallow: /css/
-Disallow: /images/
+Disallow: /fonts/
 Disallow: /img/
 
 
