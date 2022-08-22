@@ -9,7 +9,6 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
 
-
 Sitemap: https://xlenco.eu.org/sitemap.xml
 
 
