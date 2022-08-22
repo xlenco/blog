@@ -1,7 +1,7 @@
 ---
 categories:
   - Python
-cover: 'https://nsso.eu.org/img/885f6d28-7fd8-45a0-9613-b924443d3211.jpeg'
+cover: 'https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009'
 date: '2022-08-06 22:50:52'
 tags:
   - 教程

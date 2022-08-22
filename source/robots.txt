@@ -6,9 +6,8 @@ Allow: /archives/
 
 Disallow: /js/
 Disallow: /css/
-Disallow: /images/
+Disallow: /fonts/
 Disallow: /img/
-
 
 Sitemap: https://xlenco.eu.org/sitemap.xml
 

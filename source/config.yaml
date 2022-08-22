@@ -1,4 +1,4 @@
-#Powered By https://clientworker.js.org/
+# ClientWorker.js.org
 name: ClientWorker 
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
@@ -16,6 +16,7 @@ catch_rules:
         replace: 
           - xlenco.github.io #GithubPage托管
           - xlenco.pages.dev #Cloudflare托管
+          - xlenco.netlify.app #Netlify托管
           - _
         action: fetch
         fetch:
@@ -27,7 +28,7 @@ catch_rules:
             expire: 1000*60*60*2 # 缓存8小时
             delay: 200
 # 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com
+  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
     transform_rules:
       - search: _
         replace:
@@ -45,28 +46,9 @@ catch_rules:
           timeout: 3000
           cache:
             expire: 1000*60*60*8 # 缓存8小时
-            delay: 200
-  - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
-    transform_rules:
-      - search: _
-        replace:
-          - https://cdn.bootcdn.net/ajax/libs
-          - https://lib.baomitu.com
-          - https://mirrors.cqupt.edu.cn/cdnjs/ajax/libs # 重庆邮电
-          - https://cdn.staticfile.org
-          - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs # 南大
-          - https://cdnjs.sourcegcdn.com/ajax/libs # 全同步 https://cdnjs.cloudflare.com
-          - _
-        action: fetch
-        fetch: 
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 200
-  - rule: ^https\:\/\/(cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh
+            delay: 300
+  # github加速
+  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh|jsd\.cxl2020mc\.top\/gh)
     transform_rules:
       - search: _
         replace:
@@ -80,10 +62,7 @@ catch_rules:
           status: 200
           engine: parallel
           preflight: false # false
-          timeout: 3000
+          timeout: 30000
           cache:
             expire: 1000*60*60*8 # 缓存8小时
-            delay: 200
-     
-        
-      
+            delay: 300

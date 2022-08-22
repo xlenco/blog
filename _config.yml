@@ -32,6 +32,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
    - config.yaml
+   - 404.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -83,8 +84,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
-
+#   - type: git
+#     repo: git@github.com:xlenco/xlenco.github.io.git
+#     branch: master
+#     ignore_hidden: false 
 
 nofollow:
   enable: true
@@ -97,7 +100,9 @@ feed:
   type: 
     - atom
     - rss
-  path: atom.xml
+  path: 
+    - atom.xml
+    - rss.xml
   limit: 20
   hub:
   content:
@@ -135,5 +140,64 @@ sitemap:
   tags: true
   categories: true
 
-
+# enable: 开启/关闭 推送
+# count: 每次提交最新的10篇文章
+# https://github.com/lete114/hexo-seo-autopush
+hexo_seo_autopush:
+  baidu:
+    enable: false
+    count: 100
+  bing:
+    enable: true
+    count: 10
+  google:
+    enable: false
+    count: 10
+    google_file: google_service_account.json # 谷歌服务账户
   
+# hexo-electric-clock  
+electric_clock:
+  priority: 5
+  enable: true
+  enable_page: all
+  layout:
+    type: class
+    name: sticky_layout
+    index: 0
+  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://ik.imagekit.io/nicexl/loading_Nxe_XduJU.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
+  
+  # Ice Kano Plus_in
+# Hexo Github Canlendar
+# Author: Ice Kano
+githubcalendar:
+  enable: true
+  enable_page: /
+  user: xlenco
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  githubcalendar_html: '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>'
+  pc_minheight: 280px
+  mobile_minheight: 0px
+  color: "['#ebedf0', '#a2f7af', '#6ce480', '#54ad63', '#469252', '#31753c', '#1f5f2a', '#13531f', '#084111', '#032b09', '#000000']"
+  api: https://calendar-api-mu.vercel.app/api
+  # api: https://python-gitee-calendar-api.vercel.app/api
+  calendar_js: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/hexo_githubcalendar.js
+  plus_style: ""
+
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.svg #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+#    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+#    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css

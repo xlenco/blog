@@ -189,8 +189,10 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   animation: fa-spin 5s linear infinite ;
 }
 
-
-
+/* waline footer信息隐藏 */
+.wl-power {
+    display: none;
+}
 
 
 

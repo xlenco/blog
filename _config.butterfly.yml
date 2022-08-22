@@ -10,10 +10,11 @@ menu:
      随便逛逛: /random/ || fas fa-shoe-prints
    社交 || fas fa-bars ||hide:
      友链: /link/ || fas fa-link
-     开往 : https://travellings.link/ || fas fa-train-subway
+     开往 : https://travellings.cn/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
+     哔哔:  /bb/  || fas fa-comment-dots
    娱乐 || fas fa-cookie-bite ||hide:
-     音乐: /music/  ||  fas fa-music
+#     音乐: /music/  ||  fas fa-music
      壁纸: /Gallery/  || fas fa-images
      YesPlayMusic : https://musicial.vercel.app/ || fas fa-music
      Mikutap : https://mikutapmusic.vercel.app/ || fas fa-gamepad
@@ -94,7 +95,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://ik.imagekit.io/nicexl/head.jpg
+  img: /img/head.webp
   effect: false
 
 # Disable all banner image
@@ -104,14 +105,14 @@ disable_top_img: false
 index_img: /img/Ycgj8Wymp.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: 
 
 # The banner image of archive page
-archive_img: https://ik.imagekit.io/nicexl/Wallpaper/book.jpg
+archive_img: /img/book.webp
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://ik.imagekit.io/nicexl/Wallpaper/0e6ebd91ee468bce3f13144e10a85f64_POGF3L8jPa.jpeg
+tag_img: /img/yfvt7.webp
 
 # The banner image of tag page
 # format:
@@ -120,7 +121,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://ik.imagekit.io/nicexl/Wallpaper/3845963ba_tr6GQHL3d.jpg
+category_img: /img/hggv.webp
 
 # The banner image of category page
 # format:
@@ -146,7 +147,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: true
+  enable: false
   subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
@@ -445,7 +446,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: af5185b0eacb4c0a9008164846b8e2fa
+cloudflare_analytics: f6e86b4bf56546559a58d7d3cfde580d
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
@@ -676,7 +677,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
@@ -858,9 +859,16 @@ css_prefix: true
 inject:
   head:
      - <script src="/js/ClientWorker.js"></script>
+     - <meta name="msvalidate.01" content="45638703FCDBAEC549D1FA7EBFAB12BC" />
+     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
+     - <script async src="https://fastly.jsdelivr.net/npm/clientworker/dist/autoupdate.min.js"></script>
+     - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
+     - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+     - <script async data-pjax src="/js/rightmenu.js"></script>
      - <canvas id="universe"></canvas> 
+     - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
     # - <script src="xxxx"></script>
 
