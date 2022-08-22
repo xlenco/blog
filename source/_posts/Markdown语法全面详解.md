@@ -1,7 +1,7 @@
 ---
 title: Markdown语法全面详解
-tags: 笔记
-categories: Markdown
+tags: Markdown
+categories: 笔记
 cover: 'https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg'
 swiper_index: 3
 description: 主要讲什么是Markdown语法，以及Markdown的用法
