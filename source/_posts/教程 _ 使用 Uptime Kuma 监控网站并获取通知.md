@@ -1,14 +1,14 @@
 ---
+abbrlink: db5
 categories:
-  - Wed
-cover: 'https://nsso.eu.org/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg'
+- 笔记
+- 教程
+cover: https://nsso.eu.org/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg
 date: '2022-08-06 15:07:01'
 tags:
-  - 教程
-  - 笔记
+- Wed
 title: 教程 | 使用 Uptime Kuma 监控网站
-updated: '2022-08-06 17:17:49'
-abbrlink: db5
+updated: 2022-08-06 17:17:49
 ---
 ## 前言
 
