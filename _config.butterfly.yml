@@ -866,7 +866,7 @@ inject:
      - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-     - <script defer src="/js/rightmenu.js"></script>
+     - <script async data-pjax src="/js/rightmenu.js"></script>
      - <canvas id="universe"></canvas> 
      - <script defer src="/js/custom.js"></script>
      - <script defer src="/js/universe.js"></script>
