@@ -90,6 +90,7 @@ rmf.switchReadMode = function () {
 //复制选中文字
 rmf.copySelect = function () {
     document.execCommand('Copy', false, null);
+    btf.snackbarShow('已复制！！');
     //这里可以写点东西提示一下 已复制
 }
 
