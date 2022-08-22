@@ -1,7 +1,7 @@
 ---
 title: 教程：hexo-githubcalendar 插件 1.0-为你的hexo添加首页github贡献图
-tags: 教程
-categories: npm
+tags: NPM
+categories: 教程
 cover: >-
   https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true
 abbrlink: 221d
