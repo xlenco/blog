@@ -196,3 +196,43 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 
 
 
+/* 主页分类圆角 */
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
+  border-radius: 8px;
+  }
+
+/*主页最新文章圆角*/
+a.thumbnail {
+    border-radius: 12px!important
+}
+/* 版权圆角 */
+#post .post-copyright {
+    border-radius: 30px;
+}
+/* 侧边栏圆角 */
+#aside-content .card-widget {
+border-radius: 25px;
+}
+/* 文章页圆角 */
+.layout>div:first-child:not(.recent-posts) {
+border-radius: 25px;
+}
+/* 双栏卡片圆角 */
+#recent-posts>.recent-post-item {
+border-radius: 25px;
+}
+
+
+
+/* 目录圆角 */
+#aside-content #card-toc .toc-content .toc-link.active {
+    border-radius: 8px;
+}
+/* 文章页翻页图片圆角 */
+nav#pagination.pagination-post {
+    border-radius: 25px;
+}
+/* 相关推荐圆角 */
+.relatedPosts>.relatedPosts-list>div {
+  border-radius: 25px;
+}
