@@ -2,7 +2,7 @@
 abbrlink: db5
 categories:
 - 笔记
-- 教程
+-教程
 cover: https://nsso.eu.org/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg
 date: '2022-08-06 15:07:01'
 tags:
