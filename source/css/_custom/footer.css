@@ -3,6 +3,7 @@
     background: var(--mj-card-bg);
     display: flex;
     flex-direction: column;
+    --mj-card-bg: #ffffff
 }
 #footer-wrap {
     background: var(--mj-card-bg);
