@@ -1,0 +1,101 @@
+/* 底部 */
+#footer {
+    background: var(--mj-card-bg);
+    display: flex;
+    flex-direction: column;
+}
+#footer-wrap {
+    background: var(--mj-card-bg);
+    padding: 0;
+}
+#mj-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+#mj-footer .footer-group {
+    min-width: 120px;
+}
+#mj-footer .footer-title {
+    color: var(--mj-secondtext);
+    font-size: 1rem;
+    text-align: left;
+}
+#mj-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+#mj-footer .footer-item {
+    font-size: 1rem;
+    color: var(--mj-fontcolor);
+    margin-right: auto;
+}
+#mj-footer .footer-group .footer-links a{
+  text-decoration: none;
+}
+#mj-footer .footer-group .footer-links a:hover{
+  color: var(--mj-lighttext) !important;
+}
+div#footer_deal {
+    justify-content: center;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+}
+div#footer_deal a{
+    margin: 1rem 27px;
+    color: var(--mj-fontcolor);
+    font-size: 24px;
+    line-height: 1.3rem;
+    border-radius: 3rem;
+}
+div#footer_deal a:hover{
+    color: var(--mj-lighttext);
+    text-decoration: none;
+}
+
+#footer-banner {
+    padding: 1rem;
+    color: #fff;
+    background: linear-gradient(208deg,#4584ff 0,#4584ff 11%,#ff7676 100%);
+    display: flex;
+    overflow: hidden;
+}
+[data-theme=dark] #footer-banner {
+    background: var(--mj-secondbg);
+}
+#footer-banner .footer-banner-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#footer-banner .footer-banner-left {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-banner-right {
+    display: block;
+}
+#footer-banner .footer-banner-link {
+    margin-right: 1rem;
+    color: var(--mj-white);
+    font-size: .9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+#footer-banner a.footer-banner-link:hover {
+    color: var(--mj-lighttext);
+    text-decoration: none;
+}
+#footer-banner .footer-banner-tips{
+    font-weight: 700;
+}
