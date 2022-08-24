@@ -86,8 +86,7 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/xlenco/xlenco.github.io
-  # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
+  branch: master
   ignore_hidden: false # 忽略隐藏文件及文件夹(目录) 
 
 nofollow:
