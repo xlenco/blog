@@ -84,10 +84,11 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-   - type: git
-     repo: git@github.com:xlenco/xlenco.github.io.git
-     branch: master
-     ignore_hidden: false 
+  type: git
+  repo: https://github.com/xlenco/xlenco.github.io
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
+  ignore_hidden: false # 忽略隐藏文件及文件夹(目录) 
 
 nofollow:
   enable: true
