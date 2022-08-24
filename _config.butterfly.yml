@@ -864,6 +864,7 @@ inject:
      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
      - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
+     - <meta name="referrer" content="no-referrer">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
      - <script async data-pjax src="/js/rightmenu.js"></script>
