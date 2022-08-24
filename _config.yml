@@ -85,7 +85,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/xlenco/xlenco.github.io
+  repo: https://github.com/xlenco/xlenco.github.io.git
   branch: master
   ignore_hidden: false # 忽略隐藏文件及文件夹(目录) 
 
