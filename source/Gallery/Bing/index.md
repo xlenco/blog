@@ -4,7 +4,9 @@ top_img: https://bing.icodeq.com
 aside: false
 date: 2022-08-24 03:08:33
 ---
+
 > If the date you see is 2 days ago, press `Ctrl + F5` to force a refresh, Maybe because I have `workbox` enabled.
+
 # Bing Wallpaper
 <!--2022-08-24 03:09:12-->
 ![里约热内卢的象征](https://www.bing.com/th?id=OHR.MarinaDaGloria_ZH-CN6894795645_UHD.jpg&w=1920) Today: [里约热内卢的象征](https://www.bing.com/th?id=OHR.MarinaDaGloria_ZH-CN6894795645_UHD.jpg)
