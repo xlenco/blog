@@ -87,11 +87,12 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-#   - type: git
-#     repo: git@github.com:xlenco/xlenco.github.io.git
-#     branch: master
-#     ignore_hidden: false 
+   - type: git
+     repo: git@github.com:xlenco/xlenco.github.io.git
+     branch: master
+     ignore_hidden: false 
 
+# hexo-nofollow
 nofollow:
   enable: true
   field: site
