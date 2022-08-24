@@ -87,7 +87,7 @@ deploy:
    - type: git
      repo: git@github.com:xlenco/xlenco.github.io.git
      branch: master
-#     ignore_hidden: false 
+     ignore_hidden: false 
 
 nofollow:
   enable: true
