@@ -89,6 +89,7 @@ deploy:
      branch: master
      ignore_hidden: false 
 
+# hexo-nofollow
 nofollow:
   enable: true
   field: site
