@@ -17,7 +17,7 @@ url: https://xlenco.eu.org
 root: /
 # permalink: :year/:month/:day/:title/
 # permalink_defaults:
-permalink: posts/:abbrlink.html
+permalink: posts/:abbrlink/
 abbrlink:
   alg: crc16 #support crc16(default) and crc32
   rep: hex   #support dec(default) and hex
@@ -38,10 +38,7 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: 
-  enable: true # Open external links in new tab
-  field: site
-  exclude: 
+external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -92,7 +89,6 @@ deploy:
      branch: master
      ignore_hidden: false 
 
-# hexo-nofollow
 nofollow:
   enable: true
   field: site
@@ -205,4 +201,3 @@ tag_plugins:
 #    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
-
