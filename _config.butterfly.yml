@@ -3,22 +3,21 @@
 # --------------------------------------
 
 menu:
-   文章 || fas fa-book ||hide:
+   文章 || fas fa-book 
      归档: /tags/ || fas fa-tags
      分类: /categories/ || fas fa-folder-open
      时间轴: /archives/ || fas fa-archive
      随便逛逛: /random/ || fas fa-shoe-prints
-   社交 || fas fa-bars ||hide:
+   社交 || fas fa-bars 
      友链: /link/ || fas fa-link
      开往 : https://travellings.cn/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
      哔哔:  /bb/  || fas fa-comment-dots
-   娱乐 || fas fa-cookie-bite ||hide:
-#     音乐: /music/  ||  fas fa-music
+   娱乐 || fas fa-cookie-bite 
      壁纸: /Gallery/  || fas fa-images
      YesPlayMusic : https://musicial.vercel.app/ || fas fa-music
      Mikutap : https://mikutapmusic.vercel.app/ || fas fa-gamepad
-   Tool || fas fa-screwdriver-wrench ||hide:
+   Tool || fas fa-screwdriver-wrench 
      监控云台: https://uptime.xilej.repl.co/  || fas fa-link
 
 # Code Blocks (代碼相關)
