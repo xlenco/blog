@@ -56,11 +56,17 @@
     - name: Yuou
       link: https://mletter.cn
       avatar: https://pic.imgdb.cn/item/630637fc16f2c2beb1c6f793.jpg
+      descr: 一个写自己日记的小站
 
 - class_name: Wed
-  class_desc: 一些有用的网站
+  class_desc: 一些实用的网站
   link_list:
     - name: Solitude'Pan
       link: https://solitude.eu.org/
       avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
       descr: 分享各类软件，影视资源...
+    - name: Pikpak
+      link: https://xlenco.github.io/pikpak/
+      avatar: https://mypikpak.com/apple-touch-icon.png
+      descr: 最好用的磁力下载软件
+
