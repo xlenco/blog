@@ -112,7 +112,7 @@ feed:
   order_by: -date
   icon: icon.png
   autodiscovery: true
- # template:
+
 
 # hexo-algoliasearch
 algolia:
