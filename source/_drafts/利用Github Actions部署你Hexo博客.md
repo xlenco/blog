@@ -25,6 +25,10 @@ Git推送到Github库的常用连接方案是HTTPS和SSH这两种连接方式。
 
 #### 方案一
 
-##### HTTPS部署方式
+##### HTTPS连接部署方式
 
 部署简单适合小白。缺点:有时候可能遇到不知名bug。
+
+1. 获取Github access tokens
+   打开https://github.com/settings/tokens
+   点击Generate new token新建个token
