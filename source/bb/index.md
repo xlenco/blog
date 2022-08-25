@@ -5,6 +5,7 @@ type: 'bb'
 layout: page
 aside: false
 ---
+
 <div id="tip" style="text-align:center;">ipseak加载中</div>
 <div id="ispeak"></div>
 <link
@@ -15,7 +16,6 @@ aside: false
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/ispeak@4.2.0/style.css"
 />
-
 <style>
   #article-container .D-avatar {
     margin: 0 10px 0 0;
@@ -24,8 +24,6 @@ aside: false
     display: none;
   }
 </style>
-<script src="https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js"></script>
-<script src="https://cdn.staticfile.org/marked/2.0.0/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/ispeak@4.2.0/ispeak.umd.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 <script>
