@@ -41,14 +41,14 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace:
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -88,7 +88,7 @@ deploy:
      repo: git@github.com:xlenco/xlenco.github.io.git
      branch: master
      ignore_hidden: false 
-
+     
 # hexo-nofollow
 nofollow:
   enable: true
