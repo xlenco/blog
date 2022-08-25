@@ -3,6 +3,7 @@ title: 哔哔
 date: 2022-8-7 14:36:12
 type: 'bb'
 layout: page
+aside: false
 ---
 <div id="tip" style="text-align:center;">ipseak加载中</div>
 <div id="ispeak"></div>
