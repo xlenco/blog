@@ -1,3 +1,4 @@
+
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -6,7 +7,7 @@
 title: Xlencoの博客
 subtitle: Xlenco
 description: 分享互联网各种知识,建站经验...
-keywords: Hexo,Butterfly,教程,知识,互联网,js,css
+keywords:
 author: Xlenco
 language: zh-CN
 timezone: Asia/Shanghai
@@ -41,12 +42,12 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
   
@@ -88,7 +89,7 @@ deploy:
      repo: git@github.com:xlenco/xlenco.github.io.git
      branch: master
      ignore_hidden: false 
-     
+
 # hexo-nofollow
 nofollow:
   enable: true
@@ -112,7 +113,7 @@ feed:
   order_by: -date
   icon: icon.png
   autodiscovery: true
-
+ # template:
 
 # hexo-algoliasearch
 algolia:
@@ -183,8 +184,8 @@ githubcalendar:
   mobile_minheight: 0px
   color: "['#ebedf0', '#a2f7af', '#6ce480', '#54ad63', '#469252', '#31753c', '#1f5f2a', '#13531f', '#084111', '#032b09', '#000000']"
   api: https://calendar-api-mu.vercel.app/api
-# api: https://python-gitee-calendar-api.vercel.app/api
-#  calendar_js: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/hexo_githubcalendar.js
+  # api: https://python-gitee-calendar-api.vercel.app/api
+  # calendar_js: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/hexo_githubcalendar.js
   plus_style: ""
 
 # tag-plugins-plus
