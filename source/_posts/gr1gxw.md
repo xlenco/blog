@@ -1,18 +1,18 @@
 ---
-
-## title: Butterfly 美化魔改：自定义右键菜单 tags: Butterfly
-
+title: Butterfly美化魔改：自定义右键菜单
+tags: Butterfly
 categories: 教程
-cover: '[https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3\_\_AyhR7Wxs.jpg](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg)'
+cover: "[https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg)"
 swiper_index: 2
 abbrlink: 8d1e
 date: 2022-06-06 16:54:30
+---
 
 最近发现[DoraKika](https://dorakika.cn/)写的右键菜单，风格简洁，十分的好看。并且支持[fontawesome](https://fontawesome.com/)
 
 可以在 rightmenu.pug 中自行添加
 
-![](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg#alt=%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
+![](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg#crop=0&crop=0&crop=1&crop=1&id=TaVL9&originHeight=257&originWidth=398&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 下面带来教程
 

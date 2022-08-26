@@ -1,11 +1,12 @@
 ---
 
-## title: butterfly 替换 jsdelivr cdn 链接教程 categories: 笔记
-
+title: butterfly替换jsdelivr cdn链接教程
+categories: 笔记
 cover: [https://ik.imagekit.io/nicexl/text/a6fec42e882111ebb6edd017c2d2eca2_5BRrJR1IC.jpg](https://ik.imagekit.io/nicexl/text/a6fec42e882111ebb6edd017c2d2eca2_5BRrJR1IC.jpg)
 tags: Butterfly
 abbrlink: '5415'
 date: 2022-05-28 20:21:46
+---
 
 最近 jsdelivr 凉了，国内不少博客都出现了无法访问或访问慢的问题。下面介绍一些 jsdelivr 的替换链接。
 
@@ -17,7 +18,7 @@ themes/butterfly/_config.yml
 
 新版 butterfly cdn 配置页面，在\_config.yml 底部
 
-![](https://ik.imagekit.io/nicexl/text/57822202270702.jpg#alt=1)
+![](https://ik.imagekit.io/nicexl/text/57822202270702.jpg#crop=0&crop=0&crop=1&crop=1&id=Eaamc&originHeight=634&originWidth=1018&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 目前能用的 jsdelivr 链接
 
@@ -30,7 +31,7 @@ fastly.jsdelivr.net
 
 #### npm
 
-```npm
+```
 https://npm.sourcegcdn.com
 https://cdn.bilicdn.tk/npm
 https://cdn.staticfile.org/
