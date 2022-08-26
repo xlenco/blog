@@ -1,17 +1,28 @@
 ---
+
+
 categories:
-  - 教程
+
+- 教程
+
 cover: >-
-  https://ik.imagekit.io/nicexl/Wallpaper/b6edd017c2d2eca2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661082299520
+
+[https://ik.imagekit.io/nicexl/Wallpaper/b6edd017c2d2eca2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661082299520](https://ik.imagekit.io/nicexl/Wallpaper/b6edd017c2d2eca2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661082299520)
+
 date: '2022-08-21 18:13:03'
+
 tags:
-  - Hexo
+- Hexo
+
 title: 随机访问博客文章
+
 abbrlink: '2377'
+
 ---
+
 ## 前沿
 
-此教程是根据js实现的随机访问博客文章
+此教程是根据 js 实现的随机访问博客文章
 
 部署难度：简单
 
@@ -35,7 +46,7 @@ hexo.extend.generator.register('random', function (locals) {
 })
 ```
 
-访问yourdomain.com/random，就会发现，会随机转跳到一篇博客文件。
+访问 yourdomain.com/random，就会发现，会随机转跳到一篇博客文件。
 
 #### Done
 

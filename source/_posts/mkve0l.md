@@ -1,16 +1,26 @@
 ---
 categories:
   - 杂项
-cover: 'https://nsso.eu.org/img/dcbe62e3-f4ca-443f-aa1d-a6b1e56248ff.jpeg'
-date: '2022-05-17 14:08:22'
+
+cover: "[https://nsso.eu.org/img/dcbe62e3-f4ca-443f-aa1d-a6b1e56248ff.jpeg](https://nsso.eu.org/img/dcbe62e3-f4ca-443f-aa1d-a6b1e56248ff.jpeg)"
+
+date: "2022-05-17 14:08:22"
+
 swiper_index: 1
+
 tags:
   - 笔记
+
 title: 阿里云资源合集·目录
-updated: '2022-07-29 12:11:12'
+
+updated: "2022-07-29 12:11:12"
+
 abbrlink: e8d4
 ---
-[没有参加阿里达人活动的点这里](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=593da19)<br />参与享最高50TB容量、延期卡、福利等<br />[以下阿里云总链接](https://www.aliyundrive.com/s/A9KV9RUEAYE)（或者点击下方单个链接）
+
+[没有参加阿里达人活动的点这里](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=593da19)
+参与享最高 50TB 容量、延期卡、福利等
+[以下阿里云总链接](https://www.aliyundrive.com/s/A9KV9RUEAYE)（或者点击下方单个链接）
 
 - [番剧动漫](https://nicexl.eu.org/s/f4b6/)
 - [实用软件](https://www.aliyundrive.com/s/uTyfNYK74sA)
