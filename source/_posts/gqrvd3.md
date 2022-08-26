@@ -1,14 +1,14 @@
 ---
-title: '教程:为你的博客添加顶部进度条'
-tags: Butterfly
+
+## title: '教程:为你的博客添加顶部进度条'tags: Butterfly
+
 categories: 笔记
 cover: >-
-  https://ik.imagekit.io/nicexl/text/ba0633f_vxq9Ki2RX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655477561219
+[https://ik.imagekit.io/nicexl/text/ba0633f_vxq9Ki2RX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655477561219](https://ik.imagekit.io/nicexl/text/ba0633f_vxq9Ki2RX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655477561219)
 abbrlink: 16de
 date: 2022-06-17 22:39:46
----
 
-在butterfly_config.yml的bottom处引入如下内容
+在 butterfly_config.yml 的 bottom 处引入如下内容
 
 ```
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
@@ -113,11 +113,10 @@ date: 2022-06-17 22:39:46
 }
 ```
 
-在head处引入如下内容
+在 head 处引入如下内容
 
 ```
 - <link rel="stylesheet" href="/css/pace-theme-flash.css">
 ```
 
-然后就大功告成了。如果要改进度条颜色可以在pace-theme-flash.css里修改。
-
+然后就大功告成了。如果要改进度条颜色可以在 pace-theme-flash.css 里修改。

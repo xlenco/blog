@@ -1,14 +1,14 @@
 ---
-title: 教程：hexo-githubcalendar 插件 1.0-为你的hexo添加首页github贡献图
-tags: NPM
+
+## title: 教程：hexo-githubcalendar 插件 1.0-为你的 hexo 添加首页 github 贡献图 tags: NPM
+
 categories: 教程
 cover: >-
-  https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true
+[https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true](https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true)
 abbrlink: 221d
 date: 2022-06-30 07:15:39
----
 
-![1](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160)
+![](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160#alt=1)
 
 ### NPM 插件安装的部署方法：
 
@@ -22,7 +22,7 @@ npm i hexo-githubcalendar --save
 cnpm i hexo-githubcalendar --save
 ```
 
-#### 2.添加_config 配置项 (不是主题的)：
+#### 2.添加\_config 配置项 (不是主题的)：
 
 ```
 githubcalendar:
@@ -51,18 +51,20 @@ githubcalendar:
 
 含义：是否开启插件
 
-##### 
+#####
 
 ##### enable_page
 
 参数： /
+
 含义： 路由地址，如 / 代表主页。/me/ 代表自我介绍页等等
 
-##### 
+#####
 
 ##### user
 
 参数： zfour
+
 含义： 你的 github 或者 gitee 用户名
 
 ##### layout
@@ -81,7 +83,7 @@ githubcalendar:
 
 最后墙的名字即是 name;
 
-````
+```
 <div name="我是墙" id="recent-posts">
   <!-- id=>type  recent-posts=>name    -->
   <div name="我是画框">
@@ -90,11 +92,12 @@ githubcalendar:
     </div>
   </div>
 </div>
-````
+```
 
 ##### githubcalendar_html
 
 **参数：** html 模板字段
+
 **含义：** 包含 loading，和挂载容器
 
 ```
@@ -139,16 +142,19 @@ githubcalendar:
 ##### pc_minheight
 
 **参数：** 280px
+
 **含义：** 电脑端插件的最小高度，减少加载带来的视觉偏移
 
 ##### mobile_minheight
 
 **参数：** 0px
+
 **含义：** 手机端插件的最小高度，减少加载带来的视觉偏移
 
 ### color
 
 **参数：** “[‘#ebedf0’, ‘#fdcdec’, ‘#fc9bd9’, ‘#fa6ac5’, ‘#f838b2’, ‘#f5089f’, ‘#c4067e’, ‘#92055e’, ‘#540336’, ‘#48022f’, ‘#30021f’]”
+
 **含义：** calendar 的主题色
 
 ```
@@ -162,23 +168,29 @@ color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc
 ##### api
 
 **参数：** [https://python-github-calendar-api.vercel.app/api](https://python-github-calendar-api.vercel.app/api)
+
 或 [https://python-gitee-calendar-api.vercel.app/api](https://python-gitee-calendar-api.vercel.app/api)
+
 **含义：** 这里提供的是公用的 api，仅供日常使用，请不要滥用。如果想搭建自用 api，具体的部署方案可看考 [python_github_calendar_api](https://github.com/Zfour/python_github_calendar_api) 及 [python_gitee_calendar_api](https://github.com/Zfour/python_gitee_calendar_api) 的文档说明，这里不多加赘述。
 
 ##### calendar_js
 
 **参数：** [https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js](https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js)
+
 **含义：** jsd 加速的 js，将 github calendar 挂载入容器中
-**目前已知 bug：** 在 1.21 适配 retina 屏幕后虽解决了模糊问题，但部分用户的 tooltip 会出现数据错误。降级到 @1.16 使用即可解决。
+
+**目前已知 bug：** 在 1.21 适配 retina 屏幕后虽解决了模糊问题，但部分用户的 tooltip 会出现数据错误。降级到 [@1.16 ](/1.16) 使用即可解决。
 
 ##### plus_style
 
 **参数：** “”
+
 **含义：** 提供可自定义的 style
 
 如果你是 butterfly 主题，你需要修改用户名即可，如果你想在友链或者个人介绍挂载，你可以在 md 中增加墙 —— 也就是具有某一的 id 的 div。因为是在 md 中所以通过去掉 class 隐藏画框的样式，即可。同时需要调整 `enable_page` 来限定展示的页面。
 
 如果你是其他主题用户，你可以尝试使用墙 > 画框 > 画的方式挂载，也可以通过修改主题模板来挂载。如
+
 [给萌典主题加上 git-calendar](https://imciraos.com/posts/353f0aee/) 的方法。
 
 ##### hexo 三连
@@ -190,4 +202,3 @@ hexo clean && hexo g && hexo s
 ```
 
 即发现部署完成了
-

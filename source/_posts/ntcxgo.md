@@ -1,13 +1,13 @@
 ---
-title: butterfly替换jsdelivr cdn链接教程
-categories: 笔记
-cover: https://ik.imagekit.io/nicexl/text/a6fec42e882111ebb6edd017c2d2eca2_5BRrJR1IC.jpg
+
+## title: butterfly 替换 jsdelivr cdn 链接教程 categories: 笔记
+
+cover: [https://ik.imagekit.io/nicexl/text/a6fec42e882111ebb6edd017c2d2eca2_5BRrJR1IC.jpg](https://ik.imagekit.io/nicexl/text/a6fec42e882111ebb6edd017c2d2eca2_5BRrJR1IC.jpg)
 tags: Butterfly
 abbrlink: '5415'
 date: 2022-05-28 20:21:46
----
 
-最近jsdelivr凉了，国内不少博客都出现了无法访问或访问慢的问题。下面介绍一些jsdelivr的替换链接。
+最近 jsdelivr 凉了，国内不少博客都出现了无法访问或访问慢的问题。下面介绍一些 jsdelivr 的替换链接。
 
 #### 替换方式
 
@@ -15,24 +15,24 @@ date: 2022-05-28 20:21:46
 themes/butterfly/_config.yml
 ```
 
-新版butterfly cdn配置页面，在_config.yml底部
+新版 butterfly cdn 配置页面，在\_config.yml 底部
 
-![1](https://ik.imagekit.io/nicexl/text/57822202270702.jpg)
+![](https://ik.imagekit.io/nicexl/text/57822202270702.jpg#alt=1)
 
-目前能用的jsdelivr链接
+目前能用的 jsdelivr 链接
 
 ```
 gcore.jsdelivr.net
 fastly.jsdelivr.net
 ```
 
-带npm的链接自己用下面链接替换即可
+带 npm 的链接自己用下面链接替换即可
 
 #### npm
 
 ```npm
-https://npm.sourcegcdn.com  
-https://cdn.bilicdn.tk/npm 
+https://npm.sourcegcdn.com
+https://cdn.bilicdn.tk/npm
 https://cdn.staticfile.org/
 https://npm.elemecdn.com
 https://unpkg.com/
@@ -40,7 +40,7 @@ https://unpkg.com/
 记住/后不带npm/
 ```
 
-我这里只列出我在用的cdn，我没有用到的cdn可以在评论中留言，有时间我会补充。
+我这里只列出我在用的 cdn，我没有用到的 cdn 可以在评论中留言，有时间我会补充。
 
 #### jquery
 
@@ -84,4 +84,3 @@ https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.m
 ```
 https://npm.elemecdn.com/js-heo@1.0.6/translate/tw_cn.js
 ```
-
