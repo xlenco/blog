@@ -1,12 +1,13 @@
 ---
 
-## title: 电影｜剧集 date: 2022/5/21
-
+title: 电影｜剧集
+date: 2022/5/21
 tags: 电影推荐
 categories: 杂项
 cover: >-
 [https://ik.imagekit.io/nicexl/text/ed390522b0c388a7d9d1da1918fd7186_c8L4szDwM.png](https://ik.imagekit.io/nicexl/text/ed390522b0c388a7d9d1da1918fd7186_c8L4szDwM.png)
 abbrlink: 9cd3
+---
 
 尾部有其他资源合集。
 [以下资源阿里云链接](https://www.aliyundrive.com/s/2mDRcomDGJ5)（或点击下方单个蓝色字体）
@@ -49,9 +50,7 @@ abbrlink: 9cd3
 - [环太平洋合集](https://www.aliyundrive.com/s/9zv57Kud7R2)
 - [笑傲江湖（1-3)](https://www.aliyundrive.com/s/72batExEnDG)
 - [纪录片](https://www.aliyundrive.com/s/kJzgBkRt8FR)
-
   - 富豪谷底求翻身
-
 - [行尸走肉](https://www.aliyundrive.com/s/MGqXsxwbGsX)
 - [误杀 2（含 1）](https://www.aliyundrive.com/s/sEKrHhFAhz9)
 - [超级学霸（1993 港片）](https://www.aliyundrive.com/s/B8eFYQjkbcy)
