@@ -1,0 +1,70 @@
+name: 自动部署
+
+# 当有改动推送和语雀发布时，启动Action
+on: [push, repository_dispatch]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      #2020年10月后github新建仓库默认分支改为main，注意更改
+      #但私有仓库貌似还是master并没有变
+
+      - name: 安装 Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+
+      - name: 安装 Hexo
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+          npm install gulp-cli -g
+          #如果你有使用gulp的话，打开上面这一行
+          npm install yuque-hexo -g
+          yuque-hexo clean
+          yuque-hexo sync
+          
+
+      - name: 更新 语雀拉取缓存及文章 #更新yuque 拉取的文章到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
+          git config --global user.email "1043865083@qq.com"
+          git config --global user.name "xlenco"
+          git add .
+          git commit -m "Refresh yuque json" -a
+
+      - name: 推送 语雀拉取缓存及文章 #推送修改后的yuque json
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 缓存 Hexo
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install --save
+
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo g
+          gulp
+          #如果你有使用gulp的话，打开上面这一行
+
+      - name: 部署
+        run: |
+          git config --global user.name "xlenco"
+          git config --global user.email "1043865083@qq.com"
+          hexo deploy

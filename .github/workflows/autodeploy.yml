@@ -27,6 +27,7 @@ jobs:
       - name: 安装Hexo
         run: |
           npm install hexo-cli -g
+          npm install gulp-cli -g
           npm install
 
       - name: 设置密钥

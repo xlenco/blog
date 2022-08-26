@@ -8,6 +8,19 @@
     "deploy": "hexo deploy",
     "server": "hexo server"
   },
+  "yuqueConfig": {
+    "postPath": "source/_posts",
+    "cachePath": "yuque.json",
+    "mdNameFormat": "slug",
+    "adapter": "markdown",
+    "concurrency": 5,
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "xlenco",
+    "repo": "posts",
+    "token": "2iBI81ooZ6lzBbDLHAMmtaa5OYdzNLSLbEQDL3yA",
+    "onlyPublished": true,
+    "onlyPublic": true
+  },
   "hexo": {
     "version": "6.2.0"
   },
