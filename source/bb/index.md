@@ -36,7 +36,8 @@ aside: false
     ispeak
       .init({
         el: '#ispeak',
-        api: 'https://kkapi-k.vercel.app',
+        api: 'https://kkapi-k.vercel.app
+/',
         author: '62ef45e75252f30e3bfae55e',
         pageSize: 10,
         loading_img: 'https://ik.imagekit.io/nicexl/9280b383cb4.gif',
