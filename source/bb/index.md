@@ -2,7 +2,6 @@
 title: 哔哔
 date: 2022-8-7 14:36:12
 type: 'bb'
-layout: page
 aside: false
 ---
 <div id="tip" style="text-align:center;">ipseak加载中</div>
@@ -24,6 +23,8 @@ aside: false
     display: none;
   }
 </style>
+<script src="https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/marked/2.0.0/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/ispeak@4.2.0/ispeak.umd.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 <script>
@@ -36,8 +37,7 @@ aside: false
     ispeak
       .init({
         el: '#ispeak',
-        api: 'https://kkapi-k.vercel.app
-/',
+        api: 'https://kkapi-k.vercel.app/',
         author: '62ef45e75252f30e3bfae55e',
         pageSize: 10,
         loading_img: 'https://ik.imagekit.io/nicexl/9280b383cb4.gif',
