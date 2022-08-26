@@ -5,7 +5,6 @@ type: 'bb'
 layout: page
 aside: false
 ---
-
 <div id="tip" style="text-align:center;">ipseak加载中</div>
 <div id="ispeak"></div>
 <link
@@ -16,6 +15,7 @@ aside: false
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/ispeak@4.2.0/style.css"
 />
+
 <style>
   #article-container .D-avatar {
     margin: 0 10px 0 0;
@@ -36,7 +36,7 @@ aside: false
     ispeak
       .init({
         el: '#ispeak',
-        api: 'https://kkapi-k.vercel.app/',
+        api: 'https://kkapi-k.vercel.app',
         author: '62ef45e75252f30e3bfae55e',
         pageSize: 10,
         loading_img: 'https://ik.imagekit.io/nicexl/9280b383cb4.gif',
