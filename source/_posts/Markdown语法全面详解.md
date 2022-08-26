@@ -1,15 +1,16 @@
 ---
-title: Markdown语法全面详解
-tags: Markdown
-categories: 笔记
-cover: 'https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg'
-swiper_index: 3
-description: 主要讲什么是Markdown语法，以及Markdown的用法
 abbrlink: 3b89
-date: 2022-06-16 06:09:37
-updated: 2022-06-16 00:00:00
+categories:
+- 笔记
+cover: https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg
+date: '2022-06-16 06:09:37'
+description: 主要讲什么是Markdown语法，以及Markdown的用法
+swiper_index: 3
+tags:
+- Markdown
+title: Markdown语法全面详解
+updated: 2022-06-16 00:00:00
 ---
-
 # Markdown语法全面详解
 
 目录
@@ -99,8 +100,8 @@ _这里显示的倾斜体_
 (1)插入本地图片链接的方法有两种： ![图片描述]（图片路径"title"） ![图片描述]（图片路径） 注：图片描述可以不写。 如本地插入图片示范：
 
 ```text
-![插入下一层级目录下的图片](/短视频封面/083.jpg)
-![插入同级目录下的图片](/原创扁平方盒-逐浪字体.jpg)
+![插入下一层级目录下的图片](/xx/083.jpg)
+![插入同级目录下的图片](/xxx.jpg)
 ```
 
 效果：
@@ -424,4 +425,3 @@ _   底线
 .   英文句点
 !   惊叹号
 ```
-
