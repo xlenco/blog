@@ -6,7 +6,7 @@ date: '2022-08-25 22:01:13'
 tags:
 - Hexo
 - Butterfly
-title: 利用Github Actions部署你Hexo博客
+title: 利用Github Actions自动化部署你Hexo博客
 ---
 
 ### Github Actions概念
@@ -32,3 +32,89 @@ Git推送到Github库的常用连接方案是HTTPS和SSH这两种连接方式。
 1. 获取Github access tokens
    打开https://github.com/settings/tokens
    点击Generate new token新建个token
+   ![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397)
+
+
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397)
+
+
+
+![](https://ik.imagekit.io/xlenco/img/20200923085908748_yyLI6zVK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661508148020)
+
+
+
+### 创建存放Hexo源码的私有仓库
+
+创建完成后，需要把博客的源码`push`到这里。首先获取远程仓库地址，同样`SSH`和`HTTPS`均可。`SSH`在绑定过`ssh key`的设备上无需再输入密码，`HTTPS`则需要输入密码，但是`SSH`偶尔会遇到端口占用的情况。
+
+完成上述操作后新建`[Blogroot].github/workflows/autodeploy.yml`
+
+```autodeploy.yml
+(# 当有改动推送到master分支时，启动Action
+name: 自动部署
+
+on:
+  push:
+    branches:
+      - main 
+
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 检查分支
+      uses: actions/checkout@v2
+      with:
+        ref: main
+
+    - name: 安装 Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "16.x"
+
+    - name: 安装 Hexo
+      run: |
+        export TZ='Asia/Shanghai'
+        npm install hexo-cli -g
+
+    - name: 缓存 Hexo
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+    - name: 安装依赖
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm install --save
+
+    - name: 生成静态文件
+      run: |
+        hexo clean
+        hexo generate
+
+    - name: 部署 #此处master:master 指从本地的master分支提交到远程仓库的master分支(不是博客的分支写master即可)，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
+      run: |
+        cd ./public
+        git init
+        git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+        git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+        git add .
+        git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+        git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/${{ secrets.GITHUBUSERNAME }}.github.io.git" master:master
+        git push --force --quiet "https://${{ secrets.TOKENUSER }}:${{ secrets.CODINGTOKEN }}@e.coding.net/${{ secrets.CODINGUSERNAME }}/${{  secrets.CODINGBLOGREPO }}.git" master:master
+        git push --force --quiet "https://${{ secrets.GITEEUSERNAME }}:${{ secrets.GITEETOKEN }}@gitee.com/${{ secrets.GITEEUSERNAME }}/${{ secrets.GITEEUSERNAME }}.git" master:master
+```
+
+{% tip info %}上方配置包含gitee和coding，请自行删减{% endtip %}
+
+#### 添加环境变量
+
+在你仓库的`Settings->Secrets->actions`
+
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826182938_Ygv6lo1Va.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661509817349)
