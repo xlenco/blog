@@ -42,7 +42,7 @@ jobs:
       - name: 推送 语雀拉取缓存及文章 #推送修改后的yuque json
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUBTOKEN }}
 
       - name: 缓存 Hexo
         uses: actions/cache@v1
