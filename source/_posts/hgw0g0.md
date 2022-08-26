@@ -3,16 +3,12 @@ categories:
   - 教程
 
 cover: "[https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg](https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg)"
-
 date: "2022-07-28 11:51:20"
-
 tags:
   - Butterfly
 
 title: butterfly版权块美化教程
-
 updated: "2022-07-29 11:05:14"
-
 abbrlink: d7af
 ---
 

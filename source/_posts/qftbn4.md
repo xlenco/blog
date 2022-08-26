@@ -1,25 +1,19 @@
 ---
 
-
 abbrlink: 3b89
-
 categories:
 
 - 笔记
 
 cover: [https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg](https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg)
-
 date: '2022-06-16 06:09:37'
-
 description: 主要讲什么是Markdown语法，以及Markdown的用法
-
 swiper_index: 3
-
 tags:
+
 - Markdown
 
 title: Markdown语法全面详解
-
 updated: 2022-06-16 00:00:00
 
 ---
@@ -42,7 +36,7 @@ updated: 2022-06-16 00:00:00
 
 ### 2.1 字体设置斜体、粗体、删除线
 
-```
+```latex
 这里显示正文
 *这里显示的是斜体*
 _这里显示的倾斜体_
@@ -59,7 +53,7 @@ _这里显示的倾斜体_
 
 写发 1： Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。 类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：
 
-```
+```latex
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -88,7 +82,7 @@ _这里显示的倾斜体_
 
 类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），任何数量的 = 和 - 都可以有效果。例如：
 
-```
+```latex
 这是一个一级标题
 ============================
 ```
@@ -99,7 +93,7 @@ _这里显示的倾斜体_
 
 或者
 
-```
+```latex
 二级标题
 -----------
 ```
@@ -112,32 +106,32 @@ _这里显示的倾斜体_
 
 (1)插入本地图片链接的方法有两种： ![图片描述]（图片路径"title"） ![图片描述]（图片路径） 注：图片描述可以不写。 如本地插入图片示范：
 
-```
+```latex
 ![插入下一层级目录下的图片](/xx/083.jpg)
 ![插入同级目录下的图片](/xxx.jpg)
 ```
 
 效果：
 
-![](https://ik.imagekit.io/nicexl/Wallpaper/Aeolian_QRtDSqEg8r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652777355540#alt=)（2）插入互联网上图片
+![](https://ik.imagekit.io/nicexl/Wallpaper/Aeolian_QRtDSqEg8r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652777355540#crop=0&crop=0&crop=1&crop=1&id=tZ47G&originHeight=1588&originWidth=3353&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)（2）插入互联网上图片
 
 ![图片描述]（图片网络路径） 注：图片描述与插入本地图片一样，描述可以不写。
 
 写法：
 
-```
+```latex
 ![图片描述](https://xxxxxx/xxx.jpg)
 ```
 
 效果：
 
-![](https://ik.imagekit.io/nicexl/Wallpaper/61d716_REz6m2Ypk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655309024521#alt=)（3）自动连接 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用<>包起来， Markdown 就会自动把它转成链接。也可以直接写，也是可以显示成链接形式的。 链接内容定义的形式为：
+![](https://ik.imagekit.io/nicexl/Wallpaper/61d716_REz6m2Ypk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655309024521#crop=0&crop=0&crop=1&crop=1&id=yJY3Y&originHeight=2122&originWidth=4341&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)（3）自动连接 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用<>包起来， Markdown 就会自动把它转成链接。也可以直接写，也是可以显示成链接形式的。 链接内容定义的形式为：
 
 方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字 接着一个冒号 接着一个以上的空格或制表符 接着链接的网址 选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
 
 下面这三种链接的定义都是相同：
 
-```
+```latex
 [这是一个链接]: http://nicexl.er.org/  "这里是链接的title内容"
 [这是一个链接]: http://nicexl.er.org/  '这里是链接的title内容'
 [这是一个链接]: http://nicexl.er.org/  (这里是链接的title内容)
@@ -147,7 +141,7 @@ _这里显示的倾斜体_
 
 在链接的时候也可以选择加上 title 属性，title 属性是选择性的，链接名称可以用字母、数字和空格，但是不分大小写：
 
-```
+```latex
 [这是一个链接](http://nicexl.er.org/ "欢迎访问").
 ```
 
@@ -155,7 +149,7 @@ _这里显示的倾斜体_
 
 输出 HTML 为：
 
-```
+```latex
 <p>这是一个链接 <a href="http://nicexl.er.org/" title="欢迎访问软件">
 这里是nicexl的blog</a>.</p>
 ```
@@ -166,13 +160,13 @@ _这里显示的倾斜体_
 
 如果要标记一小段行内代码，你可以用反引号把它包起来（```），例如：
 
-```
+```latex
 Use the `printf()` function.
 ```
 
 会产生：
 
-```
+```latex
 <p>Use the <code>printf()</code> function.</p>
 ```
 
@@ -182,7 +176,7 @@ There is a literal backtick (`) here.
 
 在代码区块里面， & 、 < 和 > 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的 Markdown 都会帮你处理，Markdown 会把下面这段：
 
-```
+```latex
 `Please don't use any `<blink>` tags.
 ```
 
@@ -194,7 +188,7 @@ Please don't use any `` tags.
 
 以产生：
 
-```
+```latex
 `Please don't use any `<blink>` tags.
 
 <p><code>—</code> is the decimal-encoded
@@ -205,7 +199,7 @@ equivalent of <code>—</code>.</p>
 
 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
 
-```
+```latex
 * * *
 
 ***
@@ -221,7 +215,7 @@ equivalent of <code>—</code>.</p>
 
 Markdown 使用星号（）和底线（_）作为标记强调字词的符号，被 \* 或 _ 包围的字词会被转成用 标签包围，用两个或\_包起来的话，则会被转成，例如：
 
-```
+```latex
 *single asterisks*
 
 _single underscores_
@@ -233,7 +227,7 @@ __double underscores__
 
 会转成：
 
-```
+```latex
 <em>single asterisks</em>
 
 <em>single underscores</em>
@@ -259,7 +253,7 @@ _this text is surrounded by literal asterisks_
 
 （1）基本使用 使用如下图所示：
 
-```
+```latex
 > 文字引用
 > 文字引用
 > 文字引用
@@ -274,12 +268,11 @@ _this text is surrounded by literal asterisks_
 显示如下：
 
 > 文字引用 文字引用 文字引用 文字引用 文字引用
-
-文字引用 文字引用 文字引用
+> 文字引用 文字引用 文字引用
 
 （2）嵌套引用
 
-```
+```latex
 >>>第一层嵌套引用
 >>第二层嵌套引用
 >第三层嵌套引用
@@ -297,7 +290,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 （1）无序列表 使用 星号\*，加号+，减号- 表示无序列表。
 
-```
+```latex
 * 无序列表文字
 * 无序列表文字
 * 无序列表文字
@@ -305,7 +298,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 等同于：
 
-```
+```latex
 + 无序列表文字
 + 无序列表文字
 + 无序列表文字
@@ -313,7 +306,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 也等同于：
 
-```
+```latex
 - 无序列表文字
 - 无序列表文字
 - 无序列表文字
@@ -333,7 +326,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 （2）有序列表 有序列表则使用数字接着一个英文句点： 注意：英文句点后面一定要有一个空格，起到缩进的作用。
 
-```
+```latex
 1. 有序列表
 2. 有序列表
 3. 有序列表
@@ -347,7 +340,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 （3）无序列表和有序列表同时使用
 
-```
+```latex
 * 这是无序列表1
 - 这是无序列表2
 + 这是无序列表3
@@ -377,7 +370,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 (1)极简模式
 
-```
+```latex
 水果名称| 价格 |  数量
 -|-|-
 香蕉 | $1 | 5 |
@@ -391,7 +384,7 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 (2)简单方法
 
-```
+```latex
 name | 111 | 222 | 333 | 444
 - | :-: | :-: | :-: | -:
 aaa | bbb | ccc | ddd | eee|
@@ -404,7 +397,7 @@ name111222333444aaabbbcccdddeeefffggghhhiii000
 
 (3)原生方法
 
-```
+```latex
 name | 111 | 222 | 333 | 444
 :-: | :-: | :-: | :-: | :-:
 aaa | bbb | ccc | ddd | eee|
@@ -425,7 +418,7 @@ _literal asterisks_
 
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
 
-```
+```latex
 \   反斜线
 `   反引号
 *   星号
