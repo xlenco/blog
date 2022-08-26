@@ -1,8 +1,8 @@
 [
   {
-    "id": 90830711,
-    "slug": "mkve0l",
-    "title": "资源目录",
+    "id": 90831320,
+    "slug": "qkoq92",
+    "title": "text",
     "book_id": 32250837,
     "book": {
       "id": 32250837,
@@ -13,11 +13,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -32,7 +32,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -50,7 +50,86 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
+      "_serializer": "v2.user"
+    },
+    "format": "lake",
+    "body": "text\n",
+    "body_draft": "text\n",
+    "body_html": "<!doctype html><div class=\"lake-content\" typography=\"classic\"><p id=\"u18ef4a30\" class=\"ne-p\"><span class=\"ne-text\">text</span></p></div>",
+    "body_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"fixed\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u18ef4a30\" id=\"u18ef4a30\"><span data-lake-id=\"udcd35ff4\" id=\"udcd35ff4\">text</span></p>",
+    "body_draft_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"fixed\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u18ef4a30\" id=\"u18ef4a30\"><span data-lake-id=\"udcd35ff4\" id=\"udcd35ff4\">text</span></p>",
+    "public": 1,
+    "status": 1,
+    "view_status": 0,
+    "read_status": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "content_updated_at": "2022-08-26T16:06:00.000Z",
+    "deleted_at": null,
+    "created_at": "2022-08-26T16:05:43.000Z",
+    "updated_at": "2022-08-26T16:06:02.000Z",
+    "published_at": "2022-08-26T16:06:00.000Z",
+    "first_published_at": "2022-08-26T16:06:00.362Z",
+    "word_count": 1,
+    "cover": null,
+    "description": "text",
+    "custom_description": null,
+    "hits": 0,
+    "_serializer": "v2.doc_detail"
+  },
+  {
+    "id": 90830711,
+    "slug": "mkve0l",
+    "title": "资源目录",
+    "book_id": 32250837,
+    "book": {
+      "id": 32250837,
+      "type": "Book",
+      "slug": "posts",
+      "name": "posts",
+      "user_id": 22578074,
+      "description": "博客文章",
+      "creator_id": 22578074,
+      "public": 1,
+      "items_count": 22,
+      "likes_count": 0,
+      "watches_count": 0,
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
+      "created_at": "2022-08-26T15:45:01.000Z",
+      "namespace": "xlenco/posts",
+      "user": {
+        "id": 22578074,
+        "type": "User",
+        "login": "xlenco",
+        "name": "Xlenco",
+        "description": null,
+        "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+        "books_count": 6,
+        "public_books_count": 2,
+        "followers_count": 4,
+        "following_count": 1,
+        "created_at": "2021-09-02T00:45:22.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
+        "_serializer": "v2.user"
+      },
+      "_serializer": "v2.book"
+    },
+    "user_id": 22578074,
+    "creator": {
+      "id": 22578074,
+      "type": "User",
+      "login": "xlenco",
+      "name": "Xlenco",
+      "description": null,
+      "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+      "books_count": 6,
+      "public_books_count": 2,
+      "followers_count": 4,
+      "following_count": 1,
+      "created_at": "2021-09-02T00:45:22.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -92,11 +171,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -111,7 +190,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -129,7 +208,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -171,11 +250,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -190,7 +269,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -208,7 +287,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -250,11 +329,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -269,7 +348,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -287,7 +366,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -329,11 +408,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -348,7 +427,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -366,7 +445,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -408,11 +487,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -427,7 +506,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -445,7 +524,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -487,11 +566,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -506,7 +585,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -524,7 +603,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -566,11 +645,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -585,7 +664,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -603,7 +682,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -645,11 +724,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -664,7 +743,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -682,7 +761,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -724,11 +803,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -743,7 +822,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -761,7 +840,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -803,11 +882,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -822,7 +901,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -840,7 +919,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -882,11 +961,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -901,7 +980,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -919,7 +998,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -961,11 +1040,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -980,7 +1059,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -998,7 +1077,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1040,11 +1119,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1059,7 +1138,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1077,7 +1156,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1119,11 +1198,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1138,7 +1217,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1156,7 +1235,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1198,11 +1277,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1217,7 +1296,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1235,7 +1314,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1277,11 +1356,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1296,7 +1375,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1314,7 +1393,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1356,11 +1435,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1375,7 +1454,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1393,7 +1472,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1435,11 +1514,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1454,7 +1533,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1472,7 +1551,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1514,11 +1593,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1533,7 +1612,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1551,7 +1630,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1593,11 +1672,11 @@
       "description": "博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 21,
+      "items_count": 22,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-08-26T15:47:33.513Z",
-      "updated_at": "2022-08-26T15:48:22.000Z",
+      "content_updated_at": "2022-08-26T16:06:00.522Z",
+      "updated_at": "2022-08-26T16:06:01.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1612,7 +1691,7 @@
         "followers_count": 4,
         "following_count": 1,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-08-26T15:47:29.000Z",
+        "updated_at": "2022-08-26T16:05:43.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1630,7 +1709,7 @@
       "followers_count": 4,
       "following_count": 1,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-08-26T15:47:29.000Z",
+      "updated_at": "2022-08-26T16:05:43.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
