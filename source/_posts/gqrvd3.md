@@ -1,12 +1,14 @@
 ---
 
-## title: '教程:为你的博客添加顶部进度条'tags: Butterfly
 
+## title: '教程:为你的博客添加顶部进度条'
+tags: Butterfly
 categories: 笔记
-cover: >-
+cover: 
 [https://ik.imagekit.io/nicexl/text/ba0633f_vxq9Ki2RX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655477561219](https://ik.imagekit.io/nicexl/text/ba0633f_vxq9Ki2RX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655477561219)
 abbrlink: 16de
 date: 2022-06-17 22:39:46
+---
 
 在 butterfly_config.yml 的 bottom 处引入如下内容
 
