@@ -1,21 +1,21 @@
 ---
+
 categories:
-  - 杂项
 
-cover: "[https://nsso.eu.org/img/dcbe62e3-f4ca-443f-aa1d-a6b1e56248ff.jpeg](https://nsso.eu.org/img/dcbe62e3-f4ca-443f-aa1d-a6b1e56248ff.jpeg)"
+- 杂项
 
-date: "2022-05-17 14:08:22"
+cover:
 
+date: '2022-05-17 14:08:22'
 swiper_index: 1
-
 tags:
-  - 笔记
+
+- 笔记
 
 title: 阿里云资源合集·目录
-
-updated: "2022-07-29 12:11:12"
-
+updated: '2022-07-29 12:11:12'
 abbrlink: e8d4
+
 ---
 
 [没有参加阿里达人活动的点这里](https://pages.aliyundrive.com/mobile-page/web/signup.html?code=593da19)
