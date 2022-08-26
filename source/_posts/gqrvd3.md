@@ -1,7 +1,6 @@
 ---
 
-
-## title: '教程:为你的博客添加顶部进度条'
+title: '教程:为你的博客添加顶部进度条'
 tags: Butterfly
 categories: 笔记
 cover: 
