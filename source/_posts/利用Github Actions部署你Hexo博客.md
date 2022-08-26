@@ -1,11 +1,12 @@
 ---
 categories:
-- 教程
-cover: https://ik.imagekit.io/nicexl/img/7bf185e5.png
+  - 教程
+cover: 'https://ik.imagekit.io/nicexl/img/7bf185e5.png'
 date: '2022-08-25 22:01:13'
 tags:
-- Hexo
+  - Hexo
 title: 利用Github Actions自动化部署你Hexo博客
+abbrlink: '77e3'
 ---
 ### Github Actions概念
 
