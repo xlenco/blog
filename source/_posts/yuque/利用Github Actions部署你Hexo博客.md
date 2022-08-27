@@ -2,7 +2,7 @@
 categories:
   - 教程
 
-cover: "[https://ik.imagekit.io/nicexl/img/7bf185e5.png](https://ik.imagekit.io/nicexl/img/7bf185e5.png)"
+cover: "https://ik.imagekit.io/nicexl/img/7bf185e5.png"
 date: "2022-08-25 22:01:13"
 tags:
   - Hexo
