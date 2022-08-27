@@ -1,14 +1,14 @@
 ---
+title: 利用Github Actions自动化部署你Hexo博客
+urlname: riy2mx
+date: '2022-08-25 22:01:13 +0800'
 categories:
   - 教程
-
-cover: "[https://ik.imagekit.io/nicexl/img/7bf185e5.png](https://ik.imagekit.io/nicexl/img/7bf185e5.png)"
-date: "2022-08-25 22:01:13"
+cover: >-
+  [https://ik.imagekit.io/nicexl/img/7bf185e5.png](https://ik.imagekit.io/nicexl/img/7bf185e5.png)
 tags:
   - Hexo
-
-title: 利用Github Actions自动化部署你Hexo博客
-abbrlink: "77e3"
+abbrlink: '77e3'
 ---
 
 ### Github Actions 概念
@@ -32,11 +32,11 @@ Git 推送到 Github 库的常用连接方案是 HTTPS 和 SSH 这两种连接�
 1. 获取 Github access tokens
    打开https://github.com/settings/tokens
    点击 Generate new token 新建个 token
-   ![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=L2uNP&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+   ![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=L2uNP&originHeight=350&originWidth=1351&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=w5T9Z&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=w5T9Z&originHeight=350&originWidth=1351&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](https://ik.imagekit.io/xlenco/img/20200923085908748_yyLI6zVK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661508148020#crop=0&crop=0&crop=1&crop=1&id=G0fCF&originHeight=183&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/20200923085908748_yyLI6zVK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661508148020#crop=0&crop=0&crop=1&crop=1&id=G0fCF&originHeight=183&originWidth=762&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 创建存放 Hexo 源码的私有仓库
 
@@ -126,14 +126,14 @@ jobs:
 
 在你仓库的`Settings->Secrets->actions`
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826182938_Ygv6lo1Va.jpg#crop=0&crop=0&crop=1&crop=1&id=AgjkB&originHeight=651&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826182938_Ygv6lo1Va.jpg#crop=0&crop=0&crop=1&crop=1&id=AgjkB&originHeight=651&originWidth=1178&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 查看部署情况
 
 此时，打开 GIthub 存放源码的私有仓库，找到 action。
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190814_1aIDQgiua.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231731#crop=0&crop=0&crop=1&crop=1&id=OHER2&originHeight=590&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190814_1aIDQgiua.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231731#crop=0&crop=0&crop=1&crop=1&id=OHER2&originHeight=590&originWidth=1347&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190952_SANuIC_aD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231650#crop=0&crop=0&crop=1&crop=1&id=akJX2&originHeight=629&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190952_SANuIC_aD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231650#crop=0&crop=0&crop=1&crop=1&id=akJX2&originHeight=629&originWidth=1347&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 根据刚刚的 Commit 记录找到相应的任务,点击 Deploy 查看部署情况 , 若全部打钩，恭喜你，你现在可以享受自动部署的快感了。

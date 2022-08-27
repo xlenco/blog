@@ -1,4 +1,12 @@
 ---
+title: Microsoft应用永久密钥获取教程
+urlname: sq3c04
+date: '2022-08-26 23:46:33 +0800'
+tags: []
+categories: []
+---
+
+---
 
 title: Microsoft应用永久密钥获取教程
 tags: 杂项
@@ -30,5 +38,5 @@ date: 2022-06-19 18:47:47
 
 ### 结尾
 
-![](https://ik.imagekit.io/nicexl/text/71355945_8yY4Li2U0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655635911325#crop=0&crop=0&crop=1&crop=1&id=aRFE8&originHeight=348&originWidth=929&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/nicexl/text/71355945_8yY4Li2U0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655635911325#crop=0&crop=0&crop=1&crop=1&id=aRFE8&originHeight=348&originWidth=929&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 在 Response preview 中的 secretText 处就是你的 secret 值

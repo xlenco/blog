@@ -1,12 +1,13 @@
 ---
+title: '[转载]白嫖Replit搭建不蒜子自建后端'
+urlname: lkg3r5
+date: '2022-08-06 22:50:52 +0800'
 categories: 转载
-cover: "[https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009](https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009)"
-date: "2022-08-06 22:50:52"
+cover: >-
+  [https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009](https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009)
 tags:
   - Python
-
-title: "[转载]白嫖Replit搭建不蒜子自建后端"
-updated: "2022-08-07 07:36:51"
+updated: '2022-08-07 07:36:51'
 abbrlink: d80b
 ---
 
@@ -22,7 +23,7 @@ abbrlink: d80b
 
 ##### 个人版
 
-- 点击一键部署：![](https://replit.com/badge/github/zkeq/Busuanzi_backend_self#crop=0&crop=0&crop=1&crop=1&id=IXAGh&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+- 点击一键部署：![](https://replit.com/badge/github/zkeq/Busuanzi_backend_self#crop=0&crop=0&crop=1&crop=1&id=IXAGh&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
   本项目使用 `Redis` 做数据库， 空转占用内存大概 `200M`，请按需规划。
 - 成功导入后点击 🏃 `RUN` 按钮，即可完成安装！
 
@@ -36,7 +37,7 @@ abbrlink: d80b
 
 出现下图表示安装成功！~（首次会同步 `busuanzi` 的数据，多次尝试属于正常状态）~ :
 
-![](https://user-images.githubusercontent.com/62864752/164993786-8e4871a2-883e-493e-b19a-76a0d900a95c.png#crop=0&crop=0&crop=1&crop=1&id=CI4fy&originHeight=767&originWidth=1440&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://user-images.githubusercontent.com/62864752/164993786-8e4871a2-883e-493e-b19a-76a0d900a95c.png#crop=0&crop=0&crop=1&crop=1&id=CI4fy&originHeight=767&originWidth=1440&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 使用
 

@@ -1,4 +1,12 @@
 ---
+title: butterfly替换cdn
+urlname: ntcxgo
+date: '2022-08-26 23:46:07 +0800'
+tags: []
+categories: []
+---
+
+---
 
 title: butterfly替换jsdelivr cdn链接教程
 categories: 笔记
@@ -18,7 +26,7 @@ themes/butterfly/_config.yml
 
 新版 butterfly cdn 配置页面，在\_config.yml 底部
 
-![](https://ik.imagekit.io/nicexl/text/57822202270702.jpg#crop=0&crop=0&crop=1&crop=1&id=Eaamc&originHeight=634&originWidth=1018&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/nicexl/text/57822202270702.jpg#crop=0&crop=0&crop=1&crop=1&id=Eaamc&originHeight=634&originWidth=1018&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 目前能用的 jsdelivr 链接
 
