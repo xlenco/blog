@@ -22,14 +22,15 @@ jobs:
 
       - name: 安装 Hexo
         run: |
-          export TZ='Asia/Shanghai'
-          export YUQUE_TOKEN=${{ secrets.YUQUE_TOKEN }}
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
           npm install yuque-hexo-lyrics -g
           yuque-hexo-lyrics sync
           yuque-hexo-lyrics clean
+        with:
+          TZ: Asia/Shanghai
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
 
       - name: 设置密钥
         env:
