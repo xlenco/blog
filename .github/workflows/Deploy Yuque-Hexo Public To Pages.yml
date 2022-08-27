@@ -34,10 +34,9 @@ jobs:
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
-#          npm install yuque-hexo -g
-          npm install yuque-hexo-lyrics -g
-          yuque-hexo-lyrics clean
-          yuque-hexo-lyrics sync
+          npm install yuque-hexo -g
+          yuque-hexo clean
+          yuque-hexo sync
           
       - name: 更新 语雀拉取缓存及文章 #更新yuque 拉取的文章到GitHub仓库
         run: |
