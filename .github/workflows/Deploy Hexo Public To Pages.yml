@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       # check it to your workflow can access it
       # from: https://github.com/actions/checkout
@@ -34,6 +34,7 @@ jobs:
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+          TZ: Asia/Shanghai
         run: |
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
