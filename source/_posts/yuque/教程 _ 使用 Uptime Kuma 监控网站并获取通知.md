@@ -1,19 +1,15 @@
 ---
-
 abbrlink: db5
 categories:
+  - 笔记
 
-- 笔记
-
-cover: [https://nsso.eu.org/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg](https://nsso.eu.org/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg)
-date: '2022-08-06 15:07:01'
+cover: https://ik.imagekit.io/xlenco/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661598662138
+date: "2022-08-06 15:07:01"
 tags:
-
-- Wed
+  - Wed
 
 title: 教程 | 使用 Uptime Kuma 监控网站
 updated: 2022-08-06 17:17:49
-
 ---
 
 ## 前言
@@ -26,7 +22,7 @@ updated: 2022-08-06 17:17:49
 
 成品：[Xlenco の监控云台](https://uptime.xilej.repl.co/status/xlenco)
 
-预览：![](https://nsso.eu.org/img/ff6946fc-cb28-43cc-b357-0f2b3a84d3d0.jpeg#crop=0&crop=0&crop=1&crop=1&id=j31uC&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+预览：![](https://nsso.eu.org/img/ff6946fc-cb28-43cc-b357-0f2b3a84d3d0.jpeg#crop=0&crop=0&crop=1&crop=1&id=j31uC&originHeight=1087&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 后台也十分好看～
 
