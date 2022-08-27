@@ -1,12 +1,4 @@
 ---
-title: hexo-githubcalendar插件
-urlname: two4p0
-date: '2022-08-26 23:46:33 +0800'
-tags: []
-categories: []
----
-
----
 
 title: 教程：hexo-githubcalendar 插件 1.0-为你的hexo添加首页github贡献图
 tags: NPM
@@ -17,7 +9,7 @@ abbrlink: 221d
 date: 2022-06-30 07:15:39
 ---
 
-![](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160#crop=0&crop=0&crop=1&crop=1&id=naPUs&originHeight=313&originWidth=865&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160#crop=0&crop=0&crop=1&crop=1&id=naPUs&originHeight=313&originWidth=865&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### NPM 插件安装的部署方法：
 
