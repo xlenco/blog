@@ -11,7 +11,7 @@ aside: false
 <!-- 将apiurl改成你后端生成的api地址 -->
 <script type="text/javascript">
   var fdataUser = {
-    apiurl: 'https://hexo-circle-of-friends-d.vercel.app/'
+    apiurl: 'https://xlenco.github.io/jsproxy/-----https://hexo-circle-of-friends-d.vercel.app/'
   }
 </script>
 <link rel="stylesheet" href="https://static.onmicrosoft.cn/zkeq/fcircle-beta.css">
