@@ -21,7 +21,6 @@ jobs:
 
       - name: 安装 Hexo
         run: |
-          export TZ='Asia/Shanghai'
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
