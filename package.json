@@ -17,7 +17,6 @@
     "mdNameFormat": "title",
     "adapter": "markdown",
     "concurrency": "5",
-    "timeout": "100s",
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "xlenco",
     "repo": "posts",
