@@ -5,21 +5,17 @@ on: [push, repository_dispatch, workflow_dispatch]
 
 jobs:
   deploy:
+    name: Deploy Hexo Public To Pages
     runs-on: ubuntu-latest
-    steps:
-      - name: 检查分支
-        uses: actions/checkout@v3
-        with:
-          ref: main
     env:
       TZ: Asia/Shanghai
-      YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}     
+      YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}    
 
       #2020年10月后github新建仓库默认分支改为main，注意更改
       #但私有仓库貌似还是master并没有变
 
       - name: 安装 Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: "16.x"
 
