@@ -13,7 +13,9 @@ jobs:
       # from: https://github.com/actions/checkout
       - name: Checkout Repository master branch
         uses: actions/checkout@master
-
+        with:
+          TZ: Asia/Shanghai
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
       # from: https://github.com/actions/setup-node
       - name: Setup Node.js 16.x
         uses: actions/setup-node@master
@@ -28,9 +30,7 @@ jobs:
           npm install yuque-hexo-lyrics -g
           yuque-hexo-lyrics sync
           yuque-hexo-lyrics clean
-        with:
-          TZ: Asia/Shanghai
-          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+
 
       - name: 设置密钥
         env:
