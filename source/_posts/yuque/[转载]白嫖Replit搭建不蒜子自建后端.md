@@ -1,6 +1,6 @@
 ---
 categories: 转载
-cover: "[https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009](https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009)"
+cover: "https://ik.imagekit.io/nicexl/img/885f6d28-7fd8-45a0-9613-b924443d3211_wd9aag8_-.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661082442009"
 date: "2022-08-06 22:50:52"
 tags:
   - Python
@@ -22,7 +22,7 @@ abbrlink: d80b
 
 ##### 个人版
 
-- 点击一键部署：![](https://replit.com/badge/github/zkeq/Busuanzi_backend_self#crop=0&crop=0&crop=1&crop=1&id=IXAGh&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+- 点击一键部署：![](https://replit.com/badge/github/zkeq/Busuanzi_backend_self#crop=0&crop=0&crop=1&crop=1&id=IXAGh&originHeight=36&originWidth=130&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
   本项目使用 `Redis` 做数据库， 空转占用内存大概 `200M`，请按需规划。
 - 成功导入后点击 🏃 `RUN` 按钮，即可完成安装！
 
