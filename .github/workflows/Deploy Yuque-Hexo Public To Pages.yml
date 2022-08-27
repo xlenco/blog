@@ -1,7 +1,7 @@
 name: 自动部署
 
 # 当有改动推送和语雀发布时，启动Action
-on: [push, repository_dispatch, workflow_dispatch]
+on: [push, repository_dispatch]
 
 jobs:
   deploy:
@@ -11,9 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-        env:
-          TZ: Asia/Shanghai
-          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+
       #2020年10月后github新建仓库默认分支改为main，注意更改
       #但私有仓库貌似还是master并没有变
 
@@ -24,6 +22,8 @@ jobs:
 
       - name: 安装 Hexo
         run: |
+          export TZ='Asia/Shanghai'
+          export YUQUE_TOKEN='${{ secrets.YUQUE_TOKEN }}'
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
