@@ -10,19 +10,19 @@
     "github-yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp",
     "github": "npm run build && hexo algolia && gulp"
   },
-  "yuqueConfig_dsal": {
-    "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "xlenco",
-    "repo": "posts",
+  "yuqueConfig": {
     "postPath": "/source/_posts/yuque",
     "cachePath": "yuque.json",
     "lastGeneratePath": "time.log",
-    "concurrency": "5",
     "mdNameFormat": "title",
-    "onlyPublished": false,
-    "onlyPublic": true,
     "adapter": "hexo",
-    "timeout": "100s"
+    "concurrency": "5",
+    "timeout": "100s",
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "xlenco",
+    "repo": "posts",
+    "onlyPublished": true,
+    "onlyPublic": false
   },
   "hexo": {
     "version": "6.2.0"
