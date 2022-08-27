@@ -1,21 +1,17 @@
 ---
-
 abbrlink: 3b89
 categories:
+  - 笔记
 
-- 笔记
-
-cover: [https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg](https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg)
-date: '2022-06-16 06:09:37'
+cover: https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg
+date: "2022-06-16 06:09:37"
 description: 主要讲什么是Markdown语法，以及Markdown的用法
 swiper_index: 3
 tags:
-
-- Markdown
+  - Markdown
 
 title: Markdown语法全面详解
 updated: 2022-06-16 00:00:00
-
 ---
 
 # Markdown 语法全面详解
