@@ -2,7 +2,7 @@
 title: Butterfly美化魔改：自定义右键菜单
 tags: Butterfly
 categories: 教程
-cover: "[https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg)"
+cover: 'https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg'
 swiper_index: 2
 abbrlink: 8d1e
 date: 2022-06-06 16:54:30
@@ -10,21 +10,21 @@ date: 2022-06-06 16:54:30
 
 最近发现[DoraKika](https://dorakika.cn/)写的右键菜单，风格简洁，十分的好看。并且支持[fontawesome](https://fontawesome.com/)
 
-可以在 rightmenu.pug 中自行添加
+可以在rightmenu.pug中自行添加
 
-![](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg#crop=0&crop=0&crop=1&crop=1&id=TaVL9&originHeight=257&originWidth=398&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![效果预览](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg)
 
 下面带来教程
 
-#### 创建 rightmenu.pug 文件
+#### 创建rightmenu.pug文件
 
 ```
 /themes/butterfly/layout/includes
 ```
 
-在/includes/dorakika 里创建 rightmenu.pug 文件
+在/includes/dorakika里创建rightmenu.pug文件
 
-dorakika 不是自带的文件夹，而是博主创建的方便管理的，推荐也创建个。
+dorakika不是自带的文件夹，而是博主创建的方便管理的，推荐也创建个。
 
 #### rightmenu.pug
 
@@ -52,7 +52,7 @@ dorakika 不是自带的文件夹，而是博主创建的方便管理的，推�
 			span='阅读模式'
 ```
 
-#### 修改 layout.pug 文件
+#### 修改layout.pug文件
 
 添加如下内容
 
@@ -60,7 +60,7 @@ dorakika 不是自带的文件夹，而是博主创建的方便管理的，推�
 !=partial('includes/dorakika/rightmenu',{}, {cache:true})
 ```
 
-#### 创建 rightmenu.css 文件
+#### 创建rightmenu.css文件
 
 在如下目录创建
 
@@ -143,7 +143,7 @@ dorakika 不是自带的文件夹，而是博主创建的方便管理的，推�
 }
 ```
 
-#### 创建 rightmenu.js 文件
+#### 创建rightmenu.js文件
 
 在如下目录里创建
 
@@ -258,15 +258,15 @@ if(! (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mob
 }
 ```
 
-#### 在 head 和 bottom 分别引入 js 和 css
+#### 在head和bottom分别引入js和css
 
-在 head 引入如下内容
+在head引入如下内容
 
 ```
 - <link rel="stylesheet" href="/css/rightmenu.css">
 ```
 
-在 bottom 引入如下内容
+在bottom引入如下内容
 
 ```
 - <script src="/js/rightmenu.js"></script>
@@ -274,3 +274,4 @@ if(! (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mob
 ```
 
 然后就大功告成了！(◍˃̶ᗜ˂̶◍)✩
+

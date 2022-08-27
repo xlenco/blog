@@ -1,26 +1,19 @@
 ---
-
 abbrlink: 933a
 categories:
-
 - 笔记
-
-cover: [https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097](https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097)
+cover: https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097
 date: '2022-07-28 14:33:58'
 tags:
-
 - JavaScript
-
 title: ClientWorker Course
 updated: 2022-08-19 18:23:10
-
 ---
-
 ### ClientWorker
 
 ### 地址
 
-{% link ClientWorker, [https://clientworker.js.org](https://clientworker.js.org), [https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png](https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png) %}
+{% link ClientWorker, https://clientworker.js.org, https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
 
 ## 快速上手
 
@@ -35,19 +28,19 @@ importScripts('https://cdn.jsdelivr.net/npm/clientworker')
 在 `{blogroot}/source/` 新建 `config.yaml`写入以下内容
 
 ```
-name: ClientWorker
+name: ClientWorker 
 catch_rules:
   - rule: _
     transform_rules:
       - search: \#.+
         searchin: url
         replace: ''
-      - search: _
+      - search: _ 
         action: fetch
         fetch:
-          engine: fetch
-      - search: (^4|^5)
-        searchin: status
+          engine: fetch 
+      - search: (^4|^5) 
+        searchin: status 
         action: return
         return:
           body: The GateWay is down!This Page is provided by ClientWorker!
@@ -98,7 +91,7 @@ if (!!navigator.serviceWorker) {
 </script>
 ```
 
-#### 编辑 {blogroot}/\_config.butterfly.yml 文件
+#### 编辑 {blogroot}/_config.butterfly.yml文件
 
 ```
 inject:
@@ -106,7 +99,7 @@ inject:
 +    - <script src="/js/ClientWorker.js"></script>
 ```
 
-#### 编辑\_config.yml 文件
+#### 编辑_config.yml文件
 
 ```
 skip_render:

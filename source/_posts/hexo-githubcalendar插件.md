@@ -1,15 +1,14 @@
 ---
-
 title: 教程：hexo-githubcalendar 插件 1.0-为你的hexo添加首页github贡献图
 tags: NPM
 categories: 教程
-cover: 
-[https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true](https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true)
+cover: >-
+  https://eus-www.sway-cdn.com/s/UID4jlCINFPBsQFM/images/hDIFrQwzl2nViw?quality=750&allowAnimation=true
 abbrlink: 221d
 date: 2022-06-30 07:15:39
 ---
 
-![](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160#crop=0&crop=0&crop=1&crop=1&id=naPUs&originHeight=313&originWidth=865&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![1](https://ik.imagekit.io/nicexl/text/dgfhrjn_MFJ_84700.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656554940160)
 
 ### NPM 插件安装的部署方法：
 
@@ -23,7 +22,7 @@ npm i hexo-githubcalendar --save
 cnpm i hexo-githubcalendar --save
 ```
 
-#### 2.添加\_config 配置项 (不是主题的)：
+#### 2.添加_config 配置项 (不是主题的)：
 
 ```
 githubcalendar:
@@ -52,14 +51,14 @@ githubcalendar:
 
 含义：是否开启插件
 
-#####
+##### 
 
 ##### enable_page
 
 参数： /
 含义： 路由地址，如 / 代表主页。/me/ 代表自我介绍页等等
 
-#####
+##### 
 
 ##### user
 
@@ -82,7 +81,7 @@ githubcalendar:
 
 最后墙的名字即是 name;
 
-```
+````
 <div name="我是墙" id="recent-posts">
   <!-- id=>type  recent-posts=>name    -->
   <div name="我是画框">
@@ -91,7 +90,7 @@ githubcalendar:
     </div>
   </div>
 </div>
-```
+````
 
 ##### githubcalendar_html
 
@@ -170,7 +169,7 @@ color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc
 
 **参数：** [https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js](https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js)
 **含义：** jsd 加速的 js，将 github calendar 挂载入容器中
-**目前已知 bug：** 在 1.21 适配 retina 屏幕后虽解决了模糊问题，但部分用户的 tooltip 会出现数据错误。降级到 [@1.16 ](/1.16) 使用即可解决。
+**目前已知 bug：** 在 1.21 适配 retina 屏幕后虽解决了模糊问题，但部分用户的 tooltip 会出现数据错误。降级到 @1.16 使用即可解决。
 
 ##### plus_style
 
@@ -191,3 +190,4 @@ hexo clean && hexo g && hexo s
 ```
 
 即发现部署完成了
+

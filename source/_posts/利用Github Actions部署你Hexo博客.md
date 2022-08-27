@@ -1,17 +1,13 @@
 ---
 categories:
-  - 教程
-
-cover: "[https://ik.imagekit.io/nicexl/img/7bf185e5.png](https://ik.imagekit.io/nicexl/img/7bf185e5.png)"
-date: "2022-08-25 22:01:13"
+- 教程
+cover: https://ik.imagekit.io/nicexl/img/7bf185e5.png
+date: '2022-08-25 22:01:13'
 tags:
-  - Hexo
-
+- Hexo
 title: 利用Github Actions自动化部署你Hexo博客
-abbrlink: "77e3"
 ---
-
-### Github Actions 概念
+### Github Actions概念
 
 GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。
 
@@ -21,37 +17,38 @@ GitHub 提供 Linux、Windows 和 macOS 虚拟机来运行工作流程，或者�
 
 ### 正文
 
-Git 推送到 Github 库的常用连接方案是 HTTPS 和 SSH 这两种连接方式。
+Git推送到Github库的常用连接方案是HTTPS和SSH这两种连接方式。
 
-所以 Actions 自动化也大致分为两种。这里主要讲 HTTPS 连接部署方式
+所以Actions自动化也大致分为两种。这里主要讲HTTPS连接部署方式
 
-##### HTTPS 连接部署方式
 
-部署简单适合小白。缺点:有时候可能遇到不知名 bug。
+##### HTTPS连接部署方式
 
-1. 获取 Github access tokens
+部署简单适合小白。缺点:有时候可能遇到不知名bug。
+
+1. 获取Github access tokens
    打开https://github.com/settings/tokens
-   点击 Generate new token 新建个 token
-   ![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=L2uNP&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+   点击Generate new token新建个token
+   ![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397)
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397#crop=0&crop=0&crop=1&crop=1&id=w5T9Z&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826175258.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661507667397)
 
-![](https://ik.imagekit.io/xlenco/img/20200923085908748_yyLI6zVK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661508148020#crop=0&crop=0&crop=1&crop=1&id=G0fCF&originHeight=183&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/20200923085908748_yyLI6zVK8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661508148020)
 
-### 创建存放 Hexo 源码的私有仓库
+### 创建存放Hexo源码的私有仓库
 
 创建完成后，需要把博客的源码`push`到这里。首先获取远程仓库地址，同样`SSH`和`HTTPS`均可。`SSH`在绑定过`ssh key`的设备上无需再输入密码，`HTTPS`则需要输入密码，但是`SSH`偶尔会遇到端口占用的情况。
 
 完成上述操作后新建`[Blogroot].github/workflows/autodeploy.yml`
 
-```
+```autodeploy.yml
 (# 当有改动推送到master分支时，启动Action
 name: 自动部署
 
 on:
   push:
     branches:
-      - main
+      - main 
 
   release:
     types:
@@ -106,7 +103,7 @@ jobs:
         git push --force --quiet "https://${{ secrets.GITEEUSERNAME }}:${{ secrets.GITEETOKEN }}@gitee.com/${{ secrets.GITEEUSERNAME }}/${{ secrets.GITEEUSERNAME }}.git" master:master
 ```
 
-{% tip info %}上方配置包含 gitee 和 coding，请自行删减{% endtip %}
+{% tip info %}上方配置包含gitee和coding，请自行删减{% endtip %}
 
 #### 添加环境变量
 
@@ -116,24 +113,26 @@ jobs:
 
 | [Blogroot] | 本地存放博客源码的文件夹路径 |
 
-| GITHUBUSERNAME | Github 用户名 |
+| GITHUBUSERNAME | Github用户名 |
 
-| GITHUBTOKEN | Github 用户邮箱地址 |
+| GITHUBTOKEN | Github用户邮箱地址 |
 
-| TOKENUSER | 你部署服务的 Secrets |
+| TOKENUSER | 你部署服务的Secrets |
 
 | GITHUBTOKEN | Github Secrets |
 
 在你仓库的`Settings->Secrets->actions`
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826182938_Ygv6lo1Va.jpg#crop=0&crop=0&crop=1&crop=1&id=AgjkB&originHeight=651&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826182938_Ygv6lo1Va.jpg)
+
+
 
 ### 查看部署情况
 
-此时，打开 GIthub 存放源码的私有仓库，找到 action。
+此时，打开GIthub存放源码的私有仓库，找到action。
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190814_1aIDQgiua.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231731#crop=0&crop=0&crop=1&crop=1&id=OHER2&originHeight=590&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190814_1aIDQgiua.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231731)
 
-![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190952_SANuIC_aD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231650#crop=0&crop=0&crop=1&crop=1&id=akJX2&originHeight=629&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/xlenco/img/VeryCapture_20220826190952_SANuIC_aD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661512231650)
 
-根据刚刚的 Commit 记录找到相应的任务,点击 Deploy 查看部署情况 , 若全部打钩，恭喜你，你现在可以享受自动部署的快感了。
+根据刚刚的Commit记录找到相应的任务,点击Deploy查看部署情况 , 若全部打钩，恭喜你，你现在可以享受自动部署的快感了。

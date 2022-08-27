@@ -7,21 +7,20 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "github-yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp",
+    "github-yuque": "yuque-hexo-lyrics sync && npm run build && hexo algolia && gulp",
     "github": "npm run build && hexo algolia && gulp"
   },
-  "yuqueConfig": {
-    "postPath": "source/_posts",
-    "cachePath": "yuque.json",
-    "mdNameFormat": "slug",
-    "adapter": "markdown",
-    "concurrency": 5,
+  "yuqueConfig_dsal": {
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "xlenco",
     "repo": "posts",
-    "token": "2iBI81ooZ6lzBbDLHAMmtaa5OYdzNLSLbEQDL3yA",
-    "onlyPublished": true,
-    "onlyPublic": true
+    "postPath": "src/_posts/yuque",
+    "cachePath": "yuque_dsal.json",
+    "mdNameFormat": "slug",
+    "onlyPublished": false,
+    "onlyPublic": true,
+    "adapter": "hexo",
+    "timeout": "100s"
   },
   "hexo": {
     "version": "6.2.0"

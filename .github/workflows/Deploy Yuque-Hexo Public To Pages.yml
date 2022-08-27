@@ -23,13 +23,13 @@ jobs:
       - name: 安装 Hexo
         run: |
           export TZ='Asia/Shanghai'
-          export YUQUE_TOKEN='${{ secrets.YUQUE_TOKEN }}'
+          export YUQUE_TOKEN=${{ secrets.YUQUE_TOKEN }}
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
-          npm install yuque-hexo -g
-          yuque-hexo clean
-          yuque-hexo sync
+          npm install yuque-hexo-lyrics -g
+          yuque-hexo-lyrics sync
+          yuque-hexo-lyrics clean
           
 
       - name: 更新 语雀拉取缓存及文章 #更新yuque 拉取的文章到GitHub仓库

@@ -1,20 +1,17 @@
 ---
 categories:
   - 教程
-
-cover: "[https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg](https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg)"
-date: "2022-07-28 11:51:20"
+cover: 'https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg'
+date: '2022-07-28 11:51:20'
 tags:
   - Butterfly
-
 title: butterfly版权块美化教程
-updated: "2022-07-29 11:05:14"
+updated: '2022-07-29 11:05:14'
 abbrlink: d7af
 ---
-
 ### 教程
 
-#### 修改 post-copyright.pug
+#### 修改post-copyright.pug
 
 打开**ROOT\themes\butterfly\layout\includes\post**文件夹，将下列代码覆盖**post-copyright.pug**文件
 
@@ -53,13 +50,13 @@ if theme.post_copyright.enable && page.copyright !== false
 
 注意，是覆盖，不是增加！
 
-#### 修改 post.styl
+#### 修改post.styl
 
 打开`ROOT\themes\butterfly\source\css_layout文件夹`，修改`post.styl`文件
 
 修改范围：`.post-copyright`至 `.post-outdate-notice`
 
-##### diff 模式
+##### diff模式
 
 ```
 .post-copyright
@@ -172,9 +169,9 @@ if theme.post_copyright.enable && page.copyright !== false
     color: $noticeOutdate-color
 ```
 
-#### 自定义 css
+#### 自定义css
 
-新建 `copyright.css`，适配夜间模式和美化字体样式
+新建 `copyright.css `，适配夜间模式和美化字体样式
 
 ```
 [data-theme="dark"]
