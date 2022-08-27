@@ -14,10 +14,20 @@ jobs:
       #2020年10月后github新建仓库默认分支改为main，注意更改
       #但私有仓库貌似还是master并没有变
 
-      - name: 安装 Node
-        uses: actions/setup-node@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@main
         with:
           node-version: "16.x"
+          check-latest: true
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
 
       - name: 安装 Hexo
         run: |
