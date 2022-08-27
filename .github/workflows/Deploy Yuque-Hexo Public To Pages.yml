@@ -34,6 +34,7 @@ jobs:
           npm install hexo-cli -g
           npm install gulp-cli -g
           #如果你有使用gulp的话，打开上面这一行
+          npm install yuque-hexo -g
           npm install yuque-hexo-lyrics -g
           yuque-hexo-lyrics clean
           yuque-hexo-lyrics sync
