@@ -325,7 +325,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://xlenco.github.io/jsproxy/-----https://waline-test-onece.vercel.app
+  serverURL: https://waline.xlenco.eu.org
   pageview: true
   option:
    emoji: [
