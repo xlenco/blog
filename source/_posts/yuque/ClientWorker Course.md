@@ -1,12 +1,4 @@
 ---
-title: ClientWorker Course
-urlname: zpn9dy
-date: '2022-08-26 23:46:12 +0800'
-tags: []
-categories: []
----
-
----
 
 abbrlink: 933a
 categories:

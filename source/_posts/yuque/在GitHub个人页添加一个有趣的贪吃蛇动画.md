@@ -1,12 +1,4 @@
 ---
-title: 在GitHub个人页添加一个有趣的贪吃蛇动画
-urlname: qz0ant
-date: '2022-08-26 23:47:24 +0800'
-tags: []
-categories: []
----
-
----
 categories:
   - 教程
 
@@ -21,13 +13,13 @@ abbrlink: ce95
 ---
 
 这是我之前在逛 GitHub 发现的有意思的东西，给自己的个人 GitHub 主页添加一个贪吃蛇动画，效果如下：
-![](https://nsso.eu.org/img/a1ebe329-c070-4ba4-a43a-ffb0ebf92d39.gif#crop=0&crop=0&crop=1&crop=1&id=fCpGv&originHeight=206&originWidth=880&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://nsso.eu.org/img/a1ebe329-c070-4ba4-a43a-ffb0ebf92d39.gif#crop=0&crop=0&crop=1&crop=1&id=fCpGv&originHeight=206&originWidth=880&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 贪吃蛇会吃掉我们在 GitHub 上提交的代码记录，即吃掉那些绿色的格子。
 
 回到前面说的，如何在 GitHub 个人主页，实现贪吃蛇的小动画呢？
 
-![](https://github-readme-stats.vercel.app/api/pin/?username=L1cardo&repo=L1cardo&show_owner=true#crop=0&crop=0&crop=1&crop=1&id=PvPYC&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://github-readme-stats.vercel.app/api/pin/?username=L1cardo&repo=L1cardo&show_owner=true#crop=0&crop=0&crop=1&crop=1&id=PvPYC&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 非常简单，只需要你会复制代码就可以了，这个贪吃蛇小动画的代码来自 GitHub 上的一位用户 [@L1cardo ](/L1cardo) 的个人页面：
 

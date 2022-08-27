@@ -1,12 +1,4 @@
 ---
-title: Butterfly美化魔改自定义右键菜单
-urlname: gr1gxw
-date: '2022-08-26 23:46:03 +0800'
-tags: []
-categories: []
----
-
----
 title: Butterfly美化魔改：自定义右键菜单
 tags: Butterfly
 categories: 教程
@@ -20,7 +12,7 @@ date: 2022-06-06 16:54:30
 
 可以在 rightmenu.pug 中自行添加
 
-![](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg#crop=0&crop=0&crop=1&crop=1&id=TaVL9&originHeight=257&originWidth=398&originalType=binary∶=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg#crop=0&crop=0&crop=1&crop=1&id=TaVL9&originHeight=257&originWidth=398&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 下面带来教程
 
