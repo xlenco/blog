@@ -52,7 +52,13 @@ git --version
 ```
 
 显示版本号，即安装无误
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg)
+![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg) 4.在 cmd 中使用 Git
+cmd 中输入 sh 即可 5.更换 NPM 镜像源
+由于官方默认的 NPM 镜像源在国内速度不是很好，建议换成淘宝的镜像
+
+```
+npm config set registry https://registry.npmmirror.com
+```
 
 ## 2.3 注册 Github 账号
 
