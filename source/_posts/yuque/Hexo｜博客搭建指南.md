@@ -8,7 +8,7 @@ categories:
 
 cover: https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661674283434-3df1dab2-b9a0-489f-a8ab-054e1ac698b9.jpeg
 date: 2022-8-28 16:12
-updated: 2022-8-28 16:12
+updated: 2022-8-28 20:12
 ---
 
 ## 1. 引言
@@ -68,6 +68,9 @@ cmd 中输入 sh 即可 6.更换 NPM 镜像源
 ```
 npm config set registry https://registry.npmmirror.com
 ```
+
+7.在 cmd 使用 Git
+cmd 输入'sh'即可
 
 ## 2.3 注册 Github 账号
 
