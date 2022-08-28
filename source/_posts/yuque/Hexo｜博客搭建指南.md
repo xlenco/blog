@@ -44,7 +44,16 @@ npm -v
 
 1.进入官网下载
 官网：[https://git-scm.com/downloads](https://git-scm.com/downloads) 2.安装
-选好路径，完成安装 3.检查
+选好路径，完成安装 3.配置 Git 环境变量
+右键我的电脑 --> 属性，点击高级系统设置，最终在环境变量里添加你的 Git 路径
+Git 路径示例
+
+```
+C:\Program Files (x86)\Git\bin
+```
+
+{% note danger simple %}具体路径以你系统为准{% endnote %}
+![](<[https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349](https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349)>) 4.检查
 打开 git bash 或 cmd，输入：
 
 ```
@@ -52,8 +61,8 @@ git --version
 ```
 
 显示版本号，即安装无误
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg) 4.在 cmd 中使用 Git
-cmd 中输入 sh 即可 5.更换 NPM 镜像源
+![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg) 5.在 cmd 中使用 Git
+cmd 中输入 sh 即可 6.更换 NPM 镜像源
 由于官方默认的 NPM 镜像源在国内速度不是很好，建议换成淘宝的镜像
 
 ```
