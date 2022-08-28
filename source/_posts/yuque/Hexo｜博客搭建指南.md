@@ -53,7 +53,7 @@ C:\Program Files (x86)\Git\bin
 ```
 
 {% note danger simple %}具体路径以你系统为准{% endnote %}
-![](<[https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349](https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349)>) 4.检查
+![](https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349) 4.检查
 打开 git bash 或 cmd，输入：
 
 ```
