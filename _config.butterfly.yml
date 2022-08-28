@@ -213,7 +213,9 @@ reward:
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
-
+      - img: /img/afdian.jpg
+        link: https://afdian.net/@xlenco
+        text: afdian
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
