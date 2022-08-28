@@ -122,7 +122,7 @@ hexo generate
 4.启动预览服务：
 
 ```
-hexo sever
+hexo server
 ```
 
 默认是 localhost:4000，打开浏览器输入即可
@@ -207,8 +207,8 @@ hexo cl # 清除缓存
 hexo clean # 清除缓存，每次重新部署时最好执行
 hexo g # 生成静态页面
 hexo generate # 生成静态页面
-hexo s # 本地端口预览
-hexo sever # 本地端口预览，默认4000运行
+hexo s # 本地端口预览 默认4000运行
+hexo server # 本地端口预览
 hexo s -p 5000 # 端口5000
 hexo d #部署
 hexo deploy #部署

@@ -303,5 +303,5 @@ $ hexo clean
 # 生成静态文件
 $ hexo generate
 # 预览
-$ hexo sever
+$ hexo server
 ```
