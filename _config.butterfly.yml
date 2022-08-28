@@ -205,7 +205,7 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
     # - img: /img/wechat.jpg
     #   link:
