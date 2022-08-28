@@ -14,7 +14,7 @@ updated: 2022-8-28 16:12
 ## 1. 引言
 
 不知不觉，我的博客已经在风雨飘摇中运行超过 1 个月时间了，，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…
-![](<[https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg)>)
+![https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg)
 
 ## 2. 环境部署
 
@@ -22,7 +22,7 @@ updated: 2022-8-28 16:12
 
 1.进入官网选择对应的系统下载：
 官网：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-![](<[https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0)>)
+![https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0)
 
 ### 2.安装
 
@@ -52,7 +52,7 @@ git --version
 ```
 
 显示版本号，即安装无误
-![](<[https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg)>)
+![][https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg)
 
 ## 2.3 注册 Github 账号
 
@@ -95,7 +95,7 @@ npm install hexo --save
 hexo -v
 ```
 
-![](<[https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg)>) 2.初始化一个文件夹：
+![][https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg) 2.初始化一个文件夹：
 
 ```
 hexo init blog // hexo会安装到blog这个文件夹
