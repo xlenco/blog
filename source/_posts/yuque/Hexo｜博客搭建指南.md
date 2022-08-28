@@ -22,14 +22,8 @@ updated: 2022-8-28 20:12
 
 1.进入官网选择对应的系统下载：
 官网：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0)
-
-### 2.安装
-
-选好路径，完成安装
-
-### 3.检查
-
+![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0) 2.安装
+选好路径，完成安装 3.检查
 打开 cmd 或者 powershell,输入:
 
 ```
@@ -40,7 +34,7 @@ npm -v
 显示版本号，即安装无误
 {% note info simple %}npm 为 Node.js 的包管理工具{% endnote %}
 
-## 2.2 安装 Git
+### 2.2 安装 Git
 
 1.进入官网下载
 官网：[https://git-scm.com/downloads](https://git-scm.com/downloads) 2.安装
@@ -69,10 +63,7 @@ cmd 中输入 sh 即可 6.更换 NPM 镜像源
 npm config set registry https://registry.npmmirror.com
 ```
 
-7.在 cmd 使用 Git
-cmd 输入'sh'即可
-
-## 2.3 注册 Github 账号
+### 2.3 注册 Github 账号
 
 1.Github 官网[https://github.com,](https://github.com,)注册账号 2.新建项目
 项目名字为你的昵称.github.io，例如：
