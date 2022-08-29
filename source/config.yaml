@@ -48,7 +48,7 @@ catch_rules:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
   # github加速
-  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh|jsd\.cxl2020mc\.top\/gh)
+  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
     transform_rules:
       - search: _
         replace:
@@ -66,3 +66,10 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
+  - rule: /*.webp
+    transform_rules:
+      - search: _
+        action: fetch
+        fetch:
+          cache:
+            expire: 1000*60*60*8 # 缓存8小时
