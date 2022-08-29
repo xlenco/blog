@@ -13,7 +13,7 @@ updated: 2022-8-28 20:12
 
 ## 1. 引言
 
-不知不觉，我的博客已经在风雨飘摇中运行超过 1 个月时间了，，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…
+不知不觉，我的博客已经在风雨飘摇中运行超过 2 个月时间了，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…
 ![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg)
 
 ## 2. 环境部署
@@ -82,8 +82,8 @@ npm config set registry https://registry.npmmirror.com
 git@github.com:XXXX/XXXX.github.io.git
 ```
 
-点击你的仓库右侧的 Settings
-向下找到'Gihub pages',点击'Launch automatic page generator'，Github 将会自动替你创建出一个 pages 的页面。 如果配置没有问题，大约几分钟之后，'yourname.github.io'这个网址就可以正常访问了
+点击你的仓库右侧的`Settings`
+向下找到`Gihub pages`,点击`Launch automatic page generator`，Github 将会自动替你创建出一个 pages 的页面。 如果配置没有问题，大约几分钟之后，`yourname.github.io`这个网址就可以正常访问了
 
 ### 2.4 安装 Hexo
 
@@ -148,8 +148,8 @@ ssh-keygen -t rsa -C "XXXXXXXXX@XXX.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
-4.然后再在'Github'中添加'ssh key'
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0) 5.修改 hexo 根目录下的文件'\_config.yml'中的 deploy，添加之前保存的 ssh：
+4.然后再在`Github`中添加`ssh key`
+![](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg?x-oss-process=image%2Fresize%2Cw_750%2Climit_0) 5.修改 hexo 根目录下的文件`_config.yml`中的 deploy，添加之前保存的 ssh：
 
 ```
 deploy:
@@ -174,7 +174,7 @@ npm install hexo-deployer-git --save
 ## 3. Hexo 相关
 
 1.新建文章
-hexo new post '我的第一篇文章'
+hexo new post `我的第一篇文章`
 2.hexo 自动生成一个 md 文件，修改 md 内容
 头部如：
 
@@ -224,7 +224,7 @@ hexo cl && hexo g && hexo d
 
 ### 4.1 推荐编辑器
 
-方便后续魔改内容
+方便后续写文章和魔改内容
 VSCode [https://code.visualstudio.com/](https://code.visualstudio.com/)
 Typora [https://www.typora.io/](https://www.typora.io/)
 Qexo [https://github.com/Qexo/Qexo](https://github.com/Qexo/Qexo)
