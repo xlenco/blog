@@ -327,7 +327,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.xlenco.eu.org 
+  serverURL: waline.xlenco.eu.org 
   pageview: true
   option:
    emoji: [
