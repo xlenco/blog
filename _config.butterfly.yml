@@ -861,7 +861,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <script src="/js/ClientWorker.js"></script>
+    # - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="45638703FCDBAEC549D1FA7EBFAB12BC" />
      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
