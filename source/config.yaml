@@ -9,7 +9,7 @@ hotpatch:
 hotconfig:
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-# 站点多线路选择
+  # 站点多线路选择
   - rule: _
     transform_rules:
       - search: _ 
@@ -66,10 +66,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
-  - rule: /*.webp
-    transform_rules:
-      - search: _
-        action: fetch
-        fetch:
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时

@@ -276,7 +276,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42
-  use: Waline # Valine,Disqus
+  use: Waline,Twikoo # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -327,7 +327,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.xlenco.eu.org 
+  serverURL: waline.xlenco.eu.org 
   pageview: true
   option:
    emoji: [
@@ -358,7 +358,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://twikoo.xlenco.eu.org
   region:
   visitor: false
   option:
@@ -822,7 +822,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -861,7 +861,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <script src="/js/ClientWorker.js"></script>
+    # - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="45638703FCDBAEC549D1FA7EBFAB12BC" />
      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
