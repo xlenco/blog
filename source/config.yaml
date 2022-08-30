@@ -9,14 +9,6 @@ hotpatch:
 hotconfig:
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-  # webp图片缓存
-  - rule: *\.webp # \将.标记为原意符号
-    transform_rules:
-      - search: _
-        action: fetch
-        fetch:
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
   # 站点多线路选择
   - rule: _
     transform_rules:
