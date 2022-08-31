@@ -10,13 +10,13 @@ menu:
      随便逛逛: /random/ || fas fa-shoe-prints
    社交||fas fa-bars:
      友链: /link/ || fas fa-link
-     开往 : https://travellings.cn/ || fas fa-train-subway
+     开往: https://travellings.cn/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
      哔哔:  /bb/  || fas fa-comment-dots
    娱乐||fas fa-cookie-bite: 
-     壁纸: /Gallery/  || fas fa-images
-     YesPlayMusic : https://yesplaymusic.xlenco.eu.org/ || fas fa-music
-     Mikutap : https://mikutap.xlenco.eu.org/ || fas fa-gamepad
+     壁纸: /album/  || fas fa-images
+     YesPlayMusic: https://yesplaymusic.xlenco.eu.org/ || fas fa-music
+     Mikutap: https://mikutap.xlenco.eu.org/ || fas fa-gamepad
    Tool||fas fa-screwdriver-wrench: 
      监控云台: https://uptime.xilej.repl.co/  || fas fa-link
 
