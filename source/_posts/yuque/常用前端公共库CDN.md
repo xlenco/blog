@@ -2,8 +2,10 @@
 title: 常用前端公共库CDN
 tags: 笔记
 categories: CDN
-cover: https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661779174084-195c015b-5408-471d-9fd3-a5f24869651f.jpeg
-date: 2022/8/29 21:13
+cover: >-
+  https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661779174084-195c015b-5408-471d-9fd3-a5f24869651f.jpeg
+date: '2022/8/29 21:13'
+abbrlink: '8606'
 updated:
 ---
 
