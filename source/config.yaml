@@ -14,10 +14,10 @@ catch_rules:
     transform_rules:
       - search: _ 
         replace: 
+          - _
           - xlenco.github.io #GithubPage托管
           - xlenco.pages.dev #Cloudflare托管
          # - xlenco.netlify.app #Netlify托管
-          - _
         action: fetch
         fetch:
           status: .*
@@ -28,16 +28,16 @@ catch_rules:
             expire: 1000*60*60*2 # 缓存8小时
             delay: 200
 # 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
+  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm)
     transform_rules:
       - search: _
         replace:
+          - _
           - https://unpkg.com
           - https://npm.elemecdn.com 
           - https://npm.sourcegcdn.com 
           - https://cdn.bilicdn.tk/npm 
           - https://cdn.staticfile.org
-          - _
         action: fetch
         fetch:
           status: 200
@@ -52,11 +52,11 @@ catch_rules:
     transform_rules:
       - search: _
         replace:
+          - _
           - https://fastly.jsdelivr.net/gh
           - https://gcore.jsdelivr.net/gh
           - https://cdn.bilicdn.tk/gh
           - https://jsd.onmicrosoft.cn/gh
-          - _
         action: fetch
         fetch:
           status: 200

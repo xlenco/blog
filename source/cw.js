@@ -1,1 +1,1 @@
-importScripts('https://cdn.jsdelivr.net/npm/clientworker')
+importScripts('https://lib.baomitu.com/clientworker/latest/dist/cw.js')
