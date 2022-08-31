@@ -15,11 +15,17 @@ catch_rules:
       - search: _
         replace:
           - _
+          - https://fastly.jsdelivr.net/npm
           - https://unpkg.com
-          - https://npm.elemecdn.com 
-          - https://npm.sourcegcdn.com 
-          - https://cdn.bilicdn.tk/npm 
-          - https://cdn.staticfile.org
+          - https://unpkg.zhimg.com        #? 回源已关闭，原缓存有效
+          - https://npm.elemecdn.com       #? 2022/7/12 确认关闭回源，缓存有效
+          - https://npm.sourcegcdn.com     #? 滥用封仓库，强制数字版本号
+          - https://cdn.bilicdn.tk/npm     #? 由GamerNoTitle提供的反代，请勿滥用:D
+          - https://npm.onmicrosoft.cn     #? zkeq大佬反代，请征得cdn主人同意后使用
+          - https://unpkg.onmicrosoft.cn   #? zkeq大佬反代，请征得cdn主人同意后使用
+          - https://jsd.onmicrosoft.cn/npm #? zkeq大佬反代，请征得cdn主人同意后使用
+          - https://cdn1.tianli0.top/npm   #? Tianli大佬反代，请征得cdn主人同意后使用
+          - https://jsd.8b9.cn/npm
         action: fetch
         fetch:
           status: 200
@@ -30,7 +36,7 @@ catch_rules:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
   # github加速
-  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
+  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/gh)
     transform_rules:
       - search: _
         replace:
