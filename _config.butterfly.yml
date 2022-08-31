@@ -870,7 +870,6 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
      - <script async data-pjax src="/js/rightmenu.js"></script>
-     - <script defer data-pjax src="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/hexo_githubcalendar.js"></script>
      - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
      - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js"></script>
      - <canvas id="universe"></canvas>  
