@@ -9,48 +9,21 @@ hotpatch:
 hotconfig:
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-# 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm)
+  # 站点多线路选择
+  - rule: _
     transform_rules:
-      - search: _
-        replace:
+      - search: _ 
+        replace: 
           - _
-          - https://fastly.jsdelivr.net/npm
-          - https://unpkg.com
-          - https://unpkg.zhimg.com        #? 回源已关闭，原缓存有效
-          - https://npm.elemecdn.com       #? 2022/7/12 确认关闭回源，缓存有效
-          - https://npm.sourcegcdn.com     #? 滥用封仓库，强制数字版本号
-          - https://cdn.bilicdn.tk/npm     #? 由GamerNoTitle提供的反代，请勿滥用:D
-          - https://npm.onmicrosoft.cn     #? zkeq大佬反代，请征得cdn主人同意后使用
-          - https://unpkg.onmicrosoft.cn   #? zkeq大佬反代，请征得cdn主人同意后使用
-          - https://jsd.onmicrosoft.cn/npm #? zkeq大佬反代，请征得cdn主人同意后使用
-          - https://cdn1.tianli0.top/npm   #? Tianli大佬反代，请征得cdn主人同意后使用
-          - https://jsd.8b9.cn/npm
+          - xlenco.github.io #GithubPage托管
+          - xlenco.pages.dev #Cloudflare托管
+         # - xlenco.netlify.app #Netlify托管
         action: fetch
         fetch:
-          status: 200
+          status: .*
           engine: parallel
-          preflight: false # false
+          preflight: false
           timeout: 3000
           cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
-  # github加速
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/gh)
-    transform_rules:
-      - search: _
-        replace:
-          - _
-          - https://fastly.jsdelivr.net/gh
-          - https://gcore.jsdelivr.net/gh
-          - https://cdn.bilicdn.tk/gh
-          - https://jsd.onmicrosoft.cn/gh
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 30000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
+            expire: 1000*60*60*2 # 缓存8小时
+            delay: 200
