@@ -70,7 +70,7 @@ catch_rules:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
    # 图床缓存
-  - rule: ^https\:\/\/ik.imagekit\.io|cdn/.nlark/.com
+  - rule: ^https\:\/\/ik\.imagekit\.io|cdn\.nlark\.com
     transform_rules:
       - search: _
         action: fetch
