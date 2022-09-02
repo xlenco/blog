@@ -83,7 +83,7 @@ catch_rules:
             expire: 1000*60*5 # 缓存5分钟
             delay: 300
   # 必应api图片缓存
-  - rule: ^https\:\/\/bing\.xlenco/.eu\.org)
+  - rule: ^https\:\/\/bing\.xlenco/.eu\.org
     transform_rules:
       - search: _
         action: fetch
