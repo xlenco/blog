@@ -69,3 +69,29 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
+   # 图床缓存
+  - rule: ^https\:\/\/ik.imagekit\.io|cdn/.nlark/.com
+    transform_rules:
+      - search: _
+        action: fetch
+        fetch:
+          status: .*
+          engine: fetch
+          preflight: true # false
+          timeout: 50000
+          cache:
+            expire: 1000*60*5 # 缓存5分钟
+            delay: 300
+  # 必应api图片缓存
+  - rule: ^https\:\/\/bing\.xlenco/.eu\.org
+    transform_rules:
+      - search: _
+        action: fetch
+        fetch:
+          status: .*
+          engine: fetch
+          preflight: true # false
+          timeout: 50000
+          cache:
+            expire: 1000*60*60 # 缓存60分钟
+            delay: 300
