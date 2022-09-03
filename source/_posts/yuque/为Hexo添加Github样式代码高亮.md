@@ -65,6 +65,18 @@ const github_token = process.env.GITHUB_TOKEN;
 
 // 找出来所有的描述
 var pages = 1;
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const crypto = require('crypto');
+const { exit } = require('process');
+const log = require('hexo-log')({
+    debug: false,
+    silent: false
+  })
+// 从环境变量里面拿到github token
+const github_token = process.env.GITHUB_TOKEN;
+
+// 找出来所有的描述
+var pages = 1;
 var is_end = false;
 var page_list = [];
 var id_list = [];
@@ -146,13 +158,14 @@ hexo.extend.filter.register('before_post_render', function (data) {
             // iframe_ele = document.createElement('iframe');
             // iframe_ele.style = "border:none;width:100%;max-height:50vh";
             // iframe_ele.setAttribute("onload", "javascript:this.style.height=`${this.contentWindow.document.body.offsetHeight}px`;this.contentWindow.document.getElementsByClassName('gist-data')[0].style.height=`${this.clientHeight-65}px`;")
-            // iframe_ele.setAttribute("srcdoc", `<head><base target='_blank'/></head><body><script src='https://gist.onmicrosoft.cn/zkeq/${id}.js'></script></body>`)
+            // iframe_ele.setAttribute("srcdoc", `<head><base target='_blank'/></head><body><script src='https://gist.github.com/zkeq/${id}.js'></script></body>`)
         return `
 
 <iframe
 style="border:none;width:100%;;max-height:66vh;"
 onload="javascript:this.style.height=\`\${this.contentWindow.document.body.offsetHeight+20}px\`;this.contentWindow.document.getElementsByClassName('gist-data')[0].style.height=\`\${this.clientHeight-55}px\`;"
-srcdoc="<script src='https://gist.github.com/xlenco/${id}.js'></script><style>.gist-meta a:nth-child(2) {display: none;} html {overflow: hidden;text-overflow: ellipsis;display: inline-block;} * {margin: 0}</style>">
+srcdoc='<meta name="description" content="Instantly share code, notes, and snippets. You can&#39;t perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session."><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><base target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }.gist-meta a:nth-child(2) {display: none;} html {overflow: hidden;text-overflow: ellipsis;display: inline-block;} * {margin: 0}</style><script src="https://gist.onmicrosoft.cn/zkeq/${id}.js" charset="utf-8"></script><script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log("maybeResize error: ", error)}}maybeResize();</script>'
+>
 </iframe>
 
 `;
@@ -186,7 +199,7 @@ function createGist (md5, gh_content, lang){
 
 ````
 
-{% note warning modern %}将上文内容中的 xlenco 改为你的 Github 用户名即可{% endnote %}
+{% note warning modern %}将上文内容中的 zkeq 改为你的 Github 用户名即可{% endnote %}
 
 #### 4. 在 Vercel 的 Environment Variables 中添加变量
 
