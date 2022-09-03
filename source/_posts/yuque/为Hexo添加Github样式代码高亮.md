@@ -14,15 +14,13 @@ updated: 2022-9-3 15:10
 
 ![](https://ik.imagekit.io/xlenco/img/Screenshot_20220903_125917_XPmKbJZQG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662185344028)
 
-## 前沿
+## 前言
 
-{% note danger modern %}1. 你需要使用 Vercel 部署博客{% endnote %}
+{% note danger modern %}1. 本教程测试环境为 Vercel{% endnote %}
 {% note danger modern %}2. 你需要 Github 账号并获取 Personal access tokens，并在 Vercel 中的 Environment Variables 中添加{% endnote %}
 {% note danger modern %}获取 Github Personal access tokens 具体教程可查看下方文章{% endnote %}
 
-{% link 点击查看, https://xlenco.eu.org/posts/77e3.html,
-https://ik.imagekit.io/xlenco/img/Screenshot_20220903_125917_XPmKbJZQG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662185344028
- %}
+{% link 点击查看, https://xlenco.eu.org/posts/77e3.html,  [https://xlenco.eu.org/img/head.webp](https://xlenco.eu.org/img/head.webp) %}
 
 ## 正文
 
