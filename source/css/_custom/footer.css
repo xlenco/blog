@@ -1,10 +1,12 @@
 /* 底部 */
 #footer {
-    background: var(--mj-card-bg);
-    display: flex;
-    flex-direction: column;
-    --mj-card-bg: #ffffff
+    color: #ffffff
 }
+[data-theme="dark"]
+#footer {
+    color: #0d0d0d
+}
+
 #footer-wrap {
     background: var(--mj-card-bg);
     padding: 0;
