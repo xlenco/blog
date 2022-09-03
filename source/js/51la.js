@@ -1,1 +1,4 @@
-LA.init("{s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JmsRdzV6syTLtUyn",ck:"JmsRdzV6syTLtUyn"}");
+//51.1a
+LA.init({ id: "JmsRdzV6syTLtUyn", ck: "JmsRdzV6syTLtUyn", hashMode: true });
+//灵雀应用监控
+new LingQue.Monitor().init({ id: "JnkoLfdriTFL8Kgt", sendSpaPv: true });
