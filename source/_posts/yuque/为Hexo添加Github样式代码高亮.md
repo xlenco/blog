@@ -203,8 +203,10 @@ function createGist (md5, gh_content, lang){
 
 #### 4. 在 Vercel 的 Environment Variables 中添加变量
 
-|VALUE|NAME|
-|GITHUB_TOKEN|这里写你 GITHUB_TOKEN 的内容|
+| VALUE        | NAME                         |
+| ------------ | ---------------------------- |
+| GITHUB_TOKEN | 这里写你 GITHUB_TOKEN 的内容 |
+
 {% note info modern %}第一次部署可能速度较慢，请耐心等待{% endnote %}
 
 ### 声明
