@@ -67,7 +67,9 @@ inject:
 在刚刚建立的`js`文件夹内新建一个`51la.js`内部写上
 
 ```js
-LA.init("这里填上安装代码的配置json");
+//51.1a
+LA.init({ id: "Jnkp8oCL537VDXz1", ck: "Jnkp8oCL537VDXz1", hashMode: true });
+//需要把上述内容换成你的id和ck
 ```
 
 然后在主题配置文件内加上
@@ -136,7 +138,9 @@ inject:
 在刚刚为异步 51la 新建的`51la.js`内部加上(注意是加上)
 
 ```js
-new LingQue.Monitor().init("这里填上安装代码的配置json");
+//灵雀应用监控
+new LingQue.Monitor().init({ id: "JnkoLfdriTFL8Kgt", sendSpaPv: true });
+//这里同样换成你的id
 ```
 
 然后在主题配置文件内加上
