@@ -91,7 +91,7 @@ hexo.extend.filter.register('before_post_render', function (data) {
             // iframe_ele = document.createElement('iframe');
             // iframe_ele.style = "border:none;width:100%;max-height:50vh";
             // iframe_ele.setAttribute("onload", "javascript:this.style.height=`${this.contentWindow.document.body.offsetHeight}px`;this.contentWindow.document.getElementsByClassName('gist-data')[0].style.height=`${this.clientHeight-65}px`;")
-            // iframe_ele.setAttribute("srcdoc", `<head><base target='_blank'/></head><body><script src='https://gist.onmicrosoft.cn/zkeq/${id}.js'></script></body>`)
+            // iframe_ele.setAttribute("srcdoc", `<head><base target='_blank'/></head><body><script src='https://gist.onmicrosoft.cn/xlenco/${id}.js'></script></body>`)
         return `
 
 <iframe 
