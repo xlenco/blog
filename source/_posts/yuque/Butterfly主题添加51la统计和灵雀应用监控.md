@@ -68,7 +68,7 @@ inject:
 
 ```js
 //51.1a
-LA.init({ id: "Jnkp8oCL537VDXz1", ck: "Jnkp8oCL537VDXz1", hashMode: true });
+LA.init({ id: "Jnkp8oCL537VDXz1", ck: "Jnkp8oCL537DXz1", hashMode: true });
 //需要把上述内容换成你的id和ck
 ```
 
@@ -139,7 +139,7 @@ inject:
 
 ```js
 //灵雀应用监控
-new LingQue.Monitor().init({ id: "JnkoLfdriTFL8Kgt", sendSpaPv: true });
+new LingQue.Monitor().init({ id: "JnkoLfriTFL8Kgt", sendSpaPv: true });
 //这里同样换成你的id
 ```
 
@@ -155,8 +155,7 @@ inject:
 ```
 
 利用 defer 标签实现按顺序异步加载
-
-> 不要变动顺序，会导致不生效
+{% note danger no-icon %}不要变动顺序，会导致不生效{% endnote %}
 
 <!-- endtab -->
 
