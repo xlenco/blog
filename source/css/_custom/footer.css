@@ -3,6 +3,7 @@
     background: var(--mj-card-bg);
     display: flex;
     flex-direction: column;
+    --mj-card-bg: #ffffff
 }
 #footer-wrap {
     background: var(--mj-card-bg);
@@ -114,6 +115,7 @@ div#footer_deal a:hover{
 }
 
 #footer #footer-wrap {
+    --font-color: #000000
     color: var(--font-color)
 }
 
