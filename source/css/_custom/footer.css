@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+SC&family=Zhi+Mang+Xing&display=swap');
-
-@import "//at.alicdn.com/t/font_3287177_uhbahhe2wc.css";
-
-
-body {
-  font-family: "HarmonyOS_Regular" !important;
-}
-
-
-
 /* 底部 */
 #footer {
     background: var(--mj-card-bg);
