@@ -112,17 +112,13 @@ jobs:
 
 ##### 变量声明
 
-| 变量名 | 常量释义 |
-
-| [Blogroot] | 本地存放博客源码的文件夹路径 |
-
-| GITHUBUSERNAME | Github 用户名 |
-
-| GITHUBTOKEN | Github 用户邮箱地址 |
-
-| TOKENUSER | 你部署服务的 Secrets |
-
-| GITHUBTOKEN | Github Secrets |
+| 变量名         | 常量释义                              |
+| -------------- | ------------------------------------- |
+| [Blogroot]     | 本地存放博客源码的文件夹路径          |
+| GITHUBUSERNAME | Github 用户名                         |
+| GITHUBTOKEN    | Github 用户邮箱地址                   |
+| TOKENUSER      | 你部署服务的 Secrets/例如 GITHUBTOKEN |
+| GITHUBTOKEN    | Github 密钥                           |
 
 在你仓库的`Settings->Secrets->actions`
 
