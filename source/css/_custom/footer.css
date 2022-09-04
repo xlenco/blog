@@ -100,8 +100,6 @@ div#footer_deal a:hover{
 #footer-banner .footer-banner-tips{
     font-weight: 700;
 }
-
-
 #footer {
     background: rgba(255,255,255,.15);
     color: #000;
@@ -115,26 +113,5 @@ div#footer_deal a:hover{
 }
 
 #footer #footer-wrap {
-    --font-color: #000000
     color: var(--font-color)
 }
-
-/* 光标框选文字颜色 */
-
-/* webkit, opera, IE9 */
-::selection {
-  background: #3f3f3f;
-  color: #fff;
-}
-/* mozilla firefox */
-::-moz-selection {
-  background: #3f3f3f;
-  color: #fff;
-}
-
-
-
-
-  
-
-
