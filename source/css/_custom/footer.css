@@ -56,6 +56,12 @@
     font-size: 1rem;
     text-align: left;
 }
+[data-theme="dark"]
+#mj-footer .footer-title {
+    color: var(--mj-secondtext);
+    font-size: 1rem;
+    text-align: left;
+}
 #mj-footer .footer-links {
     display: flex;
     flex-direction: column;
@@ -70,6 +76,12 @@
     color: var(--mj-fontcolor);
     margin-right: auto;
 }
+[data-theme="dark"]
+#mj-footer .footer-item {
+    font-size: 1rem;
+    color: var(--mj-fontcolor);
+    margin-right: auto;
+}
 #mj-footer .footer-group .footer-links a{
   text-decoration: none;
 }
@@ -77,6 +89,10 @@
 #mj-footer .footer-group .footer-links a{
   text-decoration: none;
 }
+#mj-footer .footer-group .footer-links a:hover{
+  color: var(--mj-lighttext) !important;
+}
+[data-theme="dark"]
 #mj-footer .footer-group .footer-links a:hover{
   color: var(--mj-lighttext) !important;
 }
@@ -100,6 +116,19 @@ div#footer_deal a{
     line-height: 1.3rem;
     border-radius: 3rem;
 }
+[data-theme="dark"]
+div#footer_deal a{
+    margin: 1rem 27px;
+    color: var(--mj-fontcolor);
+    font-size: 24px;
+    line-height: 1.3rem;
+    border-radius: 3rem;
+}
+div#footer_deal a:hover{
+    color: var(--mj-lighttext);
+    text-decoration: none;
+}
+[data-theme="dark"]
 div#footer_deal a:hover{
     color: var(--mj-lighttext);
     text-decoration: none;
@@ -204,11 +233,17 @@ div#footer_deal a:hover{
     border-top-left-radius: 20px;
     backdrop-filter: saturate(100%) blur(5px)
 }
-
+[data-theme="dark"]
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
 #footer::before {
     background: rgba(255,255,255,.15)
 }
-
 #footer #footer-wrap {
     color: var(--font-color)
 }
