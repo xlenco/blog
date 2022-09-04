@@ -12,7 +12,7 @@ menu:
      友链: /link/ || fas fa-link
      开往: https://travellings.cn/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
-     哔哔:  /bb/  || fas fa-comment-dots
+     说说:  /shuoshuo/  || fas fa-comment-dots
    娱乐||fas fa-cookie-bite: 
      壁纸: /album/  || fas fa-images
      YesPlayMusic: https://yesplaymusic.xlenco.eu.org/ || fas fa-music
@@ -216,6 +216,8 @@ reward:
       - img: /img/afdian.jpg
         link: https://afdian.net/@xlenco
         text: afdian
+      - img: /img/qq.png
+        text: qq
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
@@ -800,7 +802,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -861,9 +863,11 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <script src="/js/ClientWorker.js"></script>
+    # - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
-     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JmsRdzV6syTLtUyn&ck=JmsRdzV6syTLtUyn"></script>
+     - <script defer charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+     - <script defer src="/js/51la.js"></script>
      - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
      - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
      - <meta name="referrer" content="no-referrer">
