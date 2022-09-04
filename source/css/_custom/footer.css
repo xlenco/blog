@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+SC&family=Zhi+Mang+Xing&display=swap');
+
+@import "//at.alicdn.com/t/font_3287177_uhbahhe2wc.css";
+
+
+body {
+  font-family: "HarmonyOS_Regular" !important;
+}
+
+
+
 /* 底部 */
 #footer {
     background: var(--mj-card-bg);
     display: flex;
     flex-direction: column;
-    --mj-card-bg: #ffffff
 }
 #footer-wrap {
     background: var(--mj-card-bg);
@@ -100,6 +110,8 @@ div#footer_deal a:hover{
 #footer-banner .footer-banner-tips{
     font-weight: 700;
 }
+
+
 #footer {
     background: rgba(255,255,255,.15);
     color: #000;
@@ -115,3 +127,23 @@ div#footer_deal a:hover{
 #footer #footer-wrap {
     color: var(--font-color)
 }
+
+/* 光标框选文字颜色 */
+
+/* webkit, opera, IE9 */
+::selection {
+  background: #3f3f3f;
+  color: #fff;
+}
+/* mozilla firefox */
+::-moz-selection {
+  background: #3f3f3f;
+  color: #fff;
+}
+
+
+
+
+  
+
+
