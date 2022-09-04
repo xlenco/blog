@@ -837,7 +837,7 @@ pangu:
 lazyload:
   enable: true
   field: post # site/post
-  placeholder: https://ik.imagekit.io/xlenco/loading.gif
+  placeholder: https://ik.imagekit.io/xlenco/loading.webp
   blur: false
 
 # PWA
