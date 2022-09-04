@@ -63,31 +63,7 @@ button {
 .read-mode div#post{
     background: rgba(158, 204, 171, 0.5)!important;
     }
-/* 解决透明化后的字体颜色异常 */ 
-[data-theme="dark"]
-#recent-posts > .recent-post-item{ 
-    background: rgba(0,0,0,0.6)!important;
-}
 
-[data-theme="dark"]
-div#category{
-  background: rgba(0,0,0,0.6)!important;
-}
-
-[data-theme="dark"]
-div#archive{
-  background: rgba(0,0,0,0.6)!important;
-}
-
-[data-theme="dark"]
-div#page{
-  background: rgba(0,0,0,0.6)!important;
-}
-
-[data-theme="dark"]
-div#tag{
-  background: rgba(0,0,0,0.6)!important;
-}
 
 /* copyright适配夜间模式和美化字体样式 */ 
 [data-theme="dark"]
