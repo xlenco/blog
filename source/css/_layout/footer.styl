@@ -1,35 +1,46 @@
 #footer
-  position: relative
-  background: $light-blue
-  background-attachment: scroll
-  background-position: bottom
-  background-size: cover
+  margin-top: 1rem
 
-  if hexo-config('footer_bg') != false
-    &:before
-      position: absolute
-      width: 100%
-      height: 100%
-      background-color: alpha($dark-black, .5)
-      content: ''
-
-#footer-wrap
+#fotter-copyright
   position: relative
-  padding: 40px 20px
-  color: var(--light-grey)
+  padding: 0 20px
+  margin-bottom: 2rem
+  color: var(--font-color)
   text-align: center
 
   a
-    color: var(--light-grey)
+    color: var(--font-color)
 
     &:hover
+      color: $theme-link-color
       text-decoration: underline
 
   .footer-separator
     margin: 0 4px
 
-  .icp-icon
-    padding: 0 4px
-    max-height: 1.4em
-    width: auto
-    vertical-align: text-bottom
+#ah-footer
+  display: flex
+  flex-direction: row
+  width: 100%
+  max-width: 900px
+  margin: 1rem auto
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 2rem
+  padding: 0 1rem
+  
+  .footer-group
+    min-width: 100px
+    text-align: center
+    
+    .footer-links
+      display: flex
+      flex-direction: column
+
+      a.footer-item
+        color: var(--font-color)
+        line-height: 1rem
+        margin: .38rem 0
+
+        &:hover
+          color: var(--btn-hover-color)
