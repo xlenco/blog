@@ -1,17 +1,45 @@
-#footer-wrap
-  if theme.footer.owner.enable
-    - var now = new Date()
-    - var nowYear = now.getFullYear()
-    if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
-    else
-      .copyright!= `&copy;${nowYear} By ${config.author}`
-  if theme.footer.copyright
-    .framework-info
-      span= _p('footer.framework') + ' '
-      a(href='https://hexo.io')= 'Hexo'
-      span.footer-separator |
-      span= _p('footer.theme') + ' '
-      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
-  if theme.footer.custom_text
-    .footer_custom_text!=`${theme.footer.custom_text}`
+#ah-footer
+  .footer-group
+    h3.footer-title 博客文章
+    .footer-links
+      a.footer-item(href='/archives/', data-pjax-state='') 全部文章
+      a.footer-item(href='/tags/', data-pjax-state='') 文章标签
+      a.footer-item(href='/categories/', data-pjax-state='') 文章分类
+
+  .footer-group
+    h3.footer-title 学习笔记
+    .footer-links
+      a.footer-item(href='/tags/R/', data-pjax-state='') R 语言
+      a.footer-item(href='/tags/Python/', data-pjax-state='') Python
+      a.footer-item(href='/tags/Linux/', data-pjax-state='') Linux
+
+  .footer-group
+    h3.footer-title 博客链接
+    .footer-links
+      a.footer-item(href='/friends/', data-pjax-state='') 友链动态
+      a.footer-item(href='/link/', data-pjax-state='') 友情链接
+      a.footer-item(href='/bb/', data-pjax-state='') 哔哔点啥
+
+  .footer-group
+    h3.footer-title 博客改造
+    .footer-links
+      a.footer-item(href='/posts/43603/', data-pjax-state='') 博客部署
+      a.footer-item(href='/categories/博客魔改/', data-pjax-state='') 博客魔改
+      
+
+  .footer-group
+    h3.footer-title 关于本站
+    .footer-links
+      a.footer-item(href='/about/', data-pjax-state='') 关于博主
+      a.footer-item(href='/cc/', data-pjax-state='') 版权协议
+      a.footer-item(onclick='btf.scrollToDest(0, 500)') 回到顶部
+
+#fotter-copyright(style='font-size:90%')
+  .copyrights
+    span= _p('Copyright © 2022 Aohuiliu. ')
+    span= _p(' All rights reserved.')
+  .framework-info
+    span= _p('Powered by') + ' '
+    a(href='https://hexo.io') Hexo
+    span.footer-separator &
+    a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
