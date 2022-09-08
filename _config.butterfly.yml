@@ -863,7 +863,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <script src="/js/ClientWorker.js"></script>
+   # - <script src="/js/ClientWorker.js"></script>
      - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
      - <script defer charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
      - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
