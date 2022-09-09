@@ -69,7 +69,8 @@ catch_rules:
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
+  # 不劫持（丢给浏览器）
   - rule: .*
     transform_rules:
-      - search: waline\.xlenco\.eu\.org
-        action: skip
+      - search: _
+        action: skip #? 2.8.1新增，跳过cw规则（ 现在已经不在需要）
