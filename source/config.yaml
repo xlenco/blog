@@ -34,7 +34,7 @@ catch_rules:
         replace:
           - _
           - https://unpkg.com
-          - https://npm.elemecdn.com 
+          - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
           - https://cdn.bilicdn.tk/npm 
           - https://cdn.staticfile.org
