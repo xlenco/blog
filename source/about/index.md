@@ -1,18 +1,20 @@
 ---
 date: 2022-04-16 14:12:45
 title: 关于窝
-updated: 2022-09-03 21:26:39
+updated: 2022-09-10 08:49:14
 ---
-
 博主个人介绍:
-悲催学生党一枚。为什么要建博客？因为博主的爱好是搜集，记录。
+悲催学生党一枚。因个人爱好而建博客。
+
 ### 访问统计
+
 <div id="statistic">
 <div class="content"></div>
 <span style="font-size:14px">流量统计支持：<a style="color:#1690ff;" href="https://v6.51.la/">51la</a></span>
 </div>
 
 <!-- js -->
+
 <script>
 // 链接替换即可，不需要后面的参数
 fetch('https://v6-widget.51.la/v6/JmsRdzV6syTLtUyn/quote.js').then(res => res.text()).then((data) => {
