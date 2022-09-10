@@ -34,8 +34,6 @@ function winResize() {
 
 
 
-
-
 /**网站提示区 */
 function welcome_mes() {
   if (navigator.userAgent.match(/edg/i)) {
@@ -81,14 +79,7 @@ function welcome_mes() {
     var we_mes = 'Chrome浏览器';
   }
 
-  /**IP部分 */
-  if (ip_mes["nation"] == '中国') {
-    var ip_mess = ip_mes["city"];
-  } else if (ip_mes["city"].match(/台湾/i)) {
-    var ip_mess = "中国台湾";
-  } else {
-    var ip_mess = ip_mes["nation"] + ip_mes["province"] + ip_mes["city"];
-  }
+ 
 
   /**来源检测 */
   var we_link = document.referrer;
