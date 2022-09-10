@@ -134,7 +134,8 @@ function welcome_mes() {
     setCookie("welcome", 1, "/");
   }
 }
-// 阅读进度＋返回顶部
+
+
 window.onscroll = percent;// 执行函数
 // 页面百分比
 function percent() {
