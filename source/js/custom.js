@@ -34,16 +34,7 @@ function winResize() {
 
 
 
-/**热更新cw */
-async function updateConfig() {
-  await fetch('/cw-cgi/api?type=config').then(res => res.text()).then(res => {
-    if (res === 'ok') {
-      console.log(`[CW]已更新配置`);
-    } else {
-      console.log(`[CW]唔~配置更新失败...`);
-    }
-  })
-}
+
 
 /**网站提示区 */
 function welcome_mes() {
