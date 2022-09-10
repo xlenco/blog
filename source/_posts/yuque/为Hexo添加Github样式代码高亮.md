@@ -208,10 +208,3 @@ function createGist (md5, gh_content, lang){
 | GITHUB_TOKEN | 这里写你 GITHUB_TOKEN 的内容 |
 
 {% note info modern %}第一次部署可能速度较慢，请耐心等待{% endnote %}
-
-### 声明
-
-本教程大量内容来自于 Zkeq 大佬
-{% link Zkeq の Coding 日志, https://icodeq.com,
-https://img.onmicrosoft.cn/Avatar.jpg
- %}
