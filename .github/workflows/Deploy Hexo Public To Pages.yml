@@ -3,11 +3,12 @@ name: autodeploy
 
 # 触发条件
 on:
+  repository_dispatch:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: main
     paths:
-      - 'source/_posts/yuque/**'
+      -'source/_posts/yuque/*'
 
 # 设置环境
 jobs:
