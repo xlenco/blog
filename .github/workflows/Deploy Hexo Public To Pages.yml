@@ -2,15 +2,15 @@
 name: autodeploy
 
 # 触发条件
-on:
-  push:
-    branches:
-      - main
+on: [push, repository_dispatch, workflow_dispatch]
 
 # 设置环境
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+      YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
     
     steps:
       # check it to your workflow can access it
@@ -28,8 +28,10 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install gulp-cli -g
-          npm install yuque-hexo-lyrics -g
-          npm install
+          npm install yuque-hexo -g
+          yuque-hexo clean
+          yuque-hexo sync
+          
 
       - name: 设置密钥
         env:
@@ -45,6 +47,30 @@ jobs:
         run: |
           git config --global user.name 'xlenco' 
           git config --global user.email '1043865083@qq.com'      
+
+      - name: 更新 语雀拉取缓存及文章 #更新yuque 拉取的文章到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
+          git config --global user.email "1043865083@qq.com"
+          git config --global user.name "xlenco"
+          git add .
+          git commit -m "Refresh yuque json" -a
+      - name: 推送 语雀拉取缓存及文章 #推送修改后的yuque json
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+
+      - name: 缓存 Hexo
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          npm install --save
 
       - name: Hexo三连
         run: |
