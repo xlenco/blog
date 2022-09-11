@@ -622,13 +622,13 @@ svg.icon {
 	background-image:url(https://s1.hdslb.com/bfs/seed/jinkela/short/mini-login/img/22_close.0efad8c4.png)!important
 }
 .el-input.el-input--small.el-input-group.el-input-group--prepend:first-child:before {
-	content:'杈撳叆QQ鍙蜂細鑷姩鑾峰彇鏄电О鍜屽ご鍍忦煇�'
+	content:'输入QQ号自动获取名称和头像🐧'
 }
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {
-	content:'鏀跺埌鍥炲灏嗕細鍙戦€佸埌鎮ㄧ殑閭馃摟'
+	content:'收到回复会发送到您的邮箱'
 }
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {
-	content:'鍙互閫氳繃鏄电О璁块棶鎮ㄧ殑缃戠珯馃敆'
+	content:'可通过名称来访问您的网站'
 }
 .el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before {
 	display:block
