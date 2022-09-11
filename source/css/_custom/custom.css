@@ -86,84 +86,7 @@ button {
     font-size:15px;
 }
 
-/* 文章页H1-H6图标样式效果 */
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-  -webkit-animation: ccc 1.6s linear infinite ;
-  animation: ccc 1.6s linear infinite ;
-}
-@-webkit-keyframes ccc {
-  0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg)
-  }
-  to {
-      -webkit-transform: rotate(-1turn);
-      transform: rotate(-1turn)
-  }
-}
-@keyframes ccc {
-  0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg)
-  }
-  to {
-      -webkit-transform: rotate(-1turn);
-      transform: rotate(-1turn)
-  }
-}
 
-/* 小风车颜色 */
-#content-inner.layout h1::before {
-  color: #ef50a8 ;
-  margin-left: -1.55rem;
-  font-size: 1.3rem;
-  margin-top: -0.23rem;
-}
-#content-inner.layout h2::before {
-  color: #fb7061 ;
-  margin-left: -1.35rem;
-  font-size: 1.1rem;
-  margin-top: -0.12rem;
-}
-#content-inner.layout h3::before {
-  color: #ffbf00 ;
-  margin-left: -1.22rem;
-  font-size: 0.95rem;
-  margin-top: -0.09rem;
-}
-#content-inner.layout h4::before {
-  color: #a9e000 ;
-  margin-left: -1.05rem;
-  font-size: 0.8rem;
-  margin-top: -0.09rem;
-}
-#content-inner.layout h5::before {
-  color: #57c850 ;
-  margin-left: -0.9rem;
-  font-size: 0.7rem;
-  margin-top: 0.0rem;
-}
-#content-inner.layout h6::before {
-  color: #5ec1e0 ;
-  margin-left: -0.9rem;
-  font-size: 0.66rem;
-  margin-top: 0.0rem;
-}
-
-/* 鼠标碰到小风车转速变慢及变色*/
-#content-inner.layout h1:hover, #content-inner.layout h2:hover, #content-inner.layout h3:hover, #content-inner.layout h4:hover, #content-inner.layout h5:hover, #content-inner.layout h6:hover {
-  color: #49b1f5 ;
-}
-#content-inner.layout h1:hover::before, #content-inner.layout h2:hover::before, #content-inner.layout h3:hover::before, #content-inner.layout h4:hover::before, #content-inner.layout h5:hover::before, #content-inner.layout h6:hover::before {
-  color: #49b1f5 ;
-  -webkit-animation: ccc 3.2s linear infinite ;
-  animation: ccc 3.2s linear infinite ;
-}
-
-/* 页面设置icon转动速度调整 */
-#rightside_config i.fas.fa-cog.fa-spin {
-  animation: fa-spin 5s linear infinite ;
-}
 
 /* waline footer信息隐藏 */
 .wl-power {
@@ -218,10 +141,10 @@ nav#pagination.pagination-post {
 	--blockquote-color:#333;
 	--global-font-size:16px;
 	--card-bg:rgba(255,255,255,.7);
-	--leonus-black:#333;
-	--leonus-blue:#49b1f5;
-	--leonus-purple:#4976f5;
-	--leonus-border:1px solid rgba(211,211,211,0.8)
+	--xlenco-black:#333;
+	--xlenco-blue:#49b1f5;
+	--xlenco-purple:#4976f5;
+	--xlenco-border:1px solid rgba(211,211,211,0.8)
 }
 [data-theme=dark] {
 	--search-bg:rgb(47 48 50);
@@ -278,7 +201,7 @@ div#main_top {
 	top:0;
 	color:#fff;
 	padding:0 18px;
-	background-color:var(--leonus-blue);
+	background-color:var(--xlenco-blue);
 	border-radius:0 0 10px 10px
 }
 .newPost-left {
@@ -379,7 +302,7 @@ body {
 #aside-content .card-widget,#bber-talk,#container,#post .post-copyright,#recent-posts>.recent-post-item,#sta_chart,#statistic .item,.cardHover,.error404 #error-wrap .error-content,.layout>div:first-child:not(.recent-posts),.search-dialog {
 	border-radius:12px;
 	box-shadow:0 8px 15px -5px #2c2d300c!important;
-	border:var(--leonus-border);
+	border:var(--xlenco-border);
 	box-sizing:border-box;
 	transition:all .3s ease-in-out
 }
@@ -387,18 +310,18 @@ body {
 	position:relative
 }
 #aside-content .card-widget:hover,#bber-talk:hover,#container,#post .post-copyright:hover,#recent-posts>.recent-post-item:hover,#sta_chart,#statistic .item,.cardHover:hover,.error404 #error-wrap .error-content:hover,.layout>div:first-child:not(.recent-posts):hover,.search-dialog {
-	border-color:var(--leonus-blue)
+	border-color:var(--xlenco-blue)
 }
 #aside-content .card-widget,#recent-posts>.recent-post-item:not(:first-child) {
 	margin-top:15px
 }
 ::selection {
-	background:var(--leonus-black);
+	background:var(--xlenco-black);
 	color:#fff
 }
 [data-theme=dark]::selection {
 	background:#fff;
-	color:var(--leonus-black)
+	color:var(--xlenco-black)
 }
 #post-meta,.page-title,.post-title {
 	cursor:default;
@@ -412,7 +335,7 @@ body {
 }
 #pagination.pagination-post,.relatedPosts>.relatedPosts-list>div {
 	border-radius:20px;
-	border:1px var(--leonus-blue) solid;
+	border:1px var(--xlenco-blue) solid;
 	background-color:rgba(255,255,255,.3)
 }
 #article-container a img {
@@ -422,7 +345,7 @@ body {
 	color:var(--font-color)!important
 }
 [data-theme=dark] #aside-content .card-tag-cloud a:hover,[data-theme=dark] .tag-cloud-list a:hover {
-	color:var(--leonus-blue)!important
+	color:var(--xlenco-blue)!important
 }
 #post .post-copyright {
 	border-radius:12px
@@ -441,10 +364,10 @@ body {
 	border-radius:10px
 }
 ::-webkit-scrollbar-thumb:hover {
-	background-color:var(--leonus-purple)
+	background-color:var(--xlenco-purple)
 }
 [data-theme=dark]::-webkit-scrollbar-thumb:hover {
-	background-color:var(--leonus-black)
+	background-color:var(--xlenco-black)
 }
 #sta_chart,#statistic .item {
 	font-size:18px;
@@ -486,7 +409,7 @@ div#statistic .item a {
 }
 div#statistic .item a:hover {
 	text-decoration:none;
-	color:var(--leonus-blue)
+	color:var(--xlenco-blue)
 }
 #statistic .item .content div {
 	width:34%;
@@ -556,7 +479,7 @@ svg.icon {
 	backdrop-filter:saturate(180%) blur(20px)
 }
 #recent-posts>.recent-post-item .post-meta-date+span:hover {
-	background-color:var(--leonus-blue)
+	background-color:var(--xlenco-blue)
 }
 #recent-posts>.recent-post-item .post-meta-date+span a:hover {
 	text-decoration:none!important
@@ -656,7 +579,7 @@ svg.icon {
 	margin-right:.5rem!important
 }
 .tk-expand {
-	border:var(--leonus-border);
+	border:var(--xlenco-border);
 	box-shadow:0 8px 16px -4px #2c2d300c;
 	border-radius:12px;
 	letter-spacing:5px
@@ -840,7 +763,7 @@ svg.icon {
 	overflow:hidden
 }
 #bber-talk .talk-list:hover {
-	color:var(--leonus-blue)!important;
+	color:var(--xlenco-blue)!important;
 	transition:all .2s ease-in-out
 }
 #bber-talk .talk-list li {
@@ -886,7 +809,7 @@ svg.icon {
 	right:100%;
 	height:100%;
 	width:100%;
-	background:var(--leonus-blue);
+	background:var(--xlenco-blue);
 	background:linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
 	animation:gradient 2s ease infinite;
 	background-size:200%
@@ -1000,7 +923,7 @@ to {
 	color:rgba(255,255,255,.7)
 }
 .weibo-list-item a:hover {
-	color:var(--leonus-blue)!important
+	color:var(--xlenco-blue)!important
 }
 @media screen and (max-width:900px) {
 	#statistic {
@@ -1086,15 +1009,15 @@ table td,table th {
 	font-size:15px
 }
 #bber-talk,#recent-posts>.recent-post-item .post_cover {
-	border:var(--leonus-border);
+	border:var(--xlenco-border);
 	box-sizing:border-box;
 	transition:all .3s ease-in-out
 }
 #recent-posts>.recent-post-item .post_cover:hover {
-	border-color:var(--leonus-blue)!important
+	border-color:var(--xlenco-blue)!important
 }
 #bber-talk:hover,a.categoryBar-list-link:hover {
-	color:var(--leonus-blue)
+	color:var(--xlenco-blue)
 }
 #recent-posts>.recent-post-item .post-meta-date+span {
 	top:.6rem
