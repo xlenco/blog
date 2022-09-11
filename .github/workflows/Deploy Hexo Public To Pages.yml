@@ -2,10 +2,20 @@
 name: autodeploy
 
 # 触发条件
-on: [push, repository_dispatch, workflow_dispatch]
- branches: [main]
-  puths:
-    - 'source/_posts/yuque/**'
+on: 
+  push
+    branches: [main]
+    puths:
+      - 'source/_posts/yuque/**'
+  repository_dispatch:
+    branches: [main]
+    puths:
+      - 'source/_posts/yuque/**'
+  workflow_dispatch:
+    branches: [main]
+    puths:
+      - 'source/_posts/yuque/**'
+
 # 设置环境
 jobs:
 build:
