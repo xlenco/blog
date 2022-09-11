@@ -135,7 +135,6 @@ function percent() {
         btn.childNodes[0].style.display = 'block'
     }
 }
-
 // 分享本页
 function share() {
     let url = window.location.origin + window.location.pathname
