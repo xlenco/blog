@@ -163,17 +163,28 @@ hexo_seo_autopush:
     count: 10
     google_file: google_service_account.json # 谷歌服务账户
   
-# hexo-electric-clock  
+# electric_clock
+# see https://anzhiy.cn/posts/fc18.html
 electric_clock:
-  priority: 5
-  enable: true
-  enable_page: all
-  layout:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude:
+    # - /posts/
+    # - /about/
+  layout: # 挂载容器类型
     type: class
     name: sticky_layout
     index: 0
-  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://ik.imagekit.io/nicexl/loading_Nxe_XduJU.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
-  
+  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
+  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
+  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
+  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+  qweather_key:  # 和风天气key
+  gaud_map_key:  # 高得地图web服务key
+  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
+  rectangle: 112.982279,28.19409 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
+
 # hexo-filter-gitcalendar
 # see https://akilar.top/posts/1f9c68c9/
 gitcalendar:
