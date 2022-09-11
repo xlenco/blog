@@ -1,7 +1,13 @@
 name: 自动部署
 
 # 当有改动推送和语雀发布时，启动Action
-on: [push, repository_dispatch, workflow_dispatch]
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  push:
+    branches: main
+    paths:
+      -'source/_posts/yuque/*'
 
 jobs:
   deploy:
