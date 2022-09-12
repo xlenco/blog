@@ -2,9 +2,7 @@
 name: autodeploy
 
 # 触发条件
-on:
-  push:
-    branches: main
+on: [push, repository_dispatch, workflow_dispatch]
 
 # 设置环境
 jobs:
