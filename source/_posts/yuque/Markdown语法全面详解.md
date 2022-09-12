@@ -431,6 +431,16 @@ _   底线
 
 ### 收缩栏
 
+<details>
+<summary>【查看详情】</summary>
+```
+<details>
+<summary>【查看详情】</summary>
+text
+<details>
+```
+<details>
+
 {% tabs  %}
 
 <!-- tab 预览 -->
