@@ -436,6 +436,7 @@ _   底线
 <!-- tab 预览 -->
 <summary>【查看详情】</summary>
 text
+<details>
 <!-- endtab -->
 
 <!-- tab 配置代码 -->
