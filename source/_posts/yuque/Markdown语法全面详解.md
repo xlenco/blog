@@ -128,9 +128,9 @@ _这里显示的倾斜体_
 下面这三种链接的定义都是相同：
 
 ```latex
-[这是一个链接]: http://nicexl.er.org/  "这里是链接的title内容"
-[这是一个链接]: http://nicexl.er.org/  '这里是链接的title内容'
-[这是一个链接]: http://nicexl.er.org/  (这里是链接的title内容)
+[这是一个链接]: http://xlenco.eu.org/  "这里是链接的title内容"
+[这是一个链接]: http://xlenco.eu.org/  '这里是链接的title内容'
+[这是一个链接]: http://xlenco.eu.org/  (这里是链接的title内容)
 ```
 
 结果： 这是一个链接 这是逐浪软件官网链接.
@@ -138,15 +138,15 @@ _这里显示的倾斜体_
 在链接的时候也可以选择加上 title 属性，title 属性是选择性的，链接名称可以用字母、数字和空格，但是不分大小写：
 
 ```latex
-[这是一个链接](http://nicexl.er.org/ "欢迎访问").
+[这是一个链接](http://xlenco.eu.org/ "欢迎访问").
 ```
 
-结果： 这是一个链接 这是逐浪软件官网链接
+结果： 这是一个链接 这是主页链接
 
 输出 HTML 为：
 
 ```latex
-<p>这是一个链接 <a href="http://nicexl.er.org/" title="欢迎访问软件">
+<p>这是一个链接 <a href="http://xlenco.eu.org/" title="欢迎访问软件">
 这里是nicexl的blog</a>.</p>
 ```
 
@@ -433,7 +433,6 @@ _   底线
 
 {% tabs Tags %}
 
-<!-- endtab -->
 <!-- tab 预览-->
 <details>
 <summary>【查看详情】</summary>
