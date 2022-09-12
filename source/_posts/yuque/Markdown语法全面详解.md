@@ -428,3 +428,25 @@ _   底线
 .   英文句点
 !   惊叹号
 ```
+
+## 收缩栏
+
+{% tabs Tags %}
+
+<!-- endtab -->
+<!-- tab 预览-->
+<details>
+<summary>【查看详情】</summary>
+text
+<details>
+<!-- endtab -->
+<!-- tab 语法格式-->
+```
+<details>
+<summary>【查看详情】</summary>
+内容
+<details>
+
+```
+<!-- endtab -->
+```
