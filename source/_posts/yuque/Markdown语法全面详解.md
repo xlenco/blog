@@ -431,9 +431,10 @@ _   底线
 
 ### 收缩栏
 
-{% tabs 预览 %}
+{% tabs  %}
 
 <!-- tab 预览 -->
+<details>
 <summary>【查看详情】</summary>
 text
 <details>
@@ -445,6 +446,7 @@ text
 <details>
 <summary>【查看详情】</summary>
 text
+<details>
 ```
 
 <!-- endtab -->
