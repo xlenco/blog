@@ -429,23 +429,9 @@ _   底线
 !   惊叹号
 ```
 
-## 收缩栏
+### 收缩栏
 
-{% tabs Tags %}
-
-<!-- tab 预览-->
 <details>
 <summary>【查看详情】</summary>
 text
 <details>
-<!-- endtab -->
-<!-- tab 语法格式-->
-```
-<details>
-<summary>【查看详情】</summary>
-内容
-<details>
-
-```
-<!-- endtab -->
-```
