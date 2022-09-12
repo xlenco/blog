@@ -433,7 +433,7 @@ _   底线
 
 {% tabs 收缩栏 %}
 
-<!-- tab -->
+<!-- tab hhh -->
 <details>
 <summary>【查看详情】</summary>
 text
@@ -446,7 +446,6 @@ text
 <details>
 <summary>【查看详情】</summary>
 text
-<details>
 ```
 
 <!-- endtab -->
