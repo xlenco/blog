@@ -100,7 +100,7 @@ deploy:
 nofollow:
   enable: true
   field: site
-  exclude: false
+
  
 # hexo-generator-feed  
 feed:
