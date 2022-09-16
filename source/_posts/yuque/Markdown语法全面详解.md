@@ -434,7 +434,61 @@ _   底线
 !   惊叹号
 ```
 
-### 收缩栏
+### 略缩
+
+缩略有两种，一种是同时支持 Markdown，HTML，一种是只支持 HTML
+
+#### 第一种
+
+同时支持 Markdown，HTML
+{% tabs  %}
+
+<!-- tab 预览 -->
+<details>
+  <summary>文字</summary>
+内容
+</details>
+<!-- endtab -->
+<!-- tab 配置代码 -->
+```
+<details>
+  <summary>文字</summary>
+内容
+</details>
+```
+<!-- endtab -->
+{% endtabs %}
+
+#### 第二种
+
+只支持 HTML
+{% tabs  %}
+
+<!-- tab 预览 -->
+<details>
+  <summary>文字</summary>
+  <pre>
+    <ul>
+内容
+    </ul>
+  </pre>
+</details>
+<!-- endtab -->
+<!-- tab 配置代码 -->
+```
+<details>
+  <summary>文字</summary>
+  <pre>
+    <ul>
+内容
+    </ul>
+  </pre>
+</details>
+```
+<!-- endtab -->
+{% endtabs %}
+
+### Butterfly 专用
 
 > 此项是 butterfly 主题自带的外挂标签
 
