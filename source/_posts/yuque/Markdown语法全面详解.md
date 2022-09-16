@@ -436,6 +436,8 @@ _   底线
 
 ### 收缩栏
 
+> 此项是 butterfly 主题自带的外挂标签
+
 {% tabs  %}
 
 <!-- tab 预览 -->
@@ -449,10 +451,9 @@ _   底线
 <!-- tab 配置代码 -->
 
 ```
-<details>
-<summary>【查看详情】</summary>
-text
-<details>
+{% hideToggle 文字%}
+内容
+{% endhideToggle %}
 ```
 
 <!-- endtab -->
