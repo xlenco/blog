@@ -389,7 +389,10 @@ fff | ggg| hhh | iii | 000|
 
 效果如下：
 
-name111222333444aaabbbcccdddeeefffggghhhiii000
+| name | 111 | 222 | 333 | 444 |
+| ---- | --- | --- | --- | --- |
+| aaa  | bbb | ccc | ddd | eee |
+| fff  | ggg | hhh | iii | 000 |
 
 (3)原生方法
 
@@ -401,8 +404,10 @@ fff | ggg| hhh | iii | 000|
 ```
 
 效果如下：
-
-name111222333444aaabbbcccdddeeefffggghhhiii000
+| name | 111 | 222 | 333 | 444 |
+| :-: | :-: | :-: | :-: | :-: |
+| aaa | bbb | ccc | ddd | eee |
+| fff | ggg| hhh | iii | 000 |
 
 ## 其他
 
@@ -431,23 +436,14 @@ _   底线
 
 ### 收缩栏
 
-<details>
-<summary>【查看详情】</summary>
-```
-<details>
-<summary>【查看详情】</summary>
-text
-<details>
-```
-<details>
-
 {% tabs  %}
 
 <!-- tab 预览 -->
-<details>
-<summary>【查看详情】</summary>
-text
-<details>
+
+{% hideToggle 文字%}
+内容
+{% endhideToggle %}
+
 <!-- endtab -->
 
 <!-- tab 配置代码 -->
