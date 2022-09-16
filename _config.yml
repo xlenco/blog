@@ -100,7 +100,8 @@ deploy:
 nofollow:
   enable: true
   field: site
-
+  exclude:
+    - 'xlenco.eu.org'
  
 # hexo-generator-feed  
 feed:
