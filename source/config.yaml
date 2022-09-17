@@ -3,7 +3,7 @@ name: ClientWorker
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
-  - https://fastly.jsdelivr.net/npm/clientworker
+  - https://fastly.jsdelivr.net/npm/clientworker@latest
 # Config热更新
 hotconfig:
   - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
@@ -43,7 +43,7 @@ catch_rules:
           - https://npm.onmicrosoft.cn
         action: fetch
         fetch:
-          status: 200
+          status: 200|3.*
           engine: parallel
           preflight: false # false
           timeout: 3000
@@ -62,15 +62,10 @@ catch_rules:
           - https://jsd.onmicrosoft.cn/gh
         action: fetch
         fetch:
-          status: 200
+          status: 200|3.*
           engine: parallel
           preflight: false # false
           timeout: 30000
           cache:
             expire: 1000*60*60*8 # 缓存8小时
             delay: 300
-  # 不劫持（丢给浏览器）
-  - rule: .*
-    transform_rules:
-      - search: _
-        action: skip #? 2.8.1新增，跳过cw规则（ 现在已经不在需要）
