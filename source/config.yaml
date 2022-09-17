@@ -15,3 +15,7 @@ catch_rules:
         return:
           body: The GateWay is down!This Page is provided by ClientWorker!
           status: 503
+  - rule: .*
+    transform_rules:
+      - search: waline\.xlenco\.eu\.org
+        action: skip
