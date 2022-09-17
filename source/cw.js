@@ -1,1 +1,1 @@
-importScripts('https://cdn.jsdelivr.net/npm/clientworker@latest') 
+importScripts('https://npm.onmicrosoft.cn/clientworker@latest')
