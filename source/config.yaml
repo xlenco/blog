@@ -15,8 +15,3 @@ catch_rules:
         return:
           body: The GateWay is down!This Page is provided by ClientWorker!
           status: 503
-  # 不劫持（丢给浏览器）
-  - rule: .*
-    transform_rules:
-      - search: _
-        action: skip #? 2.8.1新增，跳过cw规则（ 现在已经不在需要）
