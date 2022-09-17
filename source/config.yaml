@@ -1,71 +1,17 @@
-# ClientWorker.js.org
 name: ClientWorker 
-cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
-# ClientWorker热补丁
-hotpatch:
-  - https://fastly.jsdelivr.net/npm/clientworker@latest
-# Config热更新
-hotconfig:
-  - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-  # 站点多线路选择
   - rule: _
     transform_rules:
+      - search: \#.+
+        searchin: url
+        replace: ''
       - search: _ 
-        replace: 
-          - _
-          - xlenco.github.io #GithubPage托管
-          - xlenco.pages.dev #Cloudflare托管
-          - xlenco.onrender.com #render托管
-         # - xlenco.netlify.app #Netlify托管
         action: fetch
         fetch:
-          status: .*
-          engine: parallel
-          preflight: false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*2 # 缓存8小时
-            delay: 200
-# 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
-    transform_rules:
-      - search: _
-        replace:
-          - _
-          - https://unpkg.com
-          - https://npm.elemecdn.com
-          - https://npm.sourcegcdn.com 
-          - https://cdn.bilicdn.tk/npm 
-          - https://cdn.staticfile.org
-          - https://unpkg.zhimg.com
-          - https://cdn.bilicdn.tk/npm
-          - https://npm.onmicrosoft.cn
-        action: fetch
-        fetch:
-          status: 200|3.*
-          engine: parallel
-          preflight: false # false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
-  # github加速
-  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
-    transform_rules:
-      - search: _
-        replace:
-          - _
-          - https://fastly.jsdelivr.net/gh
-          - https://gcore.jsdelivr.net/gh
-          - https://cdn.bilicdn.tk/gh
-          - https://jsd.onmicrosoft.cn/gh
-        action: fetch
-        fetch:
-          status: 200|3.*
-          engine: parallel
-          preflight: false # false
-          timeout: 30000
-          cache:
-            expire: 1000*60*60*8 # 缓存8小时
-            delay: 300
+          engine: fetch 
+      - search: (^4|^5) 
+        searchin: status 
+        action: return
+        return:
+          body: The GateWay is down!This Page is provided by ClientWorker!
+          status: 503
