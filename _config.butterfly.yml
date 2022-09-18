@@ -863,8 +863,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <script src="/js/ClientWorker.js"></script>
-    - |
+     - <script src="/js/ClientWorker.js"></script>
+  #  - |
         <script>
             if (!!navigator.serviceWorker) {
                 navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
