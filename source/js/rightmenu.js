@@ -103,33 +103,12 @@ rmf.translate = function () {
 }
 
 // 右键菜单事件
-if(! (navigator.userAgent.match(/(phone|pad|pod|iPod|ios|iPad|BlackBerry|IEMobile|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))){
-    window.oncontextmenu = function(event){
-        $('.rightMenu-group.hide').hide();
-        if(document.getSelection().toString()){
-            $('#menu-text').show();
-        }
-
-        console.log(event.target);
-        let pageX = event.clientX + 10;
-        let pageY = event.clientY;
-        let rmWidth = $('#rightMenu').width();
-        let rmHeight = $('#rightMenu').height();
-        if(pageX + rmWidth > window.innerWidth){
-            pageX -= rmWidth+10;
-        }
-        if(pageY + rmHeight > window.innerHeight){
-            pageY -= pageY + rmHeight - window.innerHeight;
-        }
-
-
-
-        kk.showRightMenu(true, pageY, pageX);
-        return false;
-    };
-
-    window.addEventListener('click',function(){kk.showRightMenu(false);});
-//     window.addEventListener('load',function(){kk.switchTheme(true);});
+document.onkeydown = function (event) {
+    event = (event || window.event);
+    if (event.keyCode == 17) {
+        console.log("你知道的太多了");
+        return;
+    }
 }
 
 function popupMenu() {
