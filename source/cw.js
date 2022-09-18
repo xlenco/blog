@@ -1,1 +1,1 @@
-importScripts('https://npm.onmicrosoft.cn/clientworker@latest')
+importScripts('https://lib.baomitu.com/clientworker/latest/dist/cw.js')
