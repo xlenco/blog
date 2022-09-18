@@ -819,8 +819,8 @@ aplayerInject:
 snackbar:
   enable: true
   position: top-right
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
+  bg_light: '#5b83f5' # The background color of Toast Notification in light mode
+  bg_dark: '#414042' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
