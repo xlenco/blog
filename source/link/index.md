@@ -10,9 +10,12 @@ updated: 2022-08-06 14:00:02
 申请友链的请先添加本站添加再申请 ! !
 {% endnote %}
 
+{% hideToggle 我的信息%}
 ```yml
 - name: Xlenco's logs
   link: https://xlenco.eu.org
   avatar: https://xlenco.eu.org/img/head.webp
   descr: 最好的地方是没去过的地方，最好的时光，是回不来的时光。
 ```
+{% endhideToggle %}
+
