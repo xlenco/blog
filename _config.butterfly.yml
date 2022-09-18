@@ -360,7 +360,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.cxl2020mc.top
+  envId: https://twikoo.nicexl.eu.org
   region:
   visitor: false
   option:
