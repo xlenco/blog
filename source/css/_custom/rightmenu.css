@@ -7,7 +7,7 @@
 	height: fit-content;
 	top: 10%;
 	left: 10%;
-	background-color: var(--heo-card-bg);
+	background-color: #dededf;
   color: var(--heo-fontcolor);
 	border-radius: 12px;
 	z-index: 102;
