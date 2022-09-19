@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-      YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+      
     
     steps:
       # check it to your workflow can access it
