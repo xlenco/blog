@@ -32,12 +32,10 @@ mixin rightsideItem(array)
       when 'share'
         button.share(type="button" title='分享链接' onclick="share()")
           i.fas.fa-share-nodes
-
 #rightside
   - const { enable, hide, show } = theme.rightside_item_order
   - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside']
-  - const showArray = enable ? show && show.split(',') : ['chat','share','comment','hideAside']
-  
+  - const showArray = enable ? show && show.split(',') : ['chat','share','comment','hideAside','toc']
 
   
   #rightside-config-hide
@@ -53,7 +51,7 @@ mixin rightsideItem(array)
         if (readmode || translate.enable || (darkmode.enable && darkmode.button))
           button#rightside_config(type="button" title=_p("rightside.setting"))
             i.fas.fa-cog.fa-spin
-      else if translate.enable || (darkmode.enable && darkmode.button)
+      else if hideArray
         button#rightside_config(type="button" title=_p("rightside.setting"))
           i.fas.fa-cog.fa-spin
 
@@ -62,4 +60,3 @@ mixin rightsideItem(array)
 
     button#go-up(type="button" title=_p("rightside.back_to_top"))
       i.fas.fa-arrow-up
-    
