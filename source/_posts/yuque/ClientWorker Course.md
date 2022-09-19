@@ -9,8 +9,20 @@ tags:
   - JavaScript
 
 title: ClientWorker Course
-updated: 2022-08-19 18:23:10
+updated: 2022-09-19 18:23:10
 ---
+
+{% hideToggle 更新日志%}
+{% timeline blue%}
+
+<!-- timeline 2022-9-19  -->
+
+新增 cw 安装方法，yml 语法
+
+<!-- endtimeline -->
+
+{% endtimeline %}
+{% endhideToggle %}
 
 ### ClientWorker
 
@@ -52,7 +64,7 @@ catch_rules:
 
 ## 注册 cw
 
-在{blogroot}/\_config.butterfly.yml 文件中写人一下内容
+在{blogroot}/\_config.butterfly.yml 文件中写入以下内容
 
 ```
 inject:
