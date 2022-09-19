@@ -1,17 +1,54 @@
-nav#nav
-  span#blog_name
-    a#site-name(href=url_for('/')) #[=config.title]
+- const { darkmode } = theme
+nav
+  span
+    .back-home-button(tabindex='-1')
+      i.back-home-button-icon.fas.fa-grip-vertical
+      .back-menu-list-groups
+        .back-menu-list-group
+          .back-menu-list-title 网页
+          .back-menu-list
+            a.back-menu-item(href='/', title='前往博客主页', target='_blank', one-link-mark='yes')
+              img.back-menu-item-icon(src='https://image.anzhiy.cn/adminuploads/1/2022/09/05/6315ec9737ac4.png')
+              span.back-menu-item-text 博客
+            a.back-menu-item(href='https://www.cloud.anzhiy.cn/', rel='external nofollow', title='前往云盘主页', target='_blank', one-link-mark='yes')
+              img.back-menu-item-icon(src='https://image.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg')
+              span.back-menu-item-text 云盘主页
+            a.back-menu-item(href='https://cloud.anzhiy.cn/', rel='external nofollow', title='前往安知鱼云盘', target='_blank', one-link-mark='yes')
+              img.back-menu-item-icon(src='https://image.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png')
+              span.back-menu-item-text 安知鱼云盘
+        .back-menu-list-group
+          .back-menu-list-title 项目
+          .back-menu-list
+            a.back-menu-item(href='http://blgou.net/#/main/home', title='查看德信官网', target='_blank', rel='noopener nofollow', one-link-mark='yes')
+              img.back-menu-item-icon.entered.exited(src='https://image.anzhiy.cn/adminuploads/1/2022/09/15/6322cd942dbd9.png')
+              span.back-menu-item-text 德信官网
+
+    a
+
+  div.mask-name-container
+    center(id="name-container")
+      a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
     
-  #menus
+  
     if (theme.algolia_search.enable || theme.local_search.enable)
-      #search-button
+      div.nav-button
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
+    
+    if darkmode.enable && darkmode.button
+      div.nav-button
+        a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
+          i.fas.fa-adjust
+
+    div.nav-button
+      a.totopbtn
+        i.fas.fa-arrow-up
+        span
+    
+
     !=partial('includes/header/menu_item', {}, {cache: true})
 
-    #toggle-menu
+    
       a.site-page
         i.fas.fa-bars.fa-fw
-
-
