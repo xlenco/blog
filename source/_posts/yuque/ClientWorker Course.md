@@ -9,20 +9,10 @@ tags:
   - JavaScript
 
 title: ClientWorker Course
-updated: 2022-09-19 18:23:10
+updated: 2022-08-19 18:23:10
 ---
 
-{% hideToggle 更新日志%}
-{% timeline 更新日志,blue%}
-
-<!-- timeline 2022-9-19  -->
-
-新增 cw 安装方式，yml 语法
-
-<!-- endtimeline -->
-
-{% endtimeline %}
-{% endhideToggle %}
+### ClientWorker
 
 ### 地址
 
