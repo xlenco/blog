@@ -926,7 +926,7 @@ inject:
     - <canvas id="universe"></canvas>  
     - <script defer src="/js/custom.js"></script>
     - <script defer src="/js/universe.js"></script>
-    - <script data-pjax src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    - <script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
