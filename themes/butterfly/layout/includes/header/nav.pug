@@ -1,6 +1,6 @@
 - const { darkmode } = theme
-nav
-  span
+nav#nav
+  span#blog_name
     .back-home-button(tabindex='-1')
       i.back-home-button-icon.fas.fa-grip-vertical
       .back-menu-list-groups
@@ -23,32 +23,32 @@ nav
               img.back-menu-item-icon.entered.exited(src='https://image.anzhiy.cn/adminuploads/1/2022/09/15/6322cd942dbd9.png')
               span.back-menu-item-text 德信官网
 
-    a
+    a#site-name(href=url_for('/')) #[=config.title]
 
   div.mask-name-container
     center(id="name-container")
       a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
     
-  
+  #menus
     if (theme.algolia_search.enable || theme.local_search.enable)
-      div.nav-button
+      div.nav-button#search-button
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
     
     if darkmode.enable && darkmode.button
-      div.nav-button
+      div.nav-button#darkmode_navswitch
         a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
           i.fas.fa-adjust
 
-    div.nav-button
+    div.nav-button#nav-totop
       a.totopbtn
         i.fas.fa-arrow-up
-        span
+        span#percent(onclick="btf.scrollToDest(0,500)") 0
     
 
     !=partial('includes/header/menu_item', {}, {cache: true})
 
-    
+    #toggle-menu
       a.site-page
         i.fas.fa-bars.fa-fw
