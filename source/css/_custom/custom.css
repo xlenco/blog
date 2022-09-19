@@ -1037,38 +1037,8 @@ table td,table th {
 }
 }
 
-/* 返回顶部 */
 
-button#go-up #percent {
-    display: none;
-    font-weight: bold;
-    font-size: 15px !important;
-}
 
-button#go-up span {
-    font-size: 12px!important;
-    margin-right: -1px;
-}
-
-/* 鼠标滑动到按钮上时显示返回顶部图标 */
-button#go-up:hover i {
-    display: block !important;
-}
-
-button#go-up:hover #percent {
-    display: none !important;
-}
-
-#rightside>div>a,
-#rightside>div>button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
-}
-/* twikoo评论区设置气泡 */
 
   
 /* 侧边栏美化 */
