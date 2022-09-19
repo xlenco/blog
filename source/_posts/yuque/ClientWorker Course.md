@@ -28,7 +28,7 @@ updated: 2022-09-19 18:23:10
 
 ### 地址
 
-{% link ClientWorker, [https://clientworker.js.org](https://clientworker.js.org), [https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png](https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png) %}
+{% link ClientWorker, https://clientworker.js.org, https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
 
 ## 快速上手
 
