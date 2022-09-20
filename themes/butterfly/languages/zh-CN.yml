@@ -36,7 +36,7 @@ post:
   edit: 编辑
 
 search:
-  title: 搜索
+  title: ''
   load_data: 数据库加载中
   algolia_search:
     input_placeholder: 搜索文章
