@@ -927,6 +927,10 @@ inject:
     - <script defer src="/js/custom.js"></script>
     - <script defer src="/js/universe.js"></script>
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    - |
+        <script>
+            cardLink(document.querySelectorAll('article a[target=_blank]'))
+        <script>
     # - <script src="xxxx"></script>
 
 # CDN
