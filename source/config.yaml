@@ -33,6 +33,7 @@ catch_rules:
       - search: _
         replace:
           - _
+          - https://cdn1.tianli0.top/npm
           - https://unpkg.com
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
@@ -56,6 +57,7 @@ catch_rules:
       - search: _
         replace:
           - _
+          - https://cdn1.tianli0.top/gh
           - https://fastly.jsdelivr.net/gh
           - https://gcore.jsdelivr.net/gh
           - https://cdn.bilicdn.tk/gh
