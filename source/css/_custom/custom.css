@@ -1756,6 +1756,10 @@ a.category_button:after {
 }
 /* 右下角栏颜色 */
 #rightside {
+    position: fixed;
+    right: -48px;
+    bottom: 40px;
+    z-index: 100;
     background-color: #425aef;
+    
 }
-
