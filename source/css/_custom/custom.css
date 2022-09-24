@@ -1755,6 +1755,7 @@ a.category_button:after {
     padding: 0!important;
 }
 /* 右下角栏颜色 */
-#righside .div .button {
-   background-color: #425aef
+#rightside {
+    background-color: #425aef;
 }
+
