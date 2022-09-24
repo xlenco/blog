@@ -1754,3 +1754,6 @@ a.category_button:after {
     font-size: .8rem!important;
     padding: 0!important;
 }
+// 右下角栏颜色
+#righside .div .button
+   background-color: #425aef
