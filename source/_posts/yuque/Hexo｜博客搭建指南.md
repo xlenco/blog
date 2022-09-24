@@ -6,7 +6,7 @@ tags:
 categories:
   - 教程
 
-cover: https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661674283434-3df1dab2-b9a0-489f-a8ab-054e1ac698b9.jpeg
+cover: https://xlenco.onmicrosoft.cn/img/20200715201402.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157
 date: 2022-8-28 16:12
 updated: 2022-8-28 20:12
 ---
