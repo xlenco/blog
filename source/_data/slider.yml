@@ -1,0 +1,35 @@
+#- cover: 封面图片链接
+#  timeline: '2020-10-01' # 日期，需要用''包裹
+#  link: 置顶文章链接，站内文章建议填相对链接
+#  title: 置顶文章标题
+#  description: 置顶文章描述
+- cover: https://npm.elemecdn.com/justlovesmile-img/20200715201402.png
+  timeline: '2020-07-15'
+  link: /posts/c8972b63.html
+  title: 必看 | Hexo博客搭建超级指南
+  description: Hexo博客搭建全过程，环境部署，博客魔改等等...
+- cover: https://npm.elemecdn.com/justlovesmile-img/090412-1557363852af44.jpg
+  timeline: '2020-04-09'
+  link: /posts/56163.html
+  title: Hexo博客 | 博客中能用到的代码（一）
+  description: 这篇文章介绍了如何使用font awesome图标字体库，使用动态图标，添加网页运行时间，全站变黑白，鼠标点击特效，网页标题的动态效果，网页樱花特效，鼠标触动音乐特效
+- cover: https://npm.elemecdn.com/justlovesmile-img/095658-1562983018e455.jpg
+  timeline: '2020-04-09'
+  link: /posts/15391.html
+  title: Hexo博客 | 博客中能用到的代码（二）
+  description: 这篇文章介绍了如何添加旋转小人和每日诗句
+- cover: https://npm.elemecdn.com/justlovesmile-img/20220331192754.png
+  timeline: '2022-03-31'
+  link: /posts/a806bebe.html
+  title: 推荐 | 计算机专业，大学课程「笔记归档」
+  description: 本文是博主本科期间的专业课程学习笔记的整理和归档，适合计算机专业的同学阅读。
+- cover: https://npm.elemecdn.com/justlovesmile-img/20220318183107.png
+  timeline: '2022-03-18'
+  link: /posts/589ec011.html
+  title: 深度学习 | Detectron2使用指南
+  description: Detectron2是Facebook AI Research的检测和分割框架，其主要基于PyTorch实现，但具有更模块化设计，因此它是灵活且便于扩展的。
+- cover: https://npm.elemecdn.com/justlovesmile-img/202109111517311.jpg
+  timeline: '2021-09-11'
+  link: /posts/865c56ba.html
+  title: 目标检测 | 常用数据集标注格式及生成脚本
+  description: 目标检测是计算机视觉任务中的一个重要研究方向，是计算机视觉的根本性问题之一，是其他诸多计算机视觉任务的基础以及前提。本文主要介绍了目标检测数据集的几种标注格式和转换代码。
