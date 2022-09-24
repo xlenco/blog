@@ -19,7 +19,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     if page.type !== '404'
       #body-wrap(class=pageType)
         include ./header/index.pug
-
+        include ./hometop.pug
         main#content-inner.layout(class=hideAside)
           if body
             div!= body
@@ -46,5 +46,4 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache: true})
     !=partial('includes/dorakika/rightmenu',{}, {cache:true})
-    !=partial('includes/hometop',{}, {cache:true})
     include ./additional-js.pug
