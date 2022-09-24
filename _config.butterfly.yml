@@ -333,9 +333,9 @@ waline:
   pageview: true
   option:
    emoji: [
-    'https://unpkg.com/@waline/emojis@1.0.1/alus',
-    'https://unpkg.com/@waline/emojis@1.0.1/qq',
-    'https://unpkg.com/@waline/emojis@1.0.1/tw-emoji',
+    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/alus',
+    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/qq',
+    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/tw-emoji',
   ]
 
 # utterances
