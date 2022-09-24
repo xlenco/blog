@@ -143,4 +143,4 @@ document.getElementById("page-name").innerText=document.title.split(" |Xlenco")[
 
 // cardLink
 cardLink(document.querySelectorAll('article a[target=_blank]'))
-
+cardLink.server = 'https://api.allorigins.win/raw?url='
