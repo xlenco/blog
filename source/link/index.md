@@ -19,7 +19,6 @@ updated: 2022-08-06 14:00:02
   avatar: https://xlenco.eu.org/img/head.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
-{% endhideToggle %}
 <!-- endtab -->
 <!-- tab volantis -->
 ```yml
@@ -30,4 +29,4 @@ updated: 2022-08-06 14:00:02
 ```
 <!-- endtab -->
 {% endtabs %}
-
+{% endhideToggle %}
