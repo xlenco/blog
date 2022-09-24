@@ -2,10 +2,6 @@
 
 hexo.extend.generator.register('text', function (locals) {
   const config = hexo.config.text || {}
-  const posts = []
-  for (const post of locals.posts.data) {
-    if (post.random !== false) posts.push(post.path)
-  }
   return {
     path: config.path || 'text/index.html',
     function(){
