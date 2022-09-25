@@ -1,7 +1,7 @@
 ---
 title: Vercel子域名遭受DNS污染和SNI阻断后的解决方法
 categories: 杂项
-cover: https://xlenco.onmicrosoft.cn/img/vercel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664029400182
+cover: https://xlenco.onmicrosoft.cn/img/aRrJQDowB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664066139324
 date: 2022-9-24 21:17
 updated: 2022-9-24 21:17
 ---
