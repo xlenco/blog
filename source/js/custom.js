@@ -144,3 +144,11 @@ document.getElementById("page-name").innerText=document.title.split(" |Xlenco")[
 // cardLink
 cardLink(document.querySelectorAll('article a[target=cardlink]'))
 cardLink.server = 'https://api.allorigins.win/raw?url='
+
+// 开往
+function totraveling() {
+  btf.snackbarShow('即将跳转到「开往」项目的成员博客，不保证跳转网站的安全性和可用性', !1, 5000)
+  setTimeout(function () {
+    window.open('https://travellings.cn/');
+  }, '5000');
+}
