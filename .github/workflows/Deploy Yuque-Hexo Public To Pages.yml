@@ -66,21 +66,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUBTOKEN }}
 
-      - name: 缓存 Hexo
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-      - name: 安装依赖
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          npm install --save
-
-      - name: Hexo三连
-        run: |
-          hexo clean
-          hexo generate 
-          gulp
-          hexo deploy
