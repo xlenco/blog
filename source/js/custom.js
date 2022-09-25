@@ -142,8 +142,9 @@ function percent() {
 document.getElementById("page-name").innerText=document.title.split(" |Xlenco")[0];
 
 // cardLink
-cardLink(document.querySelectorAll('article a[target=cardlink]'))
 cardLink.server = 'https://api.allorigins.win/raw?url='
+cardLink(document.querySelectorAll('article a[target=cardlink]'))
+
 
 // 开往
 function totraveling() {
