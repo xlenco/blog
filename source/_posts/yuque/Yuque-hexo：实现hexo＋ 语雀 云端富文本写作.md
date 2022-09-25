@@ -255,16 +255,6 @@ jobs:
           yuque-hexo sync
 
 
-      - name: 设置密钥
-        env:
-          HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          TZ: Asia/Shanghai
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-
       - name: 设置Git信息
         run: |
           git config --global user.name 'xlenco'
@@ -294,13 +284,18 @@ jobs:
         run: |
           npm install --save
 
-      - name: Hexo三连
+      - name: 生成静态文件
         run: |
           hexo clean
-          hexo generate
-       #   gulp
-          hexo deploy
+          hexo g
+          #gulp
+          #如果你有使用gulp的话，打开上面这一行
 
+      - name: 部署
+        run: |
+          git config --global user.name "xlenco"
+          git config --global user.email "1043865083@qq.com"
+          hexo deploy
 ```
 
 {% hideToggle 老方法%}
