@@ -142,7 +142,7 @@ function percent() {
 document.getElementById("page-name").innerText=document.title.split(" |Xlenco")[0];
 
 // cardLink
-# cardLink.server = 'https://api.allorigins.win/raw?url='
+// cardLink.server = 'https://api.allorigins.win/raw?url='
 cardLink(document.querySelectorAll('article a[target=cardlink]'))
 
 
