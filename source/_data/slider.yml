@@ -13,3 +13,13 @@
   link: /posts/3b89.html
   title: Markdown 语法全面详解
   description: 本文章详细讲解了Markdown的各类语法，内容全面详细
+- cover: https://xlenco.onmicrosoft.cn/img/R-C.png
+  timeline: '2020-09-25'
+  link: /posts/e755.html
+  title: 这里有上亿开源项目！你却在为如何访问而发愁！
+  description: Github的各种访问方法
+- cover: https://xlenco.onmicrosoft.cn/img/8840187_u6Y8xVR1j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661609019485
+  timeline: '2020-09-23'
+  link: /posts/c9b3.html
+  title: Yuque-hexo：实现hexo＋ 语雀 云端富文本写作
+  description: 通过yuque-hexo实现语雀云端写作
