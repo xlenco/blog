@@ -141,13 +141,12 @@ _这里显示的倾斜体_
 [这是一个链接](http://xlenco.eu.org/ "欢迎访问").
 ```
 
-结果： 这是一个链接 这是主页链接
+[这是一个链接](http://xlenco.eu.org/ "欢迎访问").
 
 输出 HTML 为：
 
 ```latex
-<p>这是一个链接 <a href="http://xlenco.eu.org/" title="欢迎访问软件">
-这里是xlenco的blog</a>.</p>
+<a href="http://xlenco.eu.org/"target="_blank" 欢迎访问>
 ```
 
 ### 2.4 代码块
