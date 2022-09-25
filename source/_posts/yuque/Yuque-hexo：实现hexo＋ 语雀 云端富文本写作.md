@@ -278,24 +278,6 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-      - name: 安装依赖
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          npm install --save
-
-      - name: 生成静态文件
-        run: |
-          hexo clean
-          hexo g
-          #gulp
-          #如果你有使用gulp的话，打开上面这一行
-
-      - name: 部署
-        run: |
-          git config --global user.name "xlenco"
-          git config --global user.email "1043865083@qq.com"
-          hexo deploy
 ```
 
 {% hideToggle 老方法%}
