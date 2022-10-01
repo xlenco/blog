@@ -103,12 +103,33 @@ rmf.translate = function () {
 }
 
 // 右键菜单事件
-if(! (navigator.userAgent.match(/(phone)/i))){
+if(! (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))){
     window.oncontextmenu = function(event){
         $('.rightMenu-group.hide').hide();
+        //如果有文字选中，则显示 文字选中相关的菜单项
         if(document.getSelection().toString()){
             $('#menu-text').show();
         }
+
+        let pageX = event.clientX + 10;
+        let pageY = event.clientY;
+        let rmWidth = $('#rightMenu').width();
+        let rmHeight = $('#rightMenu').height();
+        if(pageX + rmWidth > window.innerWidth){
+            pageX -= rmWidth+10;
+        }
+        if(pageY + rmHeight > window.innerHeight){
+            pageY -= pageY + rmHeight - window.innerHeight;
+        }
+
+
+
+        rmf.showRightMenu(true, pageY, pageX);
+        return false;
+    };
+
+    window.addEventListener('click',function(){rmf.showRightMenu(false);});
+}
 
 function popupMenu() {
     //window.oncontextmenu=function(){return false;}
