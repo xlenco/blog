@@ -56,9 +56,8 @@ git clone https://github.com/xlenco/alist-build-on-replit && mv -b alist-build-o
 
 1. 下载下面项目源码,并在 Repilt 新建 node.js 项目
    ![](https://i.imgtg.com/2022/07/14/eEeAa.jpg#crop=0&crop=0&crop=1&crop=1&id=Osyxf&originHeight=657&originWidth=1086&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-   ![](https://github-readme-stats.vercel.app/api/pin/?username=xlenco&repo=onedrive-vercel-index-replit&theme=vue#crop=0&crop=0&crop=1&crop=1&id=Eg8sl&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+   [](https://repl.it/github/xlenco/onedrive-vercel-index-replit)![](https://repl.it/badge/github/xlenco/onedrive-vercel-index-replit#crop=0&crop=0&crop=1&crop=1&id=VD1fo&originHeight=36&originWidth=130&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-[ ](https://repl.it/github/xlenco/onedrive-vercel-index-replit)![](https://repl.it/badge/github/xlenco/onedrive-vercel-index-replit#crop=0&crop=0&crop=1&crop=1&id=VD1fo&originHeight=36&originWidth=130&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 ↑ 此项如果是个人版的 Repilt 用户可以直接点击，而使用教育版的只能老老实实下载后上次上去了。记得语言要选为 node.js
 ![](https://i.imgtg.com/2022/07/14/eErQS.jpg#crop=0&crop=0&crop=1&crop=1&id=WvT1n&originHeight=623&originWidth=1365&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 [分流下载密码：abcd](https://url66.ctfile.com/f/30717266-614561272-1d7d9a?p=abcd)
