@@ -103,13 +103,12 @@ rmf.translate = function () {
 }
 
 // 右键菜单事件
-document.onkeydown = function (event) {
-    event = (event || window.event);
-    if (event.keyCode == 17) {
-        console.log("你知道的太多了");
-        return;
-    }
-}
+if(! (navigator.userAgent.match(/(phone)/i))){
+    window.oncontextmenu = function(event){
+        $('.rightMenu-group.hide').hide();
+        if(document.getSelection().toString()){
+            $('#menu-text').show();
+        }
 
 function popupMenu() {
     //window.oncontextmenu=function(){return false;}
