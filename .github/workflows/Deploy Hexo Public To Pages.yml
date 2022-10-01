@@ -30,21 +30,11 @@ jobs:
           npm install gulp-cli -g
 
           
-
-      - name: 设置密钥
-        env:
-          HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          TZ: Asia/Shanghai
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts  
-
       - name: 设置Git信息
         run: |
           git config --global user.name 'xlenco' 
           git config --global user.email '1043865083@qq.com'      
+          git push --force --quiet "https://${{ github.repository_owner }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.github.io.git" master:master
 
       
       - name: 缓存 Hexo
