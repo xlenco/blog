@@ -103,7 +103,7 @@ rmf.translate = function () {
 }
 
 // 右键菜单事件
-if(! (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+if(! (navigator.userAgent.match(/(Windows Phone)/i)))
 document.onkeydown = function (event) {
     event = (event || window.event);
     if (event.keyCode == 17) {
