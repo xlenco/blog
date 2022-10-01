@@ -331,7 +331,7 @@ valine:
 # https://waline.js.org/
 waline:
   serverURL: waline.nicexl.eu.org 
-  pageview: true
+  pageview: false
   option:
    emoji: [
     'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/alus',
@@ -363,7 +363,7 @@ facebook_comments:
 twikoo:
   envId: https://twikoo.nicexl.eu.org
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
