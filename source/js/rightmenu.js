@@ -103,7 +103,13 @@ rmf.translate = function () {
 }
 
 // 右键菜单事件
-if(! (navigator.userAgent.match(/(Windows Phone)/i)))
+document.onkeydown = function (event) {
+    event = (event || window.event);
+    if (event.keyCode == 17) {
+        console.log("你知道的太多了");
+        return;
+    }
+}
 
 function popupMenu() {
     //window.oncontextmenu=function(){return false;}
