@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.name 'xlenco' 
           git config --global user.email '1043865083@qq.com'      
-          git push --force --quiet "https://${{ github.repository_owner }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.github.io.git" master:master
+          
 
       
       - name: 缓存 Hexo
@@ -51,6 +51,7 @@ jobs:
 
       - name: Hexo三连
         run: |
+          git push --force --quiet "https://${{ github.repository_owner }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.github.io.git" master:master
           hexo clean
           hexo generate 
           gulp
