@@ -39,15 +39,6 @@ jobs:
           yuque-hexo sync
           
 
-      - name: 设置密钥
-        env:
-          HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          TZ: Asia/Shanghai
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts  
 
       - name: 设置Git信息
         run: |
