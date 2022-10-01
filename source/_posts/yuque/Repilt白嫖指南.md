@@ -76,11 +76,11 @@ value：
 bind 127.0.0.1 -::1
 ```
 
-[ 常见问题 结尾 ](https://repl.it/github/xlenco/onedrive-vercel-index-replit) 4.把 main.sh 改为下面内容
+4.把 main.sh 改为下面内容
 然后就没有然后了，可以宣告大功告成了
 点击绿色 ▶ Run 就跑起来
 
-#####
+## 常见问题
 
 - Alist 如何查看密码:  `./alist -password`
 - 如果忘 Repilt 中上传文件时出现下面内容，点红色的 Replace
