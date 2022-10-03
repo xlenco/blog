@@ -7,7 +7,7 @@ tags:
 categories:
   - 教程
 
-cover: https://ik.imagekit.io/xlenco/img/Screenshot_20220903_125917_XPmKbJZQG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662185344028
+cover: https://xlenco.onmicrosoft.cn/img/Screenshot_20220903_125917_XPmKbJZQG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662185344028
 date: 2022-9-3 14:26
 updated: 2022-9-3 15:10
 ---
