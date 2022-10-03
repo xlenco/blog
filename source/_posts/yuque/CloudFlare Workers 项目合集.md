@@ -63,7 +63,3 @@ updated: 2022-10-3 10:36
 ## 后言
 
 如果你知道其他 CloudFlare Workers 项目请在下方评论区留言
-
-## text
-
-![](https://pcsdata.baidu.com/thumbnail/f8c2965deu3b7ce52b055dc4600bf0fa?fid=3638808896-16051585-645975947202978&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-qNObrdy3YeHii2IDHaK0C0TIyX4%3D&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=8696136685955406705&dp-callid=0&time=1664769600&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video)
