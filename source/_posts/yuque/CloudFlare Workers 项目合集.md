@@ -64,8 +64,6 @@ updated: 2022-10-3 10:36
 
 如果你知道其他 CloudFlare Workers 项目请在下方评论区留言
 
-                                                        来源：[极客社区](https://jike.info/topic/1721/cloudflare-workers-%E9%A1%B9%E7%9B%AE%E6%95%B4%E7%90%86-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0?lang=zh-CN)
-
 ## text
 
 ![](https://pcsdata.baidu.com/thumbnail/f8c2965deu3b7ce52b055dc4600bf0fa?fid=3638808896-16051585-645975947202978&rt=pr&sign=FDTAER-yUdy3dSFZ0SVxtzShv1zcMqd-qNObrdy3YeHii2IDHaK0C0TIyX4%3D&expires=2h&chkv=0&chkbd=0&chkpc=&dp-logid=8696136685955406705&dp-callid=0&time=1664769600&bus_no=26&size=c1600_u1600&quality=100&vuk=-&ft=video)
