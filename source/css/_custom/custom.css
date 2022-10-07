@@ -1754,8 +1754,10 @@ a.category_button:after {
     font-size: .8rem!important;
     padding: 0!important;
 }
-/* 右下角栏颜色 */
-#rightside > div > button, {
-    background-color: #425aef;
-    
+/*隐藏浏览器加载条*/
+.example::-webkit-scrollbar{
+    display:none
+    /* or */
+    width:0;
 }
+
