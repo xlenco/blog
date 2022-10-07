@@ -2,9 +2,11 @@
 title: 笔记｜HTML转跳URL实例
 tags:
   - HTML
+
+categories:
+  - 前端
   - 笔记
 
-categories: 前端
 cover: https://xlenco.onmicrosoft.cn/img/html.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665115851748
 date: 2022-10-7 12:14
 updated: 2022-10-7 12:14
