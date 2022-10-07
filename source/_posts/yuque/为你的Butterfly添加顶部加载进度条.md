@@ -14,7 +14,7 @@ updated: 2022-10-7 18:32
 
 ## Dome
 
-<img src="https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg" width="20%" height="20%" alt="top.jpeg" align=center />
+<img src="https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg" width="50%" height="50%" alt="top.jpeg" align=center />
 
 ## 引入 css
 
