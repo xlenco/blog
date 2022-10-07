@@ -14,7 +14,7 @@ updated: 2022-10-7 18:32
 
 ## Dome
 
-![10-1.jpeg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg#crop=0&crop=0&crop=1&crop=1&from=url&id=ZGLoj&margin=%5Bobject%20Object%5D&name=10-1.jpeg&originHeight=62&originWidth=378&originalType=binary&ratio=1&rotation=0&showTitle=false&size=4555&status=done&style=none&title=)
+<img src="https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg" width="20%" height="20%" alt="top.jpeg" align=center />
 
 ## 引入 css
 
