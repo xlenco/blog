@@ -1,5 +1,5 @@
 ---
-title: 笔记 | HTML转跳URL实例
+title: 笔记｜HTML转跳URL实例
 tags:
   - HTML
   - 笔记
