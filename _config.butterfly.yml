@@ -456,7 +456,7 @@ cloudflare_analytics: f6e86b4bf56546559a58d7d3cfde580d
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: cqdvy4jnl1
+microsoft_clarity: 
 
 # Advertisement
 # --------------------------------------
@@ -969,7 +969,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo:
+     twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.all.min.js
      waline_js: https://cdn1.tianli0.top/npm/@waline/client@v2/dist/waline.js
      waline_css: https://cdn1.tianli0.top/npm/client@v2/dist/waline.css
     # sharejs:
@@ -985,11 +985,11 @@ CDN:
     # instantpage:
     # typed:
     # pangu:
-    # fancybox_css_v4:
+     fancybox_css_v4: https://cdn1.tianli0.top/npm/@fancyapps/ui/dist/fancybox.min.css
     # fancybox_v4:
     # medium_zoom:
-    # snackbar_css:
-    # snackbar:
+     snackbar_css: https://cdn1.tianli0.top/npm/node-snackbar/dist/snackbar.min.css
+    # snackbar: 
     # activate_power_mode:
     # fireworks:
     # click_heart:
