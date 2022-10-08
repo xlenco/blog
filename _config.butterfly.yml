@@ -970,8 +970,8 @@ CDN:
     # disqusjs:
     # disqusjs_css:
     # twikoo:
-     waline_js: https://unpkg.com/@waline/client@v2/dist/waline.js
-     waline_css: https://unpkg.com/@waline/client@v2/dist/waline.css
+     waline_js: https://cdn1.tianli0.top/npm/@waline/client@v2/dist/waline.js
+     waline_css: https://cdn1.tianli0.top/npm/client@v2/dist/waline.css
     # sharejs:
     # sharejs_css:
     # mathjax:
@@ -994,7 +994,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-     fontawesomeV6: https://use.fontawesome.com/releases/v6.0.0/css/all.css
+     fontawesomeV6: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
      aplayer_css: https://npm.elemecdn.com/aplayer@1/dist/APlayer.min.css
