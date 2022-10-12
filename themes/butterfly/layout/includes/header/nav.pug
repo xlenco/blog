@@ -1,55 +1,17 @@
-- const { darkmode } = theme
 nav#nav
   span#blog_name
-    .back-home-button(tabindex='-1')
-      i.back-home-button-icon.fas.fa-grip-vertical
-      .back-menu-list-groups
-        .back-menu-list-group
-          .back-menu-list-title 网页
-          .back-menu-list
-            a.back-menu-item(href='/', title='前往博客主页', target='_blank', one-link-mark='yes')
-              img.back-menu-item-icon(src='https://image.anzhiy.cn/adminuploads/1/2022/09/05/6315ec9737ac4.png')
-              span.back-menu-item-text 博客
-            a.back-menu-item(href='https://www.yuque.com/xlenco/butterfly', title='点击前往', target='_blank', one-link-mark='yes')
-              img.back-menu-item-icon(src='https://gw.alipayobjects.com/zos/rmsportal/UTjFYEzMSYVwzxIGVhMu.png')
-              span.back-menu-item-text 魔改教程
-
-
-
-        .back-menu-list-group
-          .back-menu-list-title 资源站
-          .back-menu-list
-            a.back-menu-item(href='https://solitude.eu.org', title='点击查看', target='_blank', rel='noopener nofollow', one-link-mark='yes')
-              img.back-menu-item-icon.entered.exited(src='https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png')
-              span.back-menu-item-text Solitude'Pan
-
     a#site-name(href=url_for('/')) #[=config.title]
-
-  div.mask-name-container
-    center(id="name-container")
-      a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
     
   #menus
-
     if (theme.algolia_search.enable || theme.local_search.enable)
       #search-button
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
-    
-    if darkmode.enable && darkmode.button
-      div.nav-button#darkmode_navswitch
-        a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
-          i.fas.fa-adjust
-
-    div.nav-button#nav-totop
-      a.totopbtn
-        i.fas.fa-arrow-up
-        span#percent(onclick="btf.scrollToDest(0,500)") 0
-    
-
     !=partial('includes/header/menu_item', {}, {cache: true})
 
     #toggle-menu
       a.site-page
         i.fas.fa-bars.fa-fw
+
+
