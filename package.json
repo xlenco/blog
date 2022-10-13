@@ -50,7 +50,7 @@
     "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.1.0",
-    "hexo-seo-autopush": "^2.1.1",
+    "hexo-seo-autopush": "^2.1.2",
     "hexo-server": "^3.0.0",
     "hexo-wordcount": "^6.0.1",
     "lineno": "^0.1.0",
