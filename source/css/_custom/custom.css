@@ -1757,8 +1757,11 @@ a.category_button:after {
 
 /*隐藏浏览器加载条*/
 .example::-webkit-scrollbar{
-    display:none
+    display:none;
     /* or */
     width:0;
-}
 
+}/* waline footer信息隐藏 */
+hr:before {
+    display: none;
+}
