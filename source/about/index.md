@@ -5,7 +5,8 @@ updated: 2022-10-03 18:05:23
 aside: false
 ---
 
-
+<html lang="zh-CN" data-theme="light">
+<head>
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/about/index.css">
         </header>
         <div id="home_top"></div>
@@ -333,4 +334,3 @@ aside: false
                                                 <p>更新日志</p>
                                             </div>
                                         </div>
-</html>
