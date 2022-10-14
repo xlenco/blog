@@ -4,10 +4,8 @@ title: 关于窝
 updated: 2022-10-03 18:05:23
 aside: false
 ---
-<!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
 
-<head>
+
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/about/index.css">
         </header>
         <div id="home_top"></div>
