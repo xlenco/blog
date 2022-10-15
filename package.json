@@ -29,8 +29,6 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "column": "^0.0.2",
-    "crypto": "^1.0.1",
-    "filename": "^0.5.0",
     "gulp": "^4.0.2",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
@@ -54,7 +52,7 @@
     "hexo-server": "^3.0.0",
     "hexo-wordcount": "^6.0.1",
     "lineno": "^0.1.0",
-    "xmlhttprequest": "^1.8.0",
+    "hexo-filter-fcircle-anzhiyu": "^1.0.9",
     "yuque-hexo": "^1.9.1"
   },
   "devDependencies": {
