@@ -1765,3 +1765,8 @@ a.category_button:after {
 hr:before {
     display: none!important;
 }
+
+#righside > div > button {
+  blackground-color: #5b83f5;
+}
+
