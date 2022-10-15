@@ -1,7 +1,9 @@
 extends includes/layout.pug
 
 block content
-  #page
+ - let fcircle_page = (is_current('/fcircle/')) ? true : false
+  #page(class= (fcircle_page === true) ? 'fcircle_page' : '')
+ 
     if top_img === false
       h1.page-title= page.title
 
