@@ -12,7 +12,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       !=partial('includes/loading/loading', {}, {cache: true})
 
     if theme.background
-      #web_bg
+      #web_bg(class= (fcircle_page === true) ? 'fcircle_page-page-background' : '')
       
     !=partial('includes/sidebar', {}, {cache: true})
 
