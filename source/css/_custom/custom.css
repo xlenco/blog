@@ -1766,7 +1766,8 @@ hr:before {
     display: none!important;
 }
 
-#righside > div > button {
-  blackground-color: #5b83f5;
+#rightside > div > button, #rightside > div > a{
+   background-color: #5b83f5;
 }
+
 
