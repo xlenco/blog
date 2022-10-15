@@ -241,3 +241,23 @@ tag_plugins:
 #    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+# fcircle
+# see https://akilar.top/posts/62f13a97/
+fcircle:
+  enable: true #控制开关
+  apiurl: https://friends.anzhiy.cn/ #api地址(注意后面要有/)
+  initnumber: 30 #【可选】页面初始化展示文章数量
+  stepnumber: 30 #【可选】每次加载增加的篇数
+  css: https://npm.elemecdn.com/hexo-filter-fcircle-anzhiyu@1.0.9/assets/css/default.css #【可选】开发者接口，自定义css链接
+  js: https://npm.elemecdn.com/hexo-filter-fcircle-anzhiyu@1.0.9/assets/js/fcircle.js #【可选】开发者接口，自定义js链接
+  fetchJs: https://npm.elemecdn.com/hexo-filter-fcircle-anzhiyu@1.0.9/assets/js/fetch.js
+  randomFriendsPostJS: https://npm.elemecdn.com/hexo-filter-fcircle-anzhiyu@1.0.9/assets/js/random-friends-post.js
+  path: /fcircle #【可选】fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html
+  topIcon: fas fa-arrow-right
+  topLink: /about/
+  front_matter: #【可选】fcircle页面的 front_matter 配置
+    title: 朋友圈
+    comments: false
+    aside: false
+    top_img: false
