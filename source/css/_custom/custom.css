@@ -26,14 +26,6 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
-.menus_item_child li:not(#sidebar-menus li){
-    float: left;
-    border-radius: 6px!important;
-    -webkit-border-radius: 6px!important;
-    -moz-border-radius: 6px!important;
-    -ms-border-radius: 6px!important;
-    -o-border-radius: 6px!important;
-}
 
 #nav .menus_items .menus_item:hover .menus_item_child{
   display: flex;
