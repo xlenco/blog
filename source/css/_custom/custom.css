@@ -28,28 +28,10 @@ button {
 }
 
 #nav .menus_items .menus_item:hover .menus_item_child{
-  display: flex;
+  display: flex !important;
 }
 
-/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(2) .menus_item_child {
-    left: -65px;
-}
 
-/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(3) .menus_item_child {
-    left: -65px;
-}
-
-/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(4) .menus_item_child {
-    left: -65px;
-}
-
-/* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(5) .menus_item_child {
-    left: -65px;
-}
 
 #nav *::after{
     background-color: transparent!important;
