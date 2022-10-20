@@ -917,8 +917,9 @@ inject:
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script defer src="/js/51la.js"></script>
     - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-    - <link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
+    - <link rel="stylesheet" type="text/css" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     - <meta name="referrer" content="no-referrer">
+    - <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/tag-link/tag-link.css"
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async data-pjax src="/js/rightmenu.js"></script>
@@ -928,7 +929,7 @@ inject:
     - <script defer src="/js/custom.js"></script>
     - <script defer src="/js/universe.js"></script>
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
-    - <script src="https://npm.elemecdn.com/cardlink"></script>
+ #   - <script src="https://npm.elemecdn.com/cardlink"></script>
     - <script async src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     # - <script src="xxxx"></script>
 
