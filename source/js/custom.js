@@ -125,6 +125,3 @@ function share() {
     new ClipboardJS(".share", { text: function() { return '标题：' + document.title + '\n链接：' + url } });
     btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~").innerText=document.title.split(" |Xlenco")[0];
 }
-// cardLink
-cardLink.server = 'https://x.abudu.top/?url='
-cardLink(document.querySelectorAll('article a[target=cardlink]'))
