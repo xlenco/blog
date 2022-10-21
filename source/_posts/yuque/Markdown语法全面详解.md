@@ -424,6 +424,25 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 | Header    | Title       | Here's this |
 | Paragraph | Text        | And more    |
 
+### 3.0 脚注
+
+> 脚注是对文本的补充说明。
+> Markdown 脚注的格式如下:
+
+```
+[^要注明的文本]
+```
+
+用法:
+
+```
+[^Xlenco]:  -- 又菜又爱玩
+```
+
+预览:
+
+[^xlenco]: -- 又菜又爱玩
+
 ## 其他
 
 ### 反斜杠
