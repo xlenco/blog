@@ -11,7 +11,7 @@ aside: false
 <!-- 将apiurl改成你后端生成的api地址 -->
 <script type="text/javascript">
   var fdataUser = {
-    apiurl: 'https://hexo-circle-of-friends.xlenco.eu.org/'
+    apiurl: 'https://fcircle.xlenco.eu.org/'
   }
 </script>
 <link rel="stylesheet" href="https://static.onmicrosoft.cn/zkeq/fcircle-beta.css">
