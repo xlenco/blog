@@ -972,7 +972,7 @@ CDN:
     # disqusjs_css:
      twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.all.min.js
      waline_js: https://cdn1.tianli0.top/npm/@waline/client@2.13.0/dist/waline.js
-     waline_css: https://cdn1.tianli0.top/npm/client@v2/dist/waline.css
+     waline_css: https://cdn1.tianli0.top/npm/@waline/client@2.13.0/dist/waline.css
     # sharejs:
     # sharejs_css:
     # mathjax:
