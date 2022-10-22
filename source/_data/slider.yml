@@ -9,17 +9,17 @@
   title: Butterfly主题添加51la统计和灵雀应用监控
   description: 51.la是一款免费且实用的统计服务
 - cover: https://xlenco.onmicrosoft.cn/img/20200715201402.png
-  timeline: '2020-08-28'
+  timeline: '2022-08-24'
   link: /posts/5b4d.html
   title: Hexo｜博客搭建指南
   description: Hexo博客搭建全过程，环境部署，博客魔改等等...
 - cover: https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg
-  timeline: '2020-08-28'
+  timeline: '2022-08-2'
   link: /posts/3b89.html
   title: Markdown 语法全面详解
   description: 本文章详细讲解了Markdown的各类语法，内容全面详细
 - cover: https://xlenco.onmicrosoft.cn/img/R-C.png
-  timeline: '2020-09-25'
+  timeline: '2022-09-25'
   link: /posts/e755.html
   title: 这里有上亿开源项目！你却在为如何访问而发愁！
   description: Github的各种访问方法
@@ -28,3 +28,8 @@
   link: /posts/c9b3.html
   title: Yuque-hexo：实现hexo＋ 语雀 云端富文本写作
   description: 通过yuque-hexo实现语雀云端写作
+- cover: https://ik.imagekit.io/nicexl/text/4b4aa91c9481a9e3__AyhR7Wxs.jpg
+  timeline: '2022-06-26'
+  link: /posts/8d1e.html
+  title: Butterfly美化魔改：自定义右键菜单
+  description: 对Butterfly右键菜单进行魔改
