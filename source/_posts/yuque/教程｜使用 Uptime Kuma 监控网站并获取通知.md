@@ -18,7 +18,7 @@ updated: 2022-08-06 17:17:49
 
 但是有个缺点就是貌似定制域名的功能要付费？最近几天，在朋友那里发现了一款替代品，这页面感觉比 [UptimeRobot](https://uptimerobot.com/) 还炫酷
 
-{% link uptime-kuma, [https://github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma),  [https://i.postimg.cc/4xR3kGvj/eed6aaae58e38c7bdb12f68efa8ba532.png](https://i.postimg.cc/4xR3kGvj/eed6aaae58e38c7bdb12f68efa8ba532.png)  %}
+{% link uptime-kuma, louislam,https://github.com/louislam/uptime-kuma %}
 
 成品：[Xlenco の监控云台](https://uptime.xilej.repl.co/status/xlenco)
 
