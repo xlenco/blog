@@ -23,6 +23,7 @@ catch_rules:
           - https://unpkg.zhimg.com
           - https://cdn.bilicdn.tk/npm
           - https://npm.onmicrosoft.cn
+          - https://jsd.onmicrosoft.cn/npm
         action: fetch
         fetch:
           status: 200|3.*
