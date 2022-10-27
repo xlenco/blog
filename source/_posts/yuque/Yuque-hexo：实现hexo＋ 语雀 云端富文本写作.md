@@ -1,13 +1,14 @@
 ---
 title: Yuque-hexo：实现hexo＋ 语雀 云端富文本写作
 categories:
-  - 教程
+  - [教程]
+  - [转载]
 
 tags:
   - Hexo
 
 cover: https://xlenco.onmicrosoft.cn/img/8840187_u6Y8xVR1j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661609019485
-updated: 2022-9-23 14:29
+updated: 2022-10-24 10:29
 date: 2022-9-9 22:01
 ---
 
@@ -212,6 +213,9 @@ meta(name="referrer" content="no-referrer")
 > 由于冰老师的 workflows 的判定方式为任何修改都可以触发，可有时会因为没有更改文章内容而触发 action 导致没有拉去到任何内容而报错，这里我重构了一下判断方式
 
 ![Screenshot_20220924_233608.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1664033876947-c0a1c08c-9178-435a-821a-e2b76edaae93.jpeg#clientId=u23c2e94e-4b01-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u862bb93a&name=Screenshot_20220924_233608.jpg&originHeight=1180&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128329&status=error&style=none&taskId=u16adc1c3-0317-4231-86d4-671478425a9&title=)
+使用新方法前提是已经部署好 Github action 自动部署
+
+<a href="https://xlenco.eu.org/posts/77e3.html" target="cardlink">点击查看本站教程</a>
 
 ```
 # 自动化名称
@@ -372,7 +376,7 @@ git push -u origin master
 
 上传后你会发现 github action 生效。等待几分钟后，如果打勾，就说明部署成功。如果未打勾请检查出错的步骤。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608135730791-4f825b33-e38e-489c-a1f5-beb48d6f12b8.png#align=left&display=inline&height=415&margin=%5Bobject%20Object%5D&name=image.png&originHeight=415&originWidth=1247&size=63143&status=done&style=none&width=1247#crop=0&crop=0&crop=1&crop=1&id=URcC8&originHeight=415&originWidth=1247&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![IMG_20221024_103507.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1666578950937-094ff8e3-bc90-4020-8939-d128e5ec00d0.png#clientId=u8fd55d1e-1ea9-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u9cf82fde&name=IMG_20221024_103507.png&originHeight=373&originWidth=1247&originalType=binary&ratio=1&rotation=0&showTitle=false&size=73552&status=done&style=none&taskId=u87fe57a4-733e-4622-92ce-ccfbd7c70d9&title=)
 
 ---
 
