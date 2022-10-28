@@ -128,4 +128,4 @@ function share() {
 
 // cardLink
 cardLink.server = 'https://x.abudu.top/?url='
-cardLink(document.querySelectorAll('article a[target=_blank]'))
+cardLink(document.querySelectorAll('article a[target=cardlink]'))
