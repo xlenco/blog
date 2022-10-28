@@ -919,7 +919,6 @@ inject:
     - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <link rel="stylesheet" type="text/css" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     - <meta name="referrer" content="no-referrer">
-    - <script src="https://npm.onmicrosoft.cn/cardlink"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async data-pjax src="/js/rightmenu.js"></script>
@@ -1003,3 +1002,4 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
+     cardlink: https://npm.onmicrosoft.cn/cardlink
