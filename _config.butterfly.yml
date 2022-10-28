@@ -929,6 +929,7 @@ inject:
     - <script defer src="/js/universe.js"></script>
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     - <script async src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    - <script async data-pjax src="https://npm.onmicrosoft.cn/cardlink"></script>
     # - <script src="xxxx"></script>
 
 # CDN
@@ -1002,4 +1003,4 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-     cardlink: https://npm.onmicrosoft.cn/cardlink
+    
