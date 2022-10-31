@@ -4,6 +4,8 @@ date: 2022-10-29 17:17:14
 aside: false
 top_img: false
 ---
+<script src="/js/about.js"></script>
+<link rel="stylesheet" href="/css/about.css">
 <div id="about-page">
   <div class="author-img">
     <img src="https://bu.dusays.com/2022/10/17/634d313602a1e.png">
@@ -13,9 +15,9 @@ top_img: false
     <div class="author-content-item myInfoAndSayHello">
       <div class="title1">你好，很高兴认识你👋</div>
       <div class="title2">我是
-        <span class="inline-word">西瓜撞地球</span>
+        <span class="inline-word">Xlenxo</span>
       </div>
-      <div class="title1">园艺学硕士，研究方向为分子生物学与生物信息学
+      <div class="title1">学生一枚
         <span class="inline-word">新晋博主</span>
       </div>
     </div>
@@ -425,7 +427,7 @@ top_img: false
      <div class="author-content-item-group column mapAndInfo">
       <div class="author-content-item map single">
         <span class="map-title">我现在住在
-          <b>中国，山西省 晋中市</b>
+          <b>中国，河南省 周口市</b>
         </span>
       </div>
       <div class="author-content-item selfInfo single">
