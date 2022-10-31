@@ -8,7 +8,7 @@ top_img: false
 <link rel="stylesheet" href="/css/about.css">
 <div id="about-page">
   <div class="author-img">
-    <img src="https://bu.dusays.com/2022/10/17/634d313602a1e.png">
+    <img src="https://xlenco.eu.org/img/head.webp">
   </div>
   <div class="author-title">关于本站</div>
   <div class="author-content">
