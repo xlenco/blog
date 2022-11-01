@@ -31,7 +31,7 @@ hexo.extend.tag.register('friends', function(args) {
     function cell(item) {
       if (item.url && item.title) {
         var cell = '<div class="flink-item-icon">';
-        cell += '<a class="flink-item-name" target="_blank" rel="external nofollow noopener noreferrer" href="' + item.url + '">';
+        cell += '<a class="flink-item-name" target="_blank" rel="external nofollow noopener noreferrer" href="' + item.link + '">';
         cell += '<img src="' + (item.avatar || hexo.theme.config.default.avatar) + '" onerror="javascript:this.removeAttribute(&quot;data-src&quot;);this.src=&quot;' + hexo.theme.config.default.avatar + '&quot;;"/>';
         cell += '<div class="name"><span>' + item.descr + '</span></div>';
         cell += '</a></div>'
