@@ -4,6 +4,7 @@ title: 友情链接
 type: link
 top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb52935896_Y0819msuI.jpg
 updated: 2022-08-06 14:00:02
+flink_url: https://raw.yzuu.cf/xlenco/friends/output/v2/data.json
 ---
 
 {% note warning flat %}
