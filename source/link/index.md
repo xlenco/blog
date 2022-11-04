@@ -10,7 +10,7 @@ flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
 
 ## 友链申请须知
 
-{% tabs  %}
+{% tabs link %}
 <!-- 友链申请 -->
 hzhahhbsbbsdbbd
 <!-- endtab -->
