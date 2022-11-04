@@ -11,7 +11,9 @@ flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
 ## 友链申请须知
 
 {% tabs 1 %}
-<!-- 申请友链 -->
+
+<!-- 友链申请 -->
+
 友链申请地址：
 https://github.com/xlenco/friends/issues
 PS：本站采用Github issue添加友链
