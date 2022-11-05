@@ -20,14 +20,27 @@ PS：本站采用Github issue添加友链
   avatar: https://xlenco.eu.org/img/head.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
-{% tabs link %}
-<!-- 友链申请 -->
-hzhahhbsbbsdbbd
+{% hideToggle 我的信息%}
+{% tabs  %}
+<!-- tab Butterfly & MengD -->
+```yml
+- name: Xlenco
+  link: https://xlenco.eu.org
+  avatar: https://xlenco.eu.org/img/head.webp
+  descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
+```
 <!-- endtab -->
-<!-- 友链须知 -->
-hshdhhdhhdhhd
+<!-- tab volantis -->
+```yml
+- title: Xlenco
+  avatar: https://xlenco.eu.org/img/head.webp
+  url: https://xlenco/
+  description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
+```
 <!-- endtab -->
 {% endtabs %}
+{% endhideToggle %}
+
 
 
 
