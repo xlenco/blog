@@ -9,6 +9,17 @@ flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
 
 
 ## 友链申请须知
+友链申请地址：
+https://github.com/xlenco/friends/issues
+PS：本站采用Github issue添加友链
+为避免因添加友链，而重复部署网站，现无论是留言还是issue均默认通过issue方式添加到该页面。
+## 友链模板
+```yml
+- name: Xlenco
+  link: https://xlenco.eu.org
+  avatar: https://xlenco.eu.org/img/head.webp
+  descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
+```
 {% tabs link %}
 <!-- 友链申请 -->
 hzhahhbsbbsdbbd
