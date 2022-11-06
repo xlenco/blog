@@ -296,14 +296,6 @@ top_img: false
         <div class="careers-group">
           <div class="careers-item">
             <div class="circle" style="background:#357ef5">
-            </div>
-            <div class="name">分子生物学</div>
-          </div>
-          <div class="careers-item">
-            <div class="circle" style="background:#eb372a">
-            </div>
-            <div class="name">生物信息学</div>
-          </div>
         </div>
         <img class="author-content-img" src="https://img.zhheo.com/i/2022/09/23/632d575aa8d40.webp" alt="生涯">
       </div>
@@ -435,23 +427,7 @@ top_img: false
           <span class="selfInfo-title">生于</span>
           <span class="selfInfo-content" style="color:#43a6c6">1998</span>
         </div>
-        <div>
-          <span class="selfInfo-title">山西农业大学</span>
-          <span class="selfInfo-content" style="color:#c69043">园艺学</span>
-        </div>
-        <div>
-          <span class="selfInfo-title">现在职业</span>
-          <span class="selfInfo-content" style="color:#b04fe6">硕士</span>
-        </div>
       </div>
-    </div>
-  </div>
-   <div class="author-content">
-    <div class="create-site-post author-content-item single">
-      <div class="author-content-item-tips">心路历程</div>
-      <span class="author-content-item-title">欢迎来到西瓜撞地球 😝</span><br/>
-      <br/>
-        <br></a>
     </div>
   </div>
 </div>
