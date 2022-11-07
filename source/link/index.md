@@ -6,7 +6,7 @@ top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb5293589
 type: link
 updated: 2022-11-07 14:50:50
 ---
-{% hideToggle [必看]友链申请须知%}
+{% hideToggle [必看]自助友链申请%}
 {% tabs  %}
 
 <!-- tab 友链申请 -->
