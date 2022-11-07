@@ -919,7 +919,6 @@ inject:
     - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <link rel="stylesheet" type="text/css" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     - <meta name="referrer" content="no-referrer">
-    - <link rel="stylesheet" href="https://blog.leonus.cn/css/leonus.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async data-pjax src="/js/rightmenu.js"></script>
