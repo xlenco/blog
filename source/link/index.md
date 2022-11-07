@@ -1,31 +1,34 @@
 ---
 date: 2022-05-03 21:21:51
-title: 友情链接
-type: link
-top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb52935896_Y0819msuI.jpg
-updated: 2022-08-06 14:00:02
 flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
+title: 友情链接
+top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb52935896_Y0819msuI.jpg
+type: link
+updated: 2022-11-07 14:50:50
 ---
-
-
-
-
-{% hideToggle 友链申请须知%}
+{% hideToggle [必看]友链申请须知%}
 {% tabs  %}
+
 <!-- tab 友链申请 -->
+
 友链申请地址：
 https://github.com/xlenco/friends/issues
 PS：本站采用Github issue添加友链
 为避免因添加友链，而重复部署网站，现无论是留言还是issue均默认通过issue方式添加到该页面。
+
 ## 友链模板
+
 ```yml
 - name: Xlenco
   link: https://xlenco.eu.org
   avatar: https://xlenco.eu.org/img/head.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
+
 <!-- endtab -->
+
 <!-- tab 友链须知 -->
+
 1.大佬可不受以下要求限制
 
 2.至少一篇原创，没有原创的内容📔📕📗📘📙📓的话很快就会死掉的呢
@@ -41,13 +44,11 @@ PS：本站采用Github issue添加友链
 7.3个月以上网站打不开、取消本站链接本站将直接移除你的链接
 
 8.头像尽量https，且贵站能够正常访问
+
 <!-- endtab -->
+
 {% endtabs %}
 {% endhideToggle %}
-
-
-
-
 
 {% note warning flat %}
 申请友链的请先添加本站添加再申请 ! !
@@ -55,21 +56,28 @@ PS：本站采用Github issue添加友链
 
 {% hideToggle 我的信息%}
 {% tabs  %}
+
 <!-- tab Butterfly & MengD -->
+
 ```yml
 - name: Xlenco
   link: https://xlenco.eu.org
   avatar: https://xlenco.eu.org/img/head.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
+
 <!-- endtab -->
+
 <!-- tab volantis -->
+
 ```yml
 - title: Xlenco
   avatar: https://xlenco.eu.org/img/head.webp
   url: https://xlenco/
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
+
 <!-- endtab -->
+
 {% endtabs %}
 {% endhideToggle %}
