@@ -836,7 +836,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: true
+  enable:false
   field: post # site/post
   placeholder: https://ik.imagekit.io/xlenco/loading.webp
   blur: false
