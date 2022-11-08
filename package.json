@@ -54,8 +54,7 @@
     "lineno": "^0.1.0",
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
     "yuque-hexo": "^1.9.5",
-    "hexo-all-minifier": "^0.5.7"
-
+    "hexo-minify": "^1.2.3"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
