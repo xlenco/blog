@@ -925,6 +925,7 @@ inject:
     - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
     - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js"></script>
     - <canvas id="universe"></canvas>  
+    - <script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script>
     - <script defer src="/js/custom.js"></script>
     - <script defer src="/js/universe.js"></script>
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
