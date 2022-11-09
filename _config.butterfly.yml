@@ -805,6 +805,8 @@ note:
 pjax:
   enable: true
   exclude:
+     - /shuoshuo/
+     - /fcircle/
     # - xxxx
     # - xxxx
 
