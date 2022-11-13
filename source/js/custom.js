@@ -126,3 +126,13 @@ function share() {
     btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~").innerText=document.title.split(" |Xlenco")[0];
 }
 
+// 阅读进度
+var $percent = document.querySelector("#nav #hotkey #top-button a.site-page i");
+$percent && window.addEventListener("scroll", (function () {
+    let e = document.body.scrollHeight || document.documentElement.scrollHeight,
+        t = window.innerHeight || document.documentElement.clientHeight;
+    $percent.dataset.percent = ((document.body.scrollTop || document.documentElement.scrollTop) / (e - t) * 100).toFixed(0)
+}));
+
+// nav 标题
+"" === GLOBAL_CONFIG_SITE.title.replace("Jayhrn", "") ? document.getElementById("page-name-text").style.display = "none" : document.querySelector("#page-name-text>span").innerHTML = document.title.split("|Xlenco")[0];
