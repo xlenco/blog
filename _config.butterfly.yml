@@ -103,7 +103,7 @@ disable_top_img: false
 
 # The banner image of home page
 index_img: false 
-https://xlenco.onmicrosoft.cn/img/Ycgj8Wymp.webp
+# https://xlenco.onmicrosoft.cn/img/Ycgj8Wymp.webp
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://bing.xlenco.eu.org
