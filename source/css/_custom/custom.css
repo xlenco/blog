@@ -1852,3 +1852,579 @@ hr:before {
     font-size: 18px
 }
 
+/导航栏 css/
+
+#nav #nav-group {
+    max-width: 1376px;
+    justify-content: center
+}
+
+.layout {
+    max-width: 1400px;
+    justify-content: center
+}
+
+@media screen and (min-width: 1920px) {
+    .layout.hide-aside {
+        max-width: 1600px
+    }
+
+    #nav #nav-group, .layout {
+        max-width: 1500px
+    }
+}
+
+#nav {
+    top: 0 !important;
+    display: flex;
+    justify-content: center;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#nav #nav-group {
+    width: 100%;
+    display: flex;
+    position: relative
+}
+
+#nav .site-page::after {
+    display: none
+}
+
+#nav .site-page {
+    text-shadow: none;
+    border-radius: 8px;
+}
+
+.page .sticky_layout {
+    top: 50px !important
+}
+
+#post ~ .aside-content .sticky_layout {
+    top: 70px !important
+}
+
+#nav.show {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    -o-transform: translate3d(0, 0, 0) !important;
+    -ms-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    position: fixed;
+    z-index: 91
+}
+
+#page-header.nav-fixed #nav.show, #page-header.not-top-img #nav.show {
+    border-bottom: none
+}
+
+#page-header.not-top-img:not(.nav-fixed) #nav {
+    background: var(--Jay-background) !important
+}
+
+#page-header.not-top-img #nav {
+    transition: .3s;
+    background: var(--Jay-maskbgdeep) !important;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+@media screen and (max-width: 768px) {
+    #page-header.not-top-img #nav {
+        background: var(--Jay-background)
+    }
+}
+
+#nav a {
+    border-radius: 8px;
+    padding: 6px 12px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .menus_item:hover > a.site-page {
+        color: var(--Jay-white) !important;
+        background: var(--Jay-white-op);
+        transition: .3s;
+        box-shadow: var(--Jay-shadow-main)
+    }
+
+    .page .menus_item:hover > a.site-page {
+        color: var(--Jay-white) !important;
+        background: var(--Jay-main);
+        transition: .3s;
+        box-shadow: var(--Jay-shadow-main)
+    }
+
+    .nav-fixed .menus_item:hover > a.site-page {
+        background-color: var(--Jay-main)
+    }
+}
+
+.nav-fixed #nav #site-name span {
+    color: var(--Jay-fontcolor);
+    transition: .3s
+}
+
+#nav #site-name:hover i {
+    color: var(--Jay-white)
+}
+
+#nav #menus {
+    position: absolute;
+    width: 100%;
+}
+
+#nav #site-name span {
+    font-weight: 700 !important;
+    font-size: 1.1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    #nav #site-name {
+        opacity: 1;
+        transition: .3s;
+        overflow: hidden
+    }
+
+    #nav #site-name span {
+        transition: .3s
+    }
+
+    #nav #site-name:hover span {
+        opacity: 0;
+        transition: .3s
+    }
+
+    #page-header.nav-fixed #nav #site-name {
+        opacity: 1;
+        transition: .1s
+    }
+
+    #page-header.nav-visible #nav #site-name {
+        opacity: 1;
+        transition: .1s
+    }
+
+    #nav #site-name:after {
+        background: url('https://cdn.jsdelivr.net/gh/Jayhrn/CDN/img/home.png') no-repeat 50% 50%;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        width: 80px;
+        height: 60px;
+        content: "";
+        transition: .3s;
+        transition-timing-function: ease-in;
+        transform: scale(.4)
+    }
+
+    .post #nav #site-name:hover {
+        background: var(--Jay-white-op)
+    }
+
+    .nav-fixed #nav #site-name:hover {
+        background: var(--Jay-main)
+    }
+
+    #nav #site-name:hover:after {
+        opacity: 1;
+        transform: translateY(0) scale(.3);
+        transition-timing-function: ease-in
+    }
+}
+
+.nav-fixed #nav #site-name span {
+    color: var(--Jay-fontcolor);
+    transition: .3s
+}
+
+#nav #site-name:hover span {
+    color: var(--Jay-white)
+}
+
+.post-bg #nav #site-name {
+    color: var(--Jay-white);
+    transition: .3s
+}
+
+#nav #site-name {
+    color: var(--Jay-white);
+    padding: 0;
+    transition: .3s;
+    display: flex;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none
+}
+
+#nav #blog_name #site-name {
+    position: relative
+}
+
+/*设置menu子元素边距*/
+#nav .menus_item_child .site-page.child {
+    padding: .5rem .8rem !important
+}
+
+#nav #menus {
+    position: absolute;
+    width: 100%
+}
+
+@media screen and (max-width: 768px) {
+    #nav #menus {
+        display: none
+    }
+}
+
+#nav .menus_items {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+#menus > div.menus_items > div > a {
+    letter-spacing: .2rem;
+    font-size: 1.1rem;
+}
+
+#page-header.nav-fixed #nav div.menus_items[style*="opacity: 0;"] .nav {
+    opacity: .3;
+}
+
+#page-header.nav-fixed #nav div.menus_items {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#page-header.nav-fixed.nav-visible #nav div.menus_items {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#nav .menus_items .menus_item {
+    padding: 0 .4rem !important
+}
+
+#nav .menus_items .menus_item .menus_item_child {
+    padding: 6px 4px 8px 4px;
+    background-color: var(--Jay-card-bg);
+    border-radius: 12px;
+    border: var(--style-border);
+    box-shadow: var(--Jay-shadow-black);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#nav .menus_items .menus_item .menus_item_child:hover {
+    border: var(--style-border-hover);
+    box-shadow: var(--Jay-shadow-main)
+}
+
+#nav .menus_items .menus_item:hover .menus_item_child {
+    display: flex
+}
+
+#nav .menus_items .menus_item .menus_item_child li {
+    margin: 0 .2rem;
+    border-radius: 8px !important;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:hover {
+    background: 0 0;
+    background: var(--Jay-main) !important;
+    color: var(--Jay-white) !important;
+    box-shadow: var(--Jay-shadow-main);
+    transform: scale(1) !important;
+    transition: .3s;
+    border-radius: 8px !important;
+}
+
+#sidebar #sidebar-menus .menus_items .site-page:hover, #sidebar #sidebar-menus .sidebar-site-data a:hover {
+    border-radius: 8px;
+    background: var(--Jay-main);
+    color: var(--Jay-white) !important;
+}
+
+/*设置电脑无向下箭头，而手机有*/
+@media screen and (max-width: 768px) {
+    .site-page i.fa-chevron-down {
+        display: inline-flex !important;
+    }
+}
+
+.site-page i.fa-chevron-down {
+    display: none;
+}
+
+
+#sidebar #sidebar-menus .menus_items .site-page:hover, #sidebar #sidebar-menus .sidebar-site-data a:hover .headline, #sidebar #sidebar-menus .sidebar-site-data a:hover .length-num {
+    color: var(--Jay-white) !important
+}
+
+#page-header.not-top-img {
+    margin: 0
+}
+
+#nav a.site-page.child {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#nav a.site-page.child:hover {
+    color: var(--Jay-main) !important;
+    background: var(--Jay-main);
+    box-shadow: var(--Jay-shadow-main)
+}
+
+#page-header.post-bg #nav #hotkey .site-page:hover, #page-header.post-bg #nav #site-name:hover, #page-header.post-bg #nav .menus_item > .site-page:hover {
+    color: var(--Jay-white) !important;
+    background: var(--Jay-main);
+}
+
+[data-theme=dark] #page-header.post-bg #nav #hotkey .site-page:hover, [data-theme=dark] #page-header.post-bg #nav #site-name:hover, [data-theme=dark] #page-header.post-bg #nav .menus_item > .site-page:hover {
+    color: var(--Jay-white) !important;
+    background: var(--Jay-main)
+}
+
+#page-header.post-bg #nav #hotkey .site-page, #page-header.post-bg #nav #site-name, #page-header.post-bg #nav .menus_item > .site-page {
+    color: var(--Jay-white);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#page-header.not-top-img #nav #hotkey .site-page, #page-header.not-top-img #nav #page-name-text, #page-header.not-top-img #nav #site-name, #page-header.not-top-img #nav .menus_item > .site-page, #page-header.post-bg.nav-fixed #nav #hotkey .site-page, #page-header.post-bg.nav-fixed #nav #page-name-text, #page-header.post-bg.nav-fixed #nav #site-name, #page-header.post-bg.nav-fixed #nav .menus_item > .site-page {
+    color: var(--Jay-fontcolor);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#page-header.not-top-img #nav #hotkey .site-page:hover, #page-header.not-top-img #nav #page-name-text:hover, #page-header.not-top-img #nav #site-name:hover, #page-header.not-top-img #nav .menus_item > .site-page:hover, #page-header.post-bg.nav-fixed #nav #hotkey .site-page:hover, #page-header.post-bg.nav-fixed #nav #page-name-text:hover, #page-header.post-bg.nav-fixed #nav #site-name:hover, #page-header.post-bg.nav-fixed #nav .menus_item > .site-page:hover {
+    color: var(--Jay-white) !important;
+    background: var(--Jay-main);
+    box-shadow: var(--Jay-shadow-main);
+}
+
+#nav #page_name {
+    position: absolute
+}
+
+@media screen and (max-width: 768px) {
+    #nav #page_name {
+        display: none !important
+    }
+}
+
+#nav #page-name-text {
+    opacity: 0;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    line-height: 1.2em;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-50px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#page-header.nav-fixed #nav #page-name-text {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+
+#page-header.nav-fixed.nav-visible #nav #page-name-text {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px)
+}
+
+/* 设置hover返回顶部 */
+#page-name-text > span::before {
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    color: var(--Jay-white) !important;
+    top: 0;
+    left: 0;
+    content: '回到顶部';
+    min-width: fit-content; 
+    background-color: var(--Jay-theme);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    opacity: 0;
+    box-shadow: 0 0 3px var(--Jay-theme);
+    line-height: 40px; /*如果垂直位置不居中可以微调此值，也可以删了*/
+}
+
+#page-name-text > span:hover:before {
+    opacity: 1;
+}
+
+#page-name-text:hover {
+    scale: 1.03
+}
+
+#nav #hotkey {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    text-align: center
+}
+
+#nav #hotkey div {
+    width: 40px;
+    height: 40px;
+    margin-left: .3rem;
+    padding: 0 !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+#nav #hotkey .site-page {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    padding: 0 !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+#nav #hotkey #mode-button i {
+    color: var(--Jay-sun-moon)
+}
+
+#nav #hotkey #mode-button i::before {
+    content: '\f1bc'
+}
+
+#nav #hotkey #mode-button:hover i::before {
+    content: '\ef6e'
+}
+
+[data-theme=dark] #nav #hotkey #mode-button i::before {
+    content: '\ef6e'
+}
+
+[data-theme=dark] #nav #hotkey #mode-button:hover i::before {
+    content: '\f1bc'
+}
+
+/* 控制导航栏滑动百分比显隐 */
+header:not(.nav-fixed) #nav #hotkey #top-button {
+    width: 0;
+    opacity: 0;
+    margin-left: 0
+}
+
+#nav #hotkey #top-button a.site-page {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    color: var(--font-color) !important;
+    background: var(--Jay-card-bg)
+}
+
+#nav #hotkey #top-button:hover a.site-page {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    color: var(--Jay-secondtext) !important;
+    background: var(--Jay-main)
+}
+
+#nav #hotkey #top-button i::before {
+    content: attr(data-percent);
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 90%;
+    line-height: 1.7em;
+    white-space: nowrap;
+    font-family: Jay
+}
+
+#nav #hotkey #top-button:hover i::before {
+    content: '\f004';
+    position: relative;
+    font-family: unset;
+    font-size: 100%
+}
+
