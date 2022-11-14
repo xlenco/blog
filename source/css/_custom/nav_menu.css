@@ -470,7 +470,6 @@ center#name-container {
   cursor: pointer;
   position: relative;
 }
-
 .page #nav a:hover {
   color: var(--anzhiyu-white) !important;
   background: var(--anzhiyu-main);
@@ -487,4 +486,36 @@ center#name-container {
 }
 .back-menu-item-icon.loading img {
   width: 25px;
+}
+#page-header #nav #menus .nav-button.long a.totopbtn,
+#page-header #nav #menus .nav-button.long,
+#page-header #nav #menus .nav-button.long a.totopbtn span {
+  width: 70px;
+}
+#page-header #nav #menus .nav-button.long a.totopbtn span {
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+#page-header #nav #menus .nav-button.long a.totopbtn:hover {
+  border-radius: 35px;
+  height: 30px;
+}
+
+#nav #search-button {
+  padding-left: 0;
+}
+#page-header #nav .nav-button {
+  margin-left: 0.5rem;
+  padding: 0;
+}
+#page-header:not(.is-top-bar) #nav-totop a {
+  display: none;
+}
+#search-button a.site-page.social-icon.search span {
+  display: none;
 }
