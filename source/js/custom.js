@@ -126,12 +126,4 @@ function share() {
     btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~").innerText=document.title.split(" |Xlenco")[0];
 }
 
-// 返回顶部 显示网页阅读进度 获取标题
-var $percent = document.querySelector("#nav #hotkey #top-button a.site-page i");
-$percent && window.addEventListener("scroll", (function () {
-    let e = document.body.scrollHeight || document.documentElement.scrollHeight,
-        t = window.innerHeight || document.documentElement.clientHeight;
-    $percent.dataset.percent = ((document.body.scrollTop || document.documentElement.scrollTop) / (e - t) * 100).toFixed(0)
-}));
-"" === GLOBAL_CONFIG_SITE.title.replace("Xlenco", "") ? document.getElementById("page-name-text").style.display = "none" : document.querySelector("#page-name-text>span").innerHTML = document.title.split(" | Jayhrn")[0];
 
