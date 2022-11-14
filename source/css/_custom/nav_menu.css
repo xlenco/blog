@@ -91,6 +91,11 @@ div#menus {
   margin: 6px;
   border-radius: 5px !important;
   transition: all 0.3s;
+  display: inline-block;
+  margin: 0 3px;
+}
+#nav .menus_items .menus_item .menus_item_child:before {
+  top: -19px;
 }
 
 #site-name,
