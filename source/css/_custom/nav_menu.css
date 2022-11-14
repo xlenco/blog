@@ -79,6 +79,9 @@ div#menus {
 }
 
 /* 顶栏修改 */
+#nav .menus_items .menus_item .menus_item_child li a {
+  padding: 2px 16px;
+}
 #nav .menus_items .menus_item .menus_item_child li:hover a {
   color: white !important;
 }
@@ -252,7 +255,7 @@ center#name-container {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "ZhuZiAYuanJWD";
+  font-family: "HarmonyOS";
 }
 .nav-fixed.nav-visible #name-container {
   top: 60px;
