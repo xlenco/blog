@@ -125,10 +125,7 @@ border-radius: 25px;
 #aside-content #card-toc .toc-content .toc-link.active {
     border-radius: 8px;
 }
-/* 文章页翻页图片圆角 */
-nav#pagination.pagination-post {
-    border-radius: 25px;
-}
+
 /* 相关推荐圆角 */
 .relatedPosts>.relatedPosts-list>div {
   border-radius: 25px;
