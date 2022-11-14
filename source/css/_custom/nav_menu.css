@@ -22,6 +22,7 @@
 .page #nav-totop #percent {
   background: var(--font-color);
   color: var(--card-bg);
+  font-size: 13px;
 }
 
 #nav-totop {
