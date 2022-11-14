@@ -45,10 +45,6 @@
   transform: scale(1.5);
   font-weight: 700;
 }
-.nav-fixed #nav-totop #percent,
-.page #nav-totop #percent {
-  font-size: 13px;
-}
 #page-header #nav #nav-right div {
   margin-left: 0.5rem;
   padding: 0;
@@ -89,7 +85,7 @@ div#menus {
 
 #nav .menus_items .menus_item .menus_item_child li {
   margin: 6px;
-  border-radius: 5px !important;
+  border-radius: 5px; !important;
   transition: all 0.3s;
   display: inline-block;
   margin: 0 3px;
@@ -97,7 +93,6 @@ div#menus {
 #nav .menus_items .menus_item .menus_item_child:before {
   top: -19px;
 }
-
 #site-name,
 .shuoshuo {
   white-space: nowrap;
@@ -106,57 +101,28 @@ div#menus {
 #site-name {
   padding: 0 8px;
   position: relative;
-}
-#site-name *:not(i):hover {
-  display: none !important;
-}
-#blog_name #site-name:hover::after {
-  opacity: 1;
-  transform: scale(1.01);
-}
-#blog_name #site-name::after {
-  opacity: 0;
-  background-color: var(--anzhiyu-blue-main) !important;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  content: '\f015';
-  box-shadow: 0 0 5px var(--anzhiyu-theme);
-  font-family: 'Font Awesome 6 Free';
-  text-align: center;
-  color: white;
-}
-#site-name i {
-  position: absolute;
-  top: 50%;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
-  left: 0;
-  opacity: 0;
-}
-#site-name:hover i {
-  opacity: 1;
 }
 
-/* 横向排布子菜单 */
-#nav .menus_items .menus_item .menus_item_child li {
-  display: inline-block;
+#blog_name #site-name i {
+  opacity: 0;
+  position: absolute;
+}
+
+#blog_name #site-name:hover .title {
+  opacity: 0;
+}
+
+#blog_name #site-name:hover i {
+  opacity: 1;
+  transform: scale(1.01);
+  color: white;
 }
 /* 圆角隐藏 */
 ul.menus_item_child {
-  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -178,11 +144,15 @@ ul.menus_item_child {
   transform: translateX(-50%);
   right: auto;
   left: auto !important;
+  padding: 6px 4px;
+  box-sizing: content-box;
+  line-height: 35px;
 }
 #nav .menus_items .menus_item:hover {
   padding: 0 5px 27px 5px !important;
-  margin-bottom: -15px !important;
+  margin-bottom: -14.5px !important;
 }
+
 #nav .menus_items .menus_item .menus_item_child {
   top: 44px;
 }
@@ -196,36 +166,12 @@ ul.menus_item_child {
   }
 }
 
-#nav .menus_items .menus_item:hover .menus_item_child {
-  padding: 6px 4px;
-  box-sizing: content-box;
-  line-height: 35px;
-}
-
-#nav .menus_items .menus_item .menus_item_child li {
-  margin: 0 3px;
-}
-#nav .menus_items .menus_item .menus_item_child li a {
-  padding: 0px 16px;
-}
-
 .nav-fixed #nav {
   transform: translateY(58px) !important;
-  -webkit-transform: translateY(58px) !important;
-  -moz-transform: translateY(58px) !important;
-  -ms-transform: translateY(58px) !important;
-  -o-transform: translateY(58px) !important;
 }
 #nav {
   padding: 0 calc((100% - 1420px) / 2);
-  transition: 0.3s;
-  background: var(--anzhiyu-maskbgdeep);
   backdrop-filter: saturate(180%) blur(20px);
-  transition: none !important;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
 }
 
 #nav a {
@@ -244,6 +190,7 @@ ul.menus_item_child {
   font-weight: 700;
   padding: 0em 0.3em 0em 0.5em;
   height: 35px;
+  line-height: 35px;
 }
 #nav .menus_items .menus_item {
   padding: 0 5px;
@@ -253,15 +200,8 @@ ul.menus_item_child {
   align-items: center;
 }
 
-#menus > div.menus_items > div > a {
-  line-height: 35px;
-}
-
-#page-header #nav a:hover,
-#page-header.nav-fixed #nav a:hover,
-#page-header.nav-fixed #nav #site-name:hover,
-#page-header.nav-fixed #nav #toggle-menu:hover {
-  color: var(--anzhiyu-white);
+#nav div#toggle-menu {
+  padding: 2px 0 4px 6px;
 }
 
 #nav-totop .totopbtn i {
@@ -278,7 +218,7 @@ ul.menus_item_child {
   color: white !important;
   top: 0;
   left: 0;
-  content: '回到顶部';
+  content: "回到顶部";
   background-color: var(--anzhiyu-theme);
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -312,7 +252,7 @@ center#name-container {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'ZhuZiAYuanJWD';
+  font-family: "ZhuZiAYuanJWD";
 }
 .nav-fixed.nav-visible #name-container {
   top: 60px;
@@ -336,7 +276,8 @@ center#name-container {
 }
 
 .mask-name-container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 50%;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -344,12 +285,13 @@ center#name-container {
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .mask-name-container {
-    width: 600px;
+    width: 65%;
   }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 768px) {
   .mask-name-container {
     display: none;
   }
@@ -365,9 +307,6 @@ center#name-container {
   font-size: 1.3em;
 }
 
-#page-header.not-top-img #nav .back-home-button {
-  color: var(--anzhiyu-fontcolor);
-}
 @media screen and (min-width: 900px) {
   #nav .back-home-button:hover {
     box-shadow: var(--anzhiyu-shadow-main);
@@ -388,7 +327,6 @@ center#name-container {
   margin-right: 4px;
   transition: 0.3s;
   border-radius: 8px;
-  color: var(--anzhiyu-white);
 }
 
 .back-home-button:hover .back-menu-list-groups {
@@ -433,7 +371,7 @@ center#name-container {
   left: 0px;
   width: 100%;
   height: 25px;
-  content: '';
+  content: "";
 }
 
 .back-home-button .back-menu-list-group:hover .back-menu-list-title {
@@ -471,16 +409,10 @@ center#name-container {
   background: var(--anzhiyu-secondbg);
 }
 #page-header #nav .back-home-button {
-  color: var(--anzhiyu-fontcolor);
   cursor: pointer;
   position: relative;
 }
-.page #nav a:hover {
-  color: var(--anzhiyu-white) !important;
-  background: var(--anzhiyu-main);
-  transition: 0.3s;
-  box-shadow: var(--anzhiyu-shadow-main);
-}
+
 @media screen and (min-width: 1300px) {
   #nav a:hover {
     transform: scale(1.03);
@@ -492,6 +424,7 @@ center#name-container {
 .back-menu-item-icon.loading img {
   width: 25px;
 }
+
 #page-header #nav #menus .nav-button.long a.totopbtn,
 #page-header #nav #menus .nav-button.long,
 #page-header #nav #menus .nav-button.long a.totopbtn span {
