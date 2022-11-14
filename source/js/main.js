@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let hideMenuIndex = ''
-    if (window.innerWidth <= 768) hideMenuIndex = true
+    if (window.innerWidth < 768) hideMenuIndex = true
     else hideMenuIndex = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
 
     if (hideMenuIndex) {
@@ -277,11 +277,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const isChatBtnHide = typeof chatBtnHide === 'function'
     const isChatBtnShow = typeof chatBtnShow === 'function'
 
-    const scrollTask = btf.throttle(() => {
+    window.scrollCollect = () => {
+      return btf.throttle(function (e) {
         const currentTop = window.scrollY || document.documentElement.scrollTop
         const isDown = scrollDirection(currentTop)
         if (currentTop > 56) {
-            $header.classList.add('is-top-bar')
           if (isDown) {
             if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
             if (isChatBtnShow && isChatShow === true) {
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         } else {
           if (currentTop === 0) {
-          $header.classList.remove('is-top-bar')
+            $header.classList.remove('nav-fixed', 'nav-visible')
           }
           $rightside.style.cssText = "opacity: ''; transform: ''"
         }
@@ -309,9 +309,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (document.body.scrollHeight <= innerHeight) {
           $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
         }
-      }, 200)
-    
-    window.scrollCollect = scrollTask
+      }, 200)()
+    }
 
     window.addEventListener('scroll', scrollCollect)
   }
