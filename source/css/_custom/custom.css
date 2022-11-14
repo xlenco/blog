@@ -8,6 +8,15 @@ h1#site-title {
   font-family: 'HarmonyOS' ;
 }
 
+/* 导航栏竖轴 */
+#nav .menus_items .menus_item:hover .menus_item_child{
+  display: flex !important;
+}
+
+#nav *::after{
+    background-color: transparent!important;
+}
+
 /* 鼠标样式 */
 body {
   cursor: url("https://ik.imagekit.io/nicexl/cursor/normal.cur"), default;
