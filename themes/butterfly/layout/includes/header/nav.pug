@@ -2,7 +2,7 @@ nav#nav
   #nav-group
     span#blog_name
       a#site-name(href="/" title="返回博客主页")
-        span Xlenco
+        span JAYHRN
     span#page_name
       a#page-name-text(title=_p("rightside.back_to_top") onclick="btf.scrollToDest(0,500)")
         span #[=config.title]
@@ -17,13 +17,12 @@ nav#nav
             i.fas.fa-search.fa-fw
       if (theme.darkmode.enable && theme.darkmode.button)
         #mode-button
-         a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
-          i.fas.fa-adjust
+          a.site-page(title=_p('rightside.night_mode_title') onclick="switchDarkMode()")
+            i.fas.fa-adjust
       #top-button
         a.site-page(title=_p("rightside.back_to_top") onclick="btf.scrollToDest(0,500)")
-          i.fas.fa-bars.fa-fw
+          i.fas.fa-adjust
       #toggle-menu
         a.site-page
           i.fas.fa-bars.fa-fw
-
 
