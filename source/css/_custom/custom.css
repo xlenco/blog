@@ -8,9 +8,21 @@ h1#site-title {
   font-family: 'HarmonyOS' ;
 }
 
-/* 导航栏竖轴 */
+/* 导航栏居中 */
+#nav .menus_items {
+    /* display: inline; 这个带不带都可以，本来就是inline */
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #nav .menus_items .menus_item:hover .menus_item_child{
   display: flex !important;
+}
+
+#nav *::after{
+    background-color: transparent!important;
 }
 
 #nav *::after{
