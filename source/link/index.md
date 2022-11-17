@@ -6,6 +6,124 @@ top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb5293589
 type: link
 updated: 2022-11-07 14:50:50
 ---
+{% flink %}
+- class_name: 友情链接
+  class_desc: 昔日里那些人，那些事
+  link_list:
+    - name: 陈鑫磊'Blog
+      link: https://www.cxl2020mc.top
+      avatar: https://www.cxl2020mc.top/img/avatar.png
+      descr: 这个人太懒了啥也没写......
+    - name: MJ's Blog
+      descr: 醒亦念卿，梦亦念卿
+      link: https://blog.justlovesmile.top
+      avatar: https://npm.elemecdn.com/justlovesmile-img/logo.jpg
+    - name: 陈若  
+      link: https://chen-ruo.top
+      avatar: https://npm.elemecdn.com/chen-ruo-boke/%E8%83%8C%E6%99%AF/%E5%A4%B4%E5%83%8F.webp
+      descr: 经济以人为本，学习以勤为立
+    - name: 轻笑Chuckle
+      link: https://www.chuckle.top
+      avatar: https://www.chuckle.top/img/head.webp
+      descr: 宁静致远,倾尘轻笑
+    - name: ZkeqのCoding日志
+      link: https://icodeq.com/
+      avatar: https://img.onmicrosoft.cn/Avatar.jpg
+      descr: 大佬的博客站
+    - name: Akilar
+      link: https://akilar.top
+      avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+      descr: 欢迎光临糖果屋
+    - name: wzx
+      link: https://wzx.is-a.dev/
+      avatar: https://wzx.is-a.dev/images/avatar.png
+      descr: wzx个人主页网站
+    - name: 葱苓小居
+      link: https://www.ciraos.top
+      avatar: https://s2.loli.net/2022/05/24/mZAcl5qUHo4dkJw.png
+      descr: Dare && Do
+    - name: zx's blog
+      link: https://zx.js.cool
+      avatar: https://zx.js.cool/avatar.webp
+      descr: Java资源速查
+    - name: Mlikiowa Home Village
+      link: https://nanaeo.cn
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=1627126029&s=100
+      descr: A litter Village With Mlikiowa
+    - name:  Mr_G’ blog
+      link: https://www.mrgblog.top
+      avatar: https://www.mrgblog.top/upload/2022/08/touxiang.jpg
+      descr: 昨夜星辰已逝 满眼青山已远
+    - name: 西瓜撞地球
+      link: https://bio-w.cn/
+      avatar: https://bio-w.cn/img/avater.jpg
+      descr: 我在人间贩卖彩虹
+    - name: 心流
+      link: https://blog.panghai.top
+      avatar: https://blog.panghai.top/img/avatar.png
+      descr: 保持谨慎，保持乐观
+    - name: 七米蓝
+      link: https://www.chirmyram.top
+      avatar: https://s1.ax1x.com/2020/04/05/Grapf1.png
+      descr: 不在灯火阑珊处。
+    - name: Yuou
+      link: https://mletter.cn
+      avatar: https://pic.imgdb.cn/item/630637fc16f2c2beb1c6f793.jpg
+      descr: 一个写自己日记的小站
+    - name: Leonus
+      link: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
+      descr: 进一寸有进一寸的欢喜。
+    - name: 大锤の博客
+      link: https://dddachui.top/
+      avatar: https://dddachui.top/download/other/wanye.jpg
+      descr: 运维本是逆天而行,死在路上也很正常
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/head.jpg
+      descr: Future is now 🍭🍭🍭
+    - name: Sady’Blog
+      link: https://sady0.com
+      avatar: https://cdn.ideaopen.cn/xiaojun/gzRMsL4X.jpg
+      descr: 永远年轻，永远热泪盈眶.
+    - name: LYXの小破站
+      link: https://yisous.xyz
+      avatar: https://bu.dusays.com/2022/09/01/63103c5038313.webp
+      descr: 人有悲欢离合 月有阴晴圆缺
+    - name: Hello World
+      link: https://www.ttkwsd.top/
+      avatar: https://static.ttkwsd.top/config/9c65807710f54d9d5ad398a78216ebfb.jpg
+      descr: 学习笔记
+    - name: SinGO博客
+      link: https://blog.xsnetw.cf
+      avatar: https://blog.xsnetw.cf/images/avatar.jpg
+      descr: 害怕孤独，但又享受孤独
+    - name: Eurkon
+      link: https://blog.eurkon.com
+      avatar: https://blog.eurkon.com/images/user/avatar.jpg
+      descr: 不只是代码的搬运工
+    - name: 九九九感冒绫 #站点名称
+      link: https://miku-39.love/ #站点链接
+      avatar: https://pic1.imgdb.cn/item/6343babe16f2c2beb1acb692.jpg #站长头像
+      descr: 这是我的梦想,我会慢慢的完成它 #站点描述穷,碾过尊严,碾过微薄的梦 #站点描述
+    - name: 一生雾梦の博客
+      link: https://yswm-m.github.io
+      avatar: https://pic.imgdb.cn/item/631c5b8016f2c2beb1f6056e.jpg
+      descr: 若一心追逐北极星,所经路线便能成为地图
+
+- class_name: Wed
+  class_desc: 一些实用的网站
+  link_list:
+    - name: Solitude'Pan
+      link: https://solitude.eu.org/
+      avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
+      descr: 分享各类软件，影视资源...
+
+{% endflink %}
+
+
+
+
 {% hideToggle [必看]自助友链申请%}
 {% tabs  %}
 
