@@ -7,7 +7,7 @@ type: link
 updated: 2022-11-07 14:50:50
 ---
 {% flink %}
-- class_name: 友情链接
+- class_name: 友人账
   class_desc: 昔日里那些人，那些事
   link_list:
     - name: 陈鑫磊'Blog
@@ -26,22 +26,10 @@ updated: 2022-11-07 14:50:50
       link: https://www.chuckle.top
       avatar: https://www.chuckle.top/img/head.webp
       descr: 宁静致远,倾尘轻笑
-    - name: ZkeqのCoding日志
-      link: https://icodeq.com/
-      avatar: https://img.onmicrosoft.cn/Avatar.jpg
-      descr: 大佬的博客站
     - name: Akilar
       link: https://akilar.top
       avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
       descr: 欢迎光临糖果屋
-    - name: wzx
-      link: https://wzx.is-a.dev/
-      avatar: https://wzx.is-a.dev/images/avatar.png
-      descr: wzx个人主页网站
-    - name: 葱苓小居
-      link: https://www.ciraos.top
-      avatar: https://s2.loli.net/2022/05/24/mZAcl5qUHo4dkJw.png
-      descr: Dare && Do
     - name: zx's blog
       link: https://zx.js.cool
       avatar: https://zx.js.cool/avatar.webp
@@ -54,10 +42,6 @@ updated: 2022-11-07 14:50:50
       link: https://www.mrgblog.top
       avatar: https://www.mrgblog.top/upload/2022/08/touxiang.jpg
       descr: 昨夜星辰已逝 满眼青山已远
-    - name: 西瓜撞地球
-      link: https://bio-w.cn/
-      avatar: https://bio-w.cn/img/avater.jpg
-      descr: 我在人间贩卖彩虹
     - name: 心流
       link: https://blog.panghai.top
       avatar: https://blog.panghai.top/img/avatar.png
