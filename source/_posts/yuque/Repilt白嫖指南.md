@@ -26,7 +26,7 @@ date: 2022-07-11 17:28:30
 
 ##### 个人版
 
-[ ](https://repl.it/github/xlenco/alist-build-on-replit)![](https://repl.it/badge/github/xilej/alist-build-on-replit#crop=0&crop=0&crop=1&crop=1&id=rwaW9&originHeight=36&originWidth=130&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+[](https://replit.com/github/xlenco/alist-build-on-replit)![](https://replit.com/github/xlenco/alist-build-on-replit)
 
 ##### 教育版
 
