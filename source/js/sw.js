@@ -10,6 +10,44 @@ if (workbox) {
 workbox.setConfig({
     debug: true,
 });
+
+//直接激活跳过等待阶段
+self.skipWaiting();
+workbox.core.clientsClaim();
+
+// CDN
+workbox.routing.registerRoute(
+    /.*\.(?:js|css|webp)$/,
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '静态资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 60,
+                maxAgeSeconds: 60 * 60 * 24
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+workbox.routing.registerRoute(
+    /.*\.(?:woff2|ttf)$/,
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '字体缓存',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 7
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
 const origin = ['https://xlenco.eu.org', 'https://xlenco.github.io']
 
 const cdn = {
