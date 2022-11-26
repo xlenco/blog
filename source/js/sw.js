@@ -1,4 +1,16 @@
-const origin = ['https://blog.imlete.cn', 'https://lete114.github.io']
+importScripts('https://gcore.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js');
+
+if (workbox) {
+    console.log('workbox加载成功🎉');
+} else {
+    console.log('workbox加载失败😬');
+}
+
+// Force production builds 是否关闭控制台中的输出
+workbox.setConfig({
+    debug: true,
+});
+const origin = ['https://xlenco.eu.org', 'https://xlenco.github.io']
 
 const cdn = {
   gh: {
