@@ -1,4 +1,6 @@
-importScripts('https://gcore.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js');
+
+
+navigator.serviceWorker.register('/Service-Worker.js')
 
 if (workbox) {
     console.log('workbox加载成功🎉');
