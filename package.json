@@ -7,8 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "github-yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp",
-    "github": "npm run build && hexo algolia && gulp"
+    "yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp"
   },
   "yuqueConfig": {
     "postPath": "/source/_posts/yuque",
@@ -53,7 +52,8 @@
     "hexo-wordcount": "^6.0.1",
     "lineno": "^0.1.0",
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
-    "yuque-hexo": "^1.9.5"
+    "yuque-hexo": "^1.9.5"，
+    "hexo-offline-popup": "^1.0.3"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
