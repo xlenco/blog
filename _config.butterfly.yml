@@ -907,7 +907,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://npm.onmicrosoft.cn/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format: https://jsd.onmicrosoft.cn/npm/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
     # main_css:
