@@ -281,7 +281,7 @@ filter_optimize:
   css:
     enable: true
     # bundle loaded css file into the one
-    bundle: false
+    bundle: true
     # use a script block to load css elements dynamically
     delivery: true
     # make specific css content inline into the html page
