@@ -3,7 +3,7 @@
 #  link: 置顶文章链接，站内文章建议填相对链接
 #  title: 置顶文章标题
 #  description: 置顶文章描述
-- cover: http://bing.nsso.eu.org
+- cover: https://bing.nsso.eu.org
   timeline: '2022-9-03' # 日期，需要用''包裹
   link: /posts/f1c2.html
   title: Butterfly主题添加51la统计和灵雀应用监控
