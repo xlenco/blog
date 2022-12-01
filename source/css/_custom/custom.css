@@ -1851,11 +1851,3 @@ hr:before {
     font-size: 18px
 }
 
-    avatar-img is-center{
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
-    cursor: pointer;
-    }
