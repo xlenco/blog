@@ -127,26 +127,3 @@ function share() {
 }
 
 
-    var rotateval=0
-    var Interval 
-    window.onload=function(){
-    rotate()
-
-    document.getElementById('avatar-img is-center').onmousemove=function(){
-    clearInterval(Interval)
-    }
-    document.getElementById('avatar-img is-center').onmouseleave=function(){
-    rotate()
-    }
-
-
-    function rotate(){
-    Interval=setInterval(function(){
-    var img=document.getElementById('avatar-img is-center');
-    rotateval+=1;
-    img.style.transform='rotate('+rotateval+'deg)'
-    img.style.transition = '0.1s linear'
-    },100)
-    }
-
-    }
