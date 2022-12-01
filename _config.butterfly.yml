@@ -875,7 +875,7 @@ inject:
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script defer src="/js/51la.js"></script>
     - <script async src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-    - <link rel="stylesheet" type="text/css" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
+   # - <link rel="stylesheet" type="text/css" href="https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/mainColor/heoMainColor.css">
     - <meta name="referrer" content="no-referrer">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
