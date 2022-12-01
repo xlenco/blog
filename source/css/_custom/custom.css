@@ -1851,3 +1851,13 @@ hr:before {
     font-size: 18px
 }
 
+/* 右侧小按钮圆角 */
+#rightside>div>button,#to_comment {
+    margin-right: 4px;
+    border-radius: 7px;
+  }
+
+/*侧边滑动颜色*/
+:root {
+    --btn-bg: #6c8bf1;
+}
