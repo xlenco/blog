@@ -45,6 +45,7 @@ copy:
 social:
    fab fa-github: https://github.com/xlenco || Github
    fas fa-envelope: mailto:xlenco@hotmail.com || Email
+   fa-solid fa-rss: /atom.xml || RSS
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
