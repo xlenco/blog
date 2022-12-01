@@ -20,7 +20,7 @@ updated: 2022-10-7 12:14
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<meta http-equiv="refresh" content="0;URL=Your URL">
+<meta http-equiv="refresh" content="0;URL=Your Url">
 </head>
 </body>
 </html>
