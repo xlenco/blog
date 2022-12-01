@@ -291,7 +291,7 @@ filter_optimize:
     excludes:
   js:
     # bundle loaded js file into the one
-    bundle: false
+    bundle: true
     excludes:
   # set the priority of this plugin,
   # lower means it will be executed first, default is 10
