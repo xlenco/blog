@@ -16,6 +16,8 @@ updated: 2022-10-7 12:14
 
 这是一个可以转跳 URL 的 HTML 实例
 
+## HTML
+
 ```
 <html>
 <head>
@@ -24,4 +26,12 @@ updated: 2022-10-7 12:14
 </head>
 </body>
 </html>
+```
+
+## Js
+
+```
+<script>
+location.href="You Url";
+</script>
 ```
