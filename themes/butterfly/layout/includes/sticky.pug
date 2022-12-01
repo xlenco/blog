@@ -1,1 +1,17 @@
+link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+#sticky
+  #stickyList.swiper-container
+    #stickyWrapper.swiper-wrapper
+      .swiper-slide(onclick="toRandomPost()")
+        .grid-img
+          iframe#banner-page(src="/people/" frameborder="0" loading="eager")
+        .grid-title
+          span 随便逛逛
+          i.fas.fa-arrow-right
+ 
+    .swiper-pagination
 
+.js-pjax
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src='/js/sticky.js')
+link(rel='stylesheet' href='/css/sticky.css')
