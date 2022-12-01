@@ -283,7 +283,7 @@ filter_optimize:
     # bundle loaded css file into the one
     bundle: true
     # use a script block to load css elements dynamically
-    delivery: true
+    delivery: false
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']
