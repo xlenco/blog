@@ -8,6 +8,20 @@ h1#site-title {
   font-family: 'HarmonyOS' ;
 }
 
+/*底部切换按钮*/
+.layout>.recent-posts .pagination>* {
+  display: inline-block;
+  margin: 0 6px;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+/*底部圆角*/
+#pagination .page-number.current {
+    border-radius: 7px;
+}
+
 /* 导航栏居中 */
 #nav .menus_items {
     /* display: inline; 这个带不带都可以，本来就是inline */
