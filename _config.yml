@@ -281,7 +281,7 @@ filter_optimize:
   css:
     enable: true
     # bundle loaded css file into the one
-    bundle: true
+    bundle: false
     # use a script block to load css elements dynamically
     delivery: true
     # make specific css content inline into the html page
@@ -291,7 +291,7 @@ filter_optimize:
     excludes:
   js:
     # bundle loaded js file into the one
-    bundle: true
+    bundle: false
     excludes:
   # set the priority of this plugin,
   # lower means it will be executed first, default is 10
