@@ -1,40 +1,77 @@
-#ah-footer
+#footer_deal
+  a.deal_link(href="" title="mail")
+    i.iconfont.icon-mail
+  a.deal_link(href="" title="qq" target="_blank")
+    i.iconfont.icon-qq1
+  a.deal_link(href="" title="微博" target="_blank")
+    i.iconfont.icon-weibo1
+  a.deal_link(href="https://github.com/jayhrn" title="github"  target="_blank")
+    i.iconfont.icon-github1
+  img.footer_mini_logo.entered.loading(style="border-radius:50%" src='图片路径' onclick="btf.scrollToDest(0,500)" title="返回顶部")
+  a.deal_link(href="" title="dribbble")
+    i.iconfont.icon-dribbble_F
+  a.deal_link(href="" title="facebook" target="_blank")
+    i.iconfont.icon-facebook1
+  a.deal_link(href="" title="Twitter" target="_blank")
+    i.iconfont.icon-twitter
+  a.deal_link(href="" title="Telegram" target="_blank")
+    i.iconfont.icon-telegram
+#Jay-footer
   .footer-group
-    h3.footer-title 博客文章
+    h3.footer-title 直达
     .footer-links
-      a.footer-item(href='/archives/', data-pjax-state='') 全部文章
-      a.footer-item(href='/tags/', data-pjax-state='') 文章标签
-      a.footer-item(href='/categories/', data-pjax-state='') 文章分类
-
+      a.footer-item(href="https://www.jayhrn.com" target="_blank") 我的主页
+      a.footer-item(href="/music") 音乐欣赏
+      a.footer-item(href="/harbour") 心灵港湾
+      a.footer-item(href="/random.html") 随机文章
   .footer-group
-    h3.footer-title 学习笔记
+    h3.footer-title 分类
     .footer-links
-      a.footer-item(href='/categories/笔记/', data-pjax-state='') 笔记
-      a.footer-item(href='/categories/教程/', data-pjax-state='') 教程
-      
-
+      a.footer-item(href="/categories/📚学习笔记/") 学习笔记
+      a.footer-item(href="/categories/🦋魔改教程/") 魔改教程
+      a.footer-item(href="/categories/🌈算法笔记/") 算法笔记
+      a.footer-item(href="/categories/📙语法教程/") 语法教程
   .footer-group
-    h3.footer-title 博客链接
+    h3.footer-title 关于
     .footer-links
-      a.footer-item(href='/fcircle/', data-pjax-state='') 友链动态
-      a.footer-item(href='/link/', data-pjax-state='') 友情链接
-      a.footer-item(href='/shuoshuo/', data-pjax-state='') 说说点啥
-
-
-
+      a.footer-item(href="/about/") 关于我
+      a.footer-item(href="/charts/") 博客统计
+      a.footer-item(href="/archives") 文章归档
+      a.footer-item(href="/update") 更新记录
   .footer-group
-    h3.footer-title 关于本站
+    h3.footer-title 友链
+    .footer-links#friend-links-in-footer
+  .footer-group
+    h3.footer-title 协议
     .footer-links
-      a.footer-item(href='/about/', data-pjax-state='') 关于博主
-      a.footer-item(href='/cc/', data-pjax-state='') 版权协议
-      
+      a.footer-item(href="/privacy/") 隐私协议
+      a.footer-item(href="/cookies/") Cookie
+      a.footer-item(href="/cc/") 版权协议
+#footer-banner
+  .footer-banner-links
+    .footer-banner-left
+      .footer-banner-left
+        #footer-banner-tips
+        script(src='https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js')
+        script.
+          var typed = new Typed("#footer-banner-tips", {
+            strings: ["念念不忘，必有回响。", "Never forget, there will be echoes."],
+            startDelay: 200,
+            backDelay: 2000,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 20
+          })
 
-#fotter-copyright(style='font-size:90%')
-  .copyrights
-    span= _p('Copyright © 2022 Xlenco. ')
-    span= _p(' All rights reserved.')
-  .framework-info
-    span= _p('Powered by') + ' '
-    a(href='https://hexo.io') Hexo
-    span.footer-separator &
-    a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+    .footer-banner-right
+      a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架
+      a.footer-banner-link |
+      a.footer-banner-link(href="https://github.com/jerryc127/hexo-theme-butterfly" title="theme") 主题
+      a.footer-banner-link |
+      a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
+      a.footer-banner-link |
+      a.footer-banner-link(href="/about/" title="about") 关于
+      a.footer-banner-link |
+      a.footer-banner-link.cc(href="/cc/" title="cc协议")
+        i.iconfont.icon-cc
+        span 协议
