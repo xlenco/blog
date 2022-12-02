@@ -36,4 +36,4 @@ location.href="You Url";
 </script>
 ```
 
-onclick="toRandomFlink()"
+<a href=onclick='toRandomFlink()'>
