@@ -1002,14 +1002,6 @@ table td,table th {
 #recent-posts>.recent-post-item .post-meta-date+span {
 	top:.6rem
 }
-#bber-talk {
-	min-height:44px;
-	padding:0 12px 0 8px
-}
-#bber-talk {
-	border-radius:10px!important;
-	background:rgba(245,249,255,.6)
-}
 #recent-posts>.recent-post-item {
 	background:rgba(245,249,255,.6);
 	border:none
@@ -1867,13 +1859,13 @@ hr:before {
 
 /* 右侧小按钮圆角 */
 #rightside>div>button,#to_comment {
-    margin-right: 4px;
-    border-radius: 7px;
+    margin-right: 4px !important;
+    border-radius: 7px !important;
   }
 
 /*侧边滑动颜色*/
 :root {
-    --btn-bg: #6c8bf1;
+    --btn-bg: #6c8bf1 !important;
 }
 
 #footer-wrap {
