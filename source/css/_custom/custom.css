@@ -2183,6 +2183,7 @@ img.footer_mini_logo:hover {
     height: 1.3rem
 }
 
+:root{
    --Jay-lighttext: #f2b94b;
    --Jay-theme: #425AEF;
    --Jay-fontcolor: #363636 ;
@@ -2194,5 +2195,6 @@ img.footer_mini_logo:hover {
    --Jay-white: #fff;
    --Jay-main: var(--Jay-theme);
    --Jay-none: #00000000;
-   --Jay-secondtext:#a1a2b8;
-   --Jay-card-border:#e3e8f7;
+   --Jay-secondtext: #a1a2b8;
+   --Jay-card-border: #e3e8f7;
+}
