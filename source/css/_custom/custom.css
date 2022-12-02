@@ -2183,15 +2183,16 @@ img.footer_mini_logo:hover {
     height: 1.3rem
 }
 
-   --Jay-lighttext: ;
-   --Jay-theme: ;
-   --Jay-fontcolor: ;
-   --Jay-secondbg: ;
-   --style-border: ;
+   --Jay-lighttext: #f2b94b;
+   --Jay-theme: #425AEF;
+   --Jay-fontcolor: #363636 ;
+   --Jay-secondbg: #f1f3f8 ;
+   --style-border: 1px solid var(--Jay-card-border);
    --Jay-hovertext: ;
 /*   --font-color: ;  */
-   --Jay-card-bg: ;
-   --Jay-white: ;
-   --Jay-main: ;
-   --Jay-none: ;
-   --Jay-secondtext: ;
+   --Jay-card-bg: #fff;
+   --Jay-white: #fff;
+   --Jay-main: var(--Jay-theme);
+   --Jay-none: #00000000;
+   --Jay-secondtext:#a1a2b8;
+   --Jay-card-border:#e3e8f7;
