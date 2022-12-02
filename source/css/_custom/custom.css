@@ -1969,7 +1969,7 @@ img.footer_mini_logo:hover {
 }
 
 #footer {
-    background: #fff
+    background: linear-gradient(180deg, var(--Jay-background) 0, var(--Jay-card-bg) 25%);
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -1978,7 +1978,7 @@ img.footer_mini_logo:hover {
 
 @media screen and (max-width: 768px) {
     #footer {
-        background: #fff
+        background: linear-gradient(180deg, var(--Jay-background) 0, var(--Jay-card-bg) 25%);
         margin-top: 0;
         z-index: 999
     }
