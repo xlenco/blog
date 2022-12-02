@@ -1850,18 +1850,12 @@ hr:before {
 #rightside>div>button {
     display: flex;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 50%!important;
     justify-content: center;
     width: 38px;
     height: 38px;
     font-size: 18px
 }
-
-/* 右侧小按钮圆角 */
-#rightside>div>button,#to_comment {
-    margin-right: 4px !important;
-    border-radius: 7px !important;
-  }
 
 /*侧边滑动颜色*/
 :root {
