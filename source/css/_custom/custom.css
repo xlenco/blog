@@ -2078,12 +2078,12 @@ img.footer_mini_logo:hover {
     z-index: -1
 }
 
-#Jay-footer .footer-links {
+#footer .footer-links {
     display: flex;
     flex-direction: column
 }
 
-#Jay-footer {
+#footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -2095,7 +2095,7 @@ img.footer_mini_logo:hover {
     padding: 0 1rem
 }
 
-#Jay-footer .footer-item {
+#footer .footer-item {
     font-size: 1rem;
     line-height: .8rem;
     margin: .38rem 0;
@@ -2103,11 +2103,11 @@ img.footer_mini_logo:hover {
     /*margin-right: auto*/
 }
 
-#Jay-footer .footer-item:hover {
+#footer .footer-item:hover {
     color: var(--Jay-theme)
 }
 
-#Jay-footer .footer-group {
+#footer .footer-group {
     min-width: 120px
 }
 
