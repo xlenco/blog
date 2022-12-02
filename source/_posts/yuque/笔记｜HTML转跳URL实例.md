@@ -35,3 +35,5 @@ updated: 2022-10-7 12:14
 location.href="You Url";
 </script>
 ```
+
+onclick="toRandomFlink()"
