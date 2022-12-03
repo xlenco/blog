@@ -611,7 +611,7 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family: "AlimamaShuHeiTi-Bold"
+  font-family: "AlibabaPuHuiTi-2-55-Regular"
   code-font-family:
 
 # Font settings for the site title and site subtitle
