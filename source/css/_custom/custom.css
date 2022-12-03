@@ -4,8 +4,15 @@
   font-display : swap;
 }
 
+@font-face{
+  font-family:'AlimamaShuHeiTi-Bold' ;  /* 字体名自定义即可 */
+  src:url('https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+
 h1#site-title {
-  font-family: 'HarmonyOS' ;
+  font-family: 'AlimamaShuHeiTi-Bold','HarmonyOS' ;
 }
 
 /*底部切换按钮*/
