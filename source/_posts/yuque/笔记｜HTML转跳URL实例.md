@@ -30,8 +30,10 @@ updated: 2022-10-7 12:14
 
 ## Js
 
+```javascript
+<script>location.href="Your Url";</script>
 ```
-<script>
-location.href="You Url";
-</script>
+
+```javascript
+<script>windows.location.href = "Your Url"</script>
 ```
