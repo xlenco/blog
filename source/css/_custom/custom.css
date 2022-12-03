@@ -4,6 +4,13 @@
   font-display : swap;
 }
 
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVfxMc7h.ttf) format('truetype');
+}
 
 h1#site-title {
   font-family: 'AlibabaPuHuiTi-2-55-Regular ;
