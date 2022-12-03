@@ -336,9 +336,9 @@ waline:
   pageview: false
   option:
    emoji: [
-    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/alus',
-    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/qq',
-    'https://cdn1.tianli0.top/npm/@waline/emojis@1.0.1/tw-emoji',
+    'https://jsd.onmicrosoft.cn/npm/@waline/emojis@1.0.1/alus',
+    'https://jsd.onmicrosoft.cn/npm/@waline/emojis@1.0.1/qq',
+    'https://jsd.onmicrosoft.cn/npm/@waline/emojis@1.0.1/tw-emoji',
   ]
 
 # utterances
