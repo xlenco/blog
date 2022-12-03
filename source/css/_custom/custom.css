@@ -16,6 +16,11 @@ h1#site-title {
   font-family: 'AlibabaPuHuiTi-2-55-Regular ;
 }
 
+/*文章块大小*/
+#recent-posts > .recent-post-item {
+     height: 20em;
+}
+
 /*底部切换按钮*/
 .layout>.recent-posts .pagination>* {
   display: inline-block;
