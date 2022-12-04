@@ -63,7 +63,7 @@ catch_rules:
           preflight: true # false
           timeout: 50000
           cache:
-            expire: 1000*60*60 # 缓存60分钟
+            expire: 1000*60*60*24 # 缓存24小时
             delay: 300
   # 第三方字体缓存
   - rule: ^https\:\/\/puhuiti\.oss-cn-hangzhou\.aliyuncs\.com
@@ -76,7 +76,7 @@ catch_rules:
           preflight: true # false
           timeout: 50000
           cache:
-            expire: 1000*60*60 # 缓存60分钟
+            expire: 1000*60*60*24 # 缓存24小时
             delay: 300
   # 第三方字体缓存
   - rule: ^https\:\/\/fonts\.gstatic\.com
@@ -89,5 +89,5 @@ catch_rules:
           preflight: true # false
           timeout: 50000
           cache:
-            expire: 1000*60*60 # 缓存60分钟
+            expire: 1000*60*60*24 # 缓存24小时
             delay: 300
