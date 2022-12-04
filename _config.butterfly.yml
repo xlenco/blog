@@ -926,7 +926,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-     twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.all.min.js
+     twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.min.js
      waline_js: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.js
      waline_css: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.css
     # sharejs:
@@ -942,10 +942,10 @@ CDN:
      instantpage: https://cdn.bootcdn.net/ajax/libs/instant.page/5.1.1/instantpage.min.js
     # typed:
     # pangu:
-     fancybox_css_v4: https://cdn1.tianli0.top/npm/@fancyapps/ui/dist/fancybox.min.css
+     fancybox_css_v4: https://jsd.onmicrosoft.cn/npm/@fancyapps/ui/dist/fancybox.min.css
     # fancybox_v4:
     # medium_zoom:
-     snackbar_css: https://cdn1.tianli0.top/npm/node-snackbar/dist/snackbar.min.css
+     snackbar_css: https://jsd.onmicrosoft.cn/npm/node-snackbar/dist/snackbar.min.css
     # snackbar: 
     # activate_power_mode:
     # fireworks:
