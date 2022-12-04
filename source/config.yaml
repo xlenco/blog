@@ -15,6 +15,7 @@ catch_rules:
         replace:
           - _
           - https://jsd.onmicrosoft.cn/npm
+          - https://cdn.cbd.int
           - https://unpkg.com
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
