@@ -7,7 +7,7 @@ tags:
 categories:
   - 教程
 
-cover: https://xlenco.onmicrosoft.cn/img/j3m8y5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1665138201763
+cover: https://xlenco.onmicrosoft.cn/img/j3m8y5.webp
 date: 2022-10-7 18:25
 updated: 2022-10-7 18:32
 ---
