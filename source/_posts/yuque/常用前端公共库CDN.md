@@ -2,9 +2,9 @@
 title: 常用前端公共库CDN
 tags: CDN
 categories: 笔记
-cover: https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1661779174084-195c015b-5408-471d-9fd3-a5f24869651f.jpeg
+cover: https://xlenco.onmicrosoft.cn/img/OIP-C.jpg
 date: 2022/8/29 21:13
-updated: 2022-9-11 22:21
+updated: 2022-12-14 18:18
 ---
 
 ## 前沿
@@ -33,7 +33,7 @@ ASP.NET 开发团队推出的一个新的微软 Ajax CDN（Content Delivery Netw
 官网：[http://www.asp.net/ajaxlibrary/cdn.ashx](http://www.asp.net/ajaxlibrary/cdn.ashx)
 Ps：微软出品，自然不会太差。虽然在国外，速度依然不会太慢（当然比不上国内的其他 cdn）。
 
-## 七牛云存储 开放静态文件 CDN
+### Staticfile CDN
 
 像 Google Ajax Library，Microsoft ASP.net CDN，SAE，Baidu，Upyun 等 CDN 上都免费提供的 JS 库的存储，但使用起来却都有些局限，因为他们只提供了部分 JS 库。但七牛云存储提供一个尽可能全面收录优秀开源库的仓库，并免费提供 CDN 加速服务。
 官网：[http://www.staticfile.org/](http://www.asp.net/ajaxlibrary/cdn.ashx)
@@ -62,7 +62,8 @@ unpkg 是一个内容源自 npm 的全球快速 CDN。
 
 ## 国内 Unpkg 镜像
 
-目前找了对外的国内 Unpkg 有两个：
+目前找了对外的国内 Unpkg 有三个个：
 
 - 饿了么：[https://npm.elemecdn.com/](https://npm.elemecdn.com/)
 - 知乎：[https://unpkg.zhimg.com/](https://unpkg.zhimg.com/)
+- [https://cdn.cbd.int/#/](https://cdn.cbd.int/#/)
