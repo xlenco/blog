@@ -213,7 +213,7 @@ gitcalendar:
   #   name: content
   #   index: 0
   user: xlenco #git用户名
-  apiurl: 'https://calendar-api.xlenco.eu.org'
+  apiurl: 'https://api.icodeq.com/api/github'
   minheight:
     pc: 280px #桌面端最小高度
     mibile: 0px #移动端最小高度
@@ -255,7 +255,7 @@ fcircle:
   randomFriendsPostJS: https://npm.elemecdn.com/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/random-friends-post.js
   topIcon: fas fa-arrow-right
   topLink: /about/
-  top_background: https://image.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg
+  top_background: https://xlenco.onmicrosoft.cn/img/12258.webp
   path: /fcircle #【可选】fcircle的路径名称。默认为 fcircle，生成的页面为 fcircle/index.html
   front_matter: #【可选】fcircle页面的 front_matter 配置
     title: 朋友圈
