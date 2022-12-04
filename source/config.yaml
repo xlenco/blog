@@ -3,13 +3,13 @@ name: ClientWorker
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
-  - https://fastly.jsdelivr.net/npm/clientworker@latest
+  - https://jsd.onmicrosoft.cn/npm/clientworker@latest
 # Config热更新
 hotconfig:
-  - https://fastly.jsdelivr.net/gh/xlenco/blog@main/source/config.yaml
+  - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
 # 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
+  - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
     transform_rules:
       - search: _
         replace:
