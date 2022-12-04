@@ -14,7 +14,7 @@ catch_rules:
       - search: _
         replace:
           - _
-          - https://cdn1.tianli0.top/npm
+          - https://jsd.onmicrosoft.cn/npm
           - https://unpkg.com
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
@@ -23,7 +23,6 @@ catch_rules:
           - https://unpkg.zhimg.com
           - https://cdn.bilicdn.tk/npm
           - https://npm.onmicrosoft.cn
-          - https://jsd.onmicrosoft.cn/npm
         action: fetch
         fetch:
           status: 200|3.*
@@ -39,11 +38,10 @@ catch_rules:
       - search: _
         replace:
           - _
-          - https://cdn1.tianli0.top/gh
+          - https://jsd.onmicrosoft.cn/gh
           - https://fastly.jsdelivr.net/gh
           - https://gcore.jsdelivr.net/gh
           - https://cdn.bilicdn.tk/gh
-          - https://jsd.onmicrosoft.cn/gh
         action: fetch
         fetch:
           status: 200|3.*
