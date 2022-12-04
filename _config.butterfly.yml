@@ -956,7 +956,7 @@ CDN:
     # local_search:
     # algolia_js:
     # algolia_search_v4:
-     instantsearch_v4: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.49.1/instantsearch.development.min.js
+    # instantsearch_v4: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.49.1/instantsearch.development.min.js
      pjax: https://cdn.bootcdn.net/ajax/libs/pjax/0.2.8/pjax.min.js
     # gitalk:
     # gitalk_css:
@@ -964,7 +964,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-     twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.min.js
+    # twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.min.js
      waline_js: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.js
      waline_css: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.css
     # sharejs:
