@@ -66,9 +66,9 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
   # 第三方字体缓存
-  - rule: ^https\:\/\/puhuiti\.oss-cn-hangzhou\.aliyuncs\.com
+  - rule: _
     transform_rules:
-      - search: _
+      - search: \.ttf 
         action: fetch
         fetch:
           status: .*
@@ -78,16 +78,4 @@ catch_rules:
           cache:
             expire: 1000*60*60*24*365 # 缓存24小时
             delay: 300
-  # 第三方字体缓存
-  - rule: ^https\:\/\/fonts\.gstatic\.com
-    transform_rules:
-      - search: _
-        action: fetch
-        fetch:
-          status: .*
-          engine: fetch
-          preflight: false # false
-          timeout: 50000
-          cache:
-            expire: 1000*60*60*24*375 # 缓存24小时
-            delay: 300
+ 
