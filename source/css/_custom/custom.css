@@ -1,6 +1,6 @@
 @font-face{
   font-family:'AlibabaPuHuiTi-2-55-Regular' ;  /* 字体名自定义即可 */
-  src:url('https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.ttf'); /* 字体文件路径 */
+  src:url('/fontsdest/AlibabaPuHuiTi-2-55-Regular.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
 
@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVfxMc7h.ttf) format('truetype');
+  src: url('/fontsdest/Fira-Code.ttf') format('truetype');
 }
 
 h1#site-title {
