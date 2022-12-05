@@ -76,7 +76,7 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*24 # 缓存24小时
+            expire: 1000*60*60*24*365 # 缓存24小时
             delay: 300
   # 第三方字体缓存
   - rule: ^https\:\/\/fonts\.gstatic\.com
@@ -89,5 +89,5 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*24 # 缓存24小时
+            expire: 1000*60*60*24*375 # 缓存24小时
             delay: 300
