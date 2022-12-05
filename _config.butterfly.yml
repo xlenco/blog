@@ -882,7 +882,7 @@ inject:
                                 .then(res => res.text())
                                 .then(text => {
                                    if (text === 'ok') {
-                                         console.log('[CW] Installing Success,Configuring Success,Starting...');
+                                        console.log('[CW] Installing Success,Configuring Success,Starting...');
                                         localStorage.setItem('cw_installed', 'true');
                                         window.location.reload();
                                    } else {
