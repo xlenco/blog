@@ -65,10 +65,10 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
-  # 本地字体缓存
+  # 本地资源缓存
   - rule: _
     transform_rules:
-      - search: \.ttf 
+      - search: \.(js|ttf|css) 
         action: fetch
         fetch:
           status: .*
@@ -78,4 +78,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*24*365 # 缓存24小时
             delay: 300
- 
