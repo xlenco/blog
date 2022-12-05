@@ -65,7 +65,7 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
-  # 第三方字体缓存
+  # 本地字体缓存
   - rule: _
     transform_rules:
       - search: \.ttf 
