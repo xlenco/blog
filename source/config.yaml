@@ -15,8 +15,8 @@ catch_rules:
         replace: 
           - _
         #  - xlenco.github.io #GithubPage托管
-          - xlenco.onrender.com #render托管
-          - xlenco.netlify.app #Netlify托管
+        # - xlenco.onrender.com #render托管
+        #  - xlenco.netlify.app #Netlify托管
           - xlenco.pages.dev #Cloudflare托管
         action: fetch
         fetch:
@@ -98,5 +98,5 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*24*7 # 缓存七天
+            expire: 1000*60*60*24 # 缓存24小时
             delay: 300
