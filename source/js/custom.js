@@ -1,3 +1,20 @@
+// cw.js 更新
+async function updateSW() {
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.getRegistrations().then(async registrations => {
+                for (let registration of registrations) {
+                    await registration.update();
+                }
+                console.log(`Unregistered service workers`);
+            }).then(() => {
+                navigator.serviceWorker.register('/cw.js').then(async registration => {
+                    console.log(`Registered service worker`);
+                    await registration.update();
+                })
+            })
+        }
+    };
+
 // 浏览器动态标题
 var OriginTitle = document.title;
 var titleTime;
