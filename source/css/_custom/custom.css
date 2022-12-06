@@ -2703,14 +2703,6 @@ img.footer_mini_logo:hover {
   position: initial;
 }
 
-/* 顶部样式 */
-.author-content.author-content-item.essayPage {
-  height: 19rem;
-  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/08/21/630249e2df20f.jpg) left 28% / cover no-repeat;
-  color: var(--anzhiyu-white);
-  overflow: hidden;
-  margin-top: 0px;
-}
 #page:has(#essay_page) .author-content-item .card-content .banner-button-group .banner-button:hover {
   color: var(--anzhiyu-white);
   border-radius: 20px !important;
@@ -2775,14 +2767,12 @@ img.footer_mini_logo:hover {
   line-height: 22px;
   margin-right: 1rem;
   transition: all 0.3s ease 0s;
-  /*cursor: url(/img/x2.cur), auto !important;*/
 }
 
 .bber-gotobb {
   line-height: 25px;
   margin-left: 1rem;
   transition: all 0.3s ease 0s;
- /* cursor: url(/img/x2.cur), auto !important;*/
 }
 
 #bber-talk .li-style {
@@ -2795,7 +2785,6 @@ img.footer_mini_logo:hover {
   transition: 0.3s;
   font-weight: 700;
   margin: auto;
-  cursor: url(/img/x2.cur), auto !important;
   white-space: nowrap;
 }
 
