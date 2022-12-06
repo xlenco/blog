@@ -8,6 +8,25 @@ hotpatch:
 hotconfig:
   - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
+  # 站点多线路选择
+  - rule: _
+    transform_rules:
+      - search: _ 
+        replace: 
+          - _
+        #  - xlenco.github.io #GithubPage托管
+          - xlenco.onrender.com #render托管
+          - xlenco.netlify.app #Netlify托管
+          - xlenco.pages.dev #Cloudflare托管
+        action: fetch
+        fetch:
+          status: .*
+          engine: parallel
+          preflight: false
+          timeout: 3000
+          cache:
+            expire: 1000*60*60*2 # 缓存8小时
+            delay: 200
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
     transform_rules:
@@ -32,7 +51,7 @@ catch_rules:
           preflight: false # false
           timeout: 3000
           cache:
-            expire: 1000*60*60*8 # 缓存8小时
+            expire: 1000*60*60*12 # 缓存8小时
             delay: 300
   # github加速
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
@@ -53,7 +72,7 @@ catch_rules:
           preflight: false # false
           timeout: 30000
           cache:
-            expire: 1000*60*60*8 # 缓存8小时
+            expire: 1000*60*60*12 # 缓存8小时
             delay: 300
   # 第三方api图片缓存
   - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn
@@ -79,5 +98,5 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*24*365 # 缓存24小时
+            expire: 1000*60*60*24*7 # 缓存七天
             delay: 300
