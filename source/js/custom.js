@@ -682,3 +682,18 @@ var anzhiyu = {
 anzhiyu.initIndexEssay();
 anzhiyu.changeTimeInEssay();
 anzhiyu.reflashEssayWaterFall();
+
+// 即刻短文跳转评论
+  commentText: function (e) {
+    var n = document.getElementsByClassName("el-textarea__inner")[0],
+      t = document.createEvent("HTMLEvents");
+    if (!n) return;
+    t.initEvent("input", !0, !0);
+    var o = replaceAll(e, "\n", "\n> ");
+    (n.value = "> " + o + "\n\n"), n.dispatchEvent(t);
+    var i = document.querySelector("#post-comment").offsetTop;
+    window.scrollTo(0, i - 80),
+      n.focus(),
+      n.setSelectionRange(-1, -1),
+      document.getElementById("comment-tips") && document.getElementById("comment-tips").classList.add("show");
+  },
