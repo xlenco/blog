@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
