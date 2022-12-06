@@ -907,7 +907,7 @@ inject:
     - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
     - <script defer charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-    - <script defer src="/js/51la.js"></script>
+   # - <script defer src="/js/51la.js"></script>
     - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
@@ -921,6 +921,13 @@ inject:
     - <script defer data-pjax src="/js/universe.js"></script>
   #  - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    - |
+        <script>
+            //51.1a
+            LA.init({ id: "JmsRdzV6syTLtUyn", ck: "JmsRdzV6syTLtUyn", hashMode: true });
+            //灵雀应用监控
+            new LingQue.Monitor().init({ id: "JntPZhhCgIfMtOhJ", sendSpaPv: true });
+        </script>
     # - <script src="xxxx"></script>
 
 # CDN
