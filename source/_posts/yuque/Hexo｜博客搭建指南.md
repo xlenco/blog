@@ -162,10 +162,9 @@ cat ~/.ssh/id_rsa.pub
 
 ```
 deploy:
-  type: git
-  repository:
-	github: git@github.com:xlenco/xlenco.github.io.git
-  branch: main
+   - type: git
+     repo: git@github.com:xlenco/xlenco.github.io.git
+     branch: main
 ```
 
 6.上传到 github：
