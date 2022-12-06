@@ -15,7 +15,9 @@ catch_rules:
         replace:
           - _
           - https://jsd.onmicrosoft.cn/npm
+          - https://npm.onmicrosoft.cn
           - https://cdn.cbd.int
+          - https://jsd.cky.codes/npm
           - https://unpkg.com
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
@@ -23,7 +25,6 @@ catch_rules:
           - https://cdn.staticfile.org
           - https://unpkg.zhimg.com
           - https://cdn.bilicdn.tk/npm
-          - https://npm.onmicrosoft.cn
         action: fetch
         fetch:
           status: 200|3.*
