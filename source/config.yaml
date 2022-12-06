@@ -16,7 +16,7 @@ catch_rules:
           - _
         #  - xlenco.github.io #GithubPage托管
         # - xlenco.onrender.com #render托管
-          - netlify.xlenco.eu.org #Netlify托管
+        # - netlify.xlenco.eu.org #Netlify托管
           - xlenco.pages.dev #Cloudflare托管
         action: fetch
         fetch:
