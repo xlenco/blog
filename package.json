@@ -1,6 +1,6 @@
 {
   "name": "xlenco-blog",
-  "version": "1.0.0",
+  "version": "latest",
   "private": false,
   "scripts": {
     "build": "hexo generate",
