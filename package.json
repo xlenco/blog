@@ -1,6 +1,6 @@
 {
   "name": "xl-blog",
-  "version": "latest",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "build": "hexo generate",
