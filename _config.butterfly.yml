@@ -911,6 +911,8 @@ inject:
     - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/bb/showbb_in_index.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async data-pjax src="/js/rightmenu.js"></script>
