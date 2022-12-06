@@ -40,6 +40,8 @@ catch_rules:
         replace:
           - _
           - https://jsd.onmicrosoft.cn/gh
+          - https://jsd.cky.codes/gh
+          - https://cdn.cnortles.top/gh
           - https://fastly.jsdelivr.net/gh
           - https://gcore.jsdelivr.net/gh
           - https://cdn.bilicdn.tk/gh
