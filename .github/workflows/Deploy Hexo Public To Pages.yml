@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-   
+
+
+    
+    steps:
       # check it to your workflow can access it
       # from: https://github.com/actions/checkout
-    steps:
       - name: Checkout Repository master branch
         uses: actions/checkout@master
 
@@ -29,11 +31,11 @@ jobs:
           npm install gulp-cli -g
 
           
+
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
           TZ: Asia/Shanghai
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
         run: |
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
@@ -58,14 +60,9 @@ jobs:
         run: |
           npm install --save
 
-
-       - name: Hexo三连
-         run: |
-           hexo clean
-           hexo generate
-       #   gulp
-           hexo deploy
-         run: |
-           cd public
-           node npmversionupdata.js
-           npm publish            
+      - name: Hexo三连
+        run: |
+          hexo clean
+          hexo generate 
+          gulp
+          hexo deploy
