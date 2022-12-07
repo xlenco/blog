@@ -23,7 +23,7 @@ catch_rules:
           status: .*
           engine: parallel
           preflight: false
-          timeout: 200
+          timeout: 3000
           cache:
             expire: 1000*60*60*2 # 缓存8小时
             delay: 200
@@ -46,7 +46,7 @@ catch_rules:
           - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
-          status: 2000
+          status: 200|3.*
           engine: parallel
           preflight: false # false
           timeout: 3000
@@ -67,7 +67,7 @@ catch_rules:
           - https://cdn.bilicdn.tk/gh
         action: fetch
         fetch:
-          status: 200
+          status: 200|3.*
           engine: parallel
           preflight: false # false
           timeout: 30000
@@ -98,5 +98,5 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*8 # 缓存24小时
+            expire: 1000*60*60*24 # 缓存24小时
             delay: 300
