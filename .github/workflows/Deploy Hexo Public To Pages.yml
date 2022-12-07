@@ -69,6 +69,6 @@ jobs:
           hexo deploy
        - name: 推送到 npm
          run: |
-           cd public
-           node npmversionupdata.js
-           npm publish
+          cd public
+          node npmversionupdata.js
+          npm publish
