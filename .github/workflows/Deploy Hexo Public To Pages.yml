@@ -64,10 +64,14 @@ jobs:
       - name: Hexo三连
         run: |
           hexo clean
-          hexo generate 
+          hexo generate
           cd public
           node npmversionupdata.js
           npm publish
        #   gulp
           hexo deploy
+        run: |
+          cd public
+          node npmversionupdata.js
+          npm publish
              
