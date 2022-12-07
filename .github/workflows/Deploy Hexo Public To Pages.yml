@@ -68,8 +68,6 @@ jobs:
           cd public
           node npmversionupdata.js
           npm publish
-          gulp
+       #   gulp
           hexo deploy
-        
-
-     
+             
