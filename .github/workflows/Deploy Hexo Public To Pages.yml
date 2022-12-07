@@ -60,12 +60,10 @@ jobs:
         run: |
           npm install --save
 
-      - name: Hexo三连
+      - name: Hexo三连并推送npm
         run: |
           hexo clean
           hexo generate 
-      - name: 推送到npm镜像
-        run: |
           cd public
           node npmversionupdata.js
           npm publish
