@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-
-
-    
-    steps:
+   
       # check it to your workflow can access it
       # from: https://github.com/actions/checkout
+    steps:
       - name: Checkout Repository master branch
         uses: actions/checkout@master
 
