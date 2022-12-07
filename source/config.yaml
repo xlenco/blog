@@ -8,6 +8,22 @@ hotpatch:
 hotconfig:
   - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
+  # 站点多线路选择
+  - rule: _
+    transform_rules:
+      - search: _ 
+        replace: 
+          - _
+          - https://npm.onmicrosoft.cn/xlenco-blog-main@latest 
+        action: fetch
+        fetch:
+          status: .*
+          engine: parallel
+          preflight: false
+          timeout: 3000
+          cache:
+            expire: 1000*60*60*2 # 缓存8小时
+            delay: 200
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
     transform_rules:
