@@ -81,7 +81,7 @@ catch_rules:
         action: fetch
         fetch:
           status: 200
-          engine: crazy
+          engine: parallel
           preflight: false
           threads: 5
           timeout: 30000
