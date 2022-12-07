@@ -31,7 +31,6 @@ jobs:
           npm install gulp-cli -g
 
           
-
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
