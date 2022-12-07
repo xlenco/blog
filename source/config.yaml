@@ -70,7 +70,7 @@ catch_rules:
           status: 200|3.*
           engine: parallel
           preflight: false # false
-          timeout: 3000
+          timeout: 30000
           cache:
             expire: 1000*60*60*12 # 缓存8小时
             delay: 300
@@ -81,9 +81,9 @@ catch_rules:
         action: fetch
         fetch:
           status: .*
-          engine: parallel
+          engine: fetch
           preflight: false # false
-          timeout: 5000
+          timeout: 50000
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
@@ -96,7 +96,7 @@ catch_rules:
           status: .*
           engine: fetch
           preflight: false # false
-          timeout: 5000
+          timeout: 50000
           cache:
-            expire: 1000*60*60*24 # 缓存24小时
+            expire: 1000*60*60*8 # 缓存24小时
             delay: 300
