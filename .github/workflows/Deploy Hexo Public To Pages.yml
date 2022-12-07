@@ -13,7 +13,7 @@ jobs:
 
 
     
-  steps:
+    steps:
       - name: Checkout Repository master branch
         uses: actions/checkout@master
 
@@ -29,7 +29,6 @@ jobs:
           npm install gulp-cli -g
 
           
-
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
