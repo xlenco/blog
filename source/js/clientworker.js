@@ -1,4 +1,5 @@
 if (!!navigator.serviceWorker) {
+    if (localStorage.getItem('cw_installed') !== 'true') {window.stop();}
     navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
         if (localStorage.getItem('cw_installed') !== 'true') {
             const conf = () => {
@@ -9,14 +10,7 @@ if (!!navigator.serviceWorker) {
                         if (text === 'ok') {
                             console.log('[CW] Installing Success,Configuring Success,Starting...');
                             localStorage.setItem('cw_installed', 'true');
-                            //如果你不希望重载页面，请移除下面七行
-                            //重载标识 - 开始
-                            fetch(window.location.href).then(res => res.text()).then(text => {
-                                document.open()
-                                document.body.innerHTML = await (await fetch('https://npm.elemecdn.com/chenyfan-blog@1.0.13/public/notice.html')).text();
-                                document.close();
-                            });
-                            //重载标识 - 结束
+                            window.location.reload();
                         } else {
                             console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
                             setTimeout(() => {
@@ -33,5 +27,5 @@ if (!!navigator.serviceWorker) {
         }
     }).catch(err => {
         console.error('[CW] Installing Failed,Error: ' + err.message);
-    });
+    })
 } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
