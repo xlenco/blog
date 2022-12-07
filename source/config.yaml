@@ -85,6 +85,3 @@ catch_rules:
     transform_rules:
         - search: \.html$ 
           action: redirect
-          redirect: 
-            to: $1/
-
