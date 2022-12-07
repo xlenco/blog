@@ -65,13 +65,9 @@ jobs:
         run: |
           hexo clean
           hexo generate
-          cd public
-          node npmversionupdata.js
-          npm publish
        #   gulp
           hexo deploy
         run: |
           cd public
           node npmversionupdata.js
-          npm publish
-             
+          npm publish            
