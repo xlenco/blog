@@ -46,13 +46,13 @@ catch_rules:
           - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
-          status: 200
+          status: 200|3.*
           engine: parallel
-          preflight: false
-          timeout: 5000
+          preflight: false # false
+          timeout: 3000
           cache:
-            expire: 1000*60*60*8
-            delay: 3000
+            expire: 1000*60*60*12 # 缓存8小时
+            delay: 300
   # github加速
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
     transform_rules:
@@ -67,36 +67,36 @@ catch_rules:
           - https://cdn.bilicdn.tk/gh
         action: fetch
         fetch:
-          status: 200
+          status: 200|3.*
           engine: parallel
           preflight: false # false
-          timeout: 50000
+          timeout: 3000
           cache:
-            expire: 1000*60*60*8 缓存8小时
-            delay: 3000
+            expire: 1000*60*60*12 # 缓存8小时
+            delay: 300
   # 第三方api图片缓存
   - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn
     transform_rules:
       - search: _
         action: fetch
         fetch:
-          status: 200
+          status: .*
           engine: parallel
-          preflight: false
-          timeout: 30000
+          preflight: false # false
+          timeout: 5000
           cache:
-            enable: true
-            expire: 1000*60*60*24
+            expire: 1000*60*60*24 # 缓存24小时
+            delay: 300
   # 本地资源缓存
   - rule: _
     transform_rules:
-        - search: ./(js|ttf|css)
-          action: fetch
-          fetch:
-            status: 200
-            engine: parallel
-            preflight: false
-            timeout: 5000
-            cache:
-              expire: 1000*60*60*8
-              delay: 200
+      - search: \.(js|ttf|css) 
+        action: fetch
+        fetch:
+          status: .*
+          engine: fetch
+          preflight: false # false
+          timeout: 5000
+          cache:
+            expire: 1000*60*60*24 # 缓存24小时
+            delay: 300
