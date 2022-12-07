@@ -64,10 +64,9 @@ jobs:
         run: |
           hexo clean
           hexo generate 
-          gulp
-          hexo deploy
-      - name: 推送到npm镜像
-        run: |
           cd public
           node npmversionupdata.js
           npm publish
+          gulp
+          hexo deploy
+     
