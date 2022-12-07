@@ -48,10 +48,10 @@ catch_rules:
         fetch:
           status: 200
           engine: parallel
-          preflight: false # false
-          timeout: 3000
+          preflight: false
+          timeout: 5000
           cache:
-            expire: 1000*60*60*8 # 缓存1小时
+            expire: 1000*60*60*8
             delay: 3000
   # github加速
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
@@ -70,7 +70,7 @@ catch_rules:
           status: 200
           engine: parallel
           preflight: false # false
-          timeout: 30000
+          timeout: 50000
           cache:
             expire: 1000*60*60*8 缓存8小时
             delay: 3000
@@ -80,13 +80,15 @@ catch_rules:
       - search: _
         action: fetch
         fetch:
-          status: .*
-          engine: fetch
-          preflight: false # false
-          timeout: 50000
+          status: 200
+          engine: crazy
+          preflight: false
+          threads: 5
+          timeout: 30000
           cache:
-            expire: 1000*60*60*24 # 缓存24小时
-            delay: 300
+            enable: true
+            expire: 1000*60*60*24
+
   # 本地资源缓存
   - rule: _
     transform_rules:
