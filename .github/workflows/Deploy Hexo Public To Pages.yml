@@ -61,13 +61,14 @@ jobs:
         run: |
           npm install --save
 
-      - name: Hexo三连
-        run: |
-          hexo clean
-          hexo generate
+
+       - name: Hexo三连
+         run: |
+           hexo clean
+           hexo generate
        #   gulp
-          hexo deploy
-        run: |
-          cd public
-          node npmversionupdata.js
-          npm publish            
+           hexo deploy
+         run: |
+           cd public
+           node npmversionupdata.js
+           npm publish            
