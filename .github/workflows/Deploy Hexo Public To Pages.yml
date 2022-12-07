@@ -36,6 +36,7 @@ jobs:
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
           TZ: Asia/Shanghai
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
         run: |
           mkdir -p ~/.ssh/
           echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
@@ -69,6 +70,6 @@ jobs:
           npm publish
           gulp
           hexo deploy
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        
+
      
