@@ -14,7 +14,7 @@ catch_rules:
       - search: _ 
         replace: 
           - _
-          - xlenco.github.io #GithubPage托管
+        #  - xlenco.github.io #GithubPage托管
         # - xlenco.onrender.com #render托管
         # - netlify.xlenco.eu.org #Netlify托管
           - xlenco.pages.dev #Cloudflare托管
@@ -46,7 +46,7 @@ catch_rules:
           - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
-          status: 200
+          status: 2000
           engine: parallel
           preflight: false # false
           timeout: 3000
