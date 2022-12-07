@@ -20,6 +20,8 @@ catch_rules:
           - _
           - https://npm.onmicrosoft.cn/xlenco-blog-main@1.0.86
           - https://npm.elemecdn.com/xlenco-blog-main@1.0.86
+          - https://jsd.onmicrosoft.cn/npm/xlenco-blog-main@1.0.86
+          - https://cdn.cbd.int/xlenco-blog-main@1.0.86
         action: fetch
         fetch:
           status: .*
