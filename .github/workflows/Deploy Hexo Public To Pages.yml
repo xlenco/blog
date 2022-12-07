@@ -67,6 +67,8 @@ jobs:
           cd public
           node npmversionupdata.js
           npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        run: |
           gulp
-          hexo deploy
-     
+          hexo deploy     
