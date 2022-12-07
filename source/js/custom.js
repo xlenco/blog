@@ -704,3 +704,214 @@ anzhiyu.reflashEssayWaterFall();
 // universe.js
 function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};
 dark()
+
+// 数字传输滚动效果
+var CountUp = function (target, startVal, endVal, decimals, duration, options) {
+  var self = this;
+  self.version = function () {
+    return "1.9.2";
+  };
+  self.options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ",",
+    decimal: ".",
+    easingFn: easeOutExpo,
+    formattingFn: formatNumber,
+    prefix: "",
+    suffix: "",
+    numerals: [],
+  };
+  if (options && typeof options === "object") {
+    for (var key in self.options) {
+      if (options.hasOwnProperty(key) && options[key] !== null) {
+        self.options[key] = options[key];
+      }
+    }
+  }
+  if (self.options.separator === "") {
+    self.options.useGrouping = false;
+  } else {
+    self.options.separator = "" + self.options.separator;
+  }
+  var lastTime = 0;
+  var vendors = ["webkit", "moz", "ms", "o"];
+  for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    window.requestAnimationFrame = window[vendors[x] + "RequestAnimationFrame"];
+    window.cancelAnimationFrame =
+      window[vendors[x] + "CancelAnimationFrame"] || window[vendors[x] + "CancelRequestAnimationFrame"];
+  }
+  if (!window.requestAnimationFrame) {
+    window.requestAnimationFrame = function (callback, element) {
+      var currTime = new Date().getTime();
+      var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+      var id = window.setTimeout(function () {
+        callback(currTime + timeToCall);
+      }, timeToCall);
+      lastTime = currTime + timeToCall;
+      return id;
+    };
+  }
+  if (!window.cancelAnimationFrame) {
+    window.cancelAnimationFrame = function (id) {
+      clearTimeout(id);
+    };
+  }
+  function formatNumber(num) {
+    num = num.toFixed(self.decimals);
+    num += "";
+    var x, x1, x2, x3, i, l;
+    x = num.split(".");
+    x1 = x[0];
+    x2 = x.length > 1 ? self.options.decimal + x[1] : "";
+    if (self.options.useGrouping) {
+      x3 = "";
+      for (i = 0, l = x1.length; i < l; ++i) {
+        if (i !== 0 && i % 3 === 0) {
+          x3 = self.options.separator + x3;
+        }
+        x3 = x1[l - i - 1] + x3;
+      }
+      x1 = x3;
+    }
+    if (self.options.numerals.length) {
+      x1 = x1.replace(/[0-9]/g, function (w) {
+        return self.options.numerals[+w];
+      });
+      x2 = x2.replace(/[0-9]/g, function (w) {
+        return self.options.numerals[+w];
+      });
+    }
+    return self.options.prefix + x1 + x2 + self.options.suffix;
+  }
+  function easeOutExpo(t, b, c, d) {
+    return (c * (-Math.pow(2, (-10 * t) / d) + 1) * 1024) / 1023 + b;
+  }
+  function ensureNumber(n) {
+    return typeof n === "number" && !isNaN(n);
+  }
+  self.initialize = function () {
+    if (self.initialized) {
+      return true;
+    }
+    self.error = "";
+    self.d = typeof target === "string" ? document.getElementById(target) : target;
+    if (!self.d) {
+      self.error = "[CountUp] target is null or undefined";
+      return false;
+    }
+    self.startVal = Number(startVal);
+    self.endVal = Number(endVal);
+    if (ensureNumber(self.startVal) && ensureNumber(self.endVal)) {
+      self.decimals = Math.max(0, decimals || 0);
+      self.dec = Math.pow(10, self.decimals);
+      self.duration = Number(duration) * 1000 || 2000;
+      self.countDown = self.startVal > self.endVal;
+      self.frameVal = self.startVal;
+      self.initialized = true;
+      return true;
+    } else {
+      self.error = "[CountUp] startVal (" + startVal + ") or endVal (" + endVal + ") is not a number";
+      return false;
+    }
+  };
+  self.printValue = function (value) {
+    var result = self.options.formattingFn(value);
+    if (self.d.tagName === "INPUT") {
+      this.d.value = result;
+    } else {
+      if (self.d.tagName === "text" || self.d.tagName === "tspan") {
+        this.d.textContent = result;
+      } else {
+        this.d.innerHTML = result;
+      }
+    }
+  };
+  self.count = function (timestamp) {
+    if (!self.startTime) {
+      self.startTime = timestamp;
+    }
+    self.timestamp = timestamp;
+    var progress = timestamp - self.startTime;
+    self.remaining = self.duration - progress;
+    if (self.options.useEasing) {
+      if (self.countDown) {
+        self.frameVal = self.startVal - self.options.easingFn(progress, 0, self.startVal - self.endVal, self.duration);
+      } else {
+        self.frameVal = self.options.easingFn(progress, self.startVal, self.endVal - self.startVal, self.duration);
+      }
+    } else {
+      if (self.countDown) {
+        self.frameVal = self.startVal - (self.startVal - self.endVal) * (progress / self.duration);
+      } else {
+        self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
+      }
+    }
+    if (self.countDown) {
+      self.frameVal = self.frameVal < self.endVal ? self.endVal : self.frameVal;
+    } else {
+      self.frameVal = self.frameVal > self.endVal ? self.endVal : self.frameVal;
+    }
+    self.frameVal = Math.round(self.frameVal * self.dec) / self.dec;
+    self.printValue(self.frameVal);
+    if (progress < self.duration) {
+      self.rAF = requestAnimationFrame(self.count);
+    } else {
+      if (self.callback) {
+        self.callback();
+      }
+    }
+  };
+  self.start = function (callback) {
+    if (!self.initialize()) {
+      return;
+    }
+    self.callback = callback;
+    self.rAF = requestAnimationFrame(self.count);
+  };
+  self.pauseResume = function () {
+    if (!self.paused) {
+      self.paused = true;
+      cancelAnimationFrame(self.rAF);
+    } else {
+      self.paused = false;
+      delete self.startTime;
+      self.duration = self.remaining;
+      self.startVal = self.frameVal;
+      requestAnimationFrame(self.count);
+    }
+  };
+  self.reset = function () {
+    self.paused = false;
+    delete self.startTime;
+    self.initialized = false;
+    if (self.initialize()) {
+      cancelAnimationFrame(self.rAF);
+      self.printValue(self.startVal);
+    }
+  };
+  self.update = function (newEndVal) {
+    if (!self.initialize()) {
+      return;
+    }
+    newEndVal = Number(newEndVal);
+    if (!ensureNumber(newEndVal)) {
+      self.error = "[CountUp] update() - new endVal is not a number: " + newEndVal;
+      return;
+    }
+    self.error = "";
+    if (newEndVal === self.frameVal) {
+      return;
+    }
+    cancelAnimationFrame(self.rAF);
+    self.paused = false;
+    delete self.startTime;
+    self.startVal = self.frameVal;
+    self.endVal = newEndVal;
+    self.countDown = self.startVal > self.endVal;
+    self.rAF = requestAnimationFrame(self.count);
+  };
+  if (self.initialize()) {
+    self.printValue(self.startVal);
+  }
+};
