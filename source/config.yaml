@@ -14,7 +14,7 @@ catch_rules:
       - search: _ 
         replace: 
           - _
-          - https://npm.onmicrosoft.cn/xlenco-blog-main@latest 
+          - https://npm.onmicrosoft.cn/xlenco-blog-main
         action: fetch
         fetch:
           status: .*
