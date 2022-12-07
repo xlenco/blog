@@ -14,6 +14,8 @@ jobs:
 
     
     steps:
+      # check it to your workflow can access it
+      # from: https://github.com/actions/checkout
       - name: Checkout Repository master branch
         uses: actions/checkout@master
 
@@ -29,10 +31,10 @@ jobs:
           npm install gulp-cli -g
 
           
+
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
           TZ: Asia/Shanghai
         run: |
           mkdir -p ~/.ssh/
@@ -64,8 +66,3 @@ jobs:
           hexo generate 
           gulp
           hexo deploy
-       - name: 推送到 npm
-         run: |
-           cd public
-           node npmversionupdata.js
-           npm publish
