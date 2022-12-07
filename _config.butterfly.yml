@@ -869,13 +869,11 @@ css_prefix: true
 inject:
   head:
   #  - <script src="/js/ClientWorker.js"></script>
-  #  - <script async src="https://npm.onmicrosoft.cn/clientworker/dist/autoupdate.js"></script> 
+  #  - <script async src="https://npm.onmicrosoft.cn/clientworker/dist/autoupdate.js"></script>
     - |
         <script>                       
             if (!!navigator.serviceWorker) {
-                if (localStorage.getItem('cw_installed') !== 'true') {
-                    window.stop()
-                    document.body.innerHTML = await (await fetch('https://npm.elemecdn.com/chenyfan-blog@1.0.13/public/notice.html')).text()                           ;}
+                if (localStorage.getItem('cw_installed') !== 'true') {window.stop();}
                 navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
                     if (localStorage.getItem('cw_installed') !== 'true') {
                         const conf = () => {                         
