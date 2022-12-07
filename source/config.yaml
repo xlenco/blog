@@ -83,6 +83,8 @@ catch_rules:
             delay: 300
   - rule: _
     transform_rules:
-        - search: \.html$
-          header:
-            Content-Type: text/html;charset=UTF-8 #修复标头
+        - search: \.html$ 
+          action: redirect
+          redirect: 
+            to: $1/
+
