@@ -14,8 +14,6 @@ jobs:
 
     
     steps:
-      # check it to your workflow can access it
-      # from: https://github.com/actions/checkout
       - name: Checkout Repository master branch
         uses: actions/checkout@master
 
@@ -69,6 +67,6 @@ jobs:
           hexo deploy
        - name: 推送到 npm
          run: |
-          cd public
-          node npmversionupdata.js
-          npm publish
+           cd public
+           node npmversionupdata.js
+           npm publish
