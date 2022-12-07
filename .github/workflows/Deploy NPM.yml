@@ -13,7 +13,7 @@ jobs:
       - name: 检查分支
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
 
       - name: 安装 Node
         uses: actions/setup-node@v1
