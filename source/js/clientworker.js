@@ -1,4 +1,3 @@
-<script>
 if (!!navigator.serviceWorker) {
     navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
         if (localStorage.getItem('cw_installed') !== 'true') {
@@ -36,4 +35,3 @@ if (!!navigator.serviceWorker) {
         console.error('[CW] Installing Failed,Error: ' + err.message);
     });
 } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
-</script>
