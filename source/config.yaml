@@ -106,10 +106,10 @@ catch_rules:
 
       - search: (^4|^5)
         searchin: status
-        action: redirect
-        redirect: 
-          url: https://npm.elemecdn.com/haor-blog-404/index.html #不替换直接跳转，默认优先级url > to
+        action: return
+        return: 
+          body: Error!
           header:
-             content-type: text/html
+            content-type: text/plain;charset=utf-8
+            ServerProvide: ClientWorker
           status: 503
- 
