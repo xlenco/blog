@@ -103,3 +103,12 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
+
+      - search: (^4|^5)
+        searchin: status
+        action: return
+        redirect: 
+          url: https://npm.elemecdn.com/haor-blog-404/index.html
+          header:
+             content-type: text/html
+        status: 503
