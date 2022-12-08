@@ -99,7 +99,7 @@ catch_rules:
         header:
           referrer: no-referrer # 更改引用策略
         fetch:
-          engine: parallel
+          engine: fetch
           status: 200
           preflight: false
           timeout: 30000
