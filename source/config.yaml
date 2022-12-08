@@ -97,6 +97,7 @@ catch_rules:
         - search: \.(js|ttf|css) 
           action: fetch
           fetch:
+            enable: true
             engine: fetch
             preflight: false
             timeout: 5000
