@@ -100,9 +100,8 @@ catch_rules:
           referrer: no-referrer # 更改引用策略
           fetch:
             status: 200
-            engine: crazy
+            engine: fetch
             preflight: false
-            threads: 5
             timeout: 30000
             cache:
               enable: true
