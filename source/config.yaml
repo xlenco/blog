@@ -97,7 +97,7 @@ catch_rules:
       - search: _
         action: fetch
         header:
-          referrer: no-referrer # 更改引用策略
+          referrer: strict-origin-when-cross-origin # 更改引用策略
           fetch:
             status: 200
             engine: fetch
