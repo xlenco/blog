@@ -287,7 +287,8 @@
             | 最新更新时间：
             time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
 
-
+script.
+  (() => {
 // 判断是否在el内
 function isInViewPortOfOne(el) {
   if (!el) return;
