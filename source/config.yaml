@@ -103,10 +103,6 @@ catch_rules:
             engine: fetch
             preflight: false
             timeout: 30000
-            cache:
-              enable: true
-              expire: 1000*60
-
 
       - search: \.(js|ttf|css) 
         action: fetch
