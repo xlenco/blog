@@ -289,14 +289,13 @@
 
 script.
   (() => {
-// 判断是否在el内
-function isInViewPortOfOne(el) {
-  if (!el) return;
-  const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  const offsetTop = el.offsetTop;
-  const scrollTop = document.documentElement.scrollTop;
-  const top = offsetTop - scrollTop;
-  return top <= viewPortHeight;
+    function isInViewPortOfOne(el) {
+      if (!el) return;
+      const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      const offsetTop = el.offsetTop;
+      const scrollTop = document.documentElement.scrollTop;
+      const top = offsetTop - scrollTop;
+      return top <= viewPortHeight;
 }
     fetch('https://v6-widget.51.la/v6/JmsRdzV6syTLtUyn/quote.js').then(res => res.text()).then((data) => {
         let title = ['最近活跃', '今日人数', '今日访问', '昨日人数', '昨日访问', '本月访问', '总访问量']
