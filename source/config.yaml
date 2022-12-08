@@ -50,7 +50,7 @@ catch_rules:
           - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
-          status: 200|3.*
+          status: 200
           engine: parallel
           preflight: false # false
           timeout: 3000
@@ -71,7 +71,7 @@ catch_rules:
           - https://cdn.bilicdn.tk/gh
         action: fetch
         fetch:
-          status: 200|3.*
+          status: 200
           engine: parallel
           preflight: false # false
           timeout: 30000
@@ -84,7 +84,7 @@ catch_rules:
       - search: _
         action: fetch
         fetch:
-          status: .*
+          status: 200
           engine: fetch
           preflight: false # false
           timeout: 50000
