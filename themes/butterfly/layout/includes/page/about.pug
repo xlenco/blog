@@ -286,24 +286,7 @@
           .reward-list-updateDate
             | 最新更新时间：
             time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
-      .post-reward
-        button.tip-button.reward-button
-          span.tip-button__text 不给糖果就捣蛋
-          .coin-wrapper
-            .coin
-              .coin__middle
-              .coin__back
-              .coin__front
-          .reward-main
-            ul.reward-all
-              li.reward-item
-                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png', target='_blank')
-                  img.post-qr-code-img(alt='wechat', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png')
-                .post-qr-code-desc wechat
-              li.reward-item
-                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png', target='_blank')
-                  img.post-qr-code-img(alt='alipay', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png')
-                .post-qr-code-desc alipay
+
 
 script(src=url_for(theme.CDN.option.countup_js))
 script.
