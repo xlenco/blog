@@ -288,6 +288,16 @@
             time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
 
 
+// 判断是否在el内
+function isInViewPortOfOne(el) {
+  if (!el) return;
+  const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  const offsetTop = el.offsetTop;
+  const scrollTop = document.documentElement.scrollTop;
+  const top = offsetTop - scrollTop;
+  return top <= viewPortHeight;
+}
+
 script(src=url_for(theme.CDN.option.countup_js))
 script.
   (() => {
