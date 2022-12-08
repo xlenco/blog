@@ -881,7 +881,7 @@ inject:
   # - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-  #  - <script async data-pjax src="/js/rightmenu.js"></script>
+    - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
     - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js"></script>
     - <canvas id="universe"></canvas>  
