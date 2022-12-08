@@ -103,16 +103,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
-
-    - rule: .*
-      transform_rules:
-        - search: \.(js|ttf|css) 
-          action: parallel
-          fetch:
-            status: 200
-            engine: fetch
-            preflight: false
-            timeout: 5000
-            cache:
-              expire: 1000*60*60*8
-              delay: 300
