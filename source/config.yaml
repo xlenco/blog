@@ -92,7 +92,7 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
 
-  - rule: ^https\:\/\/cdn\.nlark\.com/yuque/0
+  - rule: ^https\:\/\/cdn\.nlark\.com/
     transform_rules:
       - search: _
         action: fetch
