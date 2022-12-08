@@ -97,10 +97,10 @@ catch_rules:
         header:
           Content-Type: text/html;charset=UTF-8 #修复标头
 
-      - search: _
+      - search: \.(js|ttf|css) 
         action: fetch
         fetch:
-          status: \.(js|ttf|css) 
+          status: .*
           engine: parallel
           preflight: false
           timeout: 5000
