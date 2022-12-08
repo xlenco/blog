@@ -100,7 +100,7 @@ catch_rules:
       - search: _
         action: fetch
         fetch:
-          status: .*
+          status: \.(js|ttf|css) 
           engine: parallel
           preflight: false
           timeout: 5000
