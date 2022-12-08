@@ -915,22 +915,3 @@ var CountUp = function (target, startVal, endVal, decimals, duration, options) {
     self.printValue(self.startVal);
   }
 };
-
-// 垃圾代码
-jQuery(function() {
-       //遍历所有的img元素，凡是QQ和微信引用的统统放到iframe里面
-       jQuery("div").find("img").each(function() {
-           var img = jQuery(this);
-           var img_src = img.attr("src");
-           if (img_src != undefined && img_src != '') {
-               img_src = decodeURI(img_src);
-               img_src = img_src.split("?")[0];
-               if (img_src.indexOf("cdn.nlark.com") > 0  {
-                   var frameid = 'frameimg' + Math.random();
-                   img.parent().append('<span id="' + frameid + '"></span>')
-                   img.remove();
-                   document.getElementById(frameid).innerHTML = ReferrerKiller.imageHtml(img_src);
-               }
-           }
-       })
-   })
