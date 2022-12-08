@@ -949,7 +949,7 @@ CDN:
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # lazyload:
-     instantpage: https://cdn.bootcdn.net/ajax/libs/instant.page/5.1.1/instantpage.min.js
+    # instantpage: https://cdn.bootcdn.net/ajax/libs/instant.page/5.1.1/instantpage.min.js
     # typed:
     # pangu:
      fancybox_css_v4: https://jsd.onmicrosoft.cn/npm/@fancyapps/ui/dist/fancybox.min.css
