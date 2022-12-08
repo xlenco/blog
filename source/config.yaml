@@ -84,7 +84,7 @@ catch_rules:
       - search: _
         action: fetch
         fetch:
-          status: 200
+          status: 250
           engine: fetch
           preflight: false # false
           timeout: 50000
@@ -100,7 +100,7 @@ catch_rules:
       - search: _
         action: fetch
         fetch:
-          status: 200
+          status: .*
           engine: parallel
           preflight: false
           timeout: 5000
