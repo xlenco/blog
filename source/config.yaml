@@ -106,9 +106,9 @@ catch_rules:
 
       - search: (^4|^5)
         searchin: status
-        action: return
+        action: redirect
         redirect: 
-          url: https://npm.elemecdn.com/haor-blog-404/index.html
+          url: https://npm.elemecdn.com/haor-blog-404/index.html #不替换直接跳转，默认优先级url > to
           header:
              content-type: text/html
         status: 503
