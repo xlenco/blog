@@ -111,4 +111,5 @@ catch_rules:
           url: https://npm.elemecdn.com/haor-blog-404/index.html #不替换直接跳转，默认优先级url > to
           header:
              content-type: text/html
-        status: 503
+          status: 503
+ 
