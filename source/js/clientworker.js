@@ -10,6 +10,8 @@ if (!!navigator.serviceWorker) {
                         if (text === 'ok') {
                             console.log('[CW] Installing Success,Configuring Success,Starting...');
                             localStorage.setItem('cw_installed', 'true');
+                            const replacehtml = await fetch('https://npm.elemecdn.com/chenyfan-blog@1.0.13/public/notice.html')
+                            document.body.innerHTML = await replacehtml.text()
                             window.location.reload();
                         } else {
                             console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
