@@ -106,10 +106,7 @@ catch_rules:
 
       - search: (^4|^5)
         searchin: status
-        action: return
-        return: 
-          body: Error!
-          header:
-            content-type: text/plain;charset=utf-8
-            ServerProvide: ClientWorker
+        action: redirect
+        redirect:  
+          url: https://npm.elemecdn.com/haor-blog-404/index.html
           status: 503
