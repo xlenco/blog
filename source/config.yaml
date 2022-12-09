@@ -44,7 +44,7 @@ catch_rules:
           preflight: false
           timeout: 5000
 # 静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|npm\.elemecdn\.com)
+  - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
     transform_rules:
       - search: _
         replace:
@@ -52,8 +52,7 @@ catch_rules:
           - https://jsd.onmicrosoft.cn/npm
           - https://npm.onmicrosoft.cn
           - https://cdn.cbd.int
-          - https://jsd.cky.codes/npm
-          - https://unpkg.com
+          - https://jsd.cky.codes/npm   
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com 
           - https://cdn.bilicdn.tk/npm 
