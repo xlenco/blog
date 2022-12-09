@@ -95,7 +95,9 @@ deploy:
      repo: git@github.com:xlenco/xlenco.github.io.git
      branch: master
      ignore_hidden: false 
-
+   - type: git
+     repo: git@github.com:xlenco/blog.io.git
+     branch: gh-pages 
 # hexo-filter-nofollow
 nofollow:
   enable: true
