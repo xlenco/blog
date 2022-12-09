@@ -12,10 +12,6 @@
   src: url('/fontsdest/Fira-Code.ttf') format('truetype');
 }
 
-h1#site-title {
-  font-family: 'AlibabaPuHuiTi-2-55-Regular ;
-}
-
 /* rightMenu右键菜单 */
 #rightMenu{
 	display: none;
@@ -160,19 +156,6 @@ h1#site-title {
 #nav *::after{
     background-color: transparent!important;
 }
-
-/* 鼠标样式 */
-body {
-  cursor: url("https://ik.imagekit.io/nicexl/cursor/normal.cur"), default;
-}
-a,
-img,
-button {
-  cursor: url("https://ik.imagekit.io/nicexl/cursor/link.cur"), default !important;
-}
-
-
-
 
 /* 背景宇宙星光  */
 #universe{
