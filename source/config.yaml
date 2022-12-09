@@ -104,9 +104,13 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300
 
+      
       - search: (^4|^5)
         searchin: status
-        action: redirect
-        redirect:  
-          url: https://npm.elemecdn.com/haor-blog-404/index.html
+        action: return
+        return: 
+          body: Error!
+          header:
+            content-type: text/plain;charset=utf-8
+            ServerProvide: ClientWorker
           status: 503
