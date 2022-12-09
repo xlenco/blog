@@ -9,6 +9,7 @@ tags:
 
 title: 利用Github Actions自动化部署你Hexo博客
 abbrlink: "77e3"
+updated: 2022-12-9 14:15
 ---
 
 ### Github Actions 概念
