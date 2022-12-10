@@ -12,7 +12,7 @@ var concat = require('gulp-concat');
 gulp.task('all_to_one', function() {
   return gulp.src('public/**/*.js')
     .pipe(concat('custom.js'))
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('./public'));
 });
 //压缩css
 var cleanCSS = require('gulp-clean-css');
