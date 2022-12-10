@@ -59,7 +59,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
-
+          npm install --save-dev gulp-concat
+    
       - name: Hexo三连并推送npm
         run: |
           hexo clean
