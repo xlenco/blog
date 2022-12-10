@@ -878,7 +878,7 @@ inject:
             //灵雀应用监控
             new LingQue.Monitor().init({ id: "JntPZhhCgIfMtOhJ", sendSpaPv: true });
         </script>
-    - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
+  #  - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
     - <script defer charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
    # - <script defer src="/js/51la.js"></script>
