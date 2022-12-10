@@ -9,8 +9,8 @@ gulp.task('compress', () =>
 )
 //调用js文件合并插件
 var concat = require('gulp-concat');
-gulp.task('all_to_one', function() {
-  return gulp.src(['.public/**/*.js', '!.public/**/*.*js'])
+gulp.task('scripts', function() {
+  return gulp.src('['./public/**/*.js', '!./public/**/*.min.js']')
     .pipe(concat('custom.js'))
     .pipe(gulp.dest('./public'));
 });
@@ -72,5 +72,5 @@ gulp.task('mini-font', (cb) => {
 });
 // 运行gulp命令时依次执行以下任务
 gulp.task('default', gulp.parallel(
-  'compress','all_to_one','minify-css','minify-html','mini-font'
+  'compress','scripts','minify-css','minify-html','mini-font'
 ))
