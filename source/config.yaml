@@ -29,7 +29,7 @@ catch_rules:
           preflight: false
           timeout: 3000
           cache:
-            expire: 1000*60*60*2 # 缓存8小时
+            expire: 1000*60*60*2 # 缓存2小时
             delay: 200
 
       - search: \.html$
@@ -101,5 +101,4 @@ catch_rules:
           timeout: 50000
           cache:
             expire: 1000*60*60*24 # 缓存24小时
-            delay: 300
-   
+            delay: 300   
