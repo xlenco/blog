@@ -31,18 +31,9 @@ catch_rules:
           cache:
             expire: 1000*60*60*2 # 缓存2小时
             delay: 200
-
       - search: \.html$
         header:
           Content-Type: text/html;charset=UTF-8 #修复标头
-
-      - search: _
-        action: fetch
-        fetch:
-          status: 200
-          engine: classic
-          preflight: false
-          timeout: 5000
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
     transform_rules:
