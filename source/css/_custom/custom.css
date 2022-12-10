@@ -1947,6 +1947,7 @@ hr:before {
   font-size: 1rem;
 }
 
+/*右下角菜单*/
 #rightside>div>a,
 #rightside>div>button {
     display: flex;
@@ -1960,7 +1961,7 @@ hr:before {
 
 /*侧边滑动颜色*/
 :root {
-    --btn-bg: #6c8bf1 !important;
+    --btn-bg: #4c6cd3 !important;
 }
 
 #footer-wrap {
