@@ -10,7 +10,7 @@ gulp.task('compress', () =>
 //调用js文件合并插件
 var concat = require('gulp-concat');
 gulp.task('scripts', function() {
-  return gulp.src('['./public/**/*.js', '!./public/**/*.min.js']')
+  return gulp.src('./public/**/*.js')
     .pipe(concat('custom.js'))
     .pipe(gulp.dest('./public'));
 });
