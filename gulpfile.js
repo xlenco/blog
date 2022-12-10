@@ -72,5 +72,5 @@ gulp.task('mini-font', (cb) => {
 });
 // 运行gulp命令时依次执行以下任务
 gulp.task('default', gulp.parallel(
-  'compress','all_to_one' 'minify-css', 'minify-html','mini-font'
+  'compress','all_to_one','minify-css','minify-html','mini-font'
 ))
