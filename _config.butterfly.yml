@@ -882,8 +882,8 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
-    - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js"></script>
+   # - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
+    - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.min.js"></script>
     - <canvas id="universe"></canvas>  
     - <script defer data-pjax src="/js/custom.js"></script>
   #  - <script defer data-pjax src="/js/universe.js"></script>
@@ -929,8 +929,8 @@ CDN:
     # disqusjs:
     # disqusjs_css:
     # twikoo: https://lib.baomitu.com/twikoo/1.6.7/twikoo.min.js
-     waline_js: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.js
-     waline_css: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.css
+    # waline_js: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.js
+    # waline_css: https://jsd.onmicrosoft.cn/npm/@waline/client@2.13.0/dist/waline.min.css
     # sharejs:
     # sharejs_css:
     # mathjax:
