@@ -74,4 +74,5 @@ jobs:
       - name: gulp 并部署
         run: |
           gulp
+          webpack
           hexo deploy
