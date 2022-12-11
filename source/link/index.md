@@ -2,7 +2,7 @@
 date: 2022-05-03 21:21:51
 flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
 title: 友情链接
-top_img: https://ik.imagekit.io/nicexl/Wallpaper/ba41a32b219e4b40ad055bbb52935896_Y0819msuI.jpg
+top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
 updated: 2022-12-05 21:46:51
 ---
