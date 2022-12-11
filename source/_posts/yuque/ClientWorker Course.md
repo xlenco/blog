@@ -3,7 +3,7 @@ abbrlink: 933a
 categories:
   - 笔记
 
-cover: https://ik.imagekit.io/nicexl/Wallpaper/0041b89232893f083a57f1_O-g_F8uUk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657163223097
+cover: https://xlenco.onmicrosoft.cn/Wallpaper/F8uUk.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670765271228
 date: "2022-07-28 14:33:58"
 tags:
   - JavaScript
@@ -28,7 +28,7 @@ updated: 2022-09-19 18:23:10
 
 ### 地址
 
-{% link ClientWorker, https://clientworker.js.org, https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
+{% link ClientWorker, https://clientworker.js.org,https://nsso.eu.org/img/d28b3ba4-df07-4d22-9bfb-8591ea937c22.png %}
 
 ## 快速上手
 
