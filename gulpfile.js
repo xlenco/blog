@@ -1,5 +1,12 @@
 // gulp-tester
 var gulp = require('gulp');
+//
+var terser = require('gulp-concat');
+gulp.task('js', function() {
+  return gulp.src('./public/**/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./public'));
+});
 // 压缩js
 var terser = require('gulp-terser');
 gulp.task('compress', () =>
@@ -65,5 +72,5 @@ gulp.task('mini-font', (cb) => {
 });
 // 运行gulp命令时依次执行以下任务
 gulp.task('default', gulp.parallel(
-  'compress', 'minify-css', 'minify-html','mini-font'
+  'js','compress','minify-css','minify-html','mini-font'
 ))
