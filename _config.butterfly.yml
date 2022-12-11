@@ -527,7 +527,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://xlenco.onmicrosoft.cn/img/bg.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670765982973)
+background: 
 
 # Footer Background
 footer_bg: false
