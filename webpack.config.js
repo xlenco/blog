@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './public/js/custom.js',
+  entry: './public/**/*.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: '123.js',
+    filename: '666.js',
   },
 };
