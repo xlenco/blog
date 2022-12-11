@@ -876,7 +876,8 @@ inject:
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script defer src="/js/51la.js"></script>
     - <script data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-    - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
+    - <link href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" rel="preload" crossorigin>
+ #   - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
   # - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
     # - <link rel="stylesheet" href="/xxx.css">
