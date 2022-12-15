@@ -66,11 +66,11 @@ jobs:
           hexo clean
           hexo generate 
           hexo algolia
-          gulp
           cd public
           node npmversionupdata.js
           npm publish
-          hexo deploy
+          gulp
+          hexo deploy         
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
