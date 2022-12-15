@@ -45,16 +45,16 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: false
+  enable: true 
   preprocess: true
-  line_number: true
+  line_number: false 
   tab_replace: ''
 
 # hexo-renderer-markdown-it-plus
