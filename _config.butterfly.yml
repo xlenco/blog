@@ -623,13 +623,13 @@ blog_title_font:
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
-  enable: true
+  enable: false
   icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: true
+  enable: false
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
@@ -808,8 +808,6 @@ note:
 pjax:
   enable: true
   exclude:
-     - /shuoshuo/
-     - /fcircle/
     # - xxxx
     # - xxxx
 
