@@ -1,5 +1,5 @@
 ---
-title: 即刻短文
+title: 
 date: 2022-12-06 12:06:17
 comments: true
 aside: false
