@@ -1,4 +1,8 @@
-
+---
+comments: true
+aside: false
+top_img: false
+---
 
 {% raw %}
 <div class="muyu-layout">
