@@ -1,7 +1,7 @@
 ---
 title: Microsoft Azure应用永久密钥获取教程
 categories: 教程
-cover: https://ik.imagekit.io/nicexl/text/765243604c4abea65c4da035d17ff8da_0HBdJsQM9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655477630675
+cover: https://i.imgtg.com/2022/12/19/HmkgD.webp
 abbrlink: f366
 date: 2022-06-19 18:47:47
 ---
