@@ -3,10 +3,9 @@ abbrlink: 3b89
 categories:
   - 笔记
 
-cover: https://ik.imagekit.io/nicexl/text/386_qSCoLCgmI.jpeg
+cover: https://i.imgtg.com/2022/12/19/HmbWI.webp
 date: "2022-06-16 06:09:37"
 description: 主要讲什么是Markdown语法，以及Markdown的用法
-swiper_index: 3
 tags:
   - Markdown
 
