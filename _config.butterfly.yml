@@ -872,13 +872,13 @@ inject:
     - <script defer charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script defer src="/js/51la.js"></script>
-    - <script data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
-    - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css">
- #   - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
+  #  - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css">
+    - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
   # - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    - <script data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
    # - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
     - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.min.js"></script>
