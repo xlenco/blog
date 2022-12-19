@@ -2,7 +2,7 @@
 categories:
   - 教程
 
-cover: "https://ik.imagekit.io/nicexl/Wallpaper/0f11ebb6edd017c2d2eca2_UCIfkba8h.jpg"
+cover: "https://i.imgtg.com/2022/12/19/HmBiM.webp"
 date: "2022-07-28 11:51:20"
 tags:
   - Butterfly
