@@ -912,7 +912,7 @@ inject:
   # - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-   # - <script data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
+    - <script data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
    # - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
     - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.min.js"></script>
@@ -954,7 +954,6 @@ CDN:
     # algolia_search_v4:
     # instantsearch_v4: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.49.1/instantsearch.development.min.js
      pjax: https://cdn.bootcdn.net/ajax/libs/pjax/0.2.8/pjax.min.js
-     jquery: https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js
     # gitalk:
     # gitalk_css:
     # blueimp_md5:
