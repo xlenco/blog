@@ -2,7 +2,7 @@
 categories:
   - 笔记
 
-cover: https://ik.imagekit.io/nicexl/img/wallhaven-9mjoy1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1661081652687
+cover: https://i.imgtg.com/2022/12/19/HmU21.webp
 date: "2022-08-18 16:12:26"
 tags:
   - Git
