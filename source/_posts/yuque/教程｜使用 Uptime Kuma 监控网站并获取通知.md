@@ -1,9 +1,8 @@
 ---
-abbrlink: db5
 categories:
-  - 笔记
+  - Uptime Kuma
 
-cover: https://ik.imagekit.io/xlenco/img/ad8152a2-23dd-444b-a8b6-1a3d78941721.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1661598662138
+cover: https://i.imgtg.com/2022/12/19/HmhrP.webp
 date: "2022-08-06 15:07:01"
 tags:
   - Wed
