@@ -2,11 +2,10 @@
 title: Butterfly 主题 的 PWA 实现方案
 date: 2022-12-20 20:50
 updated: 2022-12-20 20:50
-tags: 
+tags:
   - [Hexo, Butterfly, Web]
 categories: 教程
-cover: 
-https://i.imgtg.com/2022/12/20/HtHoa.webp
+cover: https://i.imgtg.com/2022/12/20/HtHoa.webp
 ---
 
 ## 简介
