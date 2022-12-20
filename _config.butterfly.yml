@@ -927,7 +927,7 @@ inject:
    # - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js
+    - <script src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
    # - <script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js"></script>
     - <script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.min.js"></script>
