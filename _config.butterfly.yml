@@ -962,7 +962,7 @@ CDN:
   custom_format: https://jsd.onmicrosoft.cn/npm/${name}@latest/${min_file} 
 
   option:
-     main_css: https://cdn.jsdelivr.net/npm/xlenco-blog-main/css/index.min.css
+    # main_css: https://cdn.jsdelivr.net/npm/xlenco-blog-main/css/index.min.css
      main: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/main.min.js
      utils: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/utils.min.js
     # translate:
