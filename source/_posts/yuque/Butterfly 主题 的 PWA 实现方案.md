@@ -8,7 +8,7 @@ tags:
   - Web
 
 categories: 教程
-cover: https://i.imgtg.com/2022/12/20/HtHoa.webp
+cover: https://i.imgtg.com/2022/12/20/HtcjX.webp
 ---
 
 ## 简介
