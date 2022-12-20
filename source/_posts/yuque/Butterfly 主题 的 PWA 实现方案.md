@@ -34,7 +34,7 @@ PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是
 
 ### hexo-offline-popup
 
-{% hideToggle hexo-offline-popup %}
+{% hideToggle 点击查看 %}
 hexo-offline-popup 是一个 hexo 插件， 它可加速你的 Hexo 网站的加载速度，以及网站内容更新弹窗提示。
 该插件基于停止维护已久的 hexo-service-worker 插件，并在它的基础上加以改进。
 
@@ -88,5 +88,223 @@ service_worker:
 - 该插件仅部署后生效，本地运行不生效
 - 安装该插件后第一次打开网站不弹窗，后续更新将会弹窗
 
+{% endhideToggle %}
+
+### 利用 Workbox 实现 PWA
+
+{% hideToggle 点击查看 %}
+首先在博客文件夹下新建一个 gulpfile.js 文件，内容如下
+
+```
+const gulp = require("gulp");
+const workbox = require("workbox-build");
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
+const pipeline = require('readable-stream').pipeline;
+
+gulp.task('generate-service-worker', () => {
+    return workbox.injectManifest({
+        swSrc: './sw-template.js',
+        swDest: './public/sw.js',
+        globDirectory: './public',
+        globPatterns: [
+            "**/*.{html,css,js,json,woff2}"
+        ],
+        modifyURLPrefix: {
+            "": "./"
+        }
+    });
+});
+
+gulp.task("uglify", function () {
+    return pipeline(
+        gulp.src("./public/sw.js"),
+        uglify(),
+        gulp.dest("./public")
+    );
+});
+
+gulp.task("build", gulp.series("generate-service-worker", "uglify"));
+
+```
+
+其中，globPatterns 就是生成的预缓存列表的文件匹配模式，在这里就是将所有的 html、css、js、json、woff2 文件预缓存，即博客首次加载时，自动将这些文件缓存。
+然后，再新建一个 sw-template.js 文件：
+
+```
+const workboxVersion = '5.0.0';
+
+importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
+
+workbox.core.setCacheNameDetails({
+    prefix: "reuixiy"
+});
+
+workbox.core.skipWaiting();
+
+workbox.core.clientsClaim();
+
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+
+workbox.precaching.cleanupOutdatedCaches();
+
+// Images
+workbox.routing.registerRoute(
+    /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "images",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+// Fonts
+workbox.routing.registerRoute(
+    /\.(?:eot|ttf|woff|woff2)$/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "fonts",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+// Google Fonts
+workbox.routing.registerRoute(
+    /^https:\/\/fonts\.googleapis\.com/,
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: "google-fonts-stylesheets"
+    })
+);
+workbox.routing.registerRoute(
+    /^https:\/\/fonts\.gstatic\.com/,
+    new workbox.strategies.CacheFirst({
+        cacheName: 'google-fonts-webfonts',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+// Static Libraries
+workbox.routing.registerRoute(
+    /^https:\/\/cdn\.jsdelivr\.net/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "static-libs",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+// External Images
+workbox.routing.registerRoute(
+    /^https:\/\/raw\.githubusercontent\.com\/reuixiy\/hugo-theme-meme\/master\/static\/icons\/.*/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "external-images",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+workbox.googleAnalytics.initialize();
+
+```
+
+其中，请将 prefix 修改为你博客的名字（英文）
+把以下代码放在 </head> 中：
+
+```
+<div class="app-refresh" id="app-refresh">
+    <div class="app-refresh-wrap" onclick="location.reload()">
+        <label>已更新最新版本</label>
+        <span>点击刷新</span>
+    </div>
+</div>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        if (navigator.serviceWorker.controller) {
+            navigator.serviceWorker.addEventListener('controllerchange', function() {
+                showNotification();
+            });
+        }
+
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js');
+        });
+    }
+
+    function showNotification() {
+        document.querySelector('meta[name=theme-color]').content = '#000';
+        document.getElementById('app-refresh').className += ' app-refresh-show';
+    }
+</script>
+
+```
+
+再添加以下 CSS 样式到你的 CSS 文件中：
+
+```
+.app-refresh {
+    background: #000;
+    height: 0;
+    line-height: 3em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 42;
+    padding: 0 1em;
+    transition: all .3s ease;
+}
+.app-refresh-wrap {
+    display: flex;
+    color: #fff;
+}
+.app-refresh-wrap label {
+    flex: 1;
+}
+.app-refresh-show {
+    height: 3em;
+}
+
+```
+
+你可以修改一下你的某篇文章，然后再次生成 sw.js，最后浏览器刷新一下测试一下。
 {% endhideToggle %}
 待更新 ing…
