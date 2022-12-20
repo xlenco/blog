@@ -96,7 +96,7 @@ service_worker:
 安装 Gulp
 
 ```
-npm install workbox-build gulp gulp-uglify readable-stream uglify-es --save-dev
+npm install gulp-cli -g npm install workbox-build gulp gulp-uglify readable-stream uglify-es --save-dev
 ```
 
 在博客文件夹下新建一个 gulpfile.js 文件，内容如下
@@ -251,66 +251,99 @@ workbox.googleAnalytics.initialize();
 ```
 
 其中，请将 prefix 修改为你博客的名字（英文）
-把以下代码放在 </head> 中：
+在\_config.butterfly.yml 中配置以下内容：
+
+```
+inject:
+  head:
+    - '<style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style>'
+  bottom:
+    - '<div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script>'
+```
+
+同样，如果你使用的不是 Butterfly 主题，可以在所示代码的基础上修改以适配你的主题。以下是展开后的代码，便于修改调试。
+请将以下代码插入到头部 </head> 之前：
+
+```
+<style type="text/css">
+  .app-refresh {
+    position: fixed;
+    top: -2.2rem;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    padding: 0 1rem;
+    font-size: 15px;
+    height: 2.2rem;
+    transition: all 0.3s ease;
+  }
+  .app-refresh-wrap {
+    display: flex;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-refresh-wrap span {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+```
+
+请将以下代码插入到</body>之前
 
 ```
 <div class="app-refresh" id="app-refresh">
-    <div class="app-refresh-wrap" onclick="location.reload()">
-        <label>已更新最新版本</label>
-        <span>点击刷新</span>
-    </div>
+  <div class="app-refresh-wrap">
+    <label>✨ 网站已更新最新版本 👉</label>
+    <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a>
+  </div>
 </div>
-
 <script>
-    if ('serviceWorker' in navigator) {
-        if (navigator.serviceWorker.controller) {
-            navigator.serviceWorker.addEventListener('controllerchange', function() {
-                showNotification();
-            });
-        }
-
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js');
-        });
+  if ('serviceWorker' in navigator) {
+    if (navigator.serviceWorker.controller) {
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        showNotification()
+      })
     }
 
-    function showNotification() {
-        document.querySelector('meta[name=theme-color]').content = '#000';
-        document.getElementById('app-refresh').className += ' app-refresh-show';
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js')
+    })
+  }
+
+  function showNotification() {
+    if (GLOBAL_CONFIG.Snackbar) {
+      var snackbarBg =
+        document.documentElement.getAttribute('data-theme') === 'light'
+          ? GLOBAL_CONFIG.Snackbar.bgLight
+          : GLOBAL_CONFIG.Snackbar.bgDark
+      var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+      Snackbar.show({
+        text: '已更新最新版本',
+        backgroundColor: snackbarBg,
+        duration: 500000,
+        pos: snackbarPos,
+        actionText: '点击刷新',
+        actionTextColor: '#fff',
+        onActionClick: function (e) {
+          location.reload()
+        },
+      })
+    } else {
+      var showBg =
+        document.documentElement.getAttribute('data-theme') === 'light'
+          ? '#49b1f5'
+          : '#1f1f1f'
+      var cssText = `top: 0; background: ${showBg};`
+      document.getElementById('app-refresh').style.cssText = cssText
     }
+  }
 </script>
-
 ```
 
-再添加以下 CSS 样式到你的 CSS 文件中：
-
-```
-.app-refresh {
-    background: #000;
-    height: 0;
-    line-height: 3em;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 42;
-    padding: 0 1em;
-    transition: all .3s ease;
-}
-.app-refresh-wrap {
-    display: flex;
-    color: #fff;
-}
-.app-refresh-wrap label {
-    flex: 1;
-}
-.app-refresh-show {
-    height: 3em;
-}
-
-```
-
-你可以修改一下你的某篇文章，然后再次生成 sw.js，最后浏览器刷新一下测试一下。
+最后你可以修改一下你的某篇文章，然后再次生成 sw.js，最后浏览器刷新一下测试一下。
 {% endhideToggle %}
-待更新 ing…
