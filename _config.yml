@@ -172,7 +172,7 @@ tag_plugins:
   issues: false #issues标签依赖注入开关
   link:
     placeholder: /img/link.svg #link_card标签默认的图标图片
-  CDN:
+#  CDN:
 #    anima: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
 #    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
 #    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
