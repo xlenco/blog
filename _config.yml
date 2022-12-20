@@ -200,3 +200,7 @@ fcircle:
     comments: false
     aside: false
     top_img: false
+
+## butterfly_article_double_row
+butterfly_article_double_row:
+  enable: true
