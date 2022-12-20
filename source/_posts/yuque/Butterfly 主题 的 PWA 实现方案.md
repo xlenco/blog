@@ -93,7 +93,13 @@ service_worker:
 ### 利用 Workbox 实现 PWA
 
 {% hideToggle 点击查看 %}
-首先在博客文件夹下新建一个 gulpfile.js 文件，内容如下
+安装 Gulp
+
+```
+npm install workbox-build gulp gulp-uglify readable-stream uglify-es --save-dev
+```
+
+在博客文件夹下新建一个 gulpfile.js 文件，内容如下
 
 ```
 const gulp = require("gulp");
