@@ -1,8 +1,8 @@
 [
   {
-    "id": 109042044,
-    "slug": "7e75b70b-0c2e-495b-978e-31ebca1c4678",
-    "title": "dns-prefetch、prefetch、preload、defer、async 字段的区别",
+    "id": 109870549,
+    "slug": "burulbc9r1u0u1f2",
+    "title": "Butterfly 主题 的 PWA 实现方案",
     "book_id": 32250837,
     "book": {
       "id": 32250837,
@@ -13,11 +13,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -32,7 +32,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -50,7 +50,86 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
+      "_serializer": "v2.user"
+    },
+    "format": "lake",
+    "body": "---<br />title: Butterfly 主题 的 PWA 实现方案<br />date: 2022-12-20 20:50<br />updated: 2022-12-20 20:50<br />tags: <br />  - [Hexo, Butterfly, Web]<br />categories: 教程<br />cover: <br />https://i.imgtg.com/2022/12/20/HtHoa.webp<br />---\n\n<a name=\"WzkdH\"></a>\n## 简介\nPWA 是 Google 于 2016 年提出的概念，于 2017 年正式落地，于 2018 年迎来重大突破，全球顶级的浏览器厂商，Google、Microsoft、Apple 已经全数宣布支持 PWA 技术。<br />PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是通过各种 Web 技术实现与原生 App 相近的用户体验。<br />纵观现有 Web 应用与原生应用的对比差距，如离线缓存、沉浸式体验等等，可以通过已经实现的 Web 技术去弥补这些差距，最终达到与原生应用相近的用户体验效果。\n<a name=\"GCzJT\"></a>\n## PWA 的功能\n\n- 手机应用配置(Web App Manifest)<br />可以通过 manifest.json 文件配置，使得可以直接添加到手机的桌面上。\n- 离线加载与缓存(Service Worker+Cache API )<br />可以通过 Service Worker + HTTPS +Cache Api + indexedDB 等一系列 Web 技术实现离线加载和缓存。\n- 消息推动与通知(Push&Notification )<br />实现实时的消息推送与通知\n- 数据及时更新(Background Sync )<br />后台同步，数据及时更新\n<a name=\"XgIu9\"></a>\n## 正文\n下面介绍几种实现 PWA 功能的方法，可根据你的需求进行选取\n<a name=\"qFUOr\"></a>\n### hexo-offline-popup\n{% hideToggle hexo-offline-popup %}<br />hexo-offline-popup 是一个 hexo 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。<br />该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。\n<a name=\"W4ovw\"></a>\n#### 安装\n```\nnpm i hexo-offline-popup --save\n```\n安装后, 运行 hexo clean && hexo generate 激活插件\n<a name=\"eML8v\"></a>\n#### 配置\n如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 hexo clean && hexo generate。<br />在博客根目录的 _config.yml 中添加以下配置\n```\n# offline config passed to sw-precache. \nservice_worker:\n  maximumFileSizeToCacheInBytes: 5242880\n  staticFileGlobs:\n  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}\n  stripPrefix: public\n  verbose: true\n```\n如果你有CDN资源，例：\n```\n- https://cdn.some.com/some/path/some-script.js\n- http://cdn.some-else.org/some/path/deeply/some-style.css\n```\n可以在_config.yml 中配置\n```\nservice_worker:\n  runtimeCaching:\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some.com\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some-else.org\n```\n<a name=\"shJzR\"></a>\n#### 常见问题\n\n- 该插件仅部署后生效，本地运行不生效\n- 安装该插件后第一次打开网站不弹窗，后续更新将会弹窗\n\n{% endhideToggle %}<br />待更新 ing…\n",
+    "body_draft": "---<br />title: Butterfly 主题 的 PWA 实现方案<br />date: 2022-12-20 20:50<br />updated: 2022-12-20 20:50<br />tags: <br />  - [Hexo, Butterfly, Web]<br />categories: 教程<br />cover: <br />https://i.imgtg.com/2022/12/20/HtHoa.webp<br />---\n\n<a name=\"WzkdH\"></a>\n## 简介\nPWA 是 Google 于 2016 年提出的概念，于 2017 年正式落地，于 2018 年迎来重大突破，全球顶级的浏览器厂商，Google、Microsoft、Apple 已经全数宣布支持 PWA 技术。<br />PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是通过各种 Web 技术实现与原生 App 相近的用户体验。<br />纵观现有 Web 应用与原生应用的对比差距，如离线缓存、沉浸式体验等等，可以通过已经实现的 Web 技术去弥补这些差距，最终达到与原生应用相近的用户体验效果。\n<a name=\"GCzJT\"></a>\n## PWA 的功能\n\n- 手机应用配置(Web App Manifest)<br />可以通过 manifest.json 文件配置，使得可以直接添加到手机的桌面上。\n- 离线加载与缓存(Service Worker+Cache API )<br />可以通过 Service Worker + HTTPS +Cache Api + indexedDB 等一系列 Web 技术实现离线加载和缓存。\n- 消息推动与通知(Push&Notification )<br />实现实时的消息推送与通知\n- 数据及时更新(Background Sync )<br />后台同步，数据及时更新\n<a name=\"XgIu9\"></a>\n## 正文\n下面介绍几种实现 PWA 功能的方法，可根据你的需求进行选取\n<a name=\"qFUOr\"></a>\n### hexo-offline-popup\n{% hideToggle hexo-offline-popup %}<br />hexo-offline-popup 是一个 hexo 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。<br />该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。\n<a name=\"W4ovw\"></a>\n#### 安装\n```\nnpm i hexo-offline-popup --save\n```\n安装后, 运行 hexo clean && hexo generate 激活插件\n<a name=\"eML8v\"></a>\n#### 配置\n如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 hexo clean && hexo generate。<br />在博客根目录的 _config.yml 中添加以下配置\n```\n# offline config passed to sw-precache. \nservice_worker:\n  maximumFileSizeToCacheInBytes: 5242880\n  staticFileGlobs:\n  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}\n  stripPrefix: public\n  verbose: true\n```\n如果你有CDN资源，例：\n```\n- https://cdn.some.com/some/path/some-script.js\n- http://cdn.some-else.org/some/path/deeply/some-style.css\n```\n可以在_config.yml 中配置\n```\nservice_worker:\n  runtimeCaching:\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some.com\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some-else.org\n```\n<a name=\"shJzR\"></a>\n#### 常见问题\n\n- 该插件仅部署后生效，本地运行不生效\n- 安装该插件后第一次打开网站不弹窗，后续更新将会弹窗\n\n{% endhideToggle %}<br />待更新 ing…\n",
+    "body_html": "<!doctype html><div class=\"lake-content\" typography=\"classic\"><p id=\"u328d2ab6\" class=\"ne-p\"><span class=\"ne-text\">---</span></p><p id=\"u35ff29f9\" class=\"ne-p\"><span class=\"ne-text\">title: Butterfly 主题 的 PWA 实现方案</span></p><p id=\"ub9835b95\" class=\"ne-p\"><span class=\"ne-text\">date: 2022-12-20 20:50</span></p><p id=\"u586ed61b\" class=\"ne-p\"><span class=\"ne-text\">updated: 2022-12-20 20:50</span></p><p id=\"u88c8808e\" class=\"ne-p\"><span class=\"ne-text\">tags: </span></p><p id=\"u280d428c\" class=\"ne-p\"><span class=\"ne-text\">  - [Hexo, Butterfly, Web]</span></p><p id=\"uc3269756\" class=\"ne-p\"><span class=\"ne-text\">categories: 教程</span></p><p id=\"ua3f48d0c\" class=\"ne-p\"><span class=\"ne-text\">cover: </span></p><p id=\"u3a7c5d97\" class=\"ne-p\"><span class=\"ne-text\">https://i.imgtg.com/2022/12/20/HtHoa.webp</span></p><p id=\"u76e5533d\" class=\"ne-p\"><span class=\"ne-text\">---</span></p><p id=\"u2589cb1e\" class=\"ne-p\"><span class=\"ne-text\"></span></p><h2 id=\"WzkdH\"><span class=\"ne-text\">简介</span></h2><p id=\"u9ac6542f\" class=\"ne-p\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">PWA 是 Google 于 2016 年提出的概念，于 2017 年正式落地，于 2018 年迎来重大突破，全球顶级的浏览器厂商，Google、Microsoft、Apple 已经全数宣布支持 PWA 技术。</span></p><p id=\"u728fe374\" class=\"ne-p\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是通过各种 Web 技术实现与原生 App 相近的用户体验。</span></p><p id=\"u77fc0e28\" class=\"ne-p\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">纵观现有 Web 应用与原生应用的对比差距，如离线缓存、沉浸式体验等等，可以通过已经实现的 Web 技术去弥补这些差距，最终达到与原生应用相近的用户体验效果。</span></p><h2 id=\"GCzJT\"><span class=\"ne-text\" style=\"color: rgb(34, 34, 34) !important\">PWA 的功能</span></h2><ul class=\"ne-ul\"><li id=\"u04327d16\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">手机应用配置(Web App Manifest)<br />可以通过 manifest.json 文件配置，使得可以直接添加到手机的桌面上。</span></li><li id=\"u666f3855\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">离线加载与缓存(Service Worker+Cache API )<br />可以通过 Service Worker + HTTPS +Cache Api + indexedDB 等一系列 Web 技术实现离线加载和缓存。</span></li><li id=\"u93e1985b\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">消息推动与通知(Push&amp;Notification )<br />实现实时的消息推送与通知</span></li><li id=\"u150f2ff8\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">数据及时更新(Background Sync )<br />后台同步，数据及时更新</span></li></ul><h2 id=\"XgIu9\"><span class=\"ne-text\" style=\"color: rgb(34, 34, 34) !important\">正文</span></h2><p id=\"ufa42e2b2\" class=\"ne-p\"><span class=\"ne-text\" style=\"font-size: 16px\">下面介绍几种实现 PWA 功能的方法，可根据你的需求进行选取</span></p><h3 id=\"qFUOr\"><span class=\"ne-text\">hexo-offline-popup</span></h3><p id=\"u7b435178\" class=\"ne-p\"><span class=\"ne-text\">{% hideToggle hexo-offline-popup %}</span></p><p id=\"u4a642879\" class=\"ne-p\"><span class=\"ne-text\">hexo-offline-popup 是一个 hexo 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。</span></p><p id=\"u5a0b6289\" class=\"ne-p\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。</span></p><h4 id=\"W4ovw\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">安装</span></h4><pre data-language=\"plain\" id=\"OTOFc\" class=\"ne-codeblock language-plain\">npm i hexo-offline-popup --save</pre><p id=\"u77bb9dc3\" class=\"ne-p\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">安装后, 运行 </span><span class=\"ne-text\" style=\"background-color: rgb(247, 247, 247); color: rgb(51, 51, 51)\">hexo clean &amp;&amp; hexo generate</span><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\"> 激活插件</span></p><h4 id=\"eML8v\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">配置</span></h4><p id=\"ufeb30f15\" class=\"ne-p\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 </span><span class=\"ne-text\" style=\"background-color: rgb(247, 247, 247); color: rgb(51, 51, 51)\">hexo clean &amp;&amp; hexo generate</span><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">。</span></p><p id=\"ue1348b7d\" class=\"ne-p\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">在博客根目录的 </span><span class=\"ne-text\" style=\"background-color: rgb(247, 247, 247); color: rgb(51, 51, 51)\">_config.yml</span><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\"> 中添加以下配置</span></p><pre data-language=\"plain\" id=\"pn0NG\" class=\"ne-codeblock language-plain\"># offline config passed to sw-precache. \nservice_worker:\n  maximumFileSizeToCacheInBytes: 5242880\n  staticFileGlobs:\n  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}\n  stripPrefix: public\n  verbose: true</pre><p id=\"u37e8dabe\" class=\"ne-p\"><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\">如果你有CDN资源，例：</span></p><pre data-language=\"plain\" id=\"YnHSL\" class=\"ne-codeblock language-plain\">- https://cdn.some.com/some/path/some-script.js\n- http://cdn.some-else.org/some/path/deeply/some-style.css</pre><p id=\"u04dc4217\" class=\"ne-p\"><span class=\"ne-text\">可以在</span><span class=\"ne-text\" style=\"background-color: rgb(247, 247, 247); color: rgb(51, 51, 51)\">_config.yml</span><span class=\"ne-text\" style=\"color: rgb(51, 51, 51)\"> 中配置</span></p><pre data-language=\"plain\" id=\"BPqJR\" class=\"ne-codeblock language-plain\">service_worker:\n  runtimeCaching:\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some.com\n    - urlPattern: /*\n      handler: cacheFirst\n      options:\n        origin: cdn.some-else.org</pre><h4 id=\"shJzR\"><span class=\"ne-text\">常见问题</span></h4><ul class=\"ne-ul\"><li id=\"ub7480460\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">该插件仅部署后生效，本地运行不生效</span></li><li id=\"ueb958c0f\"><span class=\"ne-text\" style=\"font-size: 16px; color: rgb(34, 34, 34) !important\">安装该插件后第一次打开网站不弹窗，后续更新将会弹窗</span></li></ul><p id=\"u77956512\" class=\"ne-p\"><span class=\"ne-text\">{% endhideToggle %}</span></p><p id=\"u2af12073\" class=\"ne-p\"><span class=\"ne-text\">待更新 ing…</span></p></div>",
+    "body_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"adapt\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u328d2ab6\" id=\"u328d2ab6\"><span data-lake-id=\"ubc4be659\" id=\"ubc4be659\">---</span></p><p data-lake-id=\"u35ff29f9\" id=\"u35ff29f9\"><span data-lake-id=\"uc7b94ae5\" id=\"uc7b94ae5\">title: Butterfly 主题 的 PWA 实现方案</span></p><p data-lake-id=\"ub9835b95\" id=\"ub9835b95\"><span data-lake-id=\"u8ee95eb8\" id=\"u8ee95eb8\">date: 2022-12-20 20:50</span></p><p data-lake-id=\"u586ed61b\" id=\"u586ed61b\"><span data-lake-id=\"u30c66eb0\" id=\"u30c66eb0\">updated: 2022-12-20 20:50</span></p><p data-lake-id=\"u88c8808e\" id=\"u88c8808e\"><span data-lake-id=\"u4554e08a\" id=\"u4554e08a\">tags: </span></p><p data-lake-id=\"u280d428c\" id=\"u280d428c\"><span data-lake-id=\"u63948bf0\" id=\"u63948bf0\">  - [Hexo, Butterfly, Web]</span></p><p data-lake-id=\"uc3269756\" id=\"uc3269756\"><span data-lake-id=\"u15b7cd90\" id=\"u15b7cd90\">categories: 教程</span></p><p data-lake-id=\"ua3f48d0c\" id=\"ua3f48d0c\"><span data-lake-id=\"u28e252c3\" id=\"u28e252c3\">cover: </span></p><p data-lake-id=\"u3a7c5d97\" id=\"u3a7c5d97\"><span data-lake-id=\"ueb458020\" id=\"ueb458020\">https://i.imgtg.com/2022/12/20/HtHoa.webp</span></p><p data-lake-id=\"u76e5533d\" id=\"u76e5533d\"><span data-lake-id=\"ua7a7025b\" id=\"ua7a7025b\">---</span></p><p data-lake-id=\"u2589cb1e\" id=\"u2589cb1e\"><span data-lake-id=\"u21b465a5\" id=\"u21b465a5\">​</span><br></p><h2 data-lake-id=\"WzkdH\" id=\"WzkdH\"><span data-lake-id=\"u479e6c0a\" id=\"u479e6c0a\">简介</span></h2><p data-lake-id=\"u9ac6542f\" id=\"u9ac6542f\"><span data-lake-id=\"u526d4262\" id=\"u526d4262\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">PWA 是 Google 于 2016 年提出的概念，于 2017 年正式落地，于 2018 年迎来重大突破，全球顶级的浏览器厂商，Google、Microsoft、Apple 已经全数宣布支持 PWA 技术。</span></p><p data-lake-id=\"u728fe374\" id=\"u728fe374\"><span data-lake-id=\"u40591254\" id=\"u40591254\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是通过各种 Web 技术实现与原生 App 相近的用户体验。</span></p><p data-lake-id=\"u77fc0e28\" id=\"u77fc0e28\"><span data-lake-id=\"ub5eaebc9\" id=\"ub5eaebc9\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">纵观现有 Web 应用与原生应用的对比差距，如离线缓存、沉浸式体验等等，可以通过已经实现的 Web 技术去弥补这些差距，最终达到与原生应用相近的用户体验效果。</span></p><h2 data-lake-id=\"GCzJT\" id=\"GCzJT\"><span data-lake-id=\"u5b266997\" id=\"u5b266997\" style=\"color: rgb(34, 34, 34) !important\">PWA 的功能</span></h2><ul list=\"u6d0ed028\"><li fid=\"u99bea62f\" data-lake-id=\"u04327d16\" id=\"u04327d16\"><span data-lake-id=\"u6dc18eb6\" id=\"u6dc18eb6\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">手机应用配置(Web App Manifest)<br />可以通过 manifest.json 文件配置，使得可以直接添加到手机的桌面上。</span></li><li fid=\"u99bea62f\" data-lake-id=\"u666f3855\" id=\"u666f3855\"><span data-lake-id=\"u82449270\" id=\"u82449270\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">离线加载与缓存(Service Worker+Cache API )<br />可以通过 Service Worker + HTTPS +Cache Api + indexedDB 等一系列 Web 技术实现离线加载和缓存。</span></li><li fid=\"u99bea62f\" data-lake-id=\"u93e1985b\" id=\"u93e1985b\"><span data-lake-id=\"u56e902ff\" id=\"u56e902ff\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">消息推动与通知(Push&amp;Notification )<br />实现实时的消息推送与通知</span></li><li fid=\"u99bea62f\" data-lake-id=\"u150f2ff8\" id=\"u150f2ff8\"><span data-lake-id=\"u321faaa2\" id=\"u321faaa2\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">数据及时更新(Background Sync )<br />后台同步，数据及时更新</span></li></ul><h2 data-lake-id=\"XgIu9\" id=\"XgIu9\"><span data-lake-id=\"u6d2f8c22\" id=\"u6d2f8c22\" style=\"color: rgb(34, 34, 34) !important\">正文</span></h2><p data-lake-id=\"ufa42e2b2\" id=\"ufa42e2b2\"><span data-lake-id=\"u7a6d54cd\" id=\"u7a6d54cd\" class=\"lake-fontsize-12\">下面介绍几种实现 PWA 功能的方法，可根据你的需求进行选取</span></p><h3 data-lake-id=\"qFUOr\" id=\"qFUOr\"><span data-lake-id=\"u79c8af4a\" id=\"u79c8af4a\">hexo-offline-popup</span></h3><p data-lake-id=\"u7b435178\" id=\"u7b435178\"><span data-lake-id=\"u4c0d0d8f\" id=\"u4c0d0d8f\">{% hideToggle hexo-offline-popup %}</span></p><p data-lake-id=\"u4a642879\" id=\"u4a642879\"><span data-lake-id=\"u31961483\" id=\"u31961483\">hexo-offline-popup 是一个 hexo 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。</span></p><p data-lake-id=\"u5a0b6289\" id=\"u5a0b6289\"><span data-lake-id=\"u393f06d7\" id=\"u393f06d7\" style=\"color: rgb(51, 51, 51)\">该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。</span></p><h4 data-lake-id=\"W4ovw\" id=\"W4ovw\"><span data-lake-id=\"u215d4ecc\" id=\"u215d4ecc\" style=\"color: rgb(51, 51, 51)\">安装</span></h4><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22npm%20i%20hexo-offline-popup%20--save%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22OTOFc%22%7D\"></card><p data-lake-id=\"u77bb9dc3\" id=\"u77bb9dc3\"><span data-lake-id=\"uf9c9eee3\" id=\"uf9c9eee3\" style=\"color: rgb(51, 51, 51)\">安装后, 运行 </span><span data-lake-id=\"u756a6dec\" id=\"u756a6dec\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">hexo clean &amp;&amp; hexo generate</span><span data-lake-id=\"ucdf60a33\" id=\"ucdf60a33\" style=\"color: rgb(51, 51, 51)\"> 激活插件</span></p><h4 data-lake-id=\"eML8v\" id=\"eML8v\"><span data-lake-id=\"u79890fe8\" id=\"u79890fe8\" style=\"color: rgb(51, 51, 51)\">配置</span></h4><p data-lake-id=\"ufeb30f15\" id=\"ufeb30f15\"><span data-lake-id=\"u8cc4dbda\" id=\"u8cc4dbda\" style=\"color: rgb(51, 51, 51)\">如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 </span><span data-lake-id=\"u735038ad\" id=\"u735038ad\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">hexo clean &amp;&amp; hexo generate</span><span data-lake-id=\"u5f3e1621\" id=\"u5f3e1621\" style=\"color: rgb(51, 51, 51)\">。</span></p><p data-lake-id=\"ue1348b7d\" id=\"ue1348b7d\"><span data-lake-id=\"u7c6fefe1\" id=\"u7c6fefe1\" style=\"color: rgb(51, 51, 51)\">在博客根目录的 </span><span data-lake-id=\"u4e0a8573\" id=\"u4e0a8573\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">_config.yml</span><span data-lake-id=\"ufd28766d\" id=\"ufd28766d\" style=\"color: rgb(51, 51, 51)\"> 中添加以下配置</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22%23%20offline%20config%20passed%20to%20sw-precache.%20%5Cnservice_worker%3A%5Cn%20%20maximumFileSizeToCacheInBytes%3A%205242880%5Cn%20%20staticFileGlobs%3A%5Cn%20%20-%20public%2F**%2F*.%7Bjs%2Chtml%2Ccss%2Cpng%2Cjpg%2Cgif%2Csvg%2Ceot%2Cttf%2Cwoff%2Cwoff2%7D%5Cn%20%20stripPrefix%3A%20public%5Cn%20%20verbose%3A%20true%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22pn0NG%22%7D\"></card><p data-lake-id=\"u37e8dabe\" id=\"u37e8dabe\"><span data-lake-id=\"u6a681e73\" id=\"u6a681e73\" style=\"color: rgb(51, 51, 51)\">如果你有CDN资源，例：</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22-%C2%A0https%3A%2F%2Fcdn.some.com%2Fsome%2Fpath%2Fsome-script.js%5Cn-%C2%A0http%3A%2F%2Fcdn.some-else.org%2Fsome%2Fpath%2Fdeeply%2Fsome-style.css%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22__spacing%22%3A%22both%22%2C%22id%22%3A%22YnHSL%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card><p data-lake-id=\"u04dc4217\" id=\"u04dc4217\"><span data-lake-id=\"u2d9b7389\" id=\"u2d9b7389\">可以在</span><span data-lake-id=\"u79051dda\" id=\"u79051dda\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">_config.yml</span><span data-lake-id=\"ue9398c4e\" id=\"ue9398c4e\" style=\"color: rgb(51, 51, 51)\"> 中配置</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22service_worker%3A%5Cn%20%20runtimeCaching%3A%5Cn%20%20%20%20-%20urlPattern%3A%20%2F*%5Cn%20%20%20%20%20%20handler%3A%20cacheFirst%5Cn%20%20%20%20%20%20options%3A%5Cn%20%20%20%20%20%20%20%20origin%3A%20cdn.some.com%5Cn%20%20%20%20-%20urlPattern%3A%20%2F*%5Cn%20%20%20%20%20%20handler%3A%20cacheFirst%5Cn%20%20%20%20%20%20options%3A%5Cn%20%20%20%20%20%20%20%20origin%3A%20cdn.some-else.org%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22BPqJR%22%7D\"></card><h4 data-lake-id=\"shJzR\" id=\"shJzR\"><span data-lake-id=\"u939e4fd3\" id=\"u939e4fd3\">常见问题</span></h4><ul list=\"u492db0f5\"><li fid=\"u2fe939e1\" data-lake-id=\"ub7480460\" id=\"ub7480460\"><span data-lake-id=\"u0daccf79\" id=\"u0daccf79\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">该插件仅部署后生效，本地运行不生效</span></li><li fid=\"u2fe939e1\" data-lake-id=\"ueb958c0f\" id=\"ueb958c0f\"><span data-lake-id=\"u7421cf50\" id=\"u7421cf50\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">安装该插件后第一次打开网站不弹窗，后续更新将会弹窗</span></li></ul><p data-lake-id=\"u77956512\" id=\"u77956512\"><span data-lake-id=\"ue92815b8\" id=\"ue92815b8\">{% endhideToggle %}</span></p><p data-lake-id=\"u2af12073\" id=\"u2af12073\"><span data-lake-id=\"u94d524e5\" id=\"u94d524e5\">待更新 ing…</span></p>",
+    "body_draft_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"adapt\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u328d2ab6\" id=\"u328d2ab6\"><span data-lake-id=\"ubc4be659\" id=\"ubc4be659\">---</span></p><p data-lake-id=\"u35ff29f9\" id=\"u35ff29f9\"><span data-lake-id=\"uc7b94ae5\" id=\"uc7b94ae5\">title: Butterfly 主题 的 PWA 实现方案</span></p><p data-lake-id=\"ub9835b95\" id=\"ub9835b95\"><span data-lake-id=\"u8ee95eb8\" id=\"u8ee95eb8\">date: 2022-12-20 20:50</span></p><p data-lake-id=\"u586ed61b\" id=\"u586ed61b\"><span data-lake-id=\"u30c66eb0\" id=\"u30c66eb0\">updated: 2022-12-20 20:50</span></p><p data-lake-id=\"u88c8808e\" id=\"u88c8808e\"><span data-lake-id=\"u4554e08a\" id=\"u4554e08a\">tags: </span></p><p data-lake-id=\"u280d428c\" id=\"u280d428c\"><span data-lake-id=\"u63948bf0\" id=\"u63948bf0\">  - [Hexo, Butterfly, Web]</span></p><p data-lake-id=\"uc3269756\" id=\"uc3269756\"><span data-lake-id=\"u15b7cd90\" id=\"u15b7cd90\">categories: 教程</span></p><p data-lake-id=\"ua3f48d0c\" id=\"ua3f48d0c\"><span data-lake-id=\"u28e252c3\" id=\"u28e252c3\">cover: </span></p><p data-lake-id=\"u3a7c5d97\" id=\"u3a7c5d97\"><span data-lake-id=\"ueb458020\" id=\"ueb458020\">https://i.imgtg.com/2022/12/20/HtHoa.webp</span></p><p data-lake-id=\"u76e5533d\" id=\"u76e5533d\"><span data-lake-id=\"ua7a7025b\" id=\"ua7a7025b\">---</span></p><p data-lake-id=\"u2589cb1e\" id=\"u2589cb1e\"><span data-lake-id=\"u21b465a5\" id=\"u21b465a5\">​</span><br></p><h2 data-lake-id=\"WzkdH\" id=\"WzkdH\"><span data-lake-id=\"u479e6c0a\" id=\"u479e6c0a\">简介</span></h2><p data-lake-id=\"u9ac6542f\" id=\"u9ac6542f\"><span data-lake-id=\"u526d4262\" id=\"u526d4262\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">PWA 是 Google 于 2016 年提出的概念，于 2017 年正式落地，于 2018 年迎来重大突破，全球顶级的浏览器厂商，Google、Microsoft、Apple 已经全数宣布支持 PWA 技术。</span></p><p data-lake-id=\"u728fe374\" id=\"u728fe374\"><span data-lake-id=\"u40591254\" id=\"u40591254\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">PWA 全称为 Progressive Web App，中文译为渐进式 Web APP，其目的是通过各种 Web 技术实现与原生 App 相近的用户体验。</span></p><p data-lake-id=\"u77fc0e28\" id=\"u77fc0e28\"><span data-lake-id=\"ub5eaebc9\" id=\"ub5eaebc9\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">纵观现有 Web 应用与原生应用的对比差距，如离线缓存、沉浸式体验等等，可以通过已经实现的 Web 技术去弥补这些差距，最终达到与原生应用相近的用户体验效果。</span></p><h2 data-lake-id=\"GCzJT\" id=\"GCzJT\"><span data-lake-id=\"u5b266997\" id=\"u5b266997\" style=\"color: rgb(34, 34, 34) !important\">PWA 的功能</span></h2><ul list=\"u6d0ed028\"><li fid=\"u99bea62f\" data-lake-id=\"u04327d16\" id=\"u04327d16\"><span data-lake-id=\"u6dc18eb6\" id=\"u6dc18eb6\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">手机应用配置(Web App Manifest)<br />可以通过 manifest.json 文件配置，使得可以直接添加到手机的桌面上。</span></li><li fid=\"u99bea62f\" data-lake-id=\"u666f3855\" id=\"u666f3855\"><span data-lake-id=\"u82449270\" id=\"u82449270\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">离线加载与缓存(Service Worker+Cache API )<br />可以通过 Service Worker + HTTPS +Cache Api + indexedDB 等一系列 Web 技术实现离线加载和缓存。</span></li><li fid=\"u99bea62f\" data-lake-id=\"u93e1985b\" id=\"u93e1985b\"><span data-lake-id=\"u56e902ff\" id=\"u56e902ff\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">消息推动与通知(Push&amp;Notification )<br />实现实时的消息推送与通知</span></li><li fid=\"u99bea62f\" data-lake-id=\"u150f2ff8\" id=\"u150f2ff8\"><span data-lake-id=\"u321faaa2\" id=\"u321faaa2\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">数据及时更新(Background Sync )<br />后台同步，数据及时更新</span></li></ul><h2 data-lake-id=\"XgIu9\" id=\"XgIu9\"><span data-lake-id=\"u6d2f8c22\" id=\"u6d2f8c22\" style=\"color: rgb(34, 34, 34) !important\">正文</span></h2><p data-lake-id=\"ufa42e2b2\" id=\"ufa42e2b2\"><span data-lake-id=\"u7a6d54cd\" id=\"u7a6d54cd\" class=\"lake-fontsize-12\">下面介绍几种实现 PWA 功能的方法，可根据你的需求进行选取</span></p><h3 data-lake-id=\"qFUOr\" id=\"qFUOr\"><span data-lake-id=\"u79c8af4a\" id=\"u79c8af4a\">hexo-offline-popup</span></h3><p data-lake-id=\"u7b435178\" id=\"u7b435178\"><span data-lake-id=\"u4c0d0d8f\" id=\"u4c0d0d8f\">{% hideToggle hexo-offline-popup %}</span></p><p data-lake-id=\"u4a642879\" id=\"u4a642879\"><span data-lake-id=\"u31961483\" id=\"u31961483\">hexo-offline-popup 是一个 hexo 插件， 它可加速你的Hexo网站的加载速度，以及网站内容更新弹窗提示。</span></p><p data-lake-id=\"u5a0b6289\" id=\"u5a0b6289\"><span data-lake-id=\"u393f06d7\" id=\"u393f06d7\" style=\"color: rgb(51, 51, 51)\">该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。</span></p><h4 data-lake-id=\"W4ovw\" id=\"W4ovw\"><span data-lake-id=\"u215d4ecc\" id=\"u215d4ecc\" style=\"color: rgb(51, 51, 51)\">安装</span></h4><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22npm%20i%20hexo-offline-popup%20--save%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22OTOFc%22%7D\"></card><p data-lake-id=\"u77bb9dc3\" id=\"u77bb9dc3\"><span data-lake-id=\"uf9c9eee3\" id=\"uf9c9eee3\" style=\"color: rgb(51, 51, 51)\">安装后, 运行 </span><span data-lake-id=\"u756a6dec\" id=\"u756a6dec\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">hexo clean &amp;&amp; hexo generate</span><span data-lake-id=\"ucdf60a33\" id=\"ucdf60a33\" style=\"color: rgb(51, 51, 51)\"> 激活插件</span></p><h4 data-lake-id=\"eML8v\" id=\"eML8v\"><span data-lake-id=\"u79890fe8\" id=\"u79890fe8\" style=\"color: rgb(51, 51, 51)\">配置</span></h4><p data-lake-id=\"ufeb30f15\" id=\"ufeb30f15\"><span data-lake-id=\"u8cc4dbda\" id=\"u8cc4dbda\" style=\"color: rgb(51, 51, 51)\">如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 </span><span data-lake-id=\"u735038ad\" id=\"u735038ad\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">hexo clean &amp;&amp; hexo generate</span><span data-lake-id=\"u5f3e1621\" id=\"u5f3e1621\" style=\"color: rgb(51, 51, 51)\">。</span></p><p data-lake-id=\"ue1348b7d\" id=\"ue1348b7d\"><span data-lake-id=\"u7c6fefe1\" id=\"u7c6fefe1\" style=\"color: rgb(51, 51, 51)\">在博客根目录的 </span><span data-lake-id=\"u4e0a8573\" id=\"u4e0a8573\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">_config.yml</span><span data-lake-id=\"ufd28766d\" id=\"ufd28766d\" style=\"color: rgb(51, 51, 51)\"> 中添加以下配置</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22%23%20offline%20config%20passed%20to%20sw-precache.%20%5Cnservice_worker%3A%5Cn%20%20maximumFileSizeToCacheInBytes%3A%205242880%5Cn%20%20staticFileGlobs%3A%5Cn%20%20-%20public%2F**%2F*.%7Bjs%2Chtml%2Ccss%2Cpng%2Cjpg%2Cgif%2Csvg%2Ceot%2Cttf%2Cwoff%2Cwoff2%7D%5Cn%20%20stripPrefix%3A%20public%5Cn%20%20verbose%3A%20true%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22pn0NG%22%7D\"></card><p data-lake-id=\"u37e8dabe\" id=\"u37e8dabe\"><span data-lake-id=\"u6a681e73\" id=\"u6a681e73\" style=\"color: rgb(51, 51, 51)\">如果你有CDN资源，例：</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22-%C2%A0https%3A%2F%2Fcdn.some.com%2Fsome%2Fpath%2Fsome-script.js%5Cn-%C2%A0http%3A%2F%2Fcdn.some-else.org%2Fsome%2Fpath%2Fdeeply%2Fsome-style.css%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22__spacing%22%3A%22both%22%2C%22id%22%3A%22YnHSL%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card><p data-lake-id=\"u04dc4217\" id=\"u04dc4217\"><span data-lake-id=\"u2d9b7389\" id=\"u2d9b7389\">可以在</span><span data-lake-id=\"u79051dda\" id=\"u79051dda\" style=\"color: rgb(51, 51, 51); background-color: rgb(247, 247, 247)\">_config.yml</span><span data-lake-id=\"ue9398c4e\" id=\"ue9398c4e\" style=\"color: rgb(51, 51, 51)\"> 中配置</span></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22plain%22%2C%22code%22%3A%22service_worker%3A%5Cn%20%20runtimeCaching%3A%5Cn%20%20%20%20-%20urlPattern%3A%20%2F*%5Cn%20%20%20%20%20%20handler%3A%20cacheFirst%5Cn%20%20%20%20%20%20options%3A%5Cn%20%20%20%20%20%20%20%20origin%3A%20cdn.some.com%5Cn%20%20%20%20-%20urlPattern%3A%20%2F*%5Cn%20%20%20%20%20%20handler%3A%20cacheFirst%5Cn%20%20%20%20%20%20options%3A%5Cn%20%20%20%20%20%20%20%20origin%3A%20cdn.some-else.org%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22BPqJR%22%7D\"></card><h4 data-lake-id=\"shJzR\" id=\"shJzR\"><span data-lake-id=\"u939e4fd3\" id=\"u939e4fd3\">常见问题</span></h4><ul list=\"u492db0f5\"><li fid=\"u2fe939e1\" data-lake-id=\"ub7480460\" id=\"ub7480460\"><span data-lake-id=\"u0daccf79\" id=\"u0daccf79\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">该插件仅部署后生效，本地运行不生效</span></li><li fid=\"u2fe939e1\" data-lake-id=\"ueb958c0f\" id=\"ueb958c0f\"><span data-lake-id=\"u7421cf50\" id=\"u7421cf50\" class=\"lake-fontsize-12\" style=\"color: rgb(34, 34, 34) !important\">安装该插件后第一次打开网站不弹窗，后续更新将会弹窗</span></li></ul><p data-lake-id=\"u77956512\" id=\"u77956512\"><span data-lake-id=\"ue92815b8\" id=\"ue92815b8\">{% endhideToggle %}</span></p><p data-lake-id=\"u2af12073\" id=\"u2af12073\"><span data-lake-id=\"u94d524e5\" id=\"u94d524e5\">待更新 ing…</span></p>",
+    "public": 1,
+    "status": 1,
+    "view_status": 0,
+    "read_status": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "content_updated_at": "2022-12-20T14:04:25.000Z",
+    "deleted_at": null,
+    "created_at": "2022-12-20T12:48:40.000Z",
+    "updated_at": "2022-12-20T14:04:25.000Z",
+    "published_at": "2022-12-20T14:04:25.000Z",
+    "first_published_at": "2022-12-20T14:04:25.107Z",
+    "word_count": 610,
+    "cover": null,
+    "description": "---title: Butterfly 主题 的 PWA 实现方案date: 2022-12-20 20:50updated: 2022-12-20 20:50tags:   - [Hexo, Butterfly, Web]categories: 教程cover: https://i.imgt...",
+    "custom_description": null,
+    "hits": 0,
+    "_serializer": "v2.doc_detail"
+  },
+  {
+    "id": 109042044,
+    "slug": "7e75b70b-0c2e-495b-978e-31ebca1c4678",
+    "title": "dns-prefetch、prefetch、preload、defer、async 字段的区别",
+    "book_id": 32250837,
+    "book": {
+      "id": 32250837,
+      "type": "Book",
+      "slug": "posts",
+      "name": "Article",
+      "user_id": 22578074,
+      "description": "Xlencoの博客文章",
+      "creator_id": 22578074,
+      "public": 1,
+      "items_count": 31,
+      "likes_count": 0,
+      "watches_count": 0,
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
+      "created_at": "2022-08-26T15:45:01.000Z",
+      "namespace": "xlenco/posts",
+      "user": {
+        "id": 22578074,
+        "type": "User",
+        "login": "xlenco",
+        "name": "Xlenco",
+        "description": "学生党一枚",
+        "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+        "books_count": 7,
+        "public_books_count": 4,
+        "followers_count": 6,
+        "following_count": 0,
+        "created_at": "2021-09-02T00:45:22.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
+        "_serializer": "v2.user"
+      },
+      "_serializer": "v2.book"
+    },
+    "user_id": 22578074,
+    "creator": {
+      "id": 22578074,
+      "type": "User",
+      "login": "xlenco",
+      "name": "Xlenco",
+      "description": "学生党一枚",
+      "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+      "books_count": 7,
+      "public_books_count": 4,
+      "followers_count": 6,
+      "following_count": 0,
+      "created_at": "2021-09-02T00:45:22.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -92,11 +171,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -111,7 +190,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -129,7 +208,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -171,11 +250,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -190,7 +269,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -208,7 +287,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -250,11 +329,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -269,7 +348,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -287,7 +366,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -329,11 +408,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -348,7 +427,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -366,7 +445,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -408,11 +487,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -427,7 +506,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -445,7 +524,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -470,7 +549,7 @@
     "cover": null,
     "description": "title: CloudFlare Workers 项目合集tags: CloudFlarecategories: 杂项cover: https://xlenco.onmicrosoft.cn/img/58b09af1c36188c1568b4616.jpg?ik-sdk-version=ja...",
     "custom_description": null,
-    "hits": 43,
+    "hits": 44,
     "_serializer": "v2.doc_detail"
   },
   {
@@ -487,11 +566,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -506,7 +585,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -524,7 +603,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -566,11 +645,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -585,7 +664,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -603,7 +682,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -645,11 +724,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -664,7 +743,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -682,7 +761,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -724,11 +803,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -743,7 +822,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -761,7 +840,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -803,11 +882,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -822,7 +901,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -840,7 +919,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -882,11 +961,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -901,7 +980,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -919,7 +998,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -961,11 +1040,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -980,7 +1059,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -998,7 +1077,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1040,11 +1119,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1059,7 +1138,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1077,7 +1156,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1119,11 +1198,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1138,7 +1217,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1156,7 +1235,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1198,11 +1277,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1217,7 +1296,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1235,7 +1314,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1277,11 +1356,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1296,7 +1375,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1314,7 +1393,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1356,11 +1435,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1375,7 +1454,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1393,7 +1472,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1435,11 +1514,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1454,7 +1533,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1472,7 +1551,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1514,11 +1593,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1533,7 +1612,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1551,7 +1630,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1593,11 +1672,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1612,7 +1691,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1630,7 +1709,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1672,11 +1751,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1691,7 +1770,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1709,7 +1788,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1751,11 +1830,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1770,7 +1849,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1788,7 +1867,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1830,11 +1909,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1849,7 +1928,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1867,7 +1946,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1909,11 +1988,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1928,7 +2007,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1946,7 +2025,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1988,11 +2067,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2007,7 +2086,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2025,7 +2104,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2067,11 +2146,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2086,7 +2165,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2104,7 +2183,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2146,11 +2225,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2165,7 +2244,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2183,7 +2262,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2225,11 +2304,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2244,7 +2323,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2262,7 +2341,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2304,11 +2383,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 30,
+      "items_count": 31,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2022-12-19T10:13:05.967Z",
-      "updated_at": "2022-12-19T10:13:06.000Z",
+      "content_updated_at": "2022-12-20T14:04:25.284Z",
+      "updated_at": "2022-12-20T14:04:25.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2323,7 +2402,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2022-12-19T08:09:27.000Z",
+        "updated_at": "2022-12-20T12:48:40.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2341,7 +2420,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2022-12-19T08:09:27.000Z",
+      "updated_at": "2022-12-20T12:48:40.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
