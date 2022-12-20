@@ -4,7 +4,7 @@ date: 2022-12-9 10:18
 updated: 2022-12-9 10:18
 categories: 教程
 tags: JavaScript
-cover: https://xlenco.onmicrosoft.cn/img/PDF-js.webp
+cover: https://i.imgtg.com/2022/12/21/H4xVs.webp
 ---
 
 由于 pdf.js 不支持跨域请求，所以会报错：file origin does not match viewer’s，下面附两种解决方案
