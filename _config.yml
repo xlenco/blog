@@ -204,3 +204,29 @@ fcircle:
 ## butterfly_article_double_row
 butterfly_article_double_row:
   enable: true
+
+## hexo-offline-popup
+# offline config passed to sw-precache.
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,webp,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: jsd.onmicrosoft.cn
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: npm.onmicrosoft.cn
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net 
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: npm.elemecdn.com
