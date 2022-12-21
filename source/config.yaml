@@ -8,7 +8,20 @@ hotpatch:
 hotconfig:
   - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
 catch_rules:
-  # 站点多线路选择
+# 尝试适配PWA
+  - rule: _
+    transform_rules:
+      - search: \/(js\/custom\.js|css\/index\.css|404\.html)
+        action: fetch
+        fetch:
+          status: 200
+          engine: parallel
+          preflight: false # false
+          timeout: 50000
+          cache:
+            expire: 1000*60*60*24 # 缓存24小时
+            delay: 300   
+# 站点多线路选择
   - rule: _
     transform_rules:
       - search: \#.* #在发送请求时匹配#后内容并移除
@@ -97,19 +110,6 @@ catch_rules:
         fetch:
           status: 200
           engine: fetch
-          preflight: false # false
-          timeout: 50000
-          cache:
-            expire: 1000*60*60*24 # 缓存24小时
-            delay: 300   
-# 尝试适配PWA
-  - rule: _
-    transform_rules:
-      - search: \/(js\/custom\.js|css\/index\.css|404\.html)
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
           preflight: false # false
           timeout: 50000
           cache:
