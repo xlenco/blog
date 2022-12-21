@@ -261,7 +261,7 @@ inject:
 ```
 
 同样，如果你使用的不是 Butterfly 主题，可以在所示代码的基础上修改以适配你的主题。以下是展开后的代码，便于修改调试。
-请将以下代码插入到头部 </head> 之前：
+请将以下代码插入到头部` </head>` 之前：
 
 ```
 <style type="text/css">
@@ -292,7 +292,7 @@ inject:
 </style>
 ```
 
-请将以下代码插入到</body>之前
+请将以下代码插入到`</body>`之前
 
 ```
 <div class="app-refresh" id="app-refresh">
