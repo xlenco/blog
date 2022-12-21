@@ -47,8 +47,7 @@
     "hexo-wordcount": "^6.0.1",
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
     "yuque-hexo": "^1.9.5",
-    "hexo-butterfly-article-double-row": "^1.0.2",
-    "workbox-build": "^6.5.4"
+    "hexo-butterfly-article-double-row": "^1.0.2"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
