@@ -93,7 +93,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://xlenco.onmicrosoft.cn/img/favicon.ico
+favicon: /img/siteicon/favicon-32x32.png
 
 # Avatar (頭像)
 avatar:
