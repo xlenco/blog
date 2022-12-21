@@ -1,7 +1,6 @@
 // gulp-tester
 var gulp = require('gulp');
 // PWA
-var gulp = require('workbox-build');
 gulp.task("generate-service-worker", () => {
   return workbox.injectManifest({
     swSrc: "./sw-template.js",
