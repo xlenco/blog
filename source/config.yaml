@@ -102,3 +102,16 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300   
+# 尝试适配PWA
+  - rule: _
+    transform_rules:
+      - search: \.(js/main\.js|css/maim\.css|404\.html)
+        action: fetch
+        fetch:
+          status: 200
+          engine: parallel
+          preflight: false # false
+          timeout: 50000
+          cache:
+            expire: 1000*60*60*24 # 缓存24小时
+            delay: 300   
