@@ -105,7 +105,7 @@ catch_rules:
 # 尝试适配PWA
   - rule: _
     transform_rules:
-      - search: \.(js/main\.js|css/maim\.css|404\.html)
+      - search: \.(js/custom\.js|css/main\.css|404\.html)
         action: fetch
         fetch:
           status: 200
