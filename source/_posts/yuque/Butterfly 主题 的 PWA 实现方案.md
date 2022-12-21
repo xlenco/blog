@@ -211,7 +211,7 @@ workbox.routing.registerRoute(
         ]
     })
 );
-
+8
 // Static Libraries
 workbox.routing.registerRoute(
     /^https:\/\/cdn\.jsdelivr\.net/,
@@ -250,8 +250,7 @@ workbox.googleAnalytics.initialize();
 
 ```
 
-其中，请将 prefix 修改为你博客的名字（英文）
-在\_config.butterfly.yml 中配置以下内容：
+其中，请将 prefix 修改为你博客的名字（英文），在\_config.butterfly.yml 中配置以下内容：
 
 ```
 inject:
