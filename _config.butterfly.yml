@@ -3,22 +3,22 @@
 # --------------------------------------
  
 menu:
-   文章||fas fa-book:
+   文章||fas fa-book||hide:
      归档: /tags/ || fas fa-tags
      分类: /categories/ || fas fa-folder-open
      时间轴: /archives/ || fas fa-archive
      随便逛逛: /random/ || fas fa-shoe-prints
-   社交||fas fa-bars:
+   社交||fas fa-bars||hide:
      友链: /link/ || fas fa-link
      开往: https://travellings.link/ || fas fa-train-subway
      朋友圈: /fcircle/ || fas fa-user-group
      即刻短文: /essay/  || fas fa-comment-dots
      关于我: /about/ || fas fa-user
-   娱乐||fas fa-cookie-bite: 
+   娱乐||fas fa-cookie-bite||hide: 
      相册: /album/  || fas fa-images
      YesPlayMusic: https://yesplaymusic.xlenco.eu.org/ || fas fa-music
      Mikutap: https://mikutap.xlenco.eu.org/ || fas fa-gamepad
-   Tool||fas fa-screwdriver-wrench: 
+   Tool||fas fa-screwdriver-wrench||hide: 
      监控云台: https://uptime.xilej.repl.co/  || fas fa-link
      Pic Tools: https://pic.xlenco.eu.org/  || fa-solid fa-image
 
