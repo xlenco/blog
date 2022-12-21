@@ -1,25 +1,5 @@
 // gulp-tester
 var gulp = require('gulp');
-// PWA
-gulp.task("generate-service-worker", () => {
-  return workbox.injectManifest({
-    swSrc: "./sw-template.js",
-    swDest: "./public/sw.js",
-    globDirectory: "./public",
-    globPatterns: [
-      // 缓存所有以下类型的文件，极端不推荐
-      // "**/*.{html,css,js,json,woff2,xml}"
-      // 推荐只缓存404，主页和主要样式和脚本。
-      "404.html",
-      "index.html",
-      "js/main.js",
-      "css/index.css",
-    ],
-    modifyURLPrefix: {
-      "": "./",
-    },
-  });
-});
 // 压缩js
 var terser = require('gulp-terser');
 gulp.task('compress', () =>
@@ -84,7 +64,6 @@ gulp.task('mini-font', (cb) => {
     });
 });
 // 运行gulp命令时依次执行以下任务
-gulp.task(
-  "default",
-  gulp.series("generate-service-worker", gulp.parallel("compress", "minify-css", "minify-html", "mini-font"))
-);
+gulp.task('default', gulp.parallel(
+  'compress','minify-css','minify-html','mini-font'
+))
