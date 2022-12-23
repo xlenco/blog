@@ -3,7 +3,8 @@
     - content:
         要复学了
       date: 2022/12/24 15:09
-      image: https://www.helloimg.com/images/2022/12/23/oBQ2zR.jpg
+      image: 
+       - https://www.helloimg.com/images/2022/12/23/oBQ2zR.jpg
       from: 心情
     - content:
         不知不觉博客已经运行 215 天了啦！
