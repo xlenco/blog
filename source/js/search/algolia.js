@@ -81,7 +81,8 @@ window.addEventListener('load', () => {
   const searchBox = instantsearch.widgets.searchBox({
     container: '#algolia-search-input',
     showReset: false,
-    showSubmit: false,
+    searchAsYouType: false, 
+    showSubmit: true,
     placeholder: GLOBAL_CONFIG.algolia.languages.input_placeholder,
     showLoadingIndicator: true
   })
