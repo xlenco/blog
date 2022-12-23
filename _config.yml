@@ -204,11 +204,15 @@ butterfly_article_double_row:
   enable: true
 
 ## hexo-offline-popup
-# offline config passed to sw-precache.
+# offline config passed to sw-precache. 
 service_worker:
   maximumFileSizeToCacheInBytes: 5242880
   staticFileGlobs:
-  - public/**/*.{js,html,webp,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  - public/index.html
+  - public/404.html
+  - public/css/index.css
+  - public/js/custom.js
+  - public/js/main.js
   stripPrefix: public
   verbose: true
   runtimeCaching:
