@@ -16,13 +16,6 @@ gulp.task('minify-css', () => {
         }))
         .pipe(gulp.dest('./public'));
 });
- file with 1 addition and 24 deletions.
-  25  
-gulpfile.js
-@@ -16,29 +16,6 @@ gulp.task('minify-css', () => {
-        }))
-        .pipe(gulp.dest('./public'));
-});
 //压缩html
 var htmlmin = require('gulp-html-minifier-terser');
 var htmlclean = require('gulp-htmlclean')
