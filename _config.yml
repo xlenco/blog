@@ -215,20 +215,3 @@ service_worker:
   - public/js/main.js
   stripPrefix: public
   verbose: true
-  runtimeCaching:
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: jsd.onmicrosoft.cn
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: npm.onmicrosoft.cn
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: cdn.jsdelivr.net 
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: npm.elemecdn.com
