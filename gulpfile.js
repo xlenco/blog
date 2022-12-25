@@ -82,6 +82,7 @@ gulp.task('mini-font', (cb) => {
     });
 });
 // 运行gulp命令时依次执行以下任务
-gulp.task('default',gulp.series("generate-service-worker")), gulp.parallel(
-  'compress','minify-css','minify-html','mini-font'
-))
+gulp.task(
+  "default",
+  gulp.series("generate-service-worker", gulp.parallel("compress", "minify-html", "minify-css", "mini-font"))
+);
