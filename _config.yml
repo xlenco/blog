@@ -201,5 +201,5 @@ fcircle:
 
 ## butterfly_article_double_row
 butterfly_article_double_row:
-  enable: true
+  enable: false
 
