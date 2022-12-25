@@ -28,7 +28,6 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "workbox-build": "^6.5.4",
-    "gulp-htmlmin": "^5.0.1",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^1.0.0",
