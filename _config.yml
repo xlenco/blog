@@ -98,6 +98,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+plugin:
+   - workbox-build
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
