@@ -6,9 +6,9 @@
  * @LastEditTime: 2022-03-08 12:24:30
  * @LastEditors: 安知鱼
  */
-const workboxVersion = "5.1.3";
 
-importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
+
+importScripts(`https://jsd.cdn.zzko.cn/npm/workbox-sw/build/workbox-sw.js`);
 
 workbox.core.setCacheNameDetails({
   prefix: "Xlenco",
