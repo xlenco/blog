@@ -7,11 +7,21 @@
  * @LastEditors: Xlenco
  */
 
-
 importScripts(`https://jsd.cdn.zzko.cn/npm/workbox-sw/build/workbox-sw.js`);
 
+if (workbox) {
+    console.log('workbox loaded success🎉');
+} else {
+    console.log('workbox loaded fail😬');
+}
+
+
 workbox.core.setCacheNameDetails({
-  prefix: "Xlenco",
+    prefix: "Xlenco",
+    suffix: '缓存',
+    precache: '离线后备',
+    runtime: '运行时',
+    googleAnalytics: '谷歌分析'
 });
 
 workbox.core.skipWaiting();
@@ -27,5 +37,19 @@ workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
 // 清空过期缓存
 workbox.precaching.cleanupOutdatedCaches();
 
+// 导航预加载
+workbox.navigationPreload.enable();
+
+// 离线后备
+const Offline = new workbox.routing.Route(({ request }) => {
+    return request.mode === 'navigate';
+}, new workbox.strategies.NetworkOnly({
+    plugins: [
+        new workbox.precaching.PrecacheFallbackPlugin({
+            fallbackURL: '/offline/index.html'
+        })
+    ]
+}));
+workbox.routing.registerRoute(Offline);
 
 workbox.googleAnalytics.initialize();
