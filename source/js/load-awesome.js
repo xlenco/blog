@@ -16,6 +16,6 @@ function welcome(){
         showConfirmButton: false
     });
 }
-$(document).ready(()=>{
+(document).ready(()=>{
     welcome()
 })
