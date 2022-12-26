@@ -1,13 +1,5 @@
-/*
- * @Description: sw
- * @Author: Xlenco
- * @Email: 1043865083@qq.com
- * @Date: 2022-02-22 11:23:58
- * @LastEditTime: 2022-03-08 12:24:30
- * @LastEditors: Xlenco
- */
+importScripts('https://jsd.cdn.zzko.cn/npm/workbox-sw/build/workbox-sw.js');
 
-importScripts(`https://jsd.cdn.zzko.cn/npm/workbox-sw/build/workbox-sw.js`);
 
 if (workbox) {
     console.log('workbox loaded success🎉');
@@ -15,27 +7,44 @@ if (workbox) {
     console.log('workbox loaded fail😬');
 }
 
+self.addEventListener('install', async () => {
+    await self.skipWaiting()
+})
+
+self.addEventListener('activate', async () => {
+    await self.clients.claim()
+})
+
+self.__WB_DISABLE_DEV_LOGS = true;
 
 workbox.core.setCacheNameDetails({
-    prefix: "Xlenco",
+    prefix: 'Xlencoの博客',
     suffix: '缓存',
     precache: '离线后备',
     runtime: '运行时',
     googleAnalytics: '谷歌分析'
 });
 
-workbox.core.skipWaiting();
-
-workbox.core.clientsClaim();
-
-// 注册成功后要立即缓存的资源列表
-// 具体缓存列表在gulpfile.js中配置，见下文
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
-  directoryIndex: null,
+    ignoreUrlParametersMatching: [/.*/],
+    directoryIndex: null,
 });
 
-// 清空过期缓存
 workbox.precaching.cleanupOutdatedCaches();
+
+const MIN = 60;
+const HOUR = MIN * 60;
+const DAY = HOUR * 24;
+const WEEK = DAY * 7;
+const MONTH = DAY * 30;
+const YEAR = DAY * 365;
+
+// workbox.recipes.googleFontsCache();
+// workbox.recipes.staticResourceCache();
+// workbox.recipes.imageCache();
+// workbox.recipes.offlineFallback();
+// workbox.recipes.pageCache();
+// workbox.googleAnalytics.initialize();
 
 // 导航预加载
 workbox.navigationPreload.enable();
@@ -52,4 +61,67 @@ const Offline = new workbox.routing.Route(({ request }) => {
 }));
 workbox.routing.registerRoute(Offline);
 
-workbox.googleAnalytics.initialize();
+// 一些缓存小策略预设
+// workbox.recipes.pageCache();
+// workbox.recipes.googleFontsCache();
+// workbox.recipes.staticResourceCache();
+// workbox.recipes.imageCache();
+// workbox.recipes.offlineFallback();
+
+// 暖策略（运行时）缓存
+// const strategy = new workbox.strategies.StaleWhileRevalidate();
+// const urls = [
+//     '/favicon.ico'
+// ];
+// workbox.recipes.warmStrategyCache({ urls, strategy });
+
+// 字体
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:ttf)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: "其他字体",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 10,
+                maxAgeSeconds: MONTH
+            }),
+        ]
+    })
+);
+
+// workbox.routing.registerRoute(
+//     new RegExp('^https://(?:fonts\\.googleapis\\.com|fonts\\.gstatic\\.com)'),
+//     new workbox.strategies.StaleWhileRevalidate({
+//         cacheName: '谷歌字体',
+//         plugins: [
+//             new workbox.expiration.ExpirationPlugin({
+//                 maxEntries: 10,
+//                 maxAgeSeconds: MONTH
+//             }),
+//         ],
+//     })
+// );
+
+// 图片/网页
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp)'),
+    new workbox.strategies.NetworkOnly()
+);
+
+
+// 静态资源
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:css|js)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '静态资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 50,
+                maxAgeSeconds: WEEK
+            }),
+        ]
+    })
+);
+
+// 离线谷歌分析
+// workbox.googleAnalytics.initialize();
