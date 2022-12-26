@@ -5,7 +5,7 @@ const workbox = require("workbox-build");
 gulp.task('generate-service-worker', () => {
     return workbox.injectManifest({
         swSrc: './sw-template.js',
-        swDest: './public/sw.js',
+        swDest: './public/cw.js',
         globDirectory: './public',
         globPatterns: [
           // 缓存所有以下类型的文件，极端不推荐
