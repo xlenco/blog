@@ -813,26 +813,3 @@ var CountUp = function (target, startVal, endVal, decimals, duration, options) {
     self.printValue(self.startVal);
   }
 };
-
-//重定向浏览器地址
-pjax.site_handleResponse = pjax.handleResponse;
-pjax.handleResponse = function(responseText, request, href, options){
-  Object.defineProperty(request,'responseURL',{
-    value: href
-  });
-  pjax.site_handleResponse(responseText,request,href,options);
-}
-
-// algolia 窗口自适应
-searchSize();
-window.addEventListener('resize', searchSize)
-// 搜索窗口自适应
-function searchSize() {
-    // 只需要适应手机端
-    if (document.body.clientWidth > 768) return
-    let div = document.querySelector('#algolia-hits')
-    // 监听插入，如果有插入则根据可视高度动态设置最大高度
-    div.addEventListener('DOMNodeInserted', () => {
-        div.children[0].style.maxHeight = (document.documentElement.clientHeight - 210) + 'px'
-    })
-}
