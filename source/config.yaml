@@ -7,22 +7,7 @@ hotpatch:
 # Config热更新
 hotconfig:
   - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
-catch_rules:
-# 站点多线路选择
-  - rule: _
-    transform_rules:
-      - search: \#.* #在发送请求时匹配#后内容并移除
-        replace: ''
-      - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
-        replace: '' 
-      - search: _ 
-        replace: 
-          - _
-          - https://npm.onmicrosoft.cn/xlenco-blog-main@1.0.000919
-          - https://npm.elemecdn.com/xlenco-blog-main@1.0.000919
-          - https://jsd.onmicrosoft.cn/npm/xlenco-blog-main@1.0.000919
-          - https://cdn.cbd.int/xlenco-blog-main@1.0.000919
-          - https://jsd.cky.codes/npm/xlenco-blog-main@1.0.000919         
+catch_rules:         
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
     transform_rules:
@@ -83,7 +68,3 @@ catch_rules:
           cache:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300       
-
-
-      - search: \.js
-        action: skip
