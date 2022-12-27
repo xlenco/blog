@@ -1,5 +1,5 @@
 'use strict';
-var frdata = { apiurl: 'https://friends.anzhiy.cn/', defaultFish: 100, hungryFish: 100 };
+var frdata = { apiurl: 'https://fcircle.xlenco.eu.org/', defaultFish: 100, hungryFish: 100 };
 if ('undefined' != typeof frdataUser) for (var key in frdataUser) frdataUser[key] && (frdata[key] = frdataUser[key]);
 var randomPostTimes = 0,
   randomPostWorking = !1,
