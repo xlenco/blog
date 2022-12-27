@@ -189,7 +189,7 @@ fcircle:
   css: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/css/default.min.css #【可选】开发者接口，自定义css链接
   js: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fcircle.min.js #【可选】开发者接口，自定义js链接
   fetchJs: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fetch.min.js
-  randomFriendsPostJS: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/random-friends-post.min.js
+  randomFriendsPostJS: /js/random-friends-post.js
   topIcon: fas fa-arrow-right
   topLink: /about/
   top_background: https://xlenco.onmicrosoft.cn/img/12258.webp
