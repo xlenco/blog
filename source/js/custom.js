@@ -7,7 +7,6 @@ document.addEventListener('visibilitychange', function () {
         clearTimeout(titleTime);
     }
     else {
-        $('[rel="icon"]').attr('href', "/favicon.ico");
         document.title = '♪(^∇^*) 又见面了！' + OriginTitle;
         titleTime = setTimeout(function () {
             document.title = OriginTitle;
