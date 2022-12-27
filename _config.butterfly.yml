@@ -868,40 +868,6 @@ inject:
   #  - <script src="/js/ClientWorker.js"></script>
   #  - <script async src="https://npm.onmicrosoft.cn/clientworker/dist/autoupdate.js"></script>
   #  - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
-    - |
-        <script>                       
-            if (!!navigator.serviceWorker) {
-                if (localStorage.getItem('cw_installed') !== 'true') {window.stop();}
-                navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
-                    if (localStorage.getItem('cw_installed') !== 'true') {
-                        const conf = () => {                         
-                            console.log('[CW] Installing Success,Configuring...');
-                            fetch('/cw-cgi/api?type=config')
-                                .then(res => res.text())
-                                .then(text => {
-                                   if (text === 'ok') {
-                                        console.log('[CW] Installing Success,Configuring Success,Starting...');
-                                        localStorage.setItem('cw_installed', 'true');
-                                        window.location.reload();
-                                   } else {
-                                        console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
-                                        setTimeout(() => {
-                                            conf()
-                                        }, 200);
-                                    }
-                                }).catch(err => {
-                                    console.log('[CW] Installing Success,Configuring Error,Exiting...');
-                                });
-                        }
-                        setTimeout(() => {
-                            conf()
-                        }, 50);
-                    }
-                }).catch(err => {
-                    console.error('[CW] Installing Failed,Error: ' + err.message);
-                })
-            } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
-        </script>
     - <link href="https://51.la" rel="preconnect" crossorigin>
     # 51la统计
     - |
