@@ -11,8 +11,6 @@ catch_rules:
 # 站点多线路选择
   - rule: _
     transform_rules:
-      - search: \sw.js
-        action: skip
       - search: \#.* #在发送请求时匹配#后内容并移除
         replace: ''
       - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
@@ -86,3 +84,6 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300       
 
+
+      - search: sw.js
+        action: skip
