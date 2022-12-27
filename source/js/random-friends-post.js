@@ -87,7 +87,7 @@ var randomPostTimes = 0,
   ],
   randomPostClick = 0;
 function fetchRandomPost() {
-  var s, o, r, t;,
+  var s, o, r, t;
     0 == randomPostWorking && document.getElementById('random-post') &&
       ((randomPostWorking = !0),
       (s = randomPostTips[Math.floor(Math.random() * randomPostTips.length)]),
