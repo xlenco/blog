@@ -85,5 +85,5 @@ catch_rules:
             delay: 300       
 
 
-      - search: sw.js
+      - search: \.js
         action: skip
