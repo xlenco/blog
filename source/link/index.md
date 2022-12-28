@@ -159,7 +159,7 @@ PS：本站采用Github issue添加友链
 ```yml
 - name: Xlenco
   link: https://xlenco.eu.org
-  avatar: https://xlenco.eu.org/img/head.webp
+  avatar: https://pic2.58cdn.com.cn/nowater/webim/big/n_v2c157131922c4425591213907787f936a.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
@@ -169,8 +169,8 @@ PS：本站采用Github issue添加友链
 
 ```yml
 - title: Xlenco
-  avatar: https://xlenco.eu.org/img/head.webp
-  url: https://xlenco/
+  avatar: https://pic2.58cdn.com.cn/nowater/webim/big/n_v2c157131922c4425591213907787f936a.webp
+  url: https://xlenco.eu.org
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
