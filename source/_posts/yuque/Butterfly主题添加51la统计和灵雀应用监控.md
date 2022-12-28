@@ -3,7 +3,7 @@ title: Butterfly主题添加51la统计和灵雀应用监控
 date: 2022-09-03 08:08:07
 updated:
 categories: 转载
-cover: https://xlenco.onmicrosoft.cn/Wallpaper/th.webp
+cover: https://pic6.58cdn.com.cn/nowater/webim/big/n_v2396f09befd574b4184133c6a3e132f6c.webp
 tags:
   - Hexo
   - Butterfly
