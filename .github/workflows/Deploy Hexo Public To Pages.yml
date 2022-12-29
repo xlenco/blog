@@ -29,6 +29,7 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install gulp-cli -g
+          npm install workbox-build -g
           
 
       - name: 设置密钥
