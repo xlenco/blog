@@ -48,6 +48,7 @@
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
     "yuque-hexo": "^1.9.5",
     "hexo-butterfly-article-double-row": "^1.0.2",
+    "workbox-build": "^6.5.4",
     "workbox-cli": "6.5.4"
   },
   "devDependencies": {
