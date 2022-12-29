@@ -68,6 +68,5 @@ jobs:
           hexo algolia
           gulp
           hexo deploy
-          cd ./public
-          git push --force --quiet "https://xlenco:${{ secrets.BB_TOKEN }}@bitbucket.org/xlenco/xlenco.bitbucket.io.git" master:master
+
  
