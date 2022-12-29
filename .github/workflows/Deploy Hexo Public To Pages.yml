@@ -29,7 +29,7 @@ jobs:
         run: |
           npm install hexo-cli -g
           npm install gulp-cli -g
-          npm install workbox-build gulp --save
+          npm install workbox-cli gulp --save
           
 
       - name: 设置密钥
