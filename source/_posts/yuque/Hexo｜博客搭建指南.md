@@ -51,7 +51,7 @@ C:\Program Files (x86)\Git\bin
 ```
 
 {% note danger simple %}具体路径以你系统为准{% endnote %}
-![](https://ik.imagekit.io/xlenco/img/c53dbebd41ffd218f703df266aeb4833_lae4hv1uf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661686617349)
+![](https://pic2.58cdn.com.cn/nowater/webim/big/n_v2a2f670332fd6415993d8368300843d75.webp)
 
 4.检查
 打开 git bash 或 cmd，输入：
@@ -248,3 +248,13 @@ git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes
 ```
 
 2.修改 hexo 根目录下的\_config.yml 中的 theme: landscape 改成 theme： butterfly ,(注意冒号：后面有一个空格)
+
+## 5. 主题魔改
+
+### 5.1 胶囊 💊 样式顶部进度条
+
+[为你的 Butterfly 添加顶部加载进度条 | Xlenco](https://xlenco.eu.org/posts/769f.html)
+
+### 5.2 自定义右键菜单
+
+[Butterfly 美化魔改：自定义右键菜单 | Xlenco](https://xlenco.eu.org/posts/8d1e.html)
