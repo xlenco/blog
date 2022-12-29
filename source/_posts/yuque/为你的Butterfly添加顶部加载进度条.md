@@ -7,7 +7,7 @@ tags:
 categories:
   - 教程
 
-cover: https://xlenco.onmicrosoft.cn/img/j3m8y5.webp
+cover: https://preview.cloud.189.cn/image/imageAction?param=FCE9AA8C078A279A6BBF965DDAAF03F995218E8214C378E3E5C2A0ED42914CA4E939A74028F1250FAC32DCF70D3FC9FB01BA0B95C272EA539208272C662D6DCC5B2F056BAECB8EEB1E53523FED7A8A0C0CFD674CD770AFE7B468768C957DA34004EA1FC90143B6FE037CE07D8293D57F597CCA1B
 date: 2022-10-7 18:25
 updated: 2022-10-7 18:32
 ---
@@ -15,6 +15,7 @@ updated: 2022-10-7 18:32
 ## Dome
 
 <img src="https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg" width="50%" height="50%" alt="top.jpeg" align=center />
+进度条为胶囊💊样式
 
 ## 引入 css
 
