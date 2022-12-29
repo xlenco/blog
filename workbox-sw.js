@@ -124,4 +124,4 @@ workbox.routing.registerRoute(
 
 
 // 离线谷歌分析
-// workbox.googleAnalytics.initialize();
+workbox.googleAnalytics.initialize();
