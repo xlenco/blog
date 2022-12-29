@@ -104,7 +104,7 @@ workbox.routing.registerRoute(
 
 // 图片/网页
 workbox.routing.registerRoute(
-    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp)'),
+    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp|ico)'),
     new workbox.strategies.NetworkOnly()
 );
 
