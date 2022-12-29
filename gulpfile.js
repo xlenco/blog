@@ -1,7 +1,7 @@
 // gulp-tester
 var gulp = require('gulp');
 // workbox-build
-const workbox = require("workbox-cli");
+const workbox = require("workbox-build");
 gulp.task('generate-service-worker', () => {
     return workbox.injectManifest({
         swSrc: './workbox-sw.js',
