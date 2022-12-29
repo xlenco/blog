@@ -68,9 +68,6 @@ jobs:
           hexo algolia
           gulp
           hexo deploy
-          cd public
-          node npmversionupdata.js
-          npm publish                  
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-         
+          cd ./public
+          git push --force --quiet "https://xlenco:${{ secrets.BB_TOKEN }}@bitbucket.org/xlenco/xlenco.bitbucket.io.git" master:master
+ 
