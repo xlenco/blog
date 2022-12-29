@@ -826,7 +826,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -837,10 +837,10 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
-  field: post # site/post
-  placeholder: https://ik.imagekit.io/xlenco/loading.webp
-  blur: false
+  enable: true
+  field: site # site/post
+  placeholder: 
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
