@@ -56,6 +56,11 @@ const Offline = new workbox.routing.Route(({ request }) => {
 }));
 workbox.routing.registerRoute(Offline);
 
+// 图片/网页
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp|ico)'),
+    new workbox.strategies.NetworkOnly()
+);
 // 字体
 workbox.routing.registerRoute(
     new RegExp('.*.(?:ttf||woff|woff2)'),
@@ -72,4 +77,4 @@ workbox.routing.registerRoute(
 
 
 // 离线谷歌分析
-workbox.googleAnalytics.initialize();
+// workbox.googleAnalytics.initialize();
