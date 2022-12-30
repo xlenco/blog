@@ -39,12 +39,7 @@ const WEEK = DAY * 7;
 const MONTH = DAY * 30;
 const YEAR = DAY * 365;
 
-// workbox.recipes.googleFontsCache();
-// workbox.recipes.staticResourceCache();
-// workbox.recipes.imageCache();
-// workbox.recipes.offlineFallback();
-// workbox.recipes.pageCache();
-// workbox.googleAnalytics.initialize();
+
 
 // 导航预加载
 workbox.navigationPreload.enable();
@@ -61,20 +56,6 @@ const Offline = new workbox.routing.Route(({ request }) => {
 }));
 workbox.routing.registerRoute(Offline);
 
-// 一些缓存小策略预设
-// workbox.recipes.pageCache();
-// workbox.recipes.googleFontsCache();
-// workbox.recipes.staticResourceCache();
-// workbox.recipes.imageCache();
-// workbox.recipes.offlineFallback();
-
-// 暖策略（运行时）缓存
-// const strategy = new workbox.strategies.StaleWhileRevalidate();
-// const urls = [
-//     '/favicon.ico'
-// ];
-// workbox.recipes.warmStrategyCache({ urls, strategy });
-
 // 字体
 workbox.routing.registerRoute(
     new RegExp('.*.(?:ttf|woff2)'),
@@ -84,39 +65,6 @@ workbox.routing.registerRoute(
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 10,
                 maxAgeSeconds: MONTH
-            }),
-        ]
-    })
-);
-
-// workbox.routing.registerRoute(
-//     new RegExp('^https://(?:fonts\\.googleapis\\.com|fonts\\.gstatic\\.com)'),
-//     new workbox.strategies.StaleWhileRevalidate({
-//         cacheName: '谷歌字体',
-//         plugins: [
-//             new workbox.expiration.ExpirationPlugin({
-//                 maxEntries: 10,
-//                 maxAgeSeconds: MONTH
-//             }),
-//         ],
-//     })
-// );
-
-// 图片/网页
-workbox.routing.registerRoute(
-    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp|ico)'),
-    new workbox.strategies.NetworkOnly()
-);
-
-// 静态资源
-workbox.routing.registerRoute(
-    new RegExp('.*.(?:css|js)'),
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: '静态资源',
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 50,
-                maxAgeSeconds: WEEK
             }),
         ]
     })
