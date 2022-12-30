@@ -2245,7 +2245,7 @@ img.footer_mini_logo:hover {
   order: 0;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--anzhiyu-fontcolor)!important;
   width: 100%;
   line-height: 1.38;
   border-radius: 12px;
@@ -2485,7 +2485,7 @@ img.footer_mini_logo:hover {
   display: flex;
   transition: all 0.3s ease 0s;
   margin: 1rem auto 0;
-  border: var(--style-border);
+  border: var(--style-border)!important;
   align-items: center;
   height: 50px;
   width: 100%;
