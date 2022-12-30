@@ -46,20 +46,19 @@ jobs:
         run: |
           git config --global user.name 'xlenco' 
           git config --global user.email '1043865083@qq.com'      
-
-      
-      - name: 缓存 Hexo
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+   
 
       - name: 安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install --save
 
+      - name: 缓存 Hexo
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
     
       - name: Hexo三连并推送npm
         run: |
