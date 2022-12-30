@@ -932,7 +932,7 @@ CDN:
      utils: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/utils.min.js
     # translate:
     # local_search:
-     algolia_js: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/search/algolia.min.js 
+    # algolia_js: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/search/algolia.min.js 
     # algolia_search_v4:
     # instantsearch_v4: https://cdn.bootcdn.net/ajax/libs/instantsearch.js/4.49.1/instantsearch.development.min.js
      pjax: https://cdn.bootcdn.net/ajax/libs/pjax/0.2.8/pjax.min.js
