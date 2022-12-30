@@ -11,7 +11,6 @@ updated: 2022-12-05 21:46:51
 - class_name: 友人账
   class_desc: 昔日里那些人，那些事
   link_list:
-
   - name: 陈鑫磊'Blog
     link: https://www.cxl2020mc.top
     avatar: https://www.cxl2020mc.top/img/avatar.png
@@ -95,7 +94,6 @@ updated: 2022-12-05 21:46:51
 - class_name: Wed
   class_desc: 一些实用的网站
   link_list:
-
   - name: Solitude'Pan
     link: https://solitude.eu.org/
     avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
@@ -118,7 +116,7 @@ PS：本站采用Github issue添加友链
 ```yml
 - name: Xlenco
   link: https://xlenco.eu.org
-  avatar: https://xlenco.eu.org/img/head.webp
+  avatar: https://www.helloimg.com/images/2022/12/31/oCbPAc.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
@@ -159,7 +157,7 @@ PS：本站采用Github issue添加友链
 ```yml
 - name: Xlenco
   link: https://xlenco.eu.org
-  avatar: https://pic2.58cdn.com.cn/nowater/webim/big/n_v2c157131922c4425591213907787f936a.webp
+  avatar: https://www.helloimg.com/images/2022/12/31/oCbPAc.webp
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
@@ -169,7 +167,7 @@ PS：本站采用Github issue添加友链
 
 ```yml
 - title: Xlenco
-  avatar: https://pic2.58cdn.com.cn/nowater/webim/big/n_v2c157131922c4425591213907787f936a.webp
+  avatar: https://www.helloimg.com/images/2022/12/31/oCbPAc.webp
   url: https://xlenco.eu.org
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
