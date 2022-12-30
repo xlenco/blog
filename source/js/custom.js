@@ -813,3 +813,8 @@ var CountUp = function (target, startVal, endVal, decimals, duration, options) {
     self.printValue(self.startVal);
   }
 };
+
+// 复制提醒
+document.body.addEventListener("copy", (e => {
+    "TEXTAREA" == e.target.tagName && "" == e.target.className || btf.snackbarShow("复制成功~")
+}));
