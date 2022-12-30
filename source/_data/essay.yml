@@ -1,14 +1,14 @@
 - class_name: 即刻短文
   essay_list:
     - content:
+        终于把即刻短文轮播字体不显示的 bug 改好了，累死了！!
+      date: 2022/12/30 21:45
+      image: 
+       - https://preview.cloud.189.cn/image/imageAction?param=19F833B1B7E9EF20AE4B76307D25C0967ECB896C3A7FB821FA89A61916783C9E1F7B83F3B02ADD6B3321FAEA5D92976525C1D3A4ABAF6FFFF6FD0B002FB468AED493A606F9AB48A0E05B26BE7683A6E27EFAE4E3DA456F54C0CD69F6CAD29F27D95CA00C31CCA7A7FAB8723B07531891EA2B71A7
+      from: 心情
+    - content:
         马上就要到 2023 年啦！
       date: 2022/12/30 11:16
-    - content:
-        要复学了
-      date: 2022/12/24 15:09
-      image: 
-       - https://www.helloimg.com/images/2022/12/23/oBQ2zR.jpg
-      from: 心情
     - content:
         不知不觉博客已经运行 215 天了啦！
       date: 2022/12/19 08:21
