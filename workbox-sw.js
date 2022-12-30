@@ -58,7 +58,7 @@ workbox.routing.registerRoute(Offline);
 
 // 字体
 workbox.routing.registerRoute(
-    new RegExp('.*.(?:ttf|woff2)'),
+    new RegExp('.*.(?:ttf||woff|woff2)'),
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: "其他字体",
         plugins: [
