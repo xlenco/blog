@@ -11,7 +11,7 @@ gulp.task('generate-service-worker', () => {
           // 缓存所有以下类型的文件，极端不推荐
           // "**/*.{html,css,js,json,woff2,xml}"
           // 推荐只缓存404，主页和主要样式和脚本。
-          "404.html","js/main.js","css/index.css","offline/index.html"
+          "404.html",,"index.html""js/main.js","css/index.css","offline/index.html"
         ],
         modifyURLPrefix: {
             "": "./"
