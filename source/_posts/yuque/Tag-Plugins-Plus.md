@@ -120,7 +120,7 @@ npm install hexo-renderer-kramed --save
 6. 密码样式的文本：{% psw 这里没有验证码 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 行内文本 span
 
@@ -970,13 +970,13 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 **心率管家**
 {% p red, 专业版 %}
 
-]([https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=eYTCY&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+]([https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=eYTCY&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 [
 
 **心率管家**
 {% p green, 免费版 %}
 
-]([https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=gQS9j&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+]([https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=gQS9j&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 {% endbtns %}
 
 1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
