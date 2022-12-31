@@ -6,89 +6,12 @@ date: 2022-12-31 22:22:44
 updated: 2022-12-31 22:22:44
 ---
 
-本文档为[🧊Akilar の糖果屋 🍭](https://jq.qq.com/?_wv=1027&k=EF1Elvqp)出品
-
-如有使用了本站的外挂标签插件的读者，请确保自己的配置内容为最新。
-
-同理，若您在使用本帖教程后，发现样式无法完全还原文档内效果，请重点排查您的其余第三方魔改 css 样式，例如 css 中是否存在**circle**、**square**等易重 class 名。
-{% endtip %}
-{% folding red , 点开查看开发记录 %}
-
-{% note blue 'fas fa-bullhorn' modern %}
-本文所涉及的样式，主要参考的是各类已有主题，并对相应 styl 文件进行样式修改以及添加夜间模式适配。已尽可能追根溯源找到了各部分魔改内容最初的作者，如有错误和遗漏还请联系我修改。
+可能追根溯源找到了各部分魔改内容最初的作者，如有错误和遗漏还请联系我修改。
 {% endnote %}
 
 {% timeline 开发记录,green %}
 
-1. 在 bubble 气泡外挂标签基础上新增 reference 引用文献标签
-2. 修复了 bubble 气泡外挂标签层级过高遮挡提示框的 bug
-3. 移除 timeline 外挂标签，请使用 butterfly 新版自带的 timeline 标签，效果更好。
-4. 修复 tip 标签自定义图标无效的 bug
-5. 调整气泡显隐动画逻辑，避免透明度变换瞬间遮挡到正文。
-6. 新增气泡注释 bubble 标签样式。效果比 nota 标签更好。
-7. 支持自定义气泡背景色。
-8. 新增开关逻辑，iconfont，carousel 设为 false 则不引入。
-9. site 标签新增灯箱屏蔽，不再支持点击放大图片。
-10. 剔除了 link 卡片的无效 css
-11. butterfly_v4.0 新增了`timeline`标签，与本插件标签名冲突。可以选择改用标签文档中的源码配置方案并剔除 timeline 标签或者删除主题原有的 timeline 标签文件`Blogroot\themes\butterfly\scripts\tag\timeline.js`和`Blogroot\themes\butterfly\source\css\_tags\timeline.styl`。（总之不能共存）
-12. 修复了 carousel 标签刷新后不加载的 bug。
-13. 将所有 CDN 链接迁移至`unpkg.zhimg.com`
-14. 外露所有 CDN 配置项，支持读者自行更改 CDN 源
-15. 调整`link`标签的默认图片缺省值适配，新增`tag_plugins.link.placeholder`配置项。
-16. 因为新增了默认图片，新增配置项，所以需要更新版本。如果本身使用 link 标签就有自己加图片的习惯的，无需升级。
-
-```bash
-npm install hexo-butterfly-tag-plugins-plus@1.0.9 --save
-```
-
-1. 调整`folding`标签，解决与 twikoo 设置面板样式的冲突问题
-2. 因为调整了`folding`标签的编译函数，低版本会出现 folding 样式失效的情况，请各位更新至最新版本。
-
-```bash
-npm install hexo-butterfly-tag-plugins-plus@1.0.5 --save
-```
-
-1. 调整`tip`标签，字体垂直居中
-1. 新增`carousel`旋转相册
-1. 使用 npm 插件安装。
-1. 测试版本为 butterfly_v3.1.0、3.3.0、3.7.8、3.8.0
-1. 插件写法调整为高内聚，理论上不受 butterfly 主题版本影响。
-1. 为了获得完整效果，建议打开主题的 beautify 配置项和 theme_color 配置项。
-1. 修复行内图片换行错误。
-1. 新增一个样式标签，进度条 progress
-1. 新增两个样式标签，github 徽标 ghbdage 和特效标签 wow
-1. 移除静态资源中的`fontawesome-animation.min.css`以及`issues.js`，改为 CDN 引用。
-1. 本帖不专门提供特效标签 wow 的配置方案，若有需要，请查看站内教程[使用 wowjs 给博客添加动画效果](/posts/abab51cf/)
-1. 新增两个样式标签 poem 和 icon
-1. 修复了 folding 标签嵌套字体逐级放大的 bug。
-1. 不再更新 v3.4.0 以下版本的适配内容。
-1. 新增 Butterfly_v3.4.0 的配置文件。
-1. 请读者根据自己的主题版本选择替换。
-1. 资源文件无任何改动。
-1. 更新了动态标签的使用说明。补全参数配置，更换示例。使得教程更加通俗易懂。
-1. 新增当初弃用的 issues.js 标签，以配合友链魔改教程中的 issues 自动更新功能。
-1. 更新了静态资源文件，请之前的读者重新覆盖安装。
-1. 修改了`fontawesome-animation.min.css`的引入方式，改成使用`@import`注入`index.css`。
-1. 新增 tip.js，将小康大佬的渐变色上标标签写法从 HTML 的方式改成用标签语法编写。
-1. 新增动态标签样式 anima，使用了 fontawesome-animation 项目。
-1. 新增标签内容夜间模式适配。
-1. 基本完成 Volantis 外挂标签移植。
-1. 移除了 btn 标签，因为存在冲突。而且不如 butterfly 自带的 button 样式好看。
-1. 适配了 folding 标签的夜间模式。
-1. 打包了静态资源文件，上传蓝奏云。
-1. 主要使用了[Volantis](https://github.com/volantis-x/hexo-theme-volantis)的标签样式。引入`[tag].js`，并针对`butterfly`主题修改了相应的`[tag].styl`。在此鸣谢`Volantis`主题众开发者。
-1. 主要参考内容
-
-- [Volantis 文档:内置标签插件](https://volantis.js.org/tag-plugins/)
-- [Butterfly 安装文档:标签外挂（Tag Plugins）](https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89)
-- [小弋の生活馆全样式预览](https://lovelijunyi.gitee.io/posts/c898.html)
-- [l-lin-font-awesome-animation](https://github.com/l-lin/font-awesome-animation)
-- [小康的 butterfly 主题使用文档](https://www.antmoe.com/posts/3b43914f/)
-
-{% endtimeline %}
-{% endfolding %}
-{% tabs 配置方案,1 %}
-
+1. 在 b{% tabs 配置方案,1 %}
 1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
 
 ```bash
