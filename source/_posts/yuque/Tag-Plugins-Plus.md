@@ -749,8 +749,6 @@ ban
 {% tip ban faa-parent animated-hover %}<p class="faa-flash">ban</p>{% endtip %}
 ```
 
-{% endtabs %}
-
 ## 复选列表 checkbox
 
 {% tabs checkbox,3 %}
