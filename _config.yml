@@ -172,12 +172,12 @@ tag_plugins:
   link:
     placeholder: /img/link.svg #link_card标签默认的图标图片
   CDN:
-    anima: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    anima: https://jsd.onmicrosoft.cn/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
 #    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
 #    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
 #    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
 #    carousel: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.min.js
-    tag_plugins_css: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css
+    tag_plugins_css: https://jsd.onmicrosoft.cn/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css
 
 # fcircle
 # see https://anzhiy.cn/posts/3753.html
@@ -186,9 +186,9 @@ fcircle:
   apiurl: https://fcircle.xlenco.eu.org/ #api地址
   initnumber: 30 #【可选】页面初始化展示文章数量
   stepnumber: 30 #【可选】每次加载增加的篇数
-  css: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/css/default.min.css #【可选】开发者接口，自定义css链接
-  js: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fcircle.min.js #【可选】开发者接口，自定义js链接
-  fetchJs: https://cdn.jsdelivr.net/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fetch.min.js
+  css: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/css/default.min.css #【可选】开发者接口，自定义css链接
+  js: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fcircle.min.js #【可选】开发者接口，自定义js链接
+  fetchJs: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fetch.min.js
   randomFriendsPostJS: /js/random-friends-post.js
   topIcon: fas fa-arrow-right
   topLink: /about/
