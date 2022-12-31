@@ -74,7 +74,19 @@ workbox.routing.registerRoute(
         ]
     })
 );
-
+// 静态资源
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:css|js)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '静态资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 50,
+                maxAgeSeconds: WEEK
+            }),
+        ]
+    })
+);
 
 // 离线谷歌分析
 // workbox.googleAnalytics.initialize();
