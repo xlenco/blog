@@ -151,7 +151,7 @@ npm install hexo-renderer-kramed --save
   {% span center small, A Wonderful Theme for Hexo %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 段落文本 p
 
@@ -182,7 +182,7 @@ npm install hexo-renderer-kramed --save
   {% p center small, A Wonderful Theme for Hexo %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 引用 note
 
@@ -651,7 +651,7 @@ Any content (support inline tags too.io).
 {% tip fa-atom %}自定义 font awesome 图标{% endtip %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 动态标签 anima
 
@@ -749,7 +749,7 @@ ban
 {% tip ban faa-parent animated-hover %}<p class="faa-flash">ban</p>{% endtip %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 复选列表 checkbox
 
@@ -787,7 +787,7 @@ ban
 {% checkbox times red checked, 叉 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 单选列表 radio
 
@@ -818,7 +818,7 @@ ban
 {% radio blue, 蓝色 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 时间轴 timeline
 
@@ -898,7 +898,7 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 {% endtimeline %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 链接卡片 link
 
@@ -908,13 +908,13 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 {% link 标题, 链接, 图片链接（可选） %}
 ```
 
-{% link 糖果屋教程贴, [https://akilar.top/posts/615e2dec/](https://akilar.top/posts/615e2dec/), [https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico](https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico) %}
+{% link 糖果屋教程贴, https://akilar.top/posts/615e2dec/, https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico %}
 
 ```markdown
 {% link 糖果屋教程贴, https://akilar.top/posts/615e2dec/, https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 按钮 btns
 
@@ -948,11 +948,11 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 4.  如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
 {% btns circle grid5 %}
-{% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
-{% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
-{% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
-{% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
-{% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 
 2. 或者含有图标的按钮：
@@ -970,13 +970,13 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 **心率管家**
 {% p red, 专业版 %}
 
-]([https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=eYTCY&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1)![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=eYTCY&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 [
 
 **心率管家**
 {% p green, 免费版 %}
 
-]([https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=gQS9j&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1)![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=gQS9j&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 {% endbtns %}
 
 1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
@@ -1019,7 +1019,7 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 {% endbtns %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## github 卡片 ghcard
 
@@ -1080,7 +1080,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 | {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %}            |
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## github 徽标 ghbdage
 
@@ -1111,7 +1111,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% bdage Frame,Hexo,hexo %} 2. 信息参数
 
 {% bdage CDN,JsDelivr,jsDelivr||abcdef,https://metroui.org.ua/index.html,本站使用JsDelivr为静态资源提供CDN加速 %}
-{% bdage Source,GitHub,GitHub||,[https://github.com/](https://github.com/) %} 3. 拓展参数
+{% bdage Source,GitHub,GitHub||,https://github.com/ %} 3. 拓展参数
 
 {% bdage Hosted,Vercel,Vercel||brightgreen,https://vercel.com/,本站采用双线部署，默认线路托管于Vercel||style=social&logoWidth=40 %}
 {% bdage Hosted,Vercel,Vercel||||style=social&logoWidth=40&logoColor=violet %}
@@ -1143,7 +1143,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% bdage Hosted,Vercel,Vercel||||style=social&logoWidth=20&logoColor=violet %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 网站卡片 sites
 
@@ -1174,7 +1174,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% endsitegroup %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 行内图片 inlineimage
 
@@ -1186,9 +1186,9 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 1. 高度：height=20px
 
-这是 {% inlineimage [https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif) %} 一段话。
+这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage [https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif), height=40px %} 一段话。
+这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 
 ```markdown
 这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
@@ -1196,7 +1196,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 单张图片 image
 
@@ -1211,19 +1211,19 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 3. 占位背景色：bg=#f2f2f2
 4. 添加描述：
 
-{% image [https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg), alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
 
 2. 指定宽度：
 
-{% image [https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg), width=400px %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %}
 
 3. 指定宽度并添加描述：
 
-{% image [https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg), width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
 
 4. 设置占位背景色：
 
-{% image [https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg), width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
 
 1. 添加描述：
 
@@ -1249,7 +1249,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 音频 audio
 
@@ -1259,13 +1259,13 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% audio 音频链接 %}
 ```
 
-{% audio [https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3](https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3) %}
+{% audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
 
 ```markdown
 {% audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 视频 video
 
@@ -1279,26 +1279,26 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 2. 列数：逗号后面直接写列数，支持 1 ～ 4 列。
 3. 100%宽度
 
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 
 2. 50%宽度
    {% videos, 2 %}
-   {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-   {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-   {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-   {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
    {% endvideos %}
 3. 25%宽度
 
 {% videos, 4 %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 
 1. 100%宽度
@@ -1333,7 +1333,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 {% endvideos %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 相册 gallery
 
@@ -1421,7 +1421,7 @@ markdown 圖片格式
 {% endgallery %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 折叠框 folding
 
@@ -1441,7 +1441,7 @@ markdown 圖片格式
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#crop=0&crop=0&crop=1&crop=1&id=Yovh1&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=DJYHv&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#crop=0&crop=0&crop=1&crop=1&id=Yovh1&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#crop=0&crop=0&crop=1&crop=1&id=DJYHv&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 {% endfolding %}
 
@@ -1519,7 +1519,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 {% endfolding %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 分栏 tab
 
@@ -1712,7 +1712,7 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
 {% endtabs %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 数据集合 issues
 
@@ -1761,12 +1761,12 @@ api=https://gitee.com/api/v5/repos/xaoxuu/friends/issues?sort=updated&state=open
 api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active
 ```
 
-| 参数                                                   | 释义                       |
-| ------------------------------------------------------ | -------------------------- |
-| [https://gitee.com/api/v5/](https://gitee.com/api/v5/) | gitee 仓库的 api           |
-| [https://api.github.com/](https://api.github.com/)     | github 仓库的 api          |
-| repos/xaoxuu/friends/issues                            | repos/用户名/仓库名/issues |
-| sort=updated&state=open                                | 界定哪些类型的`issues`     |
+| 参数                        | 释义                       |
+| --------------------------- | -------------------------- |
+| https://gitee.com/api/v5/   | gitee 仓库的 api           |
+| https://api.github.com/     | github 仓库的 api          |
+| repos/xaoxuu/friends/issues | repos/用户名/仓库名/issues |
+| sort=updated&state=open     | 界定哪些类型的`issues`     |
 
 会
 被读取过来渲染成相应的标签 |
@@ -1917,7 +1917,7 @@ about: 请根据指示规范填写友链格式。
 
 1. 时间轴标签`timeline`渲染
    对应的仓库`issues`链接:
-   {% link xaoxuu/timeline, [https://gitee.com/xaoxuu/timeline/issues](https://gitee.com/xaoxuu/timeline/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+   {% link xaoxuu/timeline, https://gitee.com/xaoxuu/timeline/issues, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
 
 {% issues timeline | api=https://gitee.com/api/v5/repos/xaoxuu/timeline/issues?state=open&creator=xaoxuu&sort=created&direction=desc&page=1&per_page=100 %}
 
@@ -1925,12 +1925,12 @@ about: 请根据指示规范填写友链格式。
 
 - gitee 仓库示例
   对应的仓库`issues`链接:
-  {% link xaoxuu/friends, [https://gitee.com/xaoxuu/friends/issues](https://gitee.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+  {% link xaoxuu/friends, https://gitee.com/xaoxuu/friends/issues, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
   渲染后的标签：
   {% issues sites | api=https://gitee.com/api/v5/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
 - github 仓库示例
   对应的仓库`issues`链接:
-  {% link xaoxuu/friends, [https://github.com/xaoxuu/friends/issues](https://github.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+  {% link xaoxuu/friends, https://github.com/xaoxuu/friends/issues, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
   渲染后的标签：
   {% issues sites | api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
 
@@ -1938,7 +1938,7 @@ about: 请根据指示规范填写友链格式。
    这是`Volantis`主题官网的「示例博客」页面的数据：
    对应的仓库`issues`链接:
 
-{% link 如何参与项目, [https://github.com/volantis-x/examples/issues](https://github.com/volantis-x/examples/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+{% link 如何参与项目, https://github.com/volantis-x/examples/issues, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
 
 渲染后的标签：
 
@@ -1971,7 +1971,7 @@ about: 请根据指示规范填写友链格式。
 {% issues sites | api=https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100 | group=version:版本：^4.0,版本：^3.0,版本：^2.0 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 诗词标签 poem
 
@@ -2013,7 +2013,7 @@ about: 请根据指示规范填写友链格式。
 {% endpoem %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 阿里图标 icon
 
@@ -2067,7 +2067,7 @@ about: 请根据指示规范填写友链格式。
 
 {% note blue 'fas fa-bullhorn' modern%}
 特效标签的静态资源未添加在本帖的配置内容中（因为多为 cdn 配置），请移步站内教程完成相关配置：
-{% link 使用wowjs给博客添加动画效果, /posts/abab51cf/, [https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico](https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico) %}
+{% link 使用wowjs给博客添加动画效果, /posts/abab51cf/, https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico %}
 {% endnote %}
 
 {% tabs animate,3 %}
@@ -2153,7 +2153,7 @@ about: 请根据指示规范填写友链格式。
 {% endwow %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 进度条 progress
 
@@ -2186,7 +2186,7 @@ about: 请根据指示规范填写友链格式。
 {% progress 100 gray 进度条样式预览 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 注释 notation
 
@@ -2204,7 +2204,7 @@ about: 请根据指示规范填写友链格式。
 {% nota 把鼠标移动到我上面试试 ,可以看到注解内容出现在顶栏 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 气泡注释 bubble
 
@@ -2249,15 +2249,15 @@ Akilar の糖果屋(akilar.top)是一个私人性质的博客[[1]](#referfrom*%5
 本项目参考了 Volantis[[4]](#referfrom*%5B4%5D)hexo-theme-volantis 标签插件参考资料的标签样式。引入`[tag].js`，并针对`butterfly`主题修改了相应的`[tag].styl`。在此鸣谢`Volantis`主题众开发者。
 主要参考内容包括各个 volantis 的内置标签插件文档[[5]](#referfrom*%5B5%5D)Volantis 文档:内置标签插件参考资料
 Butterfly 主题的各个衍生魔改[[6]](#referfrom*%5B6%5D)Butterfly 安装文档:标签外挂（Tag Plugins 参考资料[[7]](#referfrom*%5B7%5D)小弋の生活馆全样式预览参考资料[[8]](#referfrom*%5B8%5D)l-lin-font-awesome-animation 参考资料[[9]](#referfrom*%5B9%5D)小康的 butterfly 主题使用文档参考资料
-{% referfrom '[1]','Akilarの糖果屋群聊简介','[https://jq.qq.com/?_wv=1027&k=pGLB2C0N](https://jq.qq.com/?_wv=1027&k=pGLB2C0N)' %}
-{% referfrom '[2]','Hexo中文文档','[https://hexo.io/zh-cn/docs/](https://hexo.io/zh-cn/docs/)' %}
-{% referfrom '[3]','Butterfly 安装文档(一) 快速开始','[https://butterfly.js.org/posts/21cfbf15/](https://butterfly.js.org/posts/21cfbf15/)' %}
-{% referfrom '[4]','hexo-theme-volantis 标签插件','[https://volantis.js.org/v5/tag-plugins/](https://volantis.js.org/v5/tag-plugins/)' %}
-{% referfrom '[5]','Volantis文档:内置标签插件','[https://volantis.js.org/tag-plugins/](https://volantis.js.org/tag-plugins/)' %}
-{% referfrom '[6]','Butterfly 安装文档:标签外挂（Tag Plugins','[https://butterfly.js.org/posts/4aa8abbe/#標籤外掛（Tag-Plugins）](https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89)' %}
-{% referfrom '[7]','小弋の生活馆全样式预览','[https://lovelijunyi.gitee.io/posts/c898.html](https://lovelijunyi.gitee.io/posts/c898.html)' %}
-{% referfrom '[8]','l-lin-font-awesome-animation','[https://github.com/l-lin/font-awesome-animation](https://github.com/l-lin/font-awesome-animation)' %}
-{% referfrom '[9]','小康的butterfly主题使用文档','[https://www.antmoe.com/posts/3b43914f/](https://www.antmoe.com/posts/3b43914f/)' %}
+{% referfrom '[1]','Akilarの糖果屋群聊简介','https://jq.qq.com/?_wv=1027&k=pGLB2C0N' %}
+{% referfrom '[2]','Hexo中文文档','https://hexo.io/zh-cn/docs/' %}
+{% referfrom '[3]','Butterfly 安装文档(一) 快速开始','https://butterfly.js.org/posts/21cfbf15/' %}
+{% referfrom '[4]','hexo-theme-volantis 标签插件','https://volantis.js.org/v5/tag-plugins/' %}
+{% referfrom '[5]','Volantis文档:内置标签插件','https://volantis.js.org/tag-plugins/' %}
+{% referfrom '[6]','Butterfly 安装文档:标签外挂（Tag Plugins','https://butterfly.js.org/posts/4aa8abbe/#標籤外掛（Tag-Plugins）' %}
+{% referfrom '[7]','小弋の生活馆全样式预览','https://lovelijunyi.gitee.io/posts/c898.html' %}
+{% referfrom '[8]','l-lin-font-awesome-animation','https://github.com/l-lin/font-awesome-animation' %}
+{% referfrom '[9]','小康的butterfly主题使用文档','https://www.antmoe.com/posts/3b43914f/' %}
 
 ```markdown
 Akilar の糖果屋(akilar.top)是一个私人性质的博客{% referto '[1]','Akilarの糖果屋群聊简介' %}，从各类教程至生活点滴，无话不谈。建群的目的是提供一个闲聊的场所。博客采用 Hexo 框架{% referto '[2]','Hexo中文文档' %}，Butterfly 主题{% referto '[3]','Butterfly 安装文档(一) 快速开始' %}
@@ -2277,7 +2277,7 @@ Butterfly 主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:�
 {% referfrom '[9]','小康的butterfly主题使用文档','https://www.antmoe.com/posts/3b43914f/' %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 ## 旋转相册 carousel
 
