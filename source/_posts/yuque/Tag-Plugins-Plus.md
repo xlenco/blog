@@ -1,17 +1,14 @@
 ---
-title: Tag-Plugins-Plus
-cover: https://preview.cloud.189.cn/image/imageAction?param=32FD362F07854E186ECF47426BC05D78171838A5D2E778016D78A737933CDB78DCE3B92EAAAADC3B05EE4F686EF4F7F93D1761595C80701196F83BCF53B4EF4D0580E1B686868DC9FDFD5682AAEF8567414F3FFF4F4014DA21A17E699701A1AB4608072C332B241415FA131A04B1841A493DD03E
+
+
+
+## title: Tag-Plugins-Pluscover: [https://preview.cloud.189.cn/image/imageAction?param=32FD362F07854E186ECF47426BC05D78171838A5D2E778016D78A737933CDB78DCE3B92EAAAADC3B05EE4F686EF4F7F93D1761595C80701196F83BCF53B4EF4D0580E1B686868DC9FDFD5682AAEF8567414F3FFF4F4014DA21A17E699701A1AB4608072C332B241415FA131A04B1841A493DD03E](https://preview.cloud.189.cn/image/imageAction?param=32FD362F07854E186ECF47426BC05D78171838A5D2E778016D78A737933CDB78DCE3B92EAAAADC3B05EE4F686EF4F7F93D1761595C80701196F83BCF53B4EF4D0580E1B686868DC9FDFD5682AAEF8567414F3FFF4F4014DA21A17E699701A1AB4608072C332B241415FA131A04B1841A493DD03E)
 description: 添加大量外挂标签样式。
 date: 2022-12-31 22:22:44
 updated: 2022-12-31 22:22:44
----
 
-可能追根溯源找到了各部分魔改内容最初的作者，如有错误和遗漏还请联系我修改。
-{% endnote %}
+{% tabs 配置方案,1 %}
 
-{% timeline 开发记录,green %}
-
-1. 在 b{% tabs 配置方案,1 %}
 1. 安装插件,在博客根目录`[Blogroot]`下打开终端，运行以下指令：
 
 ```bash
@@ -26,7 +23,8 @@ npm install hexo-renderer-kramed --save
 ```
 
 2. 添加配置信息，以下为写法示例
-   在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
+
+在站点配置文件`_config.yml`或者主题配置文件`_config.butterfly.yml`中添加
 
 ```yaml
 # tag-plugins-plus
@@ -47,25 +45,31 @@ tag_plugins:
 ```
 
 3. 参数释义
-   | 参数 | 备选值/类型 | 释义 |
-   | --- | --- | --- |
-   | enable | true/false | 【必选】控制开关 |
-   | priority | number | 【可选】过滤器优先级，数值越小，执行越早，默认为 10，选填 |
-   | issues | true/false | 【可选】issues 标签控制开关，默认为 false |
-   | link.placeholder | 【必选】link 卡片外挂标签的默认图标 | |
-   | CDN.anima | URL | 【可选】动画标签 anima 的依赖 |
-   | CDN.jquery | URL | 【可选】issues 标签依赖 |
-   | CDN.issues | URL | 【可选】issues 标签依赖 |
-   | CDN.iconfont | URL | 【可选】iconfont 标签 symbol 样式引入，如果不想引入，则设为 false |
-   | CDN.carousel | URL | 【可选】carousel 旋转相册标签鼠标拖动依赖，如果不想引入则设为 false |
-   | CDN.tag_plugins_css | URL | 【可选】外挂标签样式的 CSS 依赖，为避免 CDN 缓存延迟，建议将@latest 改为具体版本号 |
+| 参数 | 备选值/类型 | 释义 |
+| --- | --- | --- |
+| enable | true/false | 【必选】控制开关 |
+| priority | number | 【可选】过滤器优先级，数值越小，执行越早，默认为 10，选填 |
+| issues | true/false | 【可选】issues 标签控制开关，默认为 false |
+| link.placeholder | 【必选】link 卡片外挂标签的默认图标 |  |
+| CDN.anima | URL | 【可选】动画标签 anima 的依赖 |
+| CDN.jquery | URL | 【可选】issues 标签依赖 |
+| CDN.issues | URL | 【可选】issues 标签依赖 |
+| CDN.iconfont | URL | 【可选】iconfont 标签 symbol 样式引入，如果不想引入，则设为 false |
+| CDN.carousel | URL | 【可选】carousel 旋转相册标签鼠标拖动依赖，如果不想引入则设为 false |
+| CDN.tag_plugins_css | URL | 【可选】外挂标签样式的 CSS 依赖，为避免 CDN 缓存延迟，建议将[@latest ](/latest ) 改为具体版本号  |
+
+
+
 
 {% tip info %}
+
 源码修改配置方案适用于不想应用全部外挂标签的用户，供熟悉外挂标签原理的用户自行选择装配需要的标签文件。
+
 {% endtip %}
 
 1. 下载资源文件
-   {% ghcard Akilarlxh/hexo-butterfly-tag-plugins-plus, theme="vue" %}
+
+{% ghcard Akilarlxh/hexo-butterfly-tag-plugins-plus, theme="vue" %}
 2. 将下载的`hexo-butterfly-tag-plugins-plus.zip`解压得到资源文件夹,下文以`[tag_plugins_file]`指代该文件夹。
 3. 将`[tag_plugins_file]\lib\scripts`目录下的文件放到`[Blogroot]\themes\butterfly\scripts\tag\`文件夹内。
 4. 将`[tag_plugins_file]\lib\style`目录下的文件放到`[Blogroot]\themes\butterfly\source\css\tags\`文件夹内。
@@ -93,6 +97,7 @@ npm install hexo-renderer-kramed --save
 6. 外挂标签使用方案请参阅下文。
 
 {% endtabs %}
+
 
 ## 行内文本样式 text
 
@@ -125,6 +130,7 @@ npm install hexo-renderer-kramed --save
 
 {% endtabs%}
 
+
 ## 行内文本 span
 
 {% tabs span,3 %}
@@ -139,11 +145,15 @@ npm install hexo-renderer-kramed --save
 4. 对齐方向: left, center, right
 
 - 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+
+在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 - 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% span center logo large, Volantis %}
-  {% span center small, A Wonderful Theme for Hexo %}
+
+文档「开始」页面中的标题部分就是超大号文字。
+
+{% span center logo large, Volantis %}
+
+{% span center small, A Wonderful Theme for Hexo %}
 
 ```markdown
 - 彩色文字
@@ -155,6 +165,7 @@ npm install hexo-renderer-kramed --save
 ```
 
 {% endtabs%}
+
 
 ## 段落文本 p
 
@@ -170,11 +181,15 @@ npm install hexo-renderer-kramed --save
 4. 对齐方向: left, center, right
 
 - 彩色文字
-  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+
+在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
 - 超大号文字
-  文档「开始」页面中的标题部分就是超大号文字。
-  {% p center logo large, Volantis %}
-  {% p center small, A Wonderful Theme for Hexo %}
+
+文档「开始」页面中的标题部分就是超大号文字。
+
+{% p center logo large, Volantis %}
+
+{% p center small, A Wonderful Theme for Hexo %}
 
 ```markdown
 - 彩色文字
@@ -187,15 +202,23 @@ npm install hexo-renderer-kramed --save
 
 {% endtabs%}
 
+
 ## 引用 note
 
 {% note warning %}
+
 最新版`butterfly`标签支持引用`fontawesome V5`图标，效果上已经优于`volantis`的 note 标签。故不再额外引入`volantis的note样式`。~~做样式适配好麻烦的啊，能偷懒就偷懒吧~~
+
 {% endnote %}
+
 {% note blue 'fas fa-bullhorn' modern %}
+
 以下是`butterfly`主题的 note 写法。
+
 {% endnote %}
+
 {% tabs note,4 %}
+
 修改主题配置文件
 
 ```yaml
@@ -214,6 +237,7 @@ note:
 ```
 
 `Note`标签外挂有两种用法。`icons`和`light_bg_offset`只对方法一生效。
+
 {% folding cyan , 方法一 %}
 
 ```markdown
@@ -233,28 +257,33 @@ Any content (support inline tags too.io).
 ```
 
 {% endfolding %}
+
 {% folding cyan , 方法一 %}
 
-| 参数                                                        | 用法                                 |
-| ----------------------------------------------------------- | ------------------------------------ |
-| class                                                       | 【可选】标识，不同的标识有不同的配色 |
-| （ default / primary / success / info / warning / danger ） |
-| no-icon                                                     | 【可选】不显示 icon                  |
-| style                                                       | 【可选】可以覆盖配置中的 style       |
-| （simple/modern/flat/disabled）                             |
+| 参数 | 用法 |
+| --- | --- |
+| class | 【可选】标识，不同的标识有不同的配色 |
+| （ default / primary / success / info / warning / danger ） |  |
+| no-icon | 【可选】不显示 icon |
+| style | 【可选】可以覆盖配置中的 style |
+| （simple/modern/flat/disabled） |  |
+
 
 {% endfolding %}
+
 {% folding blue , 方法二 %}
 
-| 参数                                                        | 用法                                                                     |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------ |
-| class                                                       | 【可选】标识，不同的标识有不同的配色                                     |
-| （ default / blue / pink / red / purple / orange / green ） |
-| no-icon                                                     | 【可选】可配置自定义 icon (只支持 fontawesome 图标, 也可以配置 no-icon ) |
-| style                                                       | 【可选】可以覆盖配置中的 style                                           |
-| （simple/modern/flat/disabled）                             |
+| 参数 | 用法 |
+| --- | --- |
+| class | 【可选】标识，不同的标识有不同的配色 |
+| （ default / blue / pink / red / purple / orange / green ） |  |
+| no-icon | 【可选】可配置自定义 icon (只支持 fontawesome 图标, 也可以配置 no-icon ) |
+| style | 【可选】可以覆盖配置中的 style |
+| （simple/modern/flat/disabled） |  |
+
 
 {% endfolding %}
+
 {% folding cyan , 方法一 %}
 
 1. `simple`样式
@@ -338,6 +367,7 @@ Any content (support inline tags too.io).
 {% note danger no-icon %}danger 提示块标签{% endnote %}
 
 {% endfolding %}
+
 {% folding blue , 方法二 %}
 
 1. simple 样式
@@ -421,6 +451,7 @@ Any content (support inline tags too.io).
 {% note green no-icon %}前端最讨厌的浏览器{% endnote %}
 
 {% endfolding %}
+
 {% folding cyan , 方法一 %}
 
 1. `simple`样式
@@ -514,6 +545,7 @@ Any content (support inline tags too.io).
 ```
 
 {% endfolding %}
+
 {% folding blue , 方法二 %}
 
 1. `simple`样式
@@ -607,12 +639,16 @@ Any content (support inline tags too.io).
 ```
 
 {% endfolding %}
+
 {% endtabs %}
+
 
 ## 上标标签 tip
 
 {% tip cogs %}
+
 主要样式参考自[小康的 butterfly 渐变背景标签](https://www.antmoe.com/posts/3b43914f/),自己写了个`tip.js`来渲染标签，精简了一下代码。
+
 {% endtip %}
 
 {% tabs tip,3 %}
@@ -625,17 +661,29 @@ Any content (support inline tags too.io).
 2. 自定义图标: 支持 fontawesome。
 
 {% tip %}default{% endtip %}
+
 {% tip info %}info{% endtip %}
+
 {% tip success %}success{% endtip %}
+
 {% tip error %}error{% endtip %}
+
 {% tip warning %}warning{% endtip %}
+
 {% tip bolt %}bolt{% endtip %}
+
 {% tip ban %}ban{% endtip %}
+
 {% tip home %}home{% endtip %}
+
 {% tip sync %}sync{% endtip %}
+
 {% tip cogs %}cogs{% endtip %}
+
 {% tip key %}key{% endtip %}
+
 {% tip bell %}bell{% endtip %}
+
 {% tip fa-atom %}自定义 font awesome 图标{% endtip %}
 
 ```markdown
@@ -656,11 +704,15 @@ Any content (support inline tags too.io).
 
 {% endtabs%}
 
+
 ## 动态标签 anima
 
 {% tip fa-gamepad faa-horizontal animated %}
+
 动态标签的实质是引用了[font-awesome-animation](https://github.com/l-lin/font-awesome-animation)的 css 样式，不一定局限于 tip 标签，也可以是其他标签。
+
 只不过这里`tip.js`是我自己写的，所以我清楚它会怎么被渲染成 html，才用的这个写法。
+
 可以熟读文档，使用 html 语言来编写其他标签类型。{% endtip %}
 
 {% tabs tip,3 %}
@@ -670,58 +722,82 @@ Any content (support inline tags too.io).
 ```
 
 {% note blue 'fas fa-bullhorn' simple %}
+
 更多详情请参看[font-awesome-animation 文档](http://l-lin.github.io/font-awesome-animation/)
 
-1. 将所需的 CSS 类添加到图标（或 DOM 中的任何元素）。
-2. 对于父级悬停样式，需要给目标元素添加指定 CSS 类，同时还要给目标元素的父级元素添加 CSS 类`faa-parent animated-hover`。（详情见示例及示例源码）
-   You can regulate the speed of the animation by adding the CSS class or . faa-fastfaa-slow
-3. 可以通过给目标元素添加 CSS 类`faa-fast`或`faa-slow`来控制动画快慢。
-   {% endnote %}
-   | On DOM load
-   当页面加载时
-   显示动画 | On hover
-   当鼠标悬停时
-   显示动画 | On parent hover
-   当鼠标悬停
-   在父级元素时
-   显示动画 |
-   | --- | --- | --- |
-   |  faa-wrench animated |  faa-wrench animated-hover |  faa-wrench |
-   |  faa-ring animated |  faa-ring animated-hover |  faa-ring |
-   |  faa-horizontal animated |  faa-horizontal animated-hover |  faa-horizontal |
-   |  faa-vertical animated |  faa-vertical animated-hover |  faa-vertical |
-   |  faa-flash animated |  faa-flash animated-hover |  faa-flash |
-   |  faa-bounce animated |  faa-bounce animated-hover |  faa-bounce |
-   |  faa-spin animated |  faa-spin animated-hover |  faa-spin |
-   |  faa-tada animated |  faa-tada animated-hover |  faa-tada |
-   |  faa-pulse animated |  faa-pulse animated-hover |  faa-pulse |
-   |  faa-shake animated |  faa-shake animated-hover |  faa-shake |
-   |  faa-tada animated |  faa-tada animated-hover |  faa-tada |
-   |  faa-passing animated |  faa-passing animated-hover |  faa-passing |
-   |  faa-passing-reverse animated |  faa-passing-reverse animated-hover |  faa-passing-reverse |
-   |  faa-burst animated |  faa-burst animated-hover |  faa-burst |
-   |  faa-falling animated |  faa-falling animated-hover |  faa-falling |
-   |  faa-rising animated |  faa-rising animated-hover |  faa-rising |
+1. 
+将所需的 CSS 类添加到图标（或 DOM 中的任何元素）。
 
-4. On DOM load（当页面加载时显示动画）
+2. 
+对于父级悬停样式，需要给目标元素添加指定 CSS 类，同时还要给目标元素的父级元素添加 CSS 类`faa-parent animated-hover`。（详情见示例及示例源码）
+
+You can regulate the speed of the animation by adding the CSS class or . faa-fastfaa-slow
+
+3. 
+可以通过给目标元素添加 CSS 类`faa-fast`或`faa-slow`来控制动画快慢。
+
+{% endnote %}
+
+| On DOM load
+
+当页面加载时
+
+显示动画 | On hover
+
+当鼠标悬停时
+
+显示动画 | On parent hover
+
+当鼠标悬停
+
+在父级元素时
+| 显示动画 |
+| --- |
+| faa-wrench animated |
+| faa-ring animated |
+| faa-horizontal animated |
+| faa-vertical animated |
+| faa-flash animated |
+| faa-bounce animated |
+| faa-spin animated |
+| faa-tada animated |
+| faa-pulse animated |
+| faa-shake animated |
+| faa-tada animated |
+| faa-passing animated |
+| faa-passing-reverse animated |
+| faa-burst animated |
+| faa-falling animated |
+| faa-rising animated |
+
+
+
+4. 
+On DOM load（当页面加载时显示动画）
+
 
 {% tip warning faa-horizontal animated %}warning{% endtip %}
+
 {% tip ban faa-flash animated %}ban{% endtip %}
 
 2. 调整动画速度。
 
 {% tip warning faa-horizontal animated faa-fast %}warning{% endtip %}
+
 {% tip ban faa-flash animated faa-slow %}ban{% endtip %}
 
 3. On hover（当鼠标悬停时显示动画）
 
 {% tip warning faa-horizontal animated-hover %}warning{% endtip %}
+
 {% tip ban faa-flash animated-hover %}ban{% endtip %}
 
 4. On parent hover（当鼠标悬停在父级元素时显示动画）
 
 {% tip warning faa-parent animated-hover %}
+
 warning
+
 ban
 
 1. On DOM load（当页面加载时显示动画）
@@ -754,6 +830,7 @@ ban
 
 {% endtabs%}
 
+
 ## 复选列表 checkbox
 
 {% tabs checkbox,3 %}
@@ -767,14 +844,23 @@ ban
 3. 选中状态: checked
 
 {% checkbox 纯文本测试 %}
+
 {% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+
 {% checkbox red, 支持自定义颜色 %}
+
 {% checkbox green checked, 绿色 + 默认选中 %}
+
 {% checkbox yellow checked, 黄色 + 默认选中 %}
+
 {% checkbox cyan checked, 青色 + 默认选中 %}
+
 {% checkbox blue checked, 蓝色 + 默认选中 %}
+
 {% checkbox plus green checked, 增加 %}
+
 {% checkbox minus yellow checked, 减少 %}
+
 {% checkbox times red checked, 叉 %}
 
 ```markdown
@@ -792,6 +878,7 @@ ban
 
 {% endtabs%}
 
+
 ## 单选列表 radio
 
 {% tabs radio,3 %}
@@ -804,11 +891,17 @@ ban
 2. 选中状态: checked
 
 {% radio 纯文本测试 %}
+
 {% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+
 {% radio red, 支持自定义颜色 %}
+
 {% radio green, 绿色 %}
+
 {% radio yellow, 黄色 %}
+
 {% radio cyan, 青色 %}
+
 {% radio blue, 蓝色 %}
 
 ```markdown
@@ -823,11 +916,15 @@ ban
 
 {% endtabs%}
 
+
 ## 时间轴 timeline
 
 {% tip fa-wrench %}
+
 插件版 v1.0.16 以后，为避免与 Butterfly_v4.0+版本中的 timeline 外挂标签冲突，已经移除了插件内的 timeline 外挂标签，请低于 Butterfly_v4.0 的用户升级主题或安装 1.0.15 版本的外挂标签插件，或者自行添加 timeline.js 和 timeline.styl 文件至对应文件夹。请使用了原有 timeline 外挂标签的用户受累替换语法格式。
+
 Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意也更加清晰。
+
 {% endtip %}
 
 {% tabs timeline,2 %}
@@ -848,12 +945,12 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 
 {% endtimeline %}
 ```
+| 参数 | 解释 |
+| --- | --- |
+| title | 标题/时间线 |
+| color | `timeline` |
+| 颜色:default(留空) / blue / pink / red / purple / orange / green |  |
 
-| 参数                                                             | 解释        |
-| ---------------------------------------------------------------- | ----------- |
-| title                                                            | 标题/时间线 |
-| color                                                            | `timeline`  |
-| 颜色:default(留空) / blue / pink / red / purple / orange / green |
 
 {% timeline 时间轴样式,blue %}
 
@@ -903,6 +1000,7 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 
 {% endtabs%}
 
+
 ## 链接卡片 link
 
 {% tabs link,2 %}
@@ -919,11 +1017,15 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 
 {% endtabs%}
 
+
 ## 按钮 btns
 
 {% note blue 'fas fa-bullhorn' simple %}
+
 `Volantis`的按钮使用的是`btn`和`btns`标签。`btns`和`butterfly`的`button`不冲突，但是`btn`会被强制渲染，导致部分参数失效,而且`btn`的效果还是`butterfly`的`button`更好看些。所以就只适配了`btns`。
+
 {% endnote %}
+
 {% tabs btn,3 %}
 
 ```markdown
@@ -933,53 +1035,77 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 {% endbtns %}
 ```
 
-1. 圆角样式：rounded, circle
-2. 增加文字样式：可以在容器内增加 `<b>标题</b>`和`<p>描述文字</p>`
-3. 布局方式：
-   默认为自动宽度，适合视野内只有一两个的情况。
-   | 参数 | 含义 |
-   | --- | --- |
-   | wide | 宽一点的按钮 |
-   | fill | 填充布局，自动铺满至少一行，多了会换行 |
-   | center | 居中，按钮之间是固定间距 |
-   | around | 居中分散 |
-   | grid2 | 等宽最多 2 列，屏幕变窄会适当减少列数 |
-   | grid3 | 等宽最多 3 列，屏幕变窄会适当减少列数 |
-   | grid4 | 等宽最多 4 列，屏幕变窄会适当减少列数 |
-   | grid5 | 等宽最多 5 列，屏幕变窄会适当减少列数 |
+1. 
+圆角样式：rounded, circle
 
-4. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
+2. 
+增加文字样式：可以在容器内增加 `<b>标题</b>`和`<p>描述文字</p>`
+
+3. 
+布局方式：
+
+默认为自动宽度，适合视野内只有一两个的情况。
+| 参数 | 含义 |
+| --- | --- |
+| wide | 宽一点的按钮 |
+| fill | 填充布局，自动铺满至少一行，多了会换行 |
+| center | 居中，按钮之间是固定间距 |
+| around | 居中分散 |
+| grid2 | 等宽最多 2 列，屏幕变窄会适当减少列数 |
+| grid3 | 等宽最多 3 列，屏幕变窄会适当减少列数 |
+| grid4 | 等宽最多 4 列，屏幕变窄会适当减少列数 |
+| grid5 | 等宽最多 5 列，屏幕变窄会适当减少列数 |
+
+
+
+4. 
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
+
 
 {% btns circle grid5 %}
+
 {% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+
 {% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+
 {% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+
 {% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+
 {% cell xaoxuu, [https://xaoxuu.com](https://xaoxuu.com), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png) %}
+
 {% endbtns %}
 
 2. 或者含有图标的按钮：
 
 {% btns rounded grid5 %}
+
 {% cell 下载源码, /, fas fa-download %}
+
 {% cell 查看文档, /, fas fa-book-open %}
+
 {% endbtns %}
 
 3. 圆形图标 + 标题 + 描述 + 图片 + 网格 5 列 + 居中
 
 {% btns circle center grid5 %}
+
 [
 
 **心率管家**
+
 {% p red, 专业版 %}
 
-](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1)![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+]([https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1](https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png#crop=0&crop=0&crop=1&crop=1&id=AECMh&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
 [
 
 **心率管家**
+
 {% p green, 免费版 %}
 
-](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1)![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+]([https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1](https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1))![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png#crop=0&crop=0&crop=1&crop=1&id=yMdZG&originHeight=300&originWidth=300&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
 {% endbtns %}
 
 1. 如果需要显示类似「团队成员」之类的一组含有头像的链接：
@@ -1024,10 +1150,13 @@ Butterfly_v4.0+自带的 timeline 外挂标签样式更加好看。语法语意�
 
 {% endtabs%}
 
+
 ## github 卡片 ghcard
 
 {% note blue 'fas fa-bullhorn' modern %}
+
 ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语法来写。
+
 {% endnote %}
 
 {% tabs ghcard,3 %}
@@ -1038,32 +1167,44 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 ```
 
 更多参数可以参考：
+
 {% ghcard anuraghazra/github-readme-stats %}
+
 使用`,`分割各个参数。写法为：`参数名=参数值`
+
 以下只写几个常用参数值。
 
-| 参数名        | 取值                                                                                                      | 释义                             |
-| ------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| hide          | stars,commits,prs,issues,contribs                                                                         | 隐藏指定统计                     |
-| count_private | true                                                                                                      | 将私人项目贡献添加到总提交计数中 |
-| show_icons    | true                                                                                                      | 显示图标                         |
-| theme         | 请查阅[Available Themes](https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md) | 主题                             |
+| 参数名 | 取值 | 释义 |
+| --- | --- | --- |
+| hide | stars,commits,prs,issues,contribs | 隐藏指定统计 |
+| count_private | true | 将私人项目贡献添加到总提交计数中 |
+| show_icons | true | 显示图标 |
+| theme | 请查阅[Available Themes](https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md) | 主题 |
 
-1. 用户信息卡片
-   | {% ghcard xaoxuu %} | {% ghcard xaoxuu, theme=vue %} |
-   | --- | --- |
-   | {% ghcard xaoxuu, theme=buefy %} | {% ghcard xaoxuu, theme=solarized-light %} |
-   | {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %} |
-   | {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %} |
 
-2. 仓库信息卡片
-   | {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
-   | --- | --- |
-   | {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-   | {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-   | {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
+1. 
+用户信息卡片
+| {% ghcard xaoxuu %} | {% ghcard xaoxuu, theme=vue %} |
+| --- | --- |
+| {% ghcard xaoxuu, theme=buefy %} | {% ghcard xaoxuu, theme=solarized-light %} |
+| {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %} |
+| {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %} |
 
-3. 用户信息卡片
+
+
+2. 
+仓库信息卡片
+| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
+| --- | --- |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
+| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
+
+
+
+3. 
+用户信息卡片
+
 
 ```markdown
 | {% ghcard xaoxuu %}                | {% ghcard xaoxuu, theme=vue %}             |
@@ -1085,11 +1226,15 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% endtabs%}
 
+
 ## github 徽标 ghbdage
 
 {% tip cogs %}
+
 关于 ghbdage 参数的更多具体用法可以参看站内教程：[添加 github 徽标](/posts/e87ad7f8)
+
 {% endtip %}
+
 {% tabs ghbdage,3 %}
 
 ```markdown
@@ -1105,22 +1250,29 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 7. `option`：自定义参数，支持[shields.io](https://shields.io/)的全部 API 参数支持，具体参数可以参看上文中的拓展写法示例。形式为`name1=value2&name2=value2`。
 
 {% note info modern %}
+
 本外挂标签的参数分为三组，用`||`分割。
+
 {% endnote %}
 
 1. 基本参数
 
 {% bdage Theme,Butterfly %}
+
 {% bdage Frame,Hexo,hexo %} 2. 信息参数
 
 {% bdage CDN,JsDelivr,jsDelivr||abcdef,https://metroui.org.ua/index.html,本站使用JsDelivr为静态资源提供CDN加速 %}
+
 {% bdage Source,GitHub,GitHub||,[https://github.com/](https://github.com/) %} 3. 拓展参数
 
 {% bdage Hosted,Vercel,Vercel||brightgreen,https://vercel.com/,本站采用双线部署，默认线路托管于Vercel||style=social&logoWidth=40 %}
+
 {% bdage Hosted,Vercel,Vercel||||style=social&logoWidth=40&logoColor=violet %}
 
 {% note info modern %}
+
 本外挂标签的参数分为三组，用`||`分割。
+
 {% endnote %}
 
 1. 基本参数,定义徽标左右文字和图标
@@ -1148,6 +1300,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% endtabs%}
 
+
 ## 网站卡片 sites
 
 {% tabs site,2 %}
@@ -1160,11 +1313,17 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 ```
 
 {% sitegroup %}
+
 {% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
+
 {% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+
 {% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
+
 {% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+
 {% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
+
 {% endsitegroup %}
 
 ```markdown
@@ -1178,6 +1337,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 ```
 
 {% endtabs%}
+
 
 ## 行内图片 inlineimage
 
@@ -1200,6 +1360,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 ```
 
 {% endtabs%}
+
 
 ## 单张图片 image
 
@@ -1254,6 +1415,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% endtabs%}
 
+
 ## 音频 audio
 
 {% tabs audio,2 %}
@@ -1270,6 +1432,7 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% endtabs%}
 
+
 ## 视频 video
 
 {% tabs video,3 %}
@@ -1284,24 +1447,39 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
 
-2.  50%宽度
-    {% videos, 2 %}
-    {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-    {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-    {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-    {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
-    {% endvideos %}
-3.  25%宽度
+2. 50%宽度
+
+{% videos, 2 %}
+
+{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
+{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
+{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
+{% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
+{% endvideos %}
+3. 25%宽度
 
 {% videos, 4 %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% video [https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov](https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov) %}
+
 {% endvideos %}
 
 1. 100%宽度
@@ -1338,13 +1516,19 @@ ghcard 使用了`github-readme-stats`的 API，支持直接使用 markdown 语�
 
 {% endtabs%}
 
+
 ## 相册 gallery
 
 {% note blue 'fas fa-bullhorn' disabled %}
+
 `Butterfly`自带`gallery`相册，而且会根据图片大小自动调整排版，效果比`Volantis`的`gallery`更好，故不再收录`Volantis`的`gallery`标签。
+
 {% endnote %}
+
 {% note %}
+
 以下为`Butterfly`自带的`gallery`标签写法。相册图库和相册配合使用。
+
 {% endnote %}
 
 {% tabs gallery,3 %}
@@ -1368,36 +1552,60 @@ markdown 圖片格式
 ```
 
 - gallerygroup 相册图库
-  | 参数名 | 释义 |
-  | --- | --- |
-  | name | 图库名字 |
-  | description | 图库描述 |
-  | link | 链接到对应相册的地址 |
-  | img-url | 图库封面 |
+| 参数名 | 释义 |
+| --- | --- |
+| name | 图库名字 |
+| description | 图库描述 |
+| link | 链接到对应相册的地址 |
+| img-url | 图库封面 |
+
+
+
 
 {% note info %}
+
 思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、QQ、友链都是不错的选择。
+
 {% endnote %}
 
-- gallery 相册
-  区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。**建议在粘贴时故意使用长短、大小、横竖不一的图片**，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）
-- gallerygroup 相册图库
+- 
+gallery 相册
 
-- gallery 相册
+区别于旧版的 Gallery 相册,新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。无需再自己配置长宽。**建议在粘贴时故意使用长短、大小、横竖不一的图片**，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）
+
+- 
+gallerygroup 相册图库
+
+- 
+gallery 相册
+
 
 {% gallery %}
-![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg#crop=0&crop=0&crop=1&crop=1&id=nxDig&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg#crop=0&crop=0&crop=1&crop=1&id=uFN68&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg#crop=0&crop=0&crop=1&crop=1&id=iGbb9&originHeight=485&originWidth=679&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg#crop=0&crop=0&crop=1&crop=1&id=Hx3Rf&originHeight=800&originWidth=571&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg#crop=0&crop=0&crop=1&crop=1&id=ISADg&originHeight=800&originWidth=571&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg#crop=0&crop=0&crop=1&crop=1&id=zAGYU&originHeight=800&originWidth=800&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg#crop=0&crop=0&crop=1&crop=1&id=Zudvd&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg#crop=0&crop=0&crop=1&crop=1&id=ShOpe&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+
+![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg#crop=0&crop=0&crop=1&crop=1&id=nxDig&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg#crop=0&crop=0&crop=1&crop=1&id=uFN68&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg#crop=0&crop=0&crop=1&crop=1&id=iGbb9&originHeight=485&originWidth=679&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg#crop=0&crop=0&crop=1&crop=1&id=Hx3Rf&originHeight=800&originWidth=571&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg#crop=0&crop=0&crop=1&crop=1&id=ISADg&originHeight=800&originWidth=571&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg#crop=0&crop=0&crop=1&crop=1&id=zAGYU&originHeight=800&originWidth=800&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg#crop=0&crop=0&crop=1&crop=1&id=Zudvd&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg#crop=0&crop=0&crop=1&crop=1&id=ShOpe&originHeight=642&originWidth=900&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
 {% endgallery %}
+
 {% note info %}
+
 对于很多同学提问的`gallerygroup`和`gallery`相册页的链接问题。这里说下我个人的使用习惯。
+
 一般使用相册图库的话，可以在导航栏加一个 gallery 的 page(**使用指令**`**hexo new page gallery**`**添加**)，里面放相册图库作为封面。然后在`[Blogroot]/source/gallery/`下面建立相应的文件夹，例如若按照这里的示例，若欲使用`/gallery/MC/`路径访问 MC 相册，则需要新建`[Blogroot]/source/gallery/MC/index.md`，并在里面填入`gallery`相册内容。
+
 {% endnote %}
 
 1. gallerygroup 相册图库
@@ -1427,11 +1635,15 @@ markdown 圖片格式
 
 {% endtabs%}
 
+
 ## 折叠框 folding
 
 {% note blue 'fas fa-bullhorn' disabled %}
+
 `Butterfly`虽然也有内置折叠框`hideToggle`标签，但是`Volantis`的`folding`折叠框更好看一些。
+
 {% endnote %}
+
 {% tabs folding,3 %}
 
 ```markdown
@@ -1445,7 +1657,7 @@ markdown 圖片格式
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#crop=0&crop=0&crop=1&crop=1&id=Yovh1&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#crop=0&crop=0&crop=1&crop=1&id=Yovh1&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 {% endfolding %}
 
@@ -1476,7 +1688,7 @@ markdown 圖片格式
 
 {% folding 查看嵌套测试3 %}
 
-hahaha ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png#crop=0&crop=0&crop=1&crop=1&id=yGvrA&originHeight=60&originWidth=60&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+hahaha ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png#crop=0&crop=0&crop=1&crop=1&id=yGvrA&originHeight=60&originWidth=60&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 {% endfolding %}
 
@@ -1525,11 +1737,15 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 {% endtabs%}
 
+
 ## 分栏 tab
 
 {% note blue 'fas fa-bullhorn' disabled %}
+
 `Butterfly`的`tab`标签和`Volantis`的`tab`标签都是移值自`NexT`主题，所以写法和效果一模一样。
+
 {% endnote %}
+
 {% tabs folding,3 %}
 
 ```markdown
@@ -1545,67 +1761,98 @@ Any content (support inline tags too).
 ```
 
 1. Unique name :
+
    - 选项卡块标签的唯一名称，不带逗号。
    - 将在#id 中用作每个标签及其索引号的前缀。
    - 如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。
    - 仅当前帖子/页面的 URL 必须是唯一的！
 2. [index]:
+
    - 活动选项卡的索引号。
    - 如果未指定，将选择第一个标签（1）。
    - 如果 index 为-1，则不会选择任何选项卡。
    - 可选参数。
 3. [Tab caption]:
+
    - 当前选项卡的标题。
    - 如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。
    - 如果未指定标题，但指定了图标，则标题将为空。
    - 可选参数。
 4. [@icon]:
+
    - FontAwesome 图标名称（全名，看起来像“ fas fa-font”）
    - 可以指定带空格或不带空格；
    - 例如'Tab caption @icon' 和 'Tab caption@icon'.
    - 可选参数。
 
 {% note primary %}
+
 Demo 1 - 预设选择第一个【默认】
+
 {% endnote %}
 
 {% tabs test1 %}
+
 **This is Tab 1.**
+
 **This is Tab 2.**
+
 **This is Tab 3.**
+
 {% endtabs %}
 
 {% note primary %}
+
 Demo 2 - 预设选择 tabs
+
 {% endnote %}
 
 {% tabs test2, 3 %}
+
 **This is Tab 1.**
+
 **This is Tab 2.**
+
 **This is Tab 3.**
+
 {% endtabs %}
 
 {% note primary %}
+
 Demo 3 - 没有预设值
+
 {% endnote %}
 
 {% tabs test3, -1 %}
+
 **This is Tab 1.**
+
 **This is Tab 2.**
+
 **This is Tab 3.**
+
 {% endtabs %}
 
 {% note primary %}
+
 Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
 {% endnote %}
 
 {% tabs test4 %}
+
 **tab 名字为第一个 Tab**
+
 **只有图标 没有 Tab 名字**
+
 **名字+icon**
+
 {% endtabs %}
+
 {% note primary %}
+
 Demo 1 - 预设选择第一个【默认】
+
 {% endnote %}
 
 ```markdown
@@ -1633,7 +1880,9 @@ Demo 1 - 预设选择第一个【默认】
 ```
 
 {% note primary %}
+
 Demo 2 - 预设选择 tabs
+
 {% endnote %}
 
 ```markdown
@@ -1661,7 +1910,9 @@ Demo 2 - 预设选择 tabs
 ```
 
 {% note primary %}
+
 Demo 3 - 没有预设值
+
 {% endnote %}
 
 ```markdown
@@ -1689,7 +1940,9 @@ Demo 3 - 没有预设值
 ```
 
 {% note primary %}
+
 Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
+
 {% endnote %}
 
 ```markdown
@@ -1718,6 +1971,7 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
 
 {% endtabs%}
 
+
 ## 数据集合 issues
 
 {% tabs issues,3 %}
@@ -1727,6 +1981,7 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
 ```
 
 {% span center logo large, type(类型)： %}
+
 根据需求不同，会将 issues 内容解析成不同的 HTML 标签，目前支持的类型有：
 
 1. 时间轴`timeline`: 解析成`timeline`标签，`issue`的标题对应`timeline`的时间，`issue`的内容对应`timeline`的内容。
@@ -1742,44 +1997,57 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
   "「keywords」": ""
 }
 ```
+| 参数 | 释义 |
+| --- | --- |
+| title | 网站名称 |
+| screenshot | 网站预览图 |
+| url | 网站链接，需要添加 |
 
-| 参数       | 释义               |
-| ---------- | ------------------ |
-| title      | 网站名称           |
-| screenshot | 网站预览图         |
-| url        | 网站链接，需要添加 |
 
 `https://`
+
 协议组成完整域名。
+
 否则可能被识别成站点相对路径。 |
+
 | avatar | 站长头像 |
+
 | 「keywords」 | 分组依据，
+
 未必要叫「keywords」，
+
 详见下文 group(分组) |
 
 {% span center logo large, api(接口)： %}
+
 url 为可以调的通的 API，例如：
 
 ```
 api=https://gitee.com/api/v5/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active
 api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active
 ```
+| 参数 | 释义 |
+| --- | --- |
+| [https://gitee.com/api/v5/](https://gitee.com/api/v5/) | gitee 仓库的 api |
+| [https://api.github.com/](https://api.github.com/) | github 仓库的 api |
+| repos/xaoxuu/friends/issues | repos/用户名/仓库名/issues |
+| sort=updated&state=open | 界定哪些类型的`issues` |
 
-| 参数                                                   | 释义                       |
-| ------------------------------------------------------ | -------------------------- |
-| [https://gitee.com/api/v5/](https://gitee.com/api/v5/) | gitee 仓库的 api           |
-| [https://api.github.com/](https://api.github.com/)     | github 仓库的 api          |
-| repos/xaoxuu/friends/issues                            | repos/用户名/仓库名/issues |
-| sort=updated&state=open                                | 界定哪些类型的`issues`     |
 
 会
+
 被读取过来渲染成相应的标签 |
+
 | page=1&per_page=100 | 读取前 100 条 issues |
+
 | labels=active | 控制默认的 issue 不显示，
+
 只有自己审核通过
+
 添加了 active 标签之后才会显示 |
 
 {% span center logo large, group(分组)： %}
+
 `sites`类型的`issues`默认不分组，如果需要分组，可指定分组依据`「keywords」`，和分组白名单`「value1」`、`「value2」`等，例如：
 
 ```yaml
@@ -1794,17 +2062,23 @@ group=version:v4,v3,v2
 {% folding green,Github仓库配置方案 %}
 
 1. 新建一个仓库，仓库名随意，这里我命名为`friend_link`,
-   新建文件`friend_link\.github\ISSUE_TEMPLATE.md`,
-   并在其中输入以下内容作为`issues`模板。
+
+新建文件`friend_link\.github\ISSUE_TEMPLATE.md`,
+
+并在其中输入以下内容作为`issues`模板。
 
 {% tip warning faa-horizontal animated fa-slow %}
+
 其中的 json 代码块前面的反斜杠记得删去。此处这么写主要是为了转义，否则无法嵌套代码块。
+
 {% endtip %}
 
-````markdown
+```markdown
 ---
+
 name: 友链模板
 about: 请根据指示规范填写友链格式。
+
 ---
 
 <!-- 请在下方代码块的双引号中填写 -->
@@ -1839,18 +2113,20 @@ about: 请根据指示规范填写友链格式。
 "description": "期待您的光临！",
 "keywords": "糖果屋"
 -->
+
 ````
 
 2. 新建 active label
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/d63b5c0c.png#crop=0&crop=0&crop=1&crop=1&id=Kt8S3&originHeight=344&originWidth=1586&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/d63b5c0c.png#crop=0&crop=0&crop=1&crop=1&id=Kt8S3&originHeight=344&originWidth=1586&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/6311f960.png#crop=0&crop=0&crop=1&crop=1&id=R6Pyu&originHeight=229&originWidth=1263&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/6311f960.png#crop=0&crop=0&crop=1&crop=1&id=R6Pyu&originHeight=229&originWidth=1263&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 3. 提交示例
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/f87ebfd3.png#crop=0&crop=0&crop=1&crop=1&id=X0jT3&originHeight=715&originWidth=1100&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://npm.elemecdn.com/akilar-candyassets/image/efdfc67d.png#crop=0&crop=0&crop=1&crop=1&id=zOfIn&originHeight=224&originWidth=1361&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/f87ebfd3.png#crop=0&crop=0&crop=1&crop=1&id=X0jT3&originHeight=715&originWidth=1100&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://npm.elemecdn.com/akilar-candyassets/image/efdfc67d.png#crop=0&crop=0&crop=1&crop=1&id=zOfIn&originHeight=224&originWidth=1361&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 4. 从审核通过到页面读取有一段 api 的缓存期，稍微有点耐心。
 
@@ -1859,14 +2135,18 @@ about: 请根据指示规范填写友链格式。
 {% folding yellow,Gitee仓库配置方案 %}
 
 1. 新建一个仓库，仓库名随意，这里我命名为`friend_link`,
-   新建文件`friend_link\.gitee\ISSUE_TEMPLATE.md`,
-   并在其中输入以下内容作为`issues`模板。
+
+新建文件`friend_link\.gitee\ISSUE_TEMPLATE.md`,
+
+并在其中输入以下内容作为`issues`模板。
 
 {% tip warning faa-horizontal animated fa-slow %}
+
 其中的 json 代码块前面的反斜杠记得删去。此处这么写主要是为了转义，否则无法嵌套代码块。
+
 {% endtip %}
 
-````markdown
+```markdown
 ---
 name: 友链模板
 about: 请根据指示规范填写友链格式。
@@ -1908,39 +2188,53 @@ about: 请根据指示规范填写友链格式。
 
 2. 新建 active 标签
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/7522911b.png#crop=0&crop=0&crop=1&crop=1&id=U69lK&originHeight=495&originWidth=475&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/7522911b.png#crop=0&crop=0&crop=1&crop=1&id=U69lK&originHeight=495&originWidth=475&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 3. 提交示例
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/dd334eea.png#crop=0&crop=0&crop=1&crop=1&id=VF8P3&originHeight=559&originWidth=871&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](https://npm.elemecdn.com/akilar-candyassets/image/72d06ae1.png#crop=0&crop=0&crop=1&crop=1&id=EAKWM&originHeight=599&originWidth=1316&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/dd334eea.png#crop=0&crop=0&crop=1&crop=1&id=VF8P3&originHeight=559&originWidth=871&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
+![](https://npm.elemecdn.com/akilar-candyassets/image/72d06ae1.png#crop=0&crop=0&crop=1&crop=1&id=EAKWM&originHeight=599&originWidth=1316&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
 
 4. 从审核通过到页面读取有一段 api 的缓存期，稍微有点耐心。
 
 {% endfolding %}
 
 1. 时间轴标签`timeline`渲染
-   对应的仓库`issues`链接:
-   {% link xaoxuu/timeline, [https://gitee.com/xaoxuu/timeline/issues](https://gitee.com/xaoxuu/timeline/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+
+对应的仓库`issues`链接:
+
+{% link xaoxuu/timeline, [https://gitee.com/xaoxuu/timeline/issues](https://gitee.com/xaoxuu/timeline/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
 
 {% issues timeline | api=https://gitee.com/api/v5/repos/xaoxuu/timeline/issues?state=open&creator=xaoxuu&sort=created&direction=desc&page=1&per_page=100 %}
 
 2. 网站卡片标签`sites`渲染
 
 - gitee 仓库示例
-  对应的仓库`issues`链接:
-  {% link xaoxuu/friends, [https://gitee.com/xaoxuu/friends/issues](https://gitee.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
-  渲染后的标签：
-  {% issues sites | api=https://gitee.com/api/v5/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
+
+对应的仓库`issues`链接:
+
+{% link xaoxuu/friends, [https://gitee.com/xaoxuu/friends/issues](https://gitee.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+
+渲染后的标签：
+
+{% issues sites | api=https://gitee.com/api/v5/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
+
 - github 仓库示例
-  对应的仓库`issues`链接:
-  {% link xaoxuu/friends, [https://github.com/xaoxuu/friends/issues](https://github.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
-  渲染后的标签：
-  {% issues sites | api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
+
+对应的仓库`issues`链接:
+
+{% link xaoxuu/friends, [https://github.com/xaoxuu/friends/issues](https://github.com/xaoxuu/friends/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
+
+渲染后的标签：
+
+{% issues sites | api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
 
 3. 网站卡片标签`sites`分组渲染
-   这是`Volantis`主题官网的「示例博客」页面的数据：
-   对应的仓库`issues`链接:
+
+这是`Volantis`主题官网的「示例博客」页面的数据：
+
+对应的仓库`issues`链接:
 
 {% link 如何参与项目, [https://github.com/volantis-x/examples/issues](https://github.com/volantis-x/examples/issues), [https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png) %}
 
@@ -1969,7 +2263,8 @@ about: 请根据指示规范填写友链格式。
 ```
 
 3. 网站卡片标签`sites`分组渲染
-   这是`Volantis`主题官网的「示例博客」页面的数据：
+
+这是`Volantis`主题官网的「示例博客」页面的数据：
 
 ```markdown
 {% issues sites | api=https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100 | group=version:版本：^4.0,版本：^3.0,版本：^2.0 %}
@@ -1993,13 +2288,21 @@ about: 请根据指示规范填写友链格式。
 {% poem 水调歌头,苏轼 %}
 
 明月几时有？把酒问青天。
+
 不知天上宫阙，今夕是何年？
+
 我欲乘风归去，又恐琼楼玉宇，高处不胜寒。
+
 起舞弄清影，何似在人间？
+
 转朱阁，低绮户，照无眠。
+
 不应有恨，何事长向别时圆？
+
 人有悲欢离合，月有阴晴圆缺，此事古难全。
+
 但愿人长久，千里共婵娟。
+
 {% endpoem %}
 
 ```markdown
@@ -2022,7 +2325,9 @@ about: 请根据指示规范填写友链格式。
 ## 阿里图标 icon
 
 {% tip cogs %}
+
 本标签的图标需要自己额外引入阿里矢量图标库的样式，具体引入方案请移步：[Hexo 引入阿里矢量图标库](/posts/d2ebecef/)
+
 {% endtip %}
 
 {% tabs icon示例,3 %}
@@ -2070,8 +2375,11 @@ about: 请根据指示规范填写友链格式。
 ## 特效标签 wow
 
 {% note blue 'fas fa-bullhorn' modern%}
+
 特效标签的静态资源未添加在本帖的配置内容中（因为多为 cdn 配置），请移步站内教程完成相关配置：
+
 {% link 使用wowjs给博客添加动画效果, /posts/abab51cf/, [https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico](https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.ico) %}
+
 {% endnote %}
 
 {% tabs animate,3 %}
@@ -2089,35 +2397,54 @@ about: 请根据指示规范填写友链格式。
 5. `iteration`: 选填项，动画重复的次数
 
 {% note warning %}
+
 注意，后面四个虽然是选填项，但是当有跨位选填时，次序不能乱。详见示例。
+
 支持嵌套其他外挂标签。
+
 {% endnote %}
 
 1. `flip`动画效果。
-   {% wow animate__flip %}
-   {% note green 'fas fa-fan' modern%}
-   `flip`动画效果。
-   {% endnote %}
-   {% endwow %}
-2. `zoomIn`动画效果，持续`5s`，延时`5s`，离底部`100`距离时启动，重复`10`次。
-   {% wow animate__zoomIn,5s,5s,100,10 %}
-   {% note blue 'fas fa-bullhorn' modern%}
-   `zoomIn`动画效果，持续`5s`，延时`5s`，离底部`100`距离时启动，重复`10`次
-   {% endnote %}
-   {% endwow %}
-3. `slideInRight`动画效果，持续`5s`，延时`5s`。
-   {% wow animate__slideInRight,5s,5s %}
-   {% note orange 'fas fa-car' modern%}
-   `slideInRight`动画效果，持续`5s`，延时`5s`。
-   {% endnote %}
-   {% endwow %}
-4. `heartBeat`动画效果，延时`5s`，重复`10`次。
-   {% wow animate__heartBeat,,5s,,10 %}
-   {% note red 'fas fa-battery-half' modern%}
-   `heartBeat`动画效果，延时`5s`，重复`10`次。
-   {% endnote %}
-   {% endwow %}
-5. `flip`动画效果。
+
+{% wow animate__flip %}
+
+{% note green 'fas fa-fan' modern%}
+
+`flip`动画效果。
+
+{% endnote %}
+
+{% endwow %} 2. `zoomIn`动画效果，持续`5s`，延时`5s`，离底部`100`距离时启动，重复`10`次。
+
+{% wow animate__zoomIn,5s,5s,100,10 %}
+
+{% note blue 'fas fa-bullhorn' modern%}
+
+`zoomIn`动画效果，持续`5s`，延时`5s`，离底部`100`距离时启动，重复`10`次
+
+{% endnote %}
+
+{% endwow %} 3. `slideInRight`动画效果，持续`5s`，延时`5s`。
+
+{% wow animate__slideInRight,5s,5s %}
+
+{% note orange 'fas fa-car' modern%}
+
+`slideInRight`动画效果，持续`5s`，延时`5s`。
+
+{% endnote %}
+
+{% endwow %} 4. `heartBeat`动画效果，延时`5s`，重复`10`次。
+
+{% wow animate__heartBeat,,5s,,10 %}
+
+{% note red 'fas fa-battery-half' modern%}
+
+`heartBeat`动画效果，延时`5s`，重复`10`次。
+
+{% endnote %}
+
+{% endwow %} 5. `flip`动画效果。
 
 ```markdown
 {% wow animate__flip %}
@@ -2162,9 +2489,13 @@ about: 请根据指示规范填写友链格式。
 ## 进度条 progress
 
 {% note info morden %}
+
 进度条标签参考[沂佰孜猫-给 HEXO 文章添加彩色进度条](https://rongbuqiu.com/jdt.html)。
+
 源样式提取自[Cuteen](https://zwying0814.gitbook.io/cuteen/)主题。
+
 {% endnote %}
+
 {% tabs progress,3 %}
 
 ```markdown
@@ -2172,13 +2503,21 @@ about: 请根据指示规范填写友链格式。
 ```
 
 `width`: 0 到 100 的阿拉伯数字
+
 `color`: 颜色，取值有{% span red, red %},{% span yellow, yellow %},{% span green, green %},{% span cyan, cyan %},{% span blue, blue %},{% span gray, gray %}
+
 `text`:进度条上的文字内容
+
 {% progress 10 red 进度条样式预览 %}
+
 {% progress 30 yellow 进度条样式预览 %}
+
 {% progress 50 green 进度条样式预览 %}
+
 {% progress 70 cyan 进度条样式预览 %}
+
 {% progress 90 blue 进度条样式预览 %}
+
 {% progress 100 gray 进度条样式预览 %}
 
 ```markdown
@@ -2201,7 +2540,9 @@ about: 请根据指示规范填写友链格式。
 ```
 
 `label`: 注释词汇
+
 `text`: 悬停显示的注解内容
+
 {% nota 把鼠标移动到我上面试试 ,可以看到注解内容出现在顶栏 %}
 
 ```markdown
@@ -2219,8 +2560,11 @@ about: 请根据指示规范填写友链格式。
 ```
 
 `content`: 注释词汇
+
 `notation`: 悬停显示的注解内容
+
 `background-color`: 可选，气泡背景色。默认为“#71a4e3”
+
 {% raw %}
 
 最近我学到了不少新玩意儿（虽然对很多大佬来说这些已经是旧技术了），比如 CSS 的兄弟相邻选择器例如 h1 + p {margin-top:50px;}，flex 布局 Flex 是 Flexible Box 的缩写，意为弹性布局 "，用来为盒状模型提供最大的灵活性"，transform 变换 transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。，animation 的贝塞尔速度曲线贝塞尔曲线 (Bézier curve)，又称贝兹曲线或贝济埃曲线，是应用于二维图形应用程序的数学曲线。一般的矢量图形软件通过它来精确画出曲线，贝兹曲线由线段与节点组成，节点是可拖动的支点，线段像可伸缩的皮筋写法，还有今天刚看到的 clip-pathclip-path 属性使用裁剪方式创建元素的可显示区域。区域内的部分显示，区域外的隐藏。属性。这些对我来说很新颖的概念狠狠的冲击着我以前积累起来的设计思路。
@@ -2235,32 +2579,49 @@ about: 请根据指示规范填写友链格式。
 ```
 
 {% tip ban %}
+
 考虑到锚点跳转的特性，不建议您将引用出处标签 referfrom 写在常隐外挂标签(如 folding、tab、hideToggle)中，这样能有效避免跳转失败。
+
 {% endtip %}
 
-1.  referto 引用上标
-    `id`: 上标序号内容，需与 referfrom 标签的 id 对应才能实现跳转
-    `literature`: 引用的参考文献名称
-2.  referfrom 引用出处
-    `id`: 序号内容，需与 referto 标签的 id 对应才能实现跳转
-    `literature`: 引用的参考文献名称
-    `url`: 引用的参考文献链接，可省略
+1. referto 引用上标
+
+`id`: 上标序号内容，需与 referfrom 标签的 id 对应才能实现跳转
+
+`literature`: 引用的参考文献名称 2. referfrom 引用出处
+
+`id`: 序号内容，需与 referto 标签的 id 对应才能实现跳转
+
+`literature`: 引用的参考文献名称
+
+`url`: 引用的参考文献链接，可省略
 
 {% raw %}
 
-Akilar の糖果屋(akilar.top)是一个私人性质的博客[[1]](#referfrom*[1])Akilar の糖果屋群聊简介参考资料，从各类教程至生活点滴，无话不谈。建群的目的是提供一个闲聊的场所。博客采用 Hexo 框架[[2]](#referfrom*[2])Hexo 中文文档参考资料，Butterfly 主题[[3]](#referfrom\_[3])Butterfly 安装文档(一) 快速开始参考资料
+Akilar の糖果屋(akilar.top)是一个私人性质的博客[[1]](#referfrom*%5B1%5D)Akilar の糖果屋群聊简介参考资料，从各类教程至生活点滴，无话不谈。建群的目的是提供一个闲聊的场所。博客采用 Hexo 框架[[2]](#referfrom*%5B2%5D)Hexo 中文文档参考资料，Butterfly 主题[[3]](#referfrom\_%5B3%5D)Butterfly 安装文档(一) 快速开始参考资料
 
-本项目参考了 Volantis[[4]](#referfrom*[4])hexo-theme-volantis 标签插件参考资料的标签样式。引入`[tag].js`，并针对`butterfly`主题修改了相应的`[tag].styl`。在此鸣谢`Volantis`主题众开发者。
-主要参考内容包括各个 volantis 的内置标签插件文档[[5]](#referfrom*[5])Volantis 文档:内置标签插件参考资料
-Butterfly 主题的各个衍生魔改[[6]](#referfrom*[6])Butterfly 安装文档:标签外挂（Tag Plugins 参考资料[[7]](#referfrom*[7])小弋の生活馆全样式预览参考资料[[8]](#referfrom*[8])l-lin-font-awesome-animation 参考资料[[9]](#referfrom*[9])小康的 butterfly 主题使用文档参考资料
+本项目参考了 Volantis[[4]](#referfrom\*%5B4%5D)hexo-theme-volantis 标签插件参考资料的标签样式。引入`[tag].js`，并针对`butterfly`主题修改了相应的`[tag].styl`。在此鸣谢`Volantis`主题众开发者。
+
+主要参考内容包括各个 volantis 的内置标签插件文档[[5]](#referfrom\*%5B5%5D)Volantis 文档:内置标签插件参考资料
+
+Butterfly 主题的各个衍生魔改[[6]](#referfrom*%5B6%5D)Butterfly 安装文档:标签外挂（Tag Plugins 参考资料[[7]](#referfrom*%5B7%5D)小弋の生活馆全样式预览参考资料[[8]](#referfrom*%5B8%5D)l-lin-font-awesome-animation 参考资料[[9]](#referfrom*%5B9%5D)小康的 butterfly 主题使用文档参考资料
+
 {% referfrom '[1]','Akilarの糖果屋群聊简介','[https://jq.qq.com/?_wv=1027&k=pGLB2C0N](https://jq.qq.com/?_wv=1027&k=pGLB2C0N)' %}
+
 {% referfrom '[2]','Hexo中文文档','[https://hexo.io/zh-cn/docs/](https://hexo.io/zh-cn/docs/)' %}
+
 {% referfrom '[3]','Butterfly 安装文档(一) 快速开始','[https://butterfly.js.org/posts/21cfbf15/](https://butterfly.js.org/posts/21cfbf15/)' %}
+
 {% referfrom '[4]','hexo-theme-volantis 标签插件','[https://volantis.js.org/v5/tag-plugins/](https://volantis.js.org/v5/tag-plugins/)' %}
+
 {% referfrom '[5]','Volantis文档:内置标签插件','[https://volantis.js.org/tag-plugins/](https://volantis.js.org/tag-plugins/)' %}
+
 {% referfrom '[6]','Butterfly 安装文档:标签外挂（Tag Plugins','[https://butterfly.js.org/posts/4aa8abbe/#標籤外掛（Tag-Plugins）](https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89)' %}
+
 {% referfrom '[7]','小弋の生活馆全样式预览','[https://lovelijunyi.gitee.io/posts/c898.html](https://lovelijunyi.gitee.io/posts/c898.html)' %}
+
 {% referfrom '[8]','l-lin-font-awesome-animation','[https://github.com/l-lin/font-awesome-animation](https://github.com/l-lin/font-awesome-animation)' %}
+
 {% referfrom '[9]','小康的butterfly主题使用文档','[https://www.antmoe.com/posts/3b43914f/](https://www.antmoe.com/posts/3b43914f/)' %}
 
 ```markdown
@@ -2286,8 +2647,11 @@ Butterfly 主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:�
 ## 旋转相册 carousel
 
 {% tip warning %}
+
 旋转相册标签与 fancybox 灯箱存在兼容性 bug，若发现旋转相册呈扁平状，请关闭 fancybox 或换用 medium_zoom。
+
 {% endtip %}
+
 {% tabs notation,3 %}
 
 ```markdown
@@ -2299,8 +2663,11 @@ Butterfly 主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:�
 ```
 
 `Id`: 相册唯一 ID，用于监测相册鼠标动作。禁止使用中文。同一页内不得出现相同 ID 的 carousel 相册。
+
 `name`: 相册中间显示的内容，建议用英文单引号包裹。
+
 {% raw %}
 
-![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110444226.png#crop=0&crop=0&crop=1&crop=1&id=wQBju&originHeight=843&originWidth=559&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110508327.png#crop=0&crop=0&crop=1&crop=1&id=ce61N&originHeight=653&originWidth=623&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110525753.png#crop=0&crop=0&crop=1&crop=1&id=Wkgne&originHeight=815&originWidth=627&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110600751.png#crop=0&crop=0&crop=1&crop=1&id=w8DSs&originHeight=833&originWidth=630&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110621554.png#crop=0&crop=0&crop=1&crop=1&id=FxOKC&originHeight=748&originWidth=631&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110637459.png#crop=0&crop=0&crop=1&crop=1&id=ArAgd&originHeight=786&originWidth=634&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110654150.png#crop=0&crop=0&crop=1&crop=1&id=doNAj&originHeight=614&originWidth=818&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110707916.png#crop=0&crop=0&crop=1&crop=1&id=S9aX6&originHeight=842&originWidth=634&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110719787.png#crop=0&crop=0&crop=1&crop=1&id=reRCh&originHeight=821&originWidth=533&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110731118.png#crop=0&crop=0&crop=1&crop=1&id=dx6re&originHeight=727&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110444226.png#crop=0&crop=0&crop=1&crop=1&id=wQBju&originHeight=843&originWidth=559&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110508327.png#crop=0&crop=0&crop=1&crop=1&id=ce61N&originHeight=653&originWidth=623&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110525753.png#crop=0&crop=0&crop=1&crop=1&id=Wkgne&originHeight=815&originWidth=627&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110600751.png#crop=0&crop=0&crop=1&crop=1&id=w8DSs&originHeight=833&originWidth=630&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110621554.png#crop=0&crop=0&crop=1&crop=1&id=FxOKC&originHeight=748&originWidth=631&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110637459.png#crop=0&crop=0&crop=1&crop=1&id=ArAgd&originHeight=786&originWidth=634&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110654150.png#crop=0&crop=0&crop=1&crop=1&id=doNAj&originHeight=614&originWidth=818&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110707916.png#crop=0&crop=0&crop=1&crop=1&id=S9aX6&originHeight=842&originWidth=634&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110719787.png#crop=0&crop=0&crop=1&crop=1&id=reRCh&originHeight=821&originWidth=533&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)![](https://npm.elemecdn.com/akilar-candyassets/image/20200907110731118.png#crop=0&crop=0&crop=1&crop=1&id=dx6re&originHeight=727&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=#alt=)
+
 strike freedom
