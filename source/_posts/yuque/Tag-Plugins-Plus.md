@@ -47,7 +47,7 @@ updated: 2023-1-1 14:25:44
 6. 密码样式的文本：{% psw 这里没有验证码 %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 行内文本 span
 
@@ -78,7 +78,7 @@ updated: 2023-1-1 14:25:44
   {% span center small, A Wonderful Theme for Hexo %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 段落文本 p
 
@@ -109,7 +109,7 @@ updated: 2023-1-1 14:25:44
   {% p center small, A Wonderful Theme for Hexo %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 引用 note
 
@@ -547,7 +547,7 @@ Any content (support inline tags too.io).
 {% link 糖果屋教程贴, Akilar, https://akilar.top/posts/615e2dec/ %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 网站卡片 site
 
@@ -576,7 +576,7 @@ Any content (support inline tags too.io).
 {% endsitegroup %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 折叠框 folding
 
@@ -674,7 +674,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 {% endfolding %}
 ```
 
-{% endtabs%}
+{% endtabs %}
 
 # 分栏 tab
 
@@ -867,4 +867,4 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
 {% endtabs %}
 ```
 
-{% endtabs%}
+{% endtabs %}
