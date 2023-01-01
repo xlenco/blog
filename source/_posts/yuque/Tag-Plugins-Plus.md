@@ -1,26 +1,14 @@
 ---
-
-
 title: Tag Plugins Plus
-
 subtitle: 基于Butterfly的外挂标签引入
-
 top_img:
-
-cover: [https://preview.cloud.189.cn/image/imageAction?param=65F09EDE47A5DA2824FB00A5BC5A447839508870125A081EF9661548311AEDBDB9B9972AAF5F8BA346F99ADD881372A0E537B14FDC660275D9F7C2C829704E46F663A0BCB0ED9A96F0A4D0C4C2ADFF910F50D9F34A679F3FCB1F1301958B97C736D8B73B314FE64BF7F10F7BF0B1FD3D5B078CF1](https://preview.cloud.189.cn/image/imageAction?param=65F09EDE47A5DA2824FB00A5BC5A447839508870125A081EF9661548311AEDBDB9B9972AAF5F8BA346F99ADD881372A0E537B14FDC660275D9F7C2C829704E46F663A0BCB0ED9A96F0A4D0C4C2ADFF910F50D9F34A679F3FCB1F1301958B97C736D8B73B314FE64BF7F10F7BF0B1FD3D5B078CF1)
-
+cover: https://preview.cloud.189.cn/image/imageAction?param=65F09EDE47A5DA2824FB00A5BC5A447839508870125A081EF9661548311AEDBDB9B9972AAF5F8BA346F99ADD881372A0E537B14FDC660275D9F7C2C829704E46F663A0BCB0ED9A96F0A4D0C4C2ADFF910F50D9F34A679F3FCB1F1301958B97C736D8B73B314FE64BF7F10F7BF0B1FD3D5B078CF1
 tags:
-
-- butterfly
-
+  - butterfly
 categories: 转载
-
 description: 本文档为🧊Akilarの糖果屋🍭出品。为butterfly主题添加大量外挂标签样式。
-
 date: 2023-1-1 14:25:44
-
 updated: 2023-1-1 14:25:44
-
 ---
 
 {% note blue 'fas fa-bullhorn' flat %}
@@ -74,16 +62,11 @@ updated: 2023-1-1 14:25:44
 4. 对齐方向: left, center, right
 
 - 彩色文字
-
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
-
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 - 超大号文字
-
-文档「开始」页面中的标题部分就是超大号文字。
-
-{% span center logo large, Volantis %}
-
-{% span center small, A Wonderful Theme for Hexo %}
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
 
 ```markdown
 - 彩色文字
@@ -110,16 +93,11 @@ updated: 2023-1-1 14:25:44
 4. 对齐方向: left, center, right
 
 - 彩色文字
-
-在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
-
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
 - 超大号文字
-
-文档「开始」页面中的标题部分就是超大号文字。
-
-{% p center logo large, Volantis %}
-
-{% p center small, A Wonderful Theme for Hexo %}
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
 
 ```markdown
 - 彩色文字
@@ -135,21 +113,15 @@ updated: 2023-1-1 14:25:44
 # 引用 note
 
 {% note warning %}
-
 最新版`butterfly`标签支持引用`fontawesome V5`图标，效果上已经优于`volantis`的 note 标签。故不再额外引入`volantis的note样式`。~~做样式适配好麻烦的啊，能偷懒就偷懒吧~~
-
 {% endnote %}
-
 {% note blue 'fas fa-bullhorn' modern %}
-
 以下是`butterfly`主题的 note 写法。
-
 {% endnote %}
-
 {% tabs note,4 %}
 修改主题配置文件
 
-```yml
+```yaml
 note:
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
@@ -187,7 +159,7 @@ Any content (support inline tags too.io).
 {% folding cyan , 方法一 %}
 
 | 参数                                                        | 用法                                 |
-| :---------------------------------------------------------- | :----------------------------------- |
+| ----------------------------------------------------------- | ------------------------------------ |
 | class                                                       | 【可选】标识，不同的标识有不同的配色 |
 | （ default / primary / success / info / warning / danger ） |
 | no-icon                                                     | 【可选】不显示 icon                  |
@@ -195,11 +167,10 @@ Any content (support inline tags too.io).
 | （simple/modern/flat/disabled）                             |
 
 {% endfolding %}
-
 {% folding blue , 方法二 %}
 
 | 参数                                                        | 用法                                                                     |
-| :---------------------------------------------------------- | :----------------------------------------------------------------------- |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------ |
 | class                                                       | 【可选】标识，不同的标识有不同的配色                                     |
 | （ default / blue / pink / red / purple / orange / green ） |
 | no-icon                                                     | 【可选】可配置自定义 icon (只支持 fontawesome 图标, 也可以配置 no-icon ) |
@@ -290,7 +261,6 @@ Any content (support inline tags too.io).
 {% note danger no-icon %}danger 提示块标签{% endnote %}
 
 {% endfolding %}
-
 {% folding blue , 方法二 %}
 
 1. simple 样式
@@ -467,7 +437,6 @@ Any content (support inline tags too.io).
 ```
 
 {% endfolding %}
-
 {% folding blue , 方法二 %}
 
 1. `simple`样式
@@ -646,7 +615,7 @@ Any content (support inline tags too.io).
 {% link 标题, 作者, 链接 %}
 ```
 
-{% link 糖果屋教程贴, Akilar, [https://akilar.top/posts/615e2dec/](https://akilar.top/posts/615e2dec/) %}
+{% link 糖果屋教程贴, Akilar, https://akilar.top/posts/615e2dec/ %}
 
 ```markdown
 {% link 糖果屋教程贴, Akilar, https://akilar.top/posts/615e2dec/ %}
@@ -666,10 +635,9 @@ Any content (support inline tags too.io).
 ```
 
 {% sitegroup %}
+{% site pandora, https://dorakika.cn, emoji=🔮, background=linear-gradient(120deg,#e0c3fc 0%,#8ec5fc 100%), description=DORAKIKA的个人博客, url-site=https://dorakika.cn %}
 
-{% site pandora, [https://dorakika.cn](https://dorakika.cn), emoji=🔮, background=linear-gradient(120deg,#e0c3fc 0%,#8ec5fc 100%), description=DORAKIKA的个人博客, url-site=https://dorakika.cn %}
-
-{% site space, [https://notion.dorakika.cn](https://notion.dorakika.cn), emoji=🗃️, background=linear-gradient(120deg,#cff8a0,#f8d0a0 100%), description=基于notion构建的blog（测试）, url-site=https://notion.dorakika.cn, url-github=https://github.com/DORAKIKA/notion2blog %}
+{% site space, https://notion.dorakika.cn, emoji=🗃️, background=linear-gradient(120deg,#cff8a0,#f8d0a0 100%), description=基于notion构建的blog（测试）, url-site=https://notion.dorakika.cn, url-github=https://github.com/DORAKIKA/notion2blog %}
 
 {% endsitegroup %}
 
@@ -687,11 +655,8 @@ Any content (support inline tags too.io).
 # 折叠框 folding
 
 {% note blue 'fas fa-bullhorn' disabled %}
-
 `Butterfly`虽然也有内置折叠框`hideToggle`标签，但是`Volantis`的`folding`折叠框更好看一些。
-
 {% endnote %}
-
 {% tabs folding,3 %}
 
 ```markdown
@@ -705,7 +670,7 @@ Any content (support inline tags too.io).
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#alt=)
+![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg#crop=0&crop=0&crop=1&crop=1&id=UCVhm&originHeight=1536&originWidth=2731&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 {% endfolding %}
 
@@ -736,7 +701,7 @@ Any content (support inline tags too.io).
 
 {% folding 查看嵌套测试3 %}
 
-hahaha ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png#)
+hahaha ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png#crop=0&crop=0&crop=1&crop=1&id=dyQ8r&originHeight=60&originWidth=60&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 {% endfolding %}
 
@@ -788,11 +753,8 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 # 分栏 tab
 
 {% note blue 'fas fa-bullhorn' disabled %}
-
 `Butterfly`的`tab`标签和`Volantis`的`tab`标签都是移值自`NexT`主题，所以写法和效果一模一样。
-
 {% endnote %}
-
 {% tabs folding,3 %}
 
 ```markdown
@@ -808,37 +770,28 @@ Any content (support inline tags too).
 ```
 
 1. Unique name :
-
    - 选项卡块标签的唯一名称，不带逗号。
    - 将在#id 中用作每个标签及其索引号的前缀。
    - 如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。
    - 仅当前帖子/页面的 URL 必须是唯一的！
-
 2. [index]:
-
    - 活动选项卡的索引号。
    - 如果未指定，将选择第一个标签（1）。
    - 如果 index 为-1，则不会选择任何选项卡。
    - 可选参数。
-
 3. [Tab caption]:
-
    - 当前选项卡的标题。
    - 如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。
    - 如果未指定标题，但指定了图标，则标题将为空。
    - 可选参数。
-
 4. [@icon]:
-
    - FontAwesome 图标名称（全名，看起来像“ fas fa-font”）
    - 可以指定带空格或不带空格；
    - 例如'Tab caption @icon' 和 'Tab caption@icon'.
    - 可选参数。
 
 {% note primary %}
-
 Demo 1 - 预设选择第一个【默认】
-
 {% endnote %}
 
 {% tabs test1 %}
@@ -848,9 +801,7 @@ Demo 1 - 预设选择第一个【默认】
 {% endtabs %}
 
 {% note primary %}
-
 Demo 2 - 预设选择 tabs
-
 {% endnote %}
 
 {% tabs test2, 3 %}
@@ -860,9 +811,7 @@ Demo 2 - 预设选择 tabs
 {% endtabs %}
 
 {% note primary %}
-
 Demo 3 - 没有预设值
-
 {% endnote %}
 
 {% tabs test3, -1 %}
@@ -872,9 +821,7 @@ Demo 3 - 没有预设值
 {% endtabs %}
 
 {% note primary %}
-
 Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
-
 {% endnote %}
 
 {% tabs test4 %}
@@ -883,9 +830,7 @@ Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
 **名字+icon**
 {% endtabs %}
 {% note primary %}
-
 Demo 1 - 预设选择第一个【默认】
-
 {% endnote %}
 
 ```markdown
@@ -913,9 +858,7 @@ Demo 1 - 预设选择第一个【默认】
 ```
 
 {% note primary %}
-
 Demo 2 - 预设选择 tabs
-
 {% endnote %}
 
 ```markdown
@@ -943,9 +886,7 @@ Demo 2 - 预设选择 tabs
 ```
 
 {% note primary %}
-
 Demo 3 - 没有预设值
-
 {% endnote %}
 
 ```markdown
@@ -973,9 +914,7 @@ Demo 3 - 没有预设值
 ```
 
 {% note primary %}
-
 Demo 4 - 自定义 Tab 名 + 只有 icon + icon 和 Tab 名
-
 {% endnote %}
 
 ```markdown
