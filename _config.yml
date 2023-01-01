@@ -175,7 +175,7 @@ tag_plugins:
     anima: https://jsd.onmicrosoft.cn/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
 #    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
-    iconfont: https://at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+#    iconfont: https://at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://jsd.onmicrosoft.cn/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.min.js
     tag_plugins_css: https://jsd.onmicrosoft.cn/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css
 
