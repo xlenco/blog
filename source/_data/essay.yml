@@ -1,6 +1,11 @@
 - class_name: 即刻短文
   essay_list:
     - content:
+        🏮元旦快乐🏮😆！!
+      date: 2022/1/1 10:07
+      image:
+       - https://preview.cloud.189.cn/image/imageAction?param=F4C017B6CF6CBBBE100EA68D9815CE673FE64E50A2DC333DBEA739E8562EBA8E89FD17769DD3703FA467442AE60F4B66DBC4CFE4AE8426B0DC22595D36736939192A393F0AE7FC1B735D14D3049514B76203760363031AF13984C2CD13F50A799B1166B62568306EBA4998855CF1ABCD55689356
+    - content:
         终于把即刻短文轮播字体不显示的 bug 改好了，累死了！!
       date: 2022/12/30 21:45
       image: 
