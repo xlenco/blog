@@ -1,6 +1,5 @@
 importScripts('https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js');
-
-
+importScripts('/js/sw-dev.js')
 
 if (workbox) {
     console.log('workbox loaded success🎉');
@@ -91,3 +90,43 @@ workbox.routing.registerRoute(
 
 // 离线谷歌分析
 // workbox.googleAnalytics.initialize();
+
+// sw 配置
+const configs = {
+    'cdn': [
+        {
+            'rule': /^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/npm|unpkg\.com)/,
+            'search': '_',
+            'replace': [
+                'https://jsd.onmicrosoft.cn/npm',
+                'https://npm.onmicrosoft.cn',
+                'https://npm.elemecdn.com',
+                'https://unpkg.cnortles.top',
+                'https://cdn.cnortles.top/npm',
+                'https://cdn.bilicdn.tk/npm',
+                'https://jsd.cky.codes/npm',
+                'https://cdn.staticfile.org',
+                'https://npm.sourcegcdn.com',
+                // qycdn
+                'https://cdn.chuqis.com/npm',
+                'https://jsd.cky.codes/npm',
+                'https://unpkg.onmicrosoft.cn',
+                '_',
+            ],
+        },
+        {
+            'rule': /^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)/,
+            'search': '_',
+            'replace': [
+                'https://jsd.onmicrosoft.cn/gh',
+                'https://jsd.cky.codes/gh',
+                'https://cdn.bilicdn.tk/gh',
+                'https://cdn.cnortles.top/gh',
+                // qycdn
+                'https://cdn.chuqis.com/gh',
+                'https://jsd.cky.codes/gh',
+                '_',
+            ],
+        },
+    ],
+}
