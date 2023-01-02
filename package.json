@@ -23,7 +23,7 @@
     "onlyPublic": false
   },
   "hexo": {
-    "version": "6.2.0"
+    "version": "6.3.0"
   },
   "dependencies": {
     "gulp": "^4.0.2",
