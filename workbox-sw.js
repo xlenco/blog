@@ -1,5 +1,5 @@
 importScripts('https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js');
-
+importScripts('/js/sw-dev.js')
 
 if (workbox) {
     console.log('workbox loaded success🎉');
@@ -91,6 +91,7 @@ workbox.routing.registerRoute(
 // 离线谷歌分析
 // workbox.googleAnalytics.initialize();
 
+// sw 配置
 const configs = {
     'cdn': [
         {
@@ -131,4 +132,4 @@ const configs = {
 }
 
 
-importScripts('/js/sw-dev.js')
+
