@@ -3973,9 +3973,9 @@ iframe{border: medium none;}
     top: 15px !important;
     width: 96% !important;
     margin-left: 2% !important;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #page-header.nav-fixed #nav {
-    top: -45px !important;
+    top: -50px !important;
 }
