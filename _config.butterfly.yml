@@ -282,7 +282,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42
-  use: Twikoo # Valine,Disqus
+  use: Twikoo,Artalk # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -386,6 +386,14 @@ remark42:
   host: # Your Host URL
   siteId: # Your Site ID
   option:
+
+# Artalk
+# https://artalk.js.org/guide/transfer.html
+artalk:
+  server: https://artalk.xlenco.eu.org
+  site: Xlenco-Blog
+  visitor: false
+  option: 
 
 # Chat Services
 # --------------------------------------
