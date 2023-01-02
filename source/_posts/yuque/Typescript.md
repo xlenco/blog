@@ -835,53 +835,49 @@ function test(arg: any): any {
 
 - 使用泛型：
 
-```typescript
-function test<T>(arg: T): T {
-  return arg;
-}
-```
-
-- 这里的`<T>`就是泛型，T 是我们给这个类型起的名字（不一定非叫 T），设置泛型后即可在函数中使用 T 来表示该类型。所以泛型其实很好理解，就表示某个类型。
-- 那么如何使用上边的函数呢？
-  - 方式一（直接使用）：
-    ```typescript
-    test(10);
-    ```
-    - 使用时可以直接传递参数使用，类型会由 TS 自动推断出来，但有时编译器无法自动推断时还需要使用下面的方式
-  - 方式二（指定类型）：
-    ```typescript
-    test<number>(10);
-    ```
-    - 也可以在函数后手动指定泛型
-- 可以同时指定多个泛型，泛型间使用逗号隔开：
-  ```typescript
-  function test<T, K>(a: T, b: K): K {
-    return b;
-  }
-  test<number, string>(10, "hello");
-  ```
-  - 使用泛型时，完全可以将泛型当成是一个普通的类去使用
-- 类中同样可以使用泛型：
-  ```typescript
-  class MyClass<T> {
-    prop: T;
-    constructor(prop: T) {
-      this.prop = prop;
+  ````typescript
+    function test<T>(arg: T): T{
+    	return arg;
     }
-  }
-  ```
-- 除此之外，也可以对泛型的范围进行约束
-  ```typescript
-  interface MyInter {
-    length: number;
-  }
-  function test<T extends MyInter>(arg: T): number {
-    return arg.length;
-  }
-  ```
-  - 使用 T extends MyInter 表示泛型 T 必须是 MyInter 的子类，不一定非要使用接口类和抽象类同样适用。
-    本文转载于： https://blog.leonus.cn/2022/typescript.html
-
-```
-
-```
+    ```
+  - 这里的`<T>`就是泛型，T是我们给这个类型起的名字（不一定非叫T），设置泛型后即可在函数中使用T来表示该类型。所以泛型其实很好理解，就表示某个类型。
+  - 那么如何使用上边的函数呢？
+    - 方式一（直接使用）：
+      ```typescript
+        test(10)
+        ```
+      - 使用时可以直接传递参数使用，类型会由TS自动推断出来，但有时编译器无法自动推断时还需要使用下面的方式
+    - 方式二（指定类型）：
+      ```typescript
+        test<number>(10)
+        ```
+      - 也可以在函数后手动指定泛型
+  - 可以同时指定多个泛型，泛型间使用逗号隔开：
+    ```typescript
+      function test<T, K>(a: T, b: K): K{
+          return b;
+      }
+      test<number, string>(10, "hello");
+      ```
+    - 使用泛型时，完全可以将泛型当成是一个普通的类去使用
+  - 类中同样可以使用泛型：
+    ```typescript
+      class MyClass<T>{
+          prop: T;
+          constructor(prop: T){
+              this.prop = prop;
+          }
+      }
+      ```
+  - 除此之外，也可以对泛型的范围进行约束
+    ```typescript
+      interface MyInter{
+          length: number;
+      }
+      function test<T extends MyInter>(arg: T): number{
+          return arg.length;
+      }
+      ```
+    - 使用T extends MyInter表示泛型T必须是MyInter的子类，不一定非要使用接口类和抽象类同样适用。
+  本文转载于： [https://blog.leonus.cn/2022/typescript.html](https://blog.leonus.cn/2022/typescript.html)
+  ````
