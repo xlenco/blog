@@ -3968,3 +3968,14 @@ iframe{border: medium none;}
   white-space: nowrap;
 }
 
+/*导航栏浮选*/
+#nav {
+    top: 15px !important;
+    width: 96% !important;
+    margin-left: 2% !important;
+    border-radius: 20px;
+}
+
+#page-header.nav-fixed #nav {
+    top: -50px !important;
+}
