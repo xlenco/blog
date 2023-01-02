@@ -1,4 +1,5 @@
 importScripts('https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js');
+importScripts('https://jsd.onmicrosoft.cn/npm/clientworker@latest')
 importScripts('/js/sw-dev.js')
 
 if (workbox) {
