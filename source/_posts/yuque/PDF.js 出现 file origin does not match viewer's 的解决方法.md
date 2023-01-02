@@ -32,3 +32,5 @@ var DEFAULT_URL = 'test.pdf';
     //   throw new Error('file origin does not match viewer\'s');
  // }
 ```
+
+!()[https://text.text.cn/gh/xlenco/xlenco.github.io/img/siteicon/icon.svg]
