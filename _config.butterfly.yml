@@ -390,7 +390,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/transfer.html
 artalk:
-  server: https://artalk.xlenco.eu.org
+  server: https://artalk.xlenco.eu.org/
   site: Xlenco-Blog
   visitor: false
   option: 
