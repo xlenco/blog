@@ -1,24 +1,26 @@
-// gulp-tester
+//用到的各个插件
 var gulp = require('gulp');
-// 压缩js
+var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-html-minifier-terser');
+var htmlclean = require('gulp-htmlclean');
+var fontmin = require('gulp-fontmin');
+// gulp-tester
 var terser = require('gulp-terser');
+// 压缩js
 gulp.task('compress', () =>
   gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
     .pipe(terser())
     .pipe(gulp.dest('./public'))
 )
 //压缩css
-var cleanCSS = require('gulp-clean-css');
 gulp.task('minify-css', () => {
-    return gulp.src(['./public/**/*.css', './public/**/*.*.css'])
+    return gulp.src(['./public/**/*.css'])
         .pipe(cleanCSS({
             compatibility: 'ie8'
         }))
         .pipe(gulp.dest('./public'));
 });
 //压缩html
-var htmlmin = require('gulp-html-minifier-terser');
-var htmlclean = require('gulp-htmlclean')
 gulp.task('minify-html', () => {
     return gulp.src('./public/**/*.html')
         .pipe(htmlclean())
@@ -40,7 +42,6 @@ gulp.task('minify-html', () => {
         .pipe(gulp.dest('./public'))
 });
 //压缩字体
-var fontmin = require('gulp-fontmin');
 function minifyFont(text, cb) {
   gulp
     .src('./public/fonts/*.ttf') //原字体所在目录
@@ -64,7 +65,6 @@ gulp.task('mini-font', (cb) => {
     });
 });
 // 运行gulp命令时依次执行以下任务
-gulp.task(
-  "default",
-  gulp.parallel("compress", "minify-html", "minify-css", "mini-font"))
-);
+gulp.task('default', gulp.parallel(
+  'compress', 'minify-css', 'minify-html','mini-font'
+))
