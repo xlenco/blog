@@ -1,6 +1,6 @@
 @font-face{
   font-family:'AlibabaPuHuiTi-2-55-Regular' ;  /* 字体名自定义即可 */
-  src:url('/fontsdest/AlibabaPuHuiTi-2-55-Regular.ttf'); /* 字体文件路径 */
+  src:url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/AlibabaPuHuiTi-2-55-Regular.ttf'); /* 字体文件路径 */
   font-display : swap;
 }
 
@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fontsdest/Fira-Code.ttf') format('truetype');
+  src: url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/Fira-Code.ttf') format('truetype');
 }
 
 /* rightMenu右键菜单 */
