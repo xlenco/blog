@@ -3970,7 +3970,7 @@ iframe{border: medium none;}
 
 /*导航栏浮选*/
 #nav {
-    top: 15px !important;
+    top: 10px !important;
     width: 96% !important;
     margin-left: 2% !important;
     border-radius: 20px;
