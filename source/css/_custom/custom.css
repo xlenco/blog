@@ -3970,12 +3970,12 @@ iframe{border: medium none;}
 
 /*导航栏浮选*/
 #nav {
-    top: 10px !important;
+    top: 15px !important;
     width: 96% !important;
     margin-left: 2% !important;
     border-radius: 20px;
 }
 
 #page-header.nav-fixed #nav {
-    top: -50px !important;
+    top: -45px !important;
 }
