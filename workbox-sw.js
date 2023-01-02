@@ -128,13 +128,5 @@ const configs = {
                 '_',
             ],
         },
-        {
-            'rule': /^https\:\/\/text\.text\.cn\/gh)/,
-            'search': '_',
-            'replace': [
-                'https://jsd.onmicrosoft.cn/gh',
-                '_',
-            ],
-        },
     ],
 }
