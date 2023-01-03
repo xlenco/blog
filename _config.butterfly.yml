@@ -967,8 +967,8 @@ CDN:
 
   option:
     # main_css: https://cdn.jsdelivr.net/npm/xlenco-blog-main/css/index.min.css
-     main: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/main.min.js
-     utils: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/utils.min.js
+    # main: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/main.min.js
+    #  utils: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/utils.min.js
     # translate:
     # local_search:
     # algolia_js: https://cdn.jsdelivr.net/npm/xlenco-blog-main/js/search/algolia.min.js 
