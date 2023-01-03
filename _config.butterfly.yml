@@ -660,7 +660,7 @@ preloader:
   # 2. pace (progress bar)
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: /css/_custom/custom.css
+  pace_css_url: 
 
 # aside (側邊欄)
 # --------------------------------------
