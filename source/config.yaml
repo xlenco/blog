@@ -4,9 +4,6 @@ cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
   - https://unpkg.cnortles.top/clientworker@latest
-# Config热更新
-hotconfig:
-  - https://jsd.onmicrosoft.cn/gh/xlenco/blog@main/source/config.yaml
 catch_rules:         
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
