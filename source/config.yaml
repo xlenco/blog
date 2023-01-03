@@ -71,8 +71,7 @@ catch_rules:
             delay: 300       
 
 # 更换不蒜子统计
-  - rule: ^https\:\/\/busuanzi\.ibruce\.infobusuanzi\/2.3\/busuanzi.pure.mini.js
+  - rule: ^https\:\/\/busuanzi\.ibruce\.infobusuanzi\/2.3\/busuanzi\.pure\.mini\.js
     transform_rules:
       - search: _
-        replace:
-          - https://npm.elemecdn.com/penndu@1.0.0/bsz.js
+        replace: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
