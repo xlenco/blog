@@ -21,7 +21,6 @@ catch_rules:
           - https://npm.sourcegcdn.com 
           - https://cdn.bilicdn.tk/npm 
           - https://cdn.staticfile.org
-          - https://jsd.cky.codes/npm
           - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
