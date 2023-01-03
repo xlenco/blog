@@ -3712,10 +3712,7 @@ iframe{border: medium none;}
   color: var(--anzhiyu-secondtext);
   white-space: nowrap;
 }
-
-/* 返回顶部显示网页阅读进度 */
 /* 返回顶部 */
-
 button#go-up #percent {
     display: none;
     font-weight: bold;
@@ -3735,3 +3732,4 @@ button#go-up:hover i {
 button#go-up:hover #percent {
     display: none !important;
 }
+
