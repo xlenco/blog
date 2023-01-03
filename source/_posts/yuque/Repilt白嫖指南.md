@@ -1,6 +1,5 @@
 ---
 title: Repilt | 白嫖指南
-tags: Services
 categories: 教程
 cover: https://i.imgtg.com/2022/12/19/HmxVF.webp
 abbrlink: 8b26
