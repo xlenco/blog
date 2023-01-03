@@ -12,6 +12,12 @@
   src: url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/Fira-Code.ttf') format('truetype');
 }
 
+/*loading 图片*/
+.loading-img {
+  background: url(https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/img/head.webp) no-repeat center center;
+  background-size: cover;
+}
+
 /* rightMenu右键菜单 */
 #rightMenu{
 	display: none;
