@@ -1,5 +1,5 @@
 #bbTimeList.bbTimeList.container
-    svg.icon.bber-logo.i.fa.fa-volume(onclick=`pjax.loadUrl("/essay")`,title="即刻短文",aria-hidden="true")
+    svg.icon.bber-logo.i.fa.fa-volume(onclick=`href=url_for("/essay/")`,title="即刻短文",aria-hidden="true")
       use(xlink:href="#i.fa.fa-volume")
     #bbtalk.swiper-container.swiper-no-swiping.essay_bar_swiper_container(tabindex="-1")
       #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/essay")`)
@@ -9,4 +9,4 @@
               - var contentText = item.image ? item.content + ' [图片]' : item.content
               .li-style.swiper-slide= contentText
 
-    i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`pjax.loadUrl("/essay")`,title="查看全文")
+    i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`href=url_for("/essay/")`,title="查看全文")
