@@ -117,10 +117,6 @@
     background-size: 200%;
 }
 
-/*文章块大小*/
-#recent-posts > .recent-post-item {
-     height: 20em;
-}
 
 /*底部切换按钮*/
 .layout>.recent-posts .pagination>* {
