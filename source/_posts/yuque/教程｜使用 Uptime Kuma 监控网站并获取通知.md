@@ -1,13 +1,14 @@
 ---
 categories:
   - Uptime Kuma
-cover: 'https://i.imgtg.com/2022/12/19/HmhrP.webp'
-date: '2022-08-06 15:07:01'
+
+cover: https://i.imgtg.com/2022/12/19/HmhrP.webp
+date: "2022-08-06 15:07:01"
 tags:
   - Wed
+
 title: 教程 | 使用 Uptime Kuma 监控网站
-updated: "2022-08-06\_17:17:49"
-abbrlink: db5
+updated: 2022-08-06 17:17:49
 ---
 
 ## 前言

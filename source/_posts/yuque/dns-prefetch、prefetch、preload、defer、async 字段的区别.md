@@ -1,13 +1,13 @@
 ---
 title: dns-prefetch、prefetch、preload、defer、async 字段的区别
-categories:
-  - 前端
-cover: 'https://i.imgtg.com/2022/12/19/HpW1i.webp'
-tags:
-  - HTML
-abbrlink: 593d
 date: 2022-12-19 17:45:07
 updated: 2022-12-19 17:45:07
+categories:
+  - 前端
+
+cover: https://i.imgtg.com/2022/12/19/HpW1i.webp
+tags:
+  - HTML
 ---
 
 ### 1、`dns-prefetch`

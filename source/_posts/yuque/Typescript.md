@@ -1,18 +1,16 @@
 ---
 title: Typescript学习笔记
-date: '2023-1-2 19:16'
-updated: '2023-1-2 19:16'
+date: 2023-1-2 19:16
+updated: 2023-1-2 19:16
 tags: TypeScript
 categories: 笔记
-cover: >-
-  https://preview.cloud.189.cn/image/imageAction?param=423434834D90992C0144691D6ABB374F03017482934C774A63824CA2D6CE2190292F68CB89239300D590F39C40697FE8ABADEF4FF26F5F8C88C42B924D720926F22D287AB1570B1036DA879395135E1F4A1D06E378974A2D25171B9AE938BB8D237A1561FE48117285504D07EC050CE45091E4D6
-abbrlink: 8b83
+cover: https://preview.cloud.189.cn/image/imageAction?param=423434834D90992C0144691D6ABB374F03017482934C774A63824CA2D6CE2190292F68CB89239300D590F39C40697FE8ABADEF4FF26F5F8C88C42B924D720926F22D287AB1570B1036DA879395135E1F4A1D06E378974A2D25171B9AE938BB8D237A1561FE48117285504D07EC050CE45091E4D6
 ---
 
 {% note success %}
 笔记来自于尚硅谷课程
 {% endnote %}
-{% link https://www.bilibili.com/video/BV1Xy4y1v7S2/,尚硅谷TypeScript教程（李立超老师TS新课）,https://cdn.leonus.cn/img/atguigu.webp,TS本身并非什么高深的技术，凡是有JavaScript基础的同学都可以轻松掌握。 %}
+{% link 尚硅谷TypeScript教程（李立超老师TS新课）,https://www.bilibili.com/video/BV1Xy4y1v7S2/,https://www.helloimg.com/images/2023/01/03/oCzLFh.webp %}
 
 ## 第一章 快速入门
 

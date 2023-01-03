@@ -2,10 +2,9 @@
 title: 常用前端公共库CDN
 tags: CDN
 categories: 笔记
-cover: 'https://xlenco.onmicrosoft.cn/img/OIP-C.jpg'
-date: '2022/8/29 21:13'
-updated: '2022-12-14 18:18'
-abbrlink: '8606'
+cover: https://xlenco.onmicrosoft.cn/img/OIP-C.jpg
+date: 2022/8/29 21:13
+updated: 2022-12-14 18:18
 ---
 
 ## 前沿

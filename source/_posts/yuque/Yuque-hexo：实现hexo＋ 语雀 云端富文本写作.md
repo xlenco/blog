@@ -1,15 +1,15 @@
 ---
 title: Yuque-hexo：实现hexo＋ 语雀 云端富文本写作
 categories:
-  - - 教程
-  - - 转载
+  - [教程]
+  - [转载]
+
 tags:
   - Hexo
-cover: >-
-  https://xlenco.onmicrosoft.cn/img/8840187_u6Y8xVR1j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661609019485
-updated: '2022-10-24 10:29'
-date: '2022-9-9 22:01'
-abbrlink: c9b3
+
+cover: https://xlenco.onmicrosoft.cn/img/8840187_u6Y8xVR1j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661609019485
+updated: 2022-10-24 10:29
+date: 2022-9-9 22:01
 ---
 
 ## 前言
