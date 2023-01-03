@@ -1,17 +1,74 @@
-#footer-wrap
-  if theme.footer.owner.enable
-    - var now = new Date()
-    - var nowYear = now.getFullYear()
-    if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
-    else
-      .copyright!= `&copy;${nowYear} By ${config.author}`
-  if theme.footer.copyright
-    .framework-info
-      span= _p('footer.framework') + ' '
-      a(href='https://hexo.io')= 'Hexo'
-      span.footer-separator |
-      span= _p('footer.theme') + ' '
-      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
-  if theme.footer.custom_text
-    .footer_custom_text!=`${theme.footer.custom_text}`
+#footer_deal
+  a.deal_link(href="mailto:1044865083@qq.com" title="mail")
+    i.iconfont.icon-mail
+  a.deal_link(href="https://qm.qq.com/cgi-bin/qm/qr?k=eHT6b6llnxiiT4IjuaBXvselTBWRK7-b&noverify=0" title="qq" target="_blank")
+    i.iconfont.icon-qq1 
+  img.footer_mini_logo.entered.loading(style="border-radius:50%" src='https://xlenco.onmicrosoft.cn/img/head.webp' onclick="btf.scrollToDest(0,500)" title="返回顶部")
+  a.deal_link(href="" title="Telegram" target="_blank")
+    i.iconfont.icon-telegram
+  a.deal_link(href="https://github.com/xlenco" title="github"  target="_blank")
+    i.iconfont.icon-github1
+#Jay-footer
+  .footer-group
+    h3.footer-title 直达
+    .footer-links
+      a.footer-item(href="/" target="_blank") 我的主页
+      a.footer-item(href="/music") 音乐欣赏
+      a.footer-item(href="/essay") 心灵港湾
+      a.footer-item(href="/random") 随机文章
+  .footer-group
+    h3.footer-title 分类
+    .footer-links
+      a.footer-item(href="/categories/📚学习笔记/") 学习笔记
+      a.footer-item(href="/categories/🦋魔改教程/") 魔改教程
+      a.footer-item(href="/categories/🌈算法笔记/") 算法笔记
+      a.footer-item(href="/categories/📙语法教程/") 语法教程
+  .footer-group
+    h3.footer-title 关于
+    .footer-links
+      a.footer-item(href="/about/") 关于我
+      a.footer-item(href="/charts/") 博客统计
+      a.footer-item(href="/archives") 文章归档
+      a.footer-item(href="/update") 更新记录
+  .footer-group
+    h3.footer-title 友链
+    .footer-links#friend-links-in-footer
+      a.footer-item(href="https://blog.abeginner.cn/") haor-一个初学者
+      a.footer-item(href="https://www.cxl2020mc.top/") 陈鑫磊'Blog
+
+
+
+  .footer-group
+    h3.footer-title 协议
+    .footer-links
+      a.footer-item(href="/privacy/") 隐私协议
+      a.footer-item(href="/cookies/") Cookie
+      a.footer-item(href="/cc/") 版权协议
+#footer-banner
+  .footer-banner-links
+    .footer-banner-left
+      .footer-banner-left
+        #footer-banner-tips
+        script(src='https://unpkg.com/typed.js/lib/typed.min.js')
+        script.
+          var typed = new Typed("#footer-banner-tips", {
+            strings: ["念念不忘，必有回响。", "Never forget, there will be echoes."],
+            startDelay: 200,
+            backDelay: 2000,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 20
+          })
+
+    .footer-banner-right
+      a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架
+      a.footer-banner-link |
+      a.footer-banner-link(href="https://github.com/jerryc127/hexo-theme-butterfly" title="theme") 主题
+      a.footer-banner-link |
+      a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
+      a.footer-banner-link |
+      a.footer-banner-link(href="/about/" title="about") 关于
+      a.footer-banner-link |
+      a.footer-banner-link.cc(href="/cc/" title="cc协议")
+        i.iconfont.icon-cc
+        span 协议
