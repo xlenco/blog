@@ -30,10 +30,6 @@ function winResize() {
   }
 }
 
-
-
-
-
 // 分享本页
 function share() {
     let url = window.location.origin + window.location.pathname
