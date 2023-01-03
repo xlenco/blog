@@ -10,7 +10,7 @@ cover: https://preview.cloud.189.cn/image/imageAction?param=423434834D90992C0144
 {% note success %}
 笔记来自于尚硅谷课程
 {% endnote %}
-{% link 尚硅谷TypeScript教程（李立超老师TS新课）,https://www.bilibili.com/video/BV1Xy4y1v7S2/,https://www.helloimg.com/images/2023/01/03/oCzLFh.webp %}
+{% link 尚硅谷TypeScript教程（李立超老师TS新课）,https://www.bilibili.com/video/BV1Xy4y1v7S2/,https://kjimg10.360buyimg.com/ott/jfs/t1/53250/19/22328/5649/63b3d612Fd9bacc4b/c8c00d6eeb80651b.jpg %}
 
 ## 第一章 快速入门
 
