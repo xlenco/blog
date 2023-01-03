@@ -1,6 +1,5 @@
 #bbTimeList.bbTimeList.container
-    svg.icon.bber-logo.i.fa.fa-volume(onclick=`href=url_for("/essay/")`,title="即刻短文",aria-hidden="true")
-      use(xlink:href="#i.fa.fa-volume")
+    i.fa.fa-volume(onclick=`href=url_for("/essay/")`,title="即刻短文",aria-hidden="true")
     #bbtalk.swiper-container.swiper-no-swiping.essay_bar_swiper_container(tabindex="-1")
       #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/essay")`)
         each i in site.data.essay
