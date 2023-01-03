@@ -1,5 +1,5 @@
 #bbTimeList.bbTimeList.container
-    svg.icon.bber-logo.iconfont.icon-chrome(onclick=`pjax.loadUrl("/essay/")`,title="即刻短文",aria-hidden="true")
+    svg.icon.bber-logo.iconfont.icon-chrome(onclick=`pjax.loadUrl("/essay/")`,title="即刻短文")
       use(xlink:href="#icon-chrome")
     #bbtalk.swiper-container.swiper-no-swiping.essay_bar_swiper_container(tabindex="-1")
       #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/essay/")`)
@@ -10,3 +10,5 @@
               .li-style.swiper-slide= contentText
 
     i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`pjax.loadUrl("/essay/")`,title="查看全文")
+.js-pjax
+    script(src='https://cdn1.tianli0.top/npm/swiper/swiper-bundle.min.js' data-pjax='')
