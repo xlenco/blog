@@ -29,11 +29,14 @@ mixin rightsideItem(array)
         if commentsJsLoad
           a#to_comment(href="#post-comment" title=_p("rightside.scroll_to_comment"))
             i.fas.fa-comments
+       when 'share'
+         button.share(type="button" title='分享链接' onclick="share()")
+           i.fas.fa-share-nodes
 
 #rightside
   - const { enable, hide, show } = theme.rightside_item_order
   - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside']
-  - const showArray = enable ? show && show.split(',') : ['toc','chat','comment']
+  - const showArray = enable ? show && show.split(',') : ['chat','share','comment','hideAside','toc']
 
   
   #rightside-config-hide
@@ -58,3 +61,7 @@ mixin rightsideItem(array)
 
     button#go-up(type="button" title=_p("rightside.back_to_top"))
       i.fas.fa-arrow-up
+        span#percent 0
+         span %
+    button#go-down(type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)")
+      i.fas.fa-arrow-down
