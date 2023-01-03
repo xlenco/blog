@@ -1,9 +1,7 @@
 extends includes/layout.pug
 
 block content
- - let fcircle_page = (is_current('/fcircle/')) ? true : false
-  #page(class= (fcircle_page === true) ? 'fcircle_page' : '')
- 
+  #page
     if top_img === false
       h1.page-title= page.title
 
@@ -14,10 +12,6 @@ block content
         include includes/page/flink.pug
       when 'categories'
         include includes/page/categories.pug
-      when 'essay'
-        include includes/page/essay.pug
-      when 'about'
-        include includes/page/about.pug
       default
         include includes/page/default-page.pug
 

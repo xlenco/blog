@@ -1,5 +1,6 @@
 #article-container
   .flink
+    - let pageContent = page.content
     if page.flink_url
       script.
         (()=>{
@@ -42,7 +43,7 @@
       if site.data.link
         - let result = ""
         each i in site.data.link
-          - let className = i.class_name ? markdown(`## ${i.class_name} (${i.link_list.length})`) : ""
+          - let className = i.class_name ? markdown(`## ${i.class_name}`) : ""
           - let classDesc = i.class_desc ? `<div class="flink-desc">${i.class_desc}</div>` : ""
 
           - let listResult = ""
@@ -63,6 +64,6 @@
 
           - result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
 
-        - page.content = result + page.content
-    != page.content
+        - pageContent = result + pageContent
+    != pageContent
 
