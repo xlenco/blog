@@ -19,7 +19,7 @@ menu:
      YesPlayMusic: https://yesplaymusic.xlenco.eu.org/ || fas fa-music
      Mikutap: https://mikutap.xlenco.eu.org/ || fas fa-gamepad
    Tool||fas fa-screwdriver-wrench||hide: 
-     监控云台: https://uptime.xlenco.eu.org/  || fas fa-link
+     监控云台: https://uptime.xlenco.eu.org/status/admin  || fas fa-link
      Pic Tools: https://pic.xlenco.eu.org/  || fa-solid fa-image
 
 # Code Blocks (代碼相關)
