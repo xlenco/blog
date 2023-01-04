@@ -43,7 +43,7 @@
       if site.data.link
         - let result = ""
         each i in site.data.link
-          - let className = i.class_name ? markdown(`## ${i.class_name}`) : ""
+          - let className = i.class_name ? markdown(`## ${i.class_name} (${i.link_list.length})`) : "" 
           - let classDesc = i.class_desc ? `<div class="flink-desc">${i.class_desc}</div>` : ""
 
           - let listResult = ""
