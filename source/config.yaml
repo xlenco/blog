@@ -79,8 +79,6 @@ catch_rules:
           - https://s1.hdslb.com
           - https://s2.hdslb.com
           - https://s3.hdslb.com
-        header:
-          referrer: no-referrer # 更改引用策略
         action: fetch
         fetch:
           engine: parallel
