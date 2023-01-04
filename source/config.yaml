@@ -3,7 +3,7 @@ name: ClientWorker
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
-  - https://unpkg.cnortles.top/clientworker@latest
+  - https://unpkg.cnortles.top/clientworker
 catch_rules:         
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
@@ -66,7 +66,25 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300       
 # 更换不蒜子统计
-  - rule: ^https\:\/\/busuanzi\.ibruce\.infobusuanzi\/2.3\/busuanzi\.pure\.mini\.js
+  - rule: (http|https)\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
     transform_rules:
-      - search: _
+      - search: (http|https)\:\/\/busuanzi\.ibruce\.infobusuanzi\/2.3\/busuanzi\.pure\.mini\.js
         replace: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
+ 
+# 匹配B站资源链接
+  - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
+    transform_rules:
+      - search: _ # 多cdn并发
+        replace:
+          - https://s1.hdslb.com
+          - https://s2.hdslb.com
+          - https://s3.hdslb.com
+        header:
+          referrer: no-referrer # 更改引用策略
+        action: fetch
+        fetch:
+          engine: parallel
+          status: 200
+          preflight: false
+          timeout: 30000
+          delay: 4000
