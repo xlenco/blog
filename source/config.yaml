@@ -92,3 +92,7 @@ catch_rules:
           preflight: false
           timeout: 30000
           delay: 4000
+   
+# 跳过51.la统计
+      - search: (.*)\.51\.la
+        action: skip
