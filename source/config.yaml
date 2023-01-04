@@ -3,7 +3,7 @@ name: ClientWorker
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 # ClientWorker热补丁
 hotpatch:
-  - https://unpkg.cnortles.top/clientworker
+  - https://unpkg.onmicrosoft.cn/clientworker
 catch_rules:         
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
@@ -66,9 +66,9 @@ catch_rules:
             expire: 1000*60*60*24 # 缓存24小时
             delay: 300       
 # 更换不蒜子统计
-  - rule: (http|https)\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
+  - rule: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
     transform_rules:
-      - search: (http|https)\:\/\/busuanzi\.ibruce\.infobusuanzi\/2.3\/busuanzi\.pure\.mini\.js
+      - search: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
         replace: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
  
 # 匹配B站资源链接
