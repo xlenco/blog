@@ -1,1 +1,115 @@
 importScripts('https://cdn.staticfile.org/clientworker/3.0.0-beta-4/dist/cw.js')
+importScripts('https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js');
+
+
+if (workbox) {
+    console.log('workbox loaded success🎉');
+} else {
+    console.log('workbox loaded fail😬');
+}
+
+self.addEventListener('install', async () => {
+    await self.skipWaiting()
+})
+
+self.addEventListener('activate', async () => {
+    await self.clients.claim()
+})
+
+self.__WB_DISABLE_DEV_LOGS = true;
+
+workbox.core.setCacheNameDetails({
+    prefix: 'Xlencoの博客',
+    suffix: '缓存',
+    precache: '离线后备',
+    runtime: '运行时',
+    googleAnalytics: '谷歌分析'
+});
+
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
+    ignoreUrlParametersMatching: [/.*/],
+    directoryIndex: null,
+});
+
+workbox.precaching.cleanupOutdatedCaches();
+
+const MIN = 60;
+const HOUR = MIN * 60;
+const DAY = HOUR * 24;
+const WEEK = DAY * 7;
+const MONTH = DAY * 30;
+const YEAR = DAY * 365;
+
+// workbox.recipes.googleFontsCache();
+// workbox.recipes.staticResourceCache();
+// workbox.recipes.imageCache();
+// workbox.recipes.offlineFallback();
+// workbox.recipes.pageCache();
+// workbox.googleAnalytics.initialize();
+
+// 导航预加载
+workbox.navigationPreload.enable();
+
+// 离线后备
+const Offline = new workbox.routing.Route(({ request }) => {
+    return request.mode === 'navigate';
+}, new workbox.strategies.NetworkOnly({
+    plugins: [
+        new workbox.precaching.PrecacheFallbackPlugin({
+            fallbackURL: '/offline/index.html'
+        })
+    ]
+}));
+workbox.routing.registerRoute(Offline);
+
+// 一些缓存小策略预设
+// workbox.recipes.pageCache();
+// workbox.recipes.googleFontsCache();
+// workbox.recipes.staticResourceCache();
+// workbox.recipes.imageCache();
+// workbox.recipes.offlineFallback();
+
+// 暖策略（运行时）缓存
+// const strategy = new workbox.strategies.StaleWhileRevalidate();
+// const urls = [
+//     '/favicon.ico'
+// ];
+// workbox.recipes.warmStrategyCache({ urls, strategy });
+
+// 字体
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:ttf)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: "其他字体",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 10,
+                maxAgeSeconds: MONTH
+            }),
+        ]
+    })
+);
+
+// workbox.routing.registerRoute(
+//     new RegExp('^https://(?:fonts\\.googleapis\\.com|fonts\\.gstatic\\.com)'),
+//     new workbox.strategies.StaleWhileRevalidate({
+//         cacheName: '谷歌字体',
+//         plugins: [
+//             new workbox.expiration.ExpirationPlugin({
+//                 maxEntries: 10,
+//                 maxAgeSeconds: MONTH
+//             }),
+//         ],
+//     })
+// );
+
+// 图片/网页
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp)'),
+    new workbox.strategies.NetworkOnly()
+);
+
+
+
+// 离线谷歌分析
+// workbox.googleAnalytics.initialize();
