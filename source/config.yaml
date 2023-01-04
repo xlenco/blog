@@ -70,7 +70,13 @@ catch_rules:
     transform_rules:
       - search: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
         replace: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
- 
+         action: fetch
+         fetch:
+          engine: fetch
+          status: 200
+          preflight: false
+          timeout: 30000
+          delay: 4000
 # 匹配B站资源链接
   - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
     transform_rules:
