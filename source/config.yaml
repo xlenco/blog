@@ -35,6 +35,7 @@ catch_rules:
           - https://jsd.onmicrosoft.cn/gh
           - https://cdn.cnortles.top/gh
           - https://jsd.cky.codes/gh
+          - https://assets.tnxg.whitenuo.cn/proxy/gh
         action: fetch
         fetch:
           status: 200
