@@ -1,9 +1,6 @@
 # ClientWorker.js.org
 name: ClientWorker 
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
-# ClientWorker热补丁
-hotpatch:
-  - https://unpkg.onmicrosoft.cn/clientworker
 catch_rules:         
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com)
