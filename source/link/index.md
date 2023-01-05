@@ -4,7 +4,7 @@ flink_url: https://raw.xlenco.eu.org/xlenco/friends/output/v2/data.json
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
-updated: 2022-12-05 21:46:51
+updated: 2023-01-05 15:20:36
 ---
 {% flink %}
 
@@ -98,6 +98,10 @@ updated: 2022-12-05 21:46:51
     link: https://solitude.eu.org/
     avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
     descr: 分享各类软件，影视资源...
+  - name: 渺软公益 CDN
+    link: https://cdn.onmicrosoft.cn/
+    avatar: https://cdn.onmicrosoft.cn/favicon.svg
+    descr: 高速、简单、开箱即用的公益 CDN 服务
 
 {% endflink %}
 
