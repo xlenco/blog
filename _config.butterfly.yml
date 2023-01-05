@@ -394,6 +394,9 @@ artalk:
   site: Xlenco-Blog
   visitor: false
   option: 
+   emoticons: [
+    'https://solitude.eu.org/d/Teambition/owo/alu/alu.json?sign=kYbNKxcoO97tOJ6L5UufZdDv0Cz_imGE3MwtrW552GA=:0',
+  ]
 
 # Chat Services
 # --------------------------------------
