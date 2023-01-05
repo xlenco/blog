@@ -109,3 +109,7 @@ catch_rules:
           preflight: false
           timeout: 30000
           delay: 4000
+
+# 跳过artalk
+      - search: artalk\.xlenco\.eu\.org
+        action: skip
