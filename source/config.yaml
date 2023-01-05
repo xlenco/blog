@@ -18,10 +18,8 @@ catch_rules:
           - https://unpkg.cnortles.top   
           - https://jsd.cky.codes/npm   
           - https://npm.elemecdn.com
-          - https://npm.sourcegcdn.com 
-          - https://cdn.bilicdn.tk/npm 
+          - https://npm.sourcegcdn.com  
           - https://cdn.staticfile.org
-          - https://cdn.bilicdn.tk/npm
         action: fetch
         fetch:
           status: 200
@@ -39,9 +37,6 @@ catch_rules:
           - _
           - https://jsd.onmicrosoft.cn/gh
           - https://cdn.cnortles.top/gh
-          - https://fastly.jsdelivr.net/gh
-          - https://gcore.jsdelivr.net/gh
-          - https://cdn.bilicdn.tk/gh
           - https://jsd.cky.codes/gh
         action: fetch
         fetch:
