@@ -1,8 +1,8 @@
 [
   {
-    "id": 110883989,
-    "slug": "cfyh53rhych6qrr9",
-    "title": "国内外文件传输平台推荐",
+    "id": 110992792,
+    "slug": "tv1gn8xcsbh9n0ut",
+    "title": "Artalk 评论邮件模板美化",
     "book_id": 32250837,
     "book": {
       "id": 32250837,
@@ -13,11 +13,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -32,7 +32,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -50,7 +50,86 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
+      "_serializer": "v2.user"
+    },
+    "format": "lake",
+    "body": "---<br />title: Artalk 评论邮件模板美化<br />date: 2023-1-5 11:15<br />updated: 2023-1-5 11:15<br />tags: Artalk<br />categories: 教程<br />cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672886621454<br />---\n<a name=\"HEVqU\"></a>\n## 前言\n最近博客换上了 Artalk 评论系统，不知道大家有没有发现。感觉 Artalk 默认的邮箱通知模版感觉不够好看。刚好之前在糖果屋🍬群文件中发现了店长的 twikoo信笺样式通知邮件模板，于是我就把它移植过来了。\n<a name=\"aeBoD\"></a>\n## Dome\n![Screenshot_2023-01-05-09-48-19-65.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg#averageHue=%23f9f7f5&clientId=ufa1ff51a-33a8-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u4c10414f&margin=%5Bobject%20Object%5D&name=Screenshot_2023-01-05-09-48-19-65.jpg&originHeight=1260&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=277751&status=done&style=none&taskId=u8e46455a-384f-48db-9381-67c778d9ee0&title=)\n<a name=\"OPPZq\"></a>\n## 正文\n<a name=\"ssnul\"></a>\n### 1. \n在 `data/mail_tpl `中新建 `MAIL_TEMPLATE.html` 文件为，为以下内容\n> 其中 `mail_tpl` 文件夹默认不存在，需自行新建\n\n\n```html\n<head>\n    <base target=\"_blank\" />\n    <style id=\"scrollbar\" type=\"text/css\">\n        ::-webkit-scrollbar{width:0!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}#letter img{max-width:300px}\n    </style>\n    <style id=\"from-wrapstyle\" type=\"text/css\">\n        #form-wrap{overflow:hidden;height:447px;position:relative;top:0px;transition:all 1s ease-in-out.3s;z-index:0}\n    </style>\n    <style id=\"from-wraphoverstyle\" type=\"text/css\">\n        #form-wrap:hover{height:1300px;top:-200px}\n    </style>\n</head>\n\n<body>\n    <div style=\"width: 530px;margin: 20px auto 0;height: 1000px;\">\n        <div id=\"form-wrap\"><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png\" alt=\"before\" style=\"position: absolute;bottom: 126px;left: 0px;background-repeat: no-repeat;width: 530px;height: 317px;z-index:-100\">\n            <div style=\"position: relative;overflow: visible;height: 1500px;width: 500px;margin: 0px auto;transition: all 1s ease-in-out .3s;padding-top:200px;\" <form>\n                <div style=\"background: white;width: 95%;max-width: 800px;margin: auto auto;border-radius: 5px;border: 1px solid;overflow: hidden;-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);\"><img style=\"width:100%;overflow: hidden;\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg\" />\n                    <div style=\"padding: 5px 20px;\"><br>\n                        <div>\n                            <h3 style=\"text-decoration: none; color: rgb(246, 214, 175);\">[{{site_name}}]，见信安：</h3>\n                        </div><br>\n                        <div id=\"letter\" style=\"overflow:auto;height:300px;width:100%;display:block;word-break: break-all;word-wrap: break-word;\">\n                            <p style=\"display: inline-block;\">您在<a style=\"text-decoration: none;color: rgb(246, 214, 175)\" target=\"_blank\" href=\"{{page_title}} display: inline-block;\">{{site_name}}</a>上发表的评论:</p>\n                            <div style=\"border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: \" Arial\", \"Microsoft YaHei\" , \"黑体\" , \"宋体\" , sans-serif;\">{{content}}</div>\n                            <p>收到了来自@{{reply_nick}}的回复：</p>\n                            <div style=\"border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: \" Arial\", \"Microsoft YaHei\" , \"黑体\" , \"宋体\" , sans-serif;\">{{reply_content}}</div>\n                        </div><br>\n                        <div style=\"text-align: center;margin-top: 40px;\"><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png\" alt=\"hr\" style=\"width:100%; margin:5px auto 5px auto; display: block;\" /><a style=\"text-transform: uppercase;text-decoration: none;font-size: 14px;border: 2px solid #6c7575;color: #2f3333;padding: 10px;display: inline-block;margin: 10px auto 0;background-color: rgb(246, 214, 175);\" target=\"_blank\" href=\"{{page_url}}\">{{site_name}}｜请您签收~</a></div>\n                        <p style=\"font-size: 12px;text-align: center;color: #999;\">自动书记人偶竭诚为您服务！<br>©2020<a style=\"text-decoration:none; color:rgb(246, 214, 175)\" href=\"{{site_url}}\">{{site_name}}</a></p>\n                    </div>\n                </div>\n                </form>\n            </div><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png\" alt=\"after\" style=\"      position: absolute;bottom: -2px;left: 0;background-repeat: no-repeat;width: 530px;height: 259px;z-index:100\">\n        </div>\n    </div>\n</body>\n```\n<a name=\"HiFit\"></a>\n## 2.\n将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可<br />![872981219.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg#averageHue=%23fefefe&crop=0&crop=0&crop=1&crop=1&from=url&id=pYdrm&margin=%5Bobject%20Object%5D&name=872981219.jpg&originHeight=437&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=60754&status=done&style=none&title=)\n\n<a name=\"hGvzC\"></a>\n## 后言\n<a name=\"hZQHP\"></a>\n### 参考\n\n- [邮件通知｜Artalk](https://artalk.js.org/guide/backend/email.html)\n- [Twikoo评论回复邮件模板：Acrylic Mail 粉](https://blog.zhheo.com/p/169a1abb.html)\n\n如果你有需要补充的或有好的建议的可以在评论区发送评论\n",
+    "body_draft": "---<br />title: Artalk 评论邮件模板美化<br />date: 2023-1-5 11:15<br />updated: 2023-1-5 11:15<br />tags: Artalk<br />categories: 教程<br />cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672886621454<br />---\n<a name=\"HEVqU\"></a>\n## 前言\n最近博客换上了 Artalk 评论系统，不知道大家有没有发现。感觉 Artalk 默认的邮箱通知模版感觉不够好看。刚好之前在糖果屋🍬群文件中发现了店长的 twikoo信笺样式通知邮件模板，于是我就把它移植过来了。\n<a name=\"aeBoD\"></a>\n## Dome\n![Screenshot_2023-01-05-09-48-19-65.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg#averageHue=%23f9f7f5&clientId=ufa1ff51a-33a8-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u4c10414f&margin=%5Bobject%20Object%5D&name=Screenshot_2023-01-05-09-48-19-65.jpg&originHeight=1260&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=277751&status=done&style=none&taskId=u8e46455a-384f-48db-9381-67c778d9ee0&title=)\n<a name=\"OPPZq\"></a>\n## 正文\n<a name=\"ssnul\"></a>\n### 1. \n在 `data/mail_tpl `中新建 `MAIL_TEMPLATE.html` 文件为，为以下内容\n> 其中 `mail_tpl` 文件夹默认不存在，需自行新建\n\n\n```html\n<head>\n    <base target=\"_blank\" />\n    <style id=\"scrollbar\" type=\"text/css\">\n        ::-webkit-scrollbar{width:0!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}#letter img{max-width:300px}\n    </style>\n    <style id=\"from-wrapstyle\" type=\"text/css\">\n        #form-wrap{overflow:hidden;height:447px;position:relative;top:0px;transition:all 1s ease-in-out.3s;z-index:0}\n    </style>\n    <style id=\"from-wraphoverstyle\" type=\"text/css\">\n        #form-wrap:hover{height:1300px;top:-200px}\n    </style>\n</head>\n\n<body>\n    <div style=\"width: 530px;margin: 20px auto 0;height: 1000px;\">\n        <div id=\"form-wrap\"><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png\" alt=\"before\" style=\"position: absolute;bottom: 126px;left: 0px;background-repeat: no-repeat;width: 530px;height: 317px;z-index:-100\">\n            <div style=\"position: relative;overflow: visible;height: 1500px;width: 500px;margin: 0px auto;transition: all 1s ease-in-out .3s;padding-top:200px;\" <form>\n                <div style=\"background: white;width: 95%;max-width: 800px;margin: auto auto;border-radius: 5px;border: 1px solid;overflow: hidden;-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);\"><img style=\"width:100%;overflow: hidden;\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg\" />\n                    <div style=\"padding: 5px 20px;\"><br>\n                        <div>\n                            <h3 style=\"text-decoration: none; color: rgb(246, 214, 175);\">[{{site_name}}]，见信安：</h3>\n                        </div><br>\n                        <div id=\"letter\" style=\"overflow:auto;height:300px;width:100%;display:block;word-break: break-all;word-wrap: break-word;\">\n                            <p style=\"display: inline-block;\">您在<a style=\"text-decoration: none;color: rgb(246, 214, 175)\" target=\"_blank\" href=\"{{page_title}} display: inline-block;\">{{site_name}}</a>上发表的评论:</p>\n                            <div style=\"border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: \" Arial\", \"Microsoft YaHei\" , \"黑体\" , \"宋体\" , sans-serif;\">{{content}}</div>\n                            <p>收到了来自@{{reply_nick}}的回复：</p>\n                            <div style=\"border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: \" Arial\", \"Microsoft YaHei\" , \"黑体\" , \"宋体\" , sans-serif;\">{{reply_content}}</div>\n                        </div><br>\n                        <div style=\"text-align: center;margin-top: 40px;\"><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png\" alt=\"hr\" style=\"width:100%; margin:5px auto 5px auto; display: block;\" /><a style=\"text-transform: uppercase;text-decoration: none;font-size: 14px;border: 2px solid #6c7575;color: #2f3333;padding: 10px;display: inline-block;margin: 10px auto 0;background-color: rgb(246, 214, 175);\" target=\"_blank\" href=\"{{page_url}}\">{{site_name}}｜请您签收~</a></div>\n                        <p style=\"font-size: 12px;text-align: center;color: #999;\">自动书记人偶竭诚为您服务！<br>©2020<a style=\"text-decoration:none; color:rgb(246, 214, 175)\" href=\"{{site_url}}\">{{site_name}}</a></p>\n                    </div>\n                </div>\n                </form>\n            </div><img src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png\" alt=\"after\" style=\"      position: absolute;bottom: -2px;left: 0;background-repeat: no-repeat;width: 530px;height: 259px;z-index:100\">\n        </div>\n    </div>\n</body>\n```\n<a name=\"HiFit\"></a>\n## 2.\n将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可<br />![872981219.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg#averageHue=%23fefefe&crop=0&crop=0&crop=1&crop=1&from=url&id=pYdrm&margin=%5Bobject%20Object%5D&name=872981219.jpg&originHeight=437&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=60754&status=done&style=none&title=)\n\n<a name=\"hGvzC\"></a>\n## 后言\n<a name=\"hZQHP\"></a>\n### 参考\n\n- [邮件通知｜Artalk](https://artalk.js.org/guide/backend/email.html)\n- [Twikoo评论回复邮件模板：Acrylic Mail 粉](https://blog.zhheo.com/p/169a1abb.html)\n\n如果你有需要补充的或有好的建议的可以在评论区发送评论\n",
+    "body_html": "<!doctype html><div class=\"lake-content\" typography=\"classic\"><p id=\"u2190a7b2\" class=\"ne-p\"><span class=\"ne-text\">---</span></p><p id=\"u926efd22\" class=\"ne-p\"><span class=\"ne-text\">title: Artalk 评论邮件模板美化</span></p><p id=\"u235ad5fc\" class=\"ne-p\"><span class=\"ne-text\">date: 2023-1-5 11:15</span></p><p id=\"ub6639c0b\" class=\"ne-p\"><span class=\"ne-text\">updated: 2023-1-5 11:15</span></p><p id=\"udf6b2e77\" class=\"ne-p\"><span class=\"ne-text\">tags: Artalk</span></p><p id=\"uc22ced0c\" class=\"ne-p\"><span class=\"ne-text\">categories: 教程</span></p><p id=\"uc4135d36\" class=\"ne-p\"><span class=\"ne-text\">cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&amp;updatedAt=1672886621454</span></p><p id=\"udbd5c6bd\" class=\"ne-p\"><span class=\"ne-text\">---</span></p><h2 id=\"HEVqU\"><span class=\"ne-text\">前言</span></h2><p id=\"u0c252cda\" class=\"ne-p\"><span class=\"ne-text\">最近博客换上了 Artalk 评论系统，不知道大家有没有发现。感觉 Artalk 默认的邮箱通知模版感觉不够好看。刚好之前在糖果屋🍬群文件中发现了店长的 twikoo信笺样式通知邮件模板，于是我就把它移植过来了。</span></p><h2 id=\"aeBoD\"><span class=\"ne-text\">Dome</span></h2><p id=\"u2118b97d\" class=\"ne-p\"><img src=\"https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg\" width=\"1080\" id=\"u4c10414f\" class=\"ne-image\"></p><h2 id=\"OPPZq\"><span class=\"ne-text\">正文</span></h2><h3 id=\"ssnul\"><span class=\"ne-text\">1. </span></h3><p id=\"uacb3f1f2\" class=\"ne-p\"><span class=\"ne-text\">在 `data/mail_tpl `中新建 `MAIL_TEMPLATE.html` 文件为，为以下内容</span></p><div class=\"ne-quote\"><p id=\"ub13e82c8\" class=\"ne-p\"><span class=\"ne-text\">其中 `mail_tpl` 文件夹默认不存在，需自行新建</span></p></div><p id=\"u9fb4241a\" class=\"ne-p\"><span class=\"ne-text\"></span></p><pre data-language=\"html\" id=\"naAxC\" class=\"ne-codeblock language-html\">&lt;head&gt;\n    &lt;base target=&quot;_blank&quot; /&gt;\n    &lt;style id=&quot;scrollbar&quot; type=&quot;text/css&quot;&gt;\n        ::-webkit-scrollbar{width:0!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}pre{white-space:pre-wrap!important;word-wrap:break-word!important;*white-space:normal!important}#letter img{max-width:300px}\n    &lt;/style&gt;\n    &lt;style id=&quot;from-wrapstyle&quot; type=&quot;text/css&quot;&gt;\n        #form-wrap{overflow:hidden;height:447px;position:relative;top:0px;transition:all 1s ease-in-out.3s;z-index:0}\n    &lt;/style&gt;\n    &lt;style id=&quot;from-wraphoverstyle&quot; type=&quot;text/css&quot;&gt;\n        #form-wrap:hover{height:1300px;top:-200px}\n    &lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n    &lt;div style=&quot;width: 530px;margin: 20px auto 0;height: 1000px;&quot;&gt;\n        &lt;div id=&quot;form-wrap&quot;&gt;&lt;img src=&quot;https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png&quot; alt=&quot;before&quot; style=&quot;position: absolute;bottom: 126px;left: 0px;background-repeat: no-repeat;width: 530px;height: 317px;z-index:-100&quot;&gt;\n            &lt;div style=&quot;position: relative;overflow: visible;height: 1500px;width: 500px;margin: 0px auto;transition: all 1s ease-in-out .3s;padding-top:200px;&quot; &lt;form&gt;\n                &lt;div style=&quot;background: white;width: 95%;max-width: 800px;margin: auto auto;border-radius: 5px;border: 1px solid;overflow: hidden;-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);&quot;&gt;&lt;img style=&quot;width:100%;overflow: hidden;&quot; src=&quot;https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg&quot; /&gt;\n                    &lt;div style=&quot;padding: 5px 20px;&quot;&gt;&lt;br&gt;\n                        &lt;div&gt;\n                            &lt;h3 style=&quot;text-decoration: none; color: rgb(246, 214, 175);&quot;&gt;[{{site_name}}]，见信安：&lt;/h3&gt;\n                        &lt;/div&gt;&lt;br&gt;\n                        &lt;div id=&quot;letter&quot; style=&quot;overflow:auto;height:300px;width:100%;display:block;word-break: break-all;word-wrap: break-word;&quot;&gt;\n                            &lt;p style=&quot;display: inline-block;&quot;&gt;您在&lt;a style=&quot;text-decoration: none;color: rgb(246, 214, 175)&quot; target=&quot;_blank&quot; href=&quot;{{page_title}} display: inline-block;&quot;&gt;{{site_name}}&lt;/a&gt;上发表的评论:&lt;/p&gt;\n                            &lt;div style=&quot;border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: &quot; Arial&quot;, &quot;Microsoft YaHei&quot; , &quot;黑体&quot; , &quot;宋体&quot; , sans-serif;&quot;&gt;{{content}}&lt;/div&gt;\n                            &lt;p&gt;收到了来自@{{reply_nick}}的回复：&lt;/p&gt;\n                            &lt;div style=&quot;border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;font-family: &quot; Arial&quot;, &quot;Microsoft YaHei&quot; , &quot;黑体&quot; , &quot;宋体&quot; , sans-serif;&quot;&gt;{{reply_content}}&lt;/div&gt;\n                        &lt;/div&gt;&lt;br&gt;\n                        &lt;div style=&quot;text-align: center;margin-top: 40px;&quot;&gt;&lt;img src=&quot;https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png&quot; alt=&quot;hr&quot; style=&quot;width:100%; margin:5px auto 5px auto; display: block;&quot; /&gt;&lt;a style=&quot;text-transform: uppercase;text-decoration: none;font-size: 14px;border: 2px solid #6c7575;color: #2f3333;padding: 10px;display: inline-block;margin: 10px auto 0;background-color: rgb(246, 214, 175);&quot; target=&quot;_blank&quot; href=&quot;{{page_url}}&quot;&gt;{{site_name}}｜请您签收~&lt;/a&gt;&lt;/div&gt;\n                        &lt;p style=&quot;font-size: 12px;text-align: center;color: #999;&quot;&gt;自动书记人偶竭诚为您服务！&lt;br&gt;©2020&lt;a style=&quot;text-decoration:none; color:rgb(246, 214, 175)&quot; href=&quot;{{site_url}}&quot;&gt;{{site_name}}&lt;/a&gt;&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n                &lt;/form&gt;\n            &lt;/div&gt;&lt;img src=&quot;https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png&quot; alt=&quot;after&quot; style=&quot;      position: absolute;bottom: -2px;left: 0;background-repeat: no-repeat;width: 530px;height: 259px;z-index:100&quot;&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/body&gt;</pre><h2 id=\"HiFit\"><span class=\"ne-text\">2.</span></h2><p id=\"ua2e08dc3\" class=\"ne-p\"><span class=\"ne-text\">将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可</span></p><p id=\"u7b650a09\" class=\"ne-p\"><img src=\"https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg\" width=\"1080\" id=\"pYdrm\" class=\"ne-image\"></p><p id=\"ub18f0683\" class=\"ne-p\"><br></p><h2 id=\"hGvzC\"><span class=\"ne-text\">后言</span></h2><h3 id=\"hZQHP\"><span class=\"ne-text\">参考</span></h3><ul class=\"ne-ul\"><li id=\"u6af5265e\"><a href=\"https://artalk.js.org/guide/backend/email.html\" data-href=\"https://artalk.js.org/guide/backend/email.html\" target=\"_blank\" class=\"ne-link\"><span class=\"ne-text\">邮件通知｜Artalk</span></a></li><li id=\"ue3cb17f2\"><a href=\"https://blog.zhheo.com/p/169a1abb.html\" data-href=\"https://blog.zhheo.com/p/169a1abb.html\" target=\"_blank\" class=\"ne-link\"><span class=\"ne-text\">Twikoo评论回复邮件模板：Acrylic Mail 粉</span></a></li></ul><p id=\"u082dcab6\" class=\"ne-p\"><span class=\"ne-text\">如果你有需要补充的或有好的建议的可以在评论区发送评论</span></p></div>",
+    "body_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"adapt\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u2190a7b2\" id=\"u2190a7b2\"><span data-lake-id=\"ud2cba7cb\" id=\"ud2cba7cb\">---</span></p><p data-lake-id=\"u926efd22\" id=\"u926efd22\"><span data-lake-id=\"u02d2e3a3\" id=\"u02d2e3a3\">title: Artalk 评论邮件模板美化</span></p><p data-lake-id=\"u235ad5fc\" id=\"u235ad5fc\"><span data-lake-id=\"u48363d15\" id=\"u48363d15\">date: 2023-1-5 11:15</span></p><p data-lake-id=\"ub6639c0b\" id=\"ub6639c0b\"><span data-lake-id=\"ue9fd4dfc\" id=\"ue9fd4dfc\">updated: 2023-1-5 11:15</span></p><p data-lake-id=\"udf6b2e77\" id=\"udf6b2e77\"><span data-lake-id=\"u7b65f257\" id=\"u7b65f257\">tags: Artalk</span></p><p data-lake-id=\"uc22ced0c\" id=\"uc22ced0c\"><span data-lake-id=\"u4cc41efa\" id=\"u4cc41efa\">categories: 教程</span></p><p data-lake-id=\"uc4135d36\" id=\"uc4135d36\"><span data-lake-id=\"u2c5a527c\" id=\"u2c5a527c\">cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&amp;updatedAt=1672886621454</span></p><p data-lake-id=\"udbd5c6bd\" id=\"udbd5c6bd\"><span data-lake-id=\"u58c76c41\" id=\"u58c76c41\">---</span></p><h2 data-lake-id=\"HEVqU\" id=\"HEVqU\"><span data-lake-id=\"u38da115e\" id=\"u38da115e\">前言</span></h2><p data-lake-id=\"u0c252cda\" id=\"u0c252cda\"><span data-lake-id=\"u6198ad86\" id=\"u6198ad86\">最近博客换上了 Artalk 评论系统，不知道大家有没有发现。感觉 Artalk 默认的邮箱通知模版感觉不够好看。刚好之前在糖果屋🍬群文件中发现了店长的 twikoo信笺样式通知邮件模板，于是我就把它移植过来了。</span></p><h2 data-lake-id=\"aeBoD\" id=\"aeBoD\"><span data-lake-id=\"udc4232c2\" id=\"udc4232c2\">Dome</span></h2><p data-lake-id=\"u2118b97d\" id=\"u2118b97d\"><card type=\"inline\" name=\"image\" value=\"data:%7B%22src%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2023%2Fjpeg%2F22578074%2F1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg%22%2C%22taskId%22%3A%22u8e46455a-384f-48db-9381-67c778d9ee0%22%2C%22clientId%22%3A%22ufa1ff51a-33a8-4%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22name%22%3A%22Screenshot_2023-01-05-09-48-19-65.jpg%22%2C%22size%22%3A277751%2C%22from%22%3A%22ui%22%2C%22originWidth%22%3A1080%2C%22originHeight%22%3A1260%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%5B%24LSITE_NAME%5D%5D%2C%E8%A7%81%E4%BF%A1%E5%AE%89%3A%20%E6%82%A8%E5%9C%A8%24%7BSITE_NAME%7D%7D%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%20%7BREPLY.CONTENT%5D%5D%20%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%24%7B%7BREPLY_NICK%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%3B%20%7BCONTENT%5D%5D%20%24%7B(SITE_NAME%7D%7D%20%7C%20%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%20%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1!%202020%20SITE_NAME)L%22%2C%22ocrLocations%22%3A%5B%7B%22x%22%3A298.67484%2C%22y%22%3A392.54935%2C%22width%22%3A237.01986%2C%22height%22%3A22.559379999999976%2C%22text%22%3A%22%5B%24LSITE_NAME%5D%5D%2C%E8%A7%81%E4%BF%A1%E5%AE%89%3A%22%7D%2C%7B%22x%22%3A298.81622%2C%22y%22%3A477.04208%2C%22width%22%3A262.41724000000005%2C%22height%22%3A21.324889999999982%2C%22text%22%3A%22%E6%82%A8%E5%9C%A8%24%7BSITE_NAME%7D%7D%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%22%7D%2C%7B%22x%22%3A319.87964%2C%22y%22%3A555.5334%2C%22width%22%3A134.78456%2C%22height%22%3A23.45286999999996%2C%22text%22%3A%22%7BREPLY.CONTENT%5D%5D%22%7D%2C%7B%22x%22%3A299.34918%2C%22y%22%3A619.64624%2C%22width%22%3A281.55422000000004%2C%22height%22%3A20.16106000000002%2C%22text%22%3A%22%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%24%7B%7BREPLY_NICK%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%3B%22%7D%2C%7B%22x%22%3A321.4513%2C%22y%22%3A681.4686%2C%22width%22%3A88.3012%2C%22height%22%3A21.53212999999994%2C%22text%22%3A%22%7BCONTENT%5D%5D%22%7D%2C%7B%22x%22%3A438.68082%2C%22y%22%3A909.7006%2C%22width%22%3A202.37893000000003%2C%22height%22%3A18.900840000000017%2C%22text%22%3A%22%24%7B(SITE_NAME%7D%7D%20%7C%20%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%22%7D%2C%7B%22x%22%3A453.5951%2C%22y%22%3A956.53156%2C%22width%22%3A170.70479999999998%2C%22height%22%3A14.591839999999934%2C%22text%22%3A%22%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1!%22%7D%2C%7B%22x%22%3A475.42722%2C%22y%22%3A973.22925%2C%22width%22%3A126.63468000000006%2C%22height%22%3A12.427350000000047%2C%22text%22%3A%222020%20SITE_NAME)L%22%7D%5D%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22averageHue%22%3A%22%23f9f7f5%22%2C%22id%22%3A%22u4c10414f%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card></p><h2 data-lake-id=\"OPPZq\" id=\"OPPZq\"><span data-lake-id=\"u71d19d4d\" id=\"u71d19d4d\">正文</span></h2><h3 data-lake-id=\"ssnul\" id=\"ssnul\"><span data-lake-id=\"u4fc657b2\" id=\"u4fc657b2\">1. </span></h3><p data-lake-id=\"uacb3f1f2\" id=\"uacb3f1f2\"><span data-lake-id=\"u6ea33c82\" id=\"u6ea33c82\">在 `data/mail_tpl `中新建 `MAIL_TEMPLATE.html` 文件为，为以下内容</span></p><blockquote data-lake-id=\"u1329975a\" id=\"u1329975a\"><p data-lake-id=\"ub13e82c8\" id=\"ub13e82c8\"><span data-lake-id=\"ucdf79480\" id=\"ucdf79480\">其中 `mail_tpl` 文件夹默认不存在，需自行新建</span></p></blockquote><p data-lake-id=\"u9fb4241a\" id=\"u9fb4241a\"><span data-lake-id=\"u3f413deb\" id=\"u3f413deb\">​</span><br></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22html%22%2C%22code%22%3A%22%3Chead%3E%5Cn%20%20%20%20%3Cbase%20target%3D%5C%22_blank%5C%22%20%2F%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22scrollbar%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3A%3A-webkit-scrollbar%7Bwidth%3A0!important%7Dpre%7Bwhite-space%3Apre-wrap!important%3Bword-wrap%3Abreak-word!important%3B*white-space%3Anormal!important%7Dpre%7Bwhite-space%3Apre-wrap!important%3Bword-wrap%3Abreak-word!important%3B*white-space%3Anormal!important%7D%23letter%20img%7Bmax-width%3A300px%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22from-wrapstyle%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%23form-wrap%7Boverflow%3Ahidden%3Bheight%3A447px%3Bposition%3Arelative%3Btop%3A0px%3Btransition%3Aall%201s%20ease-in-out.3s%3Bz-index%3A0%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22from-wraphoverstyle%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%23form-wrap%3Ahover%7Bheight%3A1300px%3Btop%3A-200px%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%3C%2Fhead%3E%5Cn%5Cn%3Cbody%3E%5Cn%20%20%20%20%3Cdiv%20style%3D%5C%22width%3A%20530px%3Bmargin%3A%2020px%20auto%200%3Bheight%3A%201000px%3B%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%5C%22form-wrap%5C%22%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fbefore.png%5C%22%20alt%3D%5C%22before%5C%22%20style%3D%5C%22position%3A%20absolute%3Bbottom%3A%20126px%3Bleft%3A%200px%3Bbackground-repeat%3A%20no-repeat%3Bwidth%3A%20530px%3Bheight%3A%20317px%3Bz-index%3A-100%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22position%3A%20relative%3Boverflow%3A%20visible%3Bheight%3A%201500px%3Bwidth%3A%20500px%3Bmargin%3A%200px%20auto%3Btransition%3A%20all%201s%20ease-in-out%20.3s%3Bpadding-top%3A200px%3B%5C%22%20%3Cform%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22background%3A%20white%3Bwidth%3A%2095%25%3Bmax-width%3A%20800px%3Bmargin%3A%20auto%20auto%3Bborder-radius%3A%205px%3Bborder%3A%201px%20solid%3Boverflow%3A%20hidden%3B-webkit-box-shadow%3A%200px%200px%2020px%200px%20rgba(0%2C%200%2C%200%2C%200.12)%3Bbox-shadow%3A%200px%200px%2020px%200px%20rgba(0%2C%200%2C%200%2C%200.18)%3B%5C%22%3E%3Cimg%20style%3D%5C%22width%3A100%25%3Boverflow%3A%20hidden%3B%5C%22%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fviolet.jpg%5C%22%20%2F%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22padding%3A%205px%2020px%3B%5C%22%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20style%3D%5C%22text-decoration%3A%20none%3B%20color%3A%20rgb(246%2C%20214%2C%20175)%3B%5C%22%3E%5B%7B%7Bsite_name%7D%7D%5D%EF%BC%8C%E8%A7%81%E4%BF%A1%E5%AE%89%EF%BC%9A%3C%2Fh3%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%5C%22letter%5C%22%20style%3D%5C%22overflow%3Aauto%3Bheight%3A300px%3Bwidth%3A100%25%3Bdisplay%3Ablock%3Bword-break%3A%20break-all%3Bword-wrap%3A%20break-word%3B%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20style%3D%5C%22display%3A%20inline-block%3B%5C%22%3E%E6%82%A8%E5%9C%A8%3Ca%20style%3D%5C%22text-decoration%3A%20none%3Bcolor%3A%20rgb(246%2C%20214%2C%20175)%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22%7B%7Bpage_title%7D%7D%20display%3A%20inline-block%3B%5C%22%3E%7B%7Bsite_name%7D%7D%3C%2Fa%3E%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22border-bottom%3A%20%23ddd%201px%20solid%3Bborder-left%3A%20%23ddd%201px%20solid%3Bpadding-bottom%3A%2020px%3Bbackground-color%3A%20%23eee%3Bmargin%3A%2015px%200px%3Bpadding-left%3A%2020px%3Bpadding-right%3A%2020px%3Bborder-top%3A%20%23ddd%201px%20solid%3Bborder-right%3A%20%23ddd%201px%20solid%3Bpadding-top%3A%2020px%3Bfont-family%3A%20%5C%22%20Arial%5C%22%2C%20%5C%22Microsoft%20YaHei%5C%22%20%2C%20%5C%22%E9%BB%91%E4%BD%93%5C%22%20%2C%20%5C%22%E5%AE%8B%E4%BD%93%5C%22%20%2C%20sans-serif%3B%5C%22%3E%7B%7Bcontent%7D%7D%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%7B%7Breply_nick%7D%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%EF%BC%9A%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22border-bottom%3A%20%23ddd%201px%20solid%3Bborder-left%3A%20%23ddd%201px%20solid%3Bpadding-bottom%3A%2020px%3Bbackground-color%3A%20%23eee%3Bmargin%3A%2015px%200px%3Bpadding-left%3A%2020px%3Bpadding-right%3A%2020px%3Bborder-top%3A%20%23ddd%201px%20solid%3Bborder-right%3A%20%23ddd%201px%20solid%3Bpadding-top%3A%2020px%3Bfont-family%3A%20%5C%22%20Arial%5C%22%2C%20%5C%22Microsoft%20YaHei%5C%22%20%2C%20%5C%22%E9%BB%91%E4%BD%93%5C%22%20%2C%20%5C%22%E5%AE%8B%E4%BD%93%5C%22%20%2C%20sans-serif%3B%5C%22%3E%7B%7Breply_content%7D%7D%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22text-align%3A%20center%3Bmargin-top%3A%2040px%3B%5C%22%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fline.png%5C%22%20alt%3D%5C%22hr%5C%22%20style%3D%5C%22width%3A100%25%3B%20margin%3A5px%20auto%205px%20auto%3B%20display%3A%20block%3B%5C%22%20%2F%3E%3Ca%20style%3D%5C%22text-transform%3A%20uppercase%3Btext-decoration%3A%20none%3Bfont-size%3A%2014px%3Bborder%3A%202px%20solid%20%236c7575%3Bcolor%3A%20%232f3333%3Bpadding%3A%2010px%3Bdisplay%3A%20inline-block%3Bmargin%3A%2010px%20auto%200%3Bbackground-color%3A%20rgb(246%2C%20214%2C%20175)%3B%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22%7B%7Bpage_url%7D%7D%5C%22%3E%7B%7Bsite_name%7D%7D%EF%BD%9C%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%3C%2Fa%3E%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20style%3D%5C%22font-size%3A%2012px%3Btext-align%3A%20center%3Bcolor%3A%20%23999%3B%5C%22%3E%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1%EF%BC%81%3Cbr%3E%C2%A92020%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%20color%3Argb(246%2C%20214%2C%20175)%5C%22%20href%3D%5C%22%7B%7Bsite_url%7D%7D%5C%22%3E%7B%7Bsite_name%7D%7D%3C%2Fa%3E%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fafter.png%5C%22%20alt%3D%5C%22after%5C%22%20style%3D%5C%22%20%20%20%20%20%20position%3A%20absolute%3Bbottom%3A%20-2px%3Bleft%3A%200%3Bbackground-repeat%3A%20no-repeat%3Bwidth%3A%20530px%3Bheight%3A%20259px%3Bz-index%3A100%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%3C%2Fdiv%3E%5Cn%3C%2Fbody%3E%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22naAxC%22%7D\"></card><h2 data-lake-id=\"HiFit\" id=\"HiFit\"><span data-lake-id=\"uf7ec597f\" id=\"uf7ec597f\">2.</span></h2><p data-lake-id=\"ua2e08dc3\" id=\"ua2e08dc3\"><span data-lake-id=\"u1e48161e\" id=\"u1e48161e\">将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可</span></p><p data-lake-id=\"u7b650a09\" id=\"u7b650a09\"><card type=\"inline\" name=\"image\" value=\"data:%7B%22src%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2023%2Fjpeg%2F22578074%2F1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22name%22%3A%22872981219.jpg%22%2C%22size%22%3A60754%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A1080%2C%22originHeight%22%3A437%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22ocrLocations%22%3A%5B%7B%22x%22%3A46.397682%2C%22y%22%3A10.932872%2C%22width%22%3A97.44128799999999%2C%22height%22%3A24.983867999999998%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%22%7D%2C%7B%22x%22%3A32.229073%2C%22y%22%3A72.283394%2C%22width%22%3A106.212177%2C%22height%22%3A18.909335999999996%2C%22text%22%3A%22%E5%90%AF%E7%94%A8%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%22%7D%2C%7B%22x%22%3A33.187515%2C%22y%22%3A132.14586%2C%22width%22%3A70.90339499999999%2C%22height%22%3A18.917599999999993%2C%22text%22%3A%22%E5%8F%91%E9%80%81%E6%96%B9%E5%BC%8F%22%7D%2C%7B%22x%22%3A559.443%2C%22y%22%3A134.6947%2C%22width%22%3A44.358600000000024%2C%22height%22%3A16.367169999999987%2C%22text%22%3A%22SMTP%22%7D%2C%7B%22x%22%3A555.7821%2C%22y%22%3A192.69972%2C%22width%22%3A109.3569%2C%22height%22%3A20.996899999999982%2C%22text%22%3A%22%7BREPLY_NICKJ)%22%7D%2C%7B%22x%22%3A32.005558%2C%22y%22%3A193.70271%2C%22width%22%3A89.55238700000001%2C%22height%22%3A18.865039999999993%2C%22text%22%3A%22%E5%8F%91%E4%BF%A1%E4%BA%BA%E6%98%B5%E7%A7%B0%22%7D%2C%7B%22x%22%3A32.83653%2C%22y%22%3A253.04904%2C%22width%22%3A88.35466%2C%22height%22%3A18.79209000000003%2C%22text%22%3A%22%E5%8F%91%E4%BF%A1%E4%BA%BA%E5%9C%B0%E5%9D%80%22%7D%2C%7B%22x%22%3A556.11554%2C%22y%22%3A254.72171%2C%22width%22%3A171.17371000000003%2C%22height%22%3A17.805149999999998%2C%22text%22%3A%22NICEXL%40HOTMAIL.COM%22%7D%2C%7B%22x%22%3A555.6959%2C%22y%22%3A312.57022%2C%22width%22%3A430.7274%2C%22height%22%3A22.290160000000014%2C%22text%22%3A%22%5B(SITE_NAME%5D%5D%E6%82%A8%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40((REPLY-NICK%5D)%E7%9A%84%E5%9B%9E%E5%A4%8D%22%7D%2C%7B%22x%22%3A32.584934%2C%22y%22%3A314.69537%2C%22width%22%3A71.57334600000002%2C%22height%22%3A18.56768999999997%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98%22%7D%2C%7B%22x%22%3A32.341164%2C%22y%22%3A367.70038%2C%22width%22%3A107.560406%2C%22height%22%3A18.46325999999999%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%22%7D%2C%7B%22x%22%3A557.46216%2C%22y%22%3A378.11246%2C%22width%22%3A320.29283999999996%2C%22height%22%3A18.73766999999998%2C%22text%22%3A%22%2FDATA%2FMAIL_TPL%2FMAIL_TEMPLATE.HTML%22%7D%2C%7B%22x%22%3A33.37555%2C%22y%22%3A393.86185%2C%22width%22%3A200.74998%2C%22height%22%3A16.69396999999998%2C%22text%22%3A%22%E5%A1%AB%E5%85%A5%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%22%7D%5D%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22averageHue%22%3A%22%23fefefe%22%2C%22id%22%3A%22pYdrm%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card></p><p data-lake-id=\"ub18f0683\" id=\"ub18f0683\"><br></p><h2 data-lake-id=\"hGvzC\" id=\"hGvzC\"><span data-lake-id=\"u25d4466e\" id=\"u25d4466e\">后言</span></h2><h3 data-lake-id=\"hZQHP\" id=\"hZQHP\"><span data-lake-id=\"ufdbb61b1\" id=\"ufdbb61b1\">参考</span></h3><ul list=\"u2b7482d6\"><li fid=\"u8524abe5\" data-lake-id=\"u6af5265e\" id=\"u6af5265e\"><a href=\"https://artalk.js.org/guide/backend/email.html\" target=\"_blank\" data-lake-id=\"uee1bf33c\" id=\"uee1bf33c\"><span data-lake-id=\"ud732ae43\" id=\"ud732ae43\">邮件通知｜Artalk</span></a></li><li fid=\"u8524abe5\" data-lake-id=\"ue3cb17f2\" id=\"ue3cb17f2\"><a href=\"https://blog.zhheo.com/p/169a1abb.html\" target=\"_blank\" data-lake-id=\"u8560a761\" id=\"u8560a761\"><span data-lake-id=\"ud455325b\" id=\"ud455325b\">Twikoo评论回复邮件模板：Acrylic Mail 粉</span></a></li></ul><p data-lake-id=\"u082dcab6\" id=\"u082dcab6\"><span data-lake-id=\"uc2501962\" id=\"uc2501962\">如果你有需要补充的或有好的建议的可以在评论区发送评论</span></p>",
+    "body_draft_lake": "<!doctype lake><meta name=\"doc-version\" content=\"1\" /><meta name=\"typography\" content=\"classic\" /><meta name=\"viewport\" content=\"adapt\" /><meta name=\"paragraphSpacing\" content=\"relax\" /><p data-lake-id=\"u2190a7b2\" id=\"u2190a7b2\"><span data-lake-id=\"ud2cba7cb\" id=\"ud2cba7cb\">---</span></p><p data-lake-id=\"u926efd22\" id=\"u926efd22\"><span data-lake-id=\"u02d2e3a3\" id=\"u02d2e3a3\">title: Artalk 评论邮件模板美化</span></p><p data-lake-id=\"u235ad5fc\" id=\"u235ad5fc\"><span data-lake-id=\"u48363d15\" id=\"u48363d15\">date: 2023-1-5 11:15</span></p><p data-lake-id=\"ub6639c0b\" id=\"ub6639c0b\"><span data-lake-id=\"ue9fd4dfc\" id=\"ue9fd4dfc\">updated: 2023-1-5 11:15</span></p><p data-lake-id=\"udf6b2e77\" id=\"udf6b2e77\"><span data-lake-id=\"u7b65f257\" id=\"u7b65f257\">tags: Artalk</span></p><p data-lake-id=\"uc22ced0c\" id=\"uc22ced0c\"><span data-lake-id=\"u4cc41efa\" id=\"u4cc41efa\">categories: 教程</span></p><p data-lake-id=\"uc4135d36\" id=\"uc4135d36\"><span data-lake-id=\"u2c5a527c\" id=\"u2c5a527c\">cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&amp;updatedAt=1672886621454</span></p><p data-lake-id=\"udbd5c6bd\" id=\"udbd5c6bd\"><span data-lake-id=\"u58c76c41\" id=\"u58c76c41\">---</span></p><h2 data-lake-id=\"HEVqU\" id=\"HEVqU\"><span data-lake-id=\"u38da115e\" id=\"u38da115e\">前言</span></h2><p data-lake-id=\"u0c252cda\" id=\"u0c252cda\"><span data-lake-id=\"u6198ad86\" id=\"u6198ad86\">最近博客换上了 Artalk 评论系统，不知道大家有没有发现。感觉 Artalk 默认的邮箱通知模版感觉不够好看。刚好之前在糖果屋🍬群文件中发现了店长的 twikoo信笺样式通知邮件模板，于是我就把它移植过来了。</span></p><h2 data-lake-id=\"aeBoD\" id=\"aeBoD\"><span data-lake-id=\"udc4232c2\" id=\"udc4232c2\">Dome</span></h2><p data-lake-id=\"u2118b97d\" id=\"u2118b97d\"><card type=\"inline\" name=\"image\" value=\"data:%7B%22src%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2023%2Fjpeg%2F22578074%2F1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg%22%2C%22taskId%22%3A%22u8e46455a-384f-48db-9381-67c778d9ee0%22%2C%22clientId%22%3A%22ufa1ff51a-33a8-4%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22name%22%3A%22Screenshot_2023-01-05-09-48-19-65.jpg%22%2C%22size%22%3A277751%2C%22from%22%3A%22ui%22%2C%22originWidth%22%3A1080%2C%22originHeight%22%3A1260%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%5B%24LSITE_NAME%5D%5D%2C%E8%A7%81%E4%BF%A1%E5%AE%89%3A%20%E6%82%A8%E5%9C%A8%24%7BSITE_NAME%7D%7D%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%20%7BREPLY.CONTENT%5D%5D%20%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%24%7B%7BREPLY_NICK%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%3B%20%7BCONTENT%5D%5D%20%24%7B(SITE_NAME%7D%7D%20%7C%20%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%20%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1!%202020%20SITE_NAME)L%22%2C%22ocrLocations%22%3A%5B%7B%22x%22%3A298.67484%2C%22y%22%3A392.54935%2C%22width%22%3A237.01986%2C%22height%22%3A22.559379999999976%2C%22text%22%3A%22%5B%24LSITE_NAME%5D%5D%2C%E8%A7%81%E4%BF%A1%E5%AE%89%3A%22%7D%2C%7B%22x%22%3A298.81622%2C%22y%22%3A477.04208%2C%22width%22%3A262.41724000000005%2C%22height%22%3A21.324889999999982%2C%22text%22%3A%22%E6%82%A8%E5%9C%A8%24%7BSITE_NAME%7D%7D%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%22%7D%2C%7B%22x%22%3A319.87964%2C%22y%22%3A555.5334%2C%22width%22%3A134.78456%2C%22height%22%3A23.45286999999996%2C%22text%22%3A%22%7BREPLY.CONTENT%5D%5D%22%7D%2C%7B%22x%22%3A299.34918%2C%22y%22%3A619.64624%2C%22width%22%3A281.55422000000004%2C%22height%22%3A20.16106000000002%2C%22text%22%3A%22%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%24%7B%7BREPLY_NICK%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%3B%22%7D%2C%7B%22x%22%3A321.4513%2C%22y%22%3A681.4686%2C%22width%22%3A88.3012%2C%22height%22%3A21.53212999999994%2C%22text%22%3A%22%7BCONTENT%5D%5D%22%7D%2C%7B%22x%22%3A438.68082%2C%22y%22%3A909.7006%2C%22width%22%3A202.37893000000003%2C%22height%22%3A18.900840000000017%2C%22text%22%3A%22%24%7B(SITE_NAME%7D%7D%20%7C%20%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%22%7D%2C%7B%22x%22%3A453.5951%2C%22y%22%3A956.53156%2C%22width%22%3A170.70479999999998%2C%22height%22%3A14.591839999999934%2C%22text%22%3A%22%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1!%22%7D%2C%7B%22x%22%3A475.42722%2C%22y%22%3A973.22925%2C%22width%22%3A126.63468000000006%2C%22height%22%3A12.427350000000047%2C%22text%22%3A%222020%20SITE_NAME)L%22%7D%5D%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22averageHue%22%3A%22%23f9f7f5%22%2C%22id%22%3A%22u4c10414f%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card></p><h2 data-lake-id=\"OPPZq\" id=\"OPPZq\"><span data-lake-id=\"u71d19d4d\" id=\"u71d19d4d\">正文</span></h2><h3 data-lake-id=\"ssnul\" id=\"ssnul\"><span data-lake-id=\"u4fc657b2\" id=\"u4fc657b2\">1. </span></h3><p data-lake-id=\"uacb3f1f2\" id=\"uacb3f1f2\"><span data-lake-id=\"u6ea33c82\" id=\"u6ea33c82\">在 `data/mail_tpl `中新建 `MAIL_TEMPLATE.html` 文件为，为以下内容</span></p><blockquote data-lake-id=\"u1329975a\" id=\"u1329975a\"><p data-lake-id=\"ub13e82c8\" id=\"ub13e82c8\"><span data-lake-id=\"ucdf79480\" id=\"ucdf79480\">其中 `mail_tpl` 文件夹默认不存在，需自行新建</span></p></blockquote><p data-lake-id=\"u9fb4241a\" id=\"u9fb4241a\"><span data-lake-id=\"u3f413deb\" id=\"u3f413deb\">​</span><br></p><card type=\"inline\" name=\"codeblock\" value=\"data:%7B%22mode%22%3A%22html%22%2C%22code%22%3A%22%3Chead%3E%5Cn%20%20%20%20%3Cbase%20target%3D%5C%22_blank%5C%22%20%2F%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22scrollbar%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3A%3A-webkit-scrollbar%7Bwidth%3A0!important%7Dpre%7Bwhite-space%3Apre-wrap!important%3Bword-wrap%3Abreak-word!important%3B*white-space%3Anormal!important%7Dpre%7Bwhite-space%3Apre-wrap!important%3Bword-wrap%3Abreak-word!important%3B*white-space%3Anormal!important%7D%23letter%20img%7Bmax-width%3A300px%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22from-wrapstyle%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%23form-wrap%7Boverflow%3Ahidden%3Bheight%3A447px%3Bposition%3Arelative%3Btop%3A0px%3Btransition%3Aall%201s%20ease-in-out.3s%3Bz-index%3A0%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%20%20%20%20%3Cstyle%20id%3D%5C%22from-wraphoverstyle%5C%22%20type%3D%5C%22text%2Fcss%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%23form-wrap%3Ahover%7Bheight%3A1300px%3Btop%3A-200px%7D%5Cn%20%20%20%20%3C%2Fstyle%3E%5Cn%3C%2Fhead%3E%5Cn%5Cn%3Cbody%3E%5Cn%20%20%20%20%3Cdiv%20style%3D%5C%22width%3A%20530px%3Bmargin%3A%2020px%20auto%200%3Bheight%3A%201000px%3B%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%5C%22form-wrap%5C%22%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fbefore.png%5C%22%20alt%3D%5C%22before%5C%22%20style%3D%5C%22position%3A%20absolute%3Bbottom%3A%20126px%3Bleft%3A%200px%3Bbackground-repeat%3A%20no-repeat%3Bwidth%3A%20530px%3Bheight%3A%20317px%3Bz-index%3A-100%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22position%3A%20relative%3Boverflow%3A%20visible%3Bheight%3A%201500px%3Bwidth%3A%20500px%3Bmargin%3A%200px%20auto%3Btransition%3A%20all%201s%20ease-in-out%20.3s%3Bpadding-top%3A200px%3B%5C%22%20%3Cform%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22background%3A%20white%3Bwidth%3A%2095%25%3Bmax-width%3A%20800px%3Bmargin%3A%20auto%20auto%3Bborder-radius%3A%205px%3Bborder%3A%201px%20solid%3Boverflow%3A%20hidden%3B-webkit-box-shadow%3A%200px%200px%2020px%200px%20rgba(0%2C%200%2C%200%2C%200.12)%3Bbox-shadow%3A%200px%200px%2020px%200px%20rgba(0%2C%200%2C%200%2C%200.18)%3B%5C%22%3E%3Cimg%20style%3D%5C%22width%3A100%25%3Boverflow%3A%20hidden%3B%5C%22%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fviolet.jpg%5C%22%20%2F%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22padding%3A%205px%2020px%3B%5C%22%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20style%3D%5C%22text-decoration%3A%20none%3B%20color%3A%20rgb(246%2C%20214%2C%20175)%3B%5C%22%3E%5B%7B%7Bsite_name%7D%7D%5D%EF%BC%8C%E8%A7%81%E4%BF%A1%E5%AE%89%EF%BC%9A%3C%2Fh3%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%5C%22letter%5C%22%20style%3D%5C%22overflow%3Aauto%3Bheight%3A300px%3Bwidth%3A100%25%3Bdisplay%3Ablock%3Bword-break%3A%20break-all%3Bword-wrap%3A%20break-word%3B%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20style%3D%5C%22display%3A%20inline-block%3B%5C%22%3E%E6%82%A8%E5%9C%A8%3Ca%20style%3D%5C%22text-decoration%3A%20none%3Bcolor%3A%20rgb(246%2C%20214%2C%20175)%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22%7B%7Bpage_title%7D%7D%20display%3A%20inline-block%3B%5C%22%3E%7B%7Bsite_name%7D%7D%3C%2Fa%3E%E4%B8%8A%E5%8F%91%E8%A1%A8%E7%9A%84%E8%AF%84%E8%AE%BA%3A%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22border-bottom%3A%20%23ddd%201px%20solid%3Bborder-left%3A%20%23ddd%201px%20solid%3Bpadding-bottom%3A%2020px%3Bbackground-color%3A%20%23eee%3Bmargin%3A%2015px%200px%3Bpadding-left%3A%2020px%3Bpadding-right%3A%2020px%3Bborder-top%3A%20%23ddd%201px%20solid%3Bborder-right%3A%20%23ddd%201px%20solid%3Bpadding-top%3A%2020px%3Bfont-family%3A%20%5C%22%20Arial%5C%22%2C%20%5C%22Microsoft%20YaHei%5C%22%20%2C%20%5C%22%E9%BB%91%E4%BD%93%5C%22%20%2C%20%5C%22%E5%AE%8B%E4%BD%93%5C%22%20%2C%20sans-serif%3B%5C%22%3E%7B%7Bcontent%7D%7D%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40%7B%7Breply_nick%7D%7D%E7%9A%84%E5%9B%9E%E5%A4%8D%EF%BC%9A%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22border-bottom%3A%20%23ddd%201px%20solid%3Bborder-left%3A%20%23ddd%201px%20solid%3Bpadding-bottom%3A%2020px%3Bbackground-color%3A%20%23eee%3Bmargin%3A%2015px%200px%3Bpadding-left%3A%2020px%3Bpadding-right%3A%2020px%3Bborder-top%3A%20%23ddd%201px%20solid%3Bborder-right%3A%20%23ddd%201px%20solid%3Bpadding-top%3A%2020px%3Bfont-family%3A%20%5C%22%20Arial%5C%22%2C%20%5C%22Microsoft%20YaHei%5C%22%20%2C%20%5C%22%E9%BB%91%E4%BD%93%5C%22%20%2C%20%5C%22%E5%AE%8B%E4%BD%93%5C%22%20%2C%20sans-serif%3B%5C%22%3E%7B%7Breply_content%7D%7D%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbr%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%5C%22text-align%3A%20center%3Bmargin-top%3A%2040px%3B%5C%22%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fline.png%5C%22%20alt%3D%5C%22hr%5C%22%20style%3D%5C%22width%3A100%25%3B%20margin%3A5px%20auto%205px%20auto%3B%20display%3A%20block%3B%5C%22%20%2F%3E%3Ca%20style%3D%5C%22text-transform%3A%20uppercase%3Btext-decoration%3A%20none%3Bfont-size%3A%2014px%3Bborder%3A%202px%20solid%20%236c7575%3Bcolor%3A%20%232f3333%3Bpadding%3A%2010px%3Bdisplay%3A%20inline-block%3Bmargin%3A%2010px%20auto%200%3Bbackground-color%3A%20rgb(246%2C%20214%2C%20175)%3B%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22%7B%7Bpage_url%7D%7D%5C%22%3E%7B%7Bsite_name%7D%7D%EF%BD%9C%E8%AF%B7%E6%82%A8%E7%AD%BE%E6%94%B6~%3C%2Fa%3E%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20style%3D%5C%22font-size%3A%2012px%3Btext-align%3A%20center%3Bcolor%3A%20%23999%3B%5C%22%3E%E8%87%AA%E5%8A%A8%E4%B9%A6%E8%AE%B0%E4%BA%BA%E5%81%B6%E7%AB%AD%E8%AF%9A%E4%B8%BA%E6%82%A8%E6%9C%8D%E5%8A%A1%EF%BC%81%3Cbr%3E%C2%A92020%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%20color%3Argb(246%2C%20214%2C%20175)%5C%22%20href%3D%5C%22%7B%7Bsite_url%7D%7D%5C%22%3E%7B%7Bsite_name%7D%7D%3C%2Fa%3E%3C%2Fp%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cimg%20src%3D%5C%22https%3A%2F%2Fnpm.elemecdn.com%2Fhexo-butterfly-envelope%2Flib%2Fafter.png%5C%22%20alt%3D%5C%22after%5C%22%20style%3D%5C%22%20%20%20%20%20%20position%3A%20absolute%3Bbottom%3A%20-2px%3Bleft%3A%200%3Bbackground-repeat%3A%20no-repeat%3Bwidth%3A%20530px%3Bheight%3A%20259px%3Bz-index%3A100%5C%22%3E%5Cn%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20%3C%2Fdiv%3E%5Cn%3C%2Fbody%3E%22%2C%22autoWrap%22%3Afalse%2C%22lineNumbers%22%3Atrue%2C%22heightLimit%22%3Atrue%2C%22collapsed%22%3Afalse%2C%22hideToolbar%22%3Afalse%2C%22name%22%3A%22%22%2C%22tabSize%22%3Anull%2C%22indentWithTab%22%3Afalse%2C%22lightLines%22%3A%5B%5D%2C%22foldLines%22%3A%5B%5D%2C%22theme%22%3A%22Github%20Light%22%2C%22id%22%3A%22naAxC%22%7D\"></card><h2 data-lake-id=\"HiFit\" id=\"HiFit\"><span data-lake-id=\"uf7ec597f\" id=\"uf7ec597f\">2.</span></h2><p data-lake-id=\"ua2e08dc3\" id=\"ua2e08dc3\"><span data-lake-id=\"u1e48161e\" id=\"u1e48161e\">将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可</span></p><p data-lake-id=\"u7b650a09\" id=\"u7b650a09\"><card type=\"inline\" name=\"image\" value=\"data:%7B%22src%22%3A%22https%3A%2F%2Fcdn.nlark.com%2Fyuque%2F0%2F2023%2Fjpeg%2F22578074%2F1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22name%22%3A%22872981219.jpg%22%2C%22size%22%3A60754%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A1080%2C%22originHeight%22%3A437%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22ocrLocations%22%3A%5B%7B%22x%22%3A46.397682%2C%22y%22%3A10.932872%2C%22width%22%3A97.44128799999999%2C%22height%22%3A24.983867999999998%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%22%7D%2C%7B%22x%22%3A32.229073%2C%22y%22%3A72.283394%2C%22width%22%3A106.212177%2C%22height%22%3A18.909335999999996%2C%22text%22%3A%22%E5%90%AF%E7%94%A8%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5%22%7D%2C%7B%22x%22%3A33.187515%2C%22y%22%3A132.14586%2C%22width%22%3A70.90339499999999%2C%22height%22%3A18.917599999999993%2C%22text%22%3A%22%E5%8F%91%E9%80%81%E6%96%B9%E5%BC%8F%22%7D%2C%7B%22x%22%3A559.443%2C%22y%22%3A134.6947%2C%22width%22%3A44.358600000000024%2C%22height%22%3A16.367169999999987%2C%22text%22%3A%22SMTP%22%7D%2C%7B%22x%22%3A555.7821%2C%22y%22%3A192.69972%2C%22width%22%3A109.3569%2C%22height%22%3A20.996899999999982%2C%22text%22%3A%22%7BREPLY_NICKJ)%22%7D%2C%7B%22x%22%3A32.005558%2C%22y%22%3A193.70271%2C%22width%22%3A89.55238700000001%2C%22height%22%3A18.865039999999993%2C%22text%22%3A%22%E5%8F%91%E4%BF%A1%E4%BA%BA%E6%98%B5%E7%A7%B0%22%7D%2C%7B%22x%22%3A32.83653%2C%22y%22%3A253.04904%2C%22width%22%3A88.35466%2C%22height%22%3A18.79209000000003%2C%22text%22%3A%22%E5%8F%91%E4%BF%A1%E4%BA%BA%E5%9C%B0%E5%9D%80%22%7D%2C%7B%22x%22%3A556.11554%2C%22y%22%3A254.72171%2C%22width%22%3A171.17371000000003%2C%22height%22%3A17.805149999999998%2C%22text%22%3A%22NICEXL%40HOTMAIL.COM%22%7D%2C%7B%22x%22%3A555.6959%2C%22y%22%3A312.57022%2C%22width%22%3A430.7274%2C%22height%22%3A22.290160000000014%2C%22text%22%3A%22%5B(SITE_NAME%5D%5D%E6%82%A8%E6%94%B6%E5%88%B0%E4%BA%86%E6%9D%A5%E8%87%AA%40((REPLY-NICK%5D)%E7%9A%84%E5%9B%9E%E5%A4%8D%22%7D%2C%7B%22x%22%3A32.584934%2C%22y%22%3A314.69537%2C%22width%22%3A71.57334600000002%2C%22height%22%3A18.56768999999997%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E6%A0%87%E9%A2%98%22%7D%2C%7B%22x%22%3A32.341164%2C%22y%22%3A367.70038%2C%22width%22%3A107.560406%2C%22height%22%3A18.46325999999999%2C%22text%22%3A%22%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%22%7D%2C%7B%22x%22%3A557.46216%2C%22y%22%3A378.11246%2C%22width%22%3A320.29283999999996%2C%22height%22%3A18.73766999999998%2C%22text%22%3A%22%2FDATA%2FMAIL_TPL%2FMAIL_TEMPLATE.HTML%22%7D%2C%7B%22x%22%3A33.37555%2C%22y%22%3A393.86185%2C%22width%22%3A200.74998%2C%22height%22%3A16.69396999999998%2C%22text%22%3A%22%E5%A1%AB%E5%85%A5%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%22%7D%5D%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22averageHue%22%3A%22%23fefefe%22%2C%22id%22%3A%22pYdrm%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D\"></card></p><p data-lake-id=\"ub18f0683\" id=\"ub18f0683\"><br></p><h2 data-lake-id=\"hGvzC\" id=\"hGvzC\"><span data-lake-id=\"u25d4466e\" id=\"u25d4466e\">后言</span></h2><h3 data-lake-id=\"hZQHP\" id=\"hZQHP\"><span data-lake-id=\"ufdbb61b1\" id=\"ufdbb61b1\">参考</span></h3><ul list=\"u2b7482d6\"><li fid=\"u8524abe5\" data-lake-id=\"u6af5265e\" id=\"u6af5265e\"><a href=\"https://artalk.js.org/guide/backend/email.html\" target=\"_blank\" data-lake-id=\"uee1bf33c\" id=\"uee1bf33c\"><span data-lake-id=\"ud732ae43\" id=\"ud732ae43\">邮件通知｜Artalk</span></a></li><li fid=\"u8524abe5\" data-lake-id=\"ue3cb17f2\" id=\"ue3cb17f2\"><a href=\"https://blog.zhheo.com/p/169a1abb.html\" target=\"_blank\" data-lake-id=\"u8560a761\" id=\"u8560a761\"><span data-lake-id=\"ud455325b\" id=\"ud455325b\">Twikoo评论回复邮件模板：Acrylic Mail 粉</span></a></li></ul><p data-lake-id=\"u082dcab6\" id=\"u082dcab6\"><span data-lake-id=\"uc2501962\" id=\"uc2501962\">如果你有需要补充的或有好的建议的可以在评论区发送评论</span></p>",
+    "public": 1,
+    "status": 1,
+    "view_status": 0,
+    "read_status": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "content_updated_at": "2023-01-05T03:16:23.000Z",
+    "deleted_at": null,
+    "created_at": "2023-01-05T01:52:46.000Z",
+    "updated_at": "2023-01-05T03:16:23.000Z",
+    "published_at": "2023-01-05T03:16:23.000Z",
+    "first_published_at": "2023-01-05T03:16:22.522Z",
+    "word_count": 526,
+    "cover": "https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg",
+    "description": "---title: Artalk 评论邮件模板美化date: 2023-1-5 11:15updated: 2023-1-5 11:15tags: Artalkcategories: 教程cover: https://xlenco.onmicrosoft.cn/img/995c-826fc51...",
+    "custom_description": null,
+    "hits": 0,
+    "_serializer": "v2.doc_detail"
+  },
+  {
+    "id": 110883989,
+    "slug": "cfyh53rhych6qrr9",
+    "title": "国内外文件传输平台推荐",
+    "book_id": 32250837,
+    "book": {
+      "id": 32250837,
+      "type": "Book",
+      "slug": "posts",
+      "name": "Article",
+      "user_id": 22578074,
+      "description": "Xlencoの博客文章",
+      "creator_id": 22578074,
+      "public": 1,
+      "items_count": 35,
+      "likes_count": 0,
+      "watches_count": 0,
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
+      "created_at": "2022-08-26T15:45:01.000Z",
+      "namespace": "xlenco/posts",
+      "user": {
+        "id": 22578074,
+        "type": "User",
+        "login": "xlenco",
+        "name": "Xlenco",
+        "description": "学生党一枚",
+        "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+        "books_count": 7,
+        "public_books_count": 4,
+        "followers_count": 6,
+        "following_count": 0,
+        "created_at": "2021-09-02T00:45:22.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
+        "_serializer": "v2.user"
+      },
+      "_serializer": "v2.book"
+    },
+    "user_id": 22578074,
+    "creator": {
+      "id": 22578074,
+      "type": "User",
+      "login": "xlenco",
+      "name": "Xlenco",
+      "description": "学生党一枚",
+      "avatar_url": "https://cdn.nlark.com/yuque/0/2022/png/22578074/1652169082256-avatar/1a9b3ef5-7abd-4abd-b36e-7387487c593d.png",
+      "books_count": 7,
+      "public_books_count": 4,
+      "followers_count": 6,
+      "following_count": 0,
+      "created_at": "2021-09-02T00:45:22.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -92,11 +171,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -111,7 +190,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -129,7 +208,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -171,11 +250,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -190,7 +269,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -208,7 +287,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -250,11 +329,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -269,7 +348,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -287,7 +366,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -329,11 +408,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -348,7 +427,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -366,7 +445,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -391,7 +470,7 @@
     "cover": null,
     "description": "title: 免费高效且高颜值的快捷启动工具date: 2022-12-21 12:36updated: 2022-12-22 20:36categories: 转载tags: 实用利器cover: https://xlenco.onmicrosoft.cn/img/6edd017c2d2ec...",
     "custom_description": null,
-    "hits": 29,
+    "hits": 31,
     "_serializer": "v2.doc_detail"
   },
   {
@@ -408,11 +487,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -427,7 +506,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -445,7 +524,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -487,11 +566,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -506,7 +585,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -524,7 +603,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -566,11 +645,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -585,7 +664,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -603,7 +682,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -645,11 +724,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -664,7 +743,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -682,7 +761,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -724,11 +803,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -743,7 +822,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -761,7 +840,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -803,11 +882,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -822,7 +901,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -840,7 +919,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -865,7 +944,7 @@
     "cover": null,
     "description": "title: CloudFlare Workers 项目合集tags: CloudFlarecategories: 杂项cover: https://xlenco.onmicrosoft.cn/img/58b09af1c36188c1568b4616.jpg?ik-sdk-version=ja...",
     "custom_description": null,
-    "hits": 59,
+    "hits": 60,
     "_serializer": "v2.doc_detail"
   },
   {
@@ -882,11 +961,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -901,7 +980,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -919,7 +998,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -961,11 +1040,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -980,7 +1059,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -998,7 +1077,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1040,11 +1119,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1059,7 +1138,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1077,7 +1156,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1119,11 +1198,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1138,7 +1217,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1156,7 +1235,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1198,11 +1277,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1217,7 +1296,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1235,7 +1314,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1277,11 +1356,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1296,7 +1375,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1314,7 +1393,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1356,11 +1435,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1375,7 +1454,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1393,7 +1472,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1435,11 +1514,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1454,7 +1533,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1472,7 +1551,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1514,11 +1593,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1533,7 +1612,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1551,7 +1630,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1593,11 +1672,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1612,7 +1691,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1630,7 +1709,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1672,11 +1751,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1691,7 +1770,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1709,7 +1788,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1751,11 +1830,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1770,7 +1849,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1788,7 +1867,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1830,11 +1909,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1849,7 +1928,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1867,7 +1946,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1909,11 +1988,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -1928,7 +2007,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -1946,7 +2025,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -1988,11 +2067,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2007,7 +2086,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2025,7 +2104,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2067,11 +2146,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2086,7 +2165,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2104,7 +2183,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2146,11 +2225,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2165,7 +2244,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2183,7 +2262,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2225,11 +2304,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2244,7 +2323,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2262,7 +2341,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2304,11 +2383,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2323,7 +2402,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2341,7 +2420,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2383,11 +2462,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2402,7 +2481,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2420,7 +2499,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2462,11 +2541,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2481,7 +2560,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2499,7 +2578,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2541,11 +2620,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2560,7 +2639,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2578,7 +2657,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
@@ -2620,11 +2699,11 @@
       "description": "Xlencoの博客文章",
       "creator_id": 22578074,
       "public": 1,
-      "items_count": 34,
+      "items_count": 35,
       "likes_count": 0,
       "watches_count": 0,
-      "content_updated_at": "2023-01-04T09:45:06.217Z",
-      "updated_at": "2023-01-04T09:45:06.000Z",
+      "content_updated_at": "2023-01-05T03:16:22.721Z",
+      "updated_at": "2023-01-05T03:16:23.000Z",
       "created_at": "2022-08-26T15:45:01.000Z",
       "namespace": "xlenco/posts",
       "user": {
@@ -2639,7 +2718,7 @@
         "followers_count": 6,
         "following_count": 0,
         "created_at": "2021-09-02T00:45:22.000Z",
-        "updated_at": "2023-01-04T06:29:11.000Z",
+        "updated_at": "2023-01-05T01:52:46.000Z",
         "_serializer": "v2.user"
       },
       "_serializer": "v2.book"
@@ -2657,7 +2736,7 @@
       "followers_count": 6,
       "following_count": 0,
       "created_at": "2021-09-02T00:45:22.000Z",
-      "updated_at": "2023-01-04T06:29:11.000Z",
+      "updated_at": "2023-01-05T01:52:46.000Z",
       "_serializer": "v2.user"
     },
     "format": "lake",
