@@ -67,5 +67,10 @@ jobs:
           hexo algolia
           gulp
           hexo deploy
-
+          cd public
+          node npmversionupdata.js
+          npm publish         
+          hexo deploy         
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
  
