@@ -1,6 +1,6 @@
 ---
 categories:
-  - Uptime Kuma
+  - 教程
 
 cover: https://i.imgtg.com/2022/12/19/HmhrP.webp
 date: "2022-08-06 15:07:01"
