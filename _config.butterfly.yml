@@ -395,10 +395,8 @@ artalk:
   visitor: false
   option: 
    emoticons: [
-    'https://solitude.eu.org/d/Teambition/owo/alu/alu.json?sign=kYbNKxcoO97tOJ6L5UufZdDv0Cz_imGE3MwtrW552GA=:0',
-    'https://solitude.eu.org/d/Teambition/owo/qq/QQ.json?sign=h3HQx6HBBNFPJ9WL-RjDwh18V_MQS2aVkAGthCUOSS4=:0',
-    'https://solitude.eu.org/d/Teambition/owo/huaji/huaji.json?sign=OBDcl96ajCB0XS80SbqEUfA47rBEHEc2OJ_2pSOMtnY=:0',
-    'https://solitude.eu.org/d/Teambition/owo/weisuomeng/weisuomeng.json?sign=fH374Le1MfFyvbaFhbZMpCpVKu5xXMJNJdpErtXf874=:0',
+    'https://jsd.onmicrosoft.cn/gh/xlenco/Emoji/alu.json',
+    'https://jsd.onmicrosoft.cn/gh/xlenco/Emoji/QQ.json',
   ]
 
 # Chat Services
