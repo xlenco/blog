@@ -956,6 +956,7 @@ inject:
     - <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     - <canvas id="universe"></canvas>  
     - <script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 右下角复制依赖
+    - <script async data-pjax src="https://cdn.staticfile.org/clientworker/3.0.0-beta-4/dist/autoupdate.min.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
