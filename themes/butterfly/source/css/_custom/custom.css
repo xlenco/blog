@@ -10,18 +10,18 @@
 / *字体引入* /
 @font-face{
   font-family:'AlibabaPuHuiTi-2-55-Regular' ;  /* 字体名自定义即可 */
-  src:url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/AlibabaPuHuiTi-2-55-Regular.woff'); /* 字体文件路径 */
+  src:url('https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff2'); /* 字体文件路径 */
   font-display : swap;
 }
 
+/* fira-code-regular */
 @font-face {
   font-family: 'Fira Code';
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/Fira-Code.woff') format('truetype');
+  font-weight: regular;
+  src:url('//lib.baomitu.com/fonts/fira-code/fira-code-regular.woff2') format('woff2'); /* Super Modern Browsers */
+  font-display : swap;
 }
-
 /*loading 图片*/
 .loading-img {
   background: url(https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/img/head.webp) no-repeat center center;
