@@ -46,18 +46,18 @@ catch_rules:
             expire: 1000*60*60*12 # 缓存12小时
             delay: 300
   # 第三方api图片缓存
-  - rule: ^https\:\/\/(xlenco\.onmicrosoft\.cn|preview\.cloud\.189\.cn)
+  - rule: ^https\:\/\/(xlenco\.onmicrosoft\.cn\/(.*)\.(jpg|webp)$|preview\.cloud\.189\.cn\/(.*))
     transform_rules:
       - search: _
         action: fetch
         fetch:
           status: 200
           engine: fetch
-          preflight: false # false
-          timeout: 50000
+          preflight: false
+          timeout: 30000
           cache:
-            expire: 1000*60*60*24*365 # 缓存一年
-            delay: 300       
+            enable: true
+            expire: 1000*60*60*365
 # 更换不蒜子统计
   - rule: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
     transform_rules:
