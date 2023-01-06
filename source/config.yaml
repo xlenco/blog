@@ -79,9 +79,9 @@ catch_rules:
             expire: 1000*60*60*1 # 缓存1小时
             delay: 300
   # 第三方api图片缓存
-  - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn|preview\.cloud\.189\.cn\/image\/(.*))
+  - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn|preview\.cloud\.189\.cn)
     transform_rules:
-      - search: ^https\:\/\/xlenco\.onmicrosoft\.cn|preview\.cloud\.189\.cn\/image\/(.*))
+      - search: _
         action: fetch
         fetch:
           status: 200
