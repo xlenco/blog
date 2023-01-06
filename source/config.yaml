@@ -17,6 +17,7 @@ catch_rules:
           - https://npm.elemecdn.com
           - https://npm.sourcegcdn.com  
           - https://cdn.staticfile.org
+          - https://cdn.qystu.cc/npm
         action: fetch
         fetch:
           status: 200
@@ -36,6 +37,7 @@ catch_rules:
           - https://cdn.cnortles.top/gh
           - https://jsd.cky.codes/gh
           - https://assets.tnxg.whitenuo.cn/proxy/gh
+          - https://cdn.qystu.cc/gh
         action: fetch
         fetch:
           status: 200
