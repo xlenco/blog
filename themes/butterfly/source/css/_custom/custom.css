@@ -1,3 +1,13 @@
+/* A 标签 */
+#post #article-container a:not([class])  {
+    font-weight: 700;
+    color: var(--font-color);
+    word-break: break-all;
+    padding: 0 3px;
+    border-bottom: 2px var(--xlenco-purple) solid;
+}
+
+/ *字体引入* /
 @font-face{
   font-family:'AlibabaPuHuiTi-2-55-Regular' ;  /* 字体名自定义即可 */
   src:url('https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/fontsdest/AlibabaPuHuiTi-2-55-Regular.woff'); /* 字体文件路径 */
@@ -268,7 +278,7 @@ border-radius: 25px;
 	--xlenco-black:#333;
 	--xlenco-blue:#49b1f5;
 	--xlenco-purple:#4976f5;
-	--xlenco-border:1px solid rgba(211,211,211,0.8)
+	--xlenco-border: 1px solid rgba(211,211,211,0.8)
 }
 [data-theme=dark] {
 	--search-bg:rgb(47 48 50);
