@@ -76,10 +76,10 @@ catch_rules:
           preflight: false # false
           timeout: 30000
           cache:
-            expire: 1000*60*60*1 # 缓存8小时
+            expire: 1000*60*60*1 # 缓存1小时
             delay: 300
   # 第三方api图片缓存
-  - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn
+  - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn|preview\.cloud\.189\.cn\/image\/(.*)
     transform_rules:
       - search: _
         action: fetch
@@ -89,7 +89,7 @@ catch_rules:
           preflight: false # false
           timeout: 50000
           cache:
-            expire: 1000*60*60*24 # 缓存24小时
+            expire: 1000*60*60*24*365 # 缓存一年
             delay: 300       
 # 匹配B站资源链接
   - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
