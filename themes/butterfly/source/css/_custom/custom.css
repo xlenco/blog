@@ -7,7 +7,7 @@
     border-bottom: 2px var(--xlenco-purple) solid;
 }
 
-/ *字体引入* /
+/ * Font 字体引入 * /
 @font-face{
   font-family:'AlibabaPuHuiTi-2-55-Regular' ;  /* 字体名自定义即可 */
   src:url('https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff2'); /* 字体文件路径 */
