@@ -24,7 +24,7 @@ catch_rules:
           preflight: false # false
           timeout: 3000
           cache:
-            expire: 1000*60*60*12 # 缓存8小时
+            expire: 1000*60*60*12 # 缓存12小时
             delay: 300
   # github加速
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh)
@@ -43,7 +43,7 @@ catch_rules:
           preflight: false # false
           timeout: 30000
           cache:
-            expire: 1000*60*60*12 # 缓存8小时
+            expire: 1000*60*60*12 # 缓存12小时
             delay: 300
 # 更换不蒜子统计
   - rule: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
@@ -57,6 +57,27 @@ catch_rules:
           preflight: false
           timeout: 30000
           delay: 300
+  # 并发本地index.css
+  - rule: ^https\:\/\/xlenco\.eu\.org\/css\/index\.css
+    transform_rules:
+      - search: ^https\:\/\/xlenco\.eu\.org\/css\/index\.css
+        replace:
+          - _
+          - https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/css/index.min.css
+          - https://cdn.cnortles.top/gh/xlenco/xlenco.github.io/css/index.min.css
+          - https://jsd.cky.codes/gh/xlenco/xlenco.github.io/css/index.min.css
+          - https://assets.tnxg.whitenuo.cn/proxy/gh/xlenco/xlenco.github.io/css/index.min.css
+          - https://unpkg.onmicrosoft.cn/xlenco-blog-main@1.0.000919/css/index.css
+          - https://npm.onmicrosoft.cn/xlenco-blog-main@1.0.000919/css/index.css
+        action: fetch
+        fetch:
+          status: 200
+          engine: parallel
+          preflight: false # false
+          timeout: 30000
+          cache:
+            expire: 1000*60*60*1 # 缓存8小时
+            delay: 300
   # 第三方api图片缓存
   - rule: ^https\:\/\/xlenco\.onmicrosoft\.cn
     transform_rules:
