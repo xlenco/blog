@@ -928,7 +928,9 @@ inject:
                 })
             } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
         </script>
-    - <link href="https://51.la" rel="preconnect" crossorigin>
+    - <link href="https://sdk.51.la" rel="preconnect" crossorigin>
+    - <link href="https://collect-v6.51.la" rel="preconnect" crossorigin>
+    - <link href="https://collect-v6-alqy.51.la" rel="preconnect" crossorigin>
     # 51la统计
     - |
       <script>
@@ -948,6 +950,9 @@ inject:
     - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
+    - <link rel="preconnect" href="https://fonts.loli.net"> 
+    - <link rel="preconnect" href="https://gstatic.loli.net" crossorigin> 
+    - <link href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
