@@ -14,14 +14,6 @@
   font-display : swap;
 }
 
-/* fira-code-regular */
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: regular;
-  src:url('//lib.baomitu.com/fonts/fira-code/fira-code-regular.woff2') format('woff2'); /* Super Modern Browsers */
-  font-display : swap;
-}
 /*loading 图片*/
 .loading-img {
   background: url(https://xlenco.onmicrosoft.cn/img/head.webp) no-repeat center center;
