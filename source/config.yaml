@@ -60,18 +60,6 @@ catch_rules:
           cache:
             enable: true
             expire: 1000*60*60*365
-# 更换不蒜子统计
-  - rule: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
-    transform_rules:
-      - search: ^https\:\/\/busuanzi\.ibruce\.info\/busuanzi\/2.3\/busuanzi\.pure\.mini\.js
-        replace: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
-        action: fetch
-        fetch:
-          engine: fetch
-          status: 200
-          preflight: false
-          timeout: 30000
-          delay: 300
 # 并发本地index.css
   - rule: ^https\:\/\/xlenco\.eu\.org\/css\/index\.css
     transform_rules:
