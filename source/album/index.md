@@ -11,7 +11,6 @@ aside: false
 {% galleryGroup '猫羽雫' 'Pixiv画师甘城なつき笔下的原创萌娘' '/album/nya' https://nsso.eu.org/Wallpaper/nya/17699ec4-dae8-4ae1-96bb-d101ad58b783.jpeg %}
 {% galleryGroup '薇尔莉特·伊芙加登' '晓佳奈著作的日本轻小说《薇尔莉特·伊芙加登》及其衍生作品中的女主角' '/album/Erika-Harlacher' https://i0.hdslb.com/bfs/album/59af6572e5ea374e434a0d0cbb78c5a83e159939.jpg %}
 {% galleryGroup '原神' '原神壁纸' '/album/yuanshen' https://i0.hdslb.com/bfs/album/3ce3e9c715a5a43fa2bc4bfbdfaf224f619cfa9f.jpg %}
-{% galleryGroup '鬼刀' '鬼刀壁纸' '/album/Ghost-Blade' https://i0.hdslb.com/bfs/album/30823db02d524d15e288e14f888db63d2ac71d79.jpg %}
 </div>
 
 
