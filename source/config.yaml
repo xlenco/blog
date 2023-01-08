@@ -110,4 +110,4 @@ catch_rules:
           timeout: 30000
           cache:
             enable: true
-            expire: 1000*60*60**
+            expire: 1000*60*60*1
