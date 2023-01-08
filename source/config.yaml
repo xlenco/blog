@@ -98,16 +98,7 @@ catch_rules:
           preflight: false
           timeout: 30000
           delay: 4000
-# 全站缓存
-  - rule: _
-    transform_rules:
-      - search: _
-        action: fetch
-        fetch:
-          status: 200
-          engine: fetch
-          preflight: false
-          timeout: 30000
-          cache:
-            enable: true
-            expire: 1000*60*60*1
+
+
+      - search: artalk\.xlenco\.eu\.org
+        action: skip
