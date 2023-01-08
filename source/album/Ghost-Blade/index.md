@@ -24,6 +24,5 @@ top_img: https://i0.hdslb.com/bfs/album/776488c50344a3bfc2d07d91ad20e3cb3c86fb72
 ![](https://i0.hdslb.com/bfs/album/9cfa2be56c13b8047dffe14e1443ae571bae57fb.jpg)
 ![](https://i0.hdslb.com/bfs/album/30823db02d524d15e288e14f888db63d2ac71d79.jpg)
 ![](https://i0.hdslb.com/bfs/album/28f9d927c9539a06aea1681de6208f5aa551f156.jpg)
-![](https://i0.hdslb.com/bfs/album/28f9d927c9539a06aea1681de6208f5aa551f156.jpg)
 ![](https://i0.hdslb.com/bfs/album/e57fcc186539fc28dea552d81baf80793ed43ba0.jpg)
 {% endgallery %}
