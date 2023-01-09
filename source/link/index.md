@@ -8,7 +8,6 @@ updated: 2023-01-05 15:20:36
 ---
 {% raw %}
 <div class="js-pjax">
-<script src="https://npm.onmicrosoft.cn/vanilla-lazyload@latest/dist/lazyload.iife.min.js"></script>
 <script>
 window.lazyLoadInstance && window.lazyLoadInstance.update()
 </script>
