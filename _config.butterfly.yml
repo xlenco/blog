@@ -826,7 +826,7 @@ note:
 pjax:
   enable: true
   exclude:
-    # - xxxx
+     - /link/
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
