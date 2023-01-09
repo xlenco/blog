@@ -9,7 +9,7 @@ updated: 2023-01-05 15:20:36
 {% raw %}
 <script>
 <div class="js-pjax">
-window.lazyLoadInstance && window.lazyLoadInstance.update()
+window.lazyLoadInstance
 </div>
 </script>
 {% endraw %}
