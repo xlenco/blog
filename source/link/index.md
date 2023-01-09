@@ -7,11 +7,9 @@ type: link
 updated: 2023-01-05 15:20:36
 ---
 {% raw %}
-<div class="js-pjax">
 <script>
 window.lazyLoadInstance && window.lazyLoadInstance.update()
 </script>
-</div>
 {% endraw %}
 {% flink %}
 - class_name: 友人账
