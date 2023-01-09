@@ -896,7 +896,3 @@ function percent() {
     }
 }
 
-// 适配 pjax 解决 link 页面不显示头图 bug
-function whenDOMReady() {
-    window.lazyLoadInstance && window.lazyLoadInstance.update()
-}
