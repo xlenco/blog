@@ -6,13 +6,6 @@ top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascr
 type: link
 updated: 2023-01-05 15:20:36
 ---
-{% raw %}
-<script>
-whenDOMReady() // 打开网站先执行一次
-document.addEventListener("pjax:complete", whenDOMReady) // pjax加载完成（切换页面）后再执行一次
-window.lazyLoadInstance && window.lazyLoadInstance.update()
-</script>
-{% endraw %}
 {% flink %}
 - class_name: 友人账
   class_desc: 昔日里那些人，那些事
