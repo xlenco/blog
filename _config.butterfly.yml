@@ -953,6 +953,8 @@ inject:
     - <link rel="preconnect" href="https://fonts.loli.net"> 
     - <link rel="preconnect" href="https://gstatic.loli.net" crossorigin> 
     - <link href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    - <link href="https://githubusercontent.onmicrosoft.cn" rel="preconnect">
+    - <link href="https://raw.githubusercontent.com" rel="preconnect" crossorigin>
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
