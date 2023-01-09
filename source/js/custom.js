@@ -895,3 +895,10 @@ function percent() {
         up.childNodes[0].style.display = 'block'
     }
 }
+
+// 适配 pjax 解决 link 页面不显示头图 bug
+function whenDOMReady() {
+    if (location.pathname == '/link/') {
+        window.lazyLoadInstance && window.lazyLoadInstance.update()
+    }
+}
