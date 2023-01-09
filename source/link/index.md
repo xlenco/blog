@@ -6,6 +6,11 @@ top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascr
 type: link
 updated: 2023-01-05 15:20:36
 ---
+{% raw %}
+<script>
+window.lazyLoadInstance && window.lazyLoadInstance.update()
+</script>
+{% endraw %}
 {% flink %}
 
 - class_name: 友人账
