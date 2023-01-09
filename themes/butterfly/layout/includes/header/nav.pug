@@ -2,7 +2,7 @@ nav#nav
   #nav-group
     span#blog_name
       a#site-name(onclick=`pjax.loadUrl("/")`)
-        span Xlenco
+        span XLENCO
     span#page_name
       a#page-name-text(title=_p("rightside.back_to_top") onclick="btf.scrollToDest(0,500)")
         span #[=config.title]
@@ -15,12 +15,9 @@ nav#nav
         #search-button
           a.site-page.social-icon.search(title=_p('search.title'))
             i.fas.fa-search.fa-fw
-    #randompost-button
-      a.site-page(title="随机文章" onclick="toRandomPost()")
-        i.fas.fa-dice
-    #toggle-menu
-      a.site-page
-        i.fas.fa-bars.fa-fw
-
-
-
+      #randompost-button
+        a.site-page(title="随机文章" onclick="toRandomPost()")
+          i.fas.fa-dice
+      #toggle-menu
+        a.site-page
+          i.fas.fa-bars.fa-fw
