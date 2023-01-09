@@ -1,6 +1,6 @@
 ---
 date: 2022-05-03 21:21:51
-flink_url: https://ghproxy.com/https://raw.githubusercontent.com/xlenco/friends/output/v2/data.json
+flink_url: https://githubusercontent.onmicrosoft.cn/xlenco/friends/output/v2/data.json
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
