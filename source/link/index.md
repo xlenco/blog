@@ -7,12 +7,13 @@ type: link
 updated: 2023-01-05 15:20:36
 ---
 {% raw %}
+<div class="js-pjax">
 <script>
 window.lazyLoadInstance && window.lazyLoadInstance.update()
 </script>
+</div>
 {% endraw %}
 {% flink %}
-
 - class_name: 友人账
   class_desc: 昔日里那些人，那些事
   link_list:
