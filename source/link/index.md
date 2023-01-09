@@ -7,11 +7,11 @@ type: link
 updated: 2023-01-05 15:20:36
 ---
 {% raw %}
-<div class="js-pjax">
 <script>
+whenDOMReady() // 打开网站先执行一次
+document.addEventListener("pjax:complete", whenDOMReady) // pjax加载完成（切换页面）后再执行一次
 window.lazyLoadInstance && window.lazyLoadInstance.update()
 </script>
-</div>
 {% endraw %}
 {% flink %}
 - class_name: 友人账
