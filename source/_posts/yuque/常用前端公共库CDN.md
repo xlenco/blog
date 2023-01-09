@@ -42,7 +42,7 @@ Ps：微软出品，自然不会太差。虽然在国外，速度依然不会太
 
 字节跳动静态资源公共库，本网站静态资源定期同步自 https://github.com/cdnjs/cdnjs 。
 CDN 节点也非常多，值得推荐的国内站点，背靠字节跳动，质量也比较有保障。
-网址：[http://cdn.bytedance.com/](http://www.asp.net/ajaxlibrary/cdn.ashx)
+网址：[http://cdn.bytedance.com/](http://cdn.bytedance.com/)
 
 ## Bootcdn
 
@@ -67,3 +67,15 @@ unpkg 是一个内容源自 npm 的全球快速 CDN。
 - 饿了么：[https://npm.elemecdn.com/](https://npm.elemecdn.com/)
 - 知乎：[https://unpkg.zhimg.com/](https://unpkg.zhimg.com/)
 - [https://cdn.cbd.int/#/](https://cdn.cbd.int/#/)
+
+## 渺软公益 CDN
+
+官网介绍：
+我们在使用 多吉 国内 CDN 的基础上，搭建了私人备案域名，为您提供三个可供使用的地址：
+
+- [https://jsd.onmicrosoft.cn/@info](https://jsd.onmicrosoft.cn/@info) （回源 jsdelivr）
+- [http://npm.onmicrosoft.cn/@info](http://npm.onmicrosoft.cn/@info) （回源 unpkg）
+- [http://unpkg.onmicrosoft.cn/@info](http://unpkg.onmicrosoft.cn/@info) （同上，回源 unpkg）
+- 我们的流量阈值为单个域名 24GB/24h，您可以在我们的仪表盘中查看更多详情。
+- 为了防止部分地区回源失败，我们采用了 vercel 中转回源，我们非常感谢 vercel 的支持。
+- 我们期望您能够自觉遵守我们的使用限制，为了确保项目的长久发展，请不要滥用本服务。我们同时欢迎您对本项目进行打赏，您的每一笔打赏都会被永久记录在表格中，作为对开源项目做出贡献的至高无上的荣誉。
