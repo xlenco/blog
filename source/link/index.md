@@ -8,7 +8,9 @@ updated: 2023-01-05 15:20:36
 ---
 {% raw %}
 <script>
-window.lazyLoadInstance && window.lazyLoadInstance.update();
+<div class="js-pjax">
+window.lazyLoadInstance && window.lazyLoadInstance.update()
+</div>
 </script>
 {% endraw %}
 {% flink %}
