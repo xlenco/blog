@@ -9,8 +9,8 @@ updated: 2023-01-05 15:20:36
 {% raw %}
 <div class="js-pjax">
 <script>
-location.reload();
 window.lazyLoadInstance && window.lazyLoadInstance.update();
+location.reload(1);
 </script>
 </div>
 {% endraw %}
