@@ -4,7 +4,7 @@ if theme.menu
       if typeof value !== 'object'
         .menus_item
           - const valueArray = value.split('||')
-          a.site-page(onclick=`pjax.loadUrl(trim(valArray[0]))`)
+          a.site-page(href=url_for(trim(valueArray[0])))
             if valueArray[1]
               i.fa-fw(class=trim(valueArray[1]))
             span=' '+label
@@ -21,7 +21,7 @@ if theme.menu
             each val,lab in value 
               - const valArray = val.split('||')
               li
-                a.site-page.child(onclick=`pjax.loadUrl(trim(valArray[0]))`)
+                a.site-page.child(href=url_for(trim(valArray[0])))
                   if valArray[1]
                     i.fa-fw(class=trim(valArray[1]))
                   span=' '+ lab
