@@ -7,7 +7,6 @@ menu:
      归档: /tags/ || fas fa-tags
      分类: /categories/ || fas fa-folder-open
      时间轴: /archives/ || fas fa-archive
-     随便逛逛: /random/ || fas fa-shoe-prints
    社交||fas fa-bars||hide:
      友链: /link/ || fas fa-link
      开往: https://www.travellings.cn/go.html || fas fa-train-subway
