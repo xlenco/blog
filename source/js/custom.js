@@ -898,7 +898,5 @@ function percent() {
 
 // 适配 pjax 解决 link 页面不显示头图 bug
 function whenDOMReady() {
-    if (location.pathname == '/link/') {
-        window.lazyLoadInstance && window.lazyLoadInstance.update()
-    }
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
 }
