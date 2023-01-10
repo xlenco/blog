@@ -16,6 +16,22 @@ updated: 2022-10-7 18:32
 
 <img src="https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1665138543325-6b92788b-09d7-47b7-9611-c033ece0c6d8.jpeg" width="50%" height="50%" alt="top.jpeg" align=center />
 进度条为胶囊💊样式
+{% hideToggle 4.5.0 版本以 %}
+4.5.0 版本主题已内置 pace.js 无需再次引入，在 `hexo-theme-butterfly`文件中配置以下内容即可
+```
+preloader:
+  enable: true
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  source: 2
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url: https://unpkg.onmicrosoft.cn/xlenco-blog-main@1.0.1673316381616/css/pace.css
+```
+如果你同时在使用 Heo同款loading动画，请查看
+ [Heo同款loading动
+](https://anzhiy.cn/posts/52d8.html){% endhideToggle %}
+{% hideToggle 4.5.0 版本以下 %}
 
 ## 引入 css
 
@@ -77,3 +93,4 @@ updated: 2022-10-7 18:32
 ```
 
 然后三连即可
+{% endhideToggle %}
