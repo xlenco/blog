@@ -65,7 +65,7 @@ jobs:
           hexo clean
           hexo generate 
           hexo algolia
-          gulp
+        #  gulp
           hexo deploy
           cd public
           node npmversionupdata.js
