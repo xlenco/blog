@@ -20,20 +20,7 @@ if hexo-config('preloader')
       animation-name: loadingAction;
       animation-iteration-count: infinite;
       animation-direction: alternate;
-    .loading-image-dot
-      width: 30px;
-      height: 30px;
-      background: #6bdf8f;
-      position: absolute;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      top: 50%;
-      left: 50%;
-      transform: translate(18px, 24px);
-    &.loaded
-      .loading-bg
-        opacity: 0;
-        z-index: -1000;
+
 
   @keyframes loadingAction
     0% {
