@@ -20,7 +20,10 @@ if hexo-config('preloader')
       animation-name: loadingAction;
       animation-iteration-count: infinite;
       animation-direction: alternate;
-
+    &.loaded
+      .loading-bg
+        opacity: 0;
+        z-index: -1000;
 
   @keyframes loadingAction
     0% {
