@@ -105,7 +105,7 @@ updated: 2023-01-05 15:20:36
 {% endflink %}
 
 {% hideToggle [必看]自助友链申请%}
-{% tabs  %}
+{% tabs 1 %}
 
 <!-- tab 友链申请 -->
 
@@ -153,7 +153,7 @@ PS：本站采用Github issue添加友链
 {% endnote %}
 
 {% hideToggle 我的信息%}
-{% tabs  %}
+{% tabs 2 %}
 
 <!-- tab Butterfly & MengD -->
 
