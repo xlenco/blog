@@ -62,27 +62,6 @@ catch_rules:
           cache:
             enable: true
             expire: 1000*60*60*12*365
-# 并发本地index.css
-  - rule: ^https\:\/\/xlenco\.eu\.org\/css\/index\.css
-    transform_rules:
-      - search: ^https\:\/\/xlenco\.eu\.org\/css\/index\.css
-        replace:
-          - _
-          - https://jsd.onmicrosoft.cn/npm/xlenco-blog-main@1.0.000919/css/index.css
-          - https://cdn.cnortles.top/npm/xlenco-blog-main@1.0.000919/css/index.css
-          - https://jsd.cky.codes/npm/xlenco-blog-main@1.0.000919/css/index.css
-          - https://assets.tnxg.whitenuo.cn/proxy/gh/npm/xlenco-blog-main@1.0.000919/css/index.css
-          - https://unpkg.onmicrosoft.cn/xlenco-blog-main@1.0.000919/css/index.css
-          - https://npm.onmicrosoft.cn/xlenco-blog-main@1.0.000919/css/index.css
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 30000
-          cache:
-            expire: 1000*60*60*1 # 缓存1小时
-            delay: 300
 # 匹配B站资源链接
   - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
     transform_rules:
