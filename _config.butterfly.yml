@@ -664,7 +664,7 @@ preloader:
   # 2. pace (progress bar)
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: /css/page.css
+  pace_css_url: https://unpkg.onmicrosoft.cn/xlenco-blog-main@1.0.1673316381616/css/pace.css
 
 # aside (側邊欄)
 # --------------------------------------
