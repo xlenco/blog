@@ -840,7 +840,6 @@ border-radius: 25px;
 	--xlenco-black: #333;
 	--xlenco-blue: #49b1f5;
 	--xlenco-purple: #4976f5;
-        --search-input-color: #4186f5
 	--xlenco-border: 1px solid rgba(211,211,211,0.8)
 }
 [data-theme=dark] {
