@@ -1037,3 +1037,5 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
+     artalk_css: https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/artalk/artalk.css
+     artalk_js: https://jsd.onmicrosoft.cn/gh/xlenco/JS-X@main/artalk/artalk.js
