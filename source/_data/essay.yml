@@ -1,6 +1,11 @@
 - class_name: 即刻短文
   essay_list:
     - content:
+        开启寒假
+      date: 2022/1/11 13:24
+      image:
+       - https://photo.baidu.com/youai/share/v1/download?share_id=59507075703496860&fsid=272316620142745
+    - content:
         美化了导航栏且修复了友链页面头图不显示的 bug，在这里感谢🙏@Leonus 大佬
       date: 2022/1/9 20:07
     - content:
