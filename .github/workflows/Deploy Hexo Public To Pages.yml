@@ -28,7 +28,7 @@ jobs:
       - name: 安装Hexo
         run: |
           npm install hexo-cli -g
-          npm install gulp-cli -g
+       #   npm install gulp-cli -g
 
           
 
@@ -65,6 +65,6 @@ jobs:
           hexo clean
           hexo generate 
           hexo algolia
-          gulp
+        #  gulp
           hexo deploy         
  
