@@ -229,3 +229,18 @@ minify:
       - '*.eot'
       - '*.json'
       - '*.woff2'
+  brotli:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json'
+      - '*.woff2'
