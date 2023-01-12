@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
-
-
     
     steps:
       # check it to your workflow can access it
@@ -28,10 +26,8 @@ jobs:
       - name: 安装Hexo
         run: |
           npm install hexo-cli -g
-       #   npm install gulp-cli -g
 
           
-
       - name: 设置密钥
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
@@ -60,11 +56,10 @@ jobs:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
     
-      - name: Hexo三连并推送npm
+      - name: Hexo三连
         run: |
           hexo clean
           hexo generate 
           hexo algolia
-        #  gulp
           hexo deploy         
  
