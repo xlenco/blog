@@ -954,7 +954,7 @@ inject:
     - <link href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
     - <link href="https://githubusercontent.onmicrosoft.cn" rel="preconnect">
     - <link href="https://raw.githubusercontent.com" rel="preconnect" crossorigin>
-    - <link rel="preload" href="/css/font.css" as="style" crossorigin>
+    - <link rel='preload' href='/css/font.css' as="style" onload="console.log('font.css loaded')"
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
