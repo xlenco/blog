@@ -199,3 +199,63 @@ fcircle:
     comments: false
     aside: false
     top_img: false
+
+## hexo-yam
+minify:
+  enable: true
+  html:
+    enable: true
+    exclude:
+  css:
+    enable: true
+    exclude:
+      - '*.min.css'
+  js:
+    enable: true
+    exclude:
+      - '*.min.js
+  svg:
+    enable: false
+    include:
+      - '*.svg'
+      - '!*.min.svg
+  gzip:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json'
+      - '*.woff2'
+  brotli:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json
+      - '*.woff2'
+  xml:
+    enable: false
+    include:
+      - '*.xml'
+      - '!*.min.xml''
+  json:
+    enable: false
+    include:
+      - '*.json'
+      - '!*.min.json'
