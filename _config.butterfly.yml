@@ -949,12 +949,13 @@ inject:
     - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" media="defer" onload="this.media='all'">
     - <meta name="referrer" content="no-referrer">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css">
-    - <link rel="preconnect" href="https://fonts.loli.net"> 
-    - <link rel="preconnect" href="https://gstatic.loli.net" crossorigin> 
+    - <link rel="preconnect" href="//fonts.loli.net"> 
+    - <link rel="preconnect" href="//gstatic.loli.net" crossorigin> 
+    - <link rel="preconnect" href="//s1.hdslb.com" crossorigin> 
     - <link href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="/css/font.css">
     - <link href="https://githubusercontent.onmicrosoft.cn" rel="preconnect">
     - <link href="https://raw.githubusercontent.com" rel="preconnect" crossorigin>
-    - <link rel="preload" href="/css/font.css" as="style" onload="console.log('font.css loaded')">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
