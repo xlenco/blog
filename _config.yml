@@ -227,5 +227,5 @@ minify:
       - '*.xml'
       - '*.svg'
       - '*.eot'
-      - '*.json
+      - '*.json'
       - '*.woff2'
