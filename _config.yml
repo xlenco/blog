@@ -213,9 +213,4 @@ minify:
   js:
     enable: true
     exclude:
-      - '*.min.js
-  xml:
-    enable: false
-    include:
-      - '*.xml'
-      - '!*.min.xml'
+      - '*.min.js'
