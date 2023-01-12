@@ -248,9 +248,4 @@ minify:
     enable: false
     include:
       - '*.xml'
-      - '!*.min.xml''
-  json:
-    enable: false
-    include:
-      - '*.json'
-      - '!*.min.json'
+      - '!*.min.xml'
