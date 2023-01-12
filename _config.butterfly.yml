@@ -622,7 +622,7 @@ beautify:
 font:
   global-font-size:
   code-font-size: 
-  font-family: "AlibabaPuHuiTi-2-55-Regular"
+  font-family: "HarmonyOS_Regular"
   code-font-family: "Fira Code"
 
 # Font settings for the site title and site subtitle
