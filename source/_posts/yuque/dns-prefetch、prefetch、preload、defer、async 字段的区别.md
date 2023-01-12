@@ -31,7 +31,12 @@ tags:
 和 `prefetch` 不同，`prefecth` 通常是加载接下来可能用到的页面资源，而 `preload` 是加载当前页面要用的脚本、样式、字体、图片等资源。所以 `preload` 不是空闲时加载，它的优先级更强，并且会占用 `http` 请求数量。
 
 ```html
-<link rel='preload' href='style.css' as="style" onload="console.log('style loaded')"
+<link
+  rel="preload"
+  href="style.css"
+  as="style"
+  onload="console.log('style loaded')"
+/>
 ```
 
 #### `as` 值包括
