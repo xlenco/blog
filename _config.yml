@@ -214,3 +214,18 @@ minify:
     enable: true
     exclude:
       - '*.min.js'
+  gzip:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json
+      - '*.woff2'
