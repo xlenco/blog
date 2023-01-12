@@ -216,9 +216,6 @@ minify:
       - '*.min.js
   svg:
     enable: false
-    include:
-      - '*.svg'
-      - '!*.min.svg
   gzip:
     enable: true
     include:
