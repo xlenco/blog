@@ -143,8 +143,8 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://i.imgtg.com/2022/12/19/HpVMC.gif
-  post_page: https://i.imgtg.com/2022/12/19/HpcZS.gif
+  flink: https://photo.baidu.com/youai/share/v1/download?share_id=34499559903060124&fsid=989486682895808
+  post_page: https://photo.baidu.com/youai/share/v1/download?share_id=34499559903060124&fsid=1119614452788119
 
 # A simple 404 page
 error_404:
