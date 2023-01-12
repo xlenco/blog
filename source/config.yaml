@@ -19,6 +19,8 @@ catch_rules:
           - https://cdn.staticfile.org
           - https://cdn.qystu.cc/npm
           - https://jsdelivr.codeqihan.eu.org/npm
+          - https://cdn.moezz.cn/npm
+          - https://cdn.xxhzm.cn/proxy/npm
         action: fetch
         fetch:
           status: 200
@@ -40,6 +42,8 @@ catch_rules:
           - https://assets.tnxg.whitenuo.cn/proxy/gh
           - https://cdn.qystu.cc/gh
           - https://jsdelivr.codeqihan.eu.org/gh
+          - https://cdn.moezz.cn/gh
+          - https://cdn.xxhzm.cn/proxy/gh
         action: fetch
         fetch:
           status: 200
