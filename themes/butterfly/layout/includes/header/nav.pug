@@ -1,11 +1,6 @@
 nav#nav
-  #nav-group
-    span#blog_name
-      a#site-name(onclick=`pjax.loadUrl("/")`)
-        span XLENCO
-    span#page_name
-      a#page-name-text(title=_p("rightside.back_to_top") onclick="btf.scrollToDest(0,500)")
-        span #[=config.title]
+  span#blog_name
+    a#site-name(onclick=`pjax.loadUrl("/")`) #[=config.title]
 
     #menus
       !=partial('includes/header/menu_item', {}, {cache: true})
