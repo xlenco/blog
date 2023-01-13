@@ -13,7 +13,7 @@ print(time)
 f = open(os.path.join("source", "album", "bing", "index.md"), "w")
 f.write("""---
 title: Bing 壁纸 每日更新
-top_img: https://bing.xlenco.eu.org
+top_img: https://bing.nsso.eu.org
 aside: false
 date: {}
 ---
