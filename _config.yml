@@ -199,63 +199,58 @@ fcircle:
     aside: false
     top_img: false
 
-## hexo-yam
+## Hexo-minify Default Config Options
 minify:
-  enable: true
-  html:
-    enable: true
-    exclude:
-  css:
-    enable: true
-    exclude:
-      - '*.min.css'
+  preview: false ## 本地预览时是否压缩
   js:
     enable: true
-    exclude:
-      - '*.min.js'
-  gzip:
+    ## 详细配置: https://swc.rs/docs/configuration/minification
+    options:
+  css:
     enable: true
-    include:
-      - '*.html'
-      - '*.css'
-      - '*.js'
-      - '*.txt'
-      - '*.ttf'
-      - '*.atom'
-      - '*.stl'
-      - '*.xml'
-      - '*.svg'
-      - '*.eot'
-      - '*.json'
-      - '*.woff2'
-      - '*.png'
-      - '*.webp'
-      - '*.jpg'
-  brotli:
+    ## 详细配置: https://esbuild.github.io/api/#minify
+    options:
+  html:
     enable: true
-    include:
-      - '*.html'
-      - '*.css'
-      - '*.js'
-      - '*.txt'
-      - '*.ttf'
-      - '*.atom'
-      - '*.stl'
-      - '*.xml'
-      - '*.svg'
-      - '*.eot'
-      - '*.json'
-      - '*.woff2'
-      - '*.png'
-      - '*.webp'
-      - '*.jpg'
-  xml:
+    ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
+    options:
+      minifyJS: true # Compressed JavaScript
+      minifyCSS: true # CSS Compressed
+      removeComments: true # Remove the comments
+      collapseWhitespace: true # Delete any extra space
+      removeAttributeQuotes: true # Delete attribute quotes
+  image:
+    enable: true
+    svg:
+      enable: true
+      ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
+      options:
+    jpg:
+      enable: true
+      ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
+      options:
+    png:
+      enable: true
+      ## 详细配置: https://github.com/imagemin/imagemin-pngquant#options
+      options:
+    gif:
+      enable: true
+      ## 详细配置: https://www.npmjs.com/package/imagemin-gifsicle#options
+      options:
+    webp:
+      enable: true
+      ## 详细配置: https://github.com/imagemin/imagemin-webp#options
+      options:
+  postcss:
     enable: false
-    include:
-      - '*.xml'
-      - '!*.min.xml'
-  json:
-    enable: false
-    include:
-      - '*.json'
-      - '!*.min.json'
+    ## 详细配置: https://github.com/postcss/autoprefixer#options
+    ## 注意Hexo-minify仅内置了autoprefixer插件
+    ## 受Hexo限制，目前无法实现自定义postcss插件
+    options:
+      # JavaScript 数组写法
+      # overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead']
+      # YAML 数组写法
+      overrideBrowserslist:
+        - '> 1%' # 特殊符号需要使用'或"
+        - last 2 versions
+        - not dead
