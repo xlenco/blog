@@ -4,7 +4,7 @@ tags: CDN
 categories: 笔记
 cover: https://xlenco.onmicrosoft.cn/img/OIP-C.jpg
 date: 2022/8/29 21:13
-updated: 2022-12-14 18:18
+updated: 2023-1-13 20:02
 ---
 
 ## 前沿
@@ -21,6 +21,9 @@ Ps：每一款 CDN 的节点数量都是大家所关心的，jsDelivr 总共提�
 
 CDNJS 提供非常完整的 JavaScript 库，无论是热门或是冷门的一应俱全。若你觉得它们缺少哪些好用的函式库，也可以自行提交到网站里，通过审核后就 CDNJS 就会为你分流 js 文件！唯一的缺点是国外的，国内访问速度不算快。
 官网：[http://www.cdnjs.com/ ](http://www.cdnjs.com/)
+反代源：
+[https://cdnjs.rsb.net/](https://cdnjs.rsb.net/)
+[https://cdnjs.loli.net](https://cdnjs.loli.net)
 
 ## **BootCDN**
 
@@ -60,9 +63,9 @@ unpkg 是一个内容源自 npm 的全球快速 CDN。
 它部署在 cloudflare 上，在大陆地区访问到的是香港节点。 它支持 h/2 和很多新特性，如果不考虑网络延迟的原因，性能优化较为出色。在国内一些互联网公司也有镜像，例如知乎和饿了么。
 网址：[https://unpkg.com/](https://unpkg.com/)
 
-## 国内 Unpkg 镜像
+## Unpkg 反代源
 
-目前找了对外的国内 Unpkg 有三个个：
+目前找了对外的 Unpkg 反代源有三个：
 
 - 饿了么：[https://npm.elemecdn.com/](https://npm.elemecdn.com/)
 - 知乎：[https://unpkg.zhimg.com/](https://unpkg.zhimg.com/)
