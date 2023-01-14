@@ -6,6 +6,8 @@ catch_rules:
     transform_rules: #转换规则，最上面的优先最高
       - search: artalk\.xlenco\.eu\.org\/api\/get
         action: skip
+      - search: artalk\.xlenco\.eu\.org\/api\/stat
+        action: skip
       - search: \#.* #在发送请求时匹配#后内容并移除
         replace: ''
       - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
