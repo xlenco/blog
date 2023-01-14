@@ -11,7 +11,9 @@ catch_rules:
         - search: \#.* #在发送请求时匹配#后内容并移除
           replace: ''
         - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
-          replace: '' 
+          replace: ''
+        - search: ([^\/.]+)\/$ 
+          replace: $1/index.html
         - search: _ 
           replace: 
             - _ #保留原始请求
@@ -107,7 +109,7 @@ catch_rules:
             timeout: 30000
             delay: 4000
 #字体缓存
-    - rule: ^https\:\/\/s1.hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$
+    - rule: ^https\:\/\/(s1.hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$|gstatic\.loli.net\/s\/firacode\/v21\/(.*)\.woff2$)
       transform_rules:
         - search: _
           action: fetch
@@ -119,17 +121,17 @@ catch_rules:
             timeout: 30000
             cache:
               enable: true
-              expire: 1000*60*60*3
-    - rule: ^https\:\/\/gstatic\.loli.net\/s\/firacode\/v21\/(.*)\.woff2$
+              expire: 1000*60*60*2
+#html页面缓存
+    - rule: ^https\:\/\/xlenco.eu.org\/(index|404)\.html$
       transform_rules:
         - search: _
           action: fetch
           fetch:
             status: 200
-            engine: crazy
+            engine: fetch
             preflight: false
-            threads: 5
             timeout: 30000
             cache:
               enable: true
-              expire: 1000*60*60*3
+              expire: 1000*60*60
