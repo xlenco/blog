@@ -2,108 +2,108 @@
 name: XlencoのClientWorker 
 cleaninterval: 1000*20 #每20秒检测并清理一次缓存
 catch_rules: 
-  - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
-    transform_rules: #转换规则，最上面的优先最高
-      - search: artalk\.xlenco\.eu\.org\/api\/get
-        action: skip
-      - search: artalk\.xlenco\.eu\.org\/api\/stat
-        action: skip
-      - search: \#.* #在发送请求时匹配#后内容并移除
-        replace: ''
-      - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
-        replace: '' 
-      - search: _ 
-        replace: 
-          - _ #保留原始请求
-          - https://inxlo.is-a.dev #GithubPage托管
-          - https://pages.xlenco.eu.org #cloudflare pages托管
-          - https://netlify.xlenco.eu.org #Netlify托管
-          - https://render.xlenco.eu.org #Render托管
-      - search: _
-        action: fetch
-        fetch:
-          status: 200
-          engine: classic
-          preflight: false
-          timeout: 5000
+    - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
+      transform_rules: #转换规则，最上面的优先最高
+        - search: artalk\.xlenco\.eu\.org\/api\/get
+          action: skip
+        - search: artalk\.xlenco\.eu\.org\/api\/stat
+          action: skip
+        - search: \#.* #在发送请求时匹配#后内容并移除
+          replace: ''
+        - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
+          replace: '' 
+        - search: _ 
+          replace: 
+            - _ #保留原始请求
+            - https://inxlo.is-a.dev #GithubPage托管
+            - https://pages.xlenco.eu.org #cloudflare pages托管
+            - https://netlify.xlenco.eu.org #Netlify托管
+            - https://render.xlenco.eu.org #Render托管
+        - search: _
+          action: fetch
+          fetch:
+            status: 200
+            engine: classic
+            preflight: false
+            timeout: 5000
 #静态资源 CDN 选择
-  - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
-    transform_rules:
-      - search: _
-        replace:
-          - _
-          - https://unpkg.onmicrosoft.cn 
-          - https://jsd.onmicrosoft.cn/npm
-          - https://npm.onmicrosoft.cn
-          - https://cdn.cnortles.top/npm
-          - https://unpkg.cnortles.top   
-          - https://jsd.cky.codes/npm   
-          - https://npm.elemecdn.com
-          - https://npm.sourcegcdn.com  
-          - https://cdn.staticfile.org
-          - https://cdn.qystu.cc/npm
-          - https://jsdelivr.codeqihan.eu.org/npm
-          - https://cdn.moezz.cn/npm
-          - https://cdn.xxhzm.cn/proxy/npm
-          - https://shadow.elemecdn.com/npm
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 3000
-          cache:
-            expire: 1000*60*60*12 #缓存12小时
-            delay: 300
+    - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
+      transform_rules:
+        - search: _
+          replace:
+            - _
+            - https://unpkg.onmicrosoft.cn 
+            - https://jsd.onmicrosoft.cn/npm
+            - https://npm.onmicrosoft.cn
+            - https://cdn.cnortles.top/npm
+            - https://unpkg.cnortles.top   
+            - https://jsd.cky.codes/npm   
+            - https://npm.elemecdn.com
+            - https://npm.sourcegcdn.com  
+            - https://cdn.staticfile.org
+            - https://cdn.qystu.cc/npm
+            - https://jsdelivr.codeqihan.eu.org/npm
+            - https://cdn.moezz.cn/npm
+            - https://cdn.xxhzm.cn/proxy/npm
+            - https://shadow.elemecdn.com/npm
+          action: fetch
+          fetch:
+            status: 200
+            engine: parallel
+            preflight: false # false
+            timeout: 3000
+            cache:
+              expire: 1000*60*60*12 #缓存12小时
+              delay: 300
 #github加速
-  - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh|jsd\.onmicrosoft\.cn\/gh)
-    transform_rules:
-      - search: _
-        replace:
-          - _
-          - https://jsd.onmicrosoft.cn/gh
-          - https://cdn.cnortles.top/gh
-          - https://jsd.cky.codes/gh
-          - https://assets.tnxg.whitenuo.cn/proxy/gh
-          - https://cdn.qystu.cc/gh
-          - https://jsdelivr.codeqihan.eu.org/gh
-          - https://cdn.moezz.cn/gh
-          - https://cdn.xxhzm.cn/proxy/gh
-          - https://shadow.elemecdn.com/gh
-        action: fetch
-        fetch:
-          status: 200
-          engine: parallel
-          preflight: false # false
-          timeout: 30000
-          cache:
-            expire: 1000*60*60*12 #缓存12小时
-            delay: 300
+    - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh|jsd\.onmicrosoft\.cn\/gh)
+      transform_rules:
+        - search: _
+          replace:
+            - _
+            - https://jsd.onmicrosoft.cn/gh
+            - https://cdn.cnortles.top/gh
+            - https://jsd.cky.codes/gh
+            - https://assets.tnxg.whitenuo.cn/proxy/gh
+            - https://cdn.qystu.cc/gh
+            - https://jsdelivr.codeqihan.eu.org/gh
+            - https://cdn.moezz.cn/gh
+            - https://cdn.xxhzm.cn/proxy/gh
+            - https://shadow.elemecdn.com/gh
+          action: fetch
+          fetch:
+            status: 200
+            engine: parallel
+            preflight: false # false
+            timeout: 30000
+            cache:
+              expire: 1000*60*60*12 #缓存12小时
+              delay: 300
 #第三方api图片缓存
-  - rule: ^https\:\/\/(xlenco\.onmicrosoft\.cn\/(.*)\.(jpg|webp)$|preview\.cloud\.189\.cn\/(.*))
-    transform_rules:
-      - search: _
-        action: fetch
-        fetch:
-          status: 200
-          engine: fetch
-          preflight: false
-          timeout: 30000
-          cache:
-            enable: true
-            expire: 1000*60*60*12*365
+    - rule: ^https\:\/\/(xlenco\.onmicrosoft\.cn\/(.*)\.(jpg|webp)$|preview\.cloud\.189\.cn\/(.*))
+      transform_rules:
+        - search: _
+          action: fetch
+          fetch:
+            status: 200
+            engine: fetch
+            preflight: false
+            timeout: 30000
+            cache:
+              enable: true
+              expire: 1000*60*60*12*365
 #匹配B站资源链接
-  - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
-    transform_rules:
-      - search: _ #多cdn并发
-        replace:
-          - https://s1.hdslb.com
-          - https://s2.hdslb.com
-          - https://s3.hdslb.com
-        action: fetch
-        fetch:
-          engine: parallel
-          status: 200
-          preflight: false
-          timeout: 30000
-          delay: 4000
+    - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
+      transform_rules:
+        - search: _ #多cdn并发
+          replace:
+            - https://s1.hdslb.com
+            - https://s2.hdslb.com
+            - https://s3.hdslb.com
+          action: fetch
+          fetch:
+            engine: parallel
+            status: 200
+            preflight: false
+            timeout: 30000
+            delay: 4000
