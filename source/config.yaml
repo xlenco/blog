@@ -2,6 +2,19 @@
 name: XlencoのClientWorker 
 cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
 catch_rules: 
+  - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
+    transform_rules: #转换规则，最上面的优先最高
+      - search: \#.* #在发送请求时匹配#后内容并移除
+        replace: ''
+      - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
+        replace: '' 
+      - search: _ 
+        replace: 
+          - _ #保留原始请求
+          - inxlo.is-a.dev #GithubPage托管
+          - pages.xlenco.eu.org #cloudflare pages托管
+          - netlify.xlenco.eu.org #Netlify托管
+          - render.xlenco.eu.org #Render托管
 # 静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
     transform_rules:
