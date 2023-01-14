@@ -14,6 +14,10 @@ catch_rules:
           replace: ''
         - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
           replace: ''
+        - search: ([^\/.]+)\/index(|\.html)$ 
+          action: redirect
+          redirect: 
+            to: $1/
         - search: _ 
           replace: 
             - _ #保留原始请求
@@ -23,6 +27,14 @@ catch_rules:
             - https://render.xlenco.eu.org #Render托管
 
 
+
+        - search: \/([^\/.]+)$ 
+          action: redirect
+          redirect: 
+             to: /$1.html
+             status: 301
+
+             
         - search: ([^\/.]+)\/$ 
           replace: $1/index.html
 
