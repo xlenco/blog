@@ -125,7 +125,7 @@ catch_rules:
               enable: true
               expire: 1000*60*60*2
 #html页面缓存
-    - rule: ^https\:\/\/\/(index|404)\.html$
+    - rule: ^https\:\/\/xlenco\.eu\.org\/(index|404)\.html$
       transform_rules:
         - search: _
           action: fetch
