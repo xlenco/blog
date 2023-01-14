@@ -31,8 +31,7 @@ catch_rules:
       transform_rules:
         - search: _
           replace:
-            - _
-            - https://unpkg.onmicrosoft.cn 
+            - _ 
             - https://jsd.onmicrosoft.cn/npm
             - https://npm.onmicrosoft.cn
             - https://cdn.cnortles.top/npm
