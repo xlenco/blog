@@ -1,6 +1,6 @@
-# ClientWorker.js.org
+#ClientWorker.js.org
 name: XlencoのClientWorker 
-cleaninterval: 1000*20 # 每20秒检测并清理一次缓存
+cleaninterval: 1000*20 #每20秒检测并清理一次缓存
 catch_rules: 
   - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
     transform_rules: #转换规则，最上面的优先最高
@@ -11,11 +11,11 @@ catch_rules:
       - search: _ 
         replace: 
           - _ #保留原始请求
-          - inxlo.is-a.dev #GithubPage托管
-          - pages.xlenco.eu.org #cloudflare pages托管
-          - netlify.xlenco.eu.org #Netlify托管
-          - render.xlenco.eu.org #Render托管
-# 静态资源 CDN 选择
+          - https://inxlo.is-a.dev #GithubPage托管
+          - https://pages.xlenco.eu.org #cloudflare pages托管
+          - https://netlify.xlenco.eu.org #Netlify托管
+          - https://render.xlenco.eu.org #Render托管
+#静态资源 CDN 选择
   - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
     transform_rules:
       - search: _
@@ -42,9 +42,9 @@ catch_rules:
           preflight: false # false
           timeout: 3000
           cache:
-            expire: 1000*60*60*12 # 缓存12小时
+            expire: 1000*60*60*12 #缓存12小时
             delay: 300
-  # github加速
+#github加速
   - rule: ^https\:\/\/((cdn|fastly|gcore|test1|quantil)\.jsdelivr\.net\/gh|jsd\.onmicrosoft\.cn\/gh)
     transform_rules:
       - search: _
@@ -66,9 +66,9 @@ catch_rules:
           preflight: false # false
           timeout: 30000
           cache:
-            expire: 1000*60*60*12 # 缓存12小时
+            expire: 1000*60*60*12 #缓存12小时
             delay: 300
-  # 第三方api图片缓存
+#第三方api图片缓存
   - rule: ^https\:\/\/(xlenco\.onmicrosoft\.cn\/(.*)\.(jpg|webp)$|preview\.cloud\.189\.cn\/(.*))
     transform_rules:
       - search: _
@@ -81,10 +81,10 @@ catch_rules:
           cache:
             enable: true
             expire: 1000*60*60*12*365
-# 匹配B站资源链接
+#匹配B站资源链接
   - rule: ^(http|https)\:\/\/(i0|i1|i2|i3|s1|s2|s3)\.hdslb\.com 
     transform_rules:
-      - search: _ # 多cdn并发
+      - search: _ #多cdn并发
         replace:
           - https://s1.hdslb.com
           - https://s2.hdslb.com
