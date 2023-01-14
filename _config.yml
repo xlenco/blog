@@ -202,13 +202,14 @@ fcircle:
 ## Hexo-minify Default Config Options
 minify:
   preview: false ## 本地预览时是否压缩
+  exclude: ['*.min.*']
   js:
     enable: true
-    ## 详细配置: https://swc.rs/docs/configuration/minification
+    ## 详细配置: https://github.com/terser/terser#minify-options
     options:
   css:
     enable: true
-    ## 详细配置: https://esbuild.github.io/api/#minify
+    ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
     options:
   html:
     enable: true
@@ -241,16 +242,3 @@ minify:
       enable: true
       ## 详细配置: https://github.com/imagemin/imagemin-webp#options
       options:
-  postcss:
-    enable: false
-    ## 详细配置: https://github.com/postcss/autoprefixer#options
-    ## 注意Hexo-minify仅内置了autoprefixer插件
-    ## 受Hexo限制，目前无法实现自定义postcss插件
-    options:
-      # JavaScript 数组写法
-      # overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead']
-      # YAML 数组写法
-      overrideBrowserslist:
-        - '> 1%' # 特殊符号需要使用'或"
-        - last 2 versions
-        - not dead
