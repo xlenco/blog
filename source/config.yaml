@@ -125,9 +125,9 @@ catch_rules:
               enable: true
               expire: 1000*60*60*2
 #html页面缓存
-    - rule: _
+    - rule: \/(index|404)\.html$
       transform_rules:
-        - search: \(index|404)\.html$
+        - search: _
           action: fetch
           fetch:
             status: 200
