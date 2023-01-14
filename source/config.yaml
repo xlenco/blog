@@ -111,7 +111,7 @@ catch_rules:
             timeout: 30000
             delay: 4000
 #字体缓存
-    - rule: ^https\:\/\/s1.hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$
+    - rule: ^https\:\/\/(i0|i1|i2|i3|s1|s2|s3).hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$
       transform_rules:
         - search: _
           action: fetch
@@ -125,7 +125,7 @@ catch_rules:
               enable: true
               expire: 1000*60*60*2
 #html页面缓存
-    - rule: \/(index|404)\.html$
+    - rule: ^https\:\/\/\/(index|404)\.html$
       transform_rules:
         - search: _
           action: fetch
