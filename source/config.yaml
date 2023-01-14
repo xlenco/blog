@@ -8,6 +8,8 @@ catch_rules:
           action: skip
         - search: artalk\.xlenco\.eu\.org\/api\/stat
           action: skip
+        - search: artalk\.xlenco\.eu\.org\/api\/pv
+          action: skip
         - search: \#.* #在发送请求时匹配#后内容并移除
           replace: ''
         - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
@@ -109,7 +111,7 @@ catch_rules:
             timeout: 30000
             delay: 4000
 #字体缓存
-    - rule: ^https\:\/\/(s1.hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$|gstatic\.loli.net\/s\/firacode\/v21\/(.*)\.woff2$)
+    - rule: ^https\:\/\/s1.hdslb.com\/bfs\/static\/jinkela\/long\/font\/HarmonyOS_Regular\.(.*)\.woff2$
       transform_rules:
         - search: _
           action: fetch
@@ -123,9 +125,9 @@ catch_rules:
               enable: true
               expire: 1000*60*60*2
 #html页面缓存
-    - rule: ^https\:\/\/xlenco.eu.org\/(index|404)\.html$
+    - rule: _
       transform_rules:
-        - search: _
+        - search: \(index|404)\.html$
           action: fetch
           fetch:
             status: 200
