@@ -21,6 +21,7 @@ catch_rules:
           - https://jsdelivr.codeqihan.eu.org/npm
           - https://cdn.moezz.cn/npm
           - https://cdn.xxhzm.cn/proxy/npm
+          - https://shadow.elemecdn.com/npm
         action: fetch
         fetch:
           status: 200
@@ -44,6 +45,7 @@ catch_rules:
           - https://jsdelivr.codeqihan.eu.org/gh
           - https://cdn.moezz.cn/gh
           - https://cdn.xxhzm.cn/proxy/gh
+          - https://shadow.elemecdn.com/gh
         action: fetch
         fetch:
           status: 200
