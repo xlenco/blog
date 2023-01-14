@@ -14,8 +14,6 @@ catch_rules:
           replace: ''
         - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
           replace: ''
-        - search: ([^\/.]+)\/$ 
-          replace: $1/index.html
         - search: _ 
           replace: 
             - _ #保留原始请求
@@ -23,6 +21,12 @@ catch_rules:
             - https://pages.xlenco.eu.org #cloudflare pages托管
             - https://netlify.xlenco.eu.org #Netlify托管
             - https://render.xlenco.eu.org #Render托管
+
+
+        - search: ([^\/.]+)\/$ 
+          replace: $1/index.html
+
+
         - search: _
           action: fetch
           fetch:
@@ -124,16 +128,3 @@ catch_rules:
             cache:
               enable: true
               expire: 1000*60*60*2
-#html页面缓存
-    - rule: ^https\:\/\/xlenco\.eu\.org\/(index|404)\.html$
-      transform_rules:
-        - search: _
-          action: fetch
-          fetch:
-            status: 200
-            engine: fetch
-            preflight: false
-            timeout: 30000
-            cache:
-              enable: true
-              expire: 1000*60*60
