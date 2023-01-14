@@ -98,5 +98,5 @@ catch_rules:
           delay: 4000
 
 
-      - search: artalk\.xlenco\.eu\.org
+      - search: artalk\.xlenco\.eu\.org\/api\/get
         action: skip
