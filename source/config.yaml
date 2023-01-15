@@ -43,7 +43,6 @@ catch_rules:
             - https://npm.sourcegcdn.com  
             - https://cdn.staticfile.org
             - https://cdn.qystu.cc/npm
-            - https://jsdelivr.codeqihan.eu.org/npm
             - https://cdn.moezz.cn/npm
             - https://cdn.xxhzm.cn/proxy/npm
             - https://shadow.elemecdn.com/npm
@@ -67,7 +66,6 @@ catch_rules:
             - https://jsd.cky.codes/gh
             - https://assets.tnxg.whitenuo.cn/proxy/gh
             - https://cdn.qystu.cc/gh
-            - https://jsdelivr.codeqihan.eu.org/gh
             - https://cdn.moezz.cn/gh
             - https://cdn.xxhzm.cn/proxy/gh
             - https://shadow.elemecdn.com/gh
