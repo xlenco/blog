@@ -4,11 +4,7 @@ cleaninterval: 1000*20 #每20秒检测并清理一次缓存
 catch_rules: 
     - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
       transform_rules: #转换规则，最上面的优先最高
-        - search: artalk\.xlenco\.eu\.org\/api\/get
-          action: skip
-        - search: artalk\.xlenco\.eu\.org\/api\/stat
-          action: skip
-        - search: artalk\.xlenco\.eu\.org\/api\/pv
+        - search: artalk\.xlenco\.eu\.org
           action: skip
         - search: \#.* #在发送请求时匹配#后内容并移除
           replace: ''
