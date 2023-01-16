@@ -26,9 +26,12 @@ catch_rules:
           action: fetch
           fetch:
             status: 200
-            engine: Parallel
+            engine: parallel
             preflight: false
             timeout: 5000
+            cache:
+              expire: 1000*60*60*8
+              delay: 200
 #静态资源 CDN 选择
     - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
       transform_rules:
