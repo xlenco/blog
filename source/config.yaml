@@ -16,7 +16,7 @@ catch_rules:
             - https://inxlo.is-a.dev #GithubPage托管
            # - https://pages.xlenco.eu.org #cloudflare pages托管
             - https://netlify.xlenco.eu.org #Netlify托管
-            - https://render.xlenco.eu.org #Render托管
+           # - https://render.xlenco.eu.org #Render托管
         - search: _
           action: fetch
           fetch:
