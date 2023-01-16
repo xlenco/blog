@@ -393,11 +393,6 @@ artalk:
   site: Xlenco-Blog
   visitor: false
   option: 
-   emoticons: [
-    'https://jsd.onmicrosoft.cn/gh/ArtalkJS/Emoticons/grps/default.json',
-    'https://jsd.onmicrosoft.cn/gh/xlenco/Emoji/alu.json',
-    'https://jsd.onmicrosoft.cn/gh/xlenco/Emoji/QQ.json',
-  ]
 
 # Chat Services
 # --------------------------------------
