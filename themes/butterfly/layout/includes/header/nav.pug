@@ -1,13 +1,42 @@
+- const { darkmode } = theme
 nav#nav
   span#blog_name
-    a#site-name(onclick=`pjax.loadUrl("/")`) #[=config.title]
-    
+    .back-home-button(tabindex='-1')
+      i.back-home-button-icon.fas.fa-grip-vertical
+      .back-menu-list-groups
+        .back-menu-list-group
+          .back-menu-list-title 网页
+          .back-menu-list
+            a.back-menu-item(href='/', title='前往博客主页', target='_blank', one-link-mark='yes')
+              img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315ec9737ac4.png')
+              span.back-menu-item-text 博客
+            a.back-menu-item(href='https://https://xlcoud.eu.org/', rel='external nofollow', title='前往云盘主页', target='_blank', one-link-mark='yes')
+              img.back-menu-item-icon(src='https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/7f26fa58-5d88-4059-ac4b-5332f02ddb0e.png')
+              span.back-menu-item-text IPFS图床
+
+
+
+    a#site-name(onclick=`pjax.loadUrl("/")`)
+      .title #[=config.title]
+      i.fa-solid.fa-house
+
+  div.mask-name-container
+    center(id="name-container")
+      a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
+
   #menus
     if (theme.algolia_search.enable || theme.local_search.enable)
-      #search-button
+      div.nav-button#search-button
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
+
+    if darkmode.enable && darkmode.button
+      div.nav-button#darkmode_navswitch
+        a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
+          i.fas.fa-adjust
+
+
     !=partial('includes/header/menu_item', {}, {cache: true})
 
     #toggle-menu
