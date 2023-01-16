@@ -93,10 +93,10 @@ updated: 2023-01-05 15:20:36
 - class_name: Wed
   class_desc: 一些实用的网站
   link_list:
-  - name: Solitude'Pan
-    link: https://solitude.eu.org/
-    avatar: https://nsso.eu.org/img/2f8efba0-997a-43b2-99e7-30577849eb3d.png
-    descr: 分享各类软件，影视资源...
+  - name: IPFS图床
+    link: https://xlcoud.eu.org/
+    avatar: https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/7f26fa58-5d88-4059-ac4b-5332f02ddb0e.png
+    descr: 基于IPFS无限容量、稳定
   - name: 渺软公益 CDN
     link: https://cdn.onmicrosoft.cn/
     avatar: https://cdn.onmicrosoft.cn/favicon.svg
