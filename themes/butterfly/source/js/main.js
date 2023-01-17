@@ -1,24 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let headerContentWidth, $nav
+  let blogNameWidth, menusWidth, searchWidth, $nav
   let mobileSidebarOpen = false
 
-  const adjustMenu = init => {
-    const getAllWidth = ele => {
-      let width = 0
-      ele.length && Array.from(ele).forEach(i => { width += i.offsetWidth })
-      return width
-    }
-
+  const adjustMenu = (init) => {
     if (init) {
-      const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
-      const menusWidth = getAllWidth(document.getElementById('menus').children)
-      headerContentWidth = blogInfoWidth + menusWidth
+      blogNameWidth = document.getElementById('site-name').offsetWidth
+      const $menusEle = document.querySelectorAll('#menus .menus_item')
+      menusWidth = 0
+      $menusEle.length && $menusEle.forEach(i => { menusWidth += i.offsetWidth })
+      const $searchEle = document.querySelector('#search-button')
+      searchWidth = $searchEle ? $searchEle.offsetWidth : 0
       $nav = document.getElementById('nav')
     }
 
     let hideMenuIndex = ''
     if (window.innerWidth <= 768) hideMenuIndex = true
-    else hideMenuIndex = headerContentWidth > $nav.offsetWidth - 120
+    else hideMenuIndex = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
 
     if (hideMenuIndex) {
       $nav.classList.add('hide-menu')
@@ -232,42 +229,14 @@ document.addEventListener('DOMContentLoaded', function () {
    * justified-gallery 圖庫排版
    */
   const runJustifiedGallery = function (ele) {
-    const htmlStr = arr => {
-      let str = ''
-      const replaceDq = str => str.replace(/"/g, '&quot;') // replace double quotes to &quot;
-      arr.forEach(i => {
-        const alt = i.alt ? `alt="${replaceDq(i.alt)}"` : ''
-        const title = i.title ? `title="${replaceDq(i.title)}"` : ''
-        str += `<div class="fj-gallery-item"><img src="${i.url}" ${alt + title}"></div>`
-      })
-      return str
-    }
-
-    const lazyloadFn = (i, arr) => {
-      const loadItem = i.getAttribute('data-limit')
-      const arrLength = arr.length
-      if (arrLength > loadItem) i.insertAdjacentHTML('beforeend', htmlStr(arr.splice(0, loadItem)))
-      else {
-        i.insertAdjacentHTML('beforeend', htmlStr(arr))
-        i.classList.remove('lazyload')
-      }
-      return arrLength > loadItem ? loadItem : arrLength
-    }
-
     ele.forEach(item => {
-      const arr = JSON.parse(item.querySelector('.gallery-data').textContent)
-      if (!item.classList.contains('lazyload')) item.innerHTML = htmlStr(arr)
-      else {
-        lazyloadFn(item, arr)
-        const limit = item.getAttribute('data-limit')
-        const clickBtnFn = () => {
-          const lastItemLength = lazyloadFn(item, arr)
-          fjGallery(item, 'appendImages', item.querySelectorAll(`.fj-gallery-item:nth-last-child(-n+${lastItemLength})`))
-          btf.loadLightbox(item.querySelectorAll('img'))
-          lastItemLength < limit && item.nextElementSibling.removeEventListener('click', clickBtnFn)
-        }
-        item.nextElementSibling.addEventListener('click', clickBtnFn)
-      }
+      const $imgList = item.querySelectorAll('img')
+
+      $imgList.forEach(i => {
+        const dataLazySrc = i.getAttribute('data-lazy-src')
+        if (dataLazySrc) i.src = dataLazySrc
+        btf.wrap(i, 'div', { class: 'fj-gallery-item' })
+      })
     })
 
     if (window.fjGallery) {
@@ -275,22 +244,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return
     }
 
-    getCSS(`${GLOBAL_CONFIG.source.justifiedGallery.css}`)
+    const newEle = document.createElement('link')
+    newEle.rel = 'stylesheet'
+    newEle.href = GLOBAL_CONFIG.source.justifiedGallery.css
+    document.body.appendChild(newEle)
     getScript(`${GLOBAL_CONFIG.source.justifiedGallery.js}`).then(() => { btf.initJustifiedGallery(ele) })
-  }
-
-  /**
-   * rightside scroll percent
-   */
-  const rightsideScrollPercent = currentTop => {
-    const perNum = btf.getScrollPercent(currentTop, document.body)
-    const $goUp = document.getElementById('go-up')
-    if (perNum < 95) {
-      $goUp.classList.add('show-percent')
-      $goUp.querySelector('.scroll-percent').textContent = perNum
-    } else {
-      $goUp.classList.remove('show-percent')
-    }
   }
 
   /**
@@ -318,43 +276,40 @@ document.addEventListener('DOMContentLoaded', function () {
     const $header = document.getElementById('page-header')
     const isChatBtnHide = typeof chatBtnHide === 'function'
     const isChatBtnShow = typeof chatBtnShow === 'function'
-    const isShowPercent = GLOBAL_CONFIG.percent.rightside
 
     const scrollTask = btf.throttle(() => {
-      const currentTop = window.scrollY || document.documentElement.scrollTop
-      const isDown = scrollDirection(currentTop)
-      if (currentTop > 56) {
-        if (isDown) {
-          if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
-          if (isChatBtnShow && isChatShow === true) {
-            chatBtnHide()
-            isChatShow = false
+        const currentTop = window.scrollY || document.documentElement.scrollTop
+        const isDown = scrollDirection(currentTop)
+        if (currentTop > 56) {
+          if (isDown) {
+            if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
+            if (isChatBtnShow && isChatShow === true) {
+              chatBtnHide()
+              isChatShow = false
+            }
+          } else {
+            if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
+            if (isChatBtnHide && isChatShow === false) {
+              chatBtnShow()
+              isChatShow = true
+            }
+          }
+          $header.classList.add('nav-fixed')
+          if (window.getComputedStyle($rightside).getPropertyValue('opacity') === '0') {
+            $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
           }
         } else {
-          if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
-          if (isChatBtnHide && isChatShow === false) {
-            chatBtnShow()
-            isChatShow = true
+          if (currentTop === 0) {
+            $header.classList.remove('nav-fixed', 'nav-visible')
           }
+          $rightside.style.cssText = "opacity: ''; transform: ''"
         }
-        $header.classList.add('nav-fixed')
-        if (window.getComputedStyle($rightside).getPropertyValue('opacity') === '0') {
+
+        if (document.body.scrollHeight <= innerHeight) {
           $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
         }
-      } else {
-        if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
-        }
-        $rightside.style.cssText = "opacity: ''; transform: ''"
-      }
-
-      isShowPercent && rightsideScrollPercent(currentTop)
-
-      if (document.body.scrollHeight <= innerHeight) {
-        $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
-      }
-    }, 200)
-
+      }, 200)
+    
     window.scrollCollect = scrollTask
 
     window.addEventListener('scroll', scrollCollect)
@@ -370,14 +325,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!($article && (isToc || isAnchor))) return
 
-    let $tocLink, $cardToc, autoScrollToc, $tocPercentage, isExpand
+    let $tocLink, $cardToc, scrollPercent, autoScrollToc, isExpand
 
     if (isToc) {
       const $cardTocLayout = document.getElementById('card-toc')
       $cardToc = $cardTocLayout.getElementsByClassName('toc-content')[0]
       $tocLink = $cardToc.querySelectorAll('.toc-link')
-      $tocPercentage = $cardTocLayout.querySelector('.toc-percentage')
+      const $tocPercentage = $cardTocLayout.querySelector('.toc-percentage')
       isExpand = $cardToc.classList.contains('is-expand')
+
+      scrollPercent = currentTop => {
+        const docHeight = $article.clientHeight
+        const winHeight = document.documentElement.clientHeight
+        const headerHeight = $article.offsetTop
+        const contentMath = (docHeight > winHeight) ? (docHeight - winHeight) : (document.documentElement.scrollHeight - winHeight)
+        const scrollPercent = (currentTop - headerHeight) / (contentMath)
+        const scrollPercentRounded = Math.round(scrollPercent * 100)
+        const percentage = (scrollPercentRounded > 100) ? 100 : (scrollPercentRounded <= 0) ? 0 : scrollPercentRounded
+        $tocPercentage.textContent = percentage
+      }
 
       window.mobileToc = {
         open: () => {
@@ -467,14 +433,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // main of scroll
-    window.tocScrollFn = btf.throttle(() => {
-      const currentTop = window.scrollY || document.documentElement.scrollTop
-      if (isToc && GLOBAL_CONFIG.percent.toc) {
-        $tocPercentage.textContent = btf.getScrollPercent(currentTop, $article)
-      }
-      findHeadPosition(currentTop)
-    }, 100)
-
+    window.tocScrollFn = function () {
+      return btf.throttle(function () {
+        const currentTop = window.scrollY || document.documentElement.scrollTop
+        isToc && scrollPercent(currentTop)
+        findHeadPosition(currentTop)
+      }, 100)()
+    }
     window.addEventListener('scroll', tocScrollFn)
   }
 
