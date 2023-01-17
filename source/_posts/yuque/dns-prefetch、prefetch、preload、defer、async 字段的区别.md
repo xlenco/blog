@@ -5,7 +5,7 @@ updated: 2022-12-19 17:45:07
 categories:
   - 前端
 
-cover: https://i.imgtg.com/2022/12/19/HpW1i.webp
+cover: https://preview.cloud.189.cn/image/imageAction?param=B597DC1D4AF794904609C72CCC74925972574BDD94F2D2E33C2EE4C22E26A3CAAD55EA7F0B10B764012ED072CCE444C5B8B68CDC0136D46C215AA07994A336AF0A79DE1277D634F2DF5D5540CD0B24CDC792B516243E48D93CB869E0D600AB637E2C22535CA2C73714F81A583AFD87C74604371A
 tags:
   - HTML
 ---
@@ -31,12 +31,7 @@ tags:
 和 `prefetch` 不同，`prefecth` 通常是加载接下来可能用到的页面资源，而 `preload` 是加载当前页面要用的脚本、样式、字体、图片等资源。所以 `preload` 不是空闲时加载，它的优先级更强，并且会占用 `http` 请求数量。
 
 ```html
-<link
-  rel="preload"
-  href="style.css"
-  as="style"
-  onload="console.log('style loaded')"
-/>
+<link rel="preload" href="style.css" as="style" />
 ```
 
 #### `as` 值包括
