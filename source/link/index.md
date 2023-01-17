@@ -90,6 +90,10 @@ updated: 2023-01-05 15:20:36
     link: https://yswm-m.github.io
     avatar: https://pic.imgdb.cn/item/631c5b8016f2c2beb1f6056e.jpg
     descr: 若一心追逐北极星,所经路线便能成为地图
+  - name: Jayhrn
+    link: https://blog.jayhrn.com
+    avatar: https://unpkg.com/jayblog-source@1.0.1/img/normal/avatar.webp
+    descr: 念念不忘，必有回响
 - class_name: Wed
   class_desc: 一些实用的网站
   link_list:
