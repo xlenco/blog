@@ -1,3 +1,44 @@
+// 页脚随机友链
+"use strict"; 
+var shine = { 
+    saveData: (e,t)=>{ 
+        localStorage.setItem(e, JSON.stringify({ 
+            time: Date.now(), 
+            data: t 
+        })) 
+    }, 
+    loadData: (e,t)=>{ 
+        let n = JSON.parse(localStorage.getItem(e)); 
+        if (n) { 
+            let e = Date.now() - n.time; 
+            if (e < 60 * t * 1e3 && e > -1) 
+                return n.data 
+        } 
+        return 0 
+    }, 
+    randomLink: ()=>{ 
+        let e = shine.loadData("links", 30); 
+        if (e) { 
+            let t = document.querySelectorAll("#friend-links-in-footer .footer-item"); 
+            if (!t.length) 
+                return; 
+            for (let n = 0; n < 5; n++) { 
+                let o = parseInt(Math.random() * e.length); 
+                t[n].innerText = e[o].name, 
+                t[n].href = e[o].link, 
+                e.splice(o, 1) 
+            } 
+        } else{ 
+            fetch("/link.json").then((e=>e.json())).then((e=>{ 
+                shine.saveData("links", e.link_list), 
+                shine.randomLink() 
+            } 
+            )) 
+        } 
+    } 
+} 
+
+shine.randomLink(); 
 // nav.pug.导航栏获取标题
 "" === GLOBAL_CONFIG_SITE.title.replace("Xlenco", "") ? document.getElementById("page-name-text").style.display = "none" : document.querySelector("#page-name-text>span").innerHTML = document.title.split(" | Xlenco")[0];
 // 新年侧边栏
