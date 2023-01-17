@@ -1,3 +1,5 @@
+// nav.pug.导航栏获取标题
+"" === GLOBAL_CONFIG_SITE.title.replace("Xlenco", "") ? document.getElementById("page-name-text").style.display = "none" : document.querySelector("#page-name-text>span").innerHTML = document.title.split(" | Xlenco")[0];
 // 新年侧边栏
 let newYearTimer = null;
 var newYear = () => {
