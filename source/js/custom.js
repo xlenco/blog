@@ -19,7 +19,7 @@ var shine = {
     randomLink: ()=>{ 
         let e = shine.loadData("links", 30); 
         if (e) { 
-            let t = document.querySelectorAll(".footer-links#friend-links-in-footer .footer-item"); 
+            let t = document.querySelectorAll(".footer-links#friend-links-in-footer a.footer-item"); 
             if (!t.length) 
                 return; 
             for (let n = 0; n < 5; n++) { 
