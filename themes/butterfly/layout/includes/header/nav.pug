@@ -1,15 +1,23 @@
 nav#nav
-  span#blog_name
-    a#site-name(onclick=`pjax.loadUrl("/")`) #[=config.title]
-    
-  #menus
-    if (theme.algolia_search.enable || theme.local_search.enable)
-      #search-button
-        a.site-page.social-icon.search
-          i.fas.fa-search.fa-fw
-          span=' '+_p('search.title')
-    !=partial('includes/header/menu_item', {}, {cache: true})
+  #nav-group
+    span#blog_name
+      a#site-name(onclick=`pjax.loadUrl("/")`)
 
-    #toggle-menu
-      a.site-page
-        i.fas.fa-bars.fa-fw
+    span#page_name
+      a#page-name-text(title=_p("rightside.back_to_top") onclick="btf.scrollToDest(0,500)")
+        span #[=config.title]
+
+    #menus
+      !=partial('includes/header/menu_item', {}, {cache: true})
+
+    #hotkey
+      if (theme.algolia_search.enable || theme.local_search.enable)
+        #search-button
+          a.site-page.social-icon.search(title=_p('search.title'))
+            i.fas.fa-search.fa-fw
+      #randompost-button
+        a.site-page(title="随机文章" onclick="toRandomPost()")
+          i.fas.fa-dice
+      #toggle-menu
+        a.site-page
+          i.fas.fa-bars.fa-fw
