@@ -3,7 +3,6 @@
     z-index: 99;
     pointer-events: none;
     user-select: none;
-    z-index: 2;
     position: fixed;
     margin: auto;
     top: 4px;
@@ -31,7 +30,7 @@
     box-sizing: border-box;
     transform: translate3d(0, 0, 0);
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     display: block;
     position: absolute;
     top: 0;
