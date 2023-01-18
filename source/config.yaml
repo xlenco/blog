@@ -15,6 +15,7 @@ catch_rules:
         - search: _ 
           replace: 
             - _ #保留原始请求
+            - https://text.xlenco.eu.org:60124 #**
             - https://inxlo.is-a.dev #GithubPage托管
             - https://xlenco.js.cool #Vercel托管
            # - https://pages.xlenco.eu.org #cloudflare pages托管
