@@ -1,12 +1,13 @@
 ---
-date: 2022-05-03 21:21:51
+date: 2022-05-03 21:21:51
 flink_url: https://githubusercontent.onmicrosoft.cn/xlenco/friends/output/v2/data.json
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
-updated: 2023-01-05 15:20:36
+updated: 2023-01-18 11:47:21
 ---
 {% flink %}
+
 - class_name: 友人账
   class_desc: 昔日里那些人，那些事
   link_list:
@@ -163,7 +164,7 @@ PS：本站采用Github issue添加友链
 
 ```yml
 - name: Xlenco
-  link: https://xlenco.eu.org
+  link: https://inxlo.is-a.dev
   avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
@@ -174,8 +175,8 @@ PS：本站采用Github issue添加友链
 
 ```yml
 - title: Xlenco
-  avatar: https://i.postimg.cc/BZykSd43/head.webp
-  url: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
+  avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
+  url: https://inxlo.is-a.dev
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
