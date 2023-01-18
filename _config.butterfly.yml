@@ -665,7 +665,7 @@ preloader:
 # --------------------------------------
 
 aside:
-  enable: true
+  enable: false
   hide: false
   button: true
   mobile: true # display on mobile
