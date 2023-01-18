@@ -51,7 +51,7 @@ C:\Program Files (x86)\Git\bin
 ```
 
 {% note danger simple %}具体路径以你系统为准{% endnote %}
-![](https://pic2.58cdn.com.cn/nowater/webim/big/n_v2a2f670332fd6415993d8368300843d75.webp)
+![1829175633.png](https://cdn.nlark.com/yuque/0/2023/png/22578074/1674012666037-8e3fd897-a7d7-4e19-b844-01ce26b16cdd.png#averageHue=%23f8f6f6&crop=0&crop=0&crop=1&crop=1&from=url&id=Vh1NU&margin=%5Bobject%20Object%5D&name=1829175633.png&originHeight=1040&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156364&status=done&style=none&title=)
 
 4.检查
 打开 git bash 或 cmd，输入：
