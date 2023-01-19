@@ -54,6 +54,7 @@ catch_rules:
             - https://shadow.elemecdn.com/npm
             - https://jsd.iftft.com/npm
             - https://cdn.chuqis.com/npm
+            - https://jsd.cdn.tubo.net.cn/npm
           action: fetch
           fetch:
             status: 200
@@ -79,6 +80,7 @@ catch_rules:
             - https://shadow.elemecdn.com/gh
             - https://jsd.iftft.com/gh
             - https://cdn.chuqis.com/gh
+            - https://jsd.cdn.tubo.net.cn/gh
           action: fetch
           fetch:
             status: 200
