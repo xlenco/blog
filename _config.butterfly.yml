@@ -665,10 +665,10 @@ preloader:
 # --------------------------------------
 
 aside:
-  enable: false
+  enable: true
   hide: false
   button: true
-  mobile: true # display on mobile
+  mobile: false # display on mobile
   position: left # left or right
   display:
     archive: true
@@ -678,7 +678,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/xlenco
