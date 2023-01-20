@@ -213,14 +213,14 @@ reward:
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
-      - img: /img/afdian.jpg
-        link: https://afdian.net/@xlenco
-        text: afdian
-      - img: /img/qq.png
-        text: qq
+     - img: /img/alipay.webp
+       link:
+       text: alipay
+     - img: /img/afdian.jpg
+       link: https://afdian.net/@xlenco
+       text: afdian
+     - img: /img/qq.png
+       text: qq
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
