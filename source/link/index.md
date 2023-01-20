@@ -164,7 +164,7 @@ PS：本站采用Github issue添加友链
 
 ```yml
 - name: Xlenco
-  link: https://inxlo.is-a.dev
+  link: http://xlenco.js.cool/
   avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
@@ -176,7 +176,7 @@ PS：本站采用Github issue添加友链
 ```yml
 - title: Xlenco
   avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
-  url: https://inxlo.is-a.dev
+  url: http://xlenco.js.cool/
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
