@@ -213,7 +213,7 @@ reward:
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
-     - img: /img/alipay.webp
+     - img: /img/alipay.jpg
        link:
        text: alipay
      - img: /img/afdian.jpg
