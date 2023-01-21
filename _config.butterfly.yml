@@ -389,7 +389,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/transfer.html
 artalk:
-  server: https://artalk.xilej.repl.co/
+  server: https://artalk.xlenco.top/
   site: Xlenco-Blog
   visitor: false
   option: 
