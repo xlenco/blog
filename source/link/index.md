@@ -95,6 +95,10 @@ updated: 2023-01-18 11:47:21
     link: https://blog.jayhrn.com
     avatar: https://unpkg.com/jayblog-source@1.0.1/img/normal/avatar.webp
     descr: 念念不忘，必有回响
+  - name: 小城故事
+    link: http://www.webxc.ml/
+    avatar: https://npm.elemecdn.com/webxc/logo/logo.jpg
+    descr: 欢迎光临小城故事
 - class_name: Wed
   class_desc: 一些实用的网站
   link_list:
