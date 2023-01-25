@@ -99,6 +99,10 @@ updated: 2023-01-18 11:47:21
     link: http://www.webxc.ml/
     avatar: https://npm.elemecdn.com/webxc/logo/logo.jpg
     descr: 欢迎光临小城故事
+  - name: wsbのblog
+    link: https://wsbblog.cn
+    avatar: https://wsbblog.cn/img/wsb.webp
+    descr: 己所不欲，勿施于人
 - class_name: Wed
   class_desc: 一些实用的网站
   link_list:
