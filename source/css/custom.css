@@ -732,13 +732,6 @@ header:not(.nav-fixed) #nav #hotkey #top-button {
 
 
 
-/* waline footer信息隐藏 */
-.wl-power {
-    display: none;
-}
-
-
-
 /* 主页分类圆角 */
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
     border-radius: 8px;
@@ -4622,10 +4615,6 @@ iframe {
 
     .site-card-group>a {
         width: 100% !important;
-    }
-
-    .post-reward {
-        display: none;
     }
 
     .reward-list-item {
