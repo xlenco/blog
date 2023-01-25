@@ -950,9 +950,7 @@ inject:
     - <link rel="preconnect" href="//gstatic.loli.net" crossorigin> 
     - <link rel="preconnect" href="//s1.hdslb.com" crossorigin> 
     - <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    - <link rel="preload" href="/css/font.css" as="style" />
-    - <link rel="preload" href="/css/font.css" as="style" type="font/woff2" crossorigin="anonymous">
-    #- <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="/css/font.css">
     - <link href="https://githubusercontent.onmicrosoft.cn" rel="preconnect">
     - <link href="https://raw.githubusercontent.com" rel="preconnect" crossorigin>
     #- <link rel="stylesheet" href="/xxx.css">
