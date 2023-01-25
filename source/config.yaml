@@ -23,6 +23,7 @@ catch_rules:
             - https://jsd.iftft.com/npm
             - https://cdn.chuqis.com/npm
             - https://jsd.cdn.tubo.net.cn/npm
+            - https://s.cky.qystu.cc/npm
           action: fetch
           fetch:
             status: 200
@@ -49,6 +50,7 @@ catch_rules:
             - https://jsd.iftft.com/gh
             - https://cdn.chuqis.com/gh
             - https://jsd.cdn.tubo.net.cn/gh
+            - https://s.cky.qystu.cc/gh 
           action: fetch
           fetch:
             status: 200
