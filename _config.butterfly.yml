@@ -962,7 +962,6 @@ inject:
     - <canvas id="universe"></canvas>  
     - <script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 右下角复制依赖
     - <script async data-pjax src="https://cdn.staticfile.org/clientworker/3.0.0-beta-4/dist/autoupdate.min.js"></script>
-    - <script defer data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>
     #- <script src="xxxx"></script>
 
 # CDN
