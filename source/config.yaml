@@ -3,7 +3,7 @@ name: XlencoのClientWorker
 cleaninterval: 1000*20 #每20秒检测并清理一次缓存
 catch_rules: 
 #静态资源 CDN 选择
-    - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|(npm|unpkg)\.onmicrosoft\.cn|npm\.elemecdn\.com)
+    - rule: ^https\:\/\/((cdn|test1|quantil|fastly|gcore)\.jsdelivr\.net\/npm|unpkg\.com|unpkg\.onmicrosoft\.cn)
       transform_rules:
         - search: _
           replace:
