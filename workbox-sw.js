@@ -74,20 +74,6 @@ workbox.routing.registerRoute(
         ]
     })
 );
-
-// 静态资源
-workbox.routing.registerRoute(
-    new RegExp('.*.(?:css|js)'),
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: '静态资源',
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 50,
-                maxAgeSeconds: WEEK
-            }),
-        ]
-    })
-);
 workbox.routing.registerRoute(
     new RegExp('^https://(?:fonts\\.loli\\.net|gstatic\\.loli\\.net|s1\\.hdslb\\.com)'),
     new workbox.strategies.StaleWhileRevalidate({
@@ -101,6 +87,19 @@ workbox.routing.registerRoute(
                 statuses: [0, 200, 304]
             })
         ],
+    })
+);
+// 静态资源
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:css|js)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '静态资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 50,
+                maxAgeSeconds: WEEK
+            }),
+        ]
     })
 );
 // 离线谷歌分析
