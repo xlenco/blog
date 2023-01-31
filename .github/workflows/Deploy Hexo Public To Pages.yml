@@ -26,7 +26,7 @@ jobs:
       - name: 安装Hexo
         run: |
           npm install hexo-cli -g
-          npm install workbox-cli --g
+
 
           
       - name: 设置密钥
@@ -61,7 +61,6 @@ jobs:
         run: |
           hexo clean
           hexo generate 
-          workbox generateSW workbox-sw.js
           hexo algolia
           hexo deploy         
  
