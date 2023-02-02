@@ -7,6 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
+    "azure": "hexo clean && hexo generate",
     "yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp"
   },
   "yuqueConfig": {
