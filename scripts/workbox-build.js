@@ -4,7 +4,7 @@ hexo.on("deployBefore", async function () {
     const buildSW = () => {
         return workboxBuild.injectManifest({
             swSrc: './workbox-sw.js',
-            swDest: './public/sw.js',
+            swDest: 'sw.js',
             globDirectory: './public/',
             globPatterns: ['*/*.{css,js}','offline/index.html'],
             modifyURLPrefix: {
