@@ -188,7 +188,7 @@ fcircle:
   css: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/css/default.min.css #【可选】开发者接口，自定义css链接
   js: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fcircle.min.js #【可选】开发者接口，自定义js链接
   fetchJs: https://jsd.onmicrosoft.cn/npm/hexo-filter-fcircle-anzhiyu@1.1.2/assets/js/fetch.min.js
-  randomFriendsPostJS: https://jsd.onmicrosoft.cn/gh/xlenco/xlenco.github.io/js/random-friends-post.js
+  randomFriendsPostJS: /js/random-friends-post.js
   topIcon: fas fa-arrow-right
   topLink: /about/
   top_background: https://xlenco.onmicrosoft.cn/img/12258.webp
