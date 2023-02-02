@@ -7,8 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "azure": "hexo clean && hexo generate",
-    "yuque": "yuque-hexo sync && npm run build && hexo algolia && gulp"
+    "yuque": "yuque-hexo sync && npm run build && hexo algolia"
   },
   "yuqueConfig": {
     "postPath": "/source/_posts/yuque",
