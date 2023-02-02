@@ -6,8 +6,6 @@ on: [push, repository_dispatch, workflow_dispatch]
 
 # 设置环境
 jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push'
   build:
     runs-on: ubuntu-latest
     env:
