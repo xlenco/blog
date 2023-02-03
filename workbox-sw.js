@@ -1,4 +1,4 @@
-importScripts('https://npm.onmicrosoft.cn/workbox-sw/build/workbox-sw.js');
+importScripts('https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js');
 
 
 if (workbox) {
@@ -74,21 +74,6 @@ workbox.routing.registerRoute(
         ]
     })
 );
-workbox.routing.registerRoute(
-    new RegExp('^https://(?:fonts\\.loli\\.net|gstatic\\.loli\\.net|s1\\.hdslb\\.com)'),
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: '谷歌字体',
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 10,
-                maxAgeSeconds: MONTH
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200, 304]
-            })
-        ],
-    })
-);
 // 静态资源
 workbox.routing.registerRoute(
     new RegExp('.*.(?:css|js)'),
@@ -102,5 +87,6 @@ workbox.routing.registerRoute(
         ]
     })
 );
+
 // 离线谷歌分析
 workbox.googleAnalytics.initialize();
