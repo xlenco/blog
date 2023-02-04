@@ -59,12 +59,6 @@ const Offline = new workbox.routing.Route(({ request }) => {
 }));
 workbox.routing.registerRoute(Offline);
 
-// 暖策略（运行时）缓存
-const strategy = new workbox.strategies.StaleWhileRevalidate();
-const urls = [
-    '/favicon.ico'
-];
-workbox.recipes.warmStrategyCache({ urls, strategy });
 
 // 字体
 workbox.routing.registerRoute(
@@ -84,9 +78,9 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    new RegExp('^https://(?:fonts\\.loli\\.net|fonts\\.loli\\.net|s1\\.hdslb\\.com)'),
+    new RegExp('^https://(?:fonts\\.loli\\.net|gstatic\\.loli\\.net|s1\\.hdslb\\.com)'),
     new workbox.strategies.StaleWhileRevalidate({
-        cacheName: '谷歌字体',
+        cacheName: '在线字体',
         plugins: [
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 10,
@@ -138,6 +132,21 @@ workbox.routing.registerRoute(
         ]
     })
 );
-
+// CDN
+workbox.routing.registerRoute(
+    new RegExp('^https://(?:npm\\.onmicrosoft\\.cn|jsd\\.onmicrosoft\\.cn)'),
+    new workbox.strategies.CacheFirst({
+        cacheName: "CDN",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200, 304]
+            })
+        ]
+    })
+);
 // 离线谷歌分析
 workbox.googleAnalytics.initialize();
