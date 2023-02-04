@@ -4,7 +4,7 @@ title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 updated: 2023-01-18 11:47:21
 type: link
-flink_url: https://githubusercontent.onmicrosoft.cn/xlenco/friends/output/v2/data.json
+flink_url: https://blog.xlenco.top/link.json
 ---
 
 
