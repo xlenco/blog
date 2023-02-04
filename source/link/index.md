@@ -1,11 +1,26 @@
 ---
 date: 2022-05-03 21:21:51
-flink_url: https://f.xlenco.top/index.json
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
 updated: 2023-01-18 11:47:21
 ---
+
+<div id='blogroll'>
+<script src='https://jsd.cdn.zzko.cn/npm/butterfly-friend/butterfly-friend.umd.js'></script>
+<link rel="stylesheet" href='https://jsd.cdn.zzko.cn/npm/butterfly-friend/style.css'>
+<script>
+document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend1' class='js-pjax'></div>")
+xkFriend.init({
+  el: '#friend1', // 挂载容器
+  api: [
+    'https://f.xlenco.top/index.json'
+  ], // 你的json链接列表，可以是多个。
+  loading_img: 'https://jsd.cdn.zzko.cn/gh/ccknbc-backup/photos/blog/2021-03-08~15-13-15.gif', // 加载中的图片
+  fail_img: 'https://jsd.cdn.zzko.cn/gh/ccknbc-backup/photos/blog/2021-03-08~15-13-15.gif' // 加载失败的图片
+})
+</script>
+</div>
 {% note warning flat %}
 申请友链的请先添加本站添加再申请 ! !
 {% endnote %}
