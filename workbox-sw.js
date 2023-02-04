@@ -80,7 +80,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
     new RegExp('^https://(?:fonts\\.loli\\.net|gstatic\\.loli\\.net|s1\\.hdslb\\.com)'),
     new workbox.strategies.StaleWhileRevalidate({
-        cacheName: '在线字体',
+        cacheName: 'CDN字体',
         plugins: [
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 10,
@@ -125,22 +125,6 @@ workbox.routing.registerRoute(
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 50,
                 maxAgeSeconds: WEEK
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200, 304]
-            })
-        ]
-    })
-);
-// CDN
-workbox.routing.registerRoute(
-    new RegExp('^https://(?:npm\\.onmicrosoft\\.cn|jsd\\.onmicrosoft\\.cn)'),
-    new workbox.strategies.CacheFirst({
-        cacheName: "CDN",
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
             }),
             new workbox.cacheableResponse.CacheableResponsePlugin({
                 statuses: [0, 200, 304]
