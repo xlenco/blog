@@ -13,9 +13,9 @@ updated: 2023-02-04 19:01:03
 
 <!-- tab 申请友链@fa-solid fa-check-circle -->
 
-{% note info flat %}快速申请友链请前往{% btn 'https://github.com/xlenco/friends/issues',GitHub(推荐),fa-brands fa-github,outline blue larger %} 按照提示提交 issues  即可！如需修改可
+{% note info flat %}快速申请友链请前往{% btn 'https://github.com/xlenco/my-friend/blob/master/data/%E5%8F%8B%E4%BA%BA%E5%B8%90.yml',GitHub(推荐),fa-brands fa-github,outline blue larger %} 按照提示提交RP 即可！如需修改可
 {% btn '#post-comment',给 Xlenco 留言,fa-solid fa-comments,outline blue smaller %}
-或再次 修改 issues 内容  {% endnote %}
+或再次 RP {% endnote %}
 
 <!-- endtab -->
 
