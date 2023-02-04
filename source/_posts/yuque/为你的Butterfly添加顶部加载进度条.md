@@ -26,7 +26,7 @@ preloader:
   # 2. pace (progress bar)
   source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://unpkg.onmicrosoft.cn/xlenco-blog-main@1.0.1673316381616/css/pace.css
+  pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
 ```
 如果你同时在使用 Heo同款loading动画，请查看
  [Heo同款loading动

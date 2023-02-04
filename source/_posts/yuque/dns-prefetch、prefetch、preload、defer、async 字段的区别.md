@@ -72,4 +72,4 @@ tags:
 ```
 
 `defer` 和 `async` 都是异步(并行)加载资源，不同点是 `async` 是加载完立即执行，而 `defer` 是加载完不执行，等到所有元素解析完再执行，也就是 `DOMContentLoaded` 事件触发之前。 因为 `async` 加载的资源是加载完执行，所以它比不能保证顺序，而 `defer` 会按顺序执行脚本。
-![-162351542.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1671444244813-f072d74c-7498-441f-ab54-ba4dbd86cf7b.png#averageHue=%23506d75&crop=0&crop=0&crop=1&crop=1&from=url&id=n8Har&margin=%5Bobject%20Object%5D&name=-162351542.png&originHeight=699&originWidth=919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=8435&status=done&style=none&title=)
+![-162351542.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1671444244813-f072d74c-7498-441f-ab54-ba4dbd86cf7b.png#averageHue=%23506d75&from=url&id=n8Har&name=-162351542.png&originHeight=699&originWidth=919&originalType=binary&ratio=1&rotation=0&showTitle=false&size=8435&status=done&style=none&title=)

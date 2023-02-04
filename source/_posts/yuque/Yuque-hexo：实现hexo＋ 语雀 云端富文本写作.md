@@ -48,19 +48,19 @@ date: 2022-9-9 22:01
 
 登陆[语雀](https://www.yuque.com/)，点击知识库 👉 新建知识库。将知识库的可见范围改为 “互联网可见”。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608131882653-69d7b88a-caa9-45ff-a7ca-419647791d22.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=102336&status=done&style=none&width=1279#crop=0&crop=0&crop=1&crop=1&id=kIrdR&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608131882653-69d7b88a-caa9-45ff-a7ca-419647791d22.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=102336&status=done&style=none&width=1279#id=kIrdR&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 文章的导入
 
 点击知识库的管理按钮，选择新建下的导入，将博客中\_post 文章进行批量导入。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608132157680-32f96698-74a3-45b3-81e6-215ba0115fab.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=155092&status=done&style=none&width=1279#crop=0&crop=0&crop=1&crop=1&id=qvSXv&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608132157680-32f96698-74a3-45b3-81e6-215ba0115fab.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=155092&status=done&style=none&width=1279#id=qvSXv&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 模板的创建
 
 为了方便以后文档的撰写，可以新建模板。注意图片链接需要加上’’防止被渲染成链接。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608132265373-09c816b7-bbf8-4a6f-9ea0-012060269c8b.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=127438&status=done&style=none&width=1279#crop=0&crop=0&crop=1&crop=1&id=u5cu0&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608132265373-09c816b7-bbf8-4a6f-9ea0-012060269c8b.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=127438&status=done&style=none&width=1279#id=u5cu0&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 如果你使用了 abbrlink，请手动填写 abbrlink。
 
@@ -125,11 +125,11 @@ npm i -g yuque-hexo
 
 - 点击进入博客的知识库，在浏览器地址栏中将用户名和仓库名复制分别粘贴为”login”、”repo” 的字段。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608133592273-04a6a15f-6c75-44d0-ab1c-7ca737c42d07.png#align=left&display=inline&height=251&margin=%5Bobject%20Object%5D&name=image.png&originHeight=251&originWidth=598&size=23393&status=done&style=none&width=598#crop=0&crop=0&crop=1&crop=1&id=M8WUe&originHeight=251&originWidth=598&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608133592273-04a6a15f-6c75-44d0-ab1c-7ca737c42d07.png#align=left&display=inline&height=251&margin=%5Bobject%20Object%5D&name=image.png&originHeight=251&originWidth=598&size=23393&status=done&style=none&width=598#id=M8WUe&originHeight=251&originWidth=598&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 - token 是在右上角头像 -> 账户设置 -> Token 添加的，权限的话只给读取就可以。复制粘贴获取的”token” 字段。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608133711645-569d4bb4-3de1-450b-80b6-5cf1ca7060b0.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=176577&status=done&style=none&width=1279#crop=0&crop=0&crop=1&crop=1&id=NGw6W&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608133711645-569d4bb4-3de1-450b-80b6-5cf1ca7060b0.png#align=left&display=inline&height=789&margin=%5Bobject%20Object%5D&name=image.png&originHeight=789&originWidth=1279&size=176577&status=done&style=none&width=1279#id=NGw6W&originHeight=789&originWidth=1279&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 修改  “scripts” 增加”sync”: “yuque-hexo sync” 和  “clean:yuque”: “yuque-hexo clean”。
 
@@ -205,14 +205,14 @@ meta(name="referrer" content="no-referrer")
 
 在博客根目录下新建.github 文件夹（点不要漏掉了），在该文件夹下新建 workflows 文件夹。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608135890427-0dc37d9e-8eed-4581-8570-e806b5e4fa1a.png#align=left&display=inline&height=65&margin=%5Bobject%20Object%5D&name=image.png&originHeight=65&originWidth=349&size=4021&status=done&style=none&width=349#crop=0&crop=0&crop=1&crop=1&id=v0z8d&originHeight=65&originWidth=349&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/8391485/1608135890427-0dc37d9e-8eed-4581-8570-e806b5e4fa1a.png#align=left&display=inline&height=65&margin=%5Bobject%20Object%5D&name=image.png&originHeight=65&originWidth=349&size=4021&status=done&style=none&width=349#id=v0z8d&originHeight=65&originWidth=349&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 在 workflows 文件夹下新建 autodeploy.yml。并填入以下代码。
 将**【更新 语雀拉取缓存及文章】** 与**【部署】**  user.name 和 user.email 后面的 “” 信息修改为自己的信息，注意对齐。
 
 > 由于冰老师的 workflows 的判定方式为任何修改都可以触发，可有时会因为没有更改文章内容而触发 action 导致没有拉去到任何内容而报错，这里我重构了一下判断方式
 
-![Screenshot_20220924_233608.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1664033876947-c0a1c08c-9178-435a-821a-e2b76edaae93.jpeg#clientId=u23c2e94e-4b01-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u862bb93a&name=Screenshot_20220924_233608.jpg&originHeight=1180&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128329&status=error&style=none&taskId=u16adc1c3-0317-4231-86d4-671478425a9&title=)
+![Screenshot_20220924_233608.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1664033876947-c0a1c08c-9178-435a-821a-e2b76edaae93.jpeg#clientId=u23c2e94e-4b01-4&errorMessage=unknown%20error&from=ui&id=u862bb93a&name=Screenshot_20220924_233608.jpg&originHeight=1180&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128329&status=error&style=none&taskId=u16adc1c3-0317-4231-86d4-671478425a9&title=)
 使用新方法前提是已经部署好 Github action 自动部署
 
 <a href="https://xlenco.eu.org/posts/77e3.html" target="cardlink">点击查看本站教程</a>
@@ -376,7 +376,7 @@ git push -u origin master
 
 上传后你会发现 github action 生效。等待几分钟后，如果打勾，就说明部署成功。如果未打勾请检查出错的步骤。
 
-![IMG_20221024_103507.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1666578950937-094ff8e3-bc90-4020-8939-d128e5ec00d0.png#clientId=u8fd55d1e-1ea9-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u9cf82fde&name=IMG_20221024_103507.png&originHeight=373&originWidth=1247&originalType=binary&ratio=1&rotation=0&showTitle=false&size=73552&status=done&style=none&taskId=u87fe57a4-733e-4622-92ce-ccfbd7c70d9&title=)
+![IMG_20221024_103507.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1666578950937-094ff8e3-bc90-4020-8939-d128e5ec00d0.png#clientId=u8fd55d1e-1ea9-4&from=ui&id=u9cf82fde&name=IMG_20221024_103507.png&originHeight=373&originWidth=1247&originalType=binary&ratio=1&rotation=0&showTitle=false&size=73552&status=done&style=none&taskId=u87fe57a4-733e-4622-92ce-ccfbd7c70d9&title=)
 
 ---
 
@@ -412,7 +412,7 @@ https://yuque.xlenco.eu.org
 ### 设定触发规则
 
 在知识库中选择设置。
-![Screenshot_20220924_232506.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1664033119560-4d875c3e-d13f-49cc-ad88-53e3cca4a081.jpeg#clientId=ubd0b29db-a8e1-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=ui&id=u2f7e5e8c&name=Screenshot_20220924_232506.jpg&originHeight=1099&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=108673&status=error&style=none&taskId=u03f02684-d952-42fe-b15d-c5f621a5cd6&title=)
+![Screenshot_20220924_232506.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/22578074/1664033119560-4d875c3e-d13f-49cc-ad88-53e3cca4a081.jpeg#clientId=ubd0b29db-a8e1-4&errorMessage=unknown%20error&from=ui&id=u2f7e5e8c&name=Screenshot_20220924_232506.jpg&originHeight=1099&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=108673&status=error&style=none&taskId=u03f02684-d952-42fe-b15d-c5f621a5cd6&title=)
 设定触发规则。粘贴在云函数处获取的访问路径（URL 链接）。
 
 设置完毕后，你可以尝试发布一篇文章进行测试。如果 github action 执行则说明配置成功。

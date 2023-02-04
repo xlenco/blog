@@ -35,11 +35,11 @@ Git 推送到 Github 库的常用连接方案是 HTTPS 和 SSH 这两种连接�
 1. 获取 Github access tokens
    打开https://github.com/settings/tokens
    点击 Generate new token 新建个 token
-   ![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560515-707376ab-5ae3-4c29-8f47-f1188c356de6.png#averageHue=%23fdfdfd&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=Oy2Mt&name=image.png&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156548&status=done&style=none&taskId=ub5683534-dcde-4181-b824-8cdca66d35b&title=)
+   ![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560515-707376ab-5ae3-4c29-8f47-f1188c356de6.png#averageHue=%23fdfdfd&clientId=u80608e15-ed3a-4&id=Oy2Mt&name=image.png&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156548&status=done&style=none&taskId=ub5683534-dcde-4181-b824-8cdca66d35b&title=)
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560516-b03cbb6e-86a0-44c0-8453-fb3472b572cb.png#averageHue=%23fdfdfd&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=VFWIk&name=image.png&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156548&status=done&style=none&taskId=u89abb413-cce2-488e-8268-9a8d6f0d851&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560516-b03cbb6e-86a0-44c0-8453-fb3472b572cb.png#averageHue=%23fdfdfd&clientId=u80608e15-ed3a-4&id=VFWIk&name=image.png&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156548&status=done&style=none&taskId=u89abb413-cce2-488e-8268-9a8d6f0d851&title=)
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560537-543b3172-c799-4e59-a6ca-cad69ba96c21.png#averageHue=%23ebf1e6&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=AenSh&name=image.png&originHeight=183&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=158960&status=done&style=none&taskId=udaa7bd27-58b2-42c1-b0e6-9aeedc0e1e4&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560537-543b3172-c799-4e59-a6ca-cad69ba96c21.png#averageHue=%23ebf1e6&clientId=u80608e15-ed3a-4&id=AenSh&name=image.png&originHeight=183&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=158960&status=done&style=none&taskId=udaa7bd27-58b2-42c1-b0e6-9aeedc0e1e4&title=)
 
 ### 创建存放 Hexo 源码的私有仓库
 
@@ -125,15 +125,15 @@ jobs:
 
 在你仓库的`Settings->Secrets->actions`
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560560-4d2b9576-2fe7-4eb8-831f-0a3ca2b45cef.png#averageHue=%23edede9&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=UtEXZ&name=image.png&originHeight=651&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&size=299170&status=done&style=none&taskId=u6ae84244-109e-4918-b692-796b7b8c66f&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560560-4d2b9576-2fe7-4eb8-831f-0a3ca2b45cef.png#averageHue=%23edede9&clientId=u80608e15-ed3a-4&id=UtEXZ&name=image.png&originHeight=651&originWidth=1178&originalType=binary&ratio=1&rotation=0&showTitle=false&size=299170&status=done&style=none&taskId=u6ae84244-109e-4918-b692-796b7b8c66f&title=)
 
 ### 查看部署情况
 
 此时，打开 GIthub 存放源码的私有仓库，找到 action。
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560670-3cd4ee28-dc89-4244-ac85-0a77d8b744d3.png#averageHue=%23edeeea&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=fsCV3&name=image.png&originHeight=590&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=294511&status=done&style=none&taskId=u277754a2-551d-445b-9116-3018d0b1f30&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560670-3cd4ee28-dc89-4244-ac85-0a77d8b744d3.png#averageHue=%23edeeea&clientId=u80608e15-ed3a-4&id=fsCV3&name=image.png&originHeight=590&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=294511&status=done&style=none&taskId=u277754a2-551d-445b-9116-3018d0b1f30&title=)
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557562414-058ac0fc-1c02-40b5-b7d4-c526ccc24b17.png#averageHue=%23e8edeb&clientId=u80608e15-ed3a-4&crop=0&crop=0&crop=1&crop=1&id=D6aox&name=image.png&originHeight=629&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127166&status=done&style=none&taskId=u5f9ae873-d473-472b-a7bd-c58f9e53246&title=)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557562414-058ac0fc-1c02-40b5-b7d4-c526ccc24b17.png#averageHue=%23e8edeb&clientId=u80608e15-ed3a-4&id=D6aox&name=image.png&originHeight=629&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=127166&status=done&style=none&taskId=u5f9ae873-d473-472b-a7bd-c58f9e53246&title=)
 
 根据刚刚的 Commit 记录找到相应的任务,点击 Deploy 查看部署情况 , 若全部打钩，恭喜你，你现在可以享受自动部署的快感了。
 

@@ -27,6 +27,6 @@ date: 2022-06-19 18:47:47
 
 ### 结尾
 
-![962114880.png](https://cdn.nlark.com/yuque/0/2023/png/22578074/1672982930068-0e833c3a-2917-4682-b830-fec891b162cd.png#averageHue=%23201e1d&crop=0&crop=0&crop=1&crop=1&from=url&id=iExjl&margin=%5Bobject%20Object%5D&name=962114880.png&originHeight=348&originWidth=929&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48706&status=done&style=none&title=)
+![962114880.png](https://cdn.nlark.com/yuque/0/2023/png/22578074/1672982930068-0e833c3a-2917-4682-b830-fec891b162cd.png#averageHue=%23201e1d&from=url&id=iExjl&name=962114880.png&originHeight=348&originWidth=929&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48706&status=done&style=none&title=)
 
 在 Response preview 中的 secretText 处就是你的 secret 值

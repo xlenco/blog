@@ -13,7 +13,7 @@ cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=j
 
 ## Dome
 
-![Screenshot_2023-01-05-09-48-19-65.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg#averageHue=%23f9f7f5&clientId=ufa1ff51a-33a8-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u4c10414f&margin=%5Bobject%20Object%5D&name=Screenshot_2023-01-05-09-48-19-65.jpg&originHeight=1260&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=277751&status=done&style=none&taskId=u8e46455a-384f-48db-9381-67c778d9ee0&title=)
+![Screenshot_2023-01-05-09-48-19-65.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672887211971-a991ab25-738a-49f0-9bab-53c67ee4f101.jpeg#averageHue=%23f9f7f5&clientId=ufa1ff51a-33a8-4&from=ui&id=u4c10414f&name=Screenshot_2023-01-05-09-48-19-65.jpg&originHeight=1260&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=277751&status=done&style=none&taskId=u8e46455a-384f-48db-9381-67c778d9ee0&title=)
 
 ## 正文
 
@@ -66,7 +66,7 @@ cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=j
 ## 2.
 
 将 Artalk 后端邮件通知页面中的邮件模板文件的 `default`改为`./data/mail_tpl/MAIL_TEMPLATE.html`，保存即可
-![872981219.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg#averageHue=%23fefefe&crop=0&crop=0&crop=1&crop=1&from=url&id=pYdrm&margin=%5Bobject%20Object%5D&name=872981219.jpg&originHeight=437&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=60754&status=done&style=none&title=)
+![872981219.jpg](https://cdn.nlark.com/yuque/0/2023/jpeg/22578074/1672888571181-301e0cdd-e9f8-4eb3-a49a-e2a649dcbf8b.jpeg#averageHue=%23fefefe&from=url&id=pYdrm&name=872981219.jpg&originHeight=437&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=60754&status=done&style=none&title=)
 
 ## 后言
 

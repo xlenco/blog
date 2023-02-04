@@ -21,11 +21,11 @@ updated: 2022-08-06 17:17:49
 
 成品：[Xlenco の监控云台](https://uptime.xilej.repl.co/status/xlenco)
 
-预览：![](https://nsso.eu.org/img/ff6946fc-cb28-43cc-b357-0f2b3a84d3d0.jpeg#crop=0&crop=0&crop=1&crop=1&id=j31uC&originHeight=1087&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+预览：![](https://nsso.eu.org/img/ff6946fc-cb28-43cc-b357-0f2b3a84d3d0.jpeg#id=j31uC&originHeight=1087&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 后台也十分好看～
 
-![](https://nsso.eu.org/img/dcf48529-6a1c-46dc-b2f0-12afc5f3008b.jpeg#crop=0&crop=0&crop=1&crop=1&id=ptU5G&originHeight=679&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://nsso.eu.org/img/dcf48529-6a1c-46dc-b2f0-12afc5f3008b.jpeg#id=ptU5G&originHeight=679&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 并且支持 Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP),等 90+项通知服务
 
