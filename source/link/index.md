@@ -3,10 +3,11 @@ date: 2022-05-03 21:21:51
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
 type: link
+translate_title: link
 updated: 2023-01-18 11:47:21
 ---
 
-<div id='blogroll'>
+<div id='link'>
 <script src='https://jsd.cdn.zzko.cn/npm/butterfly-friend/butterfly-friend.umd.js'></script>
 <link rel="stylesheet" href='https://jsd.cdn.zzko.cn/npm/butterfly-friend/style.css'>
 <script>
@@ -21,6 +22,7 @@ xkFriend.init({
 })
 </script>
 </div>
+
 {% note warning flat %}
 申请友链的请先添加本站添加再申请 ! !
 {% endnote %}
