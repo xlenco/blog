@@ -2,18 +2,19 @@
 date: 2022-05-03 21:21:51
 title: 友情链接
 top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670760294102
-type: link
-translate_title: link
+type: blogroll
+translate_title: blogroll
+subtitle: Blogroll
 updated: 2023-01-18 11:47:21
 ---
 
-<div id='link'>
+<div id='blogroll'>
 <script src='https://jsd.cdn.zzko.cn/npm/butterfly-friend/butterfly-friend.umd.js'></script>
 <link rel="stylesheet" href='https://jsd.cdn.zzko.cn/npm/butterfly-friend/style.css'>
 <script>
-document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend' class='js-pjax'></div>")
+document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend1' class='js-pjax'></div>")
 xkFriend.init({
-  el: '#friend', // 挂载容器
+  el: '#friend1', // 挂载容器
   api: [
     'https://f.xlenco.top/index.json'
   ], // 你的json链接列表，可以是多个。
