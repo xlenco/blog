@@ -51,19 +51,24 @@ const Offline = new workbox.routing.Route(({ request }) => {
     plugins: [
         new workbox.precaching.PrecacheFallbackPlugin({
             fallbackURL: '/offline/index.html'
+        }),
+        new workbox.cacheableResponse.CacheableResponsePlugin({
+            statuses: [0, 200, 304]
         })
     ]
 }));
 workbox.routing.registerRoute(Offline);
 
-// 图片/网页
-workbox.routing.registerRoute(
-    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp|ico)'),
-    new workbox.strategies.NetworkOnly()
-);
+// 暖策略（运行时）缓存
+const strategy = new workbox.strategies.StaleWhileRevalidate();
+const urls = [
+    '/favicon.ico'
+];
+workbox.recipes.warmStrategyCache({ urls, strategy });
+
 // 字体
 workbox.routing.registerRoute(
-    new RegExp('.*.(?:ttf||woff|woff2)'),
+    new RegExp('.*.(?:woff2)'),
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: "其他字体",
         plugins: [
@@ -71,9 +76,52 @@ workbox.routing.registerRoute(
                 maxEntries: 10,
                 maxAgeSeconds: MONTH
             }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200, 304]
+            })
         ]
     })
 );
+
+workbox.routing.registerRoute(
+    new RegExp('^https://(?:fonts\\.loli\\.net|fonts\\.loli\\.net|s1\\.hdslb\\.com)'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '谷歌字体',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 10,
+                maxAgeSeconds: MONTH
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200, 304]
+            })
+        ],
+    })
+);
+
+// 图片/网页
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:png|jpg|jpeg|svg|gif|webp)'),
+    new workbox.strategies.NetworkOnly()
+);
+
+// json
+workbox.routing.registerRoute(
+    new RegExp('.*.(?:json)'),
+    new workbox.strategies.NetworkFirst({
+        cacheName: '网络资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 10,
+                maxAgeSeconds: DAY
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200, 304]
+            })
+        ]
+    })
+);
+
 // 静态资源
 workbox.routing.registerRoute(
     new RegExp('.*.(?:css|js)'),
@@ -84,6 +132,9 @@ workbox.routing.registerRoute(
                 maxEntries: 50,
                 maxAgeSeconds: WEEK
             }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200, 304]
+            })
         ]
     })
 );
