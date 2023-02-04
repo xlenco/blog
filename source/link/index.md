@@ -11,9 +11,9 @@ updated: 2023-01-18 11:47:21
 <script src='https://jsd.cdn.zzko.cn/npm/butterfly-friend/butterfly-friend.umd.js'></script>
 <link rel="stylesheet" href='https://jsd.cdn.zzko.cn/npm/butterfly-friend/style.css'>
 <script>
-document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend1' class='js-pjax'></div>")
+document.querySelector('.flink').insertAdjacentHTML('afterbegin',"<div id='friend' class='js-pjax'></div>")
 xkFriend.init({
-  el: '#friend1', // 挂载容器
+  el: '#friend', // 挂载容器
   api: [
     'https://f.xlenco.top/index.json'
   ], // 你的json链接列表，可以是多个。
