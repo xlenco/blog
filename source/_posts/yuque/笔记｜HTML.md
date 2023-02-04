@@ -1,5 +1,5 @@
 ---
-title: 笔记｜HTML转跳URL实例
+title: 笔记｜HTML
 tags:
   - HTML
 
@@ -14,21 +14,22 @@ updated: 2022-10-7 12:14
 
 ### 说明
 
-以下是两个可以转跳 URL 的 HTML 实例
+记录一些我用到的 HTML 的语法
 
-## HTML
+## 跳转 URL
+
+### 1.
 
 ```
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <meta http-equiv="refresh" content="0;URL=Your Url">
 </head>
 </body>
 </html>
 ```
 
-## Js
+### 2.
 
 ```javascript
 <script>location.href="Your Url";</script>
@@ -36,4 +37,10 @@ updated: 2022-10-7 12:14
 
 ```javascript
 <script>windows.location.href = "Your Url"</script>
+```
+
+## 图片更改大小
+
+```
+<img src="img.jpg" width="150" height="150">
 ```
