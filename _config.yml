@@ -221,13 +221,13 @@ minify:
       collapseWhitespace: true # Delete any extra space
       removeAttributeQuotes: true # Delete attribute quotes
   image:
-    enable: true
+    enable: false
     svg:
       enable: true
       ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
       options:
     jpg:
-      enable: true
+      enable: false
       ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
       options:
     png:
