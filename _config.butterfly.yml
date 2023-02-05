@@ -907,7 +907,7 @@ inject:
       </script>
       <script async charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js" onload="load51la()"></script>
       <script async src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous" onload="loadlingque()"></script>
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/custom.css.gz">
     - <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css">
     - <meta name="msvalidate.01" content="D9CCE7E7BC612DF7ED8C123F19997AE8" />
     - <meta name="referrer" content="no-referrer">
@@ -916,14 +916,14 @@ inject:
     - <link rel="preconnect" href="//gstatic.loli.net" crossorigin> 
     - <link rel="preconnect" href="//s1.hdslb.com" crossorigin> 
     - <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    - <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="/css/font.css.gz">
     - <link href="https://githubusercontent.onmicrosoft.cn" rel="preconnect">
     - <link href="https://raw.githubusercontent.com" rel="preconnect" crossorigin>
     #- <link rel="stylesheet" href="/xxx.css">
   bottom:
     - <script defer data-pjax src="https://npm.elemecdn.com/jquery@3.2.1/dist/jquery.min.js"></script>
     #- <script defer data-pjax src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/js/swiper.min.js"></script>
-    - <script defer data-pjax src="/js/custom.js"></script>
+    - <script defer data-pjax src="/js/custom.js.gz"></script>
     #- <script async data-pjax src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     - <canvas id="universe"></canvas>  
     - <script async data-pjax src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 右下角复制依赖
