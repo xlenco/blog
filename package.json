@@ -47,7 +47,6 @@
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
     "yuque-hexo": "^1.9.5",
     "yamljs": "^0.3.0",
-    "workbox-cli": "6.5.4",
-    "hexo-minify": "^1.6.0"
+    "workbox-cli": "6.5.4"
   }
 }
