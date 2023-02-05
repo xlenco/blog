@@ -15,4 +15,4 @@ updated: 2022-12-29 17:00:28
 
 可前往 [**Xlenco的状态页面**](https://uptime.xlenco.top/status/admin) 查看故障详情，请暂时访问下列镜像站点，感谢您的支持与理解！
 
-{% note success flat %} 以下排名不分先后，请选择适合自己访问较快的即可</br> **[GitHub](https://inxlo.is-a.dev/) | [Cloudflare Pages](https://p.xlenco.top) | [Vercel](https://v.xlenco.top) | [Netlify](n.xlenco.top)** {% endnote %}
+{% note success flat %} 以下排名不分先后，请选择适合自己访问较快的即可</br> **[GitHub](https://inxlo.is-a.dev) | [Cloudflare Pages](https://p.xlenco.top) | [Vercel](https://v.xlenco.top) | [Netlify](https://n.xlenco.top)** {% endnote %}
