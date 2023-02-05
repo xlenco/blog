@@ -29,7 +29,7 @@ var shine = {
                e.splice(o, 1)
            }
        } else{
-           fetch("/link2.json").then((e=>e.json())).then((e=>{
+           fetch("https://f.xlenco.top/link.json").then((e=>e.json())).then((e=>{
                shine.saveData("links", e.link_list),
                shine.randomLink()
            }
