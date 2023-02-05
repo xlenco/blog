@@ -199,46 +199,57 @@ fcircle:
     aside: false
     top_img: false
 
-## Hexo-minify Default Config Options
+## hexo-yam
 minify:
-  preview: false ## 本地预览时是否压缩
-  exclude: ['*.min.*']
-  js:
-    enable: false
-    ## 详细配置: https://github.com/terser/terser#minify-options
-    options:
-  css:
-    enable: false
-    ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
-    options:
+  enable: true
   html:
+    enable: true
+    exclude:
+  css:
+    enable: true
+    exclude:
+      - '*.min.css'
+  js:
+    enable: true
+    exclude:
+      - '*.min.js'
+  gzip:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json'
+      - '*.woff2'
+  brotli:
+    enable: true
+    include:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+      - '*.txt'
+      - '*.ttf'
+      - '*.atom'
+      - '*.stl'
+      - '*.xml'
+      - '*.svg'
+      - '*.eot'
+      - '*.json'
+      - '*.woff2'
+  xml:
     enable: false
-    ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
-    options:
-      minifyJS: true # Compressed JavaScript
-      minifyCSS: true # CSS Compressed
-      removeComments: true # Remove the comments
-      collapseWhitespace: true # Delete any extra space
-      removeAttributeQuotes: true # Delete attribute quotes
-  image:
+    include:
+      - '*.xml'
+      - '!*.min.xml'
+  json:
     enable: false
-    svg:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
-      options:
-    jpg:
-      enable: false
-      ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
-      options:
-    png:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-pngquant#options
-      options:
-    gif:
-      enable: true
-      ## 详细配置: https://www.npmjs.com/package/imagemin-gifsicle#options
-      options:
-    webp:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-webp#options
-      options:
+    include:
+      - '*.json'
+      - '!*.min.json'
