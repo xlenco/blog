@@ -204,15 +204,15 @@ minify:
   preview: false ## 本地预览时是否压缩
   exclude: ['*.min.*']
   js:
-    enable: false
+    enable: true
     ## 详细配置: https://github.com/terser/terser#minify-options
     options:
   css:
-    enable: false
+    enable: true
     ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
     options:
   html:
-    enable: false
+    enable: true
     ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
     options:
       minifyJS: true # Compressed JavaScript
