@@ -107,7 +107,7 @@ disable_top_img: false
 index_img: false 
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://bing.nsso.eu.org
+default_top_img: https://bing.icodeq.com
 
 # The banner image of archive page
 archive_img: https://xlenco.onmicrosoft.cn/img/book.webp
