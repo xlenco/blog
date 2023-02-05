@@ -2,7 +2,7 @@
 categories:
   - 教程
 
-cover: https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670556758388'
+cover: https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670556758388
 date: "2022-08-25 22:01:13"
 tags:
   - Hexo
