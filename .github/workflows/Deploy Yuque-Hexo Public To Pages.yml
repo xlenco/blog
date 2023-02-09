@@ -33,7 +33,7 @@ jobs:
       - name: 安装Hexo
         run: |
           npm install hexo-cli -g
-          npm install gulp-cli -g
+        #  npm install gulp-cli -g
           npm install yuque-hexo -g
           yuque-hexo clean
           yuque-hexo sync
