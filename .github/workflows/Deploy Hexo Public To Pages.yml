@@ -77,3 +77,4 @@ jobs:
           app_location: '/'
           output_location: 'public'
           app_build_command: 'npm run build '
+
