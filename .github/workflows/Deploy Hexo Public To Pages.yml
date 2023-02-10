@@ -1,5 +1,5 @@
 # 自动化名称
-name: autodeploy
+name: Deploy Hexo Public To Pages
 
 # 触发条件
 on: [push, repository_dispatch, workflow_dispatch]
