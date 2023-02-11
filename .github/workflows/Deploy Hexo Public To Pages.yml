@@ -27,12 +27,6 @@ jobs:
           npm install hexo-cli -g
 
 
-          
-      - name: 设置密钥
-        env:
-          HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-          TZ: Asia/Shanghai
-
       - name: 设置Git信息
         run: |
           git config --global user.name 'xlenco' 
