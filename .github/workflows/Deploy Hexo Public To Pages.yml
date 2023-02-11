@@ -55,13 +55,14 @@ jobs:
         run: |
           hexo clean
           hexo generate 
-          hexo algolia         
+          hexo algolia
+          hexo deploy       
 
       - name: 部署 #此处master:master 指从本地的master分支提交到远程仓库的master分支，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
         run: |
           cd ./public
           git init
-          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+          git config --global user.name '${{ github.repository_owner }}'
           git config --global user.email '${{ secrets.GITHUBEMAIL }}'
           git add .
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
