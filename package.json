@@ -6,21 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server",
-    "yuque": "yuque-hexo sync && npm run build && hexo algolia"
-  },
-  "yuqueConfig": {
-    "postPath": "/source/_posts/yuque",
-    "cachePath": "yuque.json",
-    "lastGeneratePath": "time.log",
-    "mdNameFormat": "title",
-    "adapter": "markdown",
-    "concurrency": "5",
-    "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "xlenco",
-    "repo": "posts",
-    "onlyPublished": true,
-    "onlyPublic": false
+    "server": "hexo server"
   },
   "hexo": {
     "version": "6.3.0"
@@ -45,7 +31,6 @@
     "hexo-server": "^3.0.0",
     "hexo-wordcount": "^6.0.1",
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
-    "yuque-hexo": "^1.9.5",
     "hexo-minify": "^1.7.0",
     "workbox-cli": "6.5.4"
   }
