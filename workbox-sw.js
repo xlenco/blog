@@ -17,6 +17,19 @@ self.addEventListener('activate', async () => {
 
 self.__WB_DISABLE_DEV_LOGS = true;
 
+// 解决防盗链问题
+self.addEventListener('fetch', event => {
+    const url = new URL(event.request.url)
+    const domain = url.hostname
+    if (domain === 'cdn.nlark.com' || domain === 'pic1.afdiancdn.com' || domain === 'f.video.weibocdn.com' || domain === 'api.icodeq.com') {
+        event.respondWith(
+            fetch(event.request, {
+                referrerPolicy: "no-referrer"
+            })
+        )
+    }
+})
+
 workbox.core.setCacheNameDetails({
     prefix: 'Xlencoの博客',
     suffix: '缓存',
