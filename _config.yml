@@ -212,7 +212,7 @@ minify:
     ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
     options: {}
   html:
-    enable: true
+    enable: false
     ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
     options:
       minifyJS: true # Compressed JavaScript
