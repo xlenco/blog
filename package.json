@@ -14,7 +14,7 @@
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
-    "hexo-algoliasearch": "^1.0.0",
+    "hexo-algoliasearch": "^2.0.1",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-fcircle-anzhiyu": "^1.1.5",
