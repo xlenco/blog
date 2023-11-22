@@ -6,20 +6,7 @@ top_img: https://xlenco.onmicrosoft.cn/img/Y0819msuI.webp?ik-sdk-version=javascr
 type: link
 updated: 2023-02-04 19:01:03
 ---
-{% note warning flat %}
-申请友链的请先添加本站添加再申请 ! !
-{% endnote %}
-{% tabs links%}
 
-<!-- tab 申请友链@fa-solid fa-check-circle -->
-
-{% note info flat %}快速申请友链请前往{% btn 'https://github.com/xlenco/my-friend/blob/master/data/%E5%8F%8B%E4%BA%BA%E5%B8%90.yml',GitHub(推荐),fa-brands fa-github,outline blue larger %} 按照提示提交RP 即可！如需修改可
-{% btn '#post-comment',给 Xlenco 留言,fa-solid fa-comments,outline blue smaller %}
-或再次 RP {% endnote %}
-
-<!-- endtab -->
-
-<!-- tab 我的信息 @fa-solid fa-id-card -->
 
 Butterfly & MengD
 
@@ -39,6 +26,3 @@ volantis
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
-<!-- endtab -->
-
-{% endtabs %}
