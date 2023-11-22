@@ -1,0 +1,10 @@
+- class_name: 赞赏
+  reward_list:
+    - name: 不知青春_NYE
+      amount: 6.60
+      datatime: 2022-08-06 18:07:06
+      suffix: 爱发电
+    - name: 24（有事直奔主题）
+      amount: 66.60
+      datatime: 2022-11-16 19:46:25
+      suffix: 爱发电

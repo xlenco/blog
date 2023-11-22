@@ -1,0 +1,228 @@
+- class_name: 友人帐
+  class_desc: 昔日里那些人，那些事
+  link_list:
+  - name: 陈鑫磊'Blog
+    link: https://www.cxl2020mc.top
+    avatar: https://www.cxl2020mc.top/img/avatar.png
+    descr: 这个人太懒了啥也没写......
+    theme:
+      style: default
+      siteImage: ''
+  - name: Zkeq の Coding 日志
+    link: https://icodeq.com
+    avatar: https://img.onmicrosoft.cn/Avatar.jpg
+    descr: 自强，弘毅，求实
+  - name: MJ's Blog
+    descr: 醒亦念卿，梦亦念卿
+    link: https://blog.justlovesmile.top
+    avatar: https://npm.elemecdn.com/justlovesmile-img/logo.jpg
+    theme:
+      style: default
+      siteImage: ''
+  - name: 陈若
+    link: https://chen-ruo.top
+    avatar: https://npm.elemecdn.com/chen-ruo-boke/%E8%83%8C%E6%99%AF/%E5%A4%B4%E5%83%8F.webp
+    descr: 经济以人为本，学习以勤为立
+    theme:
+      style: default
+      siteImage: ''
+  - name: 轻笑Chuckle
+    link: https://www.chuckle.top
+    avatar: https://www.chuckle.top/img/head.webp
+    descr: 宁静致远,倾尘轻笑
+    theme:
+      style: default
+      siteImage: ''
+  - name: Akilar
+    link: https://akilar.top
+    avatar: https://npm.elemecdn.com/akilar-candyassets/image/siteicon/favicon.png
+    descr: 欢迎光临糖果屋
+    theme:
+      style: default
+      siteImage: ''
+  - name: zx's blog
+    link: https://zx.js.cool
+    avatar: https://zx.js.cool/avatar.webp
+    descr: Java资源速查
+    theme:
+      style: default
+      siteImage: ''
+  - name: Mlikiowa Home Village
+    link: https://nanaeo.cn
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=1627126029&s=100
+    descr: A litter Village With Mlikiowa
+    theme:
+      style: default
+      siteImage: ''
+  - name:  Mr_G’ blog
+    link: https://www.mrgblog.top
+    avatar: https://www.mrgblog.top/upload/2022/08/touxiang.jpg
+    descr: 昨夜星辰已逝 满眼青山已远
+    theme:
+      style: default
+      siteImage: ''
+  - name: 心流
+    link: https://blog.panghai.top
+    avatar: https://blog.panghai.top/img/avatar.png
+    descr: 保持谨慎，保持乐观
+    theme:
+      style: default
+      siteImage: ''
+  - name: 七米蓝
+    link: https://www.chirmyram.top
+    avatar: https://s1.ax1x.com/2020/04/05/Grapf1.png
+    descr: 不在灯火阑珊处。
+    theme:
+      style: default
+      siteImage: ''
+  - name: Yuou
+    link: https://mletter.cn
+    avatar: https://pic.imgdb.cn/item/630637fc16f2c2beb1c6f793.jpg
+    descr: 一个写自己日记的小站
+    theme:
+      style: default
+      siteImage: ''
+  - name: 大锤の博客
+    link: https://dddachui.top/
+    avatar: https://dddachui.top/download/other/wanye.jpg
+    descr: 运维本是逆天而行,死在路上也很正常
+    theme:
+      style: default
+      siteImage: ''
+  - name: Fomalhaut🥝
+    link: https://www.fomal.cc/
+    avatar: https://www.fomal.cc/assets/head.jpg
+    descr: Future is now 🍭🍭🍭
+    theme:
+      style: default
+      siteImage: ''
+  - name: Sady’Blog
+    link: https://sady0.com
+    avatar: https://cdn.ideaopen.cn/xiaojun/gzRMsL4X.jpg
+    descr: 永远年轻，永远热泪盈眶.
+    theme:
+      style: default
+      siteImage: ''
+  - name: LYXの小破站
+    link: https://yisous.xyz
+    avatar: https://bu.dusays.com/2022/09/01/63103c5038313.webp
+    descr: 人有悲欢离合 月有阴晴圆缺
+    theme:
+      style: default
+      siteImage: ''
+  - name: Hello World
+    link: https://www.ttkwsd.top/
+    avatar: https://static.ttkwsd.top/config/9c65807710f54d9d5ad398a78216ebfb.jpg
+    descr: 学习笔记
+    theme:
+      style: default
+      siteImage: ''
+  - name: Eurkon
+    link: https://blog.eurkon.com
+    avatar: https://blog.eurkon.com/images/user/avatar.jpg
+    descr: 不只是代码的搬运工
+    theme:
+      style: default
+      siteImage: ''
+  - name: 九九九感冒绫 #站点名称
+    link: https://miku-39.love/ #站点链接
+    avatar: https://pic1.imgdb.cn/item/6343babe16f2c2beb1acb692.jpg #站长头像
+    descr: 这是我的梦想,我会慢慢的完成它 #站点描述穷,碾过尊严,碾过微薄的梦 #站点描述
+    theme:
+      style: default
+      siteImage: ''
+  - name: 一生雾梦の博客
+    link: https://yswm-m.github.io
+    avatar: https://pic.imgdb.cn/item/631c5b8016f2c2beb1f6056e.jpg
+    descr: 若一心追逐北极星,所经路线便能成为地图
+    theme:
+      style: default
+      siteImage: ''
+  - name: Jayhrn
+    link: https://blog.jayhrn.com
+    avatar: https://unpkg.com/jayblog-source@1.0.1/img/normal/avatar.webp
+    descr: 念念不忘，必有回响
+  - name: wzx
+    link: https://wzx.is-a.dev/
+    avatar: https://wzx.is-a.dev/images/avatar.png
+    descr: wzx个人主页
+  - name: 红气球分享屋
+    link: https://aicartoon.top/
+    avatar: https://www.aicartoon.top/usr/logo/yaso.webp
+    descr: 分享个人编程学习、网络资源、记录生活等，每天进步一点点
+  - name: 西瓜撞地球
+    link: https://www.bio-w.cn/
+    avatar: https://bu.dusays.com/2022/10/17/634d313602a1e.png
+    descr: 我在人间贩卖彩虹
+  - name: SinGO博客
+    link: https://blog.xsnet.eu.org/
+    avatar: https://blog.xsnet.eu.org/images/avatar.jpg
+    descr: 害怕孤独，但享受孤独
+  - name: Ethan.Tzy
+    link: https://tzy1997.com/
+    avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
+    descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
+  - name: 鹿啵包の小窝
+    link: https://pochacco.top/
+    avatar: https://pochacco.top/img/Avatar.gif
+    descr: 落日橘子海，揽尽世间温柔
+  - name: Leonus
+    link: https://blog.leonus.cn/
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
+    descr: 进一寸有进一寸的欢喜
+  - name: Rainx’s Blog
+    link: https://rainxblog.top/
+    avatar: https://rainxblog.top/wp-content/uploads/2022/11/head.jpg
+    descr: 幸与不幸都有尽头
+  - name: 安知鱼
+    link: https://anzhiy.cn/
+    avatar: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+    descr: 生活明朗，万物可爱
+  - name: Marcus
+    link: https://blog.marcus233.top
+    avatar: https://bu.dusays.com/2022/09/15/632271409f592.png
+    descr: 一只有梦想的羊驼
+  - name: haor-一个初学者
+    link: https://blog.abeginner.cn
+    avatar: https://cdn.abeginner.cn/img/hand.jpg,
+    descr: 这个人太懒了啥也没写......
+  - name: 张洪Heo
+    link: https://blog.zhheo.com/
+    avatar: https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png
+    descr: 分享设计与科技生活
+  - name: 小朊的朋友圈
+    link: https://www.xrpyq.com
+    avatar: https://q.qlogo.cn/g?b=qq&nk=227389436&s=640
+    descr: 隔牖风惊竹，开门雪满山！
+  - name: ShineYu
+    link: https://blog.shineyu.cn/
+    avatar: https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png
+    descr: 热爱生活点滴，分享时刻精彩。
+  - name: 枢衡の巢
+    link: https://www.crowhsu.top
+    avatar: https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302022210838.png
+    descr: 既然相信，那就前行
+  - name: CasparC
+    link: https://casparc.cn
+    avatar: https://casparc.cn/images/avatar.jpg
+    descr: 想、写、记、留
+  - name: WindBack
+    link: https://wndbac.cn
+    avatar: https://static.wndbac.cn/avatar.jpg
+    descr: 各自努力，山顶再见
+  - name: 天翔TNXGの空间站
+    link: https://blog.tnxg.top/
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=2271225249&s=640
+    descr: 明日尚未到来，希望凝于心上
+
+- class_name: Wed
+  class_desc: 一些实用的网站
+  link_list:
+  - name: IPFS图床
+    link: https://xlcoud.eu.org/
+    avatar: https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/7f26fa58-5d88-4059-ac4b-5332f02ddb0e.png
+    descr: 基于IPFS无限容量、稳定
+  - name: 渺软公益 CDN
+    link: https://cdn.onmicrosoft.cn/
+    avatar: https://cdn.onmicrosoft.cn/favicon.svg
+    descr: 高速、简单、开箱即用的公益 CDN 服务
