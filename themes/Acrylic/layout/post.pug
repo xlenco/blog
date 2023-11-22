@@ -1,0 +1,21 @@
+extends includes/layout.pug
+
+block content
+  #post
+    div
+      article#article-container.post-content!=page.content
+
+      //- ad
+      if theme.ad && theme.ad.post
+        .ads-wrap!=theme.ad.post
+      
+      include includes/post/post-copyright.pug
+      
+      include includes/part/pagination.pug
+      
+      if theme.related_post && theme.related_post.enable
+        != related_posts(page,site.posts)
+
+    if page.comments !== false && theme.comments && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})

@@ -1,0 +1,135 @@
+/**
+ * Acrylic
+ * Merge CDN
+ */
+
+'use strict'
+
+const { version } = require('../../package.json')
+const path = require('path')
+
+hexo.extend.filter.register('before_generate', () => {
+  const themeConfig = hexo.theme.config
+  const { CDN } = themeConfig
+
+  const thirdPartySrc = hexo.render.renderSync({ path: path.join(hexo.theme_dir,'/plugins.yml'), engine: 'yaml'})
+  const internalSrc = {
+    main: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/main.js',
+      version
+    },
+    utils: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/utils.js',
+      version
+    },
+    heo: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/heo.js',
+      version
+    },
+    blogex: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/blogex.js',
+      version
+    },
+    translate: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/tw_cn.js',
+      version
+    },
+    local_search: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/search/local-search.js',
+      version
+    },
+    algolia_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/search/algolia.js',
+      version
+    },
+    commentBarrage_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/commentBarrage.js',
+      version
+    },
+    random_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'zhheo/random.js',
+      version
+    },
+    rightmenu_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/rightmenu.js',
+      version
+    },
+    tianli_gpt_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/tianli_gpt.js',
+      version
+    },
+    themecolor_js: {
+      name: 'hexo-theme-acrylic',
+      file: 'js/themecolor.js',
+      version
+    }
+  }
+
+  const minFile = (file) => {
+    return file.replace(/(?<!\.min)\.(js|css)$/g, ext => '.min' + ext)
+  }
+
+  const createCDNLink = (data, type, cond = '') => {
+    Object.keys(data).map(key => {
+      let { name, version, file, other_name } = data[key]
+
+      const min_file = minFile(file)
+      const cdnjs_name = other_name || name
+      const cdnjs_file = file.replace(/^[lib|dist]*\/|browser\//g, '')
+      const min_cdnjs_file = minFile(cdnjs_file)
+      if (cond === 'internal') file = `source/${file}`
+      const verType = CDN.version ? `@${version}` : ''
+
+      const value = {
+        version,
+        name,
+        file,
+        cdnjs_file,
+        min_file,
+        min_cdnjs_file,
+        cdnjs_name,
+      }
+      const cdnSource = {
+        local: cond === 'internal' ? cdnjs_file : `/pluginsSrc/${name}/${file}`,
+        chuqi: `https://cdn.chuqis.com/npm/${name}${verType}/${min_file}`,
+        elemecdn: `https://npm.elemecdn.com/${name}${verType}/${file}`,
+        cbd: `https://cdn.cbd.int/${name}${verType}/${file}`,
+        fcdn: `https://fcdn.dusays.com/npm/${name}${verType}/${min_file}`,
+        onmicrosoft: `https://jsd.onmicrosoft.cn/npm/${name}${verType}/${min_file}`,
+        moezzcdn: `https://jsd.moezz.cn//npm/${name}${verType}/${min_file}`,
+        jsdelivr: `https://cdn.jsdelivr.net/npm/${name}${verType}/${min_file}`,
+        unpkg: `https://unpkg.com/${name}${verType}/${file}`,
+        cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
+        custom: (CDN.custom_format || '').replace(/\$\{(.+?)\}/g, (match, $1) => value[$1])
+      }
+      
+      data[key] = cdnSource[type]
+    })
+
+    if (cond === 'internal') data['main_css'] = 'css/index.css'
+    return data
+  }
+
+  // delete null value
+  const deleteNullValue = obj => {
+    if (!obj) return
+    for (const i in obj) {
+      obj[i] === null && delete obj[i]
+    }
+    return obj
+  }
+
+  themeConfig.asset = Object.assign(createCDNLink(internalSrc,CDN.internal_provider,'internal'),
+  createCDNLink(thirdPartySrc,CDN.third_party_provider), deleteNullValue(CDN.option))
+})

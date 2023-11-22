@@ -1,0 +1,65 @@
+div
+  script(src=url_for(theme.asset.utils))
+  script(src=url_for(theme.asset.main))
+  script(charset='utf-8' data-pjax src=url_for(theme.asset.blogex))
+  if theme.translate.enable
+    script(src=url_for(theme.asset.translate) type="module")
+
+  if theme.fancybox
+    script(src=url_for(theme.asset.fancybox_v4))
+
+  if theme.instantpage
+    script(src=url_for(theme.asset.instantpage), type='module')
+
+  if theme.lazyload.enable
+    script(src=url_for(theme.asset.lazyload))
+
+  if theme.snackbar.enable
+    script(src=url_for(theme.asset.snackbar))
+
+  //- search
+  if theme.algolia_search.enable
+    script(src=url_for(theme.asset.algolia_search_v4))
+    script(src=url_for(theme.asset.algolia_js))
+    //- script(src=url_for(theme.asset.instantsearch_v4))
+  else if theme.local_search.enable
+    script(src=url_for(theme.asset.local_search))
+
+  if theme.loading.enable
+    != partial("includes/loading/loading-js", {}, { cache: true })
+
+  .js-pjax
+    if is_post()
+      script(src=url_for(theme.asset.themecolor_js))
+
+    //- TianliGPT
+    include ./post/ai-info.pug
+
+    include ./third-party/newest-comments/twikoo-comment.pug
+    if commentsJsLoad
+      include ./third-party/comments/js.pug
+    if needLoadCountJs
+      !=partial('includes/third-party/card-post-count/index', {}, {cache: true})
+
+  != fragment_cache('injectBottom', function(){return injectHtml(theme.inject.bottom)})
+
+  script(src=url_for(theme.asset.swiper))
+  script(type='text/javascript', src=url_for(theme.asset.waterfall))
+
+  if theme.aplayerInject && theme.aplayerInject.enable
+    if theme.pjax.enable || theme.aplayerInject.per_page
+      include ./third-party/aplayer.pug
+    else if page.aplayer
+      include ./third-party/aplayer.pug
+  if theme.pjax.enable
+    != partial("includes/third-party/pjax", {}, { cache: true })
+
+  if theme.busuanzi.site_uv || theme.busuanzi.site_pv || theme.busuanzi.page_pv
+    script(async data-pjax src=url_for(theme.asset.busuanzi))
+
+  script(src=url_for(theme.asset.qrcode))
+  script(src=url_for(theme.asset.rightmenu_js))
+  script(data-pjax src=url_for(theme.asset.random_js))
+  if theme.comments.commentBarrage && theme.twikoo.accessToken
+    script(data-pjax src=url_for(theme.asset.commentBarrage_js))
+  script(data-pjax src=url_for(theme.asset.swiper_bundle))

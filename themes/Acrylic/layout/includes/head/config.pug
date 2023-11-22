@@ -1,0 +1,108 @@
+-
+  let post_root = '/p/'
+  if (config.permalink){
+    post_root = "/"+config.permalink.split("/")[0]+"/"
+  }
+
+  let twikoo = "undefined"
+  if (theme.comments.use == "Twikoo"){
+    twikoo = JSON.stringify({
+      envId: theme.twikoo.envId || "undefined",
+      visitor: theme.twikoo.visitor ? theme.twikoo.visitor : "undefined",
+      accessToken: theme.twikoo.accessToken || "undefined"
+    })
+  }
+
+  let algolia = 'undefined';
+  let env = process.env;
+  if (theme.algolia_search.enable) {
+    algolia = JSON.stringify({
+      appId: env.ALGOLIA_APP_ID || config.algolia.appId || config.algolia.applicationID,
+      apiKey: env.ALGOLIA_API_KEY || config.algolia.apiKey,
+      indexName: env.ALGOLIA_INDEX_NAME || config.algolia.indexName,
+      hits: theme.algolia_search.hits,
+      // search languages
+      languages: {
+        input_placeholder: _p("search.algolia_search.input_placeholder"),
+        hits_empty: _p("search.algolia_search.hits_empty"),
+        hits_stats: _p("search.algolia_search.hits_stats"),
+      }
+    })
+  }
+
+  let localSearch = 'undefined';
+  if (theme.local_search && theme.local_search.enable) {
+    localSearch = JSON.stringify({
+      path: theme.local_search.CDN ? theme.local_search.CDN : config.root + config.search.path,
+      preload: theme.local_search.preload,
+      languages: {
+        // search languages
+        hits_empty: _p("search.local_search.hits_empty"),
+      }
+    })
+  }
+
+  let Snackbar = 'undefined';
+  if (theme.snackbar && theme.snackbar.enable) {
+    Snackbar = JSON.stringify({
+      chs_to_cht: _p("Snackbar.chs_to_cht"),
+      cht_to_chs: _p("Snackbar.cht_to_chs"),
+      day_to_night: _p("Snackbar.day_to_night"),
+      night_to_day: _p("Snackbar.night_to_day"),
+      bgLight: theme.snackbar.bg_light,
+      bgDark: theme.snackbar.bg_dark,
+      position: theme.snackbar.position,
+    })
+  }
+
+  let api = 'undefined'
+  api = JSON.stringify({
+    fcircle_random: (theme.fcircle.api + "randomfriend") || 'undefined',
+  })
+
+
+script.
+  const GLOBAL_CONFIG = {
+    author: `!{config.author}`,
+    api: !{api},
+    root: '!{config.root}',
+    post_root: "!{post_root}",
+    algolia: !{algolia},
+    twikoo: !{twikoo},
+    localSearch: !{localSearch},
+    translate: { "defaultEncoding": 2, "translateDelay": 0, "msgToTraditionalChinese": "简", "msgToSimplifiedChinese": "繁" },
+    highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+    copy: {
+      success: '!{_p("copy.success")}',
+      error: '!{_p("copy.error")}',
+      noSupport: '!{_p("copy.noSupport")}'
+    },
+    relativeDate: {
+      homepage: !{theme.post_meta.page.date_format === 'relative'},
+      post: !{theme.post_meta.post.date_format === 'relative'}
+    },
+    runtime: '!{theme.runtime.enable ? _p("aside.card_webinfo.runtime.unit") : ""}',
+    date_suffix: {
+      just: '!{_p("date_suffix.just")}',
+      min: '!{_p("date_suffix.min")}',
+      hour: '!{_p("date_suffix.hour")}',
+      day: '!{_p("date_suffix.day")}',
+      month: '!{_p("date_suffix.month")}'
+    },
+    lightbox: '!{"fancybox"}',
+    Snackbar: !{Snackbar},
+    source: {
+    jQuery: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js',
+      css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/justifiedGallery/3.8.1/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js',
+      css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css'
+    }
+  },
+    isPhotoFigcaption: !{true},
+    islazyload: !{theme.lazyload.enable},
+    isAnchor: !{false},
+  }
