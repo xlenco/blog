@@ -92,7 +92,6 @@ service_worker:
 
 ### 利用 Workbox 实现 PWA
 
-{% hideToggle 点击查看 %}
 安装 Gulp
 
 ```
@@ -211,7 +210,7 @@ workbox.routing.registerRoute(
         ]
     })
 );
-8
+
 // Static Libraries
 workbox.routing.registerRoute(
     /^https:\/\/cdn\.jsdelivr\.net/,
