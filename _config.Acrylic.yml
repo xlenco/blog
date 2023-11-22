@@ -10,11 +10,11 @@
 # --------------------------------
 
 # 网站图标 (favicon)
-favicon: https://bu.dusays.com/2023/07/15/64b2499a6ad24.png
+favicon: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
 
 # 头像 (avatar)
 avatar:
-  img: https://bu.dusays.com/2023/03/03/6401a7902b8de.png
+  img: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=5
 
 # 默认信息 (default)
 default_img: https://bu.dusays.com/2023/06/19/648feab74bbe8.jpg
@@ -25,10 +25,18 @@ default_text: 没有配置捏
 # --------------------------------
 
 # Algolia 搜索 (Algolia search)
+# Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
+search:
+  title: 搜索
+  load_data: 数据库加载中
+  algolia_search:
+    input_placeholder: 搜索文章
+    hits_empty: '找不到您查询的内容：${query}'
+    hits_stats: '找到 ${hits} 条结果，用时 ${time} 毫秒'
 
 # 本地搜索 (Local search)
 local_search:
@@ -46,7 +54,7 @@ nav:
       - title: 博客
         a_item:
           - text: 主页
-            link: https://zhheo.com/
+            link: https://xlenco.top/
             img: https://bu.dusays.com/2023/03/03/6401a7902b8de.png
             class: out
           - text: 博客
@@ -54,11 +62,11 @@ nav:
             img: https://bu.dusays.com/2023/03/03/6401a7902b8de.png
             class: out
           - text: 图片博客
-            link: https://plog.zhheo.com/
+            link: /
             img: https://bu.dusays.com/2023/03/03/6401a7902b8de.png
             class: out
           - text: 开发博客
-            link: https://apps.zhheo.com/
+            link: /
             img: https://bu.dusays.com/2023/03/03/6401a7902b8de.png
             class: out
   logo: 
@@ -133,7 +141,7 @@ fcircle:
   link: /posts/49736/
   text: 如何使用
   icon: fas fa-circle-chevron-right
-  api: https://fcircle.acrylic.org.cn/ # 加上最后的斜杠
+  api: https://fcircle.xlenco.top/ # 加上最后的斜杠
 
 # 装备equipment (equipment page)
 equipment:
@@ -255,10 +263,10 @@ related_post:
 reward:
   enable: true
   QR_code:
-    - img: https://img01.anheyu.com/useruploads/8/2023/08/09/64d36090eeae9.png
+    - img: https://xlenco.onmicrosoft.cn/xlenco/i/QR/wechat_ZO7DmP_rA.webp?updatedAt=1700622404419
       link:
       text: 微信
-    - img: https://img01.anheyu.com/useruploads/8/2023/08/09/64d36090ee66e.png
+    - img: https://xlenco.onmicrosoft.cn/xlenco/i/QR/alipay_rHgSRh3BV.webp?updatedAt=1700622404319
       link:
       text: 支付宝
 
@@ -266,12 +274,12 @@ reward:
 # --------------------------------
 comments:
   # Waline/Twikoo/Artalk 推荐只选一个 首字母大写!
-  use: Twikoo
+  use: Artalk
   text: true # 在按钮旁边显示评论名称
   lazyload: false # 当评论进入浏览器视野时，评论系统将被加载。
   count: true # 顶部图显示评论数
   card_post_count: false # 首页显示评论数
-  commentBarrage: true # 仅支持twikoo
+  commentBarrage: false # 仅支持twikoo
 
 # waline
 # https://waline.js.org/
@@ -284,17 +292,17 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.marcus233.top/
-  accessToken: 169d5f97a0f889913d83e04f40f3e442 # 如果commentBarrage开启则填 不要搞我
+  envId: 
+  accessToken:  # 如果commentBarrage开启则填 不要搞我
   region:
   option:
-  visitor: visitor@marcus233.top # 新定义: 是否开启匿名评论
+  visitor:  # 新定义: 是否开启匿名评论
 
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server:
-  site:
+  server: https://artalk.xlenco.top/
+  site: Xlenco-Blog
   visitor: false
   option:
 
@@ -306,7 +314,7 @@ hometop:
     class: creativity #people(人潮汹涌)/creativity(创造力)
     title_up: 分享设计
     title_dn: 与科技生活
-    tips: ZHHEO.COM
+    tips: XLENCO
   categoryGroup:
     enable: true
     category_list:
@@ -352,11 +360,11 @@ footer:
     enable: true
     left:
       - icon: fa-solid fa-compass
-        link: https://www.marcus233.top/
+        link: https://xlenco.top/
         desrc: 个人主页
         class: out
       - icon: fa-brands fa-qq
-        link: https://res.abeim.cn/api/qq/?qq=3105950984
+        link: https://res.abeim.cn/api/qq/?qq=1043865083
         desrc: 联系QQ
         class: out
       - icon: fa-brands fa-weixin
@@ -364,16 +372,16 @@ footer:
         desrc: 联系微信
         class: in
       - icon: fa-solid fa-envelope
-        link: mailto:marcus@marcus233.top
+        link: 1043865083@qq.com
         desrc: 发送邮件
         class: out
     right:
       - icon: fa-brands fa-github
-        link: https://github.com/Marcusyyds
+        link: https://github.com/xlenco
         desrc: Github主页
         class: out
       - icon: fa-brands fa-bilibili
-        link: https://space.bilibili.com/1024450661
+        link: https://space.bilibili.com/1261767063
         desrc: 哔哩哔哩主页
         class: out
       - icon: fa-solid fa-star
@@ -489,9 +497,9 @@ footer:
   footer_bottom:
     copyright:
       enable: true
-      time: 2022
+      time: 2023
     right:
-      - text: 京ICP备1905135号
+      - text: 
         link: https://beian.miit.gov.cn/#/Integrated/index
 
 # 侧边栏 (aside)
@@ -511,10 +519,10 @@ aside:
     social:
       - title: Dribbble
         icon: fab fa-dribbble
-        link: https://dribbble.com/zhheo
+        link: https://dribbble.com/
       - title: Github
         icon: fab fa-github
-        link: https://github.com/zhheo
+        link: https://github.com/xlenco
   card_weixin:
     enable: true
     face: https://p.zhheo.com/202363e5ca73123f202bbeda6f024866a181080502.png!cover
@@ -589,13 +597,13 @@ display_mode: light #light/dark
 # 网址运行时间 (runtime)
 runtime:
   enable: true
-  time: "2023/02/08 00:00:00"
+  time: "2021/08/08 00:00:00"
 
 # 卜算子 (busuanzi) 
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # 右下悬浮栏 (right side)
 # --------------------------------
