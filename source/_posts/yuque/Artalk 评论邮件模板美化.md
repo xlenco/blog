@@ -1,10 +1,12 @@
 ---
 title: Artalk 评论邮件模板美化
-date: 2023-1-5 11:15
-updated: 2023-1-5 11:15
+date: '2023-1-5 11:15'
+updated: '2023-1-5 11:15'
 tags: Artalk
 categories: 教程
-cover: https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672886621454
+cover: >-
+  https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672886621454
+abbrlink: 2f16
 ---
 
 ## 前言

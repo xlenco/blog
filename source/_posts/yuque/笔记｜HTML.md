@@ -2,14 +2,14 @@
 title: 笔记｜HTML
 tags:
   - HTML
-
 categories:
-  - [前端]
-  - [笔记]
-
-cover: https://xlenco.onmicrosoft.cn/img/html.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665115851748
-date: 2022-10-7 12:14
-updated: 2022-10-7 12:14
+  - - 前端
+  - - 笔记
+cover: >-
+  https://xlenco.onmicrosoft.cn/img/html.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665115851748
+date: '2022-10-7 12:14'
+updated: '2022-10-7 12:14'
+abbrlink: '4083'
 ---
 
 ### 说明
