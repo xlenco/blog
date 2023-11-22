@@ -1,7 +1,7 @@
 {
-  "name": "xlenco-blog",
-  "version": "1.0.0",
-  "private": false,
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
@@ -13,25 +13,15 @@
   },
   "dependencies": {
     "hexo": "^6.3.0",
-    "hexo-abbrlink": "^2.2.1",
-    "hexo-algoliasearch": "^1.0.0",
-    "hexo-butterfly-tag-plugins-plus": "^1.0.17",
-    "hexo-deployer-git": "^4.0.0",
-    "hexo-filter-fcircle-anzhiyu": "^1.1.5",
-    "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
-    "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it-plus": "^1.0.6",
+    "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-pug": "^3.0.0",
-    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-wordcount": "^6.0.1",
-    "hexo-yam": "8.0.0",
-    "workbox-cli": "7.0.0"
+    "hexo-theme-landscape": "^1.0.0"
   }
 }

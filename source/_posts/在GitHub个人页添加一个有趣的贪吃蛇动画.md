@@ -27,7 +27,7 @@ abbrlink: ce95
 
 ##### **Generate Snake.yml**
 
-```
+```code
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
 name: Generate Snake
 on:
@@ -52,6 +52,7 @@ jobs:
         with:
           branch: main
           message: 'Generate Contribution Snake'
+          
 ```
 
 3.复制完代码后，我们还要将代码生成的 svg 文件放在 **GitHub ID 同名仓库的 README 文档中** ，它才会在个人首页显示。
