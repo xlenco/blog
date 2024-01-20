@@ -7,6 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
-themes/Acrylic/.git
 .git/
-themes/hexo-theme-butterfly/.git 
+themes/butterfly/.git 
