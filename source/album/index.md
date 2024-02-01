@@ -6,6 +6,6 @@ aside: false
 ---
 
 <div class="gallery-group-main">
-{% galleryGroup '必应' '必应的每日壁纸' '/Gallery/wallpaper' bing.joker.cc/api %}
+{% galleryGroup '必应' '必应的每日壁纸' '/Gallery/wallpaper' https://api.kdcc.cn %}
 
 </div>

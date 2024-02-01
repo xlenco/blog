@@ -1,6 +1,6 @@
 ---
 title: Bing 壁纸 每日更新
-top_img: https://bing.icodeq.com
+top_img: https://api.kdcc.cn
 aside: false
 date: 2023-11-21 00:48:03
 ---
