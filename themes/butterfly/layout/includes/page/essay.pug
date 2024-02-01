@@ -1,0 +1,266 @@
+#icat-bber
+  section.icat-timeline.icat-page-1
+    if page.essay_url
+      script.
+        (()=>{
+          const replaceSymbol = (str) => {
+            return str.replace(/[\p{P}\p{S}]/gu, "-")
+          }
+
+          let result = ""
+
+          fetch("!{url_for(page.essay_url)}")
+            .then(response => response.json())
+            .then(str => {
+              for(let i = 0; i < str.length; i++){
+                let listResult = ""
+                let essayNumber = parseInt(str[i].essay_number)
+                let essayList = str[i].essay_list
+                let lists = ""
+                let listsTips = ""
+                if (essayNumber === -1) {
+                  lists = essayList
+                  listsTips = `<div id="icat-bber-tips" style="color: var(--icat-secondtext);">- 已展开所有短文 -</div>`
+                } else {
+                  lists = essayList.slice(0, essayNumber)
+                  listsTips = `<div id="icat-bber-tips" style="color: var(--icat-secondtext);">- 只展开最近 ${essayNumber} 条短文 -</div>`
+                }
+
+                for(let j = 0; j < lists.length; j++){
+                  let content = ""
+                  let onclick = ""
+                  if (lists[j].content === undefined || lists[j].content === null) {
+                    content = ""
+                  } else if (lists[j].content) {
+                    content = `<p class="datacont">${lists[j].content}</p>`
+                    onclick = `onclick="icatessay.commentText('${lists[j].content}')"`
+                  }
+
+                  let listImage = ""
+                  let listImages = ""
+                  if (lists[j].image) {
+                    const image = lists[j].image
+                    for(let e = 0; e < image.length; e++){
+                      listImage += `
+                        <div class="imgbox">
+                          <a class="icat-bber-content-img" href="${image[e]}" target="_blank" data-fancybox="gallery" data-caption="">
+                            <img src="${image[e]}" />
+                          </a>
+                        </div>`
+                    }
+                    listImages += `<div class="icat-bber-container-img">${listImage}</div>`
+                  }
+
+                  let video = ""
+                  if (lists[j].video) {
+                    if (lists[j].video.player) {
+                      video = `<div class="icat-bber-video"><video src="${lists[j].video.player}" controls="controls" style="object-fit: cover;"></video></div>`
+                    }
+                    if (lists[j].video.bilibili) {
+                      video = `<div class="icat-bber-video"><iframe src="${lists[j].video.bilibili}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>`
+                    }
+                  }
+
+                  let aplayer = ""
+                  if (lists[j].aplayer) {
+                    aplayer = `<div class="icat-bber-music"><div class="aplayer no-destroy" data-id="${lists[j].aplayer.id}" data-server="${lists[j].aplayer.server}" data-type="song" data-order="list" data-preload="none" data-autoplay="false" data-mutex="true" data-theme="var(--icat-main)"></div></div>`
+                  }
+
+                  let link = ""
+                  if (lists[j].link) {
+                    link = `<a class="icat-bber-content-link" target="_blank" title="跳转到短文指引的链接" href="${lists[j].link}" rel="external nofollow"><i class="iconfont icat-jump-link"></i>链接</a>`
+                  }
+
+                  let from = ""
+                  if (lists[j].from) {
+                    from = `<div class="icat-bber-info-from"><span>${lists[j].from}</span></div>`
+                  }
+                  
+                  listResult += `
+                    <div class="icat-bber-item">
+                      <div class="icat-bber-content">
+                        ${content}
+                        ${listImages}
+                        ${video}
+                        ${aplayer}
+                      </div>
+                      <hr>
+                      <div class="icat-bber-bottom">
+                        <div class="icat-bber-info">
+                          <div class="icat-bber-info-time">
+                            <i class="iconfont icat-time-fill"></i>
+                            <time class="datatime" datetime="${lists[j].date}" style="display: inline;">${datedata}</time>
+                          </div>
+                          ${link}
+                          ${from}
+                        </div>
+                        <div class="icat-bber-reply" ${onclick}>
+                          <i class="iconfont icat-message"></i>
+                        </div>
+                      </div>
+                    </div>`
+
+                    var datedata = new Date(lists[j].date).toISOString()
+                }
+
+                result += `<div id="waterfall" class="list">${listResult}</div> ${listsTips}`
+              }
+
+              document.querySelector(".icat-page-1").insertAdjacentHTML("afterbegin", result)
+              window.lazyLoadInstance && window.lazyLoadInstance.update()
+              
+              icatessay.changeTimeInEssay();
+              icatessay.reflashEssayWaterFall();
+              // 即刻短文
+
+              if (window.aplayers) {
+                for (let i = 0; i < window.aplayers.length; i++) {
+                  if (!window.aplayers[i].options.fixed) {
+                    window.aplayers[i].destroy()
+                  }
+                }
+              }
+              
+              typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+            })
+        })()
+    else if page.memos_url
+      #waterfall.list
+        script.
+          (()=>{
+            fetch("!{url_for(page.memos_url)}").then(res => res.json()).then(data => { 
+              let items = [],
+                html = '';
+              data.forEach(item => { items.push(Format(item)) });
+              document.getElementsByClassName('list')[0].innerHTML = items.map(item => item.content).join('');
+            });
+
+            function Format(item) {
+              let date = getTime(new Date(item.createdTs * 1000).toString()),
+                  content = item.content,
+                  imgs = content.match(/!\[.*\]\(.*?\)/g), 
+                  musics = content.match(/{\s*music\s*(.*)\s*}/g),
+                  videos = content.match(/{\s*bilibili\s*(.*)\s*}/g);
+                  text = '';
+                  contents = '';
+
+              if (imgs) imgs = imgs.map(item => { return item.replace(/!\[.*\]\((.*?)\)/, '$1'); });
+              
+              if (item.resourceList.length) {
+                if (!imgs) imgs = [];
+                item.resourceList.forEach(t => {
+                  if (t.externalLink) imgs.push(t.externalLink);
+                  else imgs.push(`{url}/o/r/${t.id}/${t.publicId}/${t.filename}`);
+                });
+              }
+              
+              text = content.replace(/#(.*?)\s/g, '').replace(/\!\[(.*?)\]\((.*?)\)/g, '').replace(/\{(.*?)\}/g, '');
+              let link = '';
+              content = text.replace(/\[(.*?)\]\((.*?)\)/g, (match, p1, p2) => {
+                link = p2;
+                return ``;
+              });
+              contents = `<p class="datacont">${content}</p>`;
+              
+              if (imgs) {
+                contents += `<div class="icat-bber-container-img">`;
+                imgs.forEach(e => contents += `<div class="imgbox"><a class="icat-bber-content-img" href="${e}" target="_blank" data-fancybox="gallery" data-caption=""><img src="${e}" /></a></div>`);
+                contents += '</div>';
+              }
+
+              if (musics) musics.forEach(item => { contents += `<div class="icat-bber-music"><div class="aplayer no-destroy" data-id="${item.replace(/{\s*music\s*(.*)\s*}/, '$1')}" data-server="netease" data-type="song" data-order="list" data-preload="none" data-autoplay="false" data-mutex="true" data-theme="var(--icat-main)"></div></div>` })
+              if (videos) videos.forEach(item => {
+                contents += `<div class="icat-bber-video"><iframe src="//player.bilibili.com/player.html?autoplay=0&bvid=${item.replace(/{\s*bilibili\s*(.*)\s*}/, '$1').replace(/.*video\/([^\/]*).*/, '$1')}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>`
+              })
+
+              let linkElement = '';
+              if (link) {
+                linkElement = `<a class="icat-bber-content-link" target="_blank" title="跳转到短文指引的链接" href="${link}" rel="external nofollow"><i class="iconfont icat-jump-link"></i>链接</a>`;
+              }
+
+              return {
+                content: `<div class="icat-bber-item"><div class="icat-bber-content">${contents}</div><hr><div class="icat-bber-bottom"><div class="icat-bber-info"><div class="icat-bber-info-time"><i class="iconfont icat-time-fill"></i><time class="datatime" datetime="${item.date}" style="display: inline;">${date}</time></div>${linkElement}</div></div></div>`,
+                date: date,
+                text: text.replace(/\[(.*?)\]\((.*?)\)/g, '[链接]' + `${imgs?'[图片]':''}`),
+                link: link
+              };
+            }
+
+            function getTime(time) {
+                var nol = function (h) { return h > 9 ? h : '0' + h }
+                var now = new Date()
+                var yesterday = new Date(now.getTime() - (1000 * 60 * 60 * 24)).toLocaleDateString()
+                var twoDaysAgo = new Date(now.getTime() - 2 * (1000 * 60 * 60 * 24)).toLocaleDateString()
+                let d = new Date(time),
+                    ls = [d.getFullYear(), nol(d.getMonth() + 1), nol(d.getDate()), nol(d.getHours()), nol(d.getMinutes()), nol(d.getSeconds())],
+                    day = d.toLocaleDateString()
+                if (day === now.toLocaleDateString()) {
+                    return '今天 ' + ls[3] + ':' + ls[4]
+                } else if (day === yesterday) {
+                    return '昨天 ' + ls[3] + ':' + ls[4]
+                } else if (day === twoDaysAgo) {
+                    return '前天 ' + ls[3] + ':' + ls[4]
+                } else {
+                    if (now.getFullYear() == ls[0]) return ls[1] + '月' + ls[2] + '日 ' + ls[3] + ':' + ls[4]
+                    else return ls[0] + '-' + ls[1] + '-' + ls[2] + '- ' + ls[3] + ':' + ls[4]
+                }
+            }
+          })()
+    else
+      if site.data.essay
+        #waterfall.list
+          each i in site.data.essay
+            each item, index in i.essay_list
+              -
+                let lists = ""
+                let essayList = `9999`
+                var essayNumber = i.essay_number
+                if (essayNumber === -1) {
+                  lists = essayList
+                } else {
+                  lists = essayNumber
+                }
+              -
+              if index < lists
+                .icat-bber-item
+                  .icat-bber-content
+                    p.datacont= item.content
+                      if item.image
+                        .icat-bber-container-img
+                          each iten, indey in item.image
+                            .imgbox
+                              a.icat-bber-content-img(href=item.image[indey], target="_blank", data-fancybox="gallery", data-caption="")
+                                img(src=item.image[indey])
+                      if item.video
+                        .icat-bber-video
+                          if item.video.bilibili
+                            iframe(src=item.video.bilibili scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true")
+                          else if item.video.player
+                            video(src=item.video.player controls="controls" style="object-fit: cover;")
+                      if item.aplayer
+                        .icat-bber-music
+                          .aplayer.no-destroy(data-id=item.aplayer.id data-server=item.aplayer.server data-type="song"  data-order="list" data-preload="none" data-autoplay="false" data-mutex="true" data-theme='var(--icat-main)')
+                  hr
+                  .icat-bber-bottom
+                    .icat-bber-info
+                      .icat-bber-info-time
+                        - var datedata = new Date(item.date).toISOString()
+                        i.iconfont.icat-time-fill
+                        time.datatime(datetime= item.date)= datedata
+                      if item.link
+                        a.icat-bber-content-link(target="_blank", title="跳转到短文指引的链接", href=item.link, rel="external nofollow")
+                          i.iconfont.icat-jump-link
+                          | 链接
+                      if item.from
+                        .icat-bber-info-from
+                          span=item.from
+                    .icat-bber-reply(onclick="icatessay.commentText(" + `'${item.content}'` + ")")
+                      i.iconfont.icat-message
+        each l in site.data.essay
+          if l.essay_number === -1
+            #icat-bber-tips(style='color: var(--icat-secondtext);')
+              | - 已展开所有短文 -
+          else
+            #icat-bber-tips(style='color: var(--icat-secondtext);')
+              | - 只展开最近 #{l.essay_number} 条短文 -

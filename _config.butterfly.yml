@@ -78,11 +78,11 @@ index_img: false
 default_top_img:
 
 # The banner image of archive page
-archive_img:
+archive_img: https://xlenco.onmicrosoft.cn/img/book.webp
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: https://xlenco.onmicrosoft.cn/img/yfvt7.webp
 
 # The banner image of tag page
 # format:
@@ -91,7 +91,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:
+category_img: https://xlenco.onmicrosoft.cn/img/hggv.webp
 
 # The banner image of category page
 # format:
@@ -246,7 +246,7 @@ aside:
   hide: false
   button: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   display:
     archive: true
     tag: true
@@ -260,7 +260,7 @@ aside:
       text: Follow Me
       link: https://github.com/xlenco
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
@@ -875,7 +875,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -890,10 +890,10 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
+  bg_light: '#5b83f5' # The background color of Toast Notification in light mode
+  bg_dark: '#414042' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
@@ -946,8 +946,11 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script defer data-pjax src="https://jsd.onmicrosoft.cn/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/custom.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
