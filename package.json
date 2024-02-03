@@ -7,7 +7,8 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "all": "hexo clean && hexo generate && hexo server"
+    "all": "hexo clean && hexo generate && hexo server",
+    "a": "hexo algolia"
   },
   "hexo": {
     "version": "6.3.0"
