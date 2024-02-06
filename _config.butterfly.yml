@@ -499,9 +499,9 @@ waline:
       formData.append("file", file);
       formData.append("album_id", "10");
       formData.append("permission", "0");
-      headers.append("Authorization", "Bearer 24|o8Crl5y0oK3luyUs17fBxDtAcevk1iiLHVFMNjpA");
+      headers.append("Authorization", "chv_ZFdt_19273ef757d40d1614469b31211021a72c8bd30e3a70a96ea2a2d187ecc3a909a29b62310b8fc1c8618008e0707328c33f441b70e46a5639515d6dc52af1f1ee");
       headers.append("Accept", "application/json");
-      return fetch("https://wmimg.com/api/v1/upload", {
+      return fetch("https://imgloc.com/api/1/upload", {
         method: "POST",
         headers: headers,
         body: formData,
