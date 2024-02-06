@@ -489,7 +489,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.xlenco.top # Waline server address url
+  serverURL: https://waline.xlenco.top
   bg: # waline background
   pageview: false
   option:
@@ -1026,5 +1026,5 @@ CDN:
     # typed:
     # utils:
     # valine:
-    # waline_css:
-    # waline_js:
+     waline_css: https://jsd.onmicrosoft.cn/npm/@waline/client@2/dist/waline.min.css
+     waline_js: https://jsd.onmicrosoft.cn/npm/@waline/client@2/dist/waline.min.js
