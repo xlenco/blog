@@ -70,7 +70,7 @@
 /* 背景图片样式优化 */
 #web_bg, [data-theme=dark] #web_bg {
     background-size: 20rem;
-    background-repeat: initial;
+    background-repeat: initial
 }
 
 /* footer页脚美化 */
