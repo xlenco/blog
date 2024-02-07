@@ -21,7 +21,6 @@ menu:
      关于我: /about/ || fas fa-user
    娱乐||fas fa-cookie-bite||hide: 
      相册: /album/  || fas fa-images
-     YesPlayMusic: https://music.xlenco.top/ || fas fa-music
      Mikutap: https://mikutap.xlenco.top/ || fas fa-gamepad
    Tool||fas fa-screwdriver-wrench||hide: 
      监控云台: https://uptime.xlenco.top/status/admin  || fas fa-link
@@ -494,7 +493,17 @@ waline:
   bg: # waline background
   pageview: false
   option:
-
+    pageSize: 10
+    locale:
+      admin: 博主
+      sofa: 此处无声胜有声
+    requiredMeta: ["nick", "mail"]
+    emoji:
+      [
+        "https://cdn1.tianli0.top/npm/sticker-heo/Sticker-100/",
+        # "https://cdn1.tianli0.top/npm/telegram-gif/Telegram-Gif/",
+        # "https://cdn1.tianli0.top/npm/@waline/emojis/tw-emoji/",
+      ]
 
 # utterances
 # https://utteranc.es/
