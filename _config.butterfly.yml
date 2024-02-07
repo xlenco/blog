@@ -26,6 +26,7 @@ menu:
    Tool||fas fa-screwdriver-wrench||hide: 
      监控云台: https://uptime.xlenco.top/status/admin  || fas fa-link
      Pic Tools: https://pic.xlenco.top/  || fa-solid fa-image
+     Qexo后台: https://qexo.xlenco.top/
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -113,7 +114,7 @@ cover:
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  post_page: https://photo.baidu.com/youai/share/v1/download?share_id=34499559903060124&fsid=1119614452788119
 
 # A simple 404 page
 error_404:
@@ -492,23 +493,6 @@ waline:
   serverURL: https://waline.xlenco.top
   bg: # waline background
   pageview: false
-  imageUploader: >
-    function (file) {
-      let formData = new FormData();
-      let headers = new Headers();
-      formData.append("file", file);
-      formData.append("album_id", "10");
-      formData.append("permission", "0");
-      headers.append("Authorization", "Bearer 24|o8Crl5y0oK3luyUs17fBxDtAcevk1iiLHVFMNjpA");
-      headers.append("Accept", "application/json");
-      return fetch("https://wmimg.com/api/v1/upload", {
-        method: "POST",
-        headers: headers,
-        body: formData,
-      })
-        .then((resp) => resp.json())
-        .then((resp) => resp.data.links.url);
-    }
   option:
 
 
