@@ -23,9 +23,9 @@ menu:
      相册: /album/  || fas fa-images
      Mikutap: https://mikutap.xlenco.top/ || fas fa-gamepad
    Tool||fas fa-screwdriver-wrench||hide: 
-     监控云台: https://uptime.xlenco.top/status/admin  || fas fa-link
+    # 监控云台: https://uptime.xlenco.top/status/admin  || fas fa-link
      Pic Tools: https://pic.xlenco.top/  || fa-solid fa-image
-     Qexo后台: https://qexo.xlenco.top/
+     Qexo后台: https://qexo.xlenco.top/ || fa-fw fa-solid fa-gears
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -235,7 +235,10 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <p><a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin-inline:5px"target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin-inline:5px"target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
+  custom_text: <p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://cdn.onmicrosoft.cn"><img src="https://img.shields.io/badge/CDN-%E6%B8%BA%E8%BD%AF%E5%85%AC%E7%9B%8A%20CDN-white?style=flat&&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdD0iMTY3MjQ2NzAzNTMwMCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDMzIDEwMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwLWlkPSIyNjkzIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjIwMS43NTc4MTI1IiBoZWlnaHQ9IjIwMCI+PHBhdGggZD0iTTUxMiA1MTJtLTQ5OS4yIDBhNDk5LjIgNDk5LjIgMCAxIDAgOTk4LjQgMCA0OTkuMiA0OTkuMiAwIDEgMC05OTguNCAwWiIgZmlsbD0iIzE5ODlGQSIgZmlsbC1vcGFjaXR5PSIuMyIgcC1pZD0iMjY5NCIvPjxwYXRoIGQ9Ik0xMy40MTQ0IDUzNi44ODMyQTUwNy40ODE2IDUwNy40ODE2IDAgMCAxIDEyLjggNTEyQzEyLjggMjM2LjI4OCAyMzYuMjg4IDEyLjggNTEyIDEyLjhjMTM0LjQ2NCAwIDI1Ni41MTIgNTMuMTU4NCAzNDYuMjY1NiAxMzkuNjA5Ni03LjE5MzYgMTMuMTMyOC0xOC4yNTI4IDIyLjg5OTItMjguNTY5NiAzMS43MDU2LTE3LjEzOTIgMTQuNjU2LTIxLjEyLTE0LjY0MzItMzQuMzgwOC02Mi45ODg4cy0xMTMuNzkyLTIwLjczNi0xMTMuNzkyIDAgOTAuMjI3MiAyOS42MDY0LTIuNTk4NCA3OS4yOTZjLTI3Ljg0IDE0Ljg5OTItNjUuMTEzNiAxNi4yMTc2LTg3Ljg0NjQgMjcuNjQ4LTEyLjEzNDQgNi4wOTI4LTYuNTI4IDQ0LjE4NTYtMTQuNjE3NiA1OS4zMTUyLTYuMjcyIDExLjc3Ni0yNi44Mjg4IDIuNDA2NC0zMS42OCAwLTI0LjgxOTItMTIuMjg4LTcuODMzNi04MC45NDcyLTI3LjExMDQtODYuOTYzMi0yNi4zMTY4LTguMjMwNC01MC4yNzg0IDI3LjQzMDQtNTAuMjc4NCA0MC42NCAwIDE1LjA2NTYgMjIuNDY0IDk0LjcyIDAgMTUxLjA3ODQtMjQuODgzMiA2Mi40MjU2LTEwNC41NTA0IDEyMC43OTM2LTE1Ni4yNjI0IDExMC4yOTc2LTk4LjQwNjQtMTkuOTY4LTEyMi40NDQ4LTQ4LjQ2MDgtMTQzLjcxODQtMTkuOTY4LTIxLjI4NjQgMjguNDkyOCAxMi45NjY0IDk0Ljk3NiAzNy41NTUyIDEzNS42NTQ0IDI0LjU3NiA0MC42NjU2IDIuNTYgOTIuMjYyNC0yNC41ODg4IDkyLjI2MjQtMzYuNTQ0IDAtNzkuNzgyNC00Ni42ODE2LTEwMi44MDk2LTkyLjI2MjQtMTEuNDA0OC0yMi41NjY0LTMyLjc5MzYtNDkuNjY0LTY0LjE1MzYtODEuMjQxNnogbTQ2Ni4zOTM2IDI0Ni43NDU2YzU1LjgzMzYtMzguMzIzMiAxMjEuNzY2NC02MC42OTc2IDE4NS4yOC0zOC4zMjMyIDYzLjQ4OCAyMi4zNjE2IDg1LjM3NiAxNTguMjk3NiAzMS42MTYgMjAwLjAyNTYtNTMuNzYgNDEuNzI4LTEwNi4xMTIgMTQuMTY5Ni0xMjguNzI5NiAwLTIyLjYxNzYtMTQuMTgyNC0xNTUuOTkzNiAxNC4xNjk2LTE3Ny45ODQgMC0yMS45OTA0LTE0LjE4MjQtNDUuODI0LTQ0LjA4MzItNDUuODI0LTk5Ljc3NiAwLTU1LjY4IDc5LjgwOC0yMy42MTYgMTM1LjY0MTYtNjEuOTI2NHogbS0xNzEuMzkyLTE0Ni43MTM2YzEyLjI4OC0yNS40MjA4IDQwLjY0IDcuMTY4IDU3LjMwNTYtMzkuNjggMTYuNjY1Ni00Ni44NzM2IDMxLjYxNi01Ni42Nzg0IDQ5LjM0NC0yNi41OTg0IDE3Ljc0MDggMzAuMDggMTMuMzc2IDYyLjc5NjggMCA4Mi41MzQ0LTEzLjM3NiAxOS43MjQ4LTEyLjc4NzIgMTUuNTAwOC00OC43NjggMTUuNTAwOC0zNS45NjggMC03MC4xOTUyLTYuMzM2LTU3Ljg5NDQtMzEuNzU2OHpNNDczLjAxMTIgNDM1LjJjMTMuMDE3NiAxLjM4MjQgMTkuNTIgNS44MjQgMTkuNTIgMTMuMzUwNCAwIDExLjI3NjgtOS43NTM2IDI2LjkwNTYtOS43NTM2IDI2LjkwNTZzLTI3LjE2MTYgMTUuMjU3Ni0zMy4yOCA4LjcwNGMtNi4wOTI4LTYuNTI4IDguMTY2NC0yMi4yNzIgOC4xNjY0LTM1LjYwOTYgMC04Ljg5NiA1LjEyLTEzLjM1MDQgMTUuMzYtMTMuMzUwNHogbTI0LjYwMTYgMjA2LjM0ODhjMjguOTUzNi0xNi4wNTEyIDUxLjc2MzItMTguNjM2OCA2OC40MDMyLTcuNzQ0IDI0Ljk2IDE2LjM0NTYgODcuMjQ0OCAyOC45MDI0IDg3LjI0NDggMzYuNDkyOHYyNS4wMzY4Yy01MS45Mjk2LTIuOTgyNC04NS4yNDgtMTEuMzI4LTk5Ljk0MjQtMjUuMDM2OC0yMi4wNDE2LTIwLjU1NjgtNjYuOTMxMiA5LjAzNjgtNjYuOTMxMiAwIDAtNi4wMTYgMy43Mzc2LTE1LjYwMzIgMTEuMjI1Ni0yOC43NDg4eiIgZmlsbD0iIzE5ODlGQSIgcC1pZD0iMjY5NSIvPjwvc3ZnPg==" title="本站使用渺软公益 CDN为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://azure.com/ "><img src="https://img.shields.io/badge/Hosted-Azure-blue?style=flat&logo=academia&logoColor=blue" title="本站托管于Microsoft Azure"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
+
+
+
   copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -500,7 +503,7 @@ waline:
     requiredMeta: ["nick", "mail"]
     emoji:
       [
-        "https://cdn1.tianli0.top/npm/sticker-heo/Sticker-100/",
+        "https://npm.elemecdn.com/npm/sticker-heo/Sticker-100/",
         # "https://cdn1.tianli0.top/npm/telegram-gif/Telegram-Gif/",
         # "https://cdn1.tianli0.top/npm/@waline/emojis/tw-emoji/",
       ]

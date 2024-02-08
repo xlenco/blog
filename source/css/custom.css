@@ -93,3 +93,35 @@
 #footer #footer-wrap a {
     color: var(--font-color)!important
 }
+
+/* 修改waline样式 */
+/* 修改评论框外观 */
+.wl-panel {
+    border-radius: 4px !important;
+}
+
+:root {
+    --waline-bgcolor-light: transparent !important;
+}
+
+.wl-btn {
+    border-radius: 0.3em !important;
+}
+
+
+/* 修改评论区内容背景 */
+.wl-card .wl-content {
+    background: #f5f5f5;
+    padding: 16px !important;
+    margin: 12px 0 8px !important;
+    border-radius: 3px;
+}
+
+.wl-card {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
+.wl-cards .wl-item{
+    padding: .5em .5em 0px !important;
+}
