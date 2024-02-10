@@ -1,19 +1,13 @@
 ---
-
 categories:
-
 - 笔记
-
-cover: https://i.imgtg.com/2022/12/19/HmU21.webp
+cover: https://pic1.xlenco.top/i/format.webp
 date: '2022-08-18 16:12:26'
 tags:
-
 - Git
-
 title: Git常用命令
 updated: '2022-08-18 22:07:42'
 abbrlink: 1b99
-
 ---
 
 ## 仓库

@@ -113,7 +113,7 @@ cover:
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
-  post_page: https://photo.baidu.com/youai/share/v1/download?share_id=34499559903060124&fsid=1119614452788119
+  post_page: https://xlenco.onmicrosoft.cn/404.gif
 
 # A simple 404 page
 error_404:
@@ -498,7 +498,7 @@ waline:
     requiredMeta: ["nick", "mail"]
     emoji:
       [
-        "https://npm.elemecdn.com/npm/sticker-heo/Sticker-100/",
+        "https://jsd.onmicrosoft.cn/npm/sticker-heo/Sticker-100/",
         # "https://cdn1.tianli0.top/npm/telegram-gif/Telegram-Gif/",
         # "https://cdn1.tianli0.top/npm/@waline/emojis/tw-emoji/",
       ]
@@ -916,9 +916,9 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
-  field: site # site/post
-  placeholder:
+  enable: true
+  field: post # site/post
+  placeholder: https://xlenco.onmicrosoft.cn/coding.webp
   blur: false
 
 # PWA

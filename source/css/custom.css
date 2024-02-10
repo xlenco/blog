@@ -122,6 +122,11 @@
     padding-bottom: 0px !important;
 }
 
-.wl-cards .wl-item{
+.wl-cards .wl-item {
     padding: .5em .5em 0px !important;
+}
+
+/* waline声明隐藏 */
+.wl-power {
+display: none;
 }

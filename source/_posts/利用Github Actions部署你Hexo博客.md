@@ -1,20 +1,13 @@
-
 ---
-
 categories:
-
-- 教程
-
+  - 教程
 cover: https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670556758388
-date: '2022-08-25 22:01:13'
+date: 2022-08-25 22:01:13
 tags:
-
-- Hexo
-
+  - Hexo
 title: 利用Github Actions自动化部署你Hexo博客
-abbrlink: '77e3'
+abbrlink: 77e3
 updated: 2022-12-9 14:15
-
 ---
 
 ### Github Actions概念
@@ -37,7 +30,7 @@ Git推送到Github库的常用连接方案是HTTPS和SSH这两种连接方式。
 1. 获取Github access tokens
 打开https://github.com/settings/tokens
 点击Generate new token新建个token
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/22578074/1670557560515-707376ab-5ae3-4c29-8f47-f1188c356de6.png#averageHue=%23fdfdfd&clientId=u80608e15-ed3a-4&id=Oy2Mt&originHeight=350&originWidth=1351&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156548&status=done&style=none&taskId=ub5683534-dcde-4181-b824-8cdca66d35b&title=)
+![image.png](https://pic1.xlenco.top/i/1670557560515-707376ab-5ae3-4c29-8f47-f1188c356de6.png)
 
 ![image.png](https://pic1.xlenco.top/i/1670557560516-b03cbb6e-86a0-44c0-8453-fb3472b572cb.png)
 
@@ -49,7 +42,7 @@ Git推送到Github库的常用连接方案是HTTPS和SSH这两种连接方式。
 完成上述操作后新建`[Blogroot].github/workflows/autodeploy.yml`
 
 ```
-(# 当有改动推送到master分支时，启动Action
+# 当有改动推送到master分支时，启动Action
 name: 自动部署
 
 on:
@@ -106,11 +99,9 @@ jobs:
         git add .
         git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
         git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/${{ secrets.GITHUBUSERNAME }}.github.io.git" master:master
-        git push --force --quiet "https://${{ secrets.TOKENUSER }}:${{ secrets.CODINGTOKEN }}@e.coding.net/${{ secrets.CODINGUSERNAME }}/${{  secrets.CODINGBLOGREPO }}.git" master:master
-        git push --force --quiet "https://${{ secrets.GITEEUSERNAME }}:${{ secrets.GITEETOKEN }}@gitee.com/${{ secrets.GITEEUSERNAME }}/${{ secrets.GITEEUSERNAME }}.git" master:master
 ```
 
-{% tip info %}上方配置包含gitee和coding，请自行删减{% endtip %}
+
 ## 添加环境变量
 ### 变量声明
 
