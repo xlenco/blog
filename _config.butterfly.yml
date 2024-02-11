@@ -488,8 +488,8 @@ valine:
 waline:
   serverURL: https://waline.xlenco.top
   bg: # waline background
-  pageview: false
   option:
+    pageview: false
     pageSize: 10
     locale:
       admin: 博主
