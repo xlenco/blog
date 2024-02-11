@@ -8,7 +8,7 @@ updated: 2023-02-04 19:01:03
 ---
 
 
-Butterfly & MengD
+## Butterfly & MengD
 
 ```yml
 - name: Xlenco
@@ -17,7 +17,7 @@ Butterfly & MengD
   descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
 
-volantis
+## Volantis
 
 ```yml
 - title: Xlenco
@@ -25,4 +25,6 @@ volantis
   url: https://blog.xlenco.top/
   description: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
 ```
-
+## 友链添加
+https://github.com/xlenco/my-friend/edit/master/data/%E5%8F%8B%E4%BA%BA%E5%B8%90.yml
+请在此处添加友链，添加后记得pul。
