@@ -61,7 +61,7 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/blog.svg
+favicon: https:/xlenco.onmicrosoft.cn/i/favicon.svg
 
 # Avatar (頭像)
 avatar:
@@ -113,7 +113,7 @@ cover:
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
-  post_page: https://xlenco.onmicrosoft.cn/404.gif
+  post_page: https://xlenco.onmicrosoft.cn/i/404.gif
 
 # A simple 404 page
 error_404:
@@ -917,7 +917,7 @@ pangu:
 lazyload:
   enable: true
   field: post # site/post
-  placeholder: https://xlenco.onmicrosoft.cn/coding.webp
+  placeholder: https://xlenco.onmicrosoft.cn/i/coding2.gif
   blur: false
 
 # PWA
