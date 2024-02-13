@@ -1,4 +1,4 @@
-/ *随机文章 /
+// 随机文章 
 
 hexo.extend.generator.register('random', function (locals) {
   const config = hexo.config.random || {}

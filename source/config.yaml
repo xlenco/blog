@@ -1,0 +1,13 @@
+#ClientWorker.js.org
+name: XlencoのClientWorker
+hotpatch:
+    - https://jsd.onmicrosoft.cn/npm/clientworker@latest
+hotconfig:
+    - https://githubusercontent.onmicrosoft.cn/xlenco/blog/main/source/config.yaml
+cleaninterval: 1000*20 #每20秒检测并清理一次缓存
+catch_rules: 
+        - search: \/post$ 
+          action: redirect
+          redirect: 
+            to: /p$
+            status: 301
