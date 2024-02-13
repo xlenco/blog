@@ -29,4 +29,3 @@ if (!!navigator.serviceWorker) {
         console.error('[CW] Installing Failed,Error: ' + err.message);
     })
 } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
-

@@ -471,30 +471,26 @@ _   底线
 #### 第一种
 
 同时支持 Markdown，HTML
-{% tabs  %}
 
-<!-- tab 预览 -->
+
+
 <details>
   <summary>文字</summary>
 内容
 </details>
-<!-- endtab -->
-<!-- tab 配置代码 -->
+
 ```
 <details>
   <summary>文字</summary>
 内容
 </details>
 ```
-<!-- endtab -->
-{% endtabs %}
 
 #### 第二种
 
 只支持 HTML
-{% tabs  %}
 
-<!-- tab 预览 -->
+
 <details>
   <summary>文字</summary>
   <pre>
@@ -503,8 +499,8 @@ _   底线
     </ul>
   </pre>
 </details>
-<!-- endtab -->
-<!-- tab 配置代码 -->
+
+
 ```
 <details>
   <summary>文字</summary>
@@ -515,5 +511,4 @@ _   底线
   </pre>
 </details>
 ```
-<!-- endtab -->
-{% endtabs %}
+
