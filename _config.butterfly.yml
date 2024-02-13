@@ -954,7 +954,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css">
-    - <script async src="/js/install_cw.js"></script>
+   # - <script async src="/js/install_cw.js"></script>
   bottom:
     # - <script src="xxxx"></script>
     - <script defer data-pjax src="https://jsd.onmicrosoft.cn/npm/jquery@3.2.1/dist/jquery.min.js"></script>
