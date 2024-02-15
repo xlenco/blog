@@ -53,6 +53,8 @@ jobs:
 
       - name: 提交yuque拉取的文章到GitHub仓库
         run: |
+          git config --global user.email "1043865083@qq.com"
+          git config --global user.name "xlenco"
           echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
           git add .
           git commit -m "更新文档" -a
