@@ -4,12 +4,9 @@ name: Deploy Yuque-Hexo Public To Pages
 # 当有语雀推送时触发action
 on:
   repository_dispatch:
-  workflow_dispatch:
-  push:
-    branches: main
-    paths:
-      -'source/_posts/yuque/*'
-
+      types:
+        - deploy # api中的event_type就是这个
+  
 # 设置环境
 jobs:
   build:
