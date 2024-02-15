@@ -61,7 +61,7 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https:/xlenco.onmicrosoft.cn/i/favicon.svg
+favicon: /favicon.svg
 
 # Avatar (頭像)
 avatar:
