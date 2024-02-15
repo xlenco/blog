@@ -64,8 +64,7 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          # 对应package.json中的script.build
-          npm build
+          hexo generate 
 
       - name: 部署到Github Pages       #此处master:master 指从本地的master分支提交到远程仓库的master分支，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
         run: |
