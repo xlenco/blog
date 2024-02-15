@@ -1,25 +1,3 @@
----
-
-
-abbrlink: 3b89
-
-categories:
-
-- 笔记
-
-cover: [https://xlenco.onmicrosoft.cn/i/HmbWI.webp](https://xlenco.onmicrosoft.cn/i/HmbWI.webp)
-
-date: "2022-06-16 06:09:37"
-
-tags:
-- Markdown
-
-title: Markdown语法全面详解
-
-updated: 2022-06-16 00:00:00
-
----
-
 # Markdown 语法全面详解
 
 目录
@@ -50,15 +28,10 @@ _这里显示的倾斜体_
 显示如下
 
 这里显示正文
-
 _这里显示的是斜体_
-
 _这里显示的倾斜体_
-
 **这里显示的文字是加粗了**
-
 **_这里的文字是倾斜加粗的_**
-
 ~~这里的文字是加下划线的~~
 
 ### 2.2 分级标题
@@ -125,7 +98,7 @@ _这里显示的倾斜体_
 
 效果：
 
-![](https://xlenco.onmicrosoft.cn/i/Aeolian_QRtDSqEg8r.jpeg#alt=)（2）插入互联网上图片
+![](https://xlenco.onmicrosoft.cn/i/Aeolian_QRtDSqEg8r.jpeg#id=OXVte&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)（2）插入互联网上图片
 
 ![图片描述]（图片网络路径） 注：图片描述与插入本地图片一样，描述可以不写。
 
@@ -137,7 +110,7 @@ _这里显示的倾斜体_
 
 效果：
 
-![](https://xlenco.onmicrosoft.cn/i/61d716_REz6m2Ypk.jpeg#alt=)（3）自动连接 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用<>包起来， Markdown 就会自动把它转成链接。也可以直接写，也是可以显示成链接形式的。 链接内容定义的形式为：
+![](https://xlenco.onmicrosoft.cn/i/61d716_REz6m2Ypk.jpeg#id=NetYh&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)（3）自动连接 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用<>包起来， Markdown 就会自动把它转成链接。也可以直接写，也是可以显示成链接形式的。 链接内容定义的形式为：
 
 方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字 接着一个冒号 接着一个以上的空格或制表符 接着链接的网址 选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
 
@@ -288,7 +261,6 @@ _this text is surrounded by literal asterisks_
 显示如下：
 
 > 文字引用 文字引用 文字引用 文字引用 文字引用
-
 文字引用 文字引用 文字引用
 
 
@@ -385,10 +357,8 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 
 （4）注意事项 在使用列表时，只要是数字后面加上英文的点，就会无意间产生列表，比如 2020.5.25 这时候想表达的是日期，有些软件把它被误认为是列表。解决方式：在每个点前面加上\就可以了。如下图所示：
 
-2020. 
-
-   5. 
-
+2020.  
+   5.  
       25. 今天是 2020 年 5 月 25 日
 
 显示如下： 2020. 05. 25. 今天是 2020 年 5 月 25 日
@@ -445,7 +415,6 @@ Markdown 支持有序列表和无序列表。 无序列表使用星号、加号�
 ### 3.0 脚注
 
 > 脚注是对文本的补充说明。
-
 Markdown 脚注的格式如下:
 
 
@@ -494,6 +463,7 @@ _   底线
 
 同时支持 Markdown，HTML
 
+文字 内容 
 
 ```
 <details>
@@ -506,6 +476,7 @@ _   底线
 
 只支持 HTML
 
+文字 
 
 ```
 <details>

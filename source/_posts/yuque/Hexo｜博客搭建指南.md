@@ -1,49 +1,32 @@
 ---
-
-
 title: Hexo｜博客搭建指南
-
 tags:
 
 - Hexo
-
 categories:
 - 教程
-
 cover: >-
-
-[https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157](https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157)
-
+https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157
 date: '2022-8-28 16:12'
-
 updated: '2022-8-28 20:12'
-
 abbrlink: 5b4d
 
 ---
-
 ## 1. 引言
 
 不知不觉，我的博客已经在风雨飘摇中运行了一段时间了，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…
-
-![](https://pic1.xlenco.top/i/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg#alt=)
+![](https://pic1.xlenco.top/i/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg#id=o5p76&originHeight=240&originWidth=240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ## 2. 环境部署
 
 ### 2.1 安装Node.js
 
 1.进入官网选择对应的系统下载：
-
 官网：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-
-![](https://pic1.xlenco.top/i/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg#alt=)
-
+![](https://pic1.xlenco.top/i/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg#id=RSvKQ&originHeight=653&originWidth=1348&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 2.安装
-
 选好路径，完成安装
-
 3.检查
-
 打开cmd或者powershell,输入:
 
 ```
@@ -52,23 +35,18 @@ npm -v
 ```
 
 显示版本号，即安装无误
-
 {% note info simple %}npm为Node.js的包管理工具{% endnote %}
 
 ### 2.2 安装Git
 
 1.进入官网下载
-
 官网：[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 2.安装
-
 选好路径，完成安装
 
 3.配置Git环境变量
-
 右键我的电脑 --> 属性，点击高级系统设置，最终在环境变量里添加你的Git路径
-
 Git路径示例
 
 ```
@@ -76,11 +54,9 @@ C:\Program Files (x86)\Git\bin
 ```
 
 {% note danger simple %}具体路径以你系统为准{% endnote %}
-
-![](https://pic1.xlenco.top/i/1674012666037-8e3fd897-a7d7-4e19-b844-01ce26b16cdd.png#alt=1829175633.png)
+![](https://pic1.xlenco.top/i/1674012666037-8e3fd897-a7d7-4e19-b844-01ce26b16cdd.png#id=FfEfv&originHeight=1040&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 4.检查
-
 打开git bash或cmd，输入：
 
 ```
@@ -88,15 +64,12 @@ git --version
 ```
 
 显示版本号，即安装无误
-
-![](https://pic1.xlenco.top/i/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg#alt=)
+![](https://pic1.xlenco.top/i/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg#id=HQnyp&originHeight=37&originWidth=234&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 5.在cmd中使用Git
-
 cmd中输入sh即可
 
 6.更换NPM镜像源
-
 由于官方默认的NPM镜像源在国内速度不是很好，建议换成淘宝的镜像
 
 ```
@@ -106,9 +79,7 @@ npm config set registry https://registry.npmmirror.com
 ### 2.3 注册Github账号
 
 1.Github官网[https://github.com,](https://github.com,)注册账号
-
 2.新建项目
-
 项目名字为你的昵称.github.io，例如：
 
 ```
@@ -117,7 +88,6 @@ npm config set registry https://registry.npmmirror.com
 ```
 
 3.代码库设置
-
 创建好之后，保存'<>code'内的SSH，即：
 
 ```
@@ -125,7 +95,6 @@ git@github.com:XXXX/XXXX.github.io.git
 ```
 
 点击你的仓库右侧的`Settings`
-
 向下找到`Gihub pages`,点击`Launch automatic page generator`，Github将会自动替你创建出一个pages的页面。 如果配置没有问题，大约几分钟之后，`yourname.github.io`这个网址就可以正常访问了
 
 ### 2.4 安装Hexo
@@ -149,8 +118,7 @@ npm install hexo --save
 hexo -v
 ```
 
-![](https://pic1.xlenco.top/i/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg#alt=)
-
+![](https://pic1.xlenco.top/i/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg#id=lOXYn&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 2.初始化一个文件夹：
 
 ```
@@ -195,9 +163,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 4.然后再在`Github`中添加`ssh key`
-
-![](https://pic1.xlenco.top/i/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg#alt=)
-
+![](https://pic1.xlenco.top/i/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg#id=cKh0T&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 5.修改hexo根目录下的文件`_config.yml`中的deploy，添加之前保存的ssh：
 
 ```
@@ -222,11 +188,8 @@ npm install hexo-deployer-git --save
 ## 3. Hexo相关
 
 1.新建文章
-
 hexo new post `我的第一篇文章`
-
 2.hexo自动生成一个md文件，修改md内容
-
 头部如：
 
 ```
@@ -240,13 +203,11 @@ description: 摘要
 ```
 
 3.在头部下面即可写文章内容
-
 {% note info simple %}markdown，支持html和其自带的语法。Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。{% endnote %}
 
 ### 3.2 新建页面
 
 hexo new page "update"
-
 会在source文件夹中生成update文件夹，其内的index.md为页面内容
 
 ### 3.3 常用基本命令
@@ -278,13 +239,9 @@ hexo cl && hexo g && hexo d
 ### 4.1 推荐编辑器
 
 方便后续写文章和魔改内容
-
 VSCode [https://code.visualstudio.com/](https://code.visualstudio.com/)
-
 Typora [https://www.typora.io/](https://www.typora.io/)
-
 Qexo [https://github.com/Qexo/Qexo](https://github.com/Qexo/Qexo)
-
 Wexagonal  [https://wexa.top/](https://wexa.top/)
 
 ### 4.2 更换主题
