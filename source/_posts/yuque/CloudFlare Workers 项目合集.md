@@ -1,3 +1,12 @@
+---
+title: CloudFlare Workers 项目合集
+date: '2022-10-3 10:36'
+updated: '2022-10-3 10:36'
+tags: CloudFlare
+categories: 杂项
+cover: 'https://xlenco.onmicrosoft.cn/img/58b09af1c36188c1568b4616.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664702176250'
+abbrlink: cf-works
+---
 ## 网盘目录
 
 - GoindexGoindex 修改版，支持多盘、搜索、分页加载等功能。[https://github.com/yanzai/goindex](https://github.com/yanzai/goindex)

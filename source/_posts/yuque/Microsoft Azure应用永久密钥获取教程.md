@@ -1,3 +1,11 @@
+---
+title: Microsoft Azure应用永久密钥获取教程
+date: 2022-06-19T18:47:47.000Z
+updated: '2024-02-15 14:42:43'
+categories: 教程
+cover: 'https://cdn.nlark.com/yuque/0/2024/png/22578074/1707979339307-695c5973-8395-4d58-b1a3-7a77f94e86bd.png?x-oss-process=image%2Fresize%2Cw_937%2Climit_0'
+abbrlink: f366
+---
 ### 开始
 
 1. 首先打开网址：[https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)

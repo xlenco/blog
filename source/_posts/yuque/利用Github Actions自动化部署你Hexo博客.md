@@ -1,3 +1,14 @@
+---
+title: 利用Github Actions自动化部署你Hexo博客
+date: 2022-08-25T22:01:13.000Z
+updated: '2022-12-9 14:15'
+categories:
+  - 教程
+cover: 'https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670556758388'
+tags:
+  - Hexo
+abbrlink: 77000
+---
 ### Github Actions概念
 
 GitHub Actions 是一个持续集成和持续交付 (CI/CD) 平台，可用于自动执行构建、测试和部署管道。 您可以创建工作流程来构建和测试存储库的每个拉取请求，或将合并的拉取请求部署到生产环境。

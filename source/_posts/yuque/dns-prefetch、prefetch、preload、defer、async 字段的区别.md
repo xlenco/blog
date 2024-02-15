@@ -1,3 +1,14 @@
+---
+title: dns-prefetch、prefetch、preload、defer、async 字段的区别
+date: 2022-12-19T17:45:07.000Z
+updated: 2022-12-19T17:45:07.000Z
+categories:
+  - 前端
+cover: 'https://xlenco.onmicrosoft.cn/img/html.png?updatedAt=1665115851748'
+tags:
+  - HTML
+abbrlink: 593d
+---
 ### 1、`dns-prefetch`
 
 域名转化为 `ip` 是一个比较耗时的过程，`dns-prefetch` 能让浏览器空闲的时候帮你做这件事。尤其大型网站会使用多域名，这时候更加需要 `dns` 预取。

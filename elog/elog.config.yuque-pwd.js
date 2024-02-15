@@ -18,6 +18,10 @@ module.exports = {
       format: "markdown",
       catalog: true,
       formatExt: "",
+      frontMatter: {
+        enable: true,
+        exclude: ['urlname','description'] // 文档属性排除 description,urlname 字段
+      }
     }
   },
   image: {

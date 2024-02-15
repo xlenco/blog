@@ -1,3 +1,12 @@
+---
+title: 常用前端公共库CDN
+date: '2022/8/29 21:13'
+updated: '2023-1-13 20:02'
+tags: CDN
+categories: 笔记
+cover: 'https://xlenco.onmicrosoft.cn/img/OIP-C.jpg'
+abbrlink: '8606'
+---
 ## 前言
 
 静态资源 [CDN](https://so.csdn.net/so/search?q=CDN&spm=1001.2101.3001.7020) 公共库是指一些服务商将我们常用的 JavaScript 库存放到网上，方便开发者直接调用，并且还对其提供 CDN 加速，这样一来可以让用户加速访问这些资源，二来还可节约自己服务器的流量。
