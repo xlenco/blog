@@ -15,7 +15,7 @@ module.exports = {
     local: {
       outputDir: "./source/_posts/yuque/",
       filename: "title",
-      format: "",
+      format: "markdown",
       catalog: true,
       formatExt: "",
     }
