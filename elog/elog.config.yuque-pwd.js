@@ -15,9 +15,13 @@ module.exports = {
     local: {
       outputDir: "./source/_posts/yuque/",
       filename: "title",
-      format: "",
+      format: "markdown",
       catalog: true,
       formatExt: "",
+      frontMatter: {
+        enable: true,
+        include: [], // 只输出include包含的属性
+        exclude: [], // 不输出exclude包含的属性
     }
   },
   image: {
