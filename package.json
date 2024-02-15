@@ -8,12 +8,26 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "all": "hexo clean && hexo generate && hexo server",
-    "a": "hexo algolia"
+    "elog": "npm run sync:yuque-pwd",
+    "elog:init": "npx elog init",
+    "local:yuque-token": "npx elog sync -c ./elog/elog.config.yuque-token.js -e ./elog/.elog.env -a ./elog/elog.cache.yuque.json",
+    "local:yuque-pwd": "npx elog sync -c ./elog/elog.config.yuque-pwd.js -e ./elog/.elog.env -a ./elog/elog.cache.yuque-pwd.json",
+    "local:notion": "npx elog sync -c ./elog/elog.config.notion.js -e ./elog/.elog.env -a ./elog/elog.cache.notion.json",
+    "local:flowus": "npx elog sync -c ./elog/elog.config.flowus.js -e ./elog/.elog.env -a ./elog/elog.cache.flowus.json",
+    "sync:yuque-token": "npx elog sync -c ./elog/elog.config.yuque-token.js -a ./elog/elog.cache.yuque.json",
+    "sync:yuque-pwd": "npx elog sync -c ./elog/elog.config.yuque-pwd.js -a ./elog/elog.cache.yuque-pwd.json",
+    "sync:notion": "npx elog sync -c ./elog/elog.config.notion.js -a ./elog/elog.cache.notion.json",
+    "sync:flowus": "npx elog sync -c ./elog/elog.config.flowus.js -a ./elog/elog.cache.flowus.json",
+    "clean:yuque-token": "npx elog clean -c ./elog/elog.config.yuque-token.js -a ./elog/elog.cache.yuque.json",
+    "clean:yuque-pwd": "npx elog clean -c ./elog/elog.config.yuque-pwd.js -a ./elog/elog.cache.yuque-pwd.json",
+    "clean:notion": "npx elog clean -c ./elog/elog.config.notion.js -a ./elog/elog.cache.notion.json",
+    "clean:flowus": "npx elog clean -c ./elog/elog.config.flowus.js -a ./elog/elog.cache.flowus.json"
   },
   "hexo": {
     "version": "7.1.1"
   },
   "dependencies": {
+    "@elog/cli": "^0.13.2",
     "hexo": "^7.1.1",
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^2.0.1",

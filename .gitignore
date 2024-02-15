@@ -9,3 +9,4 @@ public/
 .idea
 .git/
 themes/butterfly/.git 
+.elog.env
