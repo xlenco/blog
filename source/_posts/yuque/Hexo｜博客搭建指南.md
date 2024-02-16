@@ -1,21 +1,20 @@
 ---
 title: Hexo｜博客搭建指南
-tags:
-
-- Hexo
-categories:
-- 教程
-cover: >-
-https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157
 date: '2022-8-28 16:12'
 updated: '2022-8-28 20:12'
+cover: 'https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157'
+tags:
+  - Hexo
+categories:
+  - 教程
 abbrlink: 5b4d
-
 ---
 ## 1. 引言
 
 不知不觉，我的博客已经在风雨飘摇中运行了一段时间了，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…
-![](https://pic1.xlenco.top/i/1661668217875-2be43b6e-0d76-4a33-abb7-4e68d0475e19.jpeg#id=o5p76&originHeight=240&originWidth=240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1707979064140-b86823d1-2852-4aec-bf05-9b5fe36c7338.jpeg#averageHue=%237e7e7a&from=url&id=MTjQ4&originHeight=240&originWidth=240&originalType=binary&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&title=)
+
+
 
 ## 2. 环境部署
 
@@ -23,7 +22,8 @@ abbrlink: 5b4d
 
 1.进入官网选择对应的系统下载：
 官网：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-![](https://pic1.xlenco.top/i/1661668526838-eac22e5d-777a-4749-8a3d-7c07dc278ca7.jpeg#id=RSvKQ&originHeight=653&originWidth=1348&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+
+![](https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1708047462445-c074f47c-d958-41b9-a551-fbb93fd3ffdb.jpeg#averageHue=%23c8c8c7&clientId=u7d38b809-d249-4&id=qssUu&originHeight=653&originWidth=1348&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u89665cc5-0f09-417a-ab79-6ab6cbbcf3c&title=)
 2.安装
 选好路径，完成安装
 3.检查
@@ -54,7 +54,7 @@ C:\Program Files (x86)\Git\bin
 ```
 
 {% note danger simple %}具体路径以你系统为准{% endnote %}
-![](https://pic1.xlenco.top/i/1674012666037-8e3fd897-a7d7-4e19-b844-01ce26b16cdd.png#id=FfEfv&originHeight=1040&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.nlark.com/yuque/0/2024/png/22578074/1708047494406-8a2f93be-b230-4ccf-b248-e3f39af36a7a.png#averageHue=%23f8f6f6&clientId=u7d38b809-d249-4&id=O89h2&originHeight=1040&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u0f728e25-b399-4c34-a30d-14eb748e0ee&title=)
 
 4.检查
 打开git bash或cmd，输入：
@@ -64,7 +64,7 @@ git --version
 ```
 
 显示版本号，即安装无误
-![](https://pic1.xlenco.top/i/1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg#id=HQnyp&originHeight=37&originWidth=234&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://www.yuque.com/api/filetransfer/images?url=https%3A%2F%2Fpic1.xlenco.top%2Fi%2F1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg&sign=a79fb1388ed4edf0fb797063b79871d7c7aee0e478fba2cc1c1dbab1e796abc6#from=url&id=eux0F&originHeight=37&originWidth=234&originalType=binary&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&title=)
 
 5.在cmd中使用Git
 cmd中输入sh即可
@@ -118,7 +118,7 @@ npm install hexo --save
 hexo -v
 ```
 
-![](https://pic1.xlenco.top/i/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg#id=lOXYn&originHeight=325&originWidth=390&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1708047582726-136ed7d4-a172-464a-8862-d495d414c886.jpeg#averageHue=%23070707&clientId=u7d38b809-d249-4&id=T2sYl&originHeight=325&originWidth=390&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u7a756381-200f-4443-af05-cdfb464e25f&title=)
 2.初始化一个文件夹：
 
 ```
@@ -162,8 +162,7 @@ ssh-keygen -t rsa -C "XXXXXXXXX@XXX.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
-4.然后再在`Github`中添加`ssh key`
-![](https://pic1.xlenco.top/i/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg#id=cKh0T&originHeight=659&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+4.然后再在`Github`中添加`ssh key`![](https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1708047589937-4a56438e-9941-42cf-8c99-8bbbaaab2f56.jpeg#averageHue=%23fdfcfc&clientId=u7d38b809-d249-4&id=Si5dn&originHeight=659&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ue8cfa6e7-0efc-4960-84d6-57c640e12bf&title=)
 5.修改hexo根目录下的文件`_config.yml`中的deploy，添加之前保存的ssh：
 
 ```

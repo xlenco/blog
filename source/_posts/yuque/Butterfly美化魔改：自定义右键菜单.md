@@ -1,8 +1,8 @@
 ---
 title: Butterfly美化魔改：自定义右键菜单
 date: 2022-06-06T16:54:30.000Z
-updated: '2024-02-15 18:17:22'
-cover: null
+updated: '2024-02-16 09:40:41'
+cover: 'https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1707992149307-508552aa-268a-4b00-8830-d309bbd4bd43.jpeg'
 tags:
   - Butterfly
   - Hexo
@@ -10,7 +10,6 @@ categories: 美化
 abbrlink: 8d1e
 ---
 最近发现[DoraKika](https://dorakika.cn/)写的右键菜单，风格简洁，十分的好看。并且支持[fontawesome](https://fontawesome.com/)
-![-976151364.jpg](https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1707992149307-508552aa-268a-4b00-8830-d309bbd4bd43.jpeg#averageHue=%23f2fafb&from=url&id=IAUHP&originHeight=257&originWidth=398&originalType=binary&ratio=1&rotation=0&showTitle=false&size=9392&status=done&style=none&title=)
 
 可以在rightmenu.pug中自行添加
 

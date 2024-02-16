@@ -2,10 +2,8 @@
 name: Deploy Yuque-Hexo Public To Pages
 
 # 当有语雀推送时触发action
-on:
-  repository_dispatch:
-      types:
-        - deploy # api中的event_type就是这个
+on: [push, repository_dispatch, workflow_dispatch]
+
   
 # 设置环境
 jobs:
@@ -35,7 +33,7 @@ jobs:
           npm install hexo-cli -g
           npm install
           npm run elog      
-
+          hexo generate 
       - name: 缓存 Hexo
         uses: actions/cache@v3
         id: cache
@@ -61,10 +59,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUBTOKEN }}
 
-
-      - name: 生成静态文件
-        run: |
-          hexo generate 
 
       - name: 部署到Github Pages       #此处master:master 指从本地的master分支提交到远程仓库的master分支，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
         run: |

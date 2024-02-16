@@ -2,7 +2,7 @@
 name: Deploy Hexo Public To Pages
 
 # 触发条件
-on: [push, repository_dispatch, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 # 设置环境
 jobs:
