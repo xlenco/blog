@@ -134,22 +134,6 @@ feed:
   autodiscovery: true
  # template:
 
-# hexo-algoliasearch
-algolia:
-  appId: "CE9M4IN0HW"
-  apiKey: "1752a7306752d7764efbad19f907367b"
-  adminApiKey: "837e620106579ed41c094194f2dc9d06"
-  chunkSize: 5000
-  indexName: "my-hexo-blog"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - Gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
 
 # hexo-generator-sitemap
 sitemap:
