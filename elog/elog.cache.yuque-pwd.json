@@ -136,13 +136,19 @@
     {
       "id": 158578702,
       "doc_id": "33911f8ae270fe95a00eb14fd8186855",
-      "updated": 1707979812000,
+      "updated": 1708049737000,
       "properties": {
         "title": "在GitHub个人页添加一个有趣的贪吃蛇动画",
-        "urlname": "33911f8ae270fe95a00eb14fd8186855",
-        "date": "2024-02-15 12:10:17",
-        "updated": "2024-02-15 12:33:18",
-        "description": "categories:教程cover: https://xlenco.onmicrosoft.cn/i/HmAbK__0PQdqS0-.webp?updatedAt=1700639817159date: \"2022-07-28 12:07:51\"tags:Githubtitle: 在GitHu..."
+        "date": "2022-07-28 12:07:51",
+        "updated": "2022-07-29 14:59:10",
+        "categories": [
+          "教程"
+        ],
+        "cover": "https://xlenco.onmicrosoft.cn/i/HmAbK__0PQdqS0-.webp",
+        "tags": [
+          "Github"
+        ],
+        "abbrlink": "ce95"
       },
       "catalog": [],
       "realName": "在GitHub个人页添加一个有趣的贪吃蛇动画",
@@ -372,12 +378,19 @@
     {
       "id": 158578591,
       "doc_id": "c399fdc9a119697eae5cac0f3d226297",
-      "updated": 1708047599000,
+      "updated": 1708049781000,
       "properties": {
         "title": "Hexo｜博客搭建指南",
-        "date": "2024-02-15 12:10:04",
-        "updated": "2024-02-16 09:39:59",
-        "cover": "https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1707979064140-b86823d1-2852-4aec-bf05-9b5fe36c7338.jpeg"
+        "date": "2022-8-28 16:12",
+        "updated": "2022-8-28 20:12",
+        "cover": "https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157",
+        "tags": [
+          "Hexo"
+        ],
+        "categories": [
+          "教程"
+        ],
+        "abbrlink": "5b4d"
       },
       "catalog": [],
       "realName": "Hexo｜博客搭建指南",
