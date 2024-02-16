@@ -118,7 +118,7 @@ npm install hexo --save
 hexo -v
 ```
 
-![](https://pic1.xlenco.top/i/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg#id=lOXYn&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://pic1.xlenco.top/i/1661671983521-6f81cc7b-8410-4a2b-9399-f6a7e8fbdeb2.jpeg#id=lOXYn&originHeight=325&originWidth=390&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 2.初始化一个文件夹：
 
 ```
@@ -163,7 +163,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 4.然后再在`Github`中添加`ssh key`
-![](https://pic1.xlenco.top/i/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg#id=cKh0T&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://pic1.xlenco.top/i/1661672964325-47716767-f2fd-46e0-b283-d5631bf40eaf.jpeg#id=cKh0T&originHeight=659&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 5.修改hexo根目录下的文件`_config.yml`中的deploy，添加之前保存的ssh：
 
 ```
