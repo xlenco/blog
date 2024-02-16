@@ -5,8 +5,7 @@ tags:
 - Hexo
 categories:
 - 教程
-cover: >-
-https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157
+cover: https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157
 date: '2022-8-28 16:12'
 updated: '2022-8-28 20:12'
 abbrlink: 5b4d
