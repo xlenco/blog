@@ -1,13 +1,15 @@
 ---
-title: Git常用命令
-date: '2024-02-15 12:10:03'
-updated: '2022-08-18 22:07:42'
 categories:
-  - 笔记
-cover: 'https://cdn.nlark.com/yuque/0/2024/webp/22578074/1707978962158-ffbab7b3-2162-4a5c-bd96-0a42ae668576.webp'
+
+- 笔记
+cover: https://cdn.nlark.com/yuque/0/2024/webp/22578074/1707978962158-ffbab7b3-2162-4a5c-bd96-0a42ae668576.webp
 tags:
-  - Git
-abbrlink: 1b99
+- Git
+title: Git常用命令
+
+       date: 2022-07-12 
+       updated: '2022-08-18 22:07:42'
+       abbrlink: 1b99
 ---
 ## 仓库
 
