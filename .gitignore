@@ -7,6 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
-.git/
-themes/butterfly/.git 
+*.git
 .elog.env
