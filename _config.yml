@@ -44,14 +44,14 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: true 
+  enable: false
   preprocess: true
   line_number: false 
   tab_replace: ''
@@ -97,7 +97,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: anzhiyu # solitude # butterfly
 
 
 # Deployment
