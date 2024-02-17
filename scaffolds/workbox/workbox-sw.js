@@ -28,7 +28,7 @@ self.addEventListener("activate", async () => {
 
 // 定义CDN镜像的URL列表
 const fallbackCdnUrls = [
-    'https://jsd.cdn.zzko.cn',
+    // 'https://jsd.cdn.zzko.cn',
     'https://jsd.onmicrosoft.cn',
     'https://cdn.jsdelivr.ren',
     'https://jsdelivr.goodboyboy.top',
