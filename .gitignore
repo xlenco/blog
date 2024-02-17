@@ -7,5 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
-*.git
+.git
 .elog.env
