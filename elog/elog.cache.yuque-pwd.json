@@ -356,19 +356,11 @@
     {
       "id": 158578589,
       "doc_id": "2529ea56bde916ecf9cce5529b9231e9",
-      "updated": 1708047653000,
+      "updated": 1708050320000,
       "properties": {
         "title": "Git常用命令",
         "date": "2024-02-15 12:10:03",
-        "updated": "2022-08-18 22:07:42",
-        "categories": [
-          "笔记"
-        ],
-        "cover": "https://cdn.nlark.com/yuque/0/2024/webp/22578074/1707978962158-ffbab7b3-2162-4a5c-bd96-0a42ae668576.webp",
-        "tags": [
-          "Git"
-        ],
-        "abbrlink": "1b99"
+        "updated": "2024-02-16 10:25:20"
       },
       "catalog": [],
       "realName": "Git常用命令",
@@ -378,7 +370,7 @@
     {
       "id": 158578591,
       "doc_id": "c399fdc9a119697eae5cac0f3d226297",
-      "updated": 1708049781000,
+      "updated": 1708052468000,
       "properties": {
         "title": "Hexo｜博客搭建指南",
         "date": "2022-8-28 16:12",

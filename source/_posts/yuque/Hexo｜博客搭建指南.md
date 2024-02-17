@@ -64,7 +64,7 @@ git --version
 ```
 
 显示版本号，即安装无误
-![](https://www.yuque.com/api/filetransfer/images?url=https%3A%2F%2Fpic1.xlenco.top%2Fi%2F1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg&sign=a79fb1388ed4edf0fb797063b79871d7c7aee0e478fba2cc1c1dbab1e796abc6#from=url&id=eux0F&originHeight=37&originWidth=234&originalType=binary&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://www.yuque.com/api/filetransfer/images?url=https%3A%2F%2Fpic1.xlenco.top%2Fi%2F1661671536489-a6c14ccb-2420-4009-92ce-e150b722547a.jpeg&sign=a79fb1388ed4edf0fb797063b79871d7c7aee0e478fba2cc1c1dbab1e796abc6#from=url&id=TvylP&originHeight=37&originWidth=234&originalType=binary&ratio=1.25&rotation=0&showTitle=false&status=done&style=none&title=)
 
 5.在cmd中使用Git
 cmd中输入sh即可
