@@ -432,15 +432,45 @@
       "realName": "Butterfly美化魔改：自定义右键菜单",
       "relativePath": "Butterfly美化魔改：自定义右键菜单.md",
       "docPath": "source/_posts/yuque/"
+    },
+    {
+      "id": 158592784,
+      "doc_id": "cpludrqynsh5zeyg",
+      "updated": 1708222858000,
+      "properties": {
+        "title": "语雀富文本写作自动部署到 Hexo",
+        "date": "2024-02-15 17:54:53",
+        "updated": "2024-02-18 10:20:58",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/22578074/1708162314010-b3755c2d-2763-4c49-adf7-aebb7dedc556.png"
+      },
+      "catalog": [],
+      "realName": "语雀富文本写作自动部署到 Hexo",
+      "relativePath": "语雀富文本写作自动部署到 Hexo.md",
+      "docPath": "source/_posts/yuque/"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "语雀富文本写作自动部署到 Hexo",
+      "uuid": "DJTIOK0vDLp4HeR5",
+      "url": "cpludrqynsh5zeyg",
+      "prev_uuid": "",
+      "sibling_uuid": "ebizTw87W8w20ixF",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 158592784,
+      "level": 0,
+      "id": 158592784,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "Butterfly美化魔改自定义右键菜单",
       "uuid": "ebizTw87W8w20ixF",
       "url": "3fde98698370e21730e5dc991eb80aef",
-      "prev_uuid": "",
+      "prev_uuid": "DJTIOK0vDLp4HeR5",
       "sibling_uuid": "JBjgQvVkixgMPMlm",
       "child_uuid": "",
       "parent_uuid": "",
