@@ -436,12 +436,18 @@
     {
       "id": 158592784,
       "doc_id": "cpludrqynsh5zeyg",
-      "updated": 1708222858000,
+      "updated": 1708223328000,
       "properties": {
         "title": "语雀富文本写作自动部署到 Hexo",
-        "date": "2024-02-15 17:54:53",
-        "updated": "2024-02-18 10:20:58",
-        "cover": "https://cdn.nlark.com/yuque/0/2024/png/22578074/1708162314010-b3755c2d-2763-4c49-adf7-aebb7dedc556.png"
+        "date": "2024-2-16",
+        "updated": "2024-2-17",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/22578074/1708222825029-4897d789-75d2-430c-b0a3-3e2bc5dcdd12.png",
+        "tags": [
+          "Markdown"
+        ],
+        "categories": [
+          "教程"
+        ]
       },
       "catalog": [],
       "realName": "语雀富文本写作自动部署到 Hexo",

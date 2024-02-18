@@ -1,25 +1,14 @@
 ---
 title: 语雀富文本写作自动部署到 Hexo
-date: '2024-02-15 17:54:53'
-updated: '2024-02-18 10:20:58'
-cover: >-
-  https://cdn.nlark.com/yuque/0/2024/png/22578074/1708162314010-b3755c2d-2763-4c49-adf7-aebb7dedc556.png
-abbrlink: '1420'
----
-
----
-title:  语雀富文本写作自动部署到 Hexo
-date: 2024-2-16 
+date: 2024-2-16
 updated: 2024-2-17
-tags: 
-
-- Markdown
-
+cover: >-
+  https://cdn.nlark.com/yuque/0/2024/png/22578074/1708222825029-4897d789-75d2-430c-b0a3-3e2bc5dcdd12.png
+tags:
+  - Markdown
 categories:
-
-- 教程
-
-cover: https://cdn.nlark.com/yuque/0/2024/png/22578074/1708222825029-4897d789-75d2-430c-b0a3-3e2bc5dcdd12.png
+  - 教程
+abbrlink: '1420'
 ---
 > 本文章由语雀编写
 
@@ -355,5 +344,6 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/22578074/1708164531370-b107d69e-e0b8-4aa0-b931-8d694e1603b0.png#averageHue=%23fcfcfc&clientId=u7443a384-aa13-4&from=paste&height=680&id=a0wRX&originHeight=850&originWidth=1577&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=93410&status=done&style=none&taskId=ubb1758cf-61f2-482b-bb98-8816056c34a&title=&width=1261.6)
 ## 参考
-[Elog Dose](https://elog.1874.cool/)
-[GitHub - LetTTGACO/elog: Markdown 批量导出工具、开放式跨平台博客解决方案，随意组合写作平台(语雀/Notion/FlowUs/飞书)和博客平台(Hexo/Vitepress/Halo/Confluence/WordPress等)](https://github.com/LetTTGACO/elog)
+
+- [Elog Dose](https://elog.1874.cool/)
+- [GitHub - LetTTGACO/elog: Markdown 批量导出工具、开放式跨平台博客解决方案，随意组合写作平台(语雀/Notion/FlowUs/飞书)和博客平台(Hexo/Vitepress/Halo/Confluence/WordPress等)](https://github.com/LetTTGACO/elog)
