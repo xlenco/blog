@@ -100,12 +100,11 @@
     {
       "id": 158578704,
       "doc_id": "7b2ed70650696107331aee10b13d6445",
-      "updated": 1707979830000,
+      "updated": 1708399223000,
       "properties": {
         "title": "常用前端公共库CDN",
         "date": "2022/8/29 21:13",
         "updated": "2023-1-13 20:02",
-        "description": "title: 常用前端公共库CDNtags: CDNcategories: 笔记cover: 'https://xlenco.onmicrosoft.cn/img/OIP-C.jpg'date: '2022/8/29 21:13'updated: '2023-1-13 20:02'abbrli...",
         "tags": "CDN",
         "categories": "笔记",
         "cover": "https://xlenco.onmicrosoft.cn/img/OIP-C.jpg",
@@ -436,12 +435,12 @@
     {
       "id": 158592784,
       "doc_id": "cpludrqynsh5zeyg",
-      "updated": 1708223328000,
+      "updated": 1708397902000,
       "properties": {
         "title": "语雀富文本写作自动部署到 Hexo",
         "date": "2024-2-16",
         "updated": "2024-2-17",
-        "cover": "https://cdn.nlark.com/yuque/0/2024/png/22578074/1708222825029-4897d789-75d2-430c-b0a3-3e2bc5dcdd12.png",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/webp/22578074/1708397886325-5bb24bef-2f0c-4b2c-a3f0-3f1bee5cf47d.webp",
         "tags": [
           "Markdown"
         ],
