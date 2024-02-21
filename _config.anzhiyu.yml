@@ -1078,15 +1078,15 @@ lazyload:
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: false
+  enable: true
   startup_image_enable: true
-  manifest: /manifest.json
+  manifest: /siteicon/manifest.json
   theme_color: var(--anzhiyu-main)
-  mask_icon: /img/siteicon/apple-icon-180.png
-  apple_touch_icon: /img/siteicon/apple-icon-180.png
-  bookmark_icon: /img/siteicon/apple-icon-180.png
-  favicon_32_32: /img/siteicon/32.png
-  favicon_16_16: /img/siteicon/16.png
+  mask_icon: /siteicon/img/apple-touch-icon.png
+  apple_touch_icon: /siteicon/img/apple-touch-icon.png
+  bookmark_icon: /siteicon/img/apple-touch-icon.png
+  favicon_32_32: /siteicon/img/favicon-32x32.png
+  favicon_16_16: /siteicon/img/favicon-16x16.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
