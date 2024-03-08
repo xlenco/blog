@@ -793,8 +793,8 @@ beautify:
 font:
   global-font-size: 16px
   code-font-size:
-  font-family:
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  font-family: "HarmonyOS_Regular"
+  code-font-family: "Fira Code"
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
@@ -1285,6 +1285,8 @@ dynamicEffect:
 inject:
   head:
     # 自定义css
+     - <link rel="preload" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" as="font" crossorigin>
+     - <link rel="preload" href="https://font.alnk.cn/css2?family=Fira+Code&display=swap" as="font" crossorigin>
      - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
 
   bottom:
