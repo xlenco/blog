@@ -3,7 +3,7 @@ title: 语雀富文本写作自动部署到 Hexo
 date: 2024-2-16
 updated: 2024-2-17
 cover: >-
-  https://cdn.nlark.com/yuque/0/2024/webp/22578074/1709973246480-e335dd42-e452-4a2e-a6bf-88ecf94665f7.webp
+  https://cdn.nlark.com/yuque/0/2024/png/22578074/1709975319749-8837f1dc-bb25-4316-b73a-fd2df483d077.png?x-oss-process=image%2Fformat%2Cwebp
 tags:
   - Markdown
 categories:
@@ -12,7 +12,7 @@ abbrlink: '1420'
 ---
 > 本文章由语雀编写
 
-
+「语雀」是一个「知识创作工具」，孵化自 蚂蚁金服 ，是 体验科技 理念下的一款创新产品，已是 5万+ 阿里员工进行文档编写、知识沉淀的标配。博主本来就是语雀的用户，偶然发现下了elog，可以将语雀的文章同步到本地。用语雀写作除了能够即使渲染之外，并且图床也不用考虑了。废话不多说了下面开始教程。
 ## 迁移博客文章到语雀
 打开[语雀](https://yuque.com)官网进入首页，点击左上角加号
 ![PixPin_2024-02-17_17-28-36.png](https://cdn.nlark.com/yuque/0/2024/png/22578074/1708162314010-b3755c2d-2763-4c49-adf7-aebb7dedc556.png#averageHue=%23fcfcfb&clientId=u7443a384-aa13-4&from=drop&id=uf9453e90&originHeight=938&originWidth=1830&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=119732&status=done&style=none&taskId=ub9563148-e27a-4d86-bdb6-35810343922&title=)
