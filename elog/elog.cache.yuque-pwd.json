@@ -435,12 +435,12 @@
     {
       "id": 158592784,
       "doc_id": "cpludrqynsh5zeyg",
-      "updated": 1708591138000,
+      "updated": 1709973260000,
       "properties": {
         "title": "语雀富文本写作自动部署到 Hexo",
         "date": "2024-2-16",
         "updated": "2024-2-17",
-        "cover": "https://cdn.nlark.com/yuque/0/2024/webp/22578074/1708397886325-5bb24bef-2f0c-4b2c-a3f0-3f1bee5cf47d.webp",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/webp/22578074/1709973246480-e335dd42-e452-4a2e-a6bf-88ecf94665f7.webp",
         "tags": [
           "Markdown"
         ],
@@ -452,15 +452,48 @@
       "realName": "语雀富文本写作自动部署到 Hexo",
       "relativePath": "语雀富文本写作自动部署到 Hexo.md",
       "docPath": "source/_posts/yuque/"
+    },
+    {
+      "id": 161155321,
+      "doc_id": "yqmg9lxot8pvg9iw",
+      "updated": 1709972264000,
+      "properties": {
+        "title": "前端字体压缩方案",
+        "date": "2024-03-09T00:00:00.000Z",
+        "updated": "2024-03-09T00:00:00.000Z",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/webp/22578074/1709972252877-0f84f15f-6b22-4031-bacd-22dabf54f464.webp",
+        "tags": "HTML",
+        "categories": "教程",
+        "abbrlink": null
+      },
+      "catalog": [],
+      "realName": "前端字体压缩方案",
+      "relativePath": "前端字体压缩方案.md",
+      "docPath": "source/_posts/yuque/"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "前端字体压缩方案",
+      "uuid": "SutvOQGHOpSPtw9r",
+      "url": "yqmg9lxot8pvg9iw",
+      "prev_uuid": "",
+      "sibling_uuid": "DJTIOK0vDLp4HeR5",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 161155321,
+      "level": 0,
+      "id": 161155321,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "语雀富文本写作自动部署到 Hexo",
       "uuid": "DJTIOK0vDLp4HeR5",
       "url": "cpludrqynsh5zeyg",
-      "prev_uuid": "",
+      "prev_uuid": "SutvOQGHOpSPtw9r",
       "sibling_uuid": "ebizTw87W8w20ixF",
       "child_uuid": "",
       "parent_uuid": "",

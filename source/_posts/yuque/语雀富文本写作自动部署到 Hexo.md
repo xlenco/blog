@@ -3,7 +3,7 @@ title: 语雀富文本写作自动部署到 Hexo
 date: 2024-2-16
 updated: 2024-2-17
 cover: >-
-  https://cdn.nlark.com/yuque/0/2024/webp/22578074/1708397886325-5bb24bef-2f0c-4b2c-a3f0-3f1bee5cf47d.webp
+  https://cdn.nlark.com/yuque/0/2024/webp/22578074/1709973246480-e335dd42-e452-4a2e-a6bf-88ecf94665f7.webp
 tags:
   - Markdown
 categories:
