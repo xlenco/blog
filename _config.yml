@@ -5,8 +5,8 @@
 # Site
 title: Xlenco
 subtitle: 互联网中的静谧之地
-description: 分享互联网的各种知识、编程、教程、建站经验……
-keywords: Hexo,Butterfly,知识,教程,互联网,编程,分享,js,css
+description: 最好的地方，是没去过的地方。最好的时光，是回不来的时光。
+keywords: Blog,Hexo,Butterfly,知识,教程,互联网,编程,js,css
 author: Xlenco
 language: zh-CN
 timezone: Asia/Shanghai
@@ -225,3 +225,4 @@ hexo_seo_autopush:
     enable: false
     date: created
     count: 10
+
