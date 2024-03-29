@@ -27,7 +27,7 @@
     "version": "7.1.1"
   },
   "dependencies": {
-    "@elog/cli": "^0.13.2",
+    "@elog/cli": "^0.13.3",
     "hexo": "^7.1.1",
     "hexo-abbrlink": "^2.2.1",
     "hexo-algoliasearch": "^2.0.1",
