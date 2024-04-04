@@ -1,21 +1,19 @@
 menu:
-   文章||fas fa-book||hide:
-     归档: /tags/ || fas fa-tags
-     分类: /categories/ || fas fa-folder-open
-     时间轴: /archives/ || fas fa-archive
-   社交||fas fa-bars||hide:
-     友链: /link/ || fas fa-link
-     开往: https://www.travellings.cn/go.html || fas fa-train-subway
-     朋友圈: /fcircle/ || fas fa-user-group
-     即刻短文: /essay/  || fas fa-comment-dots
-     关于我: /about/ || fas fa-user
-   娱乐||fas fa-cookie-bite||hide: 
-     相册: /album/  || fas fa-images
-     Mikutap: https://mikutap.xlenco.top/ || fas fa-gamepad
-   Tool||fas fa-screwdriver-wrench||hide: 
-    # 监控云台: https://uptime.xlenco.top/status/admin  || fas fa-link
-     Pic Tools: https://pic.xlenco.top/  || fa-solid fa-image
-     Qexo后台: https://qexo.xlenco.top/ || fa-fw fa-solid fa-gears
+   文章:
+     归档: /tags/ || anzhiyu-icon-tags
+     分类: /categories/ || anzhiyu-icon-shapes
+     时间轴: /archives/ || anzhiyu-icon-box-archive
+   社交:
+     友链: /link/ || anzhiyu-icon-link
+     朋友圈: /fcircle/ || anzhiyu-icon-artstation
+     即刻短文: /essay/ anzhiyu-icon-lightbulb
+   我的: 
+     相册: /album/  || anzhiyu-icon-images
+     监控云台: https://status.xlenco.top/ 
+     Qexo后台: https://qexo.xlenco.top/ 
+   关于:
+      关于我: /about/ anzhiyu-icon-paper-plane
+      随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
   # 文章:
   #   隧道: /archives/ || anzhiyu-icon-box-archive
   #   分类: /categories/ || anzhiyu-icon-shapes
@@ -83,7 +81,7 @@ copy:
 # formal:
 #   name: link || icon
 social:
-   Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
+   Github: https://github.com/xlenco || anzhiyu-icon-github
   # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
 
 # 作者卡片 状态
@@ -1185,7 +1183,7 @@ nav_music:
 
 # 评论匿名邮箱
 visitorMail:
-  enable: true
+  enable: false
   mail: ""
 
 # ptool 文章底部工具
