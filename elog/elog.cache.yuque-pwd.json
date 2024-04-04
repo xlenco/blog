@@ -470,15 +470,44 @@
       "realName": "前端字体压缩方案",
       "relativePath": "前端字体压缩方案.md",
       "docPath": "source/_posts/yuque/"
+    },
+    {
+      "id": 164283181,
+      "doc_id": "oti1iocfggz8hdh2",
+      "updated": 1712140784000,
+      "properties": {
+        "title": "我的博客优化路线",
+        "date": "2024-04-03 18:35:20",
+        "updated": "2024-04-03 18:39:44"
+      },
+      "catalog": [],
+      "realName": "我的博客优化路线",
+      "relativePath": "我的博客优化路线.md",
+      "docPath": "source/_posts/yuque/"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "我的博客优化路线",
+      "uuid": "vsXBsV_Fq5wiDD3E",
+      "url": "oti1iocfggz8hdh2",
+      "prev_uuid": "",
+      "sibling_uuid": "SutvOQGHOpSPtw9r",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 164283181,
+      "level": 0,
+      "id": 164283181,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
       "title": "前端字体压缩方案",
       "uuid": "SutvOQGHOpSPtw9r",
       "url": "yqmg9lxot8pvg9iw",
-      "prev_uuid": "",
+      "prev_uuid": "vsXBsV_Fq5wiDD3E",
       "sibling_uuid": "DJTIOK0vDLp4HeR5",
       "child_uuid": "",
       "parent_uuid": "",
