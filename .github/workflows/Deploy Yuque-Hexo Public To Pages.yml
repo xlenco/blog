@@ -30,9 +30,10 @@ jobs:
 
       - name: 安装Hexo并使用elog
         run: |
-          npm install hexo-cli -g
-          npm install
-          npm run elog      
+          npm install -g pnpm
+          pnpm install hexo-cli -g
+          pnpm install
+          pnpm run elog      
           hexo generate 
       - name: 缓存 Hexo
         uses: actions/cache@v3
