@@ -26,8 +26,12 @@ jobs:
       - name: Setup Node.js 16.x
         uses: actions/setup-node@master
         with:
-          node-version: "16.x"
-
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
       - name: 安装Hexo并使用elog
         run: |
           npm install -g pnpm
@@ -41,6 +45,7 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
 
       - name: 设置Git信息
         run: |
