@@ -468,15 +468,49 @@
       "realName": "前端字体压缩方案",
       "relativePath": "前端字体压缩方案.md",
       "docPath": "source/_posts/yuque/"
+    },
+    {
+      "id": 168242518,
+      "doc_id": "sdg1g1g13bx1fmxd",
+      "updated": 1714814146000,
+      "properties": {
+        "title": "博客停更通知",
+        "date": "2024-5-4",
+        "updated": "2024-5-4",
+        "tags": null,
+        "categories": null,
+        "cover": "https://cdn.nlark.com/yuque/0/2024/jpeg/22578074/1714813976116-768e79ef-9879-48fe-b93d-8ca652515093.jpeg",
+        "abbrlink": null,
+        "sticky": 1
+      },
+      "catalog": [],
+      "realName": "博客停更通知",
+      "relativePath": "博客停更通知.md",
+      "docPath": "source/_posts/yuque/"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "博客停更通知",
+      "uuid": "akvdLtcqcnwFkKdU",
+      "url": "sdg1g1g13bx1fmxd",
+      "prev_uuid": "",
+      "sibling_uuid": "SutvOQGHOpSPtw9r",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 168242518,
+      "level": 0,
+      "id": 168242518,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "前端字体压缩方案",
       "uuid": "SutvOQGHOpSPtw9r",
       "url": "yqmg9lxot8pvg9iw",
-      "prev_uuid": "",
+      "prev_uuid": "akvdLtcqcnwFkKdU",
       "sibling_uuid": "DJTIOK0vDLp4HeR5",
       "child_uuid": "",
       "parent_uuid": "",
