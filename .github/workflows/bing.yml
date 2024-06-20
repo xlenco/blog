@@ -1,0 +1,47 @@
+name: GET BING
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 1 * * *'  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - GetDataBase
+  # watch:
+  #   types: [started]
+
+jobs:
+  Crawler:
+    name: Crawler
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: 'Set up Python'
+        uses: actions/setup-python@v4
+        with:
+           python-version: 3.7
+
+      - name: 'Install requirements'
+        run: |
+          pip install -r ./tools/requirements.txt
+
+      - name: 'GET BING'
+        run: |
+          python ./tools/bing.py
+
+      - name: Commit ALL IN ONE files
+        run: |
+          git config --local user.email "1043865083@qq.com"
+          git config --local user.name "xlenco"
+          git add .
+          git commit -m "GitHub Actions Crawler ALL IN ONE at $(date +'%Y-%m-%d %H:%M:%S')"
+
+      - name: Push changes
+        uses:  ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+          branch: main

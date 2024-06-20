@@ -1,0 +1,86 @@
+# 自动化名称
+name: Deploy Yuque-Hexo Public To Pages
+
+# 当有语雀推送时触发action
+on: [push, repository_dispatch, workflow_dispatch]
+
+  
+# 设置环境
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+      YUQUE_USERNAME: ${{ secrets.YUQUE_USERNAME }}
+      YUQUE_PASSWORD: ${{ secrets.YUQUE_PASSWORD }}
+      YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
+      YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
+    
+    steps:
+      # check it to your workflow can access it
+      # from: https://github.com/actions/checkout
+      - name: Checkout Repository master branch
+        uses: actions/checkout@master
+
+      # from: https://github.com/actions/setup-node
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: 安装Hexo并使用elog
+        run: |
+          npm install -g pnpm
+          pnpm install hexo-cli -g
+          pnpm install
+          pnpm run elog      
+          hexo generate 
+      - name: 缓存 Hexo
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+
+      - name: 设置Git信息
+        run: |
+          git config --global user.name 'xlenco' 
+          git config --global user.email '1043865083@qq.com'      
+
+      - name: 提交yuque拉取的文章到GitHub仓库
+        run: |
+          git config --global user.email "1043865083@qq.com"
+          git config --global user.name "xlenco"
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
+          git add .
+          git commit -m "更新文档" -a
+
+      - name: 推送文章到仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+
+
+      - name: 部署到Github Pages       #此处master:master 指从本地的master分支提交到远程仓库的master分支，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
+        run: |
+          cd ./public
+          git init
+          git add .
+          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+          git push --force --quiet "https://${{ github.repository_owner }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ github.repository_owner }}/${{ github.repository_owner }}.github.io.git" master:master
+
+      - name: Build And Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUBTOKEN }} # Used for GitHub integrations (i.e. PR comments)
+          action: 'upload'
+          app_location: '/'
+          output_location: 'public'
+          app_build_command: 'npm run build '
