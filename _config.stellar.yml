@@ -198,9 +198,9 @@ search:
     path: /search.json # 搜索文件存放位置
     content: true # 是否搜索内容
   algolia_search: # Docsearch https://docsearch.algolia.com/apply/ 申请
-    appId: 
-    apiKey: 
-    indexName: 
+    appId: 366HZA3GVU
+    apiKey: e9e6c4d52115293e96a59b57e3aa78d9
+    indexName: xlenco
 
 
 ######## Comments ########
