@@ -3,7 +3,7 @@ title: 常用前端公共库CDN
 date: '2022/8/29 21:13'
 updated: '2023-1-13 20:02'
 tags: CDN
-categories: 笔记
+categories: 前端
 cover: 'https://xlenco.onmicrosoft.cn/img/OIP-C.jpg'
 abbrlink: '8606'
 ---
