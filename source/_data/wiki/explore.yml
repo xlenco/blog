@@ -1,7 +1,7 @@
 name: 探索
 title: 探索者的笔记本
 logo: 
-  icon: /assets/icon.svg
+  icon: /static/icon.svg
   title: '[${config.title}](/)'
   subtitle: '探索者的笔记本'
 

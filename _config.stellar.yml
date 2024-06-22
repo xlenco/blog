@@ -13,6 +13,12 @@ preconnect:
    - https://cdn.cbd.int
    - https://cdn.bootcdn.net
 
+inject:
+  head:
+    - <link rel="stylesheet" href="https://cdn.cbd.int/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    - <link rel="stylesheet" href="/static/patch.css">
+  script:
+
 open_graph:
   enable: true
   twitter_id: # for open_graph meta
@@ -48,7 +54,7 @@ menubar:
        theme: '#FA6400'
        icon: solar:planet-bold-duotone
        title: 探索
-       url: /explore/
+       url: /notes/
      - id: social
        theme: '#F44336'
        icon: solar:chat-square-like-bold-duotone
@@ -167,7 +173,7 @@ notebook:
 ######## Article ########
 article:
   # 文章类型，决定布局风格，可以在 front-matter/topic/wiki 中覆盖此参数
-  type: story # tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大
+  type: tech # tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大
   # 缩进两个文字宽度，适合文字类博客，可以在 front-matter/topic/wiki 中覆盖此参数
   indent: # true / false
   # 如果没有指定封面，是否根据 tags 作为关键词搜索封面图片？
@@ -532,11 +538,7 @@ plugins:
   # 使用 hexo-renderer-markdown-it-plus 作为公式渲染器：npm uninstall hexo-renderer-marked --save npm install hexo-renderer-markdown-it-plus --save
   katex:
     enable: #true # hexo-renderer-markdown-it-plus 默认开启 katex，此选项仅用于引入样式
-    inject:
-      head:
-        - <link rel="stylesheet" href="https://cdn.cbd.int/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
-        - <link rel="stylesheet" href="/static/patch.css">
-      script:
+
         
   
   # MathJax

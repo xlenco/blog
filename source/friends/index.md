@@ -4,7 +4,7 @@ title: 友链
 date: 2022-05-03 21:21:51
 ---
 
-{% friends api:https://raw.gitmirror.com/xlenco/blog-friends/output/v2/data.json %}
+{% friends api:https://github.moeyy.xyz/https://raw.githubusercontent.com/xlenco/blog-friends/output/v2/data.json %}
 
 {% box [2023-12] 友链失联了怎么办? %}
 添加友链后如果网站长期无法访问，可能会被取消友链！如果您的网站恢复了，可以在申请友链时创建的那条 [issue](https://github.com/xlenco/friends/issues) 中评论告知。
