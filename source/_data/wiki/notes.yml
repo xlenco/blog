@@ -1,0 +1,24 @@
+name: 备忘录
+title: 备忘录
+icon: # 列表页图标
+cover: # 封面页大图
+coverpage: [cover, title, description] # 封面页显示的内容
+
+comments:
+  service: giscus # 若你不适用默认的评论方式，需要添加此项
+  giscus: # 需要你在主题配置文件_config.stellar.yml中设置好giscus的其他参数，其他评论方式同理
+    'data-term': '23'
+    'data-mapping': number
+
+base_dir: /notes/
+tree:
+  '日常问题解决方案':
+    - mac
+  '移动端开发笔记':
+    - ios
+    - flutter
+  '前端学习笔记':
+    - nodejs
+    - server
+  '在线工具':
+    - json
