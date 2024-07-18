@@ -1,7 +1,6 @@
 ---
 title: 初遇Stellar
-cover: >-
-  https://cdn-ak.f.st-hatena.com/images/fotolife/x/xlenco/20240621/20240621184650.jpg
+cover: https://xlenco-img.s3.bitiful.net/i/2024/07/b05a8ffaf106fde9d177510e86838591.webp
 tags: Stellar
 categories: 杂项
 abbrlink: 83f7
