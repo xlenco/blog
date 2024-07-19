@@ -42,8 +42,15 @@ description: 介绍了为什么要用公共DNS，并列出了一些公共DNS服�
 - ECS：部分支持（DNS JSON API 支持 edns_client_subnet）
 
  http://www.alidns.com/
+ 
+ ## 字节跳动 TrafficRoute DNS
+字节跳动旗下火山引擎也提供了公共 DNS 服务 —— TrafficRoute DNS，目前只支持IPv4
 
-# 其他公共DNS
+`180.184.1.1`
+
+`180.184.2.2`
+
+
 
 ### 18Bit
 
