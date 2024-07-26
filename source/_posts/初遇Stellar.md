@@ -1,6 +1,6 @@
 ---
 title: 初遇Stellar
-cover: https://xlenco-img.s3.bitiful.net/i/2024/07/b05a8ffaf106fde9d177510e86838591.webp
+cover: https://9js9136l.cdn.imgeng.in/i/2024/07/b05a8ffaf106fde9d177510e86838591.webp
 tags: Stellar
 categories: 杂项
 abbrlink: 83f7
