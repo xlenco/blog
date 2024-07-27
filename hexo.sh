@@ -28,7 +28,7 @@ read answer
 
 if [ "$answer" = "1" ]; then
 printf "\033[32mINFO \033[0m 正在从Github拉取博客源码 ...\n"
-git clone -b master it@github.com:ccknbc-actions/blog-butterfly.git Blog
+git clone -b master it@github.com:xlenco/blog.git Blog
 cd Hexo
 printf "\033[32mINFO \033[0m Hexo恢复中...\n"
 npm install -g hexo-cli

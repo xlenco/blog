@@ -7,7 +7,7 @@ date: 2022-05-03 21:21:51
 {% friends api:https://github.moeyy.xyz/https://raw.githubusercontent.com/xlenco/blog-friends/output/v2/data.json %}
 
 {% box [2023-12] 友链失联了怎么办? %}
-添加友链后如果网站长期无法访问，可能会被取消友链！如果您的网站恢复了，可以在申请友链时创建的那条 [issue](https://github.com/xlenco/friends/issues) 中评论告知。
+添加友链后如果网站长期无法访问，可能会被取消友链！如果您的网站恢复了，可以在申请友链时创建的那条 [issue](https://github.com/xlenco/blog-friends/issues) 中评论告知。
 {% endbox %}
 
 
@@ -39,7 +39,7 @@ date: 2022-05-03 21:21:51
 新建 [GitHub Issue](https://github.com/xlenco/blog-friends/issues/) 按照模板格式填写并提交。
 
 为了提高图片加载速度，建议优化头像：
-1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `144px` 后下载。
+1. 打开 [压缩图](https://www.iloveimg.com/zh-cn/compress-image/) 上传自己的头像，将图片压缩后下载。
 2. 将压缩后的图片上传到稳定的图床并使用此图片链接作为头像。
 
 <!-- node 第二步：添加友链并等待管理员审核 -->
