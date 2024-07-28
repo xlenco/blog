@@ -261,7 +261,7 @@ comments:
   # https://twikoo.js.org/
   twikoo:
     js: https://cdn.cbd.int/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
-    envId: https://twikoo2.xlenco.top # vercel函数
+    envId: https://twikoo2.xlenco.top/.netlify/functions/twikoo # vercel函数
 
   # Waline
   # https://waline.js.org/
