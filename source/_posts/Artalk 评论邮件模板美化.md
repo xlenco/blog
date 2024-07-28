@@ -6,6 +6,7 @@ tags: Artalk
 categories: 美化
 cover: 'https://xlenco.onmicrosoft.cn/img/995c-826fc514f2aa.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672886621454'
 abbrlink: 2f16
+description: "这篇文章介绍了作者对Artalk默认邮箱通知模板进行美化的过程。首先，作者在`data/mail_tpl`文件夹中创建了`MAIL_TEMPLATE.html`文件，并提供了详细的HTML代码，包括样式和结构，使得邮件通知模板更加美观。接着，作者指导读者如何将Artalk后端邮件通知页面的模板文件指向新创建的`MAIL_TEMPLATE.html`。最后，作者提供了参考链接，并邀请读者在评论区提出建议或补充。"
 ---
 ## 前言
 

@@ -8,6 +8,7 @@ cover: 'https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascrip
 tags:
   - Hexo
 abbrlink: 77000
+description: "这篇文章介绍了GitHub Actions的概念和使用方式。GitHub Actions是一个持续集成和持续交付（CI/CD）平台，可以自动执行构建、测试和部署。文章详细描述了如何使用GitHub Actions进行自动化部署，包括通过HTTPS和SSH两种方式连接到GitHub仓库，并提供了具体的操作步骤和示例代码。HTTPS方式需要获取GitHub token并创建私有仓库，而SSH方式则需要生成公私钥对。文章还介绍了如何配置环境变量和查看部署情况，以及如何在GitHub仓库中设置Secrets和创建workflow文件。"
 ---
 ### Github Actions概念
 

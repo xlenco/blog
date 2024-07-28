@@ -2,12 +2,11 @@
 title: dns-prefetch、prefetch、preload、defer、async 字段的区别
 date: 2022-12-19T17:45:07.000Z
 updated: 2022-12-19T17:45:07.000Z
-categories:
-  - 前端
+categories: 前端
 cover: 'https://xlenco.onmicrosoft.cn/img/html.png?updatedAt=1665115851748'
-tags:
-  - HTML
+tags: HTML
 abbrlink: 593d
+description: "这篇文章介绍了几种HTML资源预加载技术，包括`dns-prefetch`用于预解析DNS，减少大型多域名网站的域名解析时间；`prefetch`用于预加载可能使用的资源，基于用户行为预测；`preload`用于加载当前页面需要的资源，具有高优先级；`preconnect`用于提前建立与第三方源的连接，减少安全连接建立的时间；以及`defer`和`async`用于异步加载脚本，其中`defer`保证脚本按顺序执行，而`async`则不保证顺序。这些技术有助于优化页面性能和提升用户体验。"
 ---
 ### 1、`dns-prefetch`
 

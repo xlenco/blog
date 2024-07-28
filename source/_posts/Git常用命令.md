@@ -8,6 +8,7 @@ cover: https://cdn-ak.f.st-hatena.com/images/fotolife/x/xlenco/20240621/20240621
 tags:
   - Git
 abbrlink: 1b99
+description: "这篇文章介绍了Git的常用命令，包括仓库操作、配置、文件增删、代码提交、分支管理、标签管理、信息查看、远程同步、撤销操作以及Hexo的相关命令，为Git使用者提供了一份全面的命令参考。"
 ---
 ## 仓库
 
