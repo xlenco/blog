@@ -3,10 +3,8 @@ title: Hexo｜博客搭建指南
 date: '2022-8-28 16:12'
 updated: '2022-8-28 20:12'
 cover: 'https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157'
-tags:
-  - Hexo
-categories:
-  - 教程
+tags: Hexo
+categories: 教程
 abbrlink: 5b4d
 description: "这篇文章介绍了作者搭建个人博客的全过程。首先，作者介绍了环境部署，包括安装Node.js、Git、注册Github账号，并更换NPM镜像源。接着，作者详细说明了如何安装Hexo并初始化博客，包括安装hexo-cli、创建博客文件夹、生成页面和启动预览服务。此外，还介绍了如何将本地博客推送到Github，包括配置个人信息、生成SSH密钥、修改配置文件和使用hexo-deployer-git插件。文章还提供了Hexo的基本命令和进阶操作，如新建文章和页面、更换主题以及推荐使用的编辑器。最后，作者强调了Markdown的重要性，并提供了文章头部的示例。整体而言，这是一篇详尽的个人博客搭建教程。"
 ---

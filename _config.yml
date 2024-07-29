@@ -170,22 +170,11 @@ minify:
       - '*.json'
       - '!*.min.json'
 
-aiexcerpt:
-  default_enable: false
-  custom: true
-  api: https://api.moonshot.cn/v1/chat/completions
-  token: sk-HCBoboDSz85MoOhWjztWX5fQ7AF1BlB2Ihqs5vg67VmVE2xw
-  model: moonshot-v1-8k
-  prompt: '你是一个摘要生成工具，你需要解释我发送给你的内容，不要换行，不要超过200字，只需要介绍文章的内容，不需要提出建议和缺少的东西。请用中文回答，输出的内容开头为“ai: 这篇文章介绍了”'
-  ignoreEl: [
-    'table', 'pre', 'figure'
-  ]
-  max_token: 2000,
 
 
-  excerpt:
+excerpt:
   enable: true # 是否启用，默认为 true
-  title: 'Xlenco与kimi混合摘要' # 标题，默认为 '作者名+导读'
+  title: '希乐摘要' # 标题，默认为 '作者名+导读'
   caret: '_' # 打字动画光标，默认为 '⬤'
   cps: 20 # 每秒打字速度，默认为 20
 
