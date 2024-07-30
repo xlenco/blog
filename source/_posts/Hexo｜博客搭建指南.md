@@ -4,10 +4,11 @@ date: '2022-8-28 16:12'
 updated: '2022-8-28 20:12'
 cover: 'https://xlenco.onmicrosoft.cn/img/20200715201402.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1663987678157'
 tags: Hexo
-categories: 教程
+categories: 经验分享
 abbrlink: 5b4d
-description: "这篇文章介绍了作者搭建个人博客Hexo的全过程。
+description: 这篇文章介绍了作者搭建个人博客Hexo的全过程。
 ---
+
 ## 1. 引言
 
 不知不觉，我的博客已经在风雨飘摇中运行了一段时间了，我觉得有必要详细记录一下博客搭建的过程，以防我不小心搞崩了博客…

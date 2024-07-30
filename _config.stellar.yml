@@ -191,7 +191,7 @@ article:
   auto_excerpt: 128
   # 分类颜色
   category_color:
-    '探索号': '#f44336'
+    '经验分享': '#3af'
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享
@@ -337,7 +337,7 @@ footer:
     #   onclick: 'switchTheme()'
   sitemap:
      '博客':
-    #   - '[近期](/)'
+       - '[近期](/)'
        - '[分类](/categories)'
        - '[标签](/tags)'
        - '[归档](/archives)'
@@ -349,6 +349,7 @@ footer:
     #   - '[留言板](/)'
      '更多':
        - '[关于本站](/about)'
+       - '[图库](/gallery)'
        - '[GitHub](https://github.com/xlenco)'
   content: | # 支持 Markdown 格式
     <span id="jinrishici-sentence">正在加载今日诗词....</span>

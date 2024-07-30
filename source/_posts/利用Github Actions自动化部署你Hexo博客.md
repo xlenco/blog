@@ -2,7 +2,7 @@
 title: 利用Github Actions自动化部署你Hexo博客
 date: 2022-08-25T22:01:13.000Z
 updated: '2022-12-9 14:15'
-categories: 教程
+categories: 经验分享
 cover: 'https://xlenco.onmicrosoft.cn/img/7bf185e5.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1670556758388'
 tags: Hexo
 abbrlink: 77000

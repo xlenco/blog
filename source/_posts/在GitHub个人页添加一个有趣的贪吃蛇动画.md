@@ -2,7 +2,7 @@
 title: 在GitHub个人页添加一个有趣的贪吃蛇动画
 date: '2022-07-28 12:07:51'
 updated: '2022-07-29 14:59:10'
-categories: 教程
+categories: 经验分享
 cover: 'https://xlenco.onmicrosoft.cn/i/HmAbK__0PQdqS0-.webp'
 tags: Github
 abbrlink: ce95

@@ -2,7 +2,7 @@
 title: 初遇Stellar
 cover: https://9js9136l.cdn.imgeng.in/i/2024/07/b05a8ffaf106fde9d177510e86838591.webp
 tags: Stellar
-categories: 杂项
+categories: 经验分享
 abbrlink: 83f7
 date: 2024-06-21 17:18:02
 description: "这篇文章介绍了作者最近更换了Hexo博客的主题为Stellar，在安装过程中遇到了一些依赖模块找不到的错误，通过安装相应的包解决了问题。目前作者正在研究如何对Stellar主题进行个性化设置。"

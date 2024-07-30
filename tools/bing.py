@@ -13,8 +13,7 @@ print(time)
 f = open(os.path.join("source", "gallery", "bing", "index.md"), "w")
 f.write("""---
 title: Bing 壁纸 每日更新
-top_img: https://bing.icodeq.com
-aside: false
+top_img: https://dailybing.com/api/v1
 date: {}
 ---
 > If the date you see is 2 days ago, press `Ctrl + F5` to force a refresh, Maybe because I have `workbox` enabled.
