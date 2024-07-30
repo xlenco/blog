@@ -6,6 +6,7 @@ categories: 教程
 cover: 'https://xlenco.onmicrosoft.cn/i/HmAbK__0PQdqS0-.webp'
 tags: Github
 abbrlink: ce95
+description: 在GitHub个人页添加一个有趣的贪吃蛇动画
 ---
 这是我之前在逛 GitHub 发现的有意思的东西，给自己的个人 GitHub 主页添加一个贪吃蛇动画，效果如下：
 ![](https://xlenco.onmicrosoft.cn/i/a1ebe329-c070-4ba4-a43a-ffb0ebf92d39_QNF0TQPaX.gif?updatedAt=1700639914512#id=cx9Ja&originHeight=206&originWidth=880&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)

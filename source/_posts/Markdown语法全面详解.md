@@ -6,7 +6,7 @@ abbrlink: 3b89
 categories: 笔记
 cover: 'https://xlenco.onmicrosoft.cn/i/HmbWI.webp'
 tags: Markdown
-description: "这篇文章介绍了Markdown的语法和使用技巧，包括常用快捷键、基本语法（如字体设置、标题、链接、代码块、分割线、强调、引用、列表、表格等）、脚注、特殊符号的插入方法以及HTML元素的使用。文章通过示例代码和输出效果，详细解释了Markdown的多种功能，旨在帮助用户更好地利用Markdown进行文档编写和格式化。"
+description: "这篇文章介绍了Markdown的语法和使用技巧,旨在帮助用户更好地利用Markdown进行文档编写和格式化。"
 ---
 # Markdown 语法全面详解
 

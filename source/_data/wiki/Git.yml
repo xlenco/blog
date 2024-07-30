@@ -1,0 +1,28 @@
+name: Git
+title: Git - 一款开源源的分布式版本控制系统
+subtitle: # 项目中和主页相似的两个副标题
+tags: 知识库
+cover: https://9js9136l.cdn.imgeng.in/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 封面页大图
+icon: https://9js9136l.cdn.imgeng.in/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 列表页图标
+# coverpage: [logo, description]
+coverpage: true # 默认是 true
+description: Git 是目前世界上最先进的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+# repo: xaoxuu/hexo-theme-stellar
+sidebar: 
+  - search:
+    override: search
+    filter: /wiki/git/
+    placeholder: '在 git 中搜索...'
+  - toc
+  # - timeline_stellar_releases
+  - related
+# comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
+# comments:
+#   service: giscus
+#   giscus:
+#     data-repo: xaoxuu/hexo-theme-stellar
+#     data-mapping: number
+#     data-term: 226
+path: /wiki/git/
+
+   

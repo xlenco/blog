@@ -6,7 +6,7 @@ tags: CloudFlare
 categories: 杂项
 cover: 'https://xlenco.onmicrosoft.cn/img/58b09af1c36188c1568b4616.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1664702176250'
 abbrlink: cf-works
-description: "这篇文章介绍了多个基于Cloudflare Workers的开源项目，包括网盘目录管理工具如Goindex修改版、GDindex和OneDrive Index；代理工具如jsproxy、Workers-Proxy和gh-proxy；个人博客系统和导航网站的构建方法；以及一些其他工具，例如创建分享谷歌团队盘的脚本、短网址转换工具、Telegram Bot部署教程和网站状态监控方法。这些项目利用Cloudflare Workers的边缘计算能力，实现无需服务器的动态内容分发和功能服务。"
+description: "这篇文章介绍了多个基于Cloudflare Workers的开源项目。"
 ---
 
 
