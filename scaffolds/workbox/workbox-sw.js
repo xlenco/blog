@@ -1,4 +1,4 @@
-importScripts("https://npm.elemecdn.com/workbox-sw/build/workbox-sw.js");
+importScripts("https://cdn.jsdmirror.com/npm/workbox-sw/build/workbox-sw.js");
 
 // 提示
 if (workbox) {
@@ -160,6 +160,12 @@ const Offline = new workbox.routing.Route(
     })
 );
 workbox.routing.registerRoute(Offline);
+
+// busuanzi 请求走网络不缓存
+workbox.routing.registerRoute(
+    ({ url }) => String(url).includes('busuanzi?') || String(url).includes('busuanzi='),
+    new workbox.strategies.NetworkOnly()
+);
 
 // 缓存静态资源
 workbox.routing.registerRoute(

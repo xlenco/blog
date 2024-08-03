@@ -2,7 +2,7 @@ const workboxBuild = require('workbox-build');
 const { minify } = require('terser');
 const fs = require('hexo-fs');
 
-hexo.on("deployBefore", async function () {
+hexo.on("generateBefore", async function () {
     const buildSW = async () => {
         try {
             const { count, size, warnings } = await workboxBuild.injectManifest({

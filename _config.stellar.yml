@@ -10,19 +10,20 @@ stellar:
 ######## head tags ########
 preconnect:
   # - https://gcore.jsdelivr.net
-   - https://npm.elemecdn.com
+   - https://cdn.jsdmirror.com/npm
    - https://cdn.bootcdn.net
    - https://cdn-ak.f.st-hatena.com
 
 inject:
   head:
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    - <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
     - <link rel="stylesheet" href="/assets/patch.css">
     - <link rel="stylesheet" href="/assets/patch-leftbar.css">
     - <link rel="stylesheet" href="/assets/patch-twikoo.css">
     - <link rel="stylesheet" href="/assets/custom.css">
     - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreenr.css" media="print" onload="this.media='all'">
   script:
+    - <script src="/sw.js"></script>
 
 open_graph:
   enable: true
@@ -262,15 +263,15 @@ comments:
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
-    js: https://npm.elemecdn.com/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
+    js: https://cdn.jsdmirror.com/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://twikoo2.xlenco.top/.netlify/functions/twikoo # vercel函数
 
   # Waline
   # https://waline.js.org/
   waline:
-    js: https://npm.elemecdn.com/@waline/client@3.1.3/dist/waline.js
-    css: https://npm.elemecdn.com/@waline/client@3.1.3/dist/waline.css
-    meta_css: https://npm.elemecdn.com/@waline/client@3.1.3/dist/waline-meta.css
+    js: https://cdn.jsdmirror.com/npm/@waline/client@3.1.3/dist/waline.js
+    css: https://cdn.jsdmirror.com/npm/@waline/client@3.1.3/dist/waline.css
+    meta_css: https://cdn.jsdmirror.com/npm/@waline/client@3.1.3/dist/waline-meta.css
     # Waline server address url, you should set this to your own link
     serverURL: https://waline.vercel.app
     # If false, comment count will only be displayed in post page, not in home page
@@ -279,13 +280,13 @@ comments:
     pageview: false
     # Custom emoji
     # emoji:
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/alus
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/qq
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/tieba
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/tw-emoji
-    #   - https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/weibo
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/alus
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/bilibili
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/qq
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/tieba
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/tw-emoji
+    #   - https://cdn.jsdmirror.com/npm/@waline/emojis@1.1.0/bmoji
     # 设置自己的图床服务，替换默认的 Base 64 编码嵌入（有体积大小限制），在评论中上传图片更加方便
     # imageUploader:
       # 适配了兰空图床V1、V2版本
@@ -310,8 +311,8 @@ comments:
   # Artalk
   # https://artalk.js.org/
   artalk:
-    css: https://npm.elemecdn.com/artalk@2.8.5/dist/Artalk.css
-    js: https://npm.elemecdn.com/artalk@2.8.5/dist/Artalk.js
+    css: https://cdn.jsdmirror.com/npm/artalk@2.8.5/dist/Artalk.css
+    js: https://cdn.jsdmirror.com/npm/artalk@2.8.5/dist/Artalk.js
     server: # 后端服务地址
     placeholder: ''
     darkMode: auto
@@ -507,8 +508,8 @@ plugins:
   # swiper
   swiper:
     enable: true
-    css: https://npm.elemecdn.com/swiper@10.3.1/swiper-bundle.min.css
-    js: https://npm.elemecdn.com/swiper@10.3.1/swiper-bundle.min.js
+    css: https://cdn.jsdmirror.com/npm/swiper@10.3.1/swiper-bundle.min.css
+    js: https://cdn.jsdmirror.com/npm/swiper@10.3.1/swiper-bundle.min.js
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
@@ -567,8 +568,8 @@ plugins:
   mermaid:
     enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
     style_optimization: false # use custom style in stellar
-    # js: https://npm.elemecdn.com/mermaid@9.0.0/dist/mermaid.min.js
-    js: https://npm.elemecdn.com/mermaid@v9/dist/mermaid.min.js
+    # js: https://cdn.jsdmirror.com/npm/mermaid@9.0.0/dist/mermaid.min.js
+    js: https://cdn.jsdmirror.com/npm/mermaid@v9/dist/mermaid.min.js
     # Available themes: default | dark | forest | neutral
     theme: neutral
   
@@ -583,8 +584,8 @@ plugins:
   # https://github.com/sivan/heti
   heti:
     enable: false # 此插件会和代码块冲突，仅适用于纯中文博主。
-    css: https://npm.elemecdn.com/heti@0.9.2/umd/heti.min.css
-    js: https://npm.elemecdn.com/heti@0.9.2/umd/heti-addon.min.js
+    css: https://cdn.jsdmirror.com/npm/heti@0.9.2/umd/heti.min.css
+    js: https://cdn.jsdmirror.com/npm/heti@0.9.2/umd/heti-addon.min.js
 
 
 
