@@ -263,7 +263,7 @@ comments:
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
-    js: https://cdn.jsdmirror.com/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
+    js: https://cdn.jsdmirror.com/npm/twikoo@1.6.38/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://twikoo2.xlenco.top/.netlify/functions/twikoo # vercel函数
 
   # Waline
