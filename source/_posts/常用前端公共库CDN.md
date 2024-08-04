@@ -39,7 +39,7 @@ Ps：微软出品，自然不会太差。虽然在国外，速度依然不会太
 ## Staticfile CDN
 
 像 Google Ajax Library，Microsoft ASP.net CDN，SAE，Baidu，Upyun 等 CDN 上都免费提供的 JS 库的存储，但使用起来却都有些局限，因为他们只提供了部分 JS 库。但七牛云存储提供一个尽可能全面收录优秀开源库的仓库，并免费提供 CDN 加速服务。
-官网：[http://www.staticfile.org/](http://www.asp.net/ajaxlibrary/cdn.ashx)
+官网：[https://www.staticfile.org/](http://www.staticfile.org)
 
 ## 字节跳动静态资源公共库
 
@@ -92,7 +92,3 @@ unpkg是一个内容源自npm的全球快速CDN。
 
 - [https://lib.baomitu.com/](https://lib.baomitu.com/)
 
-## 字节跳动CDN
-由国内字节跳动公司所出品的公共库，同步 cdnjs.com，但有时候可能针对部分库未及时更新到最新版本，需要注意这一点，否则在使用时可能会导致一些莫名的错误。
-
-- [https://cdn.bytedance.com/](https://cdn.bytedance.com/)

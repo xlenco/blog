@@ -27,7 +27,7 @@ date: 2022-05-03 21:21:51
 2. 提高了「有效互动」的定义：5次更改为半年。
 {% endbox %}
 
-{% folding 我已满足全部条件，快告诉我如何交换友链！<img no-lazy style="display:inline;height:1em" src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"> %}
+{% folding 我已满足全部条件，快告诉我如何交换友链！<img no-lazy style="display:inline;height:1em" src="https://cdn.jsdmirror.com/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"> %}
 
 {% note color:warning 如果您没有满足上述条件，即使提交了申请也不会通过哦～ %}
 

@@ -21,9 +21,9 @@ inject:
     - <link rel="stylesheet" href="/assets/patch-leftbar.css">
     - <link rel="stylesheet" href="/assets/patch-twikoo.css">
     - <link rel="stylesheet" href="/assets/custom.css">
-    - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreenr.css" media="print" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreenr.css" media="print" onload="this.media='all'">
   script:
-    - <script src="/sw.js"></script>
+
 
 open_graph:
   enable: true
@@ -437,8 +437,8 @@ tag_plugins:
 
 # 基础依赖
 dependencies:
-  jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js
-  marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+  jquery: https://cdn.jsdmirror.com/npm/jquery@3.7.1
+  marked: https://cdn.jsdmirror.com/npm/marked@4.0.18/marked.min.js
 
 
 # 内置服务，按需加载（页面内用到了就会加载，没有用到就不会加载）
@@ -489,7 +489,7 @@ plugins:
   # https://www.npmjs.com/package/vanilla-lazyload
   lazyload:
     enable: true # [hexo clean && hexo s] is required after changing this value.
-    js: https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js
+    js: https://cdn.jsdmirror.com/npm/vanilla-lazyload@17.8.4
     transition: fade # blur, fade
 
   # https://fancyapps.com/docs/ui/fancybox/
