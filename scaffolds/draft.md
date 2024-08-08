@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
-tags:  []
-categories: []
+tags:  
+categories: 
 cover: 
 description: 
 ---

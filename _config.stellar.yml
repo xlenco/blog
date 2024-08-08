@@ -11,7 +11,7 @@ stellar:
 preconnect:
   # - https://gcore.jsdelivr.net
    - https://cdn.jsdmirror.com/npm
-   - https://cdn.bootcdn.net
+   - https://s4.zstatic.net
    - https://cdn-ak.f.st-hatena.com
 
 inject:
@@ -483,7 +483,7 @@ plugins:
   preload:
     enable: true
     service: flying_pages # flying_pages
-    flying_pages: https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js
+    flying_pages: https://s4.zstatic.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js
 
   # lazyload
   # https://www.npmjs.com/package/vanilla-lazyload
@@ -497,8 +497,8 @@ plugins:
   fancybox:
     enable: true
     loader: /js/plugins/fancybox-loader.js
-    js: https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js
-    css: https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css
+    js: https://s4.zstatic.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js
+    css: https://s4.zstatic.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css
     # 让 md 语法图片支持放大可以这样写: .md-text img:not([class]), .md-text .image img
     # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
     # 使用 twikoo 评论可以写: .tk-content img:not([class*="emo"])
@@ -514,7 +514,7 @@ plugins:
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
     enable: #true
-    js: https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js
+    js: https://s4.zstatic.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js
     distance: 16px
     duration: 800 # ms
     interval: 100 # ms
