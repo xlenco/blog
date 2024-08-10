@@ -16,9 +16,10 @@ echo "[3] Hexo 三连 后调试"
 echo "[4] 升级 Hexo 及插件"
 echo "[5] 升级 Butterfly 主题"
 echo "[6] 升级 Anzhiyu 主题"
-echo "[7] 从远程仓库拉取最新版本"
+echo "[7] 升级 Stellar 主题"
 echo "[8] 提交本地修改到远程仓库"
-echo "[9] 拉取语雀最新文章"
+echo "[9] 从远程仓库拉取最新版本"
+
 
 echo " "
 printf "请选择需要的功能，默认选择 [2] 开启本地预览"
@@ -105,16 +106,31 @@ exec ${HexoPath}/hexo.sh
 else
 if [ "$answer" = "6" ]; then
 printf "\033[32mINFO \033[0m 正在升级 Anzhiyu 主题...\n"
-npm update hexo-theme-anzhiyu
+cd themes/anzhiyu
+printf "\033[32mINFO \033[0m 正在提交主题修改项至暂存区 ...\n"
+git add -A
+printf "\033[32mINFO \033[0m 提交一个 Commit！\n"
+git commit -m "Update Hexo Theme Stellar DEV"
+printf "\033[32mINFO \033[0m 正在从远程拉取合并主题 dev 分支更新 ...\n"
+printf "\033[32mINFO \033[0m 若自动打开编辑器进度暂停，请关闭编辑器以继续...\n"
+git pull upstream main --allow-unrelated-histories
 printf "\033[32mINFO \033[0m 升级完成，感谢您对 Anzhiyu 的支持！\n"
 exec ${HexoPath}/hexo.sh
 
 else
 if [ "$answer" = "7" ]; then
-printf "\033[32mINFO \033[0m 正在从远程仓库拉取最新版本...\n"
-git pull origin master
-printf "\033[32mINFO \033[0m 拉取完毕，您的博客已是最新版本！\n"
+cd themes/stellar
+printf "\033[32mINFO \033[0m 正在提交主题修改项至暂存区 ...\n"
+git add -A
+printf "\033[32mINFO \033[0m 提交一个 Commit！\n"
+git commit -m "Update Hexo Theme Stellar DEV"
+printf "\033[32mINFO \033[0m 正在从远程拉取合并主题 dev 分支更新 ...\n"
+printf "\033[32mINFO \033[0m 若自动打开编辑器进度暂停，请关闭编辑器以继续...\n"
+git pull upstream main --allow-unrelated-histories
+printf "\033[32mINFO \033[0m 升级完成，感谢您对 Stellar 的支持！\n"
 sleep 1s
+printf "\033[32mINFO \033[0m 若自动合并失败，请手动合并含有冲突未合并的文件！\n"
+sleep 3s
 exec ${HexoPath}/hexo.sh
 
 else
@@ -123,17 +139,17 @@ printf "\033[32mINFO \033[0m 正在删除本地缓存...\n"
 hexo clean
 printf "\033[32mINFO \033[0m 正在提交最新修改到远程仓库...\n"
 git add .
-git commit -m "Update By CC Locally"
-git push origin master -f
+git commit -m "Update By Xlenco"
+git push origin main -f
 printf "\033[32mINFO \033[0m 提交完毕，您的修改已上传至远程仓库！\n"
 sleep 1s
 exec ${HexoPath}/hexo.sh
 
 else
-if [ "$answer" = "9" ]; then
-printf "\033[32mINFO \033[0m 正在拉取语雀最新文章 ...\n"
-npm run local:yuque-token
-printf "\033[32mINFO \033[0m 语雀最新文章拉取完毕，您可以开始预览！\n"
+if [ "$answer" = "8" ]; then
+printf "\033[32mINFO \033[0m 正在获取最新版本...\n"
+git pull origin main
+printf "\033[32mINFO \033[0m 最新版本已拉取，请查看当前版本！\n"
 sleep 1s
 exec ${HexoPath}/hexo.sh
 

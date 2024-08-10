@@ -1,5 +1,5 @@
 ---
-title: beatless（蕾西亚）
+title: Beatless（蕾西亚）
 date: 2023-2-4 10:02:35
 top_img: https://upload-bbs.miyoushe.com/upload/2023/02/04/283684029/a025b2099e51d331058acd189920b953_4962541124273897419.jpg
 ---

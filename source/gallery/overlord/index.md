@@ -1,5 +1,5 @@
 ---
-title: overlord（不死者之王）
+title: Overlord（不死者之王）
 date: 2023-1-4 14:02:35
 top_img: https://kjimg10.360buyimg.com/ott/jfs/t1/76414/18/23107/38811/63ddc49cF0f4b3660/48a749b8ab5872b6.jpg
 ---
