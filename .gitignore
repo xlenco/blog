@@ -7,5 +7,5 @@ public/
 .deploy*/
 .deploy_git*/
 .idea
-excerpt.js
 .git/
+themes/stellar/.git/
