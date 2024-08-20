@@ -18,5 +18,3 @@ aside: false
 
 
 
-## 其他
-[![nya](https://nsso.eu.org/Wallpaper/nya/17699ec4-dae8-4ae1-96bb-d101ad58b783.jpeg "nya")](/gallery/nya)
