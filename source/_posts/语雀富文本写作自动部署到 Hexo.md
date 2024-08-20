@@ -2,7 +2,7 @@
 title: 语雀富文本写作自动部署到 Hexo
 date: 2024-2-16
 updated: 2024-2-17
-cover: https://9js9136l.cdn.imgeng.in/i/2024/07/42548dfb0383fadd60129e3cecee81ca.webp
+cover: https://xlenco-img.s3.bitiful.net/i/2024/07/42548dfb0383fadd60129e3cecee81ca.webp
 tags: [Markdown,Hexo]
 categories: 经验分享
 abbrlink: '1420'
@@ -15,14 +15,14 @@ abbrlink: '1420'
 
 ## 迁移博客文章到语雀
 打开[语雀](https://yuque.com)官网进入首页，点击左上角加号
-![PixPin_2024-02-17_17-28-36.png](https://9js9136l.cdn.imgeng.in/i/2024/07/4eb29d3ff45225d0982048ba97aab6d7.png)
+![PixPin_2024-02-17_17-28-36.png](https://xlenco-img.s3.bitiful.net/i/2024/07/4eb29d3ff45225d0982048ba97aab6d7.png)
 
 其次点击`导入`
-![PixPin_2024-02-17_17-28-52.png](https://9js9136l.cdn.imgeng.in/i/2024/07/8b176973aeea1218327194732f398dc7.png)
+![PixPin_2024-02-17_17-28-52.png](https://xlenco-img.s3.bitiful.net/i/2024/07/8b176973aeea1218327194732f398dc7.png)
 然后选择`markdown`格式
-![PixPin_2024-02-17_17-29-40.png](https://9js9136l.cdn.imgeng.in/i/2024/07/fd2b128d1884bb097c485d2fa071e5f4.png)
+![PixPin_2024-02-17_17-29-40.png](https://xlenco-img.s3.bitiful.net/i/2024/07/fd2b128d1884bb097c485d2fa071e5f4.png)
 最后在markdown导入配置中选择`markdown打包后的压缩文件`
-![PixPin_2024-02-17_17-30-08.png](https://9js9136l.cdn.imgeng.in/i/2024/07/9a8610f4b02857aefbb07e3b36c5fb29.png)
+![PixPin_2024-02-17_17-30-08.png](https://xlenco-img.s3.bitiful.net/i/2024/07/9a8610f4b02857aefbb07e3b36c5fb29.png)
 导入完成后文件的Front-matter有点乱建议自己手动更改下
 
 ## 安装 Elog
@@ -240,7 +240,7 @@ elog sync -e .elog.env
 
 ## 自动化流程
 **语雀 + webhooks + serverless api + GitHub Actions + Github Pages 持续集成**
-![93e5eae8d73452e3043e9845b627be8d.png](https://9js9136l.cdn.imgeng.in/i/2024/07/bdd97c1f3e789b42faa002ead006f04e.png)这里引用官方文档的内容
+![93e5eae8d73452e3043e9845b627be8d.png](https://xlenco-img.s3.bitiful.net/i/2024/07/bdd97c1f3e789b42faa002ead006f04e.png)这里引用官方文档的内容
 #### 
 
 #### Github Actions
@@ -344,7 +344,7 @@ https://serverless-api-elog.vercel.app/api/github?user=xxx&repo=xxx&event_type=x
 令人遗憾的是，语雀将 webhooks 收费了
 未开通会员的语雀小伙伴可直接手动调用API触发Github Actions进行自动化构建&部署
 知识库配置了「自动发布」功能后，文档的 更新/发布 操作暂不会发送 webhooks
-![image.png](https://9js9136l.cdn.imgeng.in/i/2024/07/6f6d5aaeddf506c8ff4e4241a22dca84.png)
+![image.png](https://xlenco-img.s3.bitiful.net/i/2024/07/6f6d5aaeddf506c8ff4e4241a22dca84.png)
 ## 参考
 
 - [Elog Dose](https://elog.1874.cool/)

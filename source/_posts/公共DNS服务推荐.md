@@ -4,7 +4,7 @@ tags:
   - DNS
 categories:
   - 杂项
-cover: 'https://9js9136l.cdn.imgeng.in/i/2024/07/f3d64c69109b8aea5dff3569dc2bb92c.webp'
+cover: 'https://xlenco-img.s3.bitiful.net/i/2024/07/f3d64c69109b8aea5dff3569dc2bb92c.webp'
 description: 介绍了为什么要用公共DNS，并列出了一些公共DNS服务
 abbrlink: '3644'
 date: 2024-07-18 17:58:09

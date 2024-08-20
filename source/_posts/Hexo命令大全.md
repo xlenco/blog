@@ -2,7 +2,7 @@
 title: Hexo命令大全
 tags: Hexo
 categories: 经验分享
-cover: 'https://9js9136l.cdn.imgeng.in/i/2024/08/98b63cee49fe68d125afc2b2e15f4a8c.webp'
+cover: 'https://xlenco-img.s3.bitiful.net/i/2024/08/98b63cee49fe68d125afc2b2e15f4a8c.webp'
 description: 这篇文章将介绍Hexo常用的命令，以便日后查阅
 abbrlink: 63fd
 date: 2024-08-10 09:57:04

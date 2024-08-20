@@ -2,7 +2,7 @@
 title: Obislian介绍以及使用指南
 tags: Obislian
 categories: [利器]
-cover: https://9js9136l.cdn.imgeng.in/i/2024/07/c28df28f6d158e08d39b9f5ad416eb74.webp
+cover: https://xlenco-img.s3.bitiful.net/i/2024/07/c28df28f6d158e08d39b9f5ad416eb74.webp
 description: 介绍什么是Obsidian，并对它的使用方法进行说明。
 ---
 

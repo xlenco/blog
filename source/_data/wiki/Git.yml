@@ -2,8 +2,8 @@ name: Git
 title: Git - 一款开源源的分布式版本控制系统
 subtitle: # 项目中和主页相似的两个副标题
 tags: 知识库
-cover: https://9js9136l.cdn.imgeng.in/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 封面页大图
-icon: https://9js9136l.cdn.imgeng.in/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 列表页图标
+cover: https://xlenco-img.s3.bitiful.net/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 封面页大图
+icon: https://xlenco-img.s3.bitiful.net/i/2024/07/86e058ce42fed9ac252cb472e5a4d6d3.svg	# 列表页图标
 # coverpage: [logo, description]
 coverpage: true # 默认是 true
 description: Git 是目前世界上最先进的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
