@@ -9,3 +9,5 @@ public/
 .idea
 .git/
 themes/stellar/.git/
+.obsidian*/
+.trash*/
