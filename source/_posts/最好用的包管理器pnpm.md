@@ -94,3 +94,29 @@ pnpm set registry https://registry.npmmirror.com
 pnpm 的大部分用法和npm相同，可能有些差异，如果在使用过程遇到了什么问题可以阅读
 
 [pnpm CLI | pnpm中文文档 | pnpm中文网](https://www.pnpm.cn/pnpm-cli)
+## 建议配置
+### 配置PNPM全局安装路径
+```
+# 允许设置全局安装包的 bin 文件的目标目录。
+pnpm config set global-bin-dir "E:\pnpm-store"
+# 包元数据缓存的位置。
+pnpm config set cache-dir "E:\pnpm-store\pnpm-cache"
+# pnpm 创建的当前仅由更新检查器使用的 pnpm-state.json 文件的目录。
+pnpm config set state-dir "E:\pnpm-store\pnpm-state"
+# 指定储存全局依赖的目录。
+pnpm config set global-dir "E:\pnpm-store\global"
+# 所有包被保存在磁盘上的位置。
+#（可选，以下这条命令可以选择不执行也是OK的）
+pnpm config set store-dir "E:\pnpm-store\pnpm-store"
+
+```
+### 纸鹿大佬的建议 
+@[纸鹿 (@L33Z22L11)](https://zhilu.cyou)
+使用 npm 安装 pnpm 后，建议重新通过 pnpm 安装 pnpm，再将 npm 安装的 pnpm 卸载掉。
+
+```sh
+npm install -g pnpm
+pnpm setup
+pnpm add -g pnpm
+npm remove -g npm
+```
