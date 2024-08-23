@@ -1,8 +1,9 @@
 ---
 title: Hexo命令大全
-tags: Hexo
+tags:
+  - Hexo
 categories: 经验分享
-cover: 'https://xlenco-img.s3.bitiful.net/i/2024/08/98b63cee49fe68d125afc2b2e15f4a8c.webp'
+cover: https://xlenco-img.s3.bitiful.net/i/2024/08/e732e7c73cdc0d7d0b8642176af34d6b.webp
 description: 这篇文章将介绍Hexo常用的命令，以便日后查阅
 abbrlink: 63fd
 date: 2024-08-10 09:57:04
