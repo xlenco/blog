@@ -1,10 +1,12 @@
 ---
 title: 无需Root玩机工具Shizuku
-date: 2024-08-21 17:57:18
 tags: Shizuku
 categories: 利器
-cover: https://xlenco-img.s3.bitiful.net/i/2024/08/a66d0a6348093d1a6d5d89c136464772.webp
+cover: >-
+  https://xlenco-img.s3.bitiful.net/i/2024/08/a66d0a6348093d1a6d5d89c136464772.webp
 description: 这篇文章介绍了一款无需Root即可拥有大部分玩机体验的工具Root，并且附上了一些支持Shizuku的工具
+abbrlink: 4c3
+date: 2024-08-21 17:57:18
 ---
 
 什么是ROOT？ 简单来说，ROOT就是获取根权限，比如Window有两种类型的使用者，一个是Administrator（管理员），另一个是User（普通用户）。管理员要比普通用户有更高的权限，可以对系统执行更多的操作。 在我们拿到一部安卓手机时，我们往往对此手机只有作为普通用户的使用权限，而在ROOT后，我们就能获取手机的根权限，从而对手机系统做更多操作，这就是ROOT的原因。

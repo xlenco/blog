@@ -65,7 +65,7 @@ menubar:
        theme: '#F44336'
        icon: solar:chat-square-like-bold-duotone
        title: 社交
-       url: /friends/
+       url: /link/
 
 
 ######## Main ########
@@ -83,7 +83,7 @@ site_tree:
     leftbar: welcome, recent # for categories/tags/archives
     rightbar: 
     nav_tabs:  # 近期发布 分类 标签 专栏 归档 and ...
-      # '朋友文章': /friends/rss/
+      # '朋友文章': /link/rss/
   # 博客专栏列表页配置
   index_topic:
     base_dir: topic # 只影响自动生成的页面路径
@@ -345,7 +345,7 @@ footer:
     # '项目':
     #   - '[开源库](/)'
      '社交':
-       - '[友链](/friends)'
+       - '[友链](/link)'
        - '[开往](https://www.travellings.cn/go-by-clouds.html)'
     #   - '[留言板](/)'
      '更多':
@@ -457,8 +457,8 @@ data_services:
   # 网格布局类
   sites:
     js: /js/services/sites.js
-  friends:
-    js: /js/services/friends.js
+  link:
+    js: /js/services/link.js
   # 列表布局类
   timeline:
     js: /js/services/timeline.js

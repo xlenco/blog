@@ -47,10 +47,10 @@ date: 2022-05-03 21:21:51
 请添加本站到您的友链中：
 
 ```yaml
-title: xxx
-url: https://example.com
+title: Xlenco's Blog
+url: https://blog.xlenco.com
 avatar: 
-screenshot: 
+"description": "总有人间一两风，吹我十万八千梦。"
 ```
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
