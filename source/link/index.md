@@ -49,8 +49,8 @@ date: 2022-05-03 21:21:51
 ```yaml
 title: Xlenco's Blog
 url: https://blog.xlenco.com
-avatar: 
-"description": "总有人间一两风，吹我十万八千梦。"
+avatar: https://q1.qlogo.cn/g?b=qq&nk=1043865083&s=100
+description: "总有人间一两风，吹我十万八千梦。"
 ```
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
