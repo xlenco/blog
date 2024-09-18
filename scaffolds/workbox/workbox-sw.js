@@ -1,4 +1,4 @@
-importScripts("https://cdn.jsdmirror.com/npm/workbox-sw/build/workbox-sw.js");
+importScripts("https://jsd.onmicrosoft.cn/npm/workbox-sw/build/workbox-sw.js");
 
 // 提示
 if (workbox) {
@@ -22,109 +22,17 @@ self.addEventListener("activate", async () => {
     });
 });
 
-// 控制台输出开关
-// self.__WB_DISABLE_DEV_LOGS = true;
-
-// 定义CDN镜像的URL列表
-const fallbackCdnUrls = [
-    // 'https://jsd.cdn.zzko.cn',
-    'https://code.webcache.cn',
-    'https://cdn.jsdmirror.com',
-    'https://cdn.jsdelivr.ren',
-    'https://jsdelivr.goodboyboy.top',
-    'https://cdn.chuqis.com',
-    'https://cdn2.chuqis.com',
-];
-
-// 定义失效CDN镜像的URL列表
-const invalidCdnUrls = [
-    'https://cdn.jsdelivr.net',
-    'https://gcore.jsdelivr.net',
-    // 'https://cdn1.tianli0.top',
-];
-
-// 定义空引用URL的域名列表
-const referrerDomains = [
-    'cdn.nlark.com',
-    'pic1.afdiancdn.com',
-    // 'api.mir6.com',
-    'f.video.weibocdn.com',
-    // 'api.icodeq.com'
-];
-
-// 定义缓存时间
-const MIN = 60;
-const HOUR = MIN * 60;
-const DAY = HOUR * 24;
-const WEEK = DAY * 7;
-const MONTH = DAY * 30;
-const YEAR = DAY * 365;
-
-workbox.precaching.cleanupOutdatedCaches();
-
-// 函数用于判断是否为备用CDN URL
-function isFallbackCdnUrl(url) {
-    return fallbackCdnUrls.some(fallbackUrl => url.startsWith(fallbackUrl));
-}
-
-// 函数用于判断是否为失效CDN镜像站 URL
-function isInvalidCdnUrl(url) {
-    return invalidCdnUrls.some(invalidUrl => url.startsWith(invalidUrl));
-}
-
-// 函数用于处理备用CDN请求
-function handleFallbackCdn(request) {
-    let failedUrls = [];
-
-    const fallbackRequest = fallbackCdnUrls.reduce((acc, fallbackUrl) => {
-        if (!failedUrls.includes(fallbackUrl)) {
-            const fallbackRequest = new Request(fallbackUrl + request.url.substring(request.url.indexOf('/', 8)));
-            acc = acc.catch(async () => {
-                try {
-                    const response = await fetch(fallbackRequest, { cache: 'reload' });
-                    if (response.ok) {
-                        return response;
-                    } else {
-                        failedUrls.push(fallbackUrl);
-                        throw new Error('请求资源失败');
-                    }
-                } catch (error) {
-                    failedUrls.push(fallbackUrl);
-                    throw new Error('所有备用 CDN 镜像请求失败');
-                }
-            });
-        }
-        return acc;
-    }, Promise.reject());
-
-    return fallbackRequest;
-}
-
-// 函数用于判断是否为需要空引用URL的域名
-function requiresEmptyReferrerDomain(domain) {
-    return referrerDomains.includes(domain);
-}
-
-// 函数用于处理带有空引用的请求
-function handleEmptyReferrer(request) {
-    return fetch(request, { referrerPolicy: "no-referrer" });
-}
-
-self.addEventListener('fetch', event => {
-    const request = event.request;
-    const url = new URL(request.url);
-    const domain = url.hostname;
-
-    if (isInvalidCdnUrl(url.href) || isFallbackCdnUrl(url.href)) {
-        // 失效CDN镜像站逻辑，继续尝试备用CDN
-        event.respondWith(handleFallbackCdn(request));
-    }
-    if (requiresEmptyReferrerDomain(domain)) {
-        // 空引用URL逻辑
-        event.respondWith(handleEmptyReferrer(request));
-    }
+// 监听网络状态变化
+self.addEventListener('online', () => {
+    console.log('网络已恢复，通知客户端刷新页面');
+    self.clients.matchAll().then((clients) => {
+        clients.forEach((client) => client.postMessage({ type: "refresh" }));
+    });
 });
 
+self.__WB_DISABLE_DEV_LOGS = true;
+
+workbox.precaching.cleanupOutdatedCaches();
 
 // 缓存名称
 workbox.core.setCacheNameDetails({
@@ -143,7 +51,152 @@ workbox.precaching.precacheAndRoute(self.__WB_MANIFEST, {
 // 导航预加载
 workbox.navigationPreload.enable();
 
-// 离线后备
+const currentDomain = self.location.hostname;
+
+const MIN = 60;
+const HOUR = MIN * 60;
+const DAY = HOUR * 24;
+const WEEK = DAY * 7;
+const MONTH = DAY * 30;
+const YEAR = DAY * 365;
+
+// 定义主要CDN的URL
+const mainCdnUrl = 'https://jsd.onmicrosoft.cn';
+
+// 定义CDN镜像的URL列表
+const fallbackCdnUrls = [
+    'https://jsd.onmicrosoft.cn', // 主CDN
+   // 'https://ccknbc.cdn.xzzo.cn',
+    'https://cdn.jsdmirror.cn',
+    'https://cdn.jsdmirror.com',
+    'https://jsd.proxy.aks.moe',
+    'https://cdn.jsdelivr.net',
+    'https://fastly.jsdelivr.net',
+    'https://gcore.jsdelivr.net',
+];
+
+// 定义失效CDN镜像的URL列表
+const invalidCdnUrls = [
+    'https://cdn.jsdelivr.net',
+    'https://cdn1.tianli0.top',
+    'https://cdn.jsdelivr.ren',
+    'https://cdn.chuqis.com',
+    'https://cdn2.chuqis.com',
+    'https://jsd.cdn.zzko.cn',
+    'https://jsdelivr.goodboyboy.top',
+];
+
+// 定义空引用URL的域名列表
+const referrerDomains = [
+    's1.vika.cn',
+];
+
+// 定义主站和备用站点的URL列表
+const mainSiteUrl = 'https://blog.xlenco.top';
+const backupSiteUrls = [
+    'https://netlify.xlenco.top/',
+
+];
+
+// 函数用于判断是否为 CDN URL
+function isCdnUrl(url, cdnList) {
+    return cdnList.some(cdnUrl => url.startsWith(cdnUrl));
+}
+
+// 函数用于处理带有 CDN URL 的请求
+async function handleCdnRequest(request, cdnList) {
+    let failedUrls = [];
+
+    for (const cdnUrl of cdnList) {
+        if (!failedUrls.includes(cdnUrl)) {
+            const fallbackRequest = new Request(cdnUrl + request.url.substring(request.url.indexOf('/', 8)));
+            try {
+                const response = await fetch(fallbackRequest, { cache: 'reload' });
+                if (response.ok) {
+                    return response;
+                } else {
+                    failedUrls.push(cdnUrl);
+                }
+            } catch (error) {
+                failedUrls.push(cdnUrl);
+            }
+        }
+    }
+    throw new Error('所有备用 CDN 镜像请求失败');
+}
+
+// 函数用于处理带有空引用的请求
+function handleEmptyReferrer(request) {
+    return fetch(request, { referrerPolicy: "no-referrer" });
+}
+
+// 函数用于处理主站请求
+async function handleMainSiteRequest(request) {
+    let failedUrls = [];
+
+    for (const backupUrl of backupSiteUrls) {
+        if (!failedUrls.includes(backupUrl)) {
+            const fallbackRequest = new Request(backupUrl + request.url.substring(request.url.indexOf('/', 8)));
+            try {
+                const response = await fetch(fallbackRequest, { cache: 'reload' });
+                if (response.ok) {
+                    // 修改响应的 URL 为主站的 URL
+                    const modifiedResponse = new Response(response.body, {
+                        status: response.status,
+                        statusText: response.statusText,
+                        headers: response.headers
+                    });
+                    modifiedResponse.url = request.url;
+                    return modifiedResponse;
+                } else {
+                    failedUrls.push(backupUrl);
+                }
+            } catch (error) {
+                failedUrls.push(backupUrl);
+            }
+        }
+    }
+    throw new Error('所有备用站点请求失败');
+}
+
+// fetch 事件监听器
+self.addEventListener('fetch', event => {
+    const request = event.request;
+    const url = new URL(request.url);
+    const domain = url.hostname;
+
+    if (url.href.startsWith(mainSiteUrl)) {
+        event.respondWith(
+            fetch(request)
+                .then(response => {
+                    // 如果主站请求成功，直接返回响应
+                    if (response.ok) {
+                        return response;
+                    }
+                    throw new Error('主站请求失败');
+                })
+                .catch(() => handleMainSiteRequest(request))
+        );
+    } else if (url.href.startsWith(mainCdnUrl)) {
+        event.respondWith(
+            fetch(request)
+                .then(response => {
+                    // 如果主要CDN请求成功，直接返回响应
+                    if (response.ok) {
+                        return response;
+                    }
+                    throw new Error('主要CDN请求失败');
+                })
+                .catch(() => handleCdnRequest(request, fallbackCdnUrls))
+        );
+    } else if (isCdnUrl(url.href, invalidCdnUrls) || isCdnUrl(url.href, fallbackCdnUrls)) {
+        event.respondWith(handleCdnRequest(request, fallbackCdnUrls));
+    } else if (referrerDomains.includes(domain)) {
+        event.respondWith(handleEmptyReferrer(request));
+    }
+});
+
+// 结合 NetworkOnly 和离线后备
 const Offline = new workbox.routing.Route(
     ({ request }) => {
         return request.mode === "navigate";
@@ -153,38 +206,59 @@ const Offline = new workbox.routing.Route(
             new workbox.precaching.PrecacheFallbackPlugin({
                 fallbackURL: "/offline/index.html",
             }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [200],
-            }),
         ],
     })
 );
 workbox.routing.registerRoute(Offline);
 
-// busuanzi 请求走网络不缓存
+// 缓存备用CDN资源
 workbox.routing.registerRoute(
-    ({ url }) => String(url).includes('busuanzi?') || String(url).includes('busuanzi='),
-    new workbox.strategies.NetworkOnly()
+    ({ request }) => {
+        const isCurrentDomain = request.url.includes(currentDomain);
+        return !isCurrentDomain && (
+            request.destination === 'style' ||
+            request.destination === 'script' ||
+            request.destination === 'font' ||
+            request.destination === 'worker' ||
+            request.url.endsWith('woff2')
+        );
+    },
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: '备用CDN资源',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 200,
+                maxAgeSeconds: MONTH,
+                purgeOnQuotaError: true
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [0, 200],
+            }),
+        ],
+    }),
 );
 
-// 缓存静态资源
+// 缓存当前域名下的静态资源
 workbox.routing.registerRoute(
-    ({ request }) =>
-        request.destination === 'style' ||
-        request.destination === 'script' ||
-        request.destination === 'font' ||
-        request.destination === 'worker' ||
-        request.url.endsWith('/favicon.svg'),
+    ({ request }) => {
+        const isCurrentDomain = request.url.includes(currentDomain);
+        return isCurrentDomain && (
+            request.destination === 'style' ||
+            request.destination === 'script' ||
+            request.destination === 'worker' ||
+            request.url.endsWith('/favicon.png')
+        );
+    },
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: '静态资源',
         plugins: [
             new workbox.expiration.ExpirationPlugin({
-                maxEntries: 100, // 最大缓存条目数
-                maxAgeSeconds: WEEK, // 缓存时间
+                maxEntries: 10,
+                maxAgeSeconds: MONTH,
                 purgeOnQuotaError: true
             }),
             new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [200],
+                statuses: [0, 200],
             }),
         ],
     }),
