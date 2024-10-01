@@ -1,0 +1,199 @@
+// 一部分具有卡片样式的组件复用了此类
+.card {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em var(--ld-shadow);
+    background-color: #fff;
+    background-color: var(--ld-bg-card);
+    transition: all 0.2s;
+
+    &:hover {
+        box-shadow: 0 0.5em 1em var(--ld-shadow);
+        transform: translateY(-2px);
+    }
+}
+
+.gradient-card {
+    position: relative;
+    border-radius: 0.5rem;
+    background: no-repeat 100% / 400%;
+    background-image: linear-gradient(45deg, var(--c-accent), var(--c-primary-soft) 40%, transparent 50%);
+    transition: all 0.5s;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border-radius: calc(0.5rem - 2px);
+        transition: all 1s;
+        z-index: -1;
+    }
+
+    &:hover, &.active {
+        background-position: 0;
+        color: var(--c-text-1);
+
+        &::before {
+            background-color: var(--c-bg-a80);
+            transition: all 0.2s;
+        }
+    }
+}
+
+// 横向滚动遮罩
+// PURE CSS MAGIC!
+.scrollcheck-x {
+    // 如果填写 0 会在 calc() 时出错
+    --left-offset: 0px;
+    --guessed-scrollbar-height: 0.5rem;
+    --fadeout-width: 2rem;
+
+    overflow-x: auto;
+    animation: scrollcheck-x;
+    animation-timeline: scroll(x self);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        height: var(--guessed-scrollbar-height);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: var(--guessed-scrollbar-height);
+        background-color: var(--c-text-3);
+    }
+}
+
+@keyframes scrollcheck-x {
+    0% {
+        mask:
+            linear-gradient(to right, #fff calc(100% - var(--fadeout-width)), transparent),
+            linear-gradient(to top, #fff var(--guessed-scrollbar-height), transparent var(--guessed-scrollbar-height));
+    }
+
+    0.01%, 99.99% {
+        mask:
+            linear-gradient(to right, #fff var(--left-offset), transparent var(--left-offset), #fff calc(var(--left-offset) + var(--fadeout-width)), #fff calc(100% - var(--fadeout-width)), transparent),
+            linear-gradient(to top, #fff var(--guessed-scrollbar-height), transparent var(--guessed-scrollbar-height));
+    }
+
+    100% {
+        mask:
+            linear-gradient(to right, #fff var(--left-offset), transparent var(--left-offset), #fff calc(var(--left-offset) + var(--fadeout-width))),
+            linear-gradient(to top, #fff var(--guessed-scrollbar-height), transparent var(--guessed-scrollbar-height));
+    }
+}
+
+.scrollcheck-y {
+    // 如果填写 0 会在 calc() 时出错
+    --top-offset: 0px;
+    --guessed-scrollbar-width: 0.5rem;
+    --fadeout-height: 2rem;
+
+    overflow-y: auto;
+    animation: scrollcheck-y;
+    animation-timeline: scroll(y self);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        height: var(--guessed-scrollbar-width);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: var(--guessed-scrollbar-width);
+        background-color: var(--c-text-3);
+    }
+}
+
+@keyframes scrollcheck-y {
+    0% {
+        mask:
+            linear-gradient(to bottom, #fff calc(100% - var(--fadeout-height)), transparent),
+            linear-gradient(to left, #fff var(--guessed-scrollbar-width), transparent var(--guessed-scrollbar-width));
+    }
+
+    0.01%, 99.99% {
+        mask:
+            linear-gradient(to bottom, #fff var(--top-offset), transparent var(--top-offset), #fff calc(var(--top-offset) + var(--fadeout-height)), #fff calc(100% - var(--fadeout-height)), transparent),
+            linear-gradient(to left, #fff var(--guessed-scrollbar-width), transparent var(--guessed-scrollbar-width));
+    }
+
+    100% {
+        mask:
+            linear-gradient(to bottom, #fff var(--top-offset), transparent var(--top-offset), #fff calc(var(--top-offset) + var(--fadeout-height))),
+            linear-gradient(to left, #fff var(--guessed-scrollbar-width), transparent var(--guessed-scrollbar-width));
+    }
+}
+
+mark {
+    background: linear-gradient(var(--c-primary-soft), var(--c-primary-soft)) no-repeat left bottom / 100% 0.4em;
+    text-decoration: none;
+    color: var(--c-primary);
+    transition: 0.2s;
+    animation: line-spread 0.5s;
+
+    @keyframes line-spread {
+        from { background-size: 0 0.3em; }
+    }
+
+    &:hover {
+        background-size: 100% 50%;
+    }
+}
+
+
+
+// Iconify 图标复用了此类
+.iconify {
+    flex-shrink: 0;
+    font-size: 1.2em;
+    vertical-align: text-bottom;
+}
+
+// fallback
+img {
+    display: inline-block;
+
+    // Chrome 90- 😡
+    overflow: hidden;
+
+    // 🔥🦊😡
+    overflow: clip;
+    transform: scale(1);
+
+    &::before {
+        position: absolute;
+        inset: 0;
+    }
+
+    &::before {
+        content: attr(alt);
+        display: grid;
+        place-content: center;
+        overflow: visible;
+        padding: 0.5em;
+        background-color: var(--c-border);
+        font: bold 1.5rem/1.2 var(--font-serif);
+        word-break: normal;
+        text-align: center;
+        text-shadow: none;
+        color: var(--c-bg-soft);
+    }
+}
+
+.mobile-only {
+    display: none;
+
+    @media (max-width: $breakpoint-mobile) {
+        display: initial;
+    }
+}
+
+.widescreen-only {
+    display: none;
+
+    @media (min-width: $breakpoint-widescreen) {
+        display: initial;
+    }
+}

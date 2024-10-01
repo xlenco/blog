@@ -1,13 +1,24 @@
-.DS_Store
-Thumbs.db
-db.json 
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
 *.log
-node_modules/
-public/
-.deploy*/
-.deploy_git*/
+
+# Misc
+.DS_Store
+.fleet
 .idea
-.git/
-themes/stellar/.git/
-.obsidian*/
-.trash*/
+
+# Local env files
+.env
+.env.*
+!.env.example

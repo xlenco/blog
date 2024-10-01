@@ -1,0 +1,36 @@
+<script setup lang="ts">
+import type { NavItem } from '~/types/nav'
+
+defineProps<{
+    list: NavItem[]
+}>()
+</script>
+
+<template>
+    <menu>
+        <ZRawLink v-for="item in list" :key="item.text" v-tippy="item.text" :to="item.url">
+            <Icon :name="item.icon" />
+        </ZRawLink>
+    </menu>
+</template>
+
+<style scoped lang="scss">
+menu {
+    display: flex;
+    justify-content: center;
+
+    a {
+        padding: 0.5em;
+        border-radius: 2em;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: var(--c-bg-soft);
+        }
+
+        .iconify {
+            display: block;
+        }
+    }
+}
+</style>
