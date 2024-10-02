@@ -1,0 +1,30 @@
+name: Vue
+title: Vue.js - 渐进式的前端框架
+subtitle: '很开心的学了 | 结果又多了一个学过而不会的技术' # 项目中和主页相似的两个副标题
+tags: 前端
+cover: https://xlenco-img.s3.bitiful.net/i/2024/07/422232584f23df64ca674f0a3f8b7455.png	# 封面页大图
+icon: https://xlenco-img.s3.bitiful.net/i/2024/07/422232584f23df64ca674f0a3f8b7455.png	# 列表页图标
+# coverpage: [logo, description]
+coverpage: true # 默认是 true
+description: 我的vue学习笔记-不断改进和完善中，欢迎留言批斗，但别说的太过分，我并没有那么坚强。
+# repo: xaoxuu/hexo-theme-stellar
+sidebar: 
+  - search:
+    override: search
+    filter: /wiki/vue/
+    placeholder: '在 Vue笔记 中搜索...'
+  - toc
+  # - timeline_stellar_releases
+  - related
+# comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
+# comments:
+#   service: giscus
+#   giscus:
+#     data-repo: xaoxuu/hexo-theme-stellar
+#     data-mapping: number
+#     data-term: 226
+path: /wiki/vue/
+toc:
+  '快速开始':
+    - 'Vue快速入门'
+
